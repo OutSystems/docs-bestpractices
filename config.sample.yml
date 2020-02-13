@@ -1,0 +1,11 @@
+build:
+    title: OutSystems Best Practices
+    input-folder: src
+    output-folder: build
+    related-title: See Also   
+publish:
+    url: https://success.outsystems.com/
+    root_path: Documentation
+    toc_url: https://success.outsystems.com/
+    toc_root_path: Documentation
+    skip_toc_publish: True

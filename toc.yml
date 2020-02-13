@@ -1,0 +1,40 @@
+# Best Practices
+- href: intro.md
+- topics:
+    - href: clean-up-dev-environment/clean-up-development.md
+    # Data
+    - href: data/archive.md
+    - href: data/audit-trails.md
+    - href: data/data-layer.md
+    - href: data/data-load.md
+    - href: data/data-rendering.md
+    - href: data/hot-cache/hot-cache.md
+    - href: data/purge.md
+    # Front-End
+    - href: front-end/front-end-journey.md
+    - href: front-end/front-end-best-practices.md
+    # Security Model
+    - href: security-model/acl.md
+    # Mobile
+    - href: mobile/complex-sync.md
+    - href: platform-best-practices/outsystems-mobile-best-practices.md    
+    # Platform Best Practices
+    - href: platform-best-practices/outsystems-platform-best-practices.md
+    # Misc                  
+    - href: reference-BPMN/Notation-Reference-for-BPMN-Practitioners.md
+    - href: lifeTime-plugins/Life-Time-Plugins-Best-Practices.md
+    - href: injection-XSS/Injection-and-Cross-Site-Script-(XSS).md
+    - href: components/The-Complete-Guide-to-Creating-Components.md
+    - href: building-dynamic-SQL/Building-dynamic-SQL-statements-the-right-way.md
+    - href: customizing-unhandled-errors/Customizing-OutSystems-Platform-Pages-for-Unhandled-Errors.md    
+    # Performance
+    - href: performance/performance-best-practices.md
+    - topics:
+        - href: performance/data-model/data-model.md
+        - href: performance/infrastructure/infrastructure.md
+        - href: performance/logic/logic.md
+        - href: performance/queries/queries.md
+        - href: performance/references/references.md   
+        - href: performance/top-10-rules/top-10-rules.md 
+        - href: performance/user-interface/user-interface.md 
+        - href: distributed-caching/Improving-performance-with-distributed-caching.md
