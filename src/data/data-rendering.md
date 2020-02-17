@@ -101,8 +101,7 @@ Lists involve fetching and rendering multiple records at the same time. If you d
 
 ## Additional Information
 
-To learn more about optimizing Data Rendering, read the [From Web to Mobile Development:
-5 Things to Consider](https://www.outsystems.com/blog/from-web-to-mobile-development-5-things-to-consider.html) blog post.
+To learn more about optimizing Data Rendering, read the [From Web to Mobile Development: 5 Things to Consider](https://www.outsystems.com/blog/from-web-to-mobile-development-5-things-to-consider.html) blog post.
 
 ## See Also
 
