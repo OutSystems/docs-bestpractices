@@ -24,11 +24,11 @@ Take the following actions into account:
 
 The following diagram shows an example of a timeline for events and actions:
 
-![Parallel Data Fetches](images\data-load\parallel_data_fetches.png?width=750)
+![Parallel Data Fetches](images/data-load/parallel_data_fetches.png?width=750)
 
 The following diagram shows an example of a timeline for events and actions:
 
-![Timeline for events and actions](images\data-load\timeline_events_actions.png?width=850)
+![Timeline for events and actions](images/data-load/timeline_events_actions.png?width=850)
 
 Proceed with the following instructions by order:
 
@@ -55,7 +55,7 @@ Most typical bad practices occur when developers try to use the **OnInitialize**
 
 In the following example, the screen rendering is delayed and blocks the user until all actions end. This results in a blocking screen with unnecessary high loading time.
 
-![Common pitfall scenario](images\data-load\incorrect_approach.png?width=750)
+![Common pitfall scenario](images/data-load/incorrect_approach.png?width=750)
 
 ## Additional Information
 

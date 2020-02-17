@@ -53,7 +53,7 @@ Consider the following concerning the technical logs collected by OutSystems:
 
 These logs are stored in a dedicated set of OutSystems tables and can be consulted in [Service Center under Monitoring menu](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Monitor_and_Troubleshoot/View_the_Environment_Logs_and_Status):
 
-![Service Center Monitoring Menu](images\audit-trails\service-center-monitpring-menu.png?width=1000)
+![Service Center Monitoring Menu](images/audit-trails/service-center-monitpring-menu.png?width=1000)
 
 
 Considering that the platform logs have a recycling rate, these should be collected periodically and stored externally. The recommendation is to build an ETL process to execute this task, due to the high number of records.
@@ -62,7 +62,7 @@ Considering that the platform logs have a recycling rate, these should be collec
 
 For Standard Audit Trail systems, there is an industry common architecture pattern to consider, depicted by the following figure:
 
-![Standard Audit Trail System - generic architecture](images\audit-trails\standard-audit-trail-system_generic-architecture.png?width=750)
+![Standard Audit Trail System - generic architecture](images/audit-trails/standard-audit-trail-system_generic-architecture.png?width=750)
 
 *[(Source)](https://docs.aws.amazon.com/en_pv/whitepapers/latest/microservices-on-aws/auditing.html)*
 
@@ -76,7 +76,7 @@ Consider the following three architecture patterns/examples on how to implement 
 
 ### Based on OutSystems built-in LogMessage action
 
-![OutSystems Audit Trails Based on the built-in LogMessage action](images\audit-trails\outsystems-audit-trails-based-on-built-in_LogMessage_action.png?width=750)
+![OutSystems Audit Trails Based on the built-in LogMessage action](images/audit-trails/outsystems-audit-trails-based-on-built-in_LogMessage_action.png?width=750)
 
 The **Audit_Lib** module provides a **MyLogMessage** public action, which references a **LogMessage** (system) built-in action.
 
@@ -88,7 +88,7 @@ Although OutSystems provides a system log audit action, we recommend building a 
 
 The following figure depicts the centralized Audit Trail:
 
-![OutSystems Centralized Audit Trail using server entities](images\audit-trails\outsystems-centralized-audit-trail-using-server-entities.png?width=800)
+![OutSystems Centralized Audit Trail using server entities](images/audit-trails/outsystems-centralized-audit-trail-using-server-entities.png?width=800)
 
 1. The data is stored in the **QuickLog** entity quickly, due to performance reasons.
 1. The timer moves the **staged** data from **QuickLog** into the main **AuditLog** entity asynchronously.
@@ -105,7 +105,7 @@ Use it to write a debug log that allows the IT teams to trace the application fl
 
 The following figure depicts the foundation application that supports all applications that log with an External Audit logging system integration:
 
-![OutSystems Extended Centralized Audit Trail](images\audit-trails\outsystems-extended-centralized-audit-trail.png?width=600)
+![OutSystems Extended Centralized Audit Trail](images/audit-trails/outsystems-extended-centralized-audit-trail.png?width=600)
 
 * **Audit Library Application**
 
@@ -166,7 +166,7 @@ You can download from the OutSystrems Forge, a component that allows you to inte
 
 The following picture depicts the pattern in OutSystems that can implement these Auditing operations:
 
-![OutSystems Advanced Audit Trail implementation](images\audit-trails\outsystems-advanced-audit-trail-implementation.png?width=500)
+![OutSystems Advanced Audit Trail implementation](images/audit-trails/outsystems-advanced-audit-trail-implementation.png?width=500)
 
 The following list details the Public Actions:
        

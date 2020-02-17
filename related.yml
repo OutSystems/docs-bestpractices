@@ -40,6 +40,9 @@
         - "Test Your Mobile App in the Device Using OutSystems Now":
             https://success.outsystems.com/Documentation/11/Delivering_Mobile_Apps/Test_Your_Mobile_App_in_the_Device_Using_OutSystems_Now
 
+- data/data-rendering.md:
+    - data/data-load.md
+
 - data/hot-cache/hot-cache.md:
     - external:
         - "Improving performance with distributed caching":

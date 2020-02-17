@@ -6,6 +6,7 @@ tags: OutSystems_Mobile; OutSystems_Mobile_Data_Rendering; Data_Rendering
 # Mobile Data Rendering
 
 ## Pre-requisites
+
 You need to be a [Mobile Web Developer](https://www.outsystems.com/learn/paths/1/becoming-a-mobile-developer/).
 
 ## Data Rendering
@@ -16,7 +17,7 @@ This article introduces the Best Practices for data rendering on mobile applicat
 
 Improve the user experience by designing and displaying an empty state image while the dynamic content is being fetched. A couple of good examples are Facebook or LinkedIn.
 
-![Empty State Image](images\data-render\empty-state-image.png?width=750)
+![Empty State Image](images/data-render/empty-state-image.png?width=750)
 
 This strategy is valid for all dynamic content in the screen such as blocks, cards or list items. When the empty state turns into the fetched content you may experience some flickering. To avoid flickering when the empty state turns into the fetched content, choose one image that assures a smooth transition, such as a blurred gray line or a spinner.
 
@@ -32,13 +33,13 @@ Delay the rendering of the secondary content so that the main content is rendere
 
 1. In the **On Render** event of the screen, add logic to set the variable to True so that the secondary content starts to render.
 
-![Prioritized Screen Content](images\data-render\prioritized-screen-content.png?width=320)
+![Prioritized Screen Content](images/data-render/prioritized-screen-content.png?width=320)
 
 ### Set the Width and Height of Image Widgets
 
 Set the width and height of the Image widget to the expected size of the final image.
 
-![Image Properties](images\data-render\image-properties.png?width=300)
+![Image Properties](images/data-render/image-properties.png?width=300)
 
 ### Optimize List Load
 
@@ -71,15 +72,15 @@ The values to use depend on the size of the records:
 
 The following figure shows examples of values to use in different situations. Start with these as initial guidelines and then test and adjust to your specific case.
 
-![Guidelines for Fetching Data on Lists](images\data-render\guidelines-fetching-data-on-lists.png?width=750)
+![Guidelines for Fetching Data on Lists](images/data-render/guidelines-fetching-data-on-lists.png?width=750)
 
 ## Benefits
 
-Following the good practices of data rendering, provide you with the following benefits:
+Following the good practices of data rendering, provides you with the following benefits:
 
 * Improved performance
 * Smooth transitions between screens
-* State of the art UX~
+* State of the art UX
 
 ## Common Pitfall Scenarios
 
@@ -102,20 +103,3 @@ Lists involve fetching and rendering multiple records at the same time. If you d
 ## Additional Information
 
 To learn more about optimizing Data Rendering, read the [From Web to Mobile Development: 5 Things to Consider](https://www.outsystems.com/blog/from-web-to-mobile-development-5-things-to-consider.html) blog post.
-
-## See Also
-
-[Data Load](data-load.md)
-
-Local Storage 
-
-Complex Data Sync
-
-Server Side Calls avoidance
-
-Plugins
-
-Testing
-
-Store deployment
-
