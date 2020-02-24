@@ -90,7 +90,7 @@ There’s no magic solution to prevent broken access control, generally speaking
 
 * Authorization: Determine what actions or resources a user is able or not to perform.
 
-Applications built with OutSystems have low risk to suffer a broken access control if developers decide to use the default protocols the platform offers. OutSystems doesn’t keep personal information, and the passwords are strongly encrypted. To enforce the security mechanism, OutSystems implements a User Roles concept to restrict or deny end-users access to specific screens or operations of your application. Learn more about [Secure the Application](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application) with OutSystems.
+Applications built with OutSystems have low risk to suffer a broken access control if developers decide to use the default protocols the platform offers. OutSystems doesn’t keep personal information, and the passwords are strongly encrypted. To enforce the security mechanism, OutSystems implements a User Roles concept to restrict or deny end users access to specific screens or operations of your application. Learn more about [Secure the Application](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application) with OutSystems.
 
 ## Benefit
 

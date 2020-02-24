@@ -20,11 +20,11 @@ In this context, there are the following two types of Audit Trail in OutSystems:
 In conjunction with appropriate tools and procedures, audit trails can help in detecting security violations, performance problems, and flaws in applications.
 
 ### Business Audit 
-A Business Audit relates to business requirements to collect or track the application end-users’ behavior or to provide information for Auditors. For example, log any update over a table record: “who” did “what” and “how” the system behaved, and what were the values before and after the update. The value to collect this information is, for example, to set up an alarmist process on top, to alert decision-maker teams if any business rules were violated or a threshold value reached. 
+A Business Audit relates to business requirements to collect or track the application end users’ behavior or to provide information for Auditors. For example, log any update over a table record: “who” did “what” and “how” the system behaved, and what were the values before and after the update. The value to collect this information is, for example, to set up an alarmist process on top, to alert decision-maker teams if any business rules were violated or a threshold value reached. 
 
-Use Business Audits when there are business requirements to log a specific end-user behavior or automatic system actions in an application:
+Use Business Audits when there are business requirements to log a specific end user behavior or automatic system actions in an application:
 
-* Detailed security log containing a list of end-users and the information these can access in a database - This audit can be crucial for protecting sensitive data like health or financial information.
+* Detailed security log containing a list of end users and the information these can access in a database - This audit can be crucial for protecting sensitive data like health or financial information.
 * Records of all financial transactions made by business users - these include all information, like bank account movements, employee payments, expense reports, etc.
 * Tracking all customer communication - it can help a great deal with dispute resolution and also with keeping customers happy by providing relevant information about their past communications.
 * Operational transactions. Imagine the example of a transportation network company. The ability to audit pickup and dropoff times, as well as routes, helps with pricing and staffing considerations.
@@ -66,7 +66,7 @@ For Standard Audit Trail systems, there is an industry common architecture patte
 
 *[(Source)](https://docs.aws.amazon.com/en_pv/whitepapers/latest/microservices-on-aws/auditing.html)*
 
-This implementation logs information about the end-user activities. These logs help you to monitor  applications for security and troubleshooting purposes, which is a process often referred to as auditing. The audit logs are stored in buckets for convenient access with data security features for users who are responsible for monitoring activities in the application.
+This implementation logs information about the end user activities. These logs help you to monitor  applications for security and troubleshooting purposes, which is a process often referred to as auditing. The audit logs are stored in buckets for convenient access with data security features for users who are responsible for monitoring activities in the application.
 
 ## Making Audit Trails in OutSystems
 

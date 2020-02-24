@@ -147,7 +147,7 @@ In order to clean email information, OutSystems provides the [Emails API](https:
 
 ## Logs
 
-[Log information](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Monitor_and_Troubleshoot/Logging_database_and_architecture) reflects the lifecycle of accesses to applications by end-users or external systems. There are two log types:
+[Log information](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Monitor_and_Troubleshoot/Logging_database_and_architecture) reflects the lifecycle of accesses to applications by end users or external systems. There are two log types:
 
 * Top-level logs (Screen, Integration, Mobile Request, Cyclic Job)
 * Drill logs (Error, General, Integration, Extension)

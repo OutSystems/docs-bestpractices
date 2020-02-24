@@ -94,7 +94,7 @@ Examples of transient data that might require purging:
 
 ### Incorrect purging schedule
 
-The purging process(es) should run during off-peak hours to minimize the impact over web requests provided to end-users.
+The purging process(es) should run during off-peak hours to minimize the impact over web requests provided to end users.
 
 ### Lack of database maintenance plans
 

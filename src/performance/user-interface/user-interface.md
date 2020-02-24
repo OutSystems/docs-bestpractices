@@ -1,6 +1,6 @@
 # Performance Best Practices - User Interface
 
-There are no fast applications with slow user experiences. To promote the adoption and keep the end-users satisfied, the application has to respond fast. Don’t discard usability issues, but don’t compromise the performance just to have a nicer way to present the data.
+There are no fast applications with slow user experiences. To promote the adoption and keep the end users satisfied, the application has to respond fast. Don’t discard usability issues, but don’t compromise the performance just to have a nicer way to present the data.
 
 ## Avoid using preparation data in screen actions
 

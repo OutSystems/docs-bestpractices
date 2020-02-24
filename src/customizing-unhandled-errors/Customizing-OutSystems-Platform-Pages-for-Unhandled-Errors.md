@@ -1,12 +1,12 @@
 # Customizing OutSystems Platform Pages for Unhandled Errors
 
-OutSystems handles unforeseen or unhandled errors that might occur in applications and displays proper feedback pages to end-users. In this article it is described how you can customize these pages and make them fit your application design.
+OutSystems handles unforeseen or unhandled errors that might occur in applications and displays proper feedback pages to end users. In this article it is described how you can customize these pages and make them fit your application design.
 
 Keep in mind that this is **only applicable** to OutSystems On-Premises installations.
 
 ## Introduction
 
-When designing an application the error handling is fundamental to avoid misbehaviors or crashes and to give feedback to end-users. However, unforeseen (and unhandled) errors might occur in applications and for that reason the OutSystems Platform ensures their handling by displaying proper feedback pages to end-users. In this document are described all types of error handling provided by the OutSystems Platform and how you can customize them to fit your application design.
+When designing an application the error handling is fundamental to avoid misbehaviors or crashes and to give feedback to end users. However, unforeseen (and unhandled) errors might occur in applications and for that reason the OutSystems Platform ensures their handling by displaying proper feedback pages to end users. In this document are described all types of error handling provided by the OutSystems Platform and how you can customize them to fit your application design.
 
 ## Error Handling Pages
 
@@ -78,7 +78,7 @@ In case of the **Application Unavailable Errors** page some request parameters a
 
 ### Bringing a New Error Handling Page Online
 
-Changes made to the file of an error handling page take immediate effect on what is displayed by the OutSystems Platform to end-users. This means that you should be very careful when working directly on the file and saving unfinished versions; we advise you to (1) copy the file to another directory, (2) work on it, (3) and then copy it back again when finished.
+Changes made to the file of an error handling page take immediate effect on what is displayed by the OutSystems Platform to end users. This means that you should be very careful when working directly on the file and saving unfinished versions; we advise you to (1) copy the file to another directory, (2) work on it, (3) and then copy it back again when finished.
 
 On a farm environment, files of your customized pages must be **manually copied to all of the Front-end nodes**.
 

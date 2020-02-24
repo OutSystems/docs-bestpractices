@@ -15,7 +15,7 @@ This article uses the terms **main catalog** for the primary storage and **archi
 
 ## Benefits
 
-From the end-user perspective, the major benefit of having a data archiving strategy is **runtime performance**. Since the volume of data in the main catalog is reduced, queries take less time to execute and application reacts faster.
+From the end user perspective, the major benefit of having a data archiving strategy is **runtime performance**. Since the volume of data in the main catalog is reduced, queries take less time to execute and application reacts faster.
 
 From an IT perspective, the major benefits are the **performance of the needed resources** and **cost savings**. Since the data volume in the main catalog is reduced, the backup and recovery operations run faster, disaster recovery is less costly and takes less time, reducing the potential system downtime. If you use a specialized archival system to store the archived information (instead of OutSystems Database) you may reduce the overall storage costs.
 
@@ -96,14 +96,14 @@ You can use Site Properties for simple configuration, such as the archiving freq
 
 ![](images/archive-2.png?width=600)
 
-**3. Create a new module that exposes search and restore functionality to end-users**
+**3. Create a new module that exposes search and restore functionality to end users**
 
-This module, e.g. “Archive Search”, implements the UI where the end-user can interact with the archived data:
+This module, e.g. “Archive Search”, implements the UI where the end user can interact with the archived data:
 
 * Restore archived data back to the main catalog.
 * Search data directly in the archive Entities.
 
-Due to the volume of data, the archive catalog is less performant than the main catalog. To manage the end-user expectations in terms of response time, implement a toggle that the end-user must explicitly set whenever he/she wants to interact with the archived data.
+Due to the volume of data, the archive catalog is less performant than the main catalog. To manage the end user expectations in terms of response time, implement a toggle that the end user must explicitly set whenever he/she wants to interact with the archived data.
 
 ![](images/archive-3.png?width=600)
  
@@ -193,9 +193,9 @@ Make sure to discuss the business requirements and determine the more effective 
 
 ### Lack of indexes on the archive catalog
 
-The archive catalog contains a higher volume of information and is consulted less often than the main catalog. It’s commonly accepted by end-users that queries over the archive will take longer to retrieve information, so the development team tends to not optimize the archive Entities.
+The archive catalog contains a higher volume of information and is consulted less often than the main catalog. It’s commonly accepted by end users that queries over the archive will take longer to retrieve information, so the development team tends to not optimize the archive Entities.
 
-However, lack of optimization, such as proper indexes, may cause the end-user experience to deteriorate over time and eventually renders the end-user unable to retrieve any information due to timeouts.
+However, lack of optimization, such as proper indexes, may cause the end user experience to deteriorate over time and eventually renders the end user unable to retrieve any information due to timeouts.
 
 Always keep the archive catalog optimized and returning information as fast as possible.
 

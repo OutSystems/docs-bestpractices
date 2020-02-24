@@ -15,7 +15,7 @@ tags: best-practices, security-model
 
 An access control list (ACL) is a list of permissions attached to an object. The ACL stores what objects are granted to which users or group of users. Common uses of ACL are access to financial data to specific user profiles, data access based on user’s unit/branch or hierarchical accesses.
 
-In OutSystems, the recommendation is to use [OutSystems user roles](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/User_Roles) to restrict or allow end-users to access specific screens and operations of your application. 
+In OutSystems, the recommendation is to use [OutSystems user roles](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/User_Roles) to restrict or allow end users to access specific screens and operations of your application. 
 However, user roles shouldn’t be used if you want to set up a hierarchical permission control to your application data. To guarantee a scalable and dynamic data segregation per business requirement the recommendation is to build ACL.
 
 For Core Services that require ACL, we propose a model where each Core Service module is responsible for setting the data access rules.
