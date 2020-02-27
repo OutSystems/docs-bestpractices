@@ -38,3 +38,13 @@
         - href: performance/top-10-rules/top-10-rules.md 
         - href: performance/user-interface/user-interface.md 
         - href: distributed-caching/Improving-performance-with-distributed-caching.md
+
+    # OutSystems Automated Testing Best Practices
+
+    - href: automated-testing/testing-guidelines.md
+    - topics: 
+        - href: automated-testing/strategy.md
+        - href: automated-testing/automated-testing-tools.md
+        - href: automated-testing/component-testing.md
+        - href: automated-testing/integration-api-testing.md
+        - href: automated-testing/web-ui-testing.md
