@@ -31,12 +31,14 @@ This article aggregates a collection of best practices and conventions that migh
 * Use Static Entities instead of hard-coded values
 
 ### Reusability
+
 * Reuse logic with User Actions
 * Reuse screen parts with Web Blocks
 * Encapsulate data formatting with User Functions
 * Use RefreshQuery to rerun a Query
 
 ## JavaScript, CSS and HTML
+
 * Use Web Blocks for JavaScript encapsulation and reusability
 * Make sure your JavaScript blocks are perfectly identifiable
 * Comment your JavaScript
@@ -46,6 +48,7 @@ This article aggregates a collection of best practices and conventions that migh
 * Minify JavaScript and CSS whenever possible 
 
 ## Database
+
 * 492 attributes in one Entity is perhaps too much :)
 * Attribute with size 4000 is perhaps too much :)
 * Check the Delete Rule of Foreign Keys to an Entity.
@@ -55,12 +58,14 @@ This article aggregates a collection of best practices and conventions that migh
 ## Aggregates and Advanced Queries
 
 ### Queries
+
 * Use Aggregates: they’re optimized and database independent!
 * Avoid using indexes ([i]) when iterating a Query output
 * Minimize the number of Queries you need to execute
 * Avoid type casts in Aggregates
 
 ### Advanced Queries
+
 * Use Advanced Queries only when absolutely necessary
 * Use Parameters instead of hard-coded values in the SQL 
 * Indent SQL code consistently
@@ -71,6 +76,7 @@ This article aggregates a collection of best practices and conventions that migh
 * Keep in mind that Advanced Queries are database specific
 
 ## Building for Change
+
 * Favor Aggregates over Advanced Queries
 * Keep in mind that Advanced Queries are harder to maintain
 * Avoid creating custom HTML/Javascript
@@ -78,13 +84,16 @@ This article aggregates a collection of best practices and conventions that migh
 * Don’t use Extensions to implement business logic
 
 ## User Interface
+
 * Move JavaScript blocks to the end of the screen
 * Find out what needs improvement by observing your users
 * A Preparation with more than 10 nodes normally means trouble
 * Reduce the size of the eSpace’s images
 
 ## Architecture
+
 Use a 3 layers approach:
+
 * Business Processes: a service available for use by users or business processes
 * Core Entities: logical grouping of operations per responsibility
 * Connectors: extensions or integration with other systems
@@ -97,6 +106,7 @@ Use a 3 layers approach:
 * The Art of Designing OutSystems Architectures
 
 ## Teamwork
+
 * Know the recommended project team for your project (see [Staffing OutSystems Projects](http://www.outsystems.com/NetworkDocuments/DocumentDetail.aspx?DocumentId=181&VirtualDirectoryId=25))
 * Use a single user for each team member
 * Everyone in the team should use the same Service Studio version
@@ -134,6 +144,7 @@ Use a 3 layers approach:
 ## Performance
 
 ### Data model
+
 * Index your Entities
 * Isolate large Text and Binary Data in another entity
 * Beware of Large Excel Files Performance
@@ -141,6 +152,7 @@ Use a 3 layers approach:
 * Archive old data in separate Entities
 
 ### Infrastructure
+
 * Setup database maintenance plans
 * Configure Web server memory settings
 * Backup database transaction logs often
@@ -151,6 +163,7 @@ Use a 3 layers approach:
 * Plan and monitor timers schedule so there are no conflicting schedules
 
 ### Logic
+
 * Look into Service Center reports
 * Avoid long-running Timers and batch jobs
 * Simplify screen Preparations
@@ -160,6 +173,7 @@ Use a 3 layers approach:
 * Avoid chained Web Service calls. Return as much as possible in a single cal
 
 ### Queries
+
 * Don’t perform joins over linked servers
 * Minimize the number of fields fetched from the database
 * Keep Max Records consistent with your needs
@@ -167,11 +181,13 @@ Use a 3 layers approach:
 * Minimize the number of executed queries
 
 ### References
+
 * NEVER create circular references between eSpaces
 * Choose wisely between Local Web Services or Public Actions
 * Use Connection Pooling
 
 ### User Interface
+
 * Avoid using Preparation data in screen actions
 * Use AJAX with care - it may impact overall performance
 * Use multiple Web Screens instead of creating complex ones
@@ -182,6 +198,7 @@ Use a 3 layers approach:
 * Use CSS Sprite Images
 
 ## Common Patterns and Examples
+
 Here’s a quick list of several open source apps you can use or refer to for examples:
 
 * Hierarchical tree example: [Directory](https://www.outsystems.com/forge/component-overview/614/directory)
