@@ -97,13 +97,15 @@ Use a 3 layers approach:
 * Business Processes: a service available for use by users or business processes
 * Core Entities: logical grouping of operations per responsibility
 * Connectors: extensions or integration with other systems
+
+Also:
+
 * Wrap Extensions in eSpaces
 * Avoid circular references between eSpaces
 * Clearly define the responsibilities of each eSpace
 * Remove unused references Encapsulate business logic in User Actions
 * Create user story driven interfaces Don't isolate the data model in one eSpace. eSpaces should be functional units instead of architectural units.
 * Use asynchronous logic when possible
-* The Art of Designing OutSystems Architectures
 
 ## Teamwork
 
