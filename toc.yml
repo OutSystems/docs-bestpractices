@@ -48,3 +48,7 @@
         - href: automated-testing/component-testing.md
         - href: automated-testing/integration-api-testing.md
         - href: automated-testing/web-ui-testing.md
+
+    # Application Lifecycle
+
+    - href: app-lifecycle/managing-app-lifecycle-portfolio.md
