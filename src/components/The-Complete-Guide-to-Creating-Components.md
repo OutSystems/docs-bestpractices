@@ -40,11 +40,11 @@ Keep in mind that your components will fit into the [architecture of the 4 Layer
 
 Components can be of five types:
 
-* [**Themes**](http://www.outsystems.com/help/ServiceStudio/9.1/index.htm#t=User_Interface%2FCreate_a_Theme.htm): A theme defines the **look and feel** of the application, through a series of style sheet rules, and the grid definitions used to position and size elements on the screen. Good examples of themes are any of the [Silk UI](https://www.outsystems.com/forge/component/1385/silk-ui-mobile/) Themes, like the [Dublin Theme](https://www.outsystems.com/forge/component/917/dublin-template/).
+* [**Themes**](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Look_and_Feel/Themes): A theme defines the **look and feel** of the application, through a series of style sheet rules, and the grid definitions used to position and size elements on the screen. Good examples of themes are any of the [Silk UI](https://www.outsystems.com/forge/component/1385/silk-ui-mobile/) Themes, like the [Dublin Theme](https://www.outsystems.com/forge/component/917/dublin-template/).
 
 * **Widgets**/ [**Blocks**](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Reuse_UI/Create_and_Reuse_Screen_Blocks): Widgets or blocks are independent components that provide **additional and reusable features**, usually related to UI or events, for example, the [Cropper](https://www.outsystems.com/forge/component/1393/cropper-mobile/) widget. To become components, blocks need a set of definitions, such as parameters, and variables. See the complete [properties of a block](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Mobile_Interfaces/Navigating_in_the_Application/Block).
 
-* [**Libraries**](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Logic/Implementing_Logic/Mobile_Logic_Tools/JavaScript): A JavaScript library is a library of pre-written JavaScript that allows easier development. See as an example the [Google Maps](https://www.outsystems.com/forge/component/1396/google-maps-mobile/) library. These libraries are wrapped around blocks and actions that provide an **easy-to-interact interface**. See the complete [properties of JavaScript](https://success.outsystems.com/Documentation/10/Reference/OutSystems_Language/Logic/Implementing_Logic/Mobile_Logic_Tools/JavaScript).
+* [**Libraries**](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Logic/Implementing_Logic/Mobile_Logic_Tools/JavaScript): A JavaScript library is a library of pre-written JavaScript that allows easier development. See as an example the [Google Maps](https://www.outsystems.com/forge/component/1396/google-maps-mobile/) library. These libraries are wrapped around blocks and actions that provide an **easy-to-interact interface**. See the complete [properties of JavaScript](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Logic/Implementing_Logic/Mobile_Logic_Tools/JavaScript).
 
 * **Connectors**: Connectors allow **integrations** without the need to write custom code, significantly reducing time and effort and eliminating errors. Broadly speaking, connectors allow the integration with other applications, for example, [Facebook](https://www.outsystems.com/forge/component-details/609/Facebook+Connector/), or [Paypal](https://www.outsystems.com/forge/component-details/572/Paypal+connector/).
 
@@ -118,7 +118,7 @@ When designing the component's API, consider if it provides enough mechanisms fo
 
 ![image alt text](images/The-Complete-Guide-to-Creating-Components_5.png)
 
-### Using LifeCycle Events Correctly (Mobile Only)
+### Using LifeCycle Events Correctly (Mobile and Reactive Web Apps Only)
 
 It is very important to understand the lifecycle of screens and blocks while developing a component in order to be able to control its data and behavior. Either to define default values for variables, or delete data that becomes irrelevant. Having complete knowledge of the lifecycle behavior allows you to **predict issues** and **optimize performance**.
 
@@ -368,7 +368,7 @@ Your component can be downloaded as an Application (*.osp*) or as a Module/eSpac
 13. Enter the **Detailed Description** of your component. Make sure it fully describes your component's features and options. Consider following the best practices described [above](https://success.outsystems.com/Documentation/Best_Practices/The_Complete_Guide_to_Creating_Components#Names_and_Descriptions): your descriptions should be clear and explain use cases and behaviors.
  
 
-14. Click **Publis** and enjoy your success!
+14. Click **Publish** and enjoy your success!
 
 ### Keep it Relevant
 
