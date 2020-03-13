@@ -22,7 +22,7 @@ The OutSystems LifeTime includes a built-in mechanism that allows you to [contro
 
 ![](images/managing-app-lifecycle-portfolio-1.png)
 
-With [APIs](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_Deployment_API_v2), it is possible to automatically integrate the application creation step into your portfolio approval process. No matter if the process is done with an OutSystems app or a third-party tool. This reduces application sprawl by preventing new applications from being created without being associated with an approved business idea or need.
+With [APIs](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_API_v2), it is possible to automatically integrate the application creation step into your portfolio approval process. No matter if the process is done with an OutSystems app or a third-party tool. This reduces application sprawl by preventing new applications from being created without being associated with an approved business idea or need.
 
 ## Ensure Application Ownership { #ensure-app-ownership }
 
@@ -30,7 +30,7 @@ For organizations that follow Agile development practices, it is important to en
 
 OutSystems provides role-based permission configuration to define, not only who owns the application, but also who can develop, maintain and operate each application.
 
-With [user management APIs](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_Services_API) it is possible to automatically flag applications that have lost a team owner, or a team where no members are available to maintain the application. Based on this automated detection you can easily define next steps, for example, triggering communication to other internal teams, archiving or retiring the application. Check the [Application Portfolio Manager](https://www.outsystems.com/forge/component-overview/7870/application-portfolio-manager) forge component to learn how to do this.
+With [user management APIs](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_API_v2) it is possible to automatically flag applications that have lost a team owner, or a team where no members are available to maintain the application. Based on this automated detection you can easily define next steps, for example, triggering communication to other internal teams, archiving or retiring the application. Check the [Application Portfolio Manager](https://www.outsystems.com/forge/component-overview/7870/application-portfolio-manager) forge component to learn how to do this.
 
 ## Manage Unused Applications { #manage-unused-apps }
 
@@ -48,11 +48,11 @@ Service Center provides these capabilities, which are used by the [Application P
 
 ![](images/managing-app-lifecycle-portfolio-4.png)
 
-It is also possible to retire applications. Note this will permanently delete the application from the environment. If you want to recover the application later ensure that you [download](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_Deployment_API_v2#Applications_DownloadVersion) and store a backup before it is retired. 
+It is also possible to retire applications. Note this will permanently delete the application from the environment. If you want to recover the application later ensure that you [download](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_API_v2#operation--applications--ApplicationKey--versions--VersionKey--content--get) and store a backup before it is retired.
 
 ![](images/managing-app-lifecycle-portfolio-5.png)
 
-It’s possible to check when an application was last updated by the development team. This can be done directly, through the LifeTime management console, or automatically via [APIs](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_Deployment_API_v2#Applications_Get) by checking the creation date of deployed versions of your applications.
+It’s possible to check when an application was last updated by the development team. This can be done directly, through the LifeTime management console, or automatically via [APIs](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_API_v2#operation--applications--ApplicationKey--versions--VersionKey---get) by checking the creation date of deployed versions of your applications.
 
 ![](images/managing-app-lifecycle-portfolio-6.png)
 
