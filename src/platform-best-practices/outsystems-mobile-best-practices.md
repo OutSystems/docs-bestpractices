@@ -8,19 +8,13 @@ If you want to develop a mobile app that offers your users the best mobile exper
 
 Choose the best use cases for a great mobile experience. Start small and iterate. Use less and optimized content. Show what's more important first. Use common mobile patterns such as the ones provided by the [OutSystems UI](https://www.outsystems.com/outsystems-ui/) framework.
 
- 
-
 **Keep heavy logic on the server side**
 
 Keep client-side information as simple as possible. Execute complex data processing and calculations on the server side, using the minimum number of server requests as possible. Cache your results on the client side.
 
-** **
-
 **Choose OutSystems low-code over JavaScript**
 
-OutSystems automatically optimizes the code for the best runtime performance. Use JavaScript only if it cannot be done with the OutSystems low-code language or in advanced extensibility scenarios.
-
- 
+OutSystems automatically optimizes the code for the best runtime performance. Use JavaScript only if it cannot be done with the OutSystems low-code language or in advanced extensibility scenarios. 
 
 **Test your app in real world scenarios**
 
@@ -209,7 +203,7 @@ The most common components for implementing a mobile app are provided in [OutSys
 
 Keep in mind that OutSystems low-code is more performant but if you decide to use your own JavaScript, it's important that you read and follow the best practices in this section.
 
-**Use the OutSystems public ****[JavaScript AP**I](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/JavaScript_API)** and not internal APIs**
+**Use the OutSystems public [JavaScript API](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/JavaScript_API) and not internal APIs**
 
 Internal APIs are not supported and can change in any upgrade, thus breaking your JavaScript code.
 
@@ -221,7 +215,7 @@ When writing JavaScript, make sure you know the code you're implementing and how
 
 Follow the best practices for JavaScript development like the ones described in [W3Schools](https://www.w3schools.com/js/js_best_practices.asp) or these [JavaScript Coding Standards and Best Practices](https://github.com/stevekwan/best-practices/blob/master/javascript/best-practices.md).
 
-For example, use [performant JavaScript selectors](https://jsperf.com/selectors-performance-test/1) to obtain elements from the DOM, and avoid [properties and methods](https://gist.github.com/paulirish/5d52fb081b3570c81e3a) that trigger the browser to recalculate geometric information for the elements — known as [Layout or Reflow](https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing).
+For example, use performant [JavaScript selectors](https://www.w3schools.com/w3js/w3js_selectors.asp) to obtain elements from the DOM, and avoid [properties and methods](https://gist.github.com/paulirish/5d52fb081b3570c81e3a) that trigger the browser to recalculate geometric information for the elements — known as [Layout or Reflow](https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing).
 
 ![image alt text](images/OutSystems-Mobile-Best-Practices-8.png)
 
