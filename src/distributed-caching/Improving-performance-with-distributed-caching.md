@@ -114,7 +114,7 @@ In addition to the previous reasons it is important to understand when the Local
 
 ## Implementing access to a distributed cache
 
-You can use the **[dmCach**e](https://www.outsystems.com/forge/component/1253/dmCache/) Forge component to implement these caching strategies supporting different Distributed Cache technologies, namely AWS ElasticCache, Memcached, Redis and Couchbase.
+You can use the [dmCache](https://www.outsystems.com/forge/component/1253/dmCache/) Forge component to implement these caching strategies supporting different Distributed Cache technologies, namely AWS ElasticCache, Memcached, Redis and Couchbase.
 
 This module is an abstraction over the infrastructure and protocols used to implement the distributed cache providing a Site Property named **_CacheServer_**, that is a specific type of URL that specifies the distributed cache endpoint, type and protocol.
 
