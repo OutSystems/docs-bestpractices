@@ -7,7 +7,7 @@ summary: Here you can find all existing best practices on Application Architectu
 template('MindTouch/Controls/PageOverview');
 </pre>
 
-Here you can find all existing best practices on Application Architecture.
+
 
 <pre class="script">
 template('MindTouch/IDF3/Views/Guide');
