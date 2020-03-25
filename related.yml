@@ -1,19 +1,19 @@
 ﻿# Data
-- data/purge.md:
-    - data/archive.md
+- architecture/data/purge.md:
+    - architecture/data/archive.md
     - external:
         - "Delete Rules":
             https://success.outsystems.com/Documentation/11/Developing_an_Application/Use_Data/Data_Modeling/Entity_Relationships/Delete_Rules
         - "Database storage on OutSystems public cloud":
             https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Database_storage_on_OutSystems_public_cloud
 
-- data/archive.md:
+- architecture/data/archive.md:
     - external:
         - "Database storage on OutSystems public cloud":
             https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Database_storage_on_OutSystems_public_cloud
 
 - data/data-load.md:
-    - data/data-layer.md
+    - architecture/data/data-layer.md
     - external:
         - "Data Synchronization":
             https://www.outsystems.com/learn/lesson/787/data-synchronization/
@@ -27,7 +27,7 @@
             https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Mobile_Best_Practices
         - "Test Your Mobile App in the Device Using OutSystems Now":
             https://success.outsystems.com/Documentation/11/Delivering_Mobile_Apps/Test_Your_Mobile_App_in_the_Device_Using_OutSystems_Now
-- data/data-layer.md:
+- architecture/data/data-layer.md:
     - external:
         - "Generate and Publish Your Mobile App to the Mobile App Stores":
             https://success.outsystems.com/Documentation/11/Delivering_Mobile_Apps/Generate_and_Distribute_Your_Mobile_App/Generate_and_Publish_Your_Mobile_App_to_the_Mobile_App_Stores
@@ -40,10 +40,10 @@
         - "Test Your Mobile App in the Device Using OutSystems Now":
             https://success.outsystems.com/Documentation/11/Delivering_Mobile_Apps/Test_Your_Mobile_App_in_the_Device_Using_OutSystems_Now
 
-- data/data-rendering.md:
-    - data/data-load.md
+- development/data/data-rendering.md:
+    - development/data/data-load.md
 
-- data/hot-cache/hot-cache.md:
+- performance/data/hot-cache/hot-cache.md:
     - external:
         - "Improving performance with distributed caching":
             https://success.outsystems.com/Documentation/Best_Practices/Performance_Best_Practices/Improving_performance_with_distributed_caching
@@ -51,13 +51,13 @@
             https://en.wikipedia.org/wiki/Cache_(computing)
         - "Integration Patterns for Core Services Abstraction":
             https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/05_Integration_Patterns_for_Core_Services_Abstraction
-- front-end/front-end-best-practices.md:
+- development/front-end/front-end-best-practices.md:
     - external:
         - "How to Build a Front-End Architecture in OutSystems":
             https://success.outsystems.com/Documentation/Development_FAQs/How_to_Build_a_Front-End_Architecture_in_OutSystems
         - "Design UI":
             https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI
-- front-end/front-end-journey.md:
+- development/front-end/front-end-journey.md:
     - external:
         - "How to Build a Front-End Architecture in OutSystems":
             https://success.outsystems.com/Documentation/Development_FAQs/How_to_Build_a_Front-End_Architecture_in_OutSystems
@@ -67,7 +67,7 @@
             https://www.outsystems.com/learn/lesson/1704/creating-style-guides-in-the-blink-of-an-eye-with-outsystems/
         - "Beyond Spritely Images: Using Icon Fonts in OutSystems":
             https://www.outsystems.com/blog/posts/beyond-spritely-images-using-icon-fonts-in-outsystems/
-- mobile/complex-sync.md:
+- development/mobile/complex-sync.md:
     - external:
         - "Offline framework":
             https://success.outsystems.com/Documentation/11/Developing_an_Application/Use_Data/Offline

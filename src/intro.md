@@ -7,5 +7,5 @@ template('MindTouch/Controls/PageOverview');
 Find below some valuable resources to take your OutSystems expertise to the next level.
 
 <pre class="script">
-template('MindTouch/IDF3/Views/Guide');
+template('MindTouch/IDF3/Views/Category');
 </pre>
