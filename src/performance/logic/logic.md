@@ -94,11 +94,11 @@ Each web request loads the current session context. If the session variables are
 
 If you have a sessionless service then removing the session altogether (setting session as InPRoc) is a good way of increasing the performance.
 
-## Avoid using isolated simple queries
+## Avoid using isolated Aggregates
 
 ### Description
 
-Never create an action to execute a simple query. When the query is isolated in an action by itself the platform can't optimize the number of fields to be retrieved.
+Never create an action to execute an Aggregate. When the Aggregate is isolated in an action by itself the platform can't optimize the number of fields to be retrieved.
 
 ### Solution
 
@@ -110,7 +110,7 @@ This is true even if the action doesn’t read all the fields of the entity/reco
 
 ### Remarks
 
-Please note that this invalidates code reusability - so, in some cases (especially when the output is not large) it is better to have isolated queries instead of a lot of similar ones.
+Please note that this invalidates code reusability - so, in some cases (especially when the output is not large) it is better to have isolated Aggregates instead of a lot of similar ones.
 
 ## Avoid using queries inside ‘If’ branches in preparation
 

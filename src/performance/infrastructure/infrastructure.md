@@ -12,7 +12,7 @@ Database queries over indexed attributes are still slow and there's evidence tha
 
 ### Solution
 
-Apply regular optimizations to reorganize or rebuild existing indexes; also update the database statistics. The will defragment the indexes and provides the database engine the information it needs to use indexes instead of doing full table scans. Depending on the level of fragmentation over time, you may have these plans scheduled to run one or more times a week.
+Apply regular optimizations to reorganize or rebuild existing indexes; also update the database statistics. This will defragment the indexes and provides the database engine the information it needs to use indexes instead of doing full table scans. Depending on the level of fragmentation over time, you may have these plans scheduled to run one or more times a week.
 
 ### Importance
 
@@ -38,7 +38,7 @@ Frequent recycling of worker process(es) imply that applications are being unloa
 
 ### Remarks
 
-Apply the recommended tuning setting to decrease the number of worker process recycles, unless memory limits have been reach.
+Apply the recommended tuning setting to decrease the number of worker process recycles, unless memory limits have been reached.
 
 ## Backup database transaction logs often
 
@@ -120,7 +120,7 @@ If available and for high load environments, use 64-bit architecture servers and
 
 ### Solution
 
-64-bit architectures allow managing the server's memory resources more efficiency, overcoming the short limits of memory usage of the 32-bit architecture environments.
+64-bit architectures allow managing the server's memory resources more efficiently, overcoming the short limits of memory usage of the 32-bit architecture environments.
 
 ### Importance 
 
