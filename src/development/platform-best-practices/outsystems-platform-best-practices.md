@@ -109,7 +109,7 @@ Also:
 
 ## Teamwork
 
-* Know the recommended project team for your project (see [Staffing OutSystems Projects](http://www.outsystems.com/NetworkDocuments/DocumentDetail.aspx?DocumentId=181&VirtualDirectoryId=25))
+* Know the recommended project team for your project (see [Staffing OutSystems Projects](https://www.outsystems.com/home/document-download/181/25/0/0))
 * Use a single user for each team member
 * Everyone in the team should use the same Service Studio version
 * Use LifeTime to perform application versioning
