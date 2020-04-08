@@ -14,7 +14,7 @@ Keep in mind that integrity validations, self-healing capabilities, and impact a
 
 The following diagram depicts typical testing activities that can take place during the OutSystems software delivery lifecycle:
 
-![Typical testing activities during OutSystem app delivery cycle](images/guidelines-test-lifecycle-diag.png?width=900)
+![Typical testing activities during OutSystems app delivery cycle](images/guidelines-test-lifecycle-diag.png?width=900)
 
 Component tests validate the behavior of single units of code. These tests correspond to unit tests in traditional high-code technologies. In OutSystems, these map to Action elements that implement business logic. As part of sprint development activities, developers should automate or manually deliver these tests in the DEV environment. Automated component tests should also run in the continuous integration (CI) environment, as part of the CI flow. Component tests can adopt one of two approaches:
 
