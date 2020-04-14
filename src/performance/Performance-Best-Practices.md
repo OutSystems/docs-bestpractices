@@ -2,7 +2,7 @@
 summary: Here you can find all existing best practices on Application Performance.
 ---
 
-# Performance
+# Performance and Monitoring
 
 These Performance best practices are the result of multi-role perspectives on software development. There is no ranking for better practices. Some are applied more often and others produce awesome boosts. But what really matters is to apply these practices where they make sense and where the users can benefit the most.
 
