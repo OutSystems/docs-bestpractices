@@ -70,7 +70,7 @@ Solutions aggregate sets of modules in the environment. If you have created Solu
 
 ![](images/servicecenter-solution-version-delete.png?width=500)
 
-Once you delete the Solution version, you can then delete the module version associated with it, as described in the [Module versions](#Module_Versions) section.
+Once you delete the Solution version, you can then delete the module version associated with it, as described in the [Module versions](#module-versions) section.
 
 ## Application Tagged Versions
 
@@ -79,7 +79,7 @@ Since LifeTime Management Console Release Feb.2019, [LifeTime API v2](https://su
 
 ` DELETE /lifetimeapi/rest/v2/applications/{ApplicationKey}/versions/{VersionKey}/ `
 
-Once you delete the tagged application version, you can then delete the module version associated with it, as described in the [Module versions](#Module_Versions) section.
+Once you delete the tagged application version, you can then delete the module version associated with it, as described in the [Module versions](#module-versions) section.
 
 
 ## Temporary Test Modules
