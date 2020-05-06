@@ -116,7 +116,7 @@ Application data is basically all the information that is stored in the database
 <div class="subtopic">Test Data</div>
 
 Especially in the development environment is common to have test/dummy data. This is the result of the developers’ tests during the development of different features. Although this data is not critical for the application to run, it’s common that this data will grow and sometimes may even have some inconsistencies, being useful to clean it from time to time. 
-With OutSystems, you don’t need to have access to the database to perform these cleaning operations. Check [How to delete data from Entities](https://success.outsystems.com/Documentation/Development_FAQs/How_to_delete_data_from_Entities) to implement your own delete data logic.
+With OutSystems, you don’t need to have access to the database to perform these cleaning operations. Check [How to delete data from Entities](https://success.outsystems.com/Documentation/How-to_Guides/Data/How_to_delete_data_from_Entities) to implement your own delete data logic.
 
 <div class="subtopic">Entities and Attributes</div>
 
