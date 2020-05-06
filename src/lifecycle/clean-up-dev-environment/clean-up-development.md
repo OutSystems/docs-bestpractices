@@ -30,7 +30,7 @@ Manage module versions is one of the most relevant actions as it has an impact o
 Each time you publish a module, a new version is created in your environment. Versions are especially useful if you need to rollback to a previous stage of your development.
 However, as the application continues to grow, if you keep a high publish rate, you’ll soon end up having hundreds or thousands of versions, and you may start experiencing some slowness on your daily development tasks.
 
-That being said is important in Development environments, to regularly clean up old module versions that you don’t need anymore. You can do delete old module versions directly via Service Center or using the DbCleaner API, that provides functionality for freeing up database space.
+That being said is important in Development environments, to regularly clean up old module versions that you don’t need anymore. You can  delete old module versions directly via Service Center or using the DbCleaner API, that provides functionality for freeing up database space.
 
 <div class="subtopic">Delete Old Module Versions Using Service Center</div>
 
