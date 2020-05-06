@@ -161,7 +161,7 @@ While delete logs is not a supported action, from OutSystems 11 you can [store l
 
 This article guides you across the multiple components that consume space on the database of the Development environment, explaining how you can clean unnecessary data, without the need to directly access the database itself.
 
-While these best practices can be applied ad hoc, without limitations, you should also have in mind the ++++ of an on-premises installation type and that this shouldn't be just a one-time concern.
+While these best practices can be applied ad hoc, without limitations, you should also have in mind the maintenance plans of an on-premises installation type and that this shouldn't be just a one-time concern.
 
 ### Cloud vs On-Premises
 
