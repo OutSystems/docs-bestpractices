@@ -47,6 +47,7 @@
 - href: security/intro.md
 - topics:
     - href: security/injection-XSS/Injection-and-Cross-Site-Script-(XSS).md
+    - href: security/ext-rd-reactive-security-best-practices/ext-rd-reactive-security-best-practices.md
 
 # OutSystems Automated Testing Best Practices
 - href: automated-testing/testing-guidelines.md
