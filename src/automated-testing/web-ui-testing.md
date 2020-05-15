@@ -40,7 +40,7 @@ Just as you have web blocks to build your pages in OutSystems, you'll need your 
 
 The page object model pattern also focuses on page flows and verifications. Once you have your page objects, you need to think about what each page's interactions: Do you have usage patterns, such as a search pattern or an auto-complete pattern? Do they repeat? Based on the answers to those questions, build reusable test blocks according to your needs.
 
-Following this approach helps you build a framework that will enable you to write your tests in a much easier and readable way. Also, if you have multiple tests that use the same widget, and that widget has changes in the UI, all you need to do is update your page object. Additionally, if there's some behaviour pattern change, just update the pattern — all your tests will be updated.
+Following this approach helps you build a framework that will enable you to write your tests in a much easier and readable way. Also, if you have multiple tests that use the same widget, and that widget has changes in the UI, all you need to do is update your page object. Additionally, if there's some behavior pattern change, just update the pattern — all your tests will be updated.
 
 The Page Object pattern also states operations and flows in the UI should be separated from verification because this separation keeps your test code cleaner and easier to maintain and scale.
 
@@ -60,7 +60,7 @@ Many tools already have multiple actions built in for simple page elements such 
 
 Imagine a scenario where you want to select an element from an autocomplete widget. You would have to click the widget, wait for the dropdown, do your search, and then send “Enter.” Instead of building your test with all these individual interactions, you can build a reusable interaction test object that does all these steps for the value given in just one test step.
 
-Those encapsulated complex interactions allow you to modify them once after a change in behaviour, instead of forcing you to review all test cases where you were using it.
+Those encapsulated complex interactions allow you to modify them once after a change in behavior, instead of forcing you to review all test cases where you were using it.
 
 ### Assertions
 

@@ -103,7 +103,7 @@ This module, e.g. “Archive Search”, implements the UI where the end user can
 * Restore archived data back to the main catalog.
 * Search data directly in the archive Entities.
 
-Due to the volume of data, the archive catalog is less performant than the main catalog. To manage the end user expectations in terms of response time, implement a toggle that the end user must explicitly set whenever he/she wants to interact with the archived data.
+Due to the volume of data, the archive catalog is less performant than the main catalog. To manage the end user expectations in terms of response time, implement a toggle that the end user must explicitly set before interacting with the archived data.
 
 ![](images/archive-3.png?width=600)
  
