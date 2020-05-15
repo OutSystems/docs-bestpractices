@@ -7,11 +7,19 @@ tags:
 
 ## What is Data Archiving
 
-Data archiving is the process of identifying and moving data from the primary storage into a secondary storage, for long term storage. Archived data consists of data that is no longer relevant for daily operations but that is still important to the organization and may be needed for future reference, as well as data that must be retained for regulatory compliance.
+Data archiving is the process of identifying and moving data from the primary storage into a secondary storage, for long term storage. Archived data consists of data that's is no longer relevant for daily operations but that's still important to the organization and may be needed for future reference, or data that must be retained for regulatory compliance.
 
 Data archiving is an important practice when dealing with a large volume of data, to help mitigate eventual performance impacts.
 
 This article uses the terms **main catalog** for the primary storage and **archive catalog** for the secondary storage.
+
+### Archive location
+
+This article focuses on how you can achieve an archiving strategy using the OutSystems database. For [on-premises installations](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/Possible_setups_for_an_OutSystems_infrastructure#On-premises_infrastructure), you should use the [Multiple Database Catalogs and Schemas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Multiple_Database_Catalogs_and_Schemas) feature to configure the archiving mechanism in a dedicated database catalog.
+
+For [Outsystems Cloud](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/Possible_setups_for_an_OutSystems_infrastructure#Cloud_infrastructure), you can use new entities in the OutSystems Database Catalog and schema, or use an external database, using APIs to archive the data.
+
+In case you wish to archive data externally to OutSystems, there are multiple solutions in the market, from data lakes to cloud storage services. OutSystems allows you to easily integrate with your existing systems, depending on your enterprise architecture.
 
 ## Benefits
 
@@ -25,7 +33,7 @@ In this section, you can find two examples of data archiving implementation that
 
 ### Preparing your data
 
-To ensure the data model contains the information needed to implement the archive algorithm, it is recommended to add **control columns** to your entities, to allow enforcing the archive condition(s).
+To ensure the data model contains the information needed to implement the archive algorithm, it's recommended to add **control columns** to your entities, to allow enforcing the archive condition(s).
 
 For example, the condition may be to archive all records whose update timestamps exceed the ones defined in a threshold, in days (specified using a site property) or to archive all records based on a boolean control column.
 
@@ -45,12 +53,11 @@ Based on the need to have the archived records readily available or not, there a
 
 * **Light archiving:** Archived data can be searched and displayed along with non-archived data.
 
-* **Historical archiving:** Archived data is not accessible and serves for auditing or historical purposes only.
+* **Historical archiving:** Archived data isn't accessible and serves for auditing or historical purposes only.
 
 #### Light archiving
 
-This approach should be considered when archived data must be **searchable** in the archive
-catalog, and eventually **recovered into the main catalog**.
+You should consider this approach when the archived data must be **searchable** in the archive catalog, and eventually **recovered into the main catalog**.
 
 This section details a light archiving architecture and mechanism that minimizes the impact on the main applications and processes, and is easy to implement and maintain in OutSystems.
 
@@ -82,7 +89,7 @@ To minimize impacts, set the schemas on different tablespaces and discs ([Multip
 
 **Step 2. Create a new module that implements the archiving process to store the main data into the archive catalog**
 
-This module, e.g. “Archiving Engine”, implements all the archiving and purging logic, such as:
+This module (for example, “Archiving Engine”) implements all the archiving and purging logic, such as:
 
 * The archiving criteria business rules.
 
@@ -98,7 +105,7 @@ You can use Site Properties for simple configuration, such as the archiving freq
 
 **3. Create a new module that exposes search and restore functionality to end users**
 
-This module, e.g. “Archive Search”, implements the UI where the end user can interact with the archived data:
+This module (for example, “Archive Search”) implements the UI where the end user can interact with the archived data:
 
 * Restore archived data back to the main catalog.
 * Search data directly in the archive Entities.
@@ -135,13 +142,13 @@ Make sure the Timer:
 
 <div class="info" markdown="1">
 
-Optimization tip: On start, switch off the indexation on the archive and rebuild the indexes after. This optimization is not out-of-the-box in OutSystems and may require your DBA support.
+Optimization tip: On start, switch off the indexation on the archive and rebuild the indexes after. This optimization isn't out-of-the-box in OutSystems and may require your DBA support.
 
 </div>
 
 **Step 5. Purge the archived data from the main catalog**
 
-Delete the data that is already archived from the main catalog. Use an independent log execution Timer, with its own schedule and running in off-peak hours.
+Delete the data that's already archived from the main catalog. Use an independent log execution Timer, with its own schedule and running in off-peak hours.
 
 ![](images/archive-5.png?width=600)
 
@@ -149,13 +156,13 @@ For further information, check the [best practices for Data Purging](purge.md).
 
 #### Historical archiving
 
-This approach should be considered when data is archived due to historical or legal requirements and data is only needed on rare occasions.
+You should consider this approach when the data is archived due to historical or legal requirements and data is only needed on rare occasions.
 
 **Step 1. Create a centralized factory component to serve as an archive for the multiple OutSystems applications**
 
-This component, e.g “Archive_Lib”, will be used as a centralized, general-purpose archiving catalog repository across the multiples OutSystems applications in your factory.
+This component (for example, “Archive_Lib”) is used as a centralized, general-purpose archiving catalog repository across the multiples OutSystems applications in your factory.
 
-The archived records will be stored in JSON format, along with metadata attributes (tags), to allow for searching and retrieval in a set of self-contained screens. Below is a proposed specification for this component:
+The archived records are stored in JSON format, along with metadata attributes (tags), to allow for searching and retrieval in a set of self-contained screens. Below is a proposed specification for this component:
 
 ![](images/archive-6.png?width=400)
 
@@ -163,21 +170,15 @@ This solution avoids having to design and maintain an archive repository per Ent
 
 **Step 2. In each OutSystems application, implement the archiving process using the central archive**
 
-Each business application will be responsible for moving its records into the central archive. The archiving criteria can vary from application to application (inactive records, last update timestamp, creation date, etc).
+Each business application is responsible for moving its records into the central archive. The archiving criteria can vary from application to application (inactive records, last update timestamp, creation date, etc).
 
 Note that whenever a record is added to the archive, it must be purged from the original location in the same transaction scope, to prevent data loss.
-
-### Archive location
-
-This article focuses on how you can achieve an archiving strategy using the OutSystems database. For [on-premises installations](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/Possible_setups_for_an_OutSystems_infrastructure#On-premises_infrastructure), you should use the [Multiple Database Catalogs and Schemas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Multiple_Database_Catalogs_and_Schemas) feature to configure the archiving mechanism in a dedicated database catalog.
-
-In case you wish to archive data externally to OutSystems, there are multiple solutions in the market, from data lakes to cloud storage services. OutSystems allows you to easily integrate with your existing systems, depending on your enterprise architecture.
 
 ## Common pitfall scenarios
 
 ### No archive strategy
 
-A common scenario is lacking a data archiving strategy because the high growth of application data was not correctly estimated. This situation may lead to application performance deterioration over time.
+A common scenario is lacking a data archiving strategy because the high growth of application data wasn't correctly estimated. This situation may lead to application performance deterioration over time.
 
 Forecast the growth of your data during the design phase, based on business knowledge and existing metrics. If you don’t have enough information, take a conservative approach and consider the high growth of the data.
 
@@ -193,7 +194,7 @@ Make sure to discuss the business requirements and determine the more effective 
 
 ### Lack of indexes on the archive catalog
 
-The archive catalog contains a higher volume of information and is consulted less often than the main catalog. It’s commonly accepted by end users that queries over the archive will take longer to retrieve information, so the development team tends to not optimize the archive Entities.
+The archive catalog contains a higher volume of information and is consulted less often than the main catalog. It’s commonly accepted by end users that queries over the archive take longer to retrieve information, so the development team tends to not optimize the archive Entities.
 
 However, lack of optimization, such as proper indexes, may cause the end user experience to deteriorate over time and eventually renders the end user unable to retrieve any information due to timeouts.
 
