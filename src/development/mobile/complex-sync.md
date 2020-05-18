@@ -9,7 +9,7 @@ This article describes Best Practices to deal with more demanding synchronizatio
 
 When syncing information from the server to the device it’s important to only synchronize relevant data. On each use case, consider which records (rows) and attributes (columns) should be synchronized, and when to sync.
 
-![](images/mobile-complex-synchronization.png?width=600)
+![](images/mobile-complex-synchronization.png?width=400)
 
 **Sync only when required**
 
