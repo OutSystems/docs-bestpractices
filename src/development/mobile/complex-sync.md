@@ -30,11 +30,11 @@ When syncing information from the server to the device it’s important to only 
 * Use control timestamps
 * Use Entity Bulk Operations (built-in)
 
-## Top Principles
+## Top principles
 
 To illustrate the **top principles** let’s consider a mobile app designed to support **appointment scheduling** on a hospital backoffice.
 
-### 1. Design a lightweight local database
+### Design a lightweight local database
     
 ![Lightweight local database](images/lightweight-data-model.png)
 
@@ -44,7 +44,7 @@ To illustrate the **top principles** let’s consider a mobile app designed to s
 
 * For the **LocalDoctor** table we add all necessary information for the use case even if it includes duplicating information that already exists in the local storage
 
-### 2. Control amount of synchronized data
+### Control amount of synchronized data
 
 **SyncUnit**
 
@@ -67,7 +67,7 @@ Create a local entity to keep track of the last synchronization moment per SyncU
 
 ![](images/sync-properties-entity.png)
 
-### 3. Synchronization Moments
+### Synchronization moments
 
 * Define the sync moments of the application and use SyncUnits. SyncUnit defines the type of data to synchronize; **it can be all, a single entity, or a set of entities**. It helps if you define a SyncUnit as an instant or moment of the app.
 
@@ -98,7 +98,7 @@ SyncUnit = "Online"
 
     ![](images/sync-unit-online.png)
 
-### 4. Minimize the number of server requests
+### Minimize the number of server requests
 
 * **Avoid multiple server requests on client actions**
 
@@ -123,7 +123,7 @@ SyncUnit = "Online"
 * Error tolerant synchronization (network, memory, device crash)
 * Better usage of local storage space
 
-## Scenarios to Avoid
+## Scenarios to avoid
 
 * Long synchronous synchronizations
 * Delete all / Create all scenarios where deltas are not used
