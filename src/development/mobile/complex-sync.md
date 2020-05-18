@@ -7,7 +7,7 @@ tags: best-practices, mobile, mobile-sync
 
 This article describes Best Practices to deal with more demanding synchronization scenarios and explains how to optimize resources.
 
-When syncing information from the server to the device it’s important to only synchronize relevant data. On each use case, consider which records (rows) and attributes (columns) should be synchronized, and when to sync.
+When syncing information from the server to the device it's important to only synchronize relevant data. On each use case, consider which records (rows) and attributes (columns) should be synchronized, and when to sync.
 
 ![](images/mobile-complex-synchronization.png?width=400)
 
@@ -20,7 +20,7 @@ When syncing information from the server to the device it’s important to only 
 **Sync only what is required**
 
 * Both in terms of records (rows) and attributes (columns)
-* On login sync accounts’ summary
+* On login sync accounts' summary
 * On account selection, sync its details
 
 **Ensure sync granularity**
@@ -32,13 +32,13 @@ When syncing information from the server to the device it’s important to only 
 
 ## Top principles
 
-To illustrate the **top principles** let’s consider a mobile app designed to support **appointment scheduling** on a hospital backoffice.
+To illustrate the **top principles** let's consider a mobile app designed to support **appointment scheduling** on a hospital backoffice.
 
 ### Design a lightweight local database
     
 ![Lightweight local database](images/lightweight-data-model.png)
 
-* Since the main uses cases are **presenting appointments information** and provide **available doctor’s data** we should denormalize the server side relational data model.
+* Since the main uses cases are **presenting appointments information** and provide **available doctor's data** we should denormalize the server side relational data model.
 
 * On the **LocalAppointment** table we should include all necessary columns to support the use case without the need for extra table joins
 
@@ -50,16 +50,7 @@ To illustrate the **top principles** let’s consider a mobile app designed to s
 
 The text input of OfflineDataSync action is used to define the several flows of synchronization. By using this input we can fine tune the amount of data to sync on each flow or moment of our application.
 
-<table markdown="1" class="os-invisible-table">
-<tr>
-<td>
-![](images/sync-unit-input.png)
-</td>
-<td>
 ![](images/sync-unit-logic.png)
-</td>
-</tr>
-</table>
 
 **Local SyncProperties per SyncUnit**
 
@@ -106,9 +97,9 @@ SyncUnit = "Online"
 
 * **Synchronization process with only one server request**
 
-    * For each branch of synchronization call, there’s just one server action to reduce the server requests and improve performance.
+    * For each branch of synchronization call, there's just one server action to reduce the server requests and improve performance.
 
-* **Huge Amount of Data to Synchronize**
+* **Huge amount of data to synchronize**
 
     * **Device performance issues** — Different devices have different processing capabilities. Find an optimal value for a set of records to bulk create on the local DB.
 
