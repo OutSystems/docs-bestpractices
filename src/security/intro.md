@@ -1,5 +1,6 @@
 ---
 summary: Here you can find all existing best practices on Application Security.
+en_title: Security
 ---
 
 # Security

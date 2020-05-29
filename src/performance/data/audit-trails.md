@@ -1,6 +1,7 @@
 ---
 summary: Learn how to create an audit trail service in OutSystems, to track chronologically any security-relevant evidence of activities (automatic or human) that affected at any time a specific operation, procedure, or event.
 tags: OutSystems_Audit; OutSystems_AuditTrails; OutSystems_Audit-Trails
+en_title: Audit Trail
 ---
 
 # Audit Trail

@@ -1,3 +1,7 @@
+---
+en_title: Building Dynamic SQL Statements the Right Way
+---
+
 # Building Dynamic SQL Statements the Right Way
 
 The following examples of implementing common use cases of dynamic SQL statements in OutSystems can help you prevent SQL injection vulnerabilities.

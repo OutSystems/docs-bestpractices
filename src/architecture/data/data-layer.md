@@ -1,6 +1,7 @@
 ---
 summary: Learn about the best practices for storing data in the device’s local storage in mobile applications.
 tags: OutSystems_Mobile; OutSystems_Mobile_Data_Layer; Data_Layer
+en_title: Mobile Data Layer
 ---
 
 # Mobile Data Layer

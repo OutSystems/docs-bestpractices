@@ -1,3 +1,7 @@
+---
+en_title: Notation Reference for BPMN Practitioners
+---
+
 # Notation Reference for BPMN Practitioners
 
 OutSystems allows designing and executing business processes through the Business Process Technology Add-on. This technical note describes the notation used for Process Modeling targeted at practitioners currently modeling processes using BPMN.

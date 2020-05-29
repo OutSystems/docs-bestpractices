@@ -1,6 +1,7 @@
 ---
 summary: Learn the best practices for data archiving.
 tags: 
+en_title: Data Archiving
 ---
 
 # Data Archiving

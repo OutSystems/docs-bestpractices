@@ -1,6 +1,7 @@
 ---
 tags: architecture
 summary: Learn how to architect a product that is meant to be customized in different installations
+en_title: How to Create Customized Versions of a Base Application
 ---
 
 # How to Create Customized Versions of a Base Application

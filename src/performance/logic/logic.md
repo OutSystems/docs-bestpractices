@@ -1,3 +1,7 @@
+---
+en_title: Performance Best Practices - Logic
+---
+
 # Performance Best Practices - Logic
 
 This topic is a very sensitive one since it really depends on the ability of the developer to maintain a high standard of coding that always takes performance into consideration. Some tasks must be used as a rule of thumb (they apply to all kinds of applications).

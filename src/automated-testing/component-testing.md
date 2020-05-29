@@ -1,3 +1,7 @@
+---
+en_title: Component Testing
+---
+
 # Component Testing
 
 For component testing, we recommend using the [BDDFramework](https://www.outsystems.com/forge/component-overview/1201/bddframework), which is available on OutSystems Forge. This framework provides a set of web blocks and actions that enable the creation of tests in the Gherkin **Given-When-Then syntax**. Tests are built in a UI screen where the structure of the test is defined by the web blocks provided by the framework, and its logic is implemented through screen actions.

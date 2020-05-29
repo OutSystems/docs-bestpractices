@@ -1,3 +1,7 @@
+---
+en_title: Customizing OutSystems Platform Pages for Unhandled Errors
+---
+
 # Customizing OutSystems Platform Pages for Unhandled Errors
 
 OutSystems handles unforeseen or unhandled errors that might occur in applications and displays proper feedback pages to end users. In this article it is described how you can customize these pages and make them fit your application design.

@@ -1,3 +1,7 @@
+---
+en_title: Web UI Testing
+---
+
 # Web UI Testing
 
 There are three major techniques for UI testing: **scripted testing**, **exploratory testing**, and **user experience testing**.

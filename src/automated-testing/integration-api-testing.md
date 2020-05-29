@@ -1,3 +1,7 @@
+---
+en_title: Integration/API Testing
+---
+
 # Integration/API Testing
 
 Integration/API testing is often a good target for automation. There's no user interface to perform manual tests, and testers often need to invest a lot of time setting up each individual test, which leaves small room for exploratory testing. Integration/API tests can include both integration with external systems and integration with loosely coupled services exposed by other OutSystems applications. Here are recommended practices on how to build integration tests with OutSystems.

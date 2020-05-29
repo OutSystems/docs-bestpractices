@@ -1,3 +1,7 @@
+---
+en_title: Improving Performance With Distributed Caching
+---
+
 # Improving Performance With Distributed Caching
 
 ## What is Distributed Caching

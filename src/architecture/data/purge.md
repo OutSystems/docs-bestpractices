@@ -1,6 +1,7 @@
 ---
 summary: Learn the best practices for data purging.
 tags: 
+en_title: Data Purging
 ---
 
 # Data Purging

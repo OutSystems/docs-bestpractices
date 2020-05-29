@@ -1,3 +1,7 @@
+---
+en_title: Best Practices
+---
+
 # Best Practices
 
 <pre class="script">

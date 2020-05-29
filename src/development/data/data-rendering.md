@@ -1,6 +1,7 @@
 ---
 summary: Learn about the best practices for rendering data on mobile apps, to avoid bad user experiences like image flickering or long loading times.
 tags: OutSystems_Mobile; OutSystems_Mobile_Data_Rendering; Data_Rendering
+en_title: Mobile Data Rendering
 ---
 
 # Mobile Data Rendering

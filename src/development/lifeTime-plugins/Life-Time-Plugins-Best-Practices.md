@@ -1,3 +1,7 @@
+---
+en_title: LifeTime Plugins Best Practices
+---
+
 # LifeTime Plugins Best Practices
 
 This article is a guide for the end-to-end lifecycle process of [LifeTime plugins](https://success.outsystems.com/Documentation/How-to_Guides/How_to_create_a_LifeTime_Plugin), from the setup phase to the plugin deployment to production.

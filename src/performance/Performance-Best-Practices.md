@@ -1,5 +1,6 @@
 ---
 summary: Here you can find all existing best practices on Application Performance.
+en_title: Performance and Monitoring
 ---
 
 # Performance and Monitoring

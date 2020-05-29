@@ -1,3 +1,7 @@
+---
+en_title: Performance Best Practices - References
+---
+
 # Performance Best Practices - References
 
 It’s all about software architecture. Usually, opting for the quickest solution produces severe performance problems. Refactoring later on may be a painful and expensive proposition.

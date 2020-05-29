@@ -1,5 +1,6 @@
 ---
 summary: For customers with large application portfolios, OutSystems highly recommends automating key portfolio management activities.
+en_title: Managing the Application Lifecycle of Your Portfolio
 ---
 
 # Managing the Application Lifecycle of Your Portfolio

@@ -1,6 +1,7 @@
 ---
 summary: Learn how to optimize data for your use cases, pre-digesting for hot business processes.
 tags: architecture; hot-cache 
+en_title: Optimize Data For Your Use Cases Using Hot Cache
 ---
 
 # Optimize Data For Your Use Cases Using Hot Cache

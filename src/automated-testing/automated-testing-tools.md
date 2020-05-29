@@ -1,3 +1,7 @@
+---
+en_title: Automated Testing Tools
+---
+
 # Automated Testing Tools
 
 ## Choosing Your Testing Tool

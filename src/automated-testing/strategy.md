@@ -1,3 +1,7 @@
+---
+en_title: Automated Testing Strategy
+---
+
 # Automated Testing Strategy
 
 There is a big difference between an application that was built with testability in mind, and an existing application, sometimes even legacy, that was produced with none of these concerns. A good design for testability is crucial for a sound testing strategy, and achieving it requires a continuous effort from all team members throughout the application lifecycle.

@@ -1,3 +1,7 @@
+---
+en_title: Performance Top 10 Rules
+---
+
 # Performance Top 10 Rules
 
 Good applications have at least one thing in common – they are really fast. Beyond built-in OutSystems Platform optimizations, keep these best practices in mind. 

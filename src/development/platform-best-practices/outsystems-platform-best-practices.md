@@ -1,6 +1,7 @@
 ---
 summary: These best practices and conventions are important recommendations for you to apply when developing using OutSystems Platform.
 tags: support-Application _Lifecycle; support-application_development; support-Application_Troubleshooting; support-Cloud_Platform; support-development; support-Front_end_Development; support-Infrastuture_Architecture; support-Installation_Configuration; support-monitoring; support-Security; support-webapps
+en_title: OutSystems Platform Best Practices
 ---
 
 # OutSystems Platform Best Practices

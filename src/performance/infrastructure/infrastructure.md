@@ -1,3 +1,7 @@
+---
+en_title: Performance Best Practices - Infrastructure
+---
+
 # Performance Best Practices - Infrastructure
 
 Having applications designed to perform fast, running slower than a crawl due to bad configuration or crappy/undersized hardware, is absolutely frustrating for any software developer.
