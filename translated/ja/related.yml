@@ -1,0 +1,36 @@
+﻿# Data
+- architecture/data/purge.md:
+    - architecture/data/archive.md
+    - external:
+        - "Delete Rules":
+            https://success.outsystems.com/Documentation/11/Developing_an_Application/Use_Data/Data_Modeling/Entity_Relationships/Delete_Rules
+        - "Database storage on OutSystems public cloud":
+            https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Database_storage_on_OutSystems_public_cloud
+- architecture/data/archive.md:
+    - external:
+        - "Database storage on OutSystems public cloud":
+            https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Database_storage_on_OutSystems_public_cloud
+- performance/data/hot-cache.md:
+    - external:
+        - "Improving performance with distributed caching":
+            https://success.outsystems.com/Documentation/Best_Practices/Performance_Best_Practices/Improving_performance_with_distributed_caching
+        - "Cache by Wikipedia":
+            https://en.wikipedia.org/wiki/Cache_(computing)
+        - "Integration Patterns for Core Services Abstraction":
+            https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/05_Integration_Patterns_for_Core_Services_Abstraction
+- development/front-end/front-end-best-practices.md:
+    - external:
+        - "How to Build a Front-End Architecture in OutSystems":
+            https://success.outsystems.com/Documentation/Development_FAQs/How_to_Build_a_Front-End_Architecture_in_OutSystems
+        - "Design UI":
+            https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI
+- development/front-end/front-end-journey.md:
+    - external:
+        - "How to Build a Front-End Architecture in OutSystems":
+            https://success.outsystems.com/Documentation/Development_FAQs/How_to_Build_a_Front-End_Architecture_in_OutSystems
+        - "OutSystems UI":
+            https://www.outsystems.com/outsystems-ui
+        - "Creating Style Guides in the Blink of an Eye With OutSystems":
+            https://www.outsystems.com/learn/lesson/1704/creating-style-guides-in-the-blink-of-an-eye-with-outsystems/
+        - "Beyond Spritely Images: Using Icon Fonts in OutSystems":
+            https://www.outsystems.com/blog/posts/beyond-spritely-images-using-icon-fonts-in-outsystems/
