@@ -1,4 +1,5 @@
 ---
+summary: Applications that are designed to perform fast should not suffer due to bad configuration or undersized hardware.
 en_title: Performance Best Practices - Infrastructure
 ---
 

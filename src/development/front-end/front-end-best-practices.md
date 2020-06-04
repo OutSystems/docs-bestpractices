@@ -1,5 +1,5 @@
 ---
-summary: Learn about Front-End Best-Practices
+summary: Learn about Front-End Best-Practices.
 tags: OutSystems_Front-End; OutSystems_Scalable_Front-End; OutSystems_Front-End_Best_Practices
 en_title: Front-End Architecture Best Practices
 ---

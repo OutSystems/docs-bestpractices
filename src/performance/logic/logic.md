@@ -1,4 +1,5 @@
 ---
+summary: It is the developer's responsibility to maintain a high standard of coding that always takes performance into consideration.
 en_title: Performance Best Practices - Logic
 ---
 

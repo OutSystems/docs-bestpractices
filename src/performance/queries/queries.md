@@ -1,4 +1,5 @@
 ---
+summary: In multi-tier applications, the bottleneck is often situated at the database level, namely in queries.
 en_title: Performance Best Practices - Queries
 ---
 

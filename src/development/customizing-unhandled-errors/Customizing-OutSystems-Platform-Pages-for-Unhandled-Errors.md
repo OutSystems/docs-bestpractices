@@ -1,4 +1,5 @@
 ---
+summary: This technical note describes how to customize the error pages that are displayed to end-users when an unhandled error occurs. This lets you display proper feedback pages to end-users while maintaining the design coherence throughout the application.
 en_title: Customizing OutSystems Platform Pages for Unhandled Errors
 ---
 

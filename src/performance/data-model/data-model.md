@@ -1,4 +1,5 @@
 ---
+summary: The data tier of the applications is absolutely critical for application performance. Apply these practices right from an early design phase.
 en_title: Performance Best Practices - Data model
 ---
 

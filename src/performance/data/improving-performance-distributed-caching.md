@@ -1,4 +1,5 @@
 ---
+summary: Learn how to implement distributed caching patterns in OutSystems.
 en_title: Improving Performance With Distributed Caching
 ---
 

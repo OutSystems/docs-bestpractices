@@ -1,4 +1,5 @@
 ---
+summary: There are no fast applications with slow user experiences. To promote the adoption and keep the end-users satisfied, the application has to respond fast.
 en_title: Performance Best Practices - User Interface
 ---
 

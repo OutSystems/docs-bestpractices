@@ -1,4 +1,5 @@
 ---
+summary: Opting for the quickest architecture solution produces severe performance problems. Refactoring later on may be painful and expensive.
 en_title: Performance Best Practices - References
 ---
 

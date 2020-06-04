@@ -1,4 +1,5 @@
 ---
+summary: This topic guides you through all the steps required to create a component in OutSystems. It includes recommendations, best practices, and information for common situations.
 en_title: The Complete Guide to Creating Components
 ---
 
