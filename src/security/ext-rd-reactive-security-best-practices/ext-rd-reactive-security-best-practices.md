@@ -4,7 +4,7 @@ tags:
 en_title: Reactive Web Security Best Practices
 ---
 
-# Reactive Web Security Best Practices
+# Reactive web security best practices
 
 <div class="info" markdown="1"> 
 This article was written by [Remco Dekkinga](https://www.outsystems.com/profile/1832/), OutSystems MVP
@@ -20,7 +20,7 @@ A rule of thumb for client-side security is that the code that is on the client-
 
 ### Don’t expose sensitive data on the client-side
 
-**Client-side code** (UI, client actions, screen and block variables and input parameters) is converted into web resources (HTML, JavaScript and CSS). This means that it can be manipulated. That is why we need to make sure that all security sensitive code and data is on the server side.
+**Client-side code** (UI, client actions, screen and block variables, and input parameters) converts into web resources (HTML, JavaScript and CSS). This means that it can be manipulated. That's why we need to make sure that all security sensitive code and data is on the server side.
 
 When using [**Client Variables**](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Data/Handling_Data/Client_Variable), remember that they are stored in the browser’s local storage ([HTML Web Storage](https://www.w3schools.com/html/html5_webstorage.asp)) and they are [shareable between applications](https://success.outsystems.com/Documentation/11/Developing_an_Application/Use_Data/Share_a_Client_Variable_between_apps). Make sure that you never store sensitive data in client variables and don’t use them to control the flows of your application, because they can be manipulated using tools that alter client-side code in the user’s browser.
 
