@@ -1,13 +1,15 @@
 ---
 summary:
 tags:
-en_title: Reactive Web Security Best Practices
+en_title: Reactive web security best practices
 ---
 
 # Reactive web security best practices
 
-<div class="info" markdown="1"> 
+<div class="info" markdown="1">
+
 This article was written by [Remco Dekkinga](https://www.outsystems.com/profile/1832/), OutSystems MVP
+
 </div>
 
 There are several aspects to securing your Reactive Web Apps before launching them. This article covers them, and provides recommendations on securing your application.
