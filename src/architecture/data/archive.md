@@ -6,7 +6,7 @@ en_title: Data Archiving
 
 # Data Archiving
 
-## What is Data Archiving
+## What's data archiving
 
 Data archiving is the process of identifying and moving data from the primary storage into a secondary storage, for long term storage. Archived data consists of data that's is no longer relevant for daily operations but that's still important to the organization and may be needed for future reference, or data that must be retained for regulatory compliance.
 
@@ -18,7 +18,7 @@ This article uses the terms **main catalog** for the primary storage and **archi
 
 This article focuses on how you can achieve an archiving strategy using the OutSystems database. For [on-premises installations](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/Possible_setups_for_an_OutSystems_infrastructure#On-premises_infrastructure), you should use the [Multiple Database Catalogs and Schemas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Multiple_Database_Catalogs_and_Schemas) feature to configure the archiving mechanism in a dedicated database catalog.
 
-For [Outsystems Cloud](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/Possible_setups_for_an_OutSystems_infrastructure#Cloud_infrastructure), you can use new entities in the OutSystems Database Catalog and schema, or use an external database, using APIs to archive the data.
+For [OutSystems Cloud](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/Possible_setups_for_an_OutSystems_infrastructure#Cloud_infrastructure), you can use new entities in the OutSystems Database Catalog and schema, or use an external database, using APIs to archive the data.
 
 In case you wish to archive data externally to OutSystems, there are multiple solutions in the market, from data lakes to cloud storage services. OutSystems allows you to easily integrate with your existing systems, depending on your enterprise architecture.
 
@@ -28,7 +28,7 @@ From the end user perspective, the major benefit of having a data archiving stra
 
 From an IT perspective, the major benefits are the **performance of the needed resources** and **cost savings**. Since the data volume in the main catalog is reduced, the backup and recovery operations run faster, disaster recovery is less costly and takes less time, reducing the potential system downtime. If you use a specialized archival system to store the archived information (instead of OutSystems Database) you may reduce the overall storage costs.
 
-## Data Archiving Best Practice
+## Data archiving best practice
 
 In this section, you can find two examples of data archiving implementation that works as a best practice for the archiving mechanism.
 
@@ -114,7 +114,7 @@ This module (for example, “Archive Search”) implements the UI where the end 
 Due to the volume of data, the archive catalog is less performant than the main catalog. To manage the end user expectations in terms of response time, implement a toggle that the end user must explicitly set before interacting with the archived data.
 
 ![](images/archive-3.png?width=600)
- 
+
 **Step 4. Create a Timer to asynchronously run the archiving process**
 
 Create a Timer that runs your archiving process implemented in the “Archiving Engine” module.
