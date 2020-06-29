@@ -11,6 +11,9 @@
         - href: architecture/build-mobile-app-teams/bp-architecture.md
         - href: architecture/build-mobile-app-teams/bp-development.md
         - href: architecture/build-mobile-app-teams/bp-multiple.md
+    - href: architecture/from-arch-to-dev/intro.md
+    - topics:
+        - href: architecture/from-arch-to-dev/arch-to-dev.md
 
 #Development Best Practices
 - href: development/intro.md
@@ -62,11 +65,3 @@
     - href: automated-testing/component-testing.md
     - href: automated-testing/integration-api-testing.md
     - href: automated-testing/web-ui-testing.md
-
-# From Blueprint to Development
-- href: architecture/from-arch-to-dev/intro.md
-- topics:
-    - href: architecture/from-arch-to-dev/arch-to-dev.md
-
-
-
