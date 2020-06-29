@@ -63,6 +63,10 @@
     - href: automated-testing/integration-api-testing.md
     - href: automated-testing/web-ui-testing.md
 
+# From Blueprint to Development
+- href: architecture/from-arch-to-dev/intro.md
+- topics:
+    - href: architecture/from-arch-to-dev/arch-to-dev.md
 
 
 
