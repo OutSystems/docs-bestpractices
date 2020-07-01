@@ -29,39 +29,35 @@ Note that an external system provides the list of soccer fields, meaning it’s 
 
 The architecture design process follows a 3 step approach.
 
-<table>
-    <tbody>
-        <tr>
-            <td>
-             <p dir="ltr"><img height="70" src="images/disclose_redldpi.png" width="70" /></p>
-            </td>
-            <td>
-             <p dir="ltr"><strong>Disclose</strong></p>
-             <p dir="ltr">business concepts and integration needs</p>
-            </td>
-            <td rowspan="3">
-             <p dir="ltr"><img height="186" src="images/iteration.png" width="180" /></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <p dir="ltr"><img height="70" src="images/organize_redldpi.png" width="70" /></p>
-            </td>
-            <td>
-            <p dir="ltr"><strong>Organize</strong></p>
-            <p dir="ltr"> concepts on the architecture Layer canvas</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <p dir="ltr"><img height="70" src="images/assemble_redldpi.png" width="70" /></p>
-            </td>
-            <td>
-            <p dir="ltr"><strong>Assemble</strong></p>
-            <p dir="ltr">Matching recommended patterns</p>
-            </td>
-        </tr>
-    </tbody>
+<table markdown="1">  
+<tr>  
+<td>
+![](images/disclose_redldpi.png?width=70)
+</td>  
+<td>
+**Disclose**
+business concepts and integration needs
+</td>  
+<td>
+![](images/iteration.png?width=180)
+</td> </tr>  
+<tr>  
+<td>
+![](images/organize_redldpi.png?width=70)
+</td>  
+<td>
+**Organize**
+concepts on the architecture Layer canvas
+</td> </tr>  
+<tr>  
+<td>
+![](images/assemble_redldpi.png?width=70)
+</td>  
+<td>
+**Assemble**
+Matching recommended patterns
+</td>
+</tr>
 </table>
 
 It's important to understand that you should iterate these three steps multiple times, until you feel comfortable with the design, and eventually repeat the process during the implementation, as you discover new concepts and/or details.
