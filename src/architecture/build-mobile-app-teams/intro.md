@@ -17,7 +17,7 @@ There are also several plugins to interact with device native capabilities as we
 
 It has a dedicated JavaScript node that allows you not only to run any snippet you create, but also to use input and output parameters to send or receive information related with the code snippet.
 
-Several dedicated widgets are exclusive to the mobile version and that have been optimized for mobile usage.
+Several dedicated widgets are exclusive to the mobile version and were optimized for mobile usage.
 
 Also, the architecture of such applications must also be approached in a very different level. 
 
