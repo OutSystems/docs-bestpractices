@@ -1,5 +1,5 @@
 ---
-summary: Learn how to start developing from an architecture blueprint
+summary: Learn how to start developing from an architecture blueprint.
 tags: OutSystems-development-from-blueprint; architecture-blueprint; OutSystems-Architecture; 
 ---
 
@@ -11,7 +11,7 @@ The [previous article](intro.md) explained the use case of a fictitious client. 
 
 <div class="info" markdown="1">
  
-Before proceding, download from the OutSystems Forge the [Soccer Fields App](https://www.outsystems.com/forge/component-overview/8895/soccer-fields-app) resources, the [Soccer Field Sample API](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=8896), and the [Field Core Services App](https://www.outsystems.com/forge/component-overview/8894/field-core-services), and install them on your personal environment to better follow the instructions provided.
+Before proceeding, download from the OutSystems Forge the [Soccer Fields App](https://www.outsystems.com/forge/component-overview/8895/soccer-fields-app) resources, the [Soccer Field Sample API](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=8896), and the [Field Core Services App](https://www.outsystems.com/forge/component-overview/8894/field-core-services), and install them on your personal environment to better follow the instructions provided.
 
 </div>
 
@@ -188,7 +188,7 @@ In this partner, focus on 3 architectural patterns:
 
     1. Send the API Key
 
-        To complete the integration with the external API, you need to send a valid key in the **API_KEY** request header. To accomplish this, implement the **OnBeforeRequest**"** event. You just need to select the endpoint, click on the dropdown next to the **On Before Request** property and select **New OnBeforeRequest**, like you can see on the picture below:
+        To complete the integration with the external API, you need to send a valid key in the **API_KEY** request header. To accomplish this, implement the **OnBeforeRequest** event. You just need to select the endpoint, click on the dropdown next to the **On Before Request** property and select **New OnBeforeRequest**, like you can see on the picture below:
 
         ![Send the API Key](images/sending-api-key.png)
 
