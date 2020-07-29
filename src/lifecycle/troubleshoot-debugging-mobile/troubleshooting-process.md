@@ -24,7 +24,9 @@ While ‘monitoring’ is a term that seldom strikes discord, ‘troubleshooting
 * **Troubleshooting** is the set of activities that one goes through to try to identify the root cause of an unexpected and typically undesirable behavior exhibited by a software application.
 
     Examples of troubleshooting activities include:
+
     * Researching the possible reason for a slow reactive Web App Screen response to user input, by generating a page/Screen activity recording and examining the recording output in the Timeline tab of the Chrome Developer Tools.
+    
     * Investigating why data isn't showing up in a Mobile App by running SQL queries on the local storage in the Application tab of the Chrome Developer Tools.
 
 
