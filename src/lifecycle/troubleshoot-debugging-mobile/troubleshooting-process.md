@@ -3,7 +3,7 @@ summary:
 tags:
 ---
 
-# The troubleshooting, debugging & monitoring process
+# The troubleshooting, debugging and monitoring process
 
 In this article you can find detailed information on the differences between troubleshooting, debugging, and monitoring. Also, some best practices on how to proceed when you need to troubleshoot or debbug. 
 
