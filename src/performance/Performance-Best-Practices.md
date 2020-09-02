@@ -1,11 +1,11 @@
 ---
-summary: Here you can find all existing best practices on Application Performance.
-en_title: Performance and Monitoring
+summary: Here you can find all existing best practices on application performance.
+en_title: Performance and monitoring
 ---
 
-# Performance and Monitoring
+# Performance and monitoring
 
-These Performance best practices are the result of multi-role perspectives on software development. There is no ranking for better practices. Some are applied more often and others produce awesome boosts. But what really matters is to apply these practices where they make sense and where the users can benefit the most.
+These performance best practices are the result of multi-role perspectives on software development. There is no ranking for better practices. Some are applied more often and others produce awesome boosts. But what really matters is to apply these practices where they make sense and where the users can benefit the most.
 
 <p class="mt-script-comment">Page summary display</p>
 <pre class="script">
