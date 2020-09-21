@@ -39,7 +39,7 @@ The successful creation of a component encompasses:
 
 * Planning the **release** and let your component see the light of day.
 
-Keep in mind that your components will fit into the [architecture of the 4 Layer Canvas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications) methodology used to build OutSystems applications.
+Keep in mind that your components will fit into the [architecture of the Architecture Canvas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications) methodology used to build OutSystems applications.
 
 ## Component Types
 

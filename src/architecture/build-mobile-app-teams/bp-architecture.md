@@ -8,7 +8,7 @@ The first step for your success is to understand the Architectural changes of a 
 
 If you’ve had the chance to work with OutSystems in the past or have been exposed to some of our documentation, you might have heard about the Architecture Canvas. This canvas is the usual starting point of an application, from an architecture point of view.
 
-![Sample of 4 Layer Canvas Architecture for a Web Application](images/how_to_build_mobile_app_0.png)
+![Sample of Architecture Canvas Architecture for a Web Application](images/how_to_build_mobile_app_0.png)
 
 This canvas clearly identifies what you should place in each one of the layers, making sure that you’re able to take advantage of the following aspects:
 
