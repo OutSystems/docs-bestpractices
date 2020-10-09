@@ -87,7 +87,7 @@ First of all, let’s understand the functional and non-functional requirements.
 
 1. Retrieve the list of soccer fields from an external system, by consuming a REST API;
 
-1. The system needs to work online and be responsible for mobile devices.
+1. The system needs to work online and the UI must adapt to mobile devices.
 
 ### Organize (concepts on architecture canvas)
 
