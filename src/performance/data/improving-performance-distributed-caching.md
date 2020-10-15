@@ -95,13 +95,13 @@ The benefit of distributed caching becomes increasingly measurable as more Front
 
 * Moving user data from Session (due to performance reasons).
 
-* Storing high transient data e.g. data that is created and deleted after a very short period of time.
+* Storing high transient data, for example, data that is created and deleted after a very short period of time.
 
 * Caching significant amounts of data (hundreds of Megabytes).
 
 * Keeping total control of the server resources used for cache (cache keys and metrics, memory, CPU):
 
-    * Relieve the Front-end Server resources used for local cache
+    * Relieve the Front-end Server resources used for local cache.
 
     * Allow external access to the runtime cache (Service Ops team, external applications outside of OutSystems factory, etc).
 
@@ -114,51 +114,3 @@ In addition to the previous reasons it's important to understand when the Local 
 * Local cache benefits will decrease when adding more Front-end Servers.
 
 * Local cache doesn't provide versioning. This is a mechanism that assigns a version to each cache entry per update, allowing it to verify if a cache entry was modified since last read. This is useful to implement Optimistic Locking of cached data.
-
-## Implementing access to a distributed cache
-
-You can use the [dmCache](https://www.outsystems.com/forge/component/1253/dmCache/) Forge component to implement these caching strategies supporting different Distributed Cache technologies, namely AWS ElasticCache, Memcached, Redis, and Couchbase.
-
-This module is an abstraction over the infrastructure and protocols used to implement the distributed cache providing a Site Property named **CacheServer**, that is a specific type of URL that specifies the distributed cache endpoint, type, and protocol.
-
-![](images/Improving-performance-with-distributed-caching_8.png)
-
-You should use this module in [Core Business modules](https://www.outsystems.com/learn/courses/67/designing-apps-using-an-architecture-framework/) that isolate or expose entities as read only or implement Entity CRUD operations or background jobs. You shouldn't use the **dmCache** directly in end-user UI modules.
-
-### Public Actions
-
-The **dmCache** module provides the following public Actions to manage cache entries:
-
-* **SetValue**
-
-* **SetListOfRecords**
-
-* **GetValue**
-
-* **GetListOfRecords**
-
-* **FlushAll**
-
-* **RemoveCacheEntry**
-
-The Actions **SetValue**, **SetListOfRecords**, **GetValue**, **GetListOfRecords**, and **RemoveCacheEntry** have the parameters **CacheKey** and **CacheScope**.
-
-### Parameters
-
-#### CacheKey
-
-A name that identifies the cache entry inside the same **CacheScope** or "bucket" where all the cache entry names must be unique.
-
-#### CacheScope
-
-Used internally to create a hierarchic key per cache entry and to avoid collisions in the cache store.
-
-**CacheScope** can be:
-
-* **Request** – only values set for the current Request will be available when calling **GetValue** for the same **CacheScope**, meaning that the Request Id is used to compose the key of the cache entry.
-
-* **Session** – only values set for the current Session will be available when calling **GetValue** for the same **CacheScope**, meaning that the Session Id is used to compose the key of the cache entry.
-
-* **Application** – only values set for the current Application will be available when calling **GetValue** for the same **CacheScope**, meaning that the Application Id is used to identify part of the key of the cache entry.
-
-* **Global** – the cache key is global. This means that the key used for the cache entry is not composed using any other parts, just the Cache key name that was used as parameter of the Get and Set cache value. This is useful to access cache entries set by external systems or to share state with other solutions outside of OutSystems Platform.
