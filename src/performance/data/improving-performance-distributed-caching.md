@@ -75,7 +75,7 @@ The following Action flow depicts the steps involved in this strategy:
 
 1. The same Timer background Action updates the Cache Entries with the latest version of the data.
 
-1. Any Front End reads the data from the cache.
+1. Any Front-end Server reads the data from the cache.
 
 ![](images/Improving-performance-with-distributed-caching_5.png)
 
