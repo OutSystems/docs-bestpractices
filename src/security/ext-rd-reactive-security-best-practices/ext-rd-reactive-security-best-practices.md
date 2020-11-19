@@ -74,7 +74,7 @@ As a second option you can do both the identity validation and the reset passwor
 
 A third option is to consider using [JSON Web Token](https://jwt.io/introduction/) (JWT) to encrypt the session and to send only encrypted data. There are different ways to do it, which are beyond the scope of this article, but one way to implement it can be with the [JWT Forge component](https://www.outsystems.com/forge/component-overview/1853/jwt).
 
-![](images/reactive-security-best-practices_3.png)
+![](images/reactive-security-best-practices_3.png?width=420)
 
 ## Server-side security
 
