@@ -51,8 +51,8 @@ This article aggregates a collection of best practices and conventions that you 
 
 ## Database
 
-* 492 attributes in one Entity is perhaps too much :)
-* Attribute with size 4000 is perhaps too much :)
+* Avoid having hundreds of attributes in one Entity
+* Avoid large attributes (e.g. length of 4000)
 * Check the Delete Rule of Foreign Keys to an Entity.
 * Remember to set the Is Mandatory property
 * Add descriptions at least to the Entities
