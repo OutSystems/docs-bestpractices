@@ -16,7 +16,7 @@
     - href: development/reference-BPMN/Notation-Reference-for-BPMN-Practitioners.md
     - href: development/lifeTime-plugins/Life-Time-Plugins-Best-Practices.md
     - href: development/components/The-Complete-Guide-to-Creating-Components.md
-    - href: development/building-dynamic-SQL/Building-dynamic-SQL-statements-the-right-way.md
+    - href: development/building-dynamic-SQL/build-dynamic-sql-statements.md
     - href: development/customizing-unhandled-errors/Customizing-OutSystems-Platform-Pages-for-Unhandled-Errors.md
 
 #Lifecycle Best Practices
