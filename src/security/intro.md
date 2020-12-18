@@ -14,7 +14,7 @@ template('MindTouch/Controls/PageOverview');
 
 Demand for some level of software security, even for small businesses applications, is growing. That's why, before diving deep into software security vulnerabilities and mitigation techniques, it’s important to understand the most common software security questions, such as:
 
-* What does software security aim to protect? And what are the commmonly used security models?
+* What does software security aim to protect? And what are the commonly used security models?
 * What's the OSI model?
 * How can an organization assure customers/users that its applications are trustworthy?
 * Where can you find or how can you know what the major software vulnerabilities are?
