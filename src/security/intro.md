@@ -14,7 +14,7 @@ template('MindTouch/Controls/PageOverview');
 
 Demand for some level of software security, even for small businesses applications, is growing. That's why, before diving deep into software security vulnerabilities and mitigation techniques, it’s important to understand the most common software security questions, such as:
 
-* What does software security aim to protect? And what are the commmonly used security models?
+* What does software security aim to protect? And what are the commonly used security models?
 * What's the OSI model?
 * How can an organization assure customers/users that its applications are trustworthy?
 * Where can you find or how can you know what the major software vulnerabilities are?
@@ -49,7 +49,7 @@ More recently, complementary concepts to the CIA model were added, such as:
 
 * Non-Repudiation – Guarantees that the sender of a message can't later deny having sent the message and that the recipient can't deny having received the message.
 
-### Shared responsability model
+### Shared responsibility model
 
 The OSI Model is a shared responsibility model that serves as a standard for defining the way computers communicate with each other. It's divided into seven layers; each layer serves the layer above it and is served by the layer below it:
 
@@ -73,11 +73,11 @@ Also, periodically OWASP publishes the top software vulnerabilities for Web and 
 
 Security certifications have gained high relevance because earning these certifications demonstrates the organization’s capabilities, accuracy, and compliance with the certification specific scope.
 
-Compliance is the set of practices, processes, and tools that a company uses to guarantee that personnel and the company as a whole abide by internal rules of conduct and external rules and regulations. This compliance is attained with through a specific approach, being an iterative and continous process, where the you need to prove the compliance to have those certitications renewed.
+Compliance is the set of practices, processes, and tools that a company uses to guarantee that personnel and the company as a whole abide by internal rules of conduct and external rules and regulations. This compliance is attained with through a specific approach, being an iterative and continuous process, where you need to prove the compliance to have those certifications renewed.
 
 ### Developers responsibility in security
 
-The security level of an app varies according to the level of security requirements, but a developer should have knowledge of most of the security best practices. Having this knowledge ensures that no security issues are raised during develepoment and all that your app meets all the security requirements. 
+The security level of an app varies according to the level of security requirements, but a developer should have knowledge of most of the security best practices. Having this knowledge ensures that no security issues are raised during development and all that your app meets all the security requirements. 
 
 This also means that the developer should follow the recommended security practices in creating the applications using OutSystems, specially regarding security on the host layers (mainly the top two layers) of the OSI model.
 
