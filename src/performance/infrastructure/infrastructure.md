@@ -139,7 +139,7 @@ When using the web server tuning settings in 64-bit, the limits will only exist 
 
 ### Description
 
-In OutSystems on-premise installations, some Windows Server operations are either slow to execute, with CPU usage reaching peaks, or with a high ["Content Download"](https://developers.google.com/web/tools/chrome-devtools/network/reference#timing-explanation) time when loading pages. You should minimize the system performance impact of your antivirus software.
+In OutSystems on-premises installations, some Windows Server operations are either slow to execute, with CPU usage reaching peaks, or have a high ["Content Download"](https://developers.google.com/web/tools/chrome-devtools/network/reference#timing-explanation) time when loading pages. You should minimize the system performance impact of your antivirus software.
 
 ### Solution
 
