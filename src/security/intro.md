@@ -75,12 +75,6 @@ Security certifications have gained high relevance because earning these certifi
 
 Compliance is the set of practices, processes, and tools that a company uses to guarantee that personnel and the company as a whole abide by internal rules of conduct and external rules and regulations. This compliance is attained with through a specific approach, being an iterative and continuous process, where you need to prove the compliance to have those certifications renewed.
 
-### Developers responsibility in security
-
-The security level of an app varies according to the level of security requirements, but a developer should have knowledge of most of the security best practices. Having this knowledge ensures that no security issues are raised during development and all that your app meets all the security requirements. 
-
-This also means that the developer should follow the recommended security practices in creating the applications using OutSystems, specially regarding security on the host layers (mainly the top two layers) of the OSI model.
-
 In this section you can find the following best practices related to security:
 
 <pre class="script">
