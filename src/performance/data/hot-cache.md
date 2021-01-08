@@ -110,7 +110,7 @@ In some use cases (for example, Dashboards or conditional variable data), you ma
 
 While it's possible to gather the data required for this use cases directly on the source system as needed, normally this isn't a good option because the time taken to obtain the right data will be slow and will impact the end user experience.
 
-This is where the **Hot Cache** pattern can bring great benefits. Instead of directly query and join data over multiple entities, in the moment that the end user wants to display the information, a cache layer is created, with a new entity that is designed to be optimized for the use case. This new entity is populated periodically and contains the pre-calculated data - this cache layer is called hot cache, because it should only contains data that is active.
+This is where the **Hot Cache** pattern can bring great benefits. Instead of directly query and join data over multiple entities, in the moment that the end user wants to display the information, a cache layer is created, with a new entity that is designed to be optimized for the use case. This new entity is populated periodically and contains the pre-calculated data - this cache layer is called hot cache, because it should only contain data that's active.
 
 For example, let's take a look at a simple web store. This web store (WebShop) differentiates the product pricing based on customer, customer type and product category. Let's also assume this is a large store, with over a million products and customers. Following the 4-layer canvas we could have the following architecture diagram:
 
