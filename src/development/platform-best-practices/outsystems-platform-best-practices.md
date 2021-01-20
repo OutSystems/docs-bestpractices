@@ -35,17 +35,14 @@ This article aggregates a collection of best practices and conventions that you 
 ### Reusability
 
 * Reuse logic with User Actions
-* Reuse screen parts with Web Blocks
+* Reuse screen parts with  Blocks
 * Encapsulate data formatting with User Functions
 * Use RefreshQuery to rerun a Query
 
 ## JavaScript, CSS and HTML
 
-* Use Web Blocks for JavaScript encapsulation and reusability
-* Make sure your JavaScript blocks are perfectly identifiable
 * Comment your JavaScript
-* Use cross browser JavaScript (for example, JQuery or mooTools)
-* Avoid writing custom HTML using unescaped expressions
+* Use cross browser JavaScript
 * Avoid duplicate CSS styles
 * Minify JavaScript and CSS whenever possible
 
@@ -87,9 +84,7 @@ This article aggregates a collection of best practices and conventions that you 
 
 ## User Interface
 
-* Move JavaScript blocks to the end of the screen
 * Find out what needs improvement by observing your users
-* A Preparation with more than 10 nodes normally means trouble
 * Reduce the size of the images in your module
 
 ## Architecture
@@ -196,7 +191,6 @@ Also:
 ### User Interface
 
 * Avoid using Preparation data in screen actions
-* Use AJAX with care - it may impact overall performance
 * Use multiple Web Screens instead of creating complex ones
 * Cache, baby, cache!
 * Minimize Screen Parameters
