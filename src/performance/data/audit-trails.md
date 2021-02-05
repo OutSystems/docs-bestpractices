@@ -29,7 +29,7 @@ Use Business Audits when there are business requirements to log a specific end u
 * Records of all financial transactions made by business users - these include all information, like bank account movements, employee payments, expense reports, etc.
 * Tracking all customer communication - it can help a great deal with dispute resolution and also with keeping customers happy by providing relevant information about their past communications.
 * Operational transactions. Imagine the example of a transportation network company. The ability to audit pickup and dropoff times, as well as routes, helps with pricing and staffing considerations.
-* You can also use Business Audits associated with more NFRs, such as tracing a user during a session: from the moment users log in until the logout.
+* You can also use Business Audits associated with more Non-Functional Requirements (NFRs), such as tracing a user during a session: from the moment users log in until the logout.
 
 
 Implementing a Business Audit system can prevent you against potential legal actions and accusations, but it can also give you important business intelligence to make business decisions based on facts. It may seem to be something not so relevant at the beginning, but it’s incredibly important.
