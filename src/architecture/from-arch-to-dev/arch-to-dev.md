@@ -92,7 +92,7 @@ This section goes through the development of modules and applications. The first
 
 Following your architecture design let’s create the first application and modules:
 
-1. In the Service Center, choose **New Application**, select **Web App**, and pick the **Liverpool** theme. Name the application "Soccer Fields" and click on **CREATE APP**.
+1. In Service Studio, choose **New Application**, select **Web App**, and pick the **Liverpool** theme. Name the application "Soccer Fields" and click on **CREATE APP**.
  
 1. Now that you created the first application, it’s time to create the first module. 
 
