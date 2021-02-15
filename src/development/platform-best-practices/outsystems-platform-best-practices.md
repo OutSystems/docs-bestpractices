@@ -42,7 +42,7 @@ This article aggregates a collection of best practices and conventions that you 
 ## JavaScript, CSS and HTML
 
 * Comment your JavaScript
-* Use cross browser JavaScript
+* Use cross-browser JavaScript
 * Avoid duplicate CSS styles
 * Minify JavaScript and CSS whenever possible
 
