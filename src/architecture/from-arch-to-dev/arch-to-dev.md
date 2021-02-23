@@ -181,7 +181,7 @@ In this partner, focus on 3 architectural patterns:
     
     1. Consume the external API
 
-        Open the **Field_IS** module, click on the **Logic** tab, and under the **Integrations** folder, right-click on the REST node and select **Consume REST API…**. Let’s assume the team that developed the external API provided you with a swagger spec. In this case, you're using the sample fake service already mentioned. So, you just need to click on **ADD ALL METHODS** and fill the URL ([https://expertsp10-dev.outsystemsenterprise.com/SFF_Sample_API/rest/v1](https://expertsp10-dev.outsystemsenterprise.com/SFF_Sample_API/rest/v1)) of the swagger file.
+        Open the **Field_IS** module, click on the **Logic** tab, and under the **Integrations** folder, right-click on the REST node and select **Consume REST API…**. Let’s assume the team that developed the external API provided you with a swagger spec. In this case, you're using the sample fake service already mentioned. So, you just need to click on **ADD ALL METHODS** and fill the URL of the swagger file.
         After clicking **OK** , the external API should look like this: 
     
         ![Consuming the external API](images/consuming-external-api.png)
