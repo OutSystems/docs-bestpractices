@@ -243,7 +243,7 @@ Some components on the [Forge](https://www.outsystems.com/forge/) already have s
 ![](images/table.png)
 
 <div class="info" markdown="1">
-Keep in mind that, as good practice, you should always validate if the components still have these features before using it. Also, note that it's the OutSystems community that develops these components, and they **are not** supported by OutSystems. If you want to know more about it, check the [Forge FAQs](https://success.outsystems.com/Support/Forge_Components).
+Keep in mind that, as good practice, you should always validate if the components still have these features before using it. Also, note that it's the OutSystems community that develops these components, and they **are not** supported by OutSystems. If you want to know more about it, check the [Forge FAQs](https://success.outsystems.com/Support/Forge_Components/Forge_FAQs).
 </div>
 
 ### Clean up log tables after upgrade to OS11
