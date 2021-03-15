@@ -108,7 +108,7 @@ Also:
 
 ## Teamwork
 
-* Know the recommended project team for your project (see [Staffing OutSystems Projects](https://www.outsystems.com/home/document-download/181/25/0/0))
+* Know the recommended project team for your project (see [The Talent Playbooks](https://www.outsystems.com/1/talent-playbook/))
 * Use a single user for each team member
 * Everyone in the team should use the same Service Studio version
 * Use LifeTime to perform application versioning
