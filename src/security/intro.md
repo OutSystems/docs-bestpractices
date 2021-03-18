@@ -57,7 +57,7 @@ The OSI Model is a shared responsibility model that serves as a standard for def
 
 The security of the applications developed in OutSystems is of utmost importance. OutSystems continuously works to provide and improve the built-in security protection in the host layers, by applying the latest security features in the platform. 
 
-This is one of the main reasons why you should keep your OutSystems platform updated to the latest version (Platform Server and development applications).
+This is one of the main reasons why you should keep your OutSystems platform updated to the latest version (Platform Server, LifeTime, Service Studio, and Integration Studio).
 
 ### Finding major vulnerabilities
 
