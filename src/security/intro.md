@@ -1,5 +1,6 @@
 ---
 summary: Here you can find all existing best practices on Application Security.
+tags: article-page
 en_title: Security
 ---
 
@@ -12,7 +13,7 @@ template('MindTouch/Controls/PageOverview');
 
 ## A brief introduction to software security
 
-Demand for some level of software security, even for small businesses applications, is growing. That's why, before diving deep into software security vulnerabilities and mitigation techniques, it’s important to understand the most common software security questions, such as:
+Demand for some level of software security, even for small applications, is growing. That's why, before diving deep into software security vulnerabilities and mitigation techniques, it’s important to understand the most common software security questions, such as:
 
 * What does software security aim to protect? And what are the commonly used security models?
 * What's the OSI model?
