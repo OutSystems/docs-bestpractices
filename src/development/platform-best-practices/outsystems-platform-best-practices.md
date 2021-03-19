@@ -113,6 +113,7 @@ Also:
 * Everyone in the team should use the same Service Studio version
 * Use LifeTime to perform application versioning
 * Avoid publishing single modules: use LifeTime
+* Don't develop in test environments: use LifeTime
 * Avoid applying a hotfix without testing it first (see [Apply a Hotfix](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Deploy_Applications/Apply_a_Hotfix))
 * Avoid working on the same elements at the same time
 * Create team processes for active log monitoring
