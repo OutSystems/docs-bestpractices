@@ -142,23 +142,3 @@ Even the simplest of queries has to pay the round trip cost for contacting the d
 ### Remarks
 
 While minimizing the number of executed queries can yield large performance gains, it's usually done at the expense of readability. So the key here is to optimize only when required. Use all Service Center reports to pinpoint the bottlenecks. Remember that fast queries won't show up on the slow queries report but, if they're executed often, their aggregate time influences all other logs (screen logs, web service logs etc.)
-
-## Avoid ReturnedRowCount (version 4.2 or below)
-
-### Description
-
-Avoid using a query only to look at the ReturnedRowCount value.
-
-### Solution
-
-Use an SQL query with a count instead.
-
-### Importance
-
-Before OutSystems Platform version 4.2, when using ReturnedRowCount the query output goes to memory. Also the Max. Records attribute was mandatory so the query could return an incorrect value.
-
-### Remarks
-
-This is only worth the trouble for queries that can return a large number of results.
-
-If your OutSystems version is below 4.2, please contact [OutSystems Technical Support](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/01_Contact_OutSystems_technical_support) for further assistance.
