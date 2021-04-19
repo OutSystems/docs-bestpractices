@@ -115,6 +115,7 @@ Also:
 * Avoid publishing single modules: use LifeTime
 * Avoid applying a hotfix without testing it first (see [Apply a Hotfix](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Deploy_Applications/Apply_a_Hotfix))
 * Avoid working on the same elements at the same time
+* Avoid deploying to a Production enviornment during business hours
 * Create team processes for active log monitoring
 * Create team processes for manual deployment procedures such as data update scripts
 * Define what "done" means and include testing.
