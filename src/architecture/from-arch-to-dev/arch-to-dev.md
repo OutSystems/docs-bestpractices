@@ -243,7 +243,7 @@ At a specific time, the sync timer triggers. Then, the sync algorithm gets a sub
 
 ![Sync field data algorithm](images/sync-field-data-algorithm.png)
 
-1. Set a logic timeout (10 minutes) and get the possible stored progress of a previous timer to continue processing. This scenario is to follow best practices when designing timers (never times out, doesn’t repeat work, ensures completeness, ensures data integrity);
+1. Set a logic timeout (10 minutes). The **GetSyncFieldCurrPages** aggregate gets the possible stored progress of a previous timer to continue processing. This scenario is to follow best practices when designing timers (never times out, doesn’t repeat work, ensures completeness, ensures data integrity);
 
 1. This **if** logic guarantees the start and recursion of the sync flow in case that you still have data to sync to your local cache;
 
