@@ -331,9 +331,11 @@ See how you can [use a component made by the community](https://success.outsyste
 
 ### Demo Module
 
-To prepare your component for publication, add one new module to the application, with a **demonstration of the most common use case**. Its name should include the component's name and "Demo", or "Example", since users will search for the component's name when they need help.
+To prepare your component for publication, create a new application, with a **demonstration of the most common use case**. Its name should include the component's name and "Demo", or "Example", since users will search for the component's name when they need help.
 
 This demo should be **guided** and **straightforward**, with one single or central screen if possible, and without login.
+
+This new application should be uploaded together with the main component, in the specific Demo upload placeholder.
 
 ### Forge Publication
 
@@ -342,14 +344,14 @@ Once your component is ready, follow the steps below to [prepare and publish](ht
 1. Manage dependencies to **remove all unused elements** and ensure the final Module (.oml) is not too big. If it is, consider compressing any used image files or resources.
  
 
-2. Go to **Service Center** and download your component.
+2. Go to **Service Center** and download your component and demo.
 Your component can be downloaded as an Application (*.osp*) or as a Module/eSpace (*.oml*). If possible, you should download it as an Application, but the Forge will support the Module format as well.
  
 
 3. Log into the Forge and Click [**Publish New Project**](https://www.outsystems.com/forge/ProjectUpload.aspx?ProjectId=0).
  
 
-4. Select the **component's file** you downloaded in step 1. If applicable, the Forge will warn you of any **dependencies**.
+4. Select the **component's file** and **demo's file** you downloaded in step 1. If applicable, the Forge will warn you of any **dependencies**.
  
 
 5. Continue to edit your component's **Details**. By default, the **name**, **icon**, and **descriptions** are the ones defined during the development of your component. These descriptions can be changed even after publication.
