@@ -40,6 +40,7 @@
 - href: lifecycle/intro.md
 - topics:
     - href: lifecycle/app-lifecycle/managing-app-lifecycle-portfolio.md
+    - href: lifecycle/app-lifecycle/dev-del-at-scale.md
     - href: lifecycle/clean-up-dev-environment/clean-up-development.md    
     - href: lifecycle/troubleshoot-debugging-mobile/intro.md   
     - topics:
