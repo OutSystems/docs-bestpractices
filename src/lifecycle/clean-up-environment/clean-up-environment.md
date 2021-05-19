@@ -167,7 +167,7 @@ While you can apply these best practices ad hoc, without limitations, you should
 
 While the **above clean-up options are valid on both installation types**, there are some additional actions that you can perform on-premises as you are the responsible to maintain the infrastructure.
 
-If you have a development environment installed **on-premises**, besides having more flexibility with the database (allowing you to truncate data for example), you should also consider a regular maintenance of the file system of your servers. Refer to the [Guide to disk space usage and control on OutSystems servers](http://www.outsystems.com/goto/disk-space-usage-guide) to uderstand how to do it.
+If you have a development environment installed **on-premises**, besides having more flexibility with the database (allowing you to truncate data for example), you should also consider a regular maintenance of the file system of your servers. Refer to the [Guide to disk space usage and control on OutSystems servers](http://www.outsystems.com/goto/disk-space-usage-guide) to understand how to do it.
 
 ### Automate the clean-Up
 
