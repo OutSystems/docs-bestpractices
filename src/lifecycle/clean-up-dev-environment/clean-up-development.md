@@ -1,9 +1,9 @@
 ---
 summary: Avoid stopping or slowing down your application development by keeping your development environment clean.
 tags: 
-en_title: Best Practices for a Tidy and Clean Development Environment
+en_title: Best practices for a tidy and clean environment
 ---
-# Best practices for a tidy and clean Development environment
+# Best practices for a tidy and clean environment
 
 <pre class="script-css">
 .subtopic {
