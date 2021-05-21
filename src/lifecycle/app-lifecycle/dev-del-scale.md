@@ -1,5 +1,5 @@
 ---
-summary: 
+summary: OutSystems is all about agility and high-productivity and at scale is when the true challenges come up. Physical branching is the traditional industry response to these challenges, but has several drawbacks which are amplified in long-lived branching scenarios. This document aims to address those challenges by providing a modern delivery approach.
 tags:
 en_title: Development and delivery at scale
 ---
@@ -108,7 +108,7 @@ For a more in depth example of branching by abstraction, see [Integration Patter
 
 One of the principles that’s at the heart of continuous delivery is the **build in quality**. 
 
-According to W. Edwards Deming, "(it’s much cheaper to fix problems and defects if we find them immediately - ideally before they are ever checked into version control, by running automated tests locally. Finding defects downstream through inspection (such as manual testing) is time-consuming, requiring significant triage. Then we must fix the defect, trying to recall what we were thinking when we introduced the problem days or perhaps even weeks ago.)[https://continuousdelivery.com/principles/#build-quality-in]"
+According to W. Edwards Deming, "[it’s much cheaper to fix problems and defects if we find them immediately - ideally before they are ever checked into version control, by running automated tests locally. Finding defects downstream through inspection (such as manual testing) is time-consuming, requiring significant triage. Then we must fix the defect, trying to recall what we were thinking when we introduced the problem days or perhaps even weeks ago.](https://continuousdelivery.com/principles/#build-quality-in)"
 The build in quality principle is all about catching and fixing defects early during development stages to lower maintenance costs and prevent undesirable impacts for end-users (if reaches production). As development scales, it also increases the possibility of introducing defects (or technical debt) into your codebase.
 
 Part of OutSystems vision is to keep providing capabilities that empower easy code validations at early stages while reducing effort, supported by high traceability of code. A good deployment pipeline has numerous feedback loops. At each stage of the pipeline, tests are run. If the tests are passed, the pipeline continues, but if they fail or fall under a certain threshold, the pipeline stops and the team responds to the feedback. This fast feedback in a well-designed pipeline prevents poor quality code reaching production. 
