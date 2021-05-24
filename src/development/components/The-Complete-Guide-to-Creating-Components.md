@@ -11,7 +11,7 @@ This topic guides you through all the steps required to create a component in Ou
 
 Components are one of the most important aspects of **low-code** [**platforms**](https://www.outsystems.com/platform/), which enable **reusability of code** and repositories of **component libraries**. As a result, developers can build high-quality app components and share them with others, boosting application development time and code fragmentation.
 
-This article includes a [companion checklist](https://www.outsystems.com/blog/consummate-component-checklist-developers.html) that you can print and refer to at any time.
+If you want to share your component in [OutSystems Forge](https://www.outsystems.com/forge/) and have it trusted by the OutSystems Curation team, make sure your component follows [all the requirements](https://success.outsystems.com/Support/Forge_Components/Forge_FAQs/Trusted_components_requirements) to be considered a Trusted component.
 
 ## What is a Component?
 
