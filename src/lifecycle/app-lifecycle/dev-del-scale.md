@@ -6,7 +6,6 @@ en_title: Development and delivery at scale
 
 # Development and delivery at scale
 
-
 As you start having more developers, teams, and applications, it’s important to keep development and delivery agility, ensuring you can keep delivering at the high pace of a modern development platform.
         
 At Outsystems, we aim for high productivity, even in mission critical scenarios. As such, our vision is to enable organizations to be elite software delivery performers, always ready to answer business demand. We believe the best way to achieve this goal is to promote an effective continuous integration/continuous delivery (CI/CD) approach ensuring you reduce the lead time and deploy on demand. 
@@ -18,7 +17,6 @@ For an organization to deliver quality at a high pace, opting for short or logic
 According to our research, the following sections outline the challenges organizations can face when scaling a development team and the various ways OutSystems can tackle them.
 
 ## Team structure and architecture 
-
 
 A team's  productivity is highly dependent on its ability to be independently aligned with business goals. Having independent, isolated teams, increases delivery speed and is beneficial in terms of independent development, independent delivery, aligning with business goals, as well as maintaining a loosely coupled architecture. For effective team isolation to take place, the following aspects of the factory architecture and organization must be in place. 
 
@@ -54,7 +52,6 @@ Team ownership models can be adopted according to the business organization, fac
 
 ## Collaboration 
 
-
 As the application portfolio, number of teams, and the number of developers grow, finding the right balance between work isolation (develop and test without impact) and collaboration is key to keeping a high pace of delivery, while managing different releases. One common practice for handling this challenge is branching. While branching enables a complete isolation of ongoing work and allows you to keep maintaining major releases, it can also bring other tasks, such as managing extra environments to get runtime isolation for testing different releases. On the other hand, branching potentials the merge hell by reducing the frequency of code integration. *"We used to draw branching as parallel lines, but actually we should redraw as diverging lines to show the effective merge pain over time…"* ([Jonny LeRoy](https://twitter.com/jahnnie/status/937917022247120898))
 
 ![Branching - Parallel lines versus diverging lines](images/branching-parallel-lines-diverging-lines.png)
@@ -75,7 +72,6 @@ Working in small batches helps anticipate failures. At the same time it lowers t
 
 Trunk-based development is more than just a branching strategy, it is a set of techniques that enables efficient development. Trunk-based development allows you to **release apps at any time**, even with unfinished work in the code base, while still enabling a clear distinction between different release types (for example, major release, minor releases, hotfix, code increments or enhancements). By frequently committing small changes directly to the trunk, developers reduce the number of **merge conflicts** and deal with them much earlier in the development process. With release patterns such as feature toggles there is the possibility to deliver features independently without impacting other ongoing developments, avoiding the merge conflicts usually experienced at the end of the development process. Trunk-based development also improves **collaboration**; knowledge dissemination within a team is a direct consequence of performing code reviews or using a pair-programming model. Trunk-based development also reduces the **feedback loop**, for example, the fact that the CI-cycle is run much more frequently when using a trunk-based development approach.
 
-
 #### API/UI versioning
 
 Versioning is helpful in specific scenarios, namely when you want to introduce a breaking change (changing core modules/producers) in an API or a UI component, and you don't want to impact consumers straightaway. Most of the time, this applies when you cannot sync the release of a producer change and consumers, or it can be a lack of ensuring consumer quality on time for its release (probably due to lack of automated regression testing to ensure the new change will not impact the previous behavior). 
@@ -83,7 +79,6 @@ Versioning is helpful in specific scenarios, namely when you want to introduce a
 API/UI versioning applies when a change is restricted to a specific code element, (for example, a new authentication service or a new product catalog widget) and you want to ensure that any breaking changes (in the signature or the expected behavior) don't immediately impact existing consumers (each consumer can opt to switch to the new version when it makes sense to them).
 
 With multiple versions, the best way to approach version management is to have clear technical guidance about such as, when to create a new version, how to mark a version as deprecated and naming convention rules. For an example on how versions can be managed, see [Microservices Lifecycle — Managing Versions](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_Architecture_of_Your_OutSystems_Applications/Microservices_Architecture_in_OutSystems#Microservices_Lifecycle_.E2.80.94_Managing_Versions).
-
 
 #### Feature toggles
 
@@ -95,8 +90,7 @@ Technical feature toggling applies when you're implementing a feature or behavio
 
 ![Feature flags or toggles](images/feature-flags.png)
 
-
-You can find the [Feature Toggle Library](https://www.outsystems.com/forge/component-overview/9663/feature-toggle-library) component in the OutSystems Community.
+You can find the [Feature Toggle Library](https://www.outsystems.com/forge/component-overview/9663/feature-toggle-library) component in the OutSystems Community. To learn more about how to implement and use feature toggles, see [Feature toggle in OutSystems](https://success.outsystems.com/Documentation/How-to_Guides/Development/Feature_toggle_in_OutSystems). 
 
 #### Branching by abstraction
 
@@ -134,7 +128,7 @@ To ensure adherence to coding best practices and technical standards, senior dev
 
 ### Functional quality 
 
-## Automated testing
+#### Automated testing
 
 The most common feedback loop in any deployment pipeline is the execution of automated tests. Automating important processes such as testing for regression errors allow teams to reduce the lead time for delivering applications and software changes to customers. Automation allows applications to be deployed quickly, reliably, and safely.
 
@@ -143,7 +137,6 @@ By defining an automated testing strategy, it helps the efficiency of the overal
 There are many different types of **functional testing** that can be automated and help ensure that application code is working as expected, for example, and regression testing. Regression tests are any tests that validate a previously accepted behavior, regardless of test scope (unit, integration, or E2E). **Unit/component tests** verify your application at the most granular level, typically actions. They are fast, easy to maintain, and support rapid change of your application. [Unit tests](https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Testing_Guidelines/Component_Testing) should be the foundation of your automation strategy. A **regression test** collection verifies that your entire application still works as intended after being changed. This suite adds value to the deployment pipeline. 
 
 For more information about automated testing guidelines and tools, see [OutSystems Testing Guidelines](https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Testing_Guidelines).
-
 
 ## Production hotfixes 
 
