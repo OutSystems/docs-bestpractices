@@ -272,8 +272,11 @@ Well, yes and no—or, in other words, it depends. The confusion may stem from a
 
 In the OutSystems DevOps model, a deployed app means that it has been moved to the next environment—but the timing of the final step, to production, is a business decision. Some enterprises do not want to leave this stage to an automated CI/CD pipeline. For these companies, a release candidate is first deployed to a pre-production environment where it can get a real workout, with real users and real data, where it can undergo additional load testing and performance testing—and, only then, will an authorized person manually approve it for release.
 
-Note: [Apache JMeter](https://jmeter.apache.org/) can be used to perform load tests and performance tests. You can see [this presentation](https://www.outsystems.com/training/lesson/1122/how-to-set-up-a-load-test-in-5-minutes) that demonstrates how this can be done.
+<div class="info" markdown="1"> 
 
+[Apache JMeter](https://jmeter.apache.org/) can be used to perform load tests and performance tests. You can see [this presentation](https://www.outsystems.com/training/lesson/1122/how-to-set-up-a-load-test-in-5-minutes) that demonstrates how this can be done.
+
+</div>
 
 ## Secure
 
@@ -352,15 +355,21 @@ To systematically ensure high-security standards for generated applications, Out
 
 Static application security testing (SAST) is used to secure software by reviewing the source code of the software to identify sources of vulnerabilities. You can [export the source code of your OutSystems apps](https://success.outsystems.com/Support/Security/Static_Application_Security_Testing) and use it to run SAST using third-party tools such as [Omnext](https://www.omnext.com/), [Boncode](http://www.boncode.net/boncode-connector), and [SIG](https://www.softwareimprovementgroup.com/).
 
-Note: The same exported source code can be used by [Veracode](https://www.veracode.com/) to perform dynamic app security testing.
+<div class="info" markdown="1">
 
+The same exported source code can be used by [Veracode](https://www.veracode.com/) to perform dynamic app security testing.
+
+</div>
 
 #### Penetration testing
 
 A penetration test, also called a pen test or ethical hacking, can be used used to identify, test, and highlight vulnerabilities in your code in the OutSystems cloud using such third-party tools as [Neotys](https://www.neotys.com/) and [Tricentis](https://www.tricentis.com/). 
 
-Note: To perform penetration tests, and vulnerability scans, authorization from OutSystems must be requested at least five business days before the start date for each test.
+<div class="info" markdown="1">
 
+To perform penetration tests, and vulnerability scans, authorization from OutSystems must be requested at least five business days before the start date for each test.
+
+</div>
 
 ## Monitor
 
