@@ -218,7 +218,7 @@ See the [Complete Guide To BDD Testing In OutSystems](https://www.outsystems.com
 #### BDD test framework
 
 
-#### [BDDFramework](https://www.outsystems.com/forge/component-overview/1201/bddframework), described above, can also be used to write E2E tests.
+[BDDFramework](https://www.outsystems.com/forge/component-overview/1201/bddframework), described above, can also be used to write E2E tests.
 
 
 #### Ghost Inspector
