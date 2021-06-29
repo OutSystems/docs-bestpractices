@@ -75,9 +75,11 @@ Once you delete the Solution version, you can then delete the module version ass
 ## Application tagged versions
 
 In case you are confident that you won’t need to rollback to a specific [tagged version](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Deploy_Applications/Tag_a_Version), you can also delete application versions.
-Since LifeTime Management Console Release Feb.2019, [LifeTime API v2](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_API_v2) provides a method to delete an application version if not “InUse”.
+Since LifeTime Management Console Release Feb.2019, [LifeTime API v2](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_API_v2) provides a method to delete an application version if it's not “InUse”.
 
 ` DELETE /lifetimeapi/rest/v2/applications/{ApplicationKey}/versions/{VersionKey}/ `
+
+A sample implementation of the API can be found in the Forge Component [Lifetime Tag Manager](https://www.outsystems.com/forge/component-overview/11095/lifetime-tag-manager).
 
 Once you delete the tagged application version, you can then delete the module version associated with it, as described in the [Module versions](#module-versions) section.
 
