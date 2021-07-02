@@ -15,18 +15,18 @@ OutSystems components enable reusability of code and are an important piece to a
 
 Before [publishing your OutSystems component to Forge](https://success.outsystems.com/Support/Forge_Components/Forge_FAQs/Sharing_a_Project#How_do_I_publish_a_component.3F), make sure it follows the best practices below.
 
+### Start small { #small }
+
+Your component will be used by several people in different context, so keep in mind the developer experience and their skill set.
+
+Start by a simple small component that focus on the most common use cases. This promotes its usage among the community. Other options can come through an extensibility mechanism.
+
 ### Follow the development best practices { #best-practices }
 
 To create high-quality components that can serve several apps and developers, make sure you know and follow the OutSystems best practices:
 
 * [Best practices for OutSystems development](https://success.outsystems.com/Documentation/Best_Practices/Development)
 * [The complete guide to creating components](The-Complete-Guide-to-Creating-Components.md)
-
-### Start small { #small }
-
-Your component will be used by several people in different context, so keep in mind the developer experience and their skill set.
-
-Start by a simple small component that focus on the most common use cases. This promotes its usage among the community. Other options can come through an extensibility mechanism.
 
 ### Use icons for visual reference { #icons }
 
@@ -43,6 +43,10 @@ There are certain styles in UI elements that may difficult the preview of your c
 * Use sample content inside placeholders
 
 See more details in the [complete guide to creating components](The-Complete-Guide-to-Creating-Components.md#good-preview).
+
+### Distribute your component in OAP format { #oap }
+
+The recommended format to distribute a component in Forge is as an OutSystems Application (OAP). This format enables easier installation and upgrade of the component, and keeps your environment better organized.
 
 ### Have a meaningful name and description { #name-desc }
 
@@ -92,11 +96,7 @@ Consider the following best practices:
 
 * The demo should be **guided** and **straightforward**, with one single or central screen if possible, and without login.
 
-### Distribute your component in OAP format { #oap }
-
-The recommended format to distribute a component in Forge is as an OutSystems Application (OAP). This format enables easier installation and upgrade of the component, and keeps your environment better organized.
-
-### Keep the component relevant { #relevant }
+### Support and maintain your component { #support }
 
 An important part of having a component available to the community is making sure that you can support a fellow developer when they're using your component. A few things that can help you on that:
 
