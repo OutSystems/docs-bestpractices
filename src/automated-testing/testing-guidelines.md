@@ -12,7 +12,7 @@ At a broader level, OutSystems does impact analysis for multiple applications wh
 
 So what do you get from testing with OutSystems? The number of bugs introduced is typically much smaller when compared with traditional development technologies, which translates to fewer test-and-fix cycles and greatly reduces development and delivery effort.
 
-Keep in mind that integrity validations, self-healing capabilities, and impact analysis won’t eliminate the need for testing during the application lifecycle. OutSystems actually goes software package integrity, validating the overall quality of application, which includes a set of functional, performance, and security criteria.
+Keep in mind that integrity validations, self-healing capabilities, and impact analysis won’t eliminate the need for testing during the application lifecycle. OutSystems actually does software package integrity, validating the overall quality of application, which includes a set of functional, performance, and security criteria.
 
 ## Testing throughout Delivery Lifecycle
 
