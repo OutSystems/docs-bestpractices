@@ -9,11 +9,13 @@ This article describes the best practices for sharing OutSystems components in t
 
 ## Introduction
 
-OutSystems components enable reusability of code and are an important piece to accelerate application delivery. The [OutSystems Forge](https://www.outsystems.com/forge/) is the place where you can share your components with the OutSystems community.
+OutSystems components enable reusability of code and are an important piece to accelerate application delivery.
+
+If you think you built a component that can help other developers, consider sharing it with the OutSystems community in the [Forge](https://www.outsystems.com/forge/).
 
 ## Forge best practices
 
-Before [publishing your OutSystems component to Forge](https://success.outsystems.com/Support/Forge_Components/Forge_FAQs/Sharing_a_Project#How_do_I_publish_a_component.3F), make sure it follows the best practices below.
+Before [publishing your OutSystems component to the Forge](https://success.outsystems.com/Support/Forge_Components/Forge_FAQs/Sharing_a_Project#How_do_I_publish_a_component.3F), make sure it follows the best practices below.
 
 ### Start small { #small }
 
@@ -88,7 +90,9 @@ Make sure the component's **documentation** meet the following:
 
 ### Provide a demo application { #demo }
 
-Whenever possible, make sure you create a separate application that consumes your component logic and **demonstrates the most common use cases**. By doing this, you enable better testing from your side and better understanding of what the component does without community members having to install it.
+Whenever possible, make sure you create a **separate application** that consumes your component logic and **demonstrates the most common use cases**. By doing this, you enable better testing from your side and better understanding of what the component does without community members having to install it.
+
+Additionally, having an application only for demo purposes avoids the need of pushing demo code to production along with the component's core functionality, as developers can publish the demo only in the development environment.
 
 Consider the following best practices:
 
