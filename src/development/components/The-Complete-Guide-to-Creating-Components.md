@@ -67,6 +67,12 @@ Upon defining the purpose of your component, you can start building it, by defin
 
 Keep in mind that your components must fit into the [Architecture Canvas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications) methodology used to build OutSystems applications.
 
+### Take advantage of modern web features using Reactive Web
+
+[Reactive Web Apps](https://www.outsystems.com/blog/posts/all-you-need-to-know-about-reactive-web/) are a highly performant and scalable way to build apps that boost the development experience across web and mobile.
+
+When building web components, promote Reactive Web over Traditional Web.
+
 ### API design to offer the best options
 
 There is no point in owning a great car if you don't know how to ride it. The same applies to a component. During implementation, keep in mind the developer experience and their skill set. As such:
