@@ -341,7 +341,7 @@ When [Architecture Dashboard](https://success.outsystems.com/Documentation/Archi
 *   JavaScript or HTML injection (Traditional Web apps)
 *   Compromised mobile apps: rooted (Android) or jailbroken (iOS)
 
-Along with each identified issue, Architecture Dashboard explains its impact and gives instructions for how to fix it, A list of all code analysis patterns can be found [here](https://success.outsystems.com/Documentation/Architecture_Dashboard/Code_Patterns#Security).
+Along with each identified issue, Architecture Dashboard explains its impact and gives instructions for how to fix it. A list of all code analysis patterns can be found [here](https://success.outsystems.com/Documentation/Architecture_Dashboard/Code_Patterns#Security).
 
 
 ### Third-party tools
@@ -455,7 +455,7 @@ These logs are stored in a standard database that users can access to build thei
 
 While **Service Center** presents monitoring logs and analysis reports by way of numbers, which can make it difficult to parse,[ LifeTime](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Monitor_and_Troubleshoot/Troubleshoot_the_Performance_of_an_Application) provides much the same data in a unified graphic console for analytics across all of your environments for traditional web apps.
 
-The analytics dashboard for one app in the environment, covers all aspects of the[ end-user experience](https://www.outsystems.com/evaluation-guide/what-kind-of-monitoring-and-analytics-does-outsystems-offer/#End-user_experience_analytics), a metric based on industry standard indicators of user satisfaction. By regularly checking LifeTime, developers can detect, troubleshoot, and solve performance issues even before end users report them.
+The analytics dashboard for one app in the environment, covers all aspects of the[ end-user experience](https://www.outsystems.com/evaluation-guide/what-kind-of-monitoring-and-analytics-does-outsystems-offer/#End-user_experience_analytics), a metric based on industry standard indicators of user satisfaction. By regularly checking **LifeTime**, developers can detect, troubleshoot, and solve performance issues even before end users report them.
 
 
 ![analytics drilldown](images/analytics-drilldown.png "analytics drilldown")
@@ -513,9 +513,9 @@ The[ Business Activity Monitoring](http://www.outsystems.com/forge/component/132
 
 [MonitorProbe](https://www.outsystems.com/forge/component-overview/4559/monitorprobe), an open-code component available for free download from the Forge, can be used to expose all the relevant OutSystems monitoring data through a set of REST APIs of a specific environment.
 
-Like Performance Monitoring API, MonitorProbe gives you access to data that is otherwise accessible only through a direct query to the OutSystems platform database, such as logs and timers.
+Like **Performance Monitoring API**, **MonitorProbe** gives you access to data that is otherwise accessible only through a direct query to the OutSystems platform database, such as logs and timers.
 
-MonitorProbe presents the raw data about application behavior and performance in an easily accessible manner for monitoring and troubleshooting. In addition, using a tool that can import the exposed data, such as[ Microsoft Excel](https://support.microsoft.com/en-us/office/import-data-from-external-data-sources-power-query-be4330b3-5356-486c-a168-b68e9e616f5a), you can build your own visualizations and create alerts on top of the OutSystems monitoring data.
+**MonitorProbe** presents the raw data about application behavior and performance in an easily accessible manner for monitoring and troubleshooting. In addition, using a tool that can import the exposed data, such as[ Microsoft Excel](https://support.microsoft.com/en-us/office/import-data-from-external-data-sources-power-query-be4330b3-5356-486c-a168-b68e9e616f5a), you can build your own visualizations and create alerts on top of the OutSystems monitoring data.
 
 
 #### Infrastructure Monitoring
@@ -533,7 +533,7 @@ A great number of monitoring use cases can be served by the out-of-the-box tools
 
 [Elastic](https://www.elastic.co/infrastructure-monitoring) is a powerful monitoring and observability tool that you can use to leverage OutSystems monitoring data and, if needed, even do real user monitoring (RUM) and application performance monitoring (APM).
 
-Elastic allows you to monitor software services and applications in real time, collecting detailed performance information on response time for incoming requests, database queries, calls to caches, external HTTP requests, among others.
+**Elastic** allows you to monitor software services and applications in real time, collecting detailed performance information on response time for incoming requests, database queries, calls to caches, external HTTP requests, among others.
 
 ![elastic monitoring](images/elastic-monitoring.png "elastic monitoring")
 
