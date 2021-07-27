@@ -189,7 +189,7 @@ Build for the future by making sure your component can support **multiple blocks
 
 Consider **concurrency scenarios**. OutSystems already helps with this in the background by keeping blocks separated, but you still need to be aware of actions triggered by users. For example, several fast clicks on a button, triggering multiple calls to the server, is one possible concurrency scenario.
 
-If the **component fetches data**, consider allowing the developer to **fetch it outside the component** (for example, from a screen), and provide that data (to the component) as an input parameter, instead of having the component fetch the data.
+If the **component fetches data**, consider allowing the developer to **fetch it outside the component** and provide that data (to the component) as an input parameter, instead of having the component fetch the data.
 
 When using **external resources** (for example, external libraries, or JSON files), consider reusing them instead of fetching them again. For example, the System Action [RequireScript](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/System_Actions#Client_RequireScript) uses the cached file if once you've requested it.
 
