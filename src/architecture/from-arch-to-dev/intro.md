@@ -1,5 +1,5 @@
 ---
-summary: Learn how create an architecture blueprint
+summary: Learn how to create an architecture blueprint
 tags: article-page; OutSystems-development-from-blueprint; architecture-blueprint; OutSystems-Architecture; 
 ---
 
