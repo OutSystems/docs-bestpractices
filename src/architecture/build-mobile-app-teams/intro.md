@@ -1,6 +1,6 @@
 ---
-summary:
-tags:
+summary: This series of articles helps you on providing guidelines and best practices on how you can leverage the power of having multiple independent development teams working on the same mobile apps, avoiding common mistakes and maximizing their productivity.
+tags: article-page
 ---
 
 # Building mobile apps with multiple independent teams
