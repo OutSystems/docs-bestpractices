@@ -1,5 +1,5 @@
 ---
-summary: Learn how create an architecture blueprint
+summary: Learn how to create an architecture blueprint
 tags: article-page; OutSystems-development-from-blueprint; architecture-blueprint; OutSystems-Architecture; 
 ---
 
@@ -93,7 +93,7 @@ Let's have a quick recap of the [Architecture Canvas](https://success.outsystems
 | ![Core layer](images/core-layer.png) | Services around business concepts, exporting reusable entities, business rules, and business widgets. |
 | ![Foundation Layer](images/foundation-layer.png) | Business-agnostic services to extend the framework with highly reusable assets, UI Patterns, connectors to external systems, and integration of native code. |
 
-Keep in mind this article doesn't focus on the architecture design process, but on the process from the architecture to development, so it mentions only the essentials in this part. For detailed information about the Architecture Canvas and on the design process refer to [OutSystems Architect online training](https://www.outsystems.com/learn/courses/67/designing-apps-using-an-architecture-framework/).
+Keep in mind this article doesn't focus on the architecture design process, but on the process from the architecture to development, so it mentions only the essentials in this part. For detailed information about the Architecture Canvas and on the design process refer to [OutSystems Architect online training](https://www.outsystems.com/training/courses/193/designing-apps-using-an-architecture-framework/).
 
 Based on these principles, you end up with the following concepts of the application on the following layer canvas:
 

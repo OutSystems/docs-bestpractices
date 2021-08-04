@@ -1,6 +1,6 @@
 ---
-summary: Learn the how OutSystems approach a Domain Driven architecture.
-tags:
+summary: Learn how OutSystems approaches a Domain Driven architecture.
+tags: article-page
 ---
 
 # OutSystems Domain Driven architecture

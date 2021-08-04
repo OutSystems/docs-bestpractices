@@ -93,7 +93,7 @@ namelist = BuildSafe_InClauseTextList(surnames)
 
 Query parameters in prepared statements can only be used for data replacements; they can't be used as parameters for specifying table names, table fields, operators, or SQL syntax like "ORDER BY" clauses. Therefore, to customize the sort order of the results returned by a SQL query you need to enable the **Expand Inline** property for the parameter that defines the custom sort order.
 
-As said before, you must not use values provided by end users as part of SQL statements — this is also valid for the sort order of an SQL statement. The EncodeSql built-in won't protect you in this case since it's designed to encode string literals and not parts of a SQL statement.
+You must not use values provided by end users as part of SQL statements — this is also valid for the sort order of an SQL statement. The EncodeSql built-in won't protect you in this case since it's designed to encode string literals and not parts of a SQL statement.
 
 Use the List_SortColumn widget available in RichWidgets together with the List_SortColumn_GetOrderBy server action to implement custom sort orders in your SQL statements. Check [How to use the List Sort Column Widget with a SQL query](https://success.outsystems.com/Documentation/How-to_Guides/Development/How_to_use_the_List_Sort_Column_Widget_with_a_SQL_query) in Development FAQs for more information.
 
