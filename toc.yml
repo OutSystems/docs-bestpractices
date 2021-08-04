@@ -43,6 +43,7 @@
     - href: lifecycle/app-lifecycle/dev-del-scale.md
     - href: lifecycle/clean-up-environment/clean-up-environment.md
     - href: lifecycle/devops/devops-in-outsystems.md
+    - href: lifecycle/cicd/cicd-in-outsystems.md
     - href: lifecycle/troubleshoot-debugging-mobile/intro.md   
     - topics:
         - href: lifecycle/troubleshoot-debugging-mobile/troubleshooting-process.md
