@@ -193,7 +193,7 @@ Since BDD apps are only used for regression testing, they are not promoted beyon
 
 </div>
 
-In the **Plugin** menu select **Trigger Pipeline** to open the **Pipeline** screen.
+In the **Plugins** menu select **Trigger Pipeline** to open the **Pipeline** screen.
 
 
 
