@@ -8,7 +8,7 @@ en_title: Reactive web security best practices
 
 <div class="info" markdown="1">
 
-This article was written by [Remco Dekkinga](https://www.outsystems.com/profile/1832/), OutSystems MVP
+This article was written by [Remco Dekkinga](https://www.outsystems.com/profile/jppqqjaygb/), OutSystems MVP
 
 </div>
 
