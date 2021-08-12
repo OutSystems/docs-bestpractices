@@ -151,7 +151,7 @@ If Windows Defender is active, or any other antivirus protection, disable the re
 
 * `.NET` Framework configuration files in `%WINDIR%\Microsoft.Net\framework64\v<version>\Config` (on a 64-bit system)
 
-* Temporary folder of OSControllerUser, used for publishing (typically `C:\Users\OSControllerUser\AppData\Local\Temp`)
+* Temporary folder of the user used to run the OutSystems Deployment Controller Service. That can either be Windows Authentication user used for the Database or OSControllerUser (typically `C:\Users\OSControllerUser\AppData\Local\Temp`)
 
 * Optionally, the system temporary folder (typically `%TEMP%` or `C:\Windows\Temp`).
 
