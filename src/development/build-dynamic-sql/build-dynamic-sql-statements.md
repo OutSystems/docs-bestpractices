@@ -95,6 +95,6 @@ Query parameters in prepared statements can only be used for data replacements; 
 
 You must not use values provided by end users as part of SQL statements — this is also valid for the sort order of an SQL statement. The EncodeSql built-in won't protect you in this case since it's designed to encode string literals and not parts of a SQL statement.
 
-Use the List_SortColumn widget available in RichWidgets together with the List_SortColumn_GetOrderBy server action to implement custom sort orders in your SQL statements. Check [How to use the List Sort Column Widget with a SQL query](https://success.outsystems.com/Documentation/How-to_Guides/Development/How_to_use_the_List_Sort_Column_Widget_with_a_SQL_query) in Development FAQs for more information.
+Learn how to implement custom sort orders in your SQL statement in [How to enable dynamic sorting in a table fed by a SQL query](https://success.outsystems.com/Documentation/How-to_Guides/Development/How_to_enable_dynamic_sorting_in_a_table_fed_by_a_SQL_query).
 
 If you must provide complex sorting abilities in your application provided by end users, you should provide them with a UI where they can select their desired sorting options without having to enter any column/attribute names. All column names and sort order should be determined by your application from the options selected by end users.
