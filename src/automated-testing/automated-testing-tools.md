@@ -109,7 +109,7 @@ JMeter may be used for load testing. Since OutSystems applications are standard 
 
 ### AppFeedback 
 
-To improve the quality of the information when doing functional tests, developers and/or business users can use the [OutSystems AppFeeback​](https://success.outsystems.com/Documentation/10/Managing_the_Applications_Lifecycle/Gather_User_Feedback) feature.
+To improve the quality of the information when doing functional tests, developers and/or business users can use the [OutSystems AppFeeback​](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Gather_user_feedback) feature.
 
 This feature allows end-users of OutSystems applications to share feedback with contextual information from within the app itself, therefore shortening the feedback cycle.
 
