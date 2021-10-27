@@ -4,10 +4,18 @@ summary:
 en_title: Don't abuse expand inline parameters
 ---
 
-
 # Don't abuse expand inline parameters
 
 It's possible to insert SQL content inside OutSystems SQL query - through an expand inline parameter. This parameter it's not a SQL parameter, in the sense that it isn't created in the database. It's calculated during runtime and textually expanded inside the SQL call.
+
+<div class="warning" markdown="1">
+
+OutSystems provides ways of implementing common use cases without enabling this property. Refer to the following for more information:
+
+* [Building dynamic SQL statements the right way](../../development/build-dynamic-sql/build-dynamic-sql-statements.md) to understand if you can change your implementation to avoid having the Expand Inline property enabled.
+* [SQL Injection Warning](https://success.outsystems.com/Documentation/11/Reference/Errors_and_Warnings/Warnings/SQL_Injection_Warning) for guidance on how to resolve this warning the IDE shows when you set Expand Inline property as enabled.
+
+</div>
 
 Here are some examples of common use for expand inline parameters:
 
