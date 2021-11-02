@@ -63,6 +63,7 @@
     - href: performance/infrastructure/infrastructure.md
     - href: performance/logic/logic.md
     - href: performance/queries/queries.md
+    - href: performance/queries/expand-inline-parameters.md
     - href: performance/references/references.md   
     - href: performance/top-10-rules/top-10-rules.md 
     - href: performance/user-interface/user-interface.md 
