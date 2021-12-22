@@ -14,14 +14,13 @@ en_title: Best practices for a tidy and clean environment
 
 As your factory of applications grows, it consumes more resources (for example: disk space, database, etc.). It’s important that you keep your environments tidy and clean so it doesn’t slow down your devops performance. Although you can always improve the processing power and infrastructure capacity, this usually brings additional costs.
 
-Having an untidy environments may result in:
+With a clean environment, you can eliminate a: 
 
-* Deploy and publishing performance
-* Slow down your teams performance
-* Overall bad LifeTime and managing consoles performance, across the environments.
+* Reduction in deployment and publishing performance
+* Slow down in your teams performance
+* Negative impact to LifeTime and Service Center performance
 
 This article explores the different types of operations that may be consuming unnecessary resources and guide you on different ways to clean it. Also, it addresses some other common issues that you should pay attention to and how to prevent these as much as possible.
-
 
 ## Module versions
 
