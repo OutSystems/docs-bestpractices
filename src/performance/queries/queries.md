@@ -89,7 +89,7 @@ Also the databases are significantly more efficient at performing batch operatio
 
 ### Remarks
 
-This is a very important best practice, which is usually not applied. Mostly due to lack of experience, many developers feel more comfortable using Aggregates and avoid SQL queries at all cost.
+SQL queries should never be the first option, as Aggregates provide you more straightforward and optimized data manipulation. However, the huge performance gains when using SQL queries to perform bulk operations justifies its usage for this specific scenario.
 
 ## Avoid using isolated Aggregates
 
