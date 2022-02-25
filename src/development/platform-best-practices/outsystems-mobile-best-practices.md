@@ -96,7 +96,7 @@ Check the performance warnings displayed in the TrueChange™ tab and fix them.
 
 ## Design a Lightweight Local Storage { #lightweight-local-storage }
 
-Keeping a large amount of data in the device's local storage, for example in offline or cache scenarios, might become a performance killer in low-end devices.
+Keeping a large amount of data in the device's local storage, for example in offline or cache scenarios, might become a performance killer in low-end devices, causing `Failed to allocate X bytes` errors.
 
 **Recommendation**
 
@@ -110,6 +110,8 @@ Use the following techniques to design a lightweight local storage:
 * Keep only the entity records you need for your use case in the local storage, instead of all records. For example, get only the open tasks for a given time period, instead of all tasks.
 
 * Consider synchronizing data in small chunks, starting with the most relevant data first (e.g. synchronize only text information first; photos and other images can be synchronized later).
+
+* If your synchronization process must include images, try to compress them.
 
 ## Keep the Splash Screen Simple and Fast
 
