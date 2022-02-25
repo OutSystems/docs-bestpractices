@@ -96,7 +96,7 @@ Check the performance warnings displayed in the TrueChange™ tab and fix them.
 
 ## Design a Lightweight Local Storage { #lightweight-local-storage }
 
-Keeping a large amount of data in the device's local storage, for example in offline or cache scenarios, might become a performance killer in low-end devices, causing **"Failed to allocate X bytes"** errors.
+Keeping a large amount of data in the device's local storage, for example in offline or cache scenarios, might become a performance killer in low-end devices, causing `Failed to allocate X bytes` errors.
 
 **Recommendation**
 
