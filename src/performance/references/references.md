@@ -51,11 +51,11 @@ Use connection pooling when connecting to external systems/databases.
 
 ### Solution
 
-Always use a connection pool management mechanism in frequent connections to third party database systems, like SQL Server, Oracle, DB2 or MySQL, through extension integration.
+Always use a connection pool management mechanism in frequent connections to third party database systems, like SQL Server, Oracle, PostgreSQL, DB2 or MySQL, through extension integration.
 
 ### Importance
 
-Always use a connection pool management mechanism in frequent connections to third party database systems, like SQL Server, Oracle, DB2 or MySQL, through extension integration
+Always use a connection pool management mechanism in frequent connections to third party database systems, like SQL Server, Oracle, PostgreSQL, DB2 or MySQL, through extension integration
 
 ### Remarks
 
