@@ -165,7 +165,7 @@ Typically, the **DEV** environment uses mock data, so that developers can publis
 
 <div class="info" markdown="1">
 
-Developers may use [Feature Toggle](https://www.outsystems.com/forge/component-overview/9664/feature-toggle-management), an open source component available for free download from the Forge, to hide unfinished code or exclude deployment of a feature that is not intended for the current release.
+Developers may use [Feature Toggle](https://www.outsystems.com/forge/component-overview/9664/feature-toggle-management), a component available for free download from the Forge, to hide unfinished code or exclude deployment of a feature that is not intended for the current release.
 </div>
 
 Once the development of a new feature or change request is complete, the app is ready to be promoted from **Development** to **Regression**. In the **App** screen in **LifeTime**, as seen below, the developer creates a release candidate by clicking **[Tag Version](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Deploy_Applications/Tag_a_Version)**. 

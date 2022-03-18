@@ -201,7 +201,7 @@ Also:
 
 ## Common patterns and examples
 
-Here’s a quick list of several open source apps you can use or refer to for examples:
+Here’s a quick list of several open apps you can use or refer to for examples:
 
 * Hierarchical tree example: [Directory](https://www.outsystems.com/forge/component-overview/614/directory)
 * Tags implementation example: [Documents](https://www.outsystems.com/forge/component-overview/612/documents)
