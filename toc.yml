@@ -97,3 +97,6 @@
     - href: automated-testing/component-testing.md
     - href: automated-testing/integration-api-testing.md
     - href: automated-testing/web-ui-testing.md
+
+# Infrastructure Management Best Practices
+- href: infrastructure-management/intro.md
