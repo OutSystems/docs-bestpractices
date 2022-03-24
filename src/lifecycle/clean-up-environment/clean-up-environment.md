@@ -33,7 +33,7 @@ Because of that, it's important in Development environments, to regularly clean 
 
 ### Delete old Module versions using Service Center
 
-1. Navigate to [Service Center](https://success.outsystems.com/Support/Enterprise_Customers/Licensing/Overview/How_to_access_your_OutSystems_Platform) (https://YOUR_ENVIRONMENT/ServiceCenter)
+1. Navigate to Service Center `https://<YOUR_ENVIRONMENT>/ServiceCenter`
 1. Click on the Factory tab
 1. Click on the Modules submenu option. Then click the Check Old Module Versions to Delete link
 1. Choose the time period to delete, and click the Check Versions to Delete button
