@@ -1,6 +1,29 @@
 #Architecture Best Practices
 - href: architecture/intro.md
 - topics:
+    # Designing the Architecture of Your OutSystems apps            
+    - href: enterprise/maintenance/architecture/intro.md
+    - topics:
+        - href: enterprise/maintenance/architecture/01-4-layer-canvas.md    
+        - href: enterprise/maintenance/architecture/02-translating-business-app-modules.md  
+        - href: enterprise/maintenance/architecture/03-validating-app-architecture.md  
+        - href: enterprise/maintenance/architecture/04-soa-architectures.md  
+        - href: enterprise/maintenance/architecture/05-integration-patterns.md  
+        - href: enterprise/maintenance/architecture/06-app-composition/06-app-composition.md
+        - topics:
+            - href: enterprise/maintenance/architecture/06-app-composition/applying-4-layer-canvas-apps.md   
+            - href: enterprise/maintenance/architecture/06-app-composition/rules-correct-app-composition.md
+            - href: enterprise/maintenance/architecture/06-app-composition/isolating-app-theme.md                                 
+        - href: enterprise/maintenance/architecture/07-designing-multi-tenant-apps.md
+        - href: enterprise/maintenance/architecture/08-microservices-arch-outsystems.md  
+    - href: architecture/from-arch-to-dev/intro.md
+    - topics:
+        - href: architecture/from-arch-to-dev/arch-to-dev.md        
+    - href: architecture/domain-driven-design/intro.md
+    - topics:
+        - href: architecture/domain-driven-design/understanding-microservices.md
+        - href: architecture/domain-driven-design/domain-driven-design.md
+        - href: architecture/domain-driven-design/domain-driven-design-os.md
     - href: architecture/data/archive.md
     - href: architecture/data/purge.md 
     - href: architecture/data/data-layer.md
@@ -11,14 +34,6 @@
         - href: architecture/build-mobile-app-teams/bp-architecture.md
         - href: architecture/build-mobile-app-teams/bp-development.md
         - href: architecture/build-mobile-app-teams/bp-multiple.md
-    - href: architecture/from-arch-to-dev/intro.md
-    - topics:
-        - href: architecture/from-arch-to-dev/arch-to-dev.md
-    - href: architecture/domain-driven-design/intro.md
-    - topics:
-        - href: architecture/domain-driven-design/understanding-microservices.md
-        - href: architecture/domain-driven-design/domain-driven-design.md
-        - href: architecture/domain-driven-design/domain-driven-design-os.md
 
 #Development Best Practices
 - href: development/intro.md
