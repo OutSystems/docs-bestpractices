@@ -41,7 +41,8 @@
     # Extensibility
     - href: development/extensibility/extensibility.md
     - href: development/platform-best-practices/outsystems-platform-best-practices.md 
-    - href: development/platform-best-practices/outsystems-mobile-best-practices.md          
+    - href: development/platform-best-practices/outsystems-mobile-best-practices.md     
+    - href: development/database-optimization/database-optimization.md      
     - href: development/data/data-load.md
     - href: development/data/data-rendering.md
     - href: development/front-end/front-end-journey.md
