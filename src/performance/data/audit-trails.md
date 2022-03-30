@@ -77,7 +77,7 @@ Consider the following three architecture patterns/examples on how to implement 
 
 ### Based on OutSystems built-in LogMessage action
 
-![OutSystems Audit Trails Based on the built-in LogMessage action](images/audit-trails/outsystems-audit-trails-based-on-built-in_LogMessage_action.png?width=750)
+![OutSystems Audit Trails Based on the built-in LogMessage action](images/audit-trails/outsystems-audit-trails-based-on-built-in_logmessage_action.png?width=750)
 
 The **Audit_Lib** module provides a **MyLogMessage** public action, which references a **LogMessage** (system) built-in action.
 
