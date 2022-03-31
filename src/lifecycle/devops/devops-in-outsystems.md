@@ -61,7 +61,7 @@ To fill this expertise gap, many companies have adopted low-code software develo
 
 The OutSystems platform straddles multiple steps of the DevOps loop by consolidating coding, validation, and building using a combination of automation, AI, and analytics.
 
-[Service Studio](https://success.outsystems.com/Documentation/11/Getting_started/Service_Studio_Overview), the Outsystems visual development environment, is not meant to replace experienced coders. Instead, it vastly increases their productivity with [AI-assisted development](https://success.outsystems.com/Documentation/11/Developing_an_Application/Implement_Application_Logic/AI-assisted_development?_gl=1*1srqylj*_ga*MjA1MDQ1MDcwLjE2MDE1MzExNjY.*_ga_ZD4DTMHWR2*MTYyMTc3MTE1MS40NjYuMS4xNjIxNzcxMjEwLjE.), which predicts what is needed as logic or workflow is being built—and even gives a choice of the most likely properties for newly created nodes. At the same time, colleagues with different skill sets can develop anything from simple departmental applications to more complex mission-critical enterprise apps—all without the need to write a single line of code. And, unlike many low-code offerings, OutSystems does not lock developers into a limited number of blocks, modules, and components. OutSystems is endlessly extensible, and developers with expertise in classical coding can use their skills to expand built-in capabilities to fulfill specific use cases.
+[Service Studio](https://success.outsystems.com/Documentation/11/Getting_started/Service_Studio_Overview), the Outsystems visual development environment, is not meant to replace experienced coders. Instead, it vastly increases their productivity with [AI-assisted development](https://success.outsystems.com/Documentation/11/Developing_an_Application/Implement_Application_Logic/AI-assisted_development), which predicts what is needed as logic or workflow is being built—and even gives a choice of the most likely properties for newly created nodes. At the same time, colleagues with different skill sets can develop anything from simple departmental applications to more complex mission-critical enterprise apps—all without the need to write a single line of code. And, unlike many low-code offerings, OutSystems does not lock developers into a limited number of blocks, modules, and components. OutSystems is endlessly extensible, and developers with expertise in classical coding can use their skills to expand built-in capabilities to fulfill specific use cases.
 
 Here are the steps of the OutSystems **Develop** stage:
 
@@ -126,7 +126,7 @@ A workflow app, as it evolves, may outgrow its original design. For example, its
 
 ### Experience Builder
 
-[Experience Builder](https://success.outsystems.com/Documentation/Experience_Builder?_gl=1*x3hbht*_ga*MjA1MDQ1MDcwLjE2MDE1MzExNjY.*_ga_ZD4DTMHWR2*MTYyMTQyMjEwNi40NjAuMS4xNjIxNDIzMTExLjI1) lets leaders, developers, and UX/UI designers create prototypes of pixel-perfect B2C mobile apps with great UX using a web interface. All generated code is built following best practices to ensure a sound and scalable architecture.
+[Experience Builder](https://success.outsystems.com/Documentation/Experience_Builder) lets leaders, developers, and UX/UI designers create prototypes of pixel-perfect B2C mobile apps with great UX using a web interface. All generated code is built following best practices to ensure a sound and scalable architecture.
 
 ![experience builder](images/product-update.gif "experience builder")
 
@@ -147,7 +147,7 @@ Once stakeholders are satisfied with the user journeys of the mobile app, it can
 
 No one disputes the importance of testing throughout the application lifecycle. The heat in the discussion comes from details about automation, techniques, priorities, budget allocations, and team resources. However, everyone agrees that, if there were an ideal solution, it would be fast, efficient, automatic—and would catch that bug lurking in production which will soon be discovered by a dissatisfied user.
 
-OutSystems gives your factory a step up in this testing quest. Self-healing capabilities automatically correct problems and notify developers of any issues they must handle. Continuous integrity validation tracks dependencies, automates database updates, and analyzes the impact on running applications throughout their lifecycles, ensuring that nothing is broken at deployment time. A [deployment plan](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Deploy_Applications/Deployment_Plans?_gl=1*1fo26p4*_ga*MjA1MDQ1MDcwLjE2MDE1MzExNjY.*_ga_ZD4DTMHWR2*MTYyMzA1MzA3Ni41MDQuMS4xNjIzMDUzMDc4LjU4) assesses the impact of moving applications to a target environment, checks software package integrity, validates the overall quality of application—including a set of functional, performance, and security criteria.
+OutSystems gives your factory a step up in this testing quest. Self-healing capabilities automatically correct problems and notify developers of any issues they must handle. Continuous integrity validation tracks dependencies, automates database updates, and analyzes the impact on running applications throughout their lifecycles, ensuring that nothing is broken at deployment time. A [deployment plan](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Deploy_Applications/Deployment_Plans) assesses the impact of moving applications to a target environment, checks software package integrity, validates the overall quality of application—including a set of functional, performance, and security criteria.
 
 When compared to traditional development technologies, the OutSystems platform results in fewer bugs, reduced test-and-fix cycles, and a more streamlined development and deployment pipeline. However, this does not eliminate the need for testing during the application lifecycle. So the original questions remain: how and where and when.
 
@@ -299,7 +299,7 @@ OutSystems complies with, and accelerates the implementation of, common security
 
 #### [Identity management](https://www.outsystems.com/evaluation-guide/outsystems-security-overview/#identity-mgmt)
 
-OutSystems automatically includes built-in logic for the following[ end-user authentication](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End_User_Management/End_Users_Authentication) methods, including [single sign-on](https://success.outsystems.com/Documentation/How-to_Guides/Integrations/How_to_configure_OutSystems_to_use_identity_providers_using_SAML?_gl=1*98pcaa*_ga*MjA1MDQ1MDcwLjE2MDE1MzExNjY.*_ga_ZD4DTMHWR2*MTYyMzIyMTQ0NC41MTEuMS4xNjIzMjI0OTY0LjU5) (SSO):
+OutSystems automatically includes built-in logic for the following[ end-user authentication](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End_User_Management/End_Users_Authentication) methods, including [single sign-on](https://success.outsystems.com/Documentation/How-to_Guides/Integrations/How_to_configure_OutSystems_to_use_identity_providers_using_SAML) (SSO):
 
 
 
@@ -314,7 +314,7 @@ OutSystems automatically includes built-in logic for the following[ end-user aut
 The OutSystems Forge includes community-supported connectors for integration with other authentication services, such as[ OAuth2](https://www.outsystems.com/forge/component-overview/2647/google-services-oauth2) and[ JWT tokens](https://www.outsystems.com/forge/component-overview/9043/jwt-token). External IdPs for identity management and access control for providers such as,[ IAM OAuth](https://www.outsystems.com/forge/component-overview/5075/auth0-web-connector)/[SAML](https://www.outsystems.com/forge/component-overview/4312/saml-platform-authentication-plugin), and[ OpenID Connect](https://www.outsystems.com/forge/component-overview/5823/okta-sso-with-openid-connect) can also be found on the Forge.
 
 
-#### [Access control](https://success.outsystems.com/Documentation/Best_Practices/Architecture/Use_Access_Control_List_(ACL)_to_set_up_permission-based_access_to_data?_gl=1*f8n9tl*_ga*MjA1MDQ1MDcwLjE2MDE1MzExNjY.*_ga_ZD4DTMHWR2*MTYyMzIyMTQ0NC41MTEuMS4xNjIzMjI0ODA5LjUz)
+#### [Access control](https://success.outsystems.com/Documentation/Best_Practices/Architecture/Use_Access_Control_List_(ACL)_to_set_up_permission-based_access_to_data)
 
 Role-based access control restricts access to your application’s pages depending on specific application level roles. Developers define application-level permissions for roles using visual building blocks. As an example, a role might restrict access to every application page that involves changing a specific database table.
 
@@ -483,7 +483,7 @@ Some additional built in tools:
 
 
 *   [Asynchronous Logging API](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/Asynchronous_Logging_API): Your OutSystems applications can be instrumented for more advanced monitoring by referencing the[ ](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/Asynchronous_Logging_API)Asynchronous Logging API module which provides actions to insert records into the database register request events of your applications. This captured information and data is then easily—and without any extra effort—made accessible with the rest of OutSystems logs and monitoring data.
-*   [App Feedback](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Gather_user_feedback/Enable_user_feedback_for_apps?origin=d): This service can be 	configured[ ](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Gather_user_feedback/Enable_user_feedback_for_apps?origin=d)in LifeTime so key users, during the acceptance stage, deployment, and after release, can send suggestions or report problems.
+*   [App Feedback](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Gather_user_feedback/Enable_user_feedback_for_apps): This service can be 	configured[ ](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Gather_user_feedback/Enable_user_feedback_for_apps)in LifeTime so key users, during the acceptance stage, deployment, and after release, can send suggestions or report problems.
 
 
 ### Forge monitoring components
