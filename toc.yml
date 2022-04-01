@@ -86,6 +86,7 @@
     - href: performance/references/references.md   
     - href: performance/top-10-rules/top-10-rules.md 
     - href: performance/user-interface/user-interface.md 
+    - href: performance/sql-server-best-practices.md
 
 
 #Security Best Practices    
