@@ -38,7 +38,7 @@ The table below indicates the recommended setup for application servers hosting 
 
 | **# Requests per second** | **120 (\*)** | **250 (\*)** | **250+** |
 |---------------------------|--------|--------|---------|
-| **Recommended setup**     | - Dual Core CPU%% - 4 GB RAM%% - 80 GB HD (Dedicated) | - Quad Core CPU%% - 8 GB RAM%% - 80 GB HD (Dedicated)| Horizontal grow with multiple server building blocks with the same specs.|
+| **Recommended setup**     | - Dual Core CPU<br/> - 4 GB RAM<br/> - 80 GB HD (Dedicated) | - Quad Core CPU<br/> - 8 GB RAM<br/> - 80 GB HD (Dedicated)| Horizontal grow with multiple server building blocks with the same specs.|
 
 (\*) Values taken from tests executed with a CRUD application. Load tests are strongly recommended with a working version of the application that will be served by the systems. Variations are expected.
 
@@ -48,7 +48,7 @@ The table below indicates the recommended setup for application servers hosting 
 
 | **# Requests per second** | **40** | **60** | **60+** |
 |---------------------------|--------|--------|---------|
-| **Recommended setup**     | - Dual Core CPU%% - 4 GB RAM%% - 80 GB HD (Dedicated) | - Quad Core CPU%% - 8 GB RAM%% - 80 GB HD (Dedicated)| Horizontal grow with multiple server building blocks with the same specs.|
+| **Recommended setup**     | - Dual Core CPU<br/> - 4 GB RAM<br/> - 80 GB HD (Dedicated) | - Quad Core CPU<br/> - 8 GB RAM<br/> - 80 GB HD (Dedicated)| Horizontal grow with multiple server building blocks with the same specs.|
 
 ### Database server
 
@@ -56,7 +56,7 @@ The table below indicates the recommended setup for database servers:
 
 | **# Transactions per second** | **250 (\*)** | **400 (\*)** | **400+** |
 |-------------------------------|-------------|-------------|----------|
-| **Recommended setup**         | - Dual Core CPU (4 threads)%% - 16 GB RAM| - Quad Core CPU%% - 32 GB RAM| Vertical grow with SQL Server. (\*\*)%% Horizontal grow with Oracle RAC. (\*\*)|
+| **Recommended setup**         | - Dual Core CPU (4 threads)<br/> - 16 GB RAM| - Quad Core CPU<br/> - 32 GB RAM| Vertical grow with SQL Server. (\*\*)<br/> Horizontal grow with Oracle RAC. (\*\*)|
 
 (\*) Values taken from tests executed with a CRUD application. Variations are expected according to development, query optimization, and database system tuning by a database administrator. Load tests are strongly recommended with a working version of the application that will be served by the systems.
 
@@ -68,8 +68,8 @@ If you have many developers (16+) or you detect slowness in your non-production 
 
 | **# Active developers** | **5+** | **8+** | **16+** |
 |-------------------------|--------|--------|---------|
-| **Recommended setup** | **Front-end + Deployment Controller:**%% - Dual Core CPU%% - 8 GB RAM%% - 100 GB HD (Dedicated)| **Front-end + Deployment Controller:**%% - Quad Core CPU%% - 12 GB RAM%% - 200 GB HD (Dedicated)| **Front-end:**%% (Where the developers connect to)%% - Quad Core CPU%% - 12 GB RAM%% - 300 GB HD (Dedicated)%%%% **Deployment Controller:**%% (Where code compilation occurs)%% - Quad Core CPU%% - 16 GB RAM%% - 500 GB HD (Dedicated)|
-| **Additional developer** | - 0.25 core%% - 512 MB RAM%% - Up to 8 Developers| - 0.25 core%% - 0.5 GB RAM%% - Up to 16 Developers| **Front-end:**%% (Where the developers connect to)%% - 0.25 core%% - 0.5 GB RAM%%%% **Deployment Controller:**%% (Where code compilation occurs)%% - 0.25 core%% - 0.5 GB RAM |
+| **Recommended setup** | **Front-end + Deployment Controller:**<br/> - Dual Core CPU<br/> - 8 GB RAM<br/> - 100 GB HD (Dedicated)| **Front-end + Deployment Controller:**<br/> - Quad Core CPU<br/> - 12 GB RAM<br/> - 200 GB HD (Dedicated)| **Front-end:**<br/> (Where the developers connect to)<br/> - Quad Core CPU<br/> - 12 GB RAM<br/> - 300 GB HD (Dedicated)<br/><br/> **Deployment Controller:**<br/> (Where code compilation occurs)<br/> - Quad Core CPU<br/> - 16 GB RAM<br/> - 500 GB HD (Dedicated)|
+| **Additional developer** | - 0.25 core<br/> - 512 MB RAM<br/> - Up to 8 Developers| - 0.25 core<br/> - 0.5 GB RAM<br/> - Up to 16 Developers| **Front-end:**<br/> (Where the developers connect to)<br/> - 0.25 core<br/> - 0.5 GB RAM<br/><br/> **Deployment Controller:**<br/> (Where code compilation occurs)<br/> - 0.25 core<br/> - 0.5 GB RAM |
 
 ## Single server versus farm architecture
 
