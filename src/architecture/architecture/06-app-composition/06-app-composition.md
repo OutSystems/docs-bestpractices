@@ -13,7 +13,4 @@ Understanding the dependencies among applications is also key to design a correc
 
 * Applications that impact each other unnecessarily. Deploying one application may result in having to take all other applications with it to Production.
 
-<pre class="script">
-template('MindTouch/IDF3/Views/Guide')</pre>
-
 Check the complete guide on how to design your application architecture in [Designing the architecture of your OutSystems applications](../intro.md).

@@ -5,13 +5,6 @@ en_title: Best practices for a tidy and clean environment
 ---
 # Best practices for a tidy and clean environment
 
-<pre class="script-css">
-.subtopic {
-    font-size: 20px;
-    font-weight: bold;
-}
-</pre>
-
 As your factory of applications grows, it consumes more resources (for example: disk space, database, etc.). It’s important that you keep your environments tidy and clean so it doesn’t slow down your devops performance. Although you can always improve the processing power and infrastructure capacity, this usually brings additional costs.
 
 With a clean environment, you can eliminate a: 

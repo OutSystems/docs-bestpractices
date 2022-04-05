@@ -6,12 +6,6 @@ en_title: Use Access Control List (ACL) to set up permission-based access to dat
 
 # Use Access Control List (ACL) to set up permission-based access to data
 
-<pre class="script-css">
-.custom-acl-table th, .custom-acl-table td  {
-    text-align: center;
-}
-</pre>
-
 ## What is ACL?
 
 An access control list (ACL) is a list of permissions attached to an object. The ACL stores what objects are granted to which users or group of users. Common uses of ACL are access to financial data to specific user profiles, data access based on user’s unit/branch or hierarchical accesses.

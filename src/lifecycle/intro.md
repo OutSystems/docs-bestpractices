@@ -4,12 +4,3 @@ en_title: Lifecycle
 ---
 
 # Lifecycle
-
-<pre class="script">
-template('MindTouch/Controls/PageOverview');
-</pre>
-
-
-<pre class="script">
-template('MindTouch/IDF3/Views/Guide');
-</pre>

@@ -39,9 +39,3 @@ Each option has advantages and disadvantages. Let’s look into the main ones:
 ![](images/outsystems_domain_driven_architecture_4.png?width=900)
 
 Now that you know the basics, you can drill down on the following topics:
-
-<pre class="script">
-template('MindTouch/IDF3/Views/Guide');</pre>
-
-
-

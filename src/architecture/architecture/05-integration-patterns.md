@@ -5,14 +5,6 @@ en_title: 05 Integration Patterns for Core Services Abstraction
 ---
 # Integration Patterns for Core Services Abstraction
 
-<pre class="script-css">
-.subtopic {
-    font-size: 20px;
-    font-weight: bold;
-    padding-top: 20px;
-}
-</pre>
-
 ## Why do you need integration patterns?
 
 If you need to integrate with an external system of records to retrieve master data or perform transactions, it is a good practice to follow patterns that abstract the concept you want to import into OutSystems to promote:

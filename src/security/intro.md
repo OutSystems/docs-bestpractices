@@ -6,11 +6,6 @@ en_title: Security
 
 # Security
 
-<pre class="script">
-template('MindTouch/Controls/PageOverview');
-</pre>
-
-
 ## A brief introduction to software security
 
 Demand for some level of software security, even for small applications, is growing. That's why, before diving deep into software security vulnerabilities and mitigation techniques, it’s important to understand the most common software security questions, such as:
@@ -76,8 +71,4 @@ Security certifications have gained high relevance because earning these certifi
 
 Compliance is the set of practices, processes, and tools that a company uses to guarantee that personnel and the company as a whole abide by internal rules of conduct and external rules and regulations. This compliance is attained with through a specific approach, being an iterative and continuous process, where you need to prove the compliance to have those certifications renewed.
 
-In this section you can find the following best practices related to security:
-
-<pre class="script">
-template('MindTouch/IDF3/Views/Guide');
-</pre>
+Check the other articles in this section for best practices related to security.

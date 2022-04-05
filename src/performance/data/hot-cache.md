@@ -6,12 +6,6 @@ en_title: Optimize Data For Your Use Cases Using Hot Cache
 
 # Optimize Data For Your Use Cases Using Hot Cache
 
-<pre class="script-css">
-.v-align-mid td {
-    vertical-align: middle;
-}
-</pre>
-
 ## Introduction
 
 Users are more and more demanding, having less patience to wait for results. Slow applications can deeply influence user adoption and impact business needs. Besides the lack of development best practices, there are additional factors that can contribute to a good or bad performance of an application:

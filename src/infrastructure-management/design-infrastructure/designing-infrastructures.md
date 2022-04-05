@@ -13,8 +13,4 @@ A well designed infrastructure for the OutSystems Platform prevents typical proj
 
 The plan involves configuring your servers for scaling, high availability, disaster recovery and security.
 
-<pre class="script">
-template('MindTouch/IDF3/Views/Guide');
-</pre>
-
 Check [OutSystems Platform system requirements](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/OutSystems_system_requirements) for detailed information on supported configurations.
