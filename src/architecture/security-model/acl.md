@@ -25,59 +25,13 @@ For Core Services that require ACL, we propose a model where each Core Service m
 
 The Core Services modules must isolate as much as possible the ACL logic in data retrieval methods (e.g., Web Service APIs), but for entities that are public and used outside the Core Service module, developers must know that the access to those tables need to be subject to ACL control.
 
-For that reason, we advise that the objects (Entities) with an associated ACL should be tracked on an ACL tracking list, like the following:
+For that reason, we advise that the objects (Entities) with an associated ACL should be tracked on an **ACL tracking list**, like the following:
 
-<table markdown="1" style="width: 100%;" class="custom-acl-table">
-<tr>
-<th colspan="3">
-ACL Tracking List
-</th>
-</tr>
-<tr>
-<th style="width: 33%">
-Core Service Module
-</th>
-<th style="width: 33%">
-Entity
-</th>
-<th style="width: 33%">
-ACL Entity
-</th>
-</tr>
-<tr>
-<td>
-Customer_CS
-</td>
-<td>
-Customer
-</td>
-<td>
-CustomerACL
-</td>
-</tr>
-<tr>
-<td>
-Employee_CS
-</td>
-<td>
-Employee
-</td>
-<td>
-EmployeeACL
-</td>
-</tr>
-<tr>
-<td>
-...
-</td>
-<td>
-...
-</td>
-<td>
-...
-</td>
-</tr>
-</table>
+|Core Service Module|Entity|ACL Entity|
+|---|---|---|
+|Customer_CS|Customer|CustomerACL|
+|Employee_CS|Employee|EmployeeACL|
+|...|...|...|
 
 ## ACL Patterns
 

@@ -273,46 +273,12 @@ The **API** and the **IS** modules completely isolate the Core Service, making i
 </tr>
 </table>
 
-<table markdown="1" style="width: 100%;">
-<tr>
-<th style="width: 50%;">
-Advantages
-</th>
-<th>
-Disadvantages
-</th>
-</tr>
-<tr>
-<td>
-Simpler API
-</td>
-<td>
-More inter-system dependency
-</td>
-</tr>
-<tr>
-<td>
-Enable data mashup in OutSystems
-</td>
-<td>
-Not appropriate for a high load of changes, by not providing a queue
-</td>
-</tr>
-<tr>
-<td>
-Less impact on the source system
-</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>
-Data is always current
-</td>
-<td>
-</td>
-</tr>
-</table>
+|Advantages|Disadvantages|
+|--- |--- |
+|Simpler API|More inter-system dependency|
+|Enable data mashup in OutSystems|Not appropriate for a high load of changes, by not providing a queue|
+|Less impact on the source system||
+|Data is always current||
 
 <div class="subtopic">Queued real-time sync</div>
 

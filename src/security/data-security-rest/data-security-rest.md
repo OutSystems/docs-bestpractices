@@ -71,7 +71,7 @@ In the following table, you can find the retention period and responsibilities f
 <tr>
 <td rowspan="3">
 <p class="mt-align-center"><br />
-![](images/icon-os-app.png)</p>
+</p>
 <p ><strong>Apps</strong></p>
 </td>
 <td>
@@ -113,8 +113,7 @@ In the following table, you can find the retention period and responsibilities f
 </tr>
 <tr>
 <td>
-<p class="mt-align-center"><br />
-![](images/front-end-server-icon.png)</p>
+<p class="mt-align-center"><br /></p>
 <p ><strong>Front-ends</strong>
 </p>
 </td>
@@ -133,8 +132,7 @@ In the following table, you can find the retention period and responsibilities f
 </tr>
 <tr>
 <td>
-<p class="mt-align-center"><br />
-![](images/load-balancer-icon.png)</p>
+<p class="mt-align-center"><br /></p>
 <p ><strong>Load Balancers</strong></p>
 </td>
 <td>
@@ -147,12 +145,11 @@ In the following table, you can find the retention period and responsibilities f
 </tr>
 <tr>
 <td>
-<p class="mt-align-center"><br />
-![](images/database-icon.png)</p>
+<p class="mt-align-center"><br /></p>
 <p ><strong>DB Servers</strong></p>
 </td>
 <td>
-<p><strong>Database server </strong></p>
+<p><strong>Database server</strong></p>
 <p><strong>audit logs</strong></p>
 </td>
 <td>
