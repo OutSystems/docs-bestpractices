@@ -1,5 +1,5 @@
 ---
-sumary:
+summary:
 ---
 
 # DevOps and ALM in OutSystems

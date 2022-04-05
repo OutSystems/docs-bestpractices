@@ -70,7 +70,7 @@ Designing a test suite, and then deciding what to automate, requires a cost-bene
 
 The core of that strategy is the [test pyramid](https://martinfowler.com/articles/practical-test-pyramid.html), as illustrated below. It shows how segregated testing facilitates creation of a healthy, fast, and maintainable test suite.
 
-![test pyramid](/images/guidelines-testing-pyramid-diag.png "test pyramid")
+![test pyramid](images/guidelines-testing-pyramid-diag.png "test pyramid")
 
 The test pyramid comprises:
 
