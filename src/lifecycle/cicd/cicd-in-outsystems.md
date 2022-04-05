@@ -1,4 +1,4 @@
-# Application Lifecycle Management in OutSystems: CI/CD
+# Application Lifecycle Management in OutSystems CI/CD
 
 As with Agile methodology and DevOps culture, the concept of continuous integration/continuous delivery (CI/CD) gradually developed to answer specific business needs and meet demands for innovation, new features, and a frictionless user experience. At the same time, it allows developers to move quickly—with the confidence not to break anything.
 
@@ -54,7 +54,7 @@ In traditional software technologies, continuous integration (CI) describes the 
 
 OutSystems thus eliminates a whole slew of tests that are required by traditional development technologies. It automates some of the most painstaking and error-prone tasks associated with compiling and assembling code. And, because of its trunk-based development model, it removes many of the headaches involved in merging branches and tracking down inconsistencies.
 
-Just as OutSystems increases productivity with [AI-assisted development](https://success.outsystems.com/Documentation/11/Developing_an_Application/Implement_Application_Logic/AI-assisted_development?_gl=1*1srqylj*_ga*MjA1MDQ1MDcwLjE2MDE1MzExNjY.*_ga_ZD4DTMHWR2*MTYyMTc3MTE1MS40NjYuMS4xNjIxNzcxMjEwLjE.),  it also frees the DevOps team from many rote testing tasks and mechanical automation setups. They can then concentrate on designing useful tests and incorporating them into a reliable automated system.
+Just as OutSystems increases productivity with [AI-assisted development](https://success.outsystems.com/Documentation/11/Developing_an_Application/Implement_Application_Logic/AI-assisted_development),  it also frees the DevOps team from many rote testing tasks and mechanical automation setups. They can then concentrate on designing useful tests and incorporating them into a reliable automated system.
 
 The ultimate success of CI/CD is based on automation, and, for testing, the success of automation depends on writing testable code. In OutSystems, this means distributing self-contained modules into discrete layers. Adopting an[ architecture canvas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_Architecture_of_Your_OutSystems_Applications/The_Architecture_Canvas) promotes the correct abstraction of reusable services and components so they can be modified independently—a crucial factor for an accelerated release cycle. Moreover, segregating functionality and services also makes it easier to write a comprehensive set of easily automatable tests to cover critical business functionality.
 
@@ -64,19 +64,15 @@ The ultimate success of CI/CD is based on automation, and, for testing, the succ
 
 </div>
 
-The goal is not to test everything—you can’t. But you _can_ test everything important, like all of the business logic, essential connectivity with external resources, and critical journeys in the user interface. And you can’t automate every test, either—or perhaps it is better to say that such an effort would likely prove self-defeating. For example, designing tests to validate the functionality of every possible user interaction would be complex to write, difficult to maintain, and take a long time to run.
+The goal is not to test everything—you can’t. But you can test everything important, like all of the business logic, essential connectivity with external resources, and critical journeys in the user interface. And you can’t automate every test, either—or perhaps it is better to say that such an effort would likely prove self-defeating. For example, designing tests to validate the functionality of every possible user interaction would be complex to write, difficult to maintain, and take a long time to run.
 
 Designing a test suite, and then deciding what to automate, requires a cost-benefit analysis to make sure that the results will justify the effort of writing and maintaining automated test scripts. The [OutSystems Testing Guidelines](https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Testing_Guidelines) give a detailed overview, and a step-by-step work plan, for developing a testing strategy.
 
 The core of that strategy is the [test pyramid](https://martinfowler.com/articles/practical-test-pyramid.html), as illustrated below. It shows how segregated testing facilitates creation of a healthy, fast, and maintainable test suite.
 
-
-![test pyramid](../devops/images/guidelines-testing-pyramid-diag.png " test pyramid")
-
+![test pyramid](/images/guidelines-testing-pyramid-diag.png "test pyramid")
 
 The test pyramid comprises:
-
-
 
 * A base of many [component tests](https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Testing_Guidelines/Component_Testing) to validate the behavior of single units of code that implement business logic
 * A smaller number of [integration tests](https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Testing_Guidelines/Integration%2F%2FAPI_Testing) to validate integration with external systems, such as exposed APIs
