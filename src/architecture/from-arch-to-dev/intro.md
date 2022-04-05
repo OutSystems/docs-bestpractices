@@ -31,31 +31,11 @@ The architecture design process follows a 3 step approach.
 
 ![](images/iteration.png?width=180)
 
-<table markdown="1">
-<tr>
-<td>
-![](images/disclose_redldpi.png?width=70)
-</td>
-<td>
-**Disclose** business concepts and integration needs
-</td>
-</tr>
-<tr>
-<td>
-![](images/organize_redldpi.png?width=70)
-</td>
-<td>
-**Organize** concepts on the architecture Layer canvas
-</td> </tr>
-<tr>
-<td>
-![](images/assemble_redldpi.png?width=70)
-</td>
-<td>
-**Assemble** Matching recommended patterns
-</td>
-</tr>
-</table>
+|||
+|---|---|
+|![](images/disclose_redldpi.png?width=70)|**Disclose** business concepts and integration needs|
+|![](images/organize_redldpi.png?width=70)|**Organize** concepts on the architecture Layer canvas|
+|![](images/assemble_redldpi.png?width=70)|**Assemble** Matching recommended patterns|
 
 It's important to understand that you should iterate these three steps multiple times, until you feel comfortable with the design, and eventually repeat the process during the implementation, as you discover new concepts and/or details.
 

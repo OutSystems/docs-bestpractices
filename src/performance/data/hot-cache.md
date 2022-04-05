@@ -33,66 +33,13 @@ This pattern is typically used in the following scenarios:
 
 These are the possible levels of cache (and their visual representation):
 
-<table markdown="1" class="v-align-mid" style="width: 100%;">
-<tr>
-<td>
-![Client Side Cache](images/level-client-side-cache.png?width=50)
-</td>
-<td style="width: 15%;">
-Client Side Cache
-</td>
-<td>
-Local cache of specific data for a user. 
-Normally set on the Mobile application as the local storage.
-</td>
-</tr>
-<tr>
-<td>
-![Hot Cache](images/level-hot-cache.png?width=50)
-</td>
-<td>
-Hot Cache
-</td>
-<td>
-Cached Pre digest or calculated data. 
-Focus on active processes or requirements.
-</td>
-</tr>
-<tr>
-<td>
-![Cold Cache](images/level-cold-cache.png?width=50)
-</td>
-<td>
-Cold Cache
-</td>
-<td>
-Normalized data model with all relations.
-Relationships between entities are kept for easier searching.
-</td>
-</tr>
-<tr>
-<td>
-![Staging Cache](images/level-staging-cache.png?width=50)
-</td>
-<td>
-Staging Cache
-</td>
-<td>
-Cached staging data gathered from external systems, to be processed into the Cold data.
-</td>
-</tr>
-<tr>
-<td>
-![Master of records](images/level-master-of-records.png?width=50)
-</td>
-<td>
-Master of records
-</td>
-<td>
-External master of data.
-</td>
-</tr>
-</table>
+||Cache Level|Description|
+|---|---|---|
+|![Client Side Cache](images/level-client-side-cache.png)|Client Side Cache|Local cache of specific data for a user. Normally set on the Mobile application as the local storage.|
+|![Hot Cache](images/level-hot-cache.png?width=50)|Hot Cache|Cached Pre digest or calculated data. Focus on active processes or requirements.|
+|![Cold Cache](images/level-cold-cache.png?width=50)|Cold Cache|Normalized data model with all relations. Relationships between entities are kept for easier searching.|
+|![Staging Cache](images/level-staging-cache.png?width=50)|Staging Cache|Cached staging data gathered from external systems, to be processed into the Cold data.|
+|![Master of records](images/level-master-of-records.png?width=50)|Master of records|External master of data|
 
 Please note that, although there are multiple layers, you don't always need to have the full set of data layers - make sure you design your architecture according to the use case. Most of applications are only built around the normalized database (Cold Data Layer), and implement a local replica of the external master of records, to speed up data access and reduce the number of calls to the external system - learn more on how you can [abstracting your Core Services according to integration](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/05_Integration_Patterns_for_Core_Services_Abstraction). For mobile applications, it's particularly important the usage of client side cache, to boost performance and decrease the number of server calls.
 

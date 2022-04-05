@@ -13,36 +13,9 @@ If you need to integrate with an external system of records to retrieve master d
 
 * **Extensibility, normalization, and optimization**: opportunity to extend the concept with extra information and business rules, normalize representations and cache information to improve performance.
 
-<table markdown="1" class="os-invisible-table">
-<tr>
-<td style="width: 260px;"> 
-![Core Service abstraction](images/core-service-integration-service.png) 
-</td>
-<td>
-**1- Core Service**
-<ul>
-<li>
-Extend the original service
-</li>
-<li>
-System agnostic (resilient to external changes)
-</li>
-</ul>
-**2- Integration Service**
-<ul>
-<li>
-Abstracts the original API(s), matching to internal structures and concepts (e.g. composing a customer concept with complementary information from different systems)
-</li>
-<li>
-Hide the integration type (SOAP, REST, XIF, HTTP request, file upload, ...)
-</li>
-<li>
-Cope with technical requirements (access credentials, authorization, error handling, integration auditing, ...)
-</li>
-</ul>
-</td>
-</tr>
-</table>
+|||
+|---|---|
+|![Core Service abstraction](images/core-service-integration-service.png)|**1- Core Service**<br/>Extend the original service<br/>System agnostic (resilient to external changes)<br/>**2- Integration Service**<br/>Abstracts the original API(s), matching to internal structures and concepts (e.g. composing a customer concept with complementary information from different systems)<br/>Hide the integration type (SOAP, REST, XIF, HTTP request, file upload, ...)<br/>Cope with technical requirements (access credentials, authorization, error handling, integration auditing, ...)|
 
 The idea is to have an **Integration Service** per independent concept (e.g. Customers) and not a single integration point per external system:
 
@@ -96,20 +69,9 @@ The bolded answers, show the most common and recommended path - it benefits from
 
 This pattern simply represents a direct integration with the external system, using the Integration Service for service abstraction.
 
-<table markdown="1" class="os-invisible-table">
-<tr>
-<td style="width: 160px;"> 
-![Direct integration](images/direct-integration.png) 
-</td>
-<td>
-In this scenario, Customer data is coming from an **ERP**. **Customer_IS** interfaces with the **ERP**, abstracting a normalized API, both for retrieving information and performing transactions.
-This creates the flexibility to change the external systems without impact on core services, as long as the **Integration Service API** is maintained. 
-<p>
-Also, note that this scenario does not include entities in **Customer_CS** to keep a local replica of data. Not keeping replicated data outside the **ERP** might be due to a business constraint, or because (almost) real-time demand is incompatible with having a delayed data replication (information changes too often).
-</p>
-</td>
-</tr>
-</table>
+|||
+|---|---|
+|![Direct integration](images/direct-integration.png)|In this scenario, Customer data is coming from an **ERP**. **Customer_IS** interfaces with the **ERP**, abstracting a normalized API, both for retrieving information and performing transactions. This creates the flexibility to change the external systems without impact on core services, as long as the **Integration Service API** is maintained.<br/>Also, note that this scenario does not include entities in **Customer_CS** to keep a local replica of data. Not keeping replicated data outside the **ERP** might be due to a business constraint, or because (almost) real-time demand is incompatible with having a delayed data replication (information changes too often).|
 
 However, this pattern has several **limitations**:
 
@@ -121,38 +83,11 @@ However, this pattern has several **limitations**:
 
 * A constant need to extend **Customer_IS** and a strong dependency on the **ERP** team to provide new APIs each time a different data retrieval is required (e.g.: to filter with some criteria or to include more or less detail). Typically, to avoid this dependency, developers tend to inappropriately reuse the available API, for instance, by using a method that returns 50 fields, when only 4 are required.
 
-<table markdown="1" style="width: 100%;">
-<tr>
-<th style="width: 50%;">
-Advantages
-</th>
-<th>
-Disadvantages
-</th>
-</tr>
-<tr>
-<td> 
-Data is always up-to-date
-</td>
-<td>
-More APIs (one per retrieval use case)
-</td>
-</tr>
-<tr>
-<td> 
-</td>
-<td>
-More latency
-</td>
-</tr>
-<tr>
-<td> 
-</td>
-<td>
-More hits on external system
-</td>
-</tr>
-</table>
+|Advantages|Disadvantages|
+|--- |--- |
+|Data is always up-to-date|More APIs (one per retrieval use case)|
+||More latency|
+||More hits on external system|
 
 ### Cold Cache Summary Data
 
@@ -172,98 +107,32 @@ When implementing a Cold Cache, the simplest design approach is to create the ca
 
 Adding local entities to **Customer_CS** will overcome the limitations of the **Direct Integration** pattern and actually create a full-blown **Core Service**.
 
-<table markdown="1" class="os-invisible-table">
-<tr>
-<td style="width: 160px;"> 
-![Cold Cache with batch sync](images/cold-cache-with-batch-sync.png) 
-</td>
-<td>
-The **Integration Service** becomes simple and stable. Instead of providing a myriad of actions for different data retrieval needs, it only has to supply a method to fetch all customer relevant data, updated since the last sync.
-<p>
-**Customer_CS** has a timer to regularly synchronize information through the **Integration Service**. This synchronization should be unidirectional, to avoid complex merges of information - from the **ERP** (the master of data) to the **Core Service**. On the opposite direction, when an update is made in **Customer_CS**, you must be careful to make sure that the update is successful and synchronously committed in the ERP first (a write-through policy).
-</p>
-</td>
-</tr>
-</table>
+|||
+|---|---|
+|![Cold Cache with batch sync](images/cold-cache-with-batch-sync.png)|The **Integration Service** becomes simple and stable. Instead of providing a myriad of actions for different data retrieval needs, it only has to supply a method to fetch all customer relevant data, updated since the last sync.<br/>**Customer_CS** has a timer to regularly synchronize information through the **Integration Service**. This synchronization should be unidirectional, to avoid complex merges of information - from the **ERP** (the master of data) to the **Core Service**. On the opposite direction, when an update is made in **Customer_CS**, you must be careful to make sure that the update is successful and synchronously committed in the ERP first (a write-through policy).|
 
-<table markdown="1" style="width: 100%;">
-<tr>
-<th style="width: 50%;">
-Advantages
-</th>
-<th>
-Disadvantages
-</th>
-</tr>
-<tr>
-<td>
-Simpler API
-</td>
-<td>
-Data may be outdated
-</td>
-</tr>
-<tr>
-<td>
-Enable data mashup in OutSystems
-</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>
-Less impact on the source system
-</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>
-Core Service customers not affected by the synchronization
-</td>
-<td>
-</td>
-</tr>
-</table>
+|Advantages|Disadvantages|
+|--- |--- |
+|Simpler API|Data may be outdated|
+|Enable data mashup in OutSystems||
+|Less impact on the source system||
+|Core Service customers not affected by the synchronization||
 
 <div class="subtopic">Isolate synchronization logic</div>
 
 When the synchronization process is too complex and constantly tuned, it is recommended to extract it from the **Core Service**, further isolating **Customer_CS** from the external system.
 
-<table markdown="1" class="os-invisible-table">
-<tr>
-<td style="width: 380px;"> 
-![Isolate synchronization logic](images/isolate-synchronization-logic.png) 
-</td>
-<td>
-Another reason to do it is when the synchronization requires to orchestrate several integrations - for e.g., If Customers are stored in one system and Customer Contracts in another, then the synchronization needs to make sure that customers are synced before contracts since contracts refer to customers.
-<p>
-Consumers of **Customer_CS** don’t need to be impacted by the synchronization code. Additionally, if in the future the ERP is deprecated and replaced by functionality built in OutSystems, stripping out the synchronization code has no impact.
-</p>
-<p>
-In this example, **Customer_Sync** is the one regularly fetching updated information through the **Integration Service**, to sync into **Customer_CS**. **Customer_CS** still consumes **Customer_IS** to perform online transactions.
-</p>
-</td>
-</tr>
-</table>
+|||
+|---|---|
+|![Isolate synchronization logic](images/isolate-synchronization-logic.png)|Another reason to do it is when the synchronization requires to orchestrate several integrations - for e.g., If Customers are stored in one system and Customer Contracts in another, then the synchronization needs to make sure that customers are synced before contracts since contracts refer to customers.<br/>Consumers of **Customer_CS** don’t need to be impacted by the synchronization code. Additionally, if in the future the ERP is deprecated and replaced by functionality built in OutSystems, stripping out the synchronization code has no impact.<br/>In this example, **Customer_Sync** is the one regularly fetching updated information through the **Integration Service**, to sync into **Customer_CS**. **Customer_CS** still consumes **Customer_IS** to perform online transactions.|
 
 #### Real-Time Sync
 
 Normally, a cold cache with summary data that is required for search, listing or mashup, is very stable not requiring real-time sync. However, some situations require summary information to include fields that need to be up to date in real time for the application to work consistently (e.g.: You need to retrieve the information of your fleet from an external system, and it is key to include the current position of each vehicle in summary listings - which is a frequently changing field).
 
-<table markdown="1" class="os-invisible-table">
-<tr>
-<td style="width: 380px;"> 
-![Real-time sync](images/real-time-sync.png) 
-</td>
-<td>
-Real-time sync requires the external system of records to callback OutSystems, notifying some change in real time (in this example a customer update or insert).
-<p>
-The **API** and the **IS** modules completely isolate the Core Service, making it agnostic to the external system and to the synchronization process.
-</p>
-</td>
-</tr>
-</table>
+|||
+|---|---|
+|![Real-time sync](images/real-time-sync.png)|Real-time sync requires the external system of records to callback OutSystems, notifying some change in real time (in this example a customer update or insert).<br/>The **API** and the **IS** modules completely isolate the Core Service, making it agnostic to the external system and to the synchronization process.|
 
 |Advantages|Disadvantages|
 |--- |--- |
@@ -319,19 +188,6 @@ In this example, **Customer_CS** is not able to update Customers. This pattern i
 
 However, if sending changes back is a requirement, an extra module must be added. **Customer_IS** abstracts which interface (or driver) will actually send the transaction to the correct system.
 
-<table markdown="1" class="os-invisible-table">
-<tr>
-<td style="width: 380px;"> 
-![Transparency service](images/transparency-service.png) 
-</td>
-<td>
-**1-** The integration service abstracts the existence of different systems, routing requests to the correct driver.
-<p>
-**2-** Each system is interfaced with a different driver. All drivers provide an API with the same signatures.
-</p>
-<p>
-**3-** Different customers may be in different systems.
-</p>
-</td>
-</tr>
-</table>
+|||
+|---|---|
+|![Transparency service](images/transparency-service.png)|**1-** The integration service abstracts the existence of different systems, routing requests to the correct driver.<br/>**2-** Each system is interfaced with a different driver. All drivers provide an API with the same signatures.<br/>**3-** Different customers may be in different systems.|
