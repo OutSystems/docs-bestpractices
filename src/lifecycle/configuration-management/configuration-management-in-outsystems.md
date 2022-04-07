@@ -1,3 +1,8 @@
+---
+guid: 101e446d-c525-4d85-ad1a-2e4ca67c7045
+locale: en-us
+---
+
 # ALM in OutSystems: configuration management
 
 The discipline of configuration management originated in the US Department of Defense  during the 1950s to handle changes to their hardware systems. The DoD developed policies, procedures, techniques, and tools to evaluate proposed changes, track their status after implementation, keep their system inventory up-to-date, and maintain the required support documentation.

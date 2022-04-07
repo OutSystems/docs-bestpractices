@@ -1,6 +1,8 @@
 ---
 summary: Learn how to implement distributed caching patterns in OutSystems.
 en_title: Improving Performance With Distributed Caching
+guid: 1592accf-a032-4d7b-bbf9-941f97df4d7e
+locale: en-us
 ---
 
 # Improving Performance With Distributed Caching

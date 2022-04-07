@@ -1,5 +1,7 @@
 ---
 summary:
+guid: c337cff4-b4f5-454f-85d5-57fd31f67d2c
+locale: en-us
 ---
 
 # SQL Server Best Practices

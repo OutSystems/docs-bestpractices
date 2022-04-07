@@ -1,5 +1,7 @@
 ---
 summary: OutSystems Platform Server uses disk space to store deployment objects and artifacts. On larger factories or with many developers, the folders that hold these artifacts may grow in size. Check wich ones you can perform a reghular clean up on.
+guid: 787114b3-a4af-452a-8acf-2644624e8cbe
+locale: en-us
 ---
 
 # Guide to disk space usage and control on OutSystems Platform servers

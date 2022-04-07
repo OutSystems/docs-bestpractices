@@ -1,5 +1,7 @@
 ---
 summary:
+guid: 17b6007b-d151-40bd-83b3-3e16ec524880
+locale: en-us
 ---
 
 # DevOps and ALM in OutSystems

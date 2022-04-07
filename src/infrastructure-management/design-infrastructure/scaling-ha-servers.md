@@ -1,6 +1,8 @@
 ---
 summary: Your OutSystems Platform servers are ready to scale and be configured for high availability.
 en_title: 03 Scaling and high availability for OutSystems Platform servers
+guid: f28a3223-0889-43fc-8d3c-730053d89561
+locale: en-us
 ---
 
 # Scaling and high availability for OutSystems Platform servers

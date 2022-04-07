@@ -1,5 +1,7 @@
 ---
 summary: When in an Enterprise context, your OutSystems applications will most likely share visual elements such as common look & feel, menus and login flows.
+guid: 5a065377-1843-4d63-b7b9-135f9de77886
+locale: en-us
 ---
 
 # Isolating an application Theme

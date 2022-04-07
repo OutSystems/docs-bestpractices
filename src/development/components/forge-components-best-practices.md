@@ -1,6 +1,8 @@
 ---
 summary: Learn the best practices to share a component in OutSystems Forge.
 en_title: Forge components best practices
+guid: 6f1265f0-a96e-45cb-b813-8460434ba1ab
+locale: en-us
 ---
 
 # Forge components best practices

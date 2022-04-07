@@ -1,5 +1,7 @@
 ---
 summary: 
+guid: f33f9001-87a0-49b4-aacc-30f866f13882
+locale: en-us
 ---
 
 # Monitoring OutSystems applications

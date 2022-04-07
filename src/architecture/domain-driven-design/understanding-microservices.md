@@ -1,6 +1,8 @@
 ---
 summary:
 tags:
+guid: b161ae4a-7e15-4b76-93d8-f3096d4948c6
+locale: en-us
 ---
 
 # Understanding microservices

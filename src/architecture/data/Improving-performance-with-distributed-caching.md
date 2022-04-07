@@ -1,5 +1,7 @@
 ---
 en_title: Improving Performance With Distributed Caching
+guid: a8b95890-989f-4c6e-9faf-151f07b96f6f
+locale: en-us
 ---
 
 # Improving Performance With Distributed Caching

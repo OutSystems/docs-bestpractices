@@ -1,5 +1,7 @@
 ---
 en_title: OutSystems Testing Guidelines
+guid: 5b8189ce-c413-481c-ba0a-ef1598996630
+locale: en-us
 ---
 
 # OutSystems Testing Guidelines

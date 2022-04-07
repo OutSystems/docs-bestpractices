@@ -1,6 +1,8 @@
 ---
 summary:
 tags:
+guid: 5f4a803b-5b64-4b4b-bef7-eba1cc149941
+locale: en-us
 ---
 
 # Securing data at rest with encryption

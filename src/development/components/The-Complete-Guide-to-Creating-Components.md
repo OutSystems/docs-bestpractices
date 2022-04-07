@@ -1,6 +1,8 @@
 ---
 summary: This article guides you through the steps to create a reusable component in OutSystems. It includes recommendations, best practices, and information for common situations.
 en_title: The Complete Guide to Creating Components
+guid: 43a62924-8342-415c-9fda-06b278a876c0
+locale: en-us
 ---
 
 # The Complete guide to creating components

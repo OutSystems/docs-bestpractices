@@ -1,6 +1,8 @@
 ---
 summary:
 tags:
+guid: 493eee88-0bdd-40ee-b40e-011b1cf6c3c0
+locale: en-us
 ---
 
 # Development best practices

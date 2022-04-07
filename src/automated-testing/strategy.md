@@ -1,5 +1,7 @@
 ---
 en_title: Automated Testing Strategy
+guid: 43ac8c54-9bb3-4dd7-be5d-0301eeee07f9
+locale: en-us
 ---
 
 # Automated Testing Strategy

@@ -1,6 +1,8 @@
 ---
 summary:
 tags:
+guid: 4f078a11-41cd-4ac8-a40f-e3e1edc6dc5d
+locale: en-us
 ---
 
 # Extending your toolbox

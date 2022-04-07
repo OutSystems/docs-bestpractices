@@ -2,6 +2,8 @@
 summary: Learn the best practices for data purging.
 tags: 
 en_title: Data Purging
+guid: 5dc91dec-eed8-452a-a188-5564a743f19a
+locale: en-us
 ---
 
 # Data Purging

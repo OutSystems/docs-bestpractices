@@ -2,6 +2,8 @@
 summary:
 tags:
 en_title: Reactive web security best practices
+guid: 0fbfbedf-163b-4765-9dbf-735fb3c0c074
+locale: en-us
 ---
 
 # Reactive web security best practices

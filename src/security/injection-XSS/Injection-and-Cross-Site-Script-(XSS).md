@@ -1,5 +1,7 @@
 ---
 en_title: Injection and Cross Site Script (XSS)
+guid: f2de9e37-9a7e-4f1d-951a-271954eaa4f2
+locale: en-us
 ---
 
 # Injection and Cross Site Script (XSS)

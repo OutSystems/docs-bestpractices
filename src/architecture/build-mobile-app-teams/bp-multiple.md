@@ -1,6 +1,8 @@
 ---
 summary:
 tags:
+guid: 6a6bfbb7-9048-4ca6-b52d-1a474a784cc8
+locale: en-us
 ---
 
 # Best practices with multiple teams

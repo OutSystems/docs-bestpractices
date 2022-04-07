@@ -1,5 +1,7 @@
 ---
 en_title: LifeTime Plugins Best Practices
+guid: 001b2cb1-c241-4f40-a4a4-4080b82bbfb7
+locale: en-us
 ---
 
 # LifeTime Plugins Best Practices

@@ -2,6 +2,8 @@
 summary: OutSystems is all about agility and high-productivity and at scale is when the true challenges come up. Physical branching is the traditional industry response to these challenges, but has several drawbacks which are amplified in long-lived branching scenarios. This document aims to address those challenges by providing a modern delivery approach.
 tags:
 en_title: Development and delivery at scale
+guid: 16193e47-1f0a-47a8-9870-2dd77d622a47
+locale: en-us
 ---
 
 # Development and delivery at scale

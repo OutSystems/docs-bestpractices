@@ -1,6 +1,8 @@
 ---
 summary:
 tags:
+guid: 3ccd01d8-e072-4219-8547-cb105941bfca
+locale: en-us
 ---
 
 # Debugging and troubleshooting mobile and reactive web apps

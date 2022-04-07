@@ -1,6 +1,8 @@
 ---
 summary: It is the developer's responsibility to maintain a high standard of coding that always takes performance into consideration.
 en_title: Performance Best Practices - Logic
+guid: faee48f5-9b43-40a6-906d-837feef414df
+locale: en-us
 ---
 
 # Performance Best Practices - Logic

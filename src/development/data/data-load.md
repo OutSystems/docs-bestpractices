@@ -2,6 +2,8 @@
 summary: Learn about the best practices for loading data in mobile applications, to guarantee a better experience to your users.
 tags: OutSystems_Mobile; OutSystems_Mobile_Data_Load; Data_Load; Loading_Data_on_Mobile_Apps
 en_title: Mobile Data Load
+guid: 0a6cd5bc-89d8-438b-a791-422f25bca587
+locale: en-us
 ---
 
 # Mobile Data Load

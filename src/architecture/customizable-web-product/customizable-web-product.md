@@ -2,6 +2,8 @@
 tags: architecture
 summary: Learn how to architect a product that is meant to be customized in different installations
 en_title: How to Create Customized Versions of a Base Application
+guid: 89d76a9c-caa8-4565-878d-8c30e12b754f
+locale: en-us
 ---
 
 # How to Create Customized Versions of a Base Application

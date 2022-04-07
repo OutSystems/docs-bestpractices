@@ -1,6 +1,8 @@
 ---
 summary: Each type of server you can include in your OutSystems Platform infrastructure has different features and serves a specific purpose.
 en_title: 01 OutSystems Platform server roles
+guid: 729b4d15-ee4c-4e1e-8ac7-8a487818703b
+locale: en-us
 ---
 
 # OutSystems Platform Server Roles

@@ -1,6 +1,8 @@
 ---
 summary:
 tags:
+guid: 56836d39-dbcb-4b9d-ace8-4f89884a2771
+locale: en-us
 ---
 
 # Mobile app troubleshooting and debugging scenarios examples

@@ -1,6 +1,8 @@
 ---
 summary:
 tags:
+guid: 0ed36ce5-66fe-4507-ba42-a554c522e0ca
+locale: en-us
 ---
 # Domain Driven Design with OutSystems
 

@@ -2,6 +2,8 @@
 summary: Explore the most common and recommend integration patterns for core services abstraction when integrating with external system of records.
 tags: architecture; integration
 en_title: 05 Integration Patterns for Core Services Abstraction
+guid: 94c591a5-e7a6-4015-af21-ad87c1012fc7
+locale: en-us
 ---
 # Integration Patterns for Core Services Abstraction
 

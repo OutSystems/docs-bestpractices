@@ -1,6 +1,8 @@
 ---
 summary:
 tags:
+guid: 15d56444-9c84-48f9-813b-c662a0e152e1
+locale: en-us
 ---
 
 # The troubleshooting, debugging and monitoring process

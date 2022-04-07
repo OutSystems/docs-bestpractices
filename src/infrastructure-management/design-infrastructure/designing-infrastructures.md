@@ -1,6 +1,8 @@
 ---
 summary: Learn the basics on OutSystems Platform infrastructure design and tackle typical project requirements such as scaling, high availability and disaster recovery.
 tags: 
+guid: 27df757d-7cc9-4dfc-bf3b-d59a0420ffd0
+locale: en-us
 ---
 
 # Designing OutSystems Infrastructures

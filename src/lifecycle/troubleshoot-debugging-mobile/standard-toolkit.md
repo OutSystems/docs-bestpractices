@@ -1,6 +1,8 @@
 ---
 summary:
 tags:
+guid: 6419e85e-475e-4e4e-a5ee-b4d85ea5e3ac
+locale: en-us
 ---
 
 # Suggested standard toolkit

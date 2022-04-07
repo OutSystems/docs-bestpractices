@@ -2,6 +2,8 @@
 summary: Learn the best practices for data archiving.
 tags: 
 en_title: Data Archiving
+guid: f00255a0-8205-46d7-aaf7-1b097cc552ea
+locale: en-us
 ---
 
 # Data Archiving

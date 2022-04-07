@@ -1,5 +1,7 @@
 ---
 summary: For a correctly designed architecure you must always adhere to 3 rules. Violations to these rules tell you how your OutSystems architecture should be improved.
+guid: f0975aa9-dd78-42c9-9c69-536e6a3e57a3
+locale: en-us
 ---
 
 # Validating your application architecture

@@ -1,5 +1,7 @@
 ---
 en_title: Automated Testing Tools
+guid: 33518ed5-11df-42fe-8cba-daa3622ea514
+locale: en-us
 ---
 
 # Automated Testing Tools

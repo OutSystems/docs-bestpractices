@@ -2,6 +2,8 @@
 summary: Learn how to use Access Control List (ACL) in your applications to set up conditional access to data based on specific user profiles. 
 tags: best-practices, security-model
 en_title: Use Access Control List (ACL) to set up permission-based access to data
+guid: 3114f98f-16d0-4106-8628-5b0e80c6d21c
+locale: en-us
 ---
 
 # Use Access Control List (ACL) to set up permission-based access to data

@@ -1,5 +1,7 @@
 ---
 summary: Understanding and fine tuning ASP.NET process model settings on a Microsoft Internet Information Services (IIS) web server for use with OutSystems. 
+guid: 9705fd12-e670-49a6-b669-b2a52a7bbe94
+locale: en-us
 ---
 
 # Tuning IIS for OutSystems

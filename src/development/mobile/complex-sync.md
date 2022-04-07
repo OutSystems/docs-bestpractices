@@ -2,6 +2,8 @@
 summary: Best Practices for an optimized data synchronization on mobile applications.
 tags: best-practices, mobile, mobile-sync
 en_title: Handling Optimized Complex Synchronization on Mobile Devices
+guid: 134bfe6b-170d-4ca3-86f4-25664431bd20
+locale: en-us
 ---
 
 # Handling Optimized Complex Synchronization on Mobile Devices

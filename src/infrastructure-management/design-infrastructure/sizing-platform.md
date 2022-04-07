@@ -2,6 +2,8 @@
 summary: When designing an infrastructure for Production or Non-Production environments, you need to carefully consider hardware requirements.
 tags: support-devOps; support-Infrastuture_Architecture; support-installation; support-Installation_Configuration; support-maintenance
 en_title: 02 Sizing OutSystems Platform
+guid: 9fe9358a-9bfb-458d-bea1-c984ff641797
+locale: en-us
 ---
 
 # Sizing OutSystems Platform

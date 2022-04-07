@@ -1,6 +1,8 @@
 ---
 summary:
 tags:
+guid: 08b49902-b964-4004-b4e5-5e00c7fdd322
+locale: en-us
 ---
 # Mobile architecture best practices
 

@@ -2,6 +2,8 @@
 summary:  Learn more about the Front-End journey and how a good UX/UI approach can help you through a faster and smoother application development. 
 tags: OutSystems_Front-End; 
 en_title: Front-End Journey: From Mockups to Code
+guid: c8a658b6-cda4-4222-a1c6-14a743e3f9e9
+locale: en-us
 ---
 
 # Front-End Journey: From Mockups to Code
