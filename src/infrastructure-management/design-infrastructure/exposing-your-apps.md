@@ -13,11 +13,11 @@ Two of the strategies you can implement are the use of **Load Balancers** and **
 
 To learn about these topics in more detail, check the following guides:
 
-* [OutSystems Platform in Reverse Proxy Scenarios](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Using_OutSystems_in_Reverse_Proxy_Scenarios)
+* [OutSystems Platform in Reverse Proxy Scenarios](https://success.outsystems.com/Documentation/How-to_Guides/Infrastructure/Using_OutSystems_in_Reverse_Proxy_Scenarios)
 
 * [Load Balancing OutSystems Applications](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Load_Balancing_OutSystems_Applications)
 
 ## More Information
 
-To learn more about how to set up your OutSystems Platform check the [Designing OutSystems infrastructures guide](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_OutSystems_Infrastructures).
+To learn more about how to set up your OutSystems Platform check the [Designing OutSystems infrastructures guide](https://success.outsystems.com/Documentation/Best_Practices/Infrastructure_management/Designing_OutSystems_Infrastructures).
 
