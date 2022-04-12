@@ -27,11 +27,11 @@ So, before taking a detailed look into the Tools, you can do a couple of things 
 
 1. Test as you develop your code, whether manually ([OutSystems Now](https://success.outsystems.com/Documentation/11/Delivering_Mobile_Apps/Test_Your_Mobile_App_in_the_Device_Using_OutSystems_Now) is a nice stop-gap solution for quick testing of Mobile apps) or by investing in [testing automation](https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Testing_Guidelines).
 
-    <div class="info" markdown="1"> 
+<div class="info" markdown="1"> 
     
-    [Using OutSystems Now in iOS](https://www.outsystems.com/forums/discussion/52566/outsystems-now-app-is-out-of-apple-store/) requires a couple more steps.
+[Using OutSystems Now in iOS](https://www.outsystems.com/forums/discussion/52566/outsystems-now-app-is-out-of-apple-store/) requires a couple more steps.
 
-    </div> 
+</div> 
     
 ## Standard tools
 
