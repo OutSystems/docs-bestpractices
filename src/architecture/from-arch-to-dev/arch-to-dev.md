@@ -12,7 +12,7 @@ This article focus on putting into action the final architecture blueprint.
 The [previous article](intro.md) explained the use case of a fictitious client. The Soccer Fields Fictitious client wants to build a web application to allow their clients to reserve soccer fields online.
 
 <div class="info" markdown="1">
- 
+
 Before proceeding, download from the OutSystems Forge the [Soccer Fields App](https://www.outsystems.com/forge/component-overview/8895/soccer-fields-app) resources, the [Soccer Field Sample API](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=8896), and the [Field Core Services App](https://www.outsystems.com/forge/component-overview/8894/field-core-services), and install them on your personal environment to better follow the instructions provided.
 
 </div>
@@ -26,7 +26,7 @@ The application must:
 * Allow players to select a soccer field and book it.
 
 <div class="info" markdown="1">
- 
+
 An external system provides the list of soccer fields, meaning it’s not in the scope of this application to handle the actual field management or payment.
 
 </div>
