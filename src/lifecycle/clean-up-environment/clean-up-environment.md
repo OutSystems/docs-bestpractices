@@ -46,7 +46,9 @@ You can also implement your own solution, allowing a more flexible clean up of o
 
 
 <div class="info" markdown="1">
+
 In both cases, be aware that only the module versions not associated with tagged Application or Solution versions are deleted. This way, if you have the need to rollback the application to a previous version, it’s guaranteed that the code isn't lost.
+
 </div>
 
 
@@ -238,7 +240,9 @@ Some components on the [Forge](https://www.outsystems.com/forge/) already have s
 ![](images/table.png)
 
 <div class="info" markdown="1">
+
 Keep in mind that, as good practice, you should always validate if the components still have these features before using it. Also, note that it's the OutSystems community that develops these components, and they **are not** supported by OutSystems. If you want to know more about it, check the [Forge FAQs](https://success.outsystems.com/Support/Forge_Components/Forge_FAQs).
+
 </div>
 
 ### Clean up log tables after upgrade to OS11

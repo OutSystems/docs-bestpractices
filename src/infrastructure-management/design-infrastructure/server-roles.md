@@ -8,7 +8,9 @@ locale: en-us
 # OutSystems Platform Server Roles
 
 <div class="warning" markdown="1">
+
 Some parts of this content may look out of context without reading the remaining content in this section. Please make sure to read the [whole section](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_OutSystems_Infrastructures) for complete understanding of the topics discussed here.
+
 </div>
 
 An understanding of the existing server roles is key to design the OutSystems platform infrastructure. A server can have more than a role, or you can use a single server/single role approach, but each environment needs the following roles:
@@ -74,7 +76,9 @@ menu in the Administration top menu.
 The resource consumption of the Scheduler role happens at CPU level only and depends on the timer and BPT logic.
 
 <div class="info" markdown="1">
+
 If you want to take this information offline, click [here](https://success.outsystems.com/@api/deki/files/18568/Server_Roles_Apr_2019.pdf?revision=1) to get your Server Roles datasheet.
+
 </div>
 
 ## More Information
@@ -82,5 +86,7 @@ If you want to take this information offline, click [here](https://success.outsy
 To learn more about how to set up your OutSystems Platform check the [Designing OutSystems infrastructures guide](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_OutSystems_Infrastructures).
 
 <div class="info" markdown="1">
+
+
 **Important:** The information in this article applies only to OutSystems Platform on-premises or private cloud deployments.
 </div>

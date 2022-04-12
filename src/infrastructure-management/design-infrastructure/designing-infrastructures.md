@@ -8,7 +8,9 @@ locale: en-us
 # Designing OutSystems Infrastructures
 
 <div class="info" markdown="1">
+
 **Important:** The information in this guide applies only to OutSystems Platform on-premises or private cloud deployments.
+
 </div>
 
 A well designed infrastructure for the OutSystems Platform prevents typical project shortcomings. These will impact productivity and development further down the road.

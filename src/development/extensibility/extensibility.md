@@ -7,7 +7,9 @@ locale: en-us
 # OutSystems extensibility
 
 <div class="info" markdown="1">
+
 Download the whitepaper version of this document by clicking [here](images/OutSystems-Extensibility.pdf).
+
 </div>
 
 Those responsible for planning, defining, and maintaining architectures for an organization’s IT networks and services must be sure, when considering the adoption of a new development model, that it will allow easy and efficient creation of enterprise-grade applications with rich and complex mobile and web user interfaces. It must also provide seamless integration with the myriad of existing code, database structures, and systems of records, such as ERP, CRM, and HR, that the enterprise has developed over the years—as well as keep pace with future developments.

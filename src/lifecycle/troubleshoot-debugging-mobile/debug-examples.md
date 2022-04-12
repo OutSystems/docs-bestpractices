@@ -138,6 +138,8 @@ If the mobile device was online when the crash occurred, then this log record ge
     ![](images/OutSystems_provides_rich_22.png)
 
 <div class="info" markdown="1">
+
 A typical symptom reported by users of abnormal memory consumption might be that the application gets sluggish as the user keeps interacting with it over an extended period of time.
+
 </div>
 

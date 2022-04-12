@@ -167,7 +167,9 @@ In the following table, you can find the retention period and responsibilities f
 ## Securing data at rest on Cloud front-end servers
 
 <div class="info" markdown="1">
+
 Where OutSystems manages keys, they are managed by key custodians following IAM Policies.
+
 </div>
 
 ### Front-end storage usage by your applications

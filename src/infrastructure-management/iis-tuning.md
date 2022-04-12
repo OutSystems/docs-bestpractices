@@ -51,7 +51,9 @@ Since Platform Server 11.10.0 the values of **minIoThreads** and **minWorkerThre
 The **minWorkerThreads** and **minIoThreads** define the minimal number of threads the IIS worker process will spin up in a short amount of time. After this threshold is reached, spinning up a new thread takes longer. This is the point referred above about the adaptive nature of the autoConfig attribute. Under unusual circumstances, like a burst of requests, the request count can go up quickly making IIS struggle to spin new threads leading to queued requests. This point is important because OutSystems’ Mobile and Reactive applications are "bursty" in nature. Accessing a single page can generate multiple requests in burst to the server. If you have a Front End dedicated to one of these types of applications, tuning **minWorkerThreads** and **minIoThreads** values is of particular importance.
 
 <div class="info" markdown="1">
+
 Changes to the **ProcessModel** element are only effective after restarting the IIS worker service.
+
 </div>
 
 Now, lets see the impact of setting the values of **minIoThreads** and **minWorkerThreads** in a front end. For clarity, let's assume we have a front end with 4 CPUs and that we set minIoThreads and minWorkerThreads to 100, what we are saying is that the IIS worker process will be fast to spin up 100 threads per CPU and have them ready to handle requests. This implies that if we take the magic thread number of 88 into account, we have 12 "dedicated" threads to handle requests per CPU. Meaning that with this configuration, your Front End would have 48 threads capable of handling requests in parallel available at the start of the worker process.
