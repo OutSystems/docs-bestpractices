@@ -11,7 +11,7 @@ When configuration management was first used for software development, it also d
 
 It is not surprising, then, that adapting a discipline meant for tanks and planes for massive computing systems—and then refining it for Agile development methods built on DevOps and CI/CD—required a major redefinition of what configuration management means for modern enterprise software.  
 
-In the same way that OutSystems has its own take on classical software development—replacing coding gruntwork with[ AI-assisted development](https://success.outsystems.com/Documentation/11/Developing_an_Application/Implement_Application_Logic/AI-assisted_development?_gl=1*1srqylj*_ga*MjA1MDQ1MDcwLjE2MDE1MzExNjY.*_ga_ZD4DTMHWR2*MTYyMTc3MTE1MS40NjYuMS4xNjIxNzcxMjEwLjE.) and integration hassles with one-click compilation and integration—it has also reimagined configuration management.
+In the same way that OutSystems has its own take on classical software development—replacing coding gruntwork with[ AI-assisted development](https://success.outsystems.com/Documentation/11/Developing_an_Application/Implement_Application_Logic/AI-assisted_development) and integration hassles with one-click compilation and integration—it has also reimagined configuration management.
 
 Built on a streamlined deployment process that includes an automated versioning system, OutSystems gives complete control over configuration management of critical systems in every environment in your factory, including database connections, site properties, batch jobs, web-service endpoints, and business processes—all of which can be modified without changing source code or redeployment.
 

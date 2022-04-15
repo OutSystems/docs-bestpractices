@@ -40,6 +40,7 @@
 - topics:
     # Extensibility
     - href: development/extensibility/extensibility.md
+    - href: development/integrations/integrate-ecosystem.md
     - href: development/platform-best-practices/outsystems-platform-best-practices.md 
     - href: development/platform-best-practices/outsystems-mobile-best-practices.md     
     - href: development/database-optimization/database-optimization.md      
