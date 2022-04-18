@@ -6,7 +6,7 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Improving Performance With Distributed Caching
+# Improving performance with distributed caching
 
 ## What is Distributed Caching
 

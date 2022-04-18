@@ -6,7 +6,7 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# OutSystems Domain Driven architecture
+# OutSystems Domain Driven Architecture
 
 In this section you can find information on all aspects of using a Domain Driven Architecture in OutSystems. The when and how to leverage and validate such solution is discussed, along with the existing methods and tools that you can use to validate your architecture.
 

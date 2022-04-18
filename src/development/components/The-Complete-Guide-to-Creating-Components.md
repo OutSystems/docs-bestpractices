@@ -6,7 +6,7 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# The Complete guide to creating components
+# The Complete Guide to Creating Components
 
 This article guides you through the steps to create a reusable component in OutSystems. It includes recommendations, best practices, and information for common sccenarios.
 
