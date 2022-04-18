@@ -3,6 +3,7 @@ summary: Learn how to create an architecture blueprint
 tags: article-page; OutSystems-development-from-blueprint; architecture-blueprint; OutSystems-Architecture; 
 guid: e52a7581-4dc9-4848-88c3-7e5df4a5c614
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # From architecture to development

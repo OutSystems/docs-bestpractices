@@ -3,6 +3,7 @@ summary: Your OutSystems Platform servers are ready to scale and be configured f
 en_title: 03 Scaling and high availability for OutSystems Platform servers
 guid: f28a3223-0889-43fc-8d3c-730053d89561
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Scaling and high availability for OutSystems Platform servers

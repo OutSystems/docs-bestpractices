@@ -2,6 +2,7 @@
 en_title: Component Testing
 guid: 0f836bfe-225b-41b0-851e-91b04544362c
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Component Testing

@@ -2,6 +2,7 @@
 summary: OutSystems is open by design. All application layers—front-end, back-end, database, and integration—can be extended with customized code. 
 guid: a95d9ab0-1dae-46a8-999b-75822aebe117
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # OutSystems extensibility

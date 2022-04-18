@@ -3,6 +3,7 @@ tags: database
 summary: Workarounds to avoid expand inline parameters. Examples to fix expressions with potential negative impact on performance.
 guid: 83c88799-85d5-4ac8-a882-f72bb417bb5c
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Avoid expand inline parameters for dynamic values

@@ -4,6 +4,7 @@ tags: support-Application _Lifecycle; support-application_development; support-A
 en_title: OutSystems Platform Best Practices
 guid: 463d263b-5aba-4881-857e-2465a046c24d
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # OutSystems Platform Best Practices

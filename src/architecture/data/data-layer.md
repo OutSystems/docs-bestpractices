@@ -4,6 +4,7 @@ tags: OutSystems_Mobile; OutSystems_Mobile_Data_Layer; Data_Layer
 en_title: Mobile Data Layer
 guid: b40244f8-f8f4-4282-b3e3-baa064e41481
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Mobile Data Layer

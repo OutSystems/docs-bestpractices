@@ -3,6 +3,7 @@ summary: Avoid stopping or slowing down your application development by keeping 
 tags: 
 guid: c2af5ea2-2154-40c4-9756-34783923865c
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 # Best practices for a tidy and clean environment
 

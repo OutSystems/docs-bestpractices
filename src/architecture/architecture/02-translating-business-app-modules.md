@@ -4,6 +4,7 @@ tags: support-application_development; support-development; support-Front_end_De
 en_title: 02 Translating business concepts into application modules
 guid: 24fbf144-fff4-426c-917f-d30f2b1eb523
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Translating business concepts into application modules

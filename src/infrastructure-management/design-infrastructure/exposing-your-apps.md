@@ -3,6 +3,7 @@ summary: Your OutSystems Platform servers must be protected to secure your end-u
 en_title: 05 Exposing your applications
 guid: 3a108c75-4daf-4605-ac95-0f9815fae5ea
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Exposing your applications

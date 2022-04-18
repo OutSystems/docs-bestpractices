@@ -3,6 +3,7 @@ summary: This article guides you through the steps to create a reusable componen
 en_title: The Complete Guide to Creating Components
 guid: 43a62924-8342-415c-9fda-06b278a876c0
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # The Complete guide to creating components

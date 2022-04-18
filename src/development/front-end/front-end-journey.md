@@ -4,6 +4,7 @@ tags: OutSystems_Front-End;
 en_title: Front-End Journey: From Mockups to Code
 guid: c8a658b6-cda4-4222-a1c6-14a743e3f9e9
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Front-End Journey: From Mockups to Code

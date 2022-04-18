@@ -2,6 +2,7 @@
 summary: Your IT and operations departments can use these recommendations on how to design your OutSystems infrastructure for typical implementation scenarios.
 guid: 48d54fc2-feb6-4aeb-ad2a-d40b306757f5
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Infrastructure design examples

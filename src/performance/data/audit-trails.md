@@ -4,6 +4,7 @@ tags: OutSystems_Audit; OutSystems_AuditTrails; OutSystems_Audit-Trails
 en_title: Audit Trail
 guid: 641a7444-c8cf-4f13-bcce-e86e0b2fd1d7
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Audit Trail

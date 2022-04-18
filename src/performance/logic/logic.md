@@ -3,6 +3,7 @@ summary: It is the developer's responsibility to maintain a high standard of cod
 en_title: Performance Best Practices - Logic
 guid: faee48f5-9b43-40a6-906d-837feef414df
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Performance Best Practices - Logic

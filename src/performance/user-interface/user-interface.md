@@ -3,6 +3,7 @@ summary: There are no fast applications with slow user experiences. To promote t
 en_title: Performance Best Practices - User Interface
 guid: eda645ae-a7e2-4844-af65-4b45d8d69b18
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Performance Best Practices - User Interface

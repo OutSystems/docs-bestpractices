@@ -3,6 +3,7 @@ summary: This series of articles helps you on providing guidelines and best prac
 tags: article-page
 guid: eeb1ecc6-8b4e-4c29-8f20-9c811cb1a65b
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Building mobile apps with multiple independent teams

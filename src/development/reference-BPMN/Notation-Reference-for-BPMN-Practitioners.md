@@ -3,6 +3,7 @@ summary: OutSystems brings with it the ability to design and execute business pr
 en_title: Notation Reference for BPMN Practitioners
 guid: e7784786-6c20-4455-b5b1-26030914dd69
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Notation Reference for BPMN Practitioners

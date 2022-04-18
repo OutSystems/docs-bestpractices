@@ -4,6 +4,7 @@ tags: architecture; integration
 en_title: 05 Integration Patterns for Core Services Abstraction
 guid: 94c591a5-e7a6-4015-af21-ad87c1012fc7
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 # Integration Patterns for Core Services Abstraction
 

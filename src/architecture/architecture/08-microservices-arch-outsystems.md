@@ -2,6 +2,7 @@
 summary: Understand how to design modular architecture implementations in which services all reside in their own infrastructure and are decoupled, communicating through loosely coupled, lightweight mechanisms.
 guid: 2a701988-2780-4aff-954c-a88fb24ff10f
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Microservices Architecture in OutSystems

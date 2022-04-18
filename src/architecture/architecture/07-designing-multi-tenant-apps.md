@@ -2,6 +2,7 @@
 summary: Multi-tenant applications are able to serve multiple organizations using the resources of a single software instance, while keeping the data of each separate from others.
 guid: 5ac20ed6-ef00-42d5-bea0-8af2925de734
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Designing Scalable Multi-Tenant Applications

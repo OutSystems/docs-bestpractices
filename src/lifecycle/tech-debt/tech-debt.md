@@ -2,6 +2,7 @@
 summary: OutSystems reduces technical debt during the development process by eliminating complilation errors and by helping identify issues in aArchitecture, performance, maintainability and security, so you can quickly understand what is going on in that particular areatrack down and correct any problems. 
 guid: 94feeaa6-0e06-4bab-b262-f990f78ca1ba
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Handling technical debt with OutSystems

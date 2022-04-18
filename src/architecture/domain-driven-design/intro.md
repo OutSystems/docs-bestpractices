@@ -3,6 +3,7 @@ summary: Learn how OutSystems approaches a Domain Driven architecture.
 tags: article-page
 guid: 744dbbef-0e48-47e1-9b5e-09ad8ae610a8
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # OutSystems Domain Driven architecture

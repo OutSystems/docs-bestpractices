@@ -2,6 +2,7 @@
 en_title: Injection and Cross Site Script (XSS)
 guid: f2de9e37-9a7e-4f1d-951a-271954eaa4f2
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Injection and Cross Site Script (XSS)
