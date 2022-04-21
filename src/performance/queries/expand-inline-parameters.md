@@ -58,7 +58,7 @@ Here are some recommendations to avoid expand inline parameters:
         SELECT {User}.[Name], {User}.[Phone]  
         FROM {User}  
         WHERE {User}.[IsActive]  
-        AND @SearchKeyword = '' OR {User}.[Name] like '%'+@SearchKeyword+'%'  
+        AND (@SearchKeyword = '' OR {User}.[Name] like '%'+@SearchKeyword+'%')  
         ORDER BY {User}.[Name]  
   
     With this fix the query is always the same for the DB engine. It's important to place the optionality condition first (`@SearchKeyword = ''`) to make sure that the real condition is never executed when there is no Search keyword. DB engines do a very good job optimizing this type of “dummy” conditions, so preparing the query for this optional filters is efficient.
