@@ -118,5 +118,6 @@
         - href: infrastructure-management/design-infrastructure/disaster-recovery-high-availability.md
         - href: infrastructure-management/design-infrastructure/exposing-your-apps.md
         - href: infrastructure-management/design-infrastructure/infra-design-examples.md
-    - href: infrastructure-management/iis-tuning.md    
+    - href: infrastructure-management/iis-tuning.md
+    - href: infrastructure-management/fine-tune-app-pool.md
     - href: infrastructure-management/disk-space-usage-control.md
