@@ -15,7 +15,7 @@ Even the best code has room for improvement — but, before enhancements can be 
 
 ## OutSystems versus technical debt
 
-Applications built with OutSystems rely on standard architectures and frameworks. They don’t require proprietary components, runtime engines, or interpreters — so technical debt is effectively limited before development even begins. 
+Applications built with OutSystems rely on standard architectures and frameworks. They don’t require proprietary components, runtime engines, or interpreters — so technical debt is effectively limited before development even begins.
 
 Software deployment using classical programming methods typically comprises modifying database files, pre-processing code, compiling it, assembling it, and then linking the result to all of its function calls. Bugs in any step may only be revealed as the result of a failed compilation, which triggers a manual code review for troubleshooting.
 
