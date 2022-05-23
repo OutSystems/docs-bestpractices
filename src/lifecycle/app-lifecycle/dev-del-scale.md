@@ -81,7 +81,7 @@ Versioning is helpful in specific scenarios, namely when you want to introduce a
 
 API/UI versioning applies when a change is restricted to a specific code element, (for example, a new authentication service or a new product catalog widget) and you want to ensure that any breaking changes (in the signature or the expected behavior) don't immediately impact existing consumers (each consumer can opt to switch to the new version when it makes sense to them).
 
-With multiple versions, the best way to approach version management is to have clear technical guidance about such as, when to create a new version, how to mark a version as deprecated and naming convention rules. For an example on how versions can be managed, see [Microservices Lifecycle — Managing Versions](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_Architecture_of_Your_OutSystems_Applications/Microservices_Architecture_in_OutSystems#Microservices_Lifecycle_.E2.80.94_Managing_Versions).
+With multiple versions, the best way to approach version management is to have clear technical guidance about such as, when to create a new version, how to mark a version as deprecated and naming convention rules. For an example on how versions can be managed, see [Microservices Lifecycle — Managing Versions](https://success.outsystems.com/Documentation/Best_Practices/Architecture/Designing_the_Architecture_of_Your_OutSystems_Applications/Microservices_Architecture_in_OutSystems#microservices-lifecycle-managing-versions).
 
 #### Feature toggles
 
