@@ -51,7 +51,7 @@ With the below query, we are able to get a hierarchical view over the sales of t
 
 ![ACL SQL Example](images/acl-example.png) 
 
-* ACL provides, per user, the full list of users belonging to his hierarchy
+* ACL provides, per user, the full list of users belonging to their hierarchy
 
 * On every user profile update, recreate the ACL list
 
