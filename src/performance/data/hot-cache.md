@@ -116,7 +116,7 @@ Going back to the WebShop example:
 
 * **Weekly special prices** - Weekly prices are only updated on Sunday and is not impacted by changes to the cold cache. The 10 weekly products need to be reflected in the customer catalog, so this process must trigger a second process that updates the 10 new prices (and only these 10 prices) on all customer catalogs. Since the catalog is monthly, the previous month prices also need to be reset to their original value, per customer catalog.
 
-* **Membership update** - since the customer discount is affected by his membership level, whenever a customer changes its level, it must trigger the rebuild of that customer catalog.
+* **Membership update** - since the customer discount is affected by their membership level, whenever a customer changes its level, it must trigger the rebuild of that customer catalog.
 
 ### Purge
 
