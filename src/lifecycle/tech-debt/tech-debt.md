@@ -9,7 +9,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 Since Ward Cunningham coined the phrase "technical debt" in 1992, it has sometimes been taken as an excuse for releasing quick-and-dirty code in the interests of development speed. Instead, it's better understood as an explanation for why it's sometimes OK to get a workable solution out the door — with a commitment to find an optimal one as soon as possible, and, in this way, repay a technical debt.
 
-However it's defined, taking on technical debt plays an important part in achieving excellence — as long as it's redeemed by bringing everything up to spec before it leads to a cascade of future problems. Like the financial world, from which this metaphor is drawn, ignoring long-term debt ultimately leads to overburdened, bankrupt enterprise software.
+However it's defined, taking on technical debt plays an important part in achieving excellence — as long as it's redeemed by bringing everything up to spec before it leads to a cascade of future problems. Like the financial world, from which this metaphor is drawn, ignoring long-term debt ultimately leads to overburdened, bankrupt enterprise software. 
 
 Even the best code has room for improvement — but, before enhancements can be tackled for the next release, disruptive technology may mature, markets may pivot, and additional user needs may be identified. Paying down a large backlog of technical debt at the beginning of a development cycle may block the quick response required to deal with new opportunities and challenges.
 
