@@ -77,7 +77,7 @@ To reduce the likelihood of a successful XSS event on OutSystems, you can enable
 
 One disadvantage is maintaining a white list of permitted resources. This typically involves communicating with third party sites to determine their inclusion’s authenticity.
 
-In OutSystems you enable this feature through the Service Center / Administration / Security as shown below:
+In OutSystems you enable this feature through the Lifetime / Environments / More Security Settings as shown below:
 
 ![image alt text](images/Injection-and-Cross-Site-Script-7.png)
 
