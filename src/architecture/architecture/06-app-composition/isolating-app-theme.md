@@ -53,6 +53,6 @@ Any overall change to the look & feel is performed in the Global theme module. S
 
 ## More information
 
-To learn more about how to design your application architecture check the [Designing the architecture of your OutSystems applications](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications) guide.
+To learn more about how to design your application architecture check the [Designing the architecture of your OutSystems applications](../intro.md) guide.
 
-You can also check for further recommendations on how you should [compose your application landscape](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/Application_composition).
+You can also check for further recommendations on how you should [compose your application landscape](06-app-composition.md).
