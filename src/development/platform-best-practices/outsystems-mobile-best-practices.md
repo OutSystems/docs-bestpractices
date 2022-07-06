@@ -35,7 +35,7 @@ We'll be updating and adding new content to this article along the way!
 
 A [great UI experience](https://www.outsystems.com/blog/10-rules-for-creating-a-mobile-look-and-feel.html) increases the user perception of a fast and fluid mobile app. This section presents a set of best practices to improve the UI experience of your OutSystems mobile app.
 
-## Discover and Use OutSystems Components
+### Discover and Use OutSystems Components
 
 Developing common mobile patterns from scratch takes a huge effort and feels like reinventing the wheel.
 
@@ -43,7 +43,7 @@ Developing common mobile patterns from scratch takes a huge effort and feels lik
 
 Use the [OutSystems UI](https://www.outsystems.com/outsystems-ui/) framework or other [OutSystems Forge](https://www.outsystems.com/forge/) components, which provide you with a large set of common mobile patterns. Remember to keep them up to date to benefit from the latest improvements.
 
-## Design an Empty State for Content Being Fetched
+### Design an Empty State for Content Being Fetched
 
 When a user navigates to a screen, the static content is usually rendered first, while the dynamic content takes more time since it is [fetched asynchronously](https://success.outsystems.com/Documentation/11/Developing_an_Application/Implement_Application_Logic/Screen_and_Block_Lifecycle_Events). This results in a poor UI experience, where an apparently incomplete screen is displayed with content moving around while the dynamic data is being rendered.
 
@@ -55,7 +55,7 @@ Improve the user experience by [designing and displaying an empty state image](h
 
 This strategy is valid for all dynamic content in the screen such as blocks, cards or list items. When the empty state turns into the fetched content you may experience some flickering. To avoid flickering when the empty state turns into the fetched content, choose one image that assures a smooth transition, such as a blurred gray line or a spinner.
 
-## Prioritize Screen Content Rendering
+### Prioritize Screen Content Rendering
 
 By default, OutSystems mobile apps fetch screen data without a specific priority. If your screen has content that is more relevant and should be displayed first but you are not prioritizing its rendering, it may lead to a bad user experience. For example, displaying an advertising banner before the main information of the screen.
 
@@ -73,7 +73,7 @@ Delay the rendering of the secondary content so that the main content is rendere
 
 ![image alt text](images/OutSystems-Mobile-Best-Practices-1.png)
 
-## Set the Width and Height of Image Widgets
+### Set the Width and Height of Image Widgets
 
 If you do not set the width and height of an Image widget, the user can get a flickering effect while the final image is being downloaded. For example, not setting the image height might cause the total height of the screen to change until the image loads completely since the widget height will be changing from 0px to the height of the final image.
 
@@ -83,11 +83,11 @@ Set the width and height of the Image widget to the expected size of the final i
 
 ![image alt text](images/OutSystems-Mobile-Best-Practices-2.png)
 
-# Performance
+## Performance
 
 Handling data or implementing logic specifically for mobile scenarios can have a significant impact on a mobile app performance. Follow the best practices in this section to develop performant mobile apps. Also check the other sections for best practices that, although not directly related to performance, can contribute to improving it.
 
-## Fix the Performance Warnings
+### Fix the Performance Warnings
 
 OutSystems automatically detects potential performance issues while you are developing your mobile app in Development Environment. Not paying attention to them may result in a bad performance of the application. 
 
@@ -97,7 +97,7 @@ OutSystems automatically detects potential performance issues while you are deve
 
 Check the performance warnings displayed in the TrueChange™ tab and fix them.
 
-## Design a Lightweight Local Storage { #lightweight-local-storage }
+### Design a Lightweight Local Storage { #lightweight-local-storage }
 
 Keeping a large amount of data in the device's local storage, for example in offline or cache scenarios, might become a performance killer in low-end devices, causing `Failed to allocate X bytes` errors.
 
@@ -116,7 +116,7 @@ Use the following techniques to design a lightweight local storage:
 
 * If your synchronization process must include images, try to compress them.
 
-## Keep the Splash Screen Simple and Fast
+### Keep the Splash Screen Simple and Fast
 
 When your mobile app starts, it displays a splash screen while internal operations are running. Adding heavy or lengthy operations to the splash screen will increase the time that the users must wait to use the app. Additionally, if the splash screen has a complex UI, the users may see a blank screen before the splash screen renders.
 
@@ -140,7 +140,7 @@ For example, consider the following possible approaches:
 
 **Tip**: To provide an amazing user experience, we also recommend that you [customize the native splash screen](https://success.outsystems.com/Documentation/11/Delivering_Mobile_Apps/Customize_Your_Mobile_App/Use_Custom_Splash_Screens).
 
-## Optimize Fetching Server Data for a Screen
+### Optimize Fetching Server Data for a Screen
 
 Using the On After Fetch of server aggregates to execute other aggregates in sequence will generate several server requests and slow down the application.
 
@@ -150,7 +150,7 @@ Create a Data Action containing aggregates in the correct order. This action wil
 
 ![image alt text](images/OutSystems-Mobile-Best-Practices-6.png)
 
-## Optimize the Loading of Lists
+### Optimize the Loading of Lists
 
 Lists involve fetching and rendering multiple records at the same time. If not done carefully, the experience can become cumbersome, especially on low-end devices or with bad network connectivity.
 
@@ -192,7 +192,7 @@ The next picture shows examples of values to use in different situations. You sh
 
 Users need a clear indication that the list has more items to show and that it is actually doing something. An animated image should be enough to provide this message to the user. Even so, as a performance target, keep in mind that during typical application usage the users should never hit a loading wall at the end of a list.
 
-## Optimize the File Size of Images
+### Optimize the File Size of Images
 
 Using big image files in your mobile app can increase the download time (or even block the download) and lead to poor performance, especially in older devices or in low connectivity scenarios. They also consume storage space and might be too big for the screens of mobile devices, even high-DPI models.
 
@@ -200,7 +200,7 @@ Using big image files in your mobile app can increase the download time (or even
 
 Reduce image size (in bytes) and adapt its dimensions (height/width) considering your target user's experience — follow [Google's Image Optimization](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization) recommendations. Also, consider delaying the fetch of images to a later stage. Refer to the best practice to [Prioritize Screen Content Rendering](https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Mobile_Best_Practices#Prioritize_Screen_Content_Rendering).
 
-# JavaScript
+## JavaScript
 
 OutSystems generates mobile apps with fast and optimized JavaScript code. You should carefully assess whether to add or not your own JavaScript code. To help you with that, follow these guidelines:
 
@@ -216,7 +216,7 @@ Keep in mind that OutSystems low-code is more performant but if you decide to us
 
 Internal APIs are not supported and can change in any upgrade, thus breaking your JavaScript code.
 
-## Follow the Industry JavaScript Best Practices
+### Follow the Industry JavaScript Best Practices
 
 When writing JavaScript, make sure you know the code you're implementing and how it affects the app.
 
@@ -228,7 +228,7 @@ For example, use performant [JavaScript selectors](https://www.w3schools.com/w3j
 
 ![image alt text](images/OutSystems-Mobile-Best-Practices-8.png)
 
-## Avoid Using External JavaScript Libraries
+### Avoid Using External JavaScript Libraries
 
 External JavaScript libraries can be too complex to run on mobile devices.
 
@@ -246,7 +246,7 @@ Using JavaScript code in Script elements allows:
 
 * Having a single source for each JavaScript library, thus avoiding multiple parses of the same JavaScript code.
 
-## Refactor JavaScript Code into Client Actions
+### Refactor JavaScript Code into Client Actions
 
 Repeating the same JavaScript code in several JavaScript nodes increases maintainability efforts and makes your app more prone to errors.
 
@@ -258,7 +258,7 @@ For example, encapsulate troubleshooting JavaScript functions such as console.lo
 
 ![image alt text](images/OutSystems-Mobile-Best-Practices-10.png)
 
-## Avoid Manipulating the DOM
+### Avoid Manipulating the DOM
 
 OutSystems mobile apps use React and manipulating the DOM with JavaScript can lead to unpredictable or undesirable behaviors.
 
@@ -270,7 +270,7 @@ If you are implementing a known mobile pattern, look for it in [OutSystems UI](h
 
 ![image alt text](images/OutSystems-Mobile-Best-Practices-11.png)
 
-## Avoid Using Global Objects
+### Avoid Using Global Objects
 
 OutSystems uses [single-page applications](https://en.wikipedia.org/wiki/Single-page_application) to optimize the runtime execution of mobile apps. As such, the window object isn't cleared between navigations and global objects are not destroyed, increasing memory usage in the long run.
 
@@ -283,7 +283,7 @@ Avoid using objects that get attached to the window object, like global variable
 * Use the 'var' keyword when declaring JavaScript variables to limit their scope.
 ![image alt text](images/OutSystems-Mobile-Best-Practices-12.png)
 
-## Change Widgets Style using OutSystems Low-code
+### Change Widgets Style using OutSystems Low-code
 
 Using JavaScript to add/remove CSS classes to change the style of widgets may be a possible source of problems such as less code visibility and integrity, or flickering while rendering.
 
@@ -293,7 +293,7 @@ Use the Style Classes property of widgets to change the CSS classes applied to t
 
 ![image alt text](images/OutSystems-Mobile-Best-Practices-13.png)
 
-## Use CSS for Animations instead of JavaScript
+### Use CSS for Animations instead of JavaScript
 
 JavaScript animations typically run on the device's Central Processing Unit (CPU) with direct impact on the mobile app performance.
 
@@ -307,11 +307,11 @@ Learn more about how to properly animate elements in your mobile apps in [Smooth
 
 However, if you really must use JavaScript, use the window.requestAnimationFrame() method to run the animation using the GPU.
 
-# Troubleshooting
+## Troubleshooting
 
 Understanding bugs in your mobile apps can sometimes be a hard task, but there are [a few techniques](https://success.outsystems.com/Documentation/11/Developing_an_Application/Troubleshooting_Applications/Solve_Common_Mobile_App_Development_Issues) that facilitate that troubleshooting process. Also following the development guidelines presented below allows you to more easily replicate and fix a problem in your mobile app.
 
-## Define Fallbacks for Your Native Plugins
+### Define Fallbacks for Your Native Plugins
 
 When you are troubleshooting your app in a desktop browser, the native plugins will not be available. This might prevent you from troubleshooting issues detected in real mobile devices.
 
@@ -325,7 +325,7 @@ In the following example, the AddToContacts action of the Contacts native plugin
 
 Having these fallbacks in place also helps avoiding issues in the apps running in devices that do not support a given plugin.
 
-## Create a Simple Client-Side Logging System
+### Create a Simple Client-Side Logging System
 
 Client-side issues can be hard to troubleshoot, especially when they seem to occur in a single user's device in production. If you cannot replicate the issues, it will be much difficult to find and fix them.
 
