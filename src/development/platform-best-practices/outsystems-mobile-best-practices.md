@@ -31,7 +31,7 @@ Focusing on these ground rules, this article contains a set of best practices th
 
 We'll be updating and adding new content to this article along the way!
 
-# User Interface
+## User Interface
 
 A [great UI experience](https://www.outsystems.com/blog/10-rules-for-creating-a-mobile-look-and-feel.html) increases the user perception of a fast and fluid mobile app. This section presents a set of best practices to improve the UI experience of your OutSystems mobile app.
 
