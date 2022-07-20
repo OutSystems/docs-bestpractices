@@ -8,7 +8,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Application composition
 
-An OutSystems application is an assembly of modules (*eSpaces *and *Extensions*), defined in Service Studio. An application constitutes the minimum deployment unit among environments in [LifeTime](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle).
+An OutSystems application is an assembly of Modules and Extensions defined in Service Studio. An application constitutes the minimum deployment unit among environments in [LifeTime](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle).
 
 Understanding the dependencies among applications is also key to design a correct architecture. Even if you have a correct module architecture, the wrong application composition can result in:
 
