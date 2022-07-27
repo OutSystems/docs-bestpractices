@@ -116,7 +116,7 @@ The figure below shows these patterns design:
 
 **Business Logic Module:** Another recommendation is to isolate **B**usiness **L**ogic (Actions) or **C**ore **W**idgets (Webblocks), to manage complexity, composition or to have its own lifecycle. In this case, it wasn't necessary to create a _CW eSpace. Maybe you can have it later, but for now, the eSpace **Booking_BL** addresses all business logic required.
 
-By applying these architectural patterns and using a common [naming convention](https://www.outsystems.com/learn/lesson/1223/module-naming/?LearningPathId=17) to the module names you end up with the following architecture blueprint for the modules:
+By applying these architectural patterns and using a common [naming convention](https://www.outsystems.com/training/lesson/2301/naming-conventions-for-modules) to the module names you end up with the following architecture blueprint for the modules:
 
 ![Architecture blueprint](images/architecture-blueprint.png?width=750)
 
