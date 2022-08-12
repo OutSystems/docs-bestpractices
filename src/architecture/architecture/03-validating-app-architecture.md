@@ -17,7 +17,7 @@ The compliance of the implemented modules with these architecture rules can be a
 
 An upward reference tends to create a cluster where any 2 modules, directly or indirectly, have a circular dependency.
 
-In this example, since **Library E** consumes **End-user A**, any pair of elements inside the identified cluster is in a circular relation. Take **C** and **D** for example: **C**> E > A > **D** and reverse **D**> E > A > **C**.
+In this example, since **Library E** consumes **End-user A**, any pair of elements inside the identified cluster is in a circular relation. Take **C** and **D** for example: **C** > E > A > **D** and reverse **D** > E > A > **C**.
 
 ![ ](images/validating-app-architecture-no-upward-references-diag.png)
 
@@ -33,7 +33,7 @@ Find the elements that are being consumed and move them to a lower layer. In thi
 
 ## Rule #2 - No side references among End-users or Orchestrations
 
-In this example, **End-user A** is consuming some element of **End-user B** (maybe something as simple as a formatting function). Not only it got coupled to module **B**, but it unnecessarily inherited **D**, **E**and **G**.
+In this example, **End-user A** is consuming some element of **End-user B** (maybe something as simple as a formatting function). Not only it got coupled to module **B**, but it unnecessarily inherited **D**, **E** and **G**.
 
 ![ ](images/validating-app-architecture-no-side-references-diag.png)
 
