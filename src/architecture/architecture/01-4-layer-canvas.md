@@ -46,9 +46,10 @@ Designing an architecture is not a one-time event. It is a continuous process. T
 
 To start using the Architecture Canvas check the following articles:
 
-* [Translating business concepts into application modules](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/02_Translating_business_concepts_into_application_modules)
+* [Translating business concepts into application modules](https://success.outsystems.com/Documentation/Best_Practices/Architecture/Designing_the_Architecture_of_Your_OutSystems_Applications/Translating_business_concepts_into_application_modules)
 
-* [Validating your application architecture](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/03_Validating_your_application_architecture)
+* [Validating your application architecture](https://success.outsystems.com/Documentation/Best_Practices/Architecture/Designing_the_Architecture_of_Your_OutSystems_Applications/Validating_your_application_architecture
+)
 
 ## More information
 
