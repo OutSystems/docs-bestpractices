@@ -177,11 +177,10 @@ Where OutSystems manages keys, they are managed by key custodians following IAM 
 
 OutSystems restricts the use of data storage in your cloud environment’s front-end servers. However, in some cases, applications designed to run in OutSystems might need to manipulate large binary files. Examples include applications that allow documents to be stored or business processes with a step for uploading attachments.
 
-![](images/cloud-rest-security.png)
-
 One of the possible strategies is to temporarily store the document in the available folder - D:\user - on the OutSystems cloud front-end servers. You can use up to 2 GB of storage. If not previously removed by the applications, the files will be automatically deleted after 30 days.
 
 ### Front-end server volumes encryption at rest
+
 OutSystems uses AWS provided disk volume encryption and key management:
 
 Your applications run on cloud-based virtualized servers that are provisioned with storage volumes that can be encrypted, AWS EBS volumes - [Elastic Block Storage](https://aws.amazon.com/ebs/).
@@ -195,6 +194,11 @@ The server encryption occurs on the server that hosts each of your virtualized s
 Encryption is also provided when data moves between the instances and the storage volumes.
 
 Dedicated encryption keys are used to encrypt each asset delivered to customers.
+
+<div class="info">
+
+This is available by default on all Sentry offer Front-end servers. It's not available in any other editions.
+</div>
 
 ## Securing data at rest on OutSystems Cloud databases 
 
