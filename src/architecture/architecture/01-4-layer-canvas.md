@@ -36,7 +36,7 @@ The canvas helps collecting architecture requirements in a structured and system
 ![ ](images/4-layer-canvas_4.png)
 
 2. **Define modules**
-Design the modules that implement the identified concepts, following [recommended patterns](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/05_Integration_Patterns_for_Core_Services_Abstraction).
+Design the modules that implement the identified concepts, following [recommended patterns](https://success.outsystems.com/Documentation/Best_Practices/Architecture/Designing_the_Architecture_of_Your_OutSystems_Applications/Integration_Patterns_for_Core_Services_Abstraction).
 
 Designing an architecture is not a one-time event. It is a continuous process. The architecture must be iterated, cycling these two stages, as a solution evolves and new concepts and needs emerge from your business.
 
