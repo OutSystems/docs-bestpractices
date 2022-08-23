@@ -257,7 +257,7 @@ Regarding data at rest, OutSystems recommends that you:
 
 * Define your policies and controls to govern the storage of data.
 
-* Execute [Thread Model Analysis](https://www.owasp.org/index.php/Application_Threat_Modeling) on systems and business data.
+* Execute [Threat Model Analysis](https://www.owasp.org/index.php/Application_Threat_Modeling) on systems and business data.
 
 * Build encryption capabilities based on sound and robust encryption algorithms to encrypt sensitive data, typically leveraging Forge components such as the Crypto API.
 
