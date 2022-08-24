@@ -8,7 +8,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Securing data at rest with encryption
 
-OutSystems is responsible for the secure management of all stack components, including database servers, front-end servers, load balancers, and all the related logs produced by the infrastructure assets. For all of these, OutSystems manages the keys to encrypt the assets for you seamlessly and is therefore responsible for the security of data stored. OutSystems acts as a data processor in the OutSystems Cloud environments.
+OutSystems is responsible for the secure management of all the stack components, including database servers, front-end servers, load balancers, and all the related logs produced by the infrastructure assets. For all of these, OutSystems manages the keys to encrypt the assets for you seamlessly and is therefore responsible for the security of data stored. OutSystems acts as a data processor in the OutSystems Cloud environments.
 
 [See our Data Processing Agreement](https://www.outsystems.com/legal/master-subscription-agreement/data-processing-addendum/)
 
