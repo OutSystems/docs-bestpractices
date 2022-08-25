@@ -58,7 +58,7 @@ Always use a connection pool management mechanism in frequent connections to thi
 
 ### Importance
 
-Always use a connection pool management mechanism in frequent connections to third party database systems, like SQL Server, Oracle, PostgreSQL, DB2 or MySQL, through extension integration
+Connection pools enable you to maintain and reuse a “pool” of open database connections from operation to operation, instead of opening and closing a new connection for each operation. For small-scale operations, opening and closing a database connection may not be as expensive. However, as your application scales up, it can become more expensive and impact the application's performance.
 
 ### Remarks
 
