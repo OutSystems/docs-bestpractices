@@ -209,8 +209,6 @@ Here’s a quick list of several open apps you can use or refer to for examples:
 * Hierarchical tree example: [Directory](https://www.outsystems.com/forge/component-overview/614/directory)
 * Tags implementation example: [Documents](https://www.outsystems.com/forge/component-overview/612/documents)
 * Storing files (binary data) example: [Documents](https://www.outsystems.com/forge/component-overview/612/documents)
-* Inline table editing: [Expenses](https://www.outsystems.com/forge/component-overview/615/expenses)
-* Google Maps: [Expenses](https://www.outsystems.com/forge/component-overview/615/expenses)
 * Yearly Calendar: [Time Sheets](https://www.outsystems.com/forge/component-overview/613/time-sheets)
 * Charts: [Sales](https://www.outsystems.com/forge/component-overview/582/sales)
 * Using Email POP: [Cases](https://www.outsystems.com/forge/component-overview/584/cases)
