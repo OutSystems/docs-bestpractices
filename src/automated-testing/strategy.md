@@ -40,8 +40,8 @@ Every new application should follow the standard test automation principles, the
 
 The problem is more difficult to solve when we need to automate the tests for an existing application. When we have this scenario we should follow this process.
 
-![](images/strategy-workflow.png?width=750)
- 
+![Workflow Strategy](images/strategy-workflow.png?width=750)
+
 First of all, we need to assess our application against testability principles explained in [Developing for Testability](https://success.outsystems.com/Documentation/11/Developing_an_Application/Developing_for_Testability). This is done in the **Test Automation Assessment** phase.
 
 In case the result of the assessment is positive, meaning we have an application that was built with testability principles in place, then we should just apply the **Standard Test Automation Practice**, which includes testing pyramid, developing for testability, and the right decision for automating each test.
@@ -52,9 +52,9 @@ In the end, we should always plan a refactoring on the parts that should be more
 
 If you take into account OutSystems' "True change" capabilities, refactoring becomes much easier to perform. So refactoring should become a part of developers' practices as a way to continuously improve testability and ensure a reduced technical debt.
 
-For more information about refactoring an application, please refer to the following links: 
-* [Refactor an Application in OutSystems 10](https://success.outsystems.com/Documentation/10/Managing_the_Applications_Lifecycle/Deploy_Applications/Refactor_an_Application) 
-* [Refactor an Application in OutSystems 11](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Deploy_Applications/Refactor_an_Application) 
+For more information about refactoring an application, please refer to the following links:
+* [Refactor an Application in OutSystems 10](https://success.outsystems.com/Documentation/10/Managing_the_Applications_Lifecycle/Deploy_Applications/Refactor_an_Application)
+* [Refactor an Application in OutSystems 11](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Deploy_Applications/Refactor_an_Application)
 
 ## Test Data Management
 
@@ -71,7 +71,7 @@ Finally, tests must run fast, or at least they must execute within the minimal t
 When we build tests for an OutSystems application, our tests will always depend on two possible data sources:
 
 1. System Under Test (SUT) OutSystems application data
-1. External system data (which may include external systems data or other loosely coupled OutSystems application data) 
+1. External system data (which may include external systems data or other loosely coupled OutSystems application data)
 
 When thinking of SUT OutSystems application data, we can think of two subtypes of data:
 
@@ -86,12 +86,12 @@ In case the creation of bootstrap logic is not easily achievable, an alternative
 
 However, using a database clone is not recommended, and you should only use it in rare occasions. These are the drawbacks:
 
-* It's hard to automate in a fast way. 
-* It requires sanitization of system and application data, such as configurations, endpoints, and sensitive data in the cloned database. 
-* The testing environment must be reregistered in LifeTime. 
-* Release cycles from all delivery teams must be aligned. 
-* The potential loss of module versioning history in the testing environment. 
-* High lead-time of the whole process (if manually performed.) 
+* It's hard to automate in a fast way.
+* It requires sanitization of system and application data, such as configurations, endpoints, and sensitive data in the cloned database.
+* The testing environment must be reregistered in LifeTime.
+* Release cycles from all delivery teams must be aligned.
+* The potential loss of module versioning history in the testing environment.
+* High lead-time of the whole process (if manually performed.)
 * It's not possible to perform in PaaS infrastructures.
 
 Furthermore, when building a test we always have to decide whether we need the real data (from 1 or 2 above) or simulated data (built with some mocking mechanism). As we climb the testing pyramid, tests become more dependent on real data.
@@ -111,17 +111,17 @@ When thinking about mocking services, there are usually two different options:
 
 We always need to analyze each application test data dependency to allow it to test in the best way possible. So, you must carry out a deep test data for each application to reduce test complexity, effort, and maintainability, and  to reach the ultimate goal of test idempotency.
 
-## Mocking Services for Integrations Points 
+## Mocking Services for Integrations Points
 
 Mocking services are used to simulate real services used in a given functionality. This method is commonly known as service virtualization. The reason to use mock services is to eliminate dependencies from external systems when we try to test the functionality of our application. By isolating our application, we are able to assess the correctness of our functionalities, regardless of the status of the external system.
 
 This is very useful to pinpoint potential problems during testing. If we have a set of tests on a given functionality that are using mocking services to simulate an external system, and all execute successfully, then we know our application logic is okay. But if we have another set of tests on the same functionality that instead communicate with the actual external system, and they fail, then we know that the problem is at the integration level.The problem is that the API changed or the external system is down. This is a technique called contract testing.
 
-![](images/strategy-integration-points.png)
+![Strategy integration points](images/strategy-integration-points.png)
 
 This implies that when the external service is called, the application needs to be aware if it is running in the context of a test execution, and if mocking will apply in external dependencies. Some tests will want to use mocking, and some won't. For this reason, we recommend that you define a separate mocking services framework to provide two simple functionalities:
 
-1. Set the mocking mode on/off — used by the test applications. 
+1. Set the mocking mode on/off — used by the test applications.
 1. Check if the current execution is running with Mocking Mode On — used by the business application.
 
 This framework consists of a single MockingServices module that provides the base functionality, and wrapper modules per domain called DomainMockingServices.
@@ -136,58 +136,58 @@ Because the MockingServices module is generic and will be used by all domains, e
 
 This is what the architecture should look like:
 
-![](images/strategy-mockingservices-architecture.png)
+![Mocking Services Architecture](images/strategy-mockingservices-architecture.png)
 
 ### Mocking in REST APIs
 
 In the context of REST API methods, simply add the testing mode validation to the "OnBeforeRequest" event action, and if it returns true, customize the request URL to point it to the destination mock service, as shown in this picture.
 
-![](images/strategy-mocking-rest.png)
+![Mocking REST APIs](images/strategy-mocking-rest.png)
 
 ### Mocking in SOAP APIs
 
 In the context of SOAP API methods, add testing validation before calling the actual service method. If it returns true, override the target URL by calling the "SetWebReferenceURL" action from the "EnhancedWebReferences" module. Here's a small example:
 
-![](images/strategy-mocking-soap.png)
+![Mocking SOAP APIs](images/strategy-mocking-soap.png)
 
-### MockingServices Sample Module 
+### MockingServices Sample Module
 
-This is a brief description of a possible implementation for this module, with an example for when there's a single mocking server in place. But for scenarios where there are multiple mocking servers, it easily can be extended. 
+This is a brief description of a possible implementation for this module, with an example for when there's a single mocking server in place. But for scenarios where there are multiple mocking servers, it easily can be extended.
 
-#### Data tab 
+#### Data tab
 
-![](images/strategy-mockingservices-data.png)
+![Mocking data services](images/strategy-mockingservices-data.png)
 
 ##### Site Properties
 
-MockingServerBaseURL 
-:   Indicates the mocking server's base URL. Used by the application modules to know where to redirect the calls. 
+MockingServerBaseURL
+:   Indicates the mocking server's base URL. Used by the application modules to know where to redirect the calls.
 
-MockingServicesOn 
-:   Indicates if the mocking services should be used in the current environment. This property completely disables mocking in the environment, even if some code tries to set up some mocking service. Especially useful for production environment. 
+MockingServicesOn
+:   Indicates if the mocking services should be used in the current environment. This property completely disables mocking in the environment, even if some code tries to set up some mocking service. Especially useful for production environment.
 
 ##### Entities
 
-DomainMocking 
-:   Persists the status of the mocking service for a specific domain. We recommend that the domain is the LifeTime team or the business application (as per DDD recommendations). But because the DomainName attribute is a text, it is also possible to set any level of granularity. 
+DomainMocking
+:   Persists the status of the mocking service for a specific domain. We recommend that the domain is the LifeTime team or the business application (as per DDD recommendations). But because the DomainName attribute is a text, it is also possible to set any level of granularity.
 
 #### Logic Tab
 
-![](images/strategy-mockingservices-logic.png)
+![MockingService Logic](images/strategy-mockingservices-logic-ss.png)
 
 ##### Public Actions
 
-SetDomainMocking 
-:   For the domain given by DomainName, this sets the mocking status to on or off, depending on the boolean value of IsOn. If the MockingServicesOn site property is set to false, it throws an exception. If the domain is already set with the value of IsOn, nothing happens.  
-    This action is used by the test modules to specify that a test needs to be executed using mocking services or not. 
+SetDomainMocking
+:   For the domain given by DomainName, this sets the mocking status to on or off, depending on the boolean value of IsOn. If the MockingServicesOn site property is set to false, it throws an exception. If the domain is already set with the value of IsOn, nothing happens.
+    This action is used by the test modules to specify that a test needs to be executed using mocking services or not.
 
-IsDomainMockingOn 
-:   For the domain given by DomainName, this checks if the mocking status is set to on or not. It also returns the mocking server's base URL. If the MockingServicesOn site property is set to false, it always returns false regardless of the domain setting.  
+IsDomainMockingOn
+:   For the domain given by DomainName, this checks if the mocking status is set to on or not. It also returns the mocking server's base URL. If the MockingServicesOn site property is set to false, it always returns false regardless of the domain setting.
     This action is used by the application modules whenever a REST/SOAP API or service action is invoked to understand if the call needs to be redirected to a mocking server or not, and that server's base URL.
 
 ##### Exceptions
 
-MockingServicesOffException 
+MockingServicesOffException
 :   Exception is thrown when the MockingServicesOn site property is set to false and someone tries to set the mocking for a domain.
 
 ### DomainMockingServices Sample Module
@@ -196,6 +196,6 @@ Here is a sample implementation of the DomainMockingServices module. Because the
 
 The module keeps the domain name in a site property and wraps the actions from the MockingServices module in its own public actions that the tests use.
 
-Here's a sample of what one of these DomainMockingServices modules looks like: 
+Here's a sample of what one of these DomainMockingServices modules looks like:
 
-![](images/strategy-domainmockingservices.png)
+![Mocking domain services](images/strategy-domainmockingservices.png)
