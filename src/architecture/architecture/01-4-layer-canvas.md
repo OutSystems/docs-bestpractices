@@ -36,7 +36,7 @@ The canvas helps collecting architecture requirements in a structured and system
 ![ ](images/4-layer-canvas_4.png)
 
 2. **Define modules**
-Design the modules that implement the identified concepts, following [recommended patterns](https://success.outsystems.com/Documentation/Best_Practices/Architecture/Designing_the_Architecture_of_Your_OutSystems_Applications/Integration_Patterns_for_Core_Services_Abstraction).
+Design the modules that implement the identified concepts, following [recommended patterns](05-integration-patterns.md).
 
 Designing an architecture is not a one-time event. It is a continuous process. The architecture must be iterated, cycling these two stages, as a solution evolves and new concepts and needs emerge from your business.
 
@@ -46,14 +46,13 @@ Designing an architecture is not a one-time event. It is a continuous process. T
 
 To start using the Architecture Canvas check the following articles:
 
-* [Translating business concepts into application modules](https://success.outsystems.com/Documentation/Best_Practices/Architecture/Designing_the_Architecture_of_Your_OutSystems_Applications/Translating_business_concepts_into_application_modules)
+* [Translating business concepts into application modules](02-translating-business-app-modules.md)
 
-* [Validating your application architecture](https://success.outsystems.com/Documentation/Best_Practices/Architecture/Designing_the_Architecture_of_Your_OutSystems_Applications/Validating_your_application_architecture
-)
+* [Validating your application architecture](03-validating-app-architecture.md)
 
 ## More information
 
 Check out the [Electronic Canvas tool](http://www.outsystems.com/forge/component/706/electronic-canvas/), available in the OutSystems Forge. It assists you in the design of a new architecture by allowing you to place and move around your concepts in a digital Architecture Canvas. It enables you to identify and organize all the architectural elements that need to be implemented in a new project.
 
-To learn more about how to design your application architecture check the [Designing the architecture of your OutSystems applications](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications) guide.
+To learn more about how to design your application architecture check the [Designing the architecture of your OutSystems applications](intro.md) guide.
 
