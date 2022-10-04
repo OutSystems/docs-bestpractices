@@ -87,5 +87,5 @@ If that merge results in a too large module, it may be necessary to create a thi
 
 ## More information
 
-To learn more about how to design your application architecture check the [Designing the architecture of your OutSystems applications](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications) guide.
+To learn more about how to design your application architecture check the [Designing the architecture of your OutSystems applications](intro.md) guide.
 
