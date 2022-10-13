@@ -228,7 +228,7 @@ OutSystems manages the database server encryption keys with the following polici
 
 * Database encryption is available by default in all Sentry database servers so you won't need to explicitly request if you have a Sentry edition.
 
-* Note that this capability is supported for class 2 and higher of the OutSystems Cloud database servers so that the overhead on performance (approximately 30%) does not compromise systems availability.
+* Note that this capability is supported for class 2 and higher of the OutSystems Cloud database servers so that the overhead on performance doesn't compromise systems availability.
 
 * Transparent data encryption features are available for self-managed environments. This feature is not available for OutSystems Cloud environments.
 
