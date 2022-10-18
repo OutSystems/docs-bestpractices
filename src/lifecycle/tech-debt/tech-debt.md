@@ -21,7 +21,7 @@ Software deployment using classical programming methods typically comprises modi
 
 OutSystems orchestrates the entire deployment process using a combination of automation, AI, and analytics to identify architecture errors, faulty logic, and broken dependencies — during development, in real time. OutSystems preempts failed compilations by either applying corrective measures automatically or directing the developer to the source of the error — along with a suggestion about how to fix it. Modules can only be published when it will function correctly.
 
-Correct functioning, however, doesn't necessarily mean efficient functioning. While a short-term solution may solve the immediate problem, it may also leave a technical debt, in the form of an app that's difficult to maintain and costly to change. The OutSystems Architecture Dashboard provides a high-level analysis of your app, marks areas for improvement, and facilitates unhindered growth. 
+Correct functioning, however, doesn't necessarily mean efficient functioning. While a short-term solution may solve the immediate problem, it may also leave a technical debt, in the form of an app that's difficult to maintain and costly to change. The OutSystems AI Mentor Studio provides a high-level analysis of your app, marks areas for improvement, and facilitates unhindered growth. 
 
 This paper discusses how OutSystems helps reduce technical debt during development and assists in building a best-practices architecture to efficiently deal with it in the future.
 
@@ -53,7 +53,7 @@ OutSystems uses a versioning system that labels modules with an incremental vers
 
 ![compare and merge](images/conflicts-detected.png)
 
-## Architecture Dashboard
+## AI Mentor Studio
 
 Enterprises have moved away from legacy monolith systems — where a single stack contains all of the functionality of an application — so they can more quickly answer customer needs, respond to changing operational requirements, and meet business goals and objectives. 
 
@@ -77,14 +77,14 @@ While developing a conceptual design for application architecture is beyond the 
 
 
 *   [Designing the Architecture of Your OutSystems Applications](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_Architecture_of_Your_OutSystems_Applications)
-*   [Web and Mobile Architecture with Architecture Dashboard (presentation)](https://www.outsystems.com/events/tech-talks/architecture-dashboard/)
+*   [Web and Mobile Architecture with AI Mentor Studio (presentation)](https://www.outsystems.com/events/tech-talks/architecture-dashboard/)
 *   [Integration Patterns for Core Services Abstraction](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/05_Integration_Patterns_for_Core_Services_Abstraction)
 *   [Domains and Services Architecture](https://www.outsystems.com/learn/lesson/1696/domains-and-services-architecture)
 
 ### The architecture canvas
 
 
-The architecture canvas, as used by the OutSystems [Architecture Dashboard](https://success.outsystems.com/Documentation/Architecture_Dashboard/Introduction_to_Architecture_Dashboard), is a multi-layer framework that provides a systematic approach to speed up architecture design. It promotes the correct abstraction of reusable services and components, maximizes independent life cycles among all the parts of your architecture by setting the correct mutual dependencies, and minimizes the impact of changes, making it much easier to maintain and evolve your apps.
+The architecture canvas, as used by the OutSystems [AI Mentor Studio](https://success.outsystems.com/Documentation/Architecture_Dashboard/Introduction_to_Architecture_Dashboard), is a multi-layer framework that provides a systematic approach to speed up architecture design. It promotes the correct abstraction of reusable services and components, maximizes independent life cycles among all the parts of your architecture by setting the correct mutual dependencies, and minimizes the impact of changes, making it much easier to maintain and evolve your apps.
 
 
 ![architecture-canvas](images/architecture-canvas.png)
@@ -122,11 +122,11 @@ The figure below illustrates how an OutSystems app with a well-formed architectu
 ### Architecture canvas validation
 
 
-[Architecture Dashboard](https://success.outsystems.com/Documentation/Architecture_Dashboard/Introduction_to_Architecture_Dashboard) is the OutSystems technical debt monitoring tool. Powered by [AIFusion™](https://www.outsystems.com/evaluation-guide/what-is-aifusion/) and [CodeDNA](https://www.outsystems.com/blog/posts/ai-software-development/), it automatically performs code and runtime analysis before recommending solutions for improving the performance, security, architecture, and user experience of applications.
+[AI Mentor Studio](https://success.outsystems.com/Documentation/Architecture_Dashboard/Introduction_to_Architecture_Dashboard) is the OutSystems technical debt monitoring tool. Powered by [AIFusion™](https://www.outsystems.com/evaluation-guide/what-is-aifusion/) and [CodeDNA](https://www.outsystems.com/blog/posts/ai-software-development/), it automatically performs code and runtime analysis before recommending solutions for improving the performance, security, architecture, and user experience of applications.
 
 A guided refactoring capability powered by the CodeDNA engine identifies the opportunities for refactoring and code duplication across the factory, pointing architects and teams to the right points to make these improvements. Code duplication is one of the top technical debt issues. The guided refactoring capability is unique in our industry. It uses AI to detect, with incredible accuracy, where teams should focus on refactoring and ranks them by importance.
 
-Architecture Dashboard uses the following validation rules to evaluate the architecture of your applications:
+AI Mentor Studio uses the following validation rules to evaluate the architecture of your applications:
 
 
 
@@ -141,15 +141,15 @@ Architecture Dashboard uses the following validation rules to evaluate the archi
 
 For an in-depth discussion of these rules for architecture design see the Architecture design [appendix](#architecture-design-for-drchitecture-dashboard) below.
 
-### Using the Architecture Dashboard
+### Using the AI Mentor Studio
 
-The Architecture Dashboard is designed for:
+The AI Mentor Studio is designed for:
 
 *   [Architects](https://success.outsystems.com/Documentation/Architecture_Dashboard/Getting_started_with_Architecture_Dashboard/Getting_started_as_an_architect) who need to understand how the architecture evolves
 *   [Team leads](https://success.outsystems.com/Documentation/Architecture_Dashboard/Getting_started_with_Architecture_Dashboard/Getting_started_as_a_team_lead) who need to make sure that there are no problems with the architecture
 *   [Developers](https://success.outsystems.com/Documentation/Architecture_Dashboard/Getting_started_with_Architecture_Dashboard/Getting_started_as_a_developer) who need to make sure their code adheres to best practices and doesn’t introduce any performance or security issues
 
-Architecture Dashboard provides an integrated, bird’s eye view of technical debt across an entire portfolio of applications and the interdependencies between modules in the developers’ environment. The OutSystems AI engine classifies every architecture module into its correct class, automating architecture discovery. A heat map visualization of mild-to-severe problem areas helps IT leaders identify problem areas quickly and to prioritize them accordingly.
+AI Mentor Studio provides an integrated, bird’s eye view of technical debt across an entire portfolio of applications and the interdependencies between modules in the developers’ environment. The OutSystems AI engine classifies every architecture module into its correct class, automating architecture discovery. A heat map visualization of mild-to-severe problem areas helps IT leaders identify problem areas quickly and to prioritize them accordingly.
 
 
 ![architecture-dashboard](images/architecture-dashboard.png)
@@ -166,12 +166,12 @@ Double-clicking one of the modules allows you to drill down into any identified 
 ![outsystems-architecture-integration-to-enterprise](images/architecture-dashboard-report.png)
 
 
-Architecture Dashboard explains the impact of this finding and gives a recommendation about how to fix it. In the screen below clicking the duplicated code pattern shows three instances of where duplicated code is being used, along with links to Service Center where this code can be found.
+AI Mentor Studio explains the impact of this finding and gives a recommendation about how to fix it. In the screen below clicking the duplicated code pattern shows three instances of where duplicated code is being used, along with links to Service Center where this code can be found.
 
 ![duplicate-code-report-highlight](images/duplicate-code-report-highlight.png)
 
 
-## Architecture design for Architecture Dashboard
+## Architecture design for AI Mentor Studio
 
 
 This appendix contains a detailed discussion of rules for canvas validation and application composition.
@@ -269,4 +269,4 @@ OutSystems applications rely only on standard architectures and frameworks and r
 
 When developers write new code, or make changes to existing code, OutSystems provides immediate feedback on its impact. Corrective measures are applied automatically if possible. Otherwise the source of the error is linked, along with suggestions about how to fix it. This eliminates compilation errors, since an OutSystems app can't be published unless they function correctly.
 
-Correct functioning, however, doesn't necessarily mean efficient functioning. While a short-term solution may solve the immediate problem, it may also leave a technical debt, in the form of an app that's difficult to maintain and costly to change. The OutSystems Architecture Dashboard provides a high level analysis of your app, highlighting areas for improvement, and facilitates unhindered growth.
+Correct functioning, however, doesn't necessarily mean efficient functioning. While a short-term solution may solve the immediate problem, it may also leave a technical debt, in the form of an app that's difficult to maintain and costly to change. The OutSystems AI Mentor Studio provides a high level analysis of your app, highlighting areas for improvement, and facilitates unhindered growth.
