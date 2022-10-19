@@ -24,7 +24,7 @@ So, before taking a detailed look into the Tools, you can do a couple of things 
 
 1. Make code reviews, especially code reviews with peers, a part of your standard development workflow (if you really don’t have anyone available, you can also try [explaining your code to a rubber duck](https://en.wikipedia.org/wiki/Rubber_duck_debugging). This is actually a valid techinique).
 
-1. Leverage tools like [AI Mentor Studio](https://success.outsystems.com/Documentation/Architecture_Dashboard/Introduction_to_Architecture_Dashboard) that can perform automated analysis of your code base and flag potential issues before you deploy code beyond your development environment.
+1. Leverage tools like [Architecture Dashboard](https://success.outsystems.com/Documentation/Architecture_Dashboard/Introduction_to_Architecture_Dashboard) that can perform automated analysis of your code base and flag potential issues before you deploy code beyond your development environment.
 
 1. Test as you develop your code, whether manually ([OutSystems Now](https://success.outsystems.com/Documentation/11/Delivering_Mobile_Apps/Test_Your_Mobile_App_in_the_Device_Using_OutSystems_Now) is a nice stop-gap solution for quick testing of Mobile apps) or by investing in [testing automation](https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Testing_Guidelines).
 

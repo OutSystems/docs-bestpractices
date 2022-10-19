@@ -66,7 +66,7 @@ The ultimate success of CI/CD is based on automation, and, for testing, the succ
 
 <div class="info" markdown="1">
 
-[AI Mentor Studio](https://success.outsystems.com/Support/Enterprise_Customers/Handling_technical_debt_with_OutSystems) provides an integrated, bird’s eye view of an entire portfolio of applications and the interdependencies between modules in the developers’ environment. It classifies every architecture module into its correct class, identifies problems, and gives guidance for how to fix them.
+[Architecture Dashboard](https://success.outsystems.com/Support/Enterprise_Customers/Handling_technical_debt_with_OutSystems) provides an integrated, bird’s eye view of an entire portfolio of applications and the interdependencies between modules in the developers’ environment. It classifies every architecture module into its correct class, identifies problems, and gives guidance for how to fix them.
 
 </div>
 
