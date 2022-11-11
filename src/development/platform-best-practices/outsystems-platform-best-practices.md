@@ -126,7 +126,7 @@ Also:
 ## Logic and development
 
 * Remove unused or duplicate code.
-* A module with a size larger than 4 MB could indicate poor architecture (see [How to reduce the size of my eSpace](https://success.outsystems.com/Documentation/How-to_Guides/Development/How_to_reduce_the_size_of_my_eSpace)).
+* A module with a size larger than 4 MB could indicate poor architecture (see [How to reduce the size of my modules](https://success.outsystems.com/Documentation/How-to_Guides/Development/How_to_reduce_the_size_of_my_modules)).
 * Set at least one default button in your Web Screens.
 * Avoid changing Site Properties values in your logic.
 * Be careful about infinite recursion.
