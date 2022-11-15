@@ -32,7 +32,7 @@ With the growth of a software factory, it becomes more difficult to isolate deve
 ![Domain definition](images/domain-definition.png)
 
 
-OutSystems [Architecture Dashboard](https://success.outsystems.com/Documentation/Architecture_Dashboard/Introduction_to_Architecture_Dashboard) provides a bird-eye-view of the entire application’s architecture, facilitating the correct domain assessment by detecting unexpected dependencies between applications and wrong architecture patterns.
+OutSystems [AI Mentor Studio](https://success.outsystems.com/Documentation/Architecture_Dashboard/Introduction_to_Architecture_Dashboard) provides a bird-eye-view of the entire application’s architecture, facilitating the correct domain assessment by detecting unexpected dependencies between applications and wrong architecture patterns.
 
 ### Team structure 
 
@@ -116,18 +116,18 @@ Part of OutSystems vision is to keep providing capabilities that empower easy co
 
 TrueChange is a Service Studio built-in analysis engine that provides real-time feedback to developers, provides warnings, and prevents the publishing of invalid code.
 
-#### Architecture dashboard
+#### AI Mentor Studio
 
-The Architecture Dashboard can detect potential issues in the areas of architecture, performance, security, and maintainability. The maintainability analysis flags complex undocumented code and missing descriptions of reusable elements to help teams produce well-documented code that other developers can quickly understand and enhance in the future. The Architecture dashboard validates technical debt,  ensures the delivery of quality code, and limits the risk of issues slipping through into the application code. 
+The AI Mentor Studio can detect potential issues in the areas of architecture, performance, security, and maintainability. The maintainability analysis flags complex undocumented code and missing descriptions of reusable elements to help teams produce well-documented code that other developers can quickly understand and enhance in the future. The AI Mentor Studio validates technical debt,  ensures the delivery of quality code, and limits the risk of issues slipping through into the application code. 
 
 #### Static-code analysis (automated)
 
-For an independent analysis of OutSystems code, (for example, for advanced security audits), static code analysis tools can be used to supplement Architecture Dashboard and TrueChange. These tools are available through third-party partners, such as [SIG](https://www.outsystems.com/news/sig-accelerate-application-security-quality/), [BONCODE](https://www.outsystems.com/news/boncode-code-analysis-service-reduce-application-risk/), and [Omnext](https://www.outsystems.com/news/omnext-launch-application-risk-analysis-services/).
+For an independent analysis of OutSystems code, (for example, for advanced security audits), static code analysis tools can be used to supplement AI Mentor Studio and TrueChange. These tools are available through third-party partners, such as [SIG](https://www.outsystems.com/news/sig-accelerate-application-security-quality/), [BONCODE](https://www.outsystems.com/news/boncode-code-analysis-service-reduce-application-risk/), and [Omnext](https://www.outsystems.com/news/omnext-launch-application-risk-analysis-services/).
 
 #### Code review (manual)
 
 Code reviews help teams build a maintainable code base and gather feedback quickly. 
-To ensure adherence to coding best practices and technical standards, senior developers or technical leads should perform regular code reviews. During these reviews the technical design is validated, the code is checked to ensure that it meets the business requirements, and that it is aligned with the architecture design. Code reviews can also be carried out by other developers and conducted on-the-fly as code is being written. The technical solution and code are validated and checks are carried out to ensure that the code complies with best practices. While Architecture Dashboard validates code quality, a code review validates code correctness and is a great way to ensure the ‘four eyes principle’, where the code gets checked by a couple of people before it gets approved. Code reviews are also a great way to share responsibility among the team and are also a good way to disseminate knowledge within the team about the technical solution.
+To ensure adherence to coding best practices and technical standards, senior developers or technical leads should perform regular code reviews. During these reviews the technical design is validated, the code is checked to ensure that it meets the business requirements, and that it is aligned with the architecture design. Code reviews can also be carried out by other developers and conducted on-the-fly as code is being written. The technical solution and code are validated and checks are carried out to ensure that the code complies with best practices. While AI Mentor Studio validates code quality, a code review validates code correctness and is a great way to ensure the ‘four eyes principle’, where the code gets checked by a couple of people before it gets approved. Code reviews are also a great way to share responsibility among the team and are also a good way to disseminate knowledge within the team about the technical solution.
 
 ### Functional quality 
 
