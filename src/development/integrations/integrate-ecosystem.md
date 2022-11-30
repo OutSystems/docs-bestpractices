@@ -8,7 +8,7 @@ guid: 76f0ff8d-00dc-4b9e-8da7-95df3bebb8cb
 
 <div class="info" markdown="1">
 
-Download the whitepaper version of this document by clicking [here](images/Integrating-OutSystems-with-your-ecosystem.pdf).
+Download the whitepaper version of this document [here](https://www.outsystems.com/1/integrating-outsystems-ecosystem/).
 </div>
 
 
