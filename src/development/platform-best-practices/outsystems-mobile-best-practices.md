@@ -170,7 +170,7 @@ Avoid designing list items with complex logic or complex widgets like JavaScript
 
 **Avoid expanding content in list items**
 
-Do not design list items with content that can be expanded, such as a description that is trimmed and has a 'Show All...' link. This will impact the behavior of the list while rendering. Use Silk UI patterns such as [SplitScreen](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Mobile_Patterns/SplitScreen_Pattern) or [MasterDetail](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Mobile_Patterns/MasterDetail_Pattern) instead.
+Do not design list items with content that can be expanded, such as a description that is trimmed and has a 'Show All...' link. This will impact the behavior of the list while rendering. Use OutSystems UI patterns such as [MasterDetail](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Mobile_and_Reactive_Patterns/Adaptive/Master_Detail) instead.
 
 **Fine tune how lists fetch data on demand**
 
