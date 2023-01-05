@@ -7,7 +7,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # LifeTime Plugins Best Practices
 
-This article is a guide for the end-to-end lifecycle process of [LifeTime plugins](https://success.outsystems.com/Documentation/How-to_Guides/How_to_create_a_LifeTime_Plugin), from the setup phase to the plugin deployment to production.
+This article is a guide for the end-to-end lifecycle process of [LifeTime plugins](https://success.outsystems.com/Documentation/How-to_Guides/Development/How_to_create_a_LifeTime_Plugin), from the setup phase to the plugin deployment to production.
 
 Make sure you have LifeTime installed in a dedicated environment. **Installing LifeTime in an existing environment is not supported from version OutSystems 11 onwards.**
 
