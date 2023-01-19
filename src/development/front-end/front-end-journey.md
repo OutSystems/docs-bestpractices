@@ -25,9 +25,7 @@ This journey goes through 3 different stages:
 In the following session you will be guided through this journey, from the gathering of the requirements to the creation of the Live Style Guide (the base component of the Front-End Development phase) that will accelerate, guide and facilitate your front-end developers job.
 
 <iframe markdown="1" width="900" height="500"
-
 src="https://www.youtube.com/embed/8ih45xQm8Gs">
-
 </iframe>
 
 ## Your custom live style guide
