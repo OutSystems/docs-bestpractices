@@ -30,9 +30,5 @@ src="https://www.youtube.com/embed/8ih45xQm8Gs">
 
 ## Your custom live style guide
 
-The design of a live style guide is an essential part of the transition from Hi-Fi mockup to code. To help you creating your custom live style guide, you can take as a good quick start, the [OutSystems UI Style Guide](https://www.outsystems.com/forge/component-overview/5119/outsystems-ui-style-guide), available in the OutSystems Forge. 
-[//]: # (and follow the the procedures’ checklist to create your custom Live Style Guide.)
-
-* [OutSystems UI StyleGuide](https://www.outsystems.com/forge/component-overview/5119/outsystems-ui-style-guide)
-[//]: # (* Checklists to create your own LSG)
+The design of a live style guide is an essential part of the transition from Hi-Fi mockup to code. To help you creating your custom live style guide, you can take as a good quick start, the [OutSystems UI Reactive Style Guide Template](https://www.outsystems.com/forge/component-overview/7526/outsystems-ui-reactive-style-guide-template) and the [OutSystems UI Web Style Guide](https://www.outsystems.com/forge/component-overview/5119/outsystems-ui-style-guide), available in the OutSystems Forge.
 
