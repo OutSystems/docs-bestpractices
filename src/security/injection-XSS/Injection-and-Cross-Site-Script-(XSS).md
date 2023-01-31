@@ -5,7 +5,7 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Injection and Cross Site Script (XSS)
+# Injection and Cross Site Script - XSS
 
 Injection flaws and Cross Site Script are still the most common application vulnerabilities. You can find here a set of best practices for development and OutSystems platform configurations to protect your application from these kinds of vulnerabilities.
 
