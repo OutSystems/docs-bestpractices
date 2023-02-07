@@ -1,6 +1,9 @@
 ---
 summary:
 tags:
+guid: 56836d39-dbcb-4b9d-ace8-4f89884a2771
+locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Mobile app troubleshooting and debugging scenarios examples
@@ -136,6 +139,8 @@ If the mobile device was online when the crash occurred, then this log record ge
     ![](images/OutSystems_provides_rich_22.png)
 
 <div class="info" markdown="1">
+
 A typical symptom reported by users of abnormal memory consumption might be that the application gets sluggish as the user keeps interacting with it over an extended period of time.
+
 </div>
 

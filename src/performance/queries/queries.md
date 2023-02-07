@@ -1,6 +1,9 @@
 ---
 summary: In multi-tier applications, the bottleneck is often situated at the database level, namely in queries.
 en_title: Performance Best Practices - Queries
+guid: 53c2c027-cc58-4e6e-8b6d-95e9e0a9c278
+locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Performance Best Practices - Queries
@@ -83,11 +86,13 @@ When performing massive operations use SQL queries instead of using a Foreach lo
 
 ### Importance
 
-Every operation done against the database pays a round trip cost of communicating with the server. When doing a large number of operations the sum of all the round trip cost is quite significant; so there is a real benefit in reducing the number of operations. Also the databases are significantly more efficient at performing batch operation than many small ones. There is also a significant benefit in not retrieving information that isn't necessary.
+Every operation done against the database pays a round trip cost of communicating with the server. When doing a large number of operations, the sum of all the round trip cost is quite significant, so there is a real benefit in reducing the number of operations.
+
+Also the databases are significantly more efficient at performing batch operation than many small ones. There is also a significant benefit in not retrieving information that isn't necessary.
 
 ### Remarks
 
-This is a very important best practice, and one that's not being used very often, mostly due to lack of experience of many developers, that feel more comfortable using Aggregates and avoid SQL queries at all cost.
+SQL queries should never be the first option, as Aggregates provide you with more straightforward and optimized data manipulation. However, the huge performance gains when using SQL queries to perform bulk operations justifies its usage for this specific scenario.
 
 ## Avoid using isolated Aggregates
 
@@ -133,32 +138,22 @@ Minimize the number of executed queries. Often, it's possible to fetch all neces
 
 ### Solution
 
-Whenever possible, group several Aggregates into a single one to avoid unnecessary trips to the database. Be especially weary of queries inside for-each loops as they usually lead to severe performance problems.
+Whenever possible, group several Aggregates or SQL queries into a single one to avoid unnecessary trips to the database:
+
+* Merge sequences of Aggregates that reference one another into a single Aggregate, [using a join](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Data/Handling_Data/Queries/Supported_Join_Types) to retrieve all the needed data.
+
+* Avoid executing Aggregates or SQL queries inside a For Each cycle. Instead, replace that Aggregate or SQL query with a more complex one that gets all the related information, and execute it before the cycle. In most of the cases that you have an Aggregate to fetch the master entity before the cycle followed by another Aggregate inside the cycle to fetch the details, you can eliminate the inner Aggregate by [adding a Join](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Data/Handling_Data/Queries/Supported_Join_Types) to the outer Aggregate.
+
+* If it’s not possible to refactor the query, consider [enabling the cache](https://success.outsystems.com/Documentation/11/Developing_an_Application/Use_Data/Caching#Activating_the_caching_feature) for the Aggregate or SQL query. In this case, do proper business rules validation regarding cache configuration and impact.
 
 ### Importance
 
-Even the simplest of queries has to pay the round trip cost for contacting the database. Furthermore, the net cost of loading and querying data is usually lower if it's done in a single query instead of multiple queries.
+Even the simplest Aggregate has to pay the round trip cost for contacting the database. The higher the number of Aggregates and SQL queries, the higher is the communication overhead.
+
+For reasons of code readability, is frequent to use a simple query to retrieve data from a master entity and then fetch the details inside a cycle using another query. However, Aggregates and SQL queries executed inside a cycle can have severe performance impact due to database communication overhead repeated at each iteration. The impact can be greatly worsened when iterating through a list with a high number of elements or when having nested cycles.
+
+The net cost of querying and loading data is lower when executing a single query instead of multiple queries.
 
 ### Remarks
 
-While minimizing the number of executed queries can yield large performance gains, it's usually done at the expense of readability. So the key here is to optimize only when required. Use all Service Center reports to pinpoint the bottlenecks. Remember that fast queries won't show up on the slow queries report but, if they're executed often, their aggregate time influences all other logs (screen logs, web service logs etc.)
-
-## Avoid ReturnedRowCount (version 4.2 or below)
-
-### Description
-
-Avoid using a query only to look at the ReturnedRowCount value.
-
-### Solution
-
-Use an SQL query with a count instead.
-
-### Importance
-
-Before OutSystems Platform version 4.2, when using ReturnedRowCount the query output goes to memory. Also the Max. Records attribute was mandatory so the query could return an incorrect value.
-
-### Remarks
-
-This is only worth the trouble for queries that can return a large number of results.
-
-If your OutSystems version is below 4.2, please contact [OutSystems Technical Support](https://success.outsystems.com/Support/Enterprise_Customers/OutSystems_Support/01_Contact_OutSystems_technical_support) for further assistance.
+While minimizing the number of executed queries can result in large performance gains, it's usually done at the expense of code readability. Thus, the key here is to optimize only when required. Use the Service Center Analytics reports to pinpoint the bottlenecks. Remember that a single fast query won't show up on the queries performance report, but if it’s executed often in a cycle, the accumulated time can influence other reports or logs, such as the screens performance report, or the screen requests logs.

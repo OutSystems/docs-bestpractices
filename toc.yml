@@ -1,6 +1,29 @@
-#Architecture Best Practices
+#Architecture Best Practices 
 - href: architecture/intro.md
 - topics:
+    # Designing the Architecture of Your OutSystems apps            
+    - href: architecture/architecture/intro.md
+    - topics:
+        - href: architecture/architecture/01-4-layer-canvas.md    
+        - href: architecture/architecture/02-translating-business-app-modules.md  
+        - href: architecture/architecture/03-validating-app-architecture.md  
+        - href: architecture/architecture/04-soa-architectures.md  
+        - href: architecture/architecture/05-integration-patterns.md  
+        - href: architecture/architecture/06-app-composition/06-app-composition.md
+        - topics:
+            - href: architecture/architecture/06-app-composition/applying-4-layer-canvas-apps.md   
+            - href: architecture/architecture/06-app-composition/rules-correct-app-composition.md
+            - href: architecture/architecture/06-app-composition/isolating-app-theme.md                                 
+        - href: architecture/architecture/07-designing-multi-tenant-apps.md
+        - href: architecture/architecture/08-microservices-arch-outsystems.md  
+    - href: architecture/from-arch-to-dev/intro.md
+    - topics:
+        - href: architecture/from-arch-to-dev/arch-to-dev.md        
+    - href: architecture/domain-driven-design/intro.md
+    - topics:
+        - href: architecture/domain-driven-design/understanding-microservices.md
+        - href: architecture/domain-driven-design/domain-driven-design.md
+        - href: architecture/domain-driven-design/domain-driven-design-os.md
     - href: architecture/data/archive.md
     - href: architecture/data/purge.md 
     - href: architecture/data/data-layer.md
@@ -11,20 +34,16 @@
         - href: architecture/build-mobile-app-teams/bp-architecture.md
         - href: architecture/build-mobile-app-teams/bp-development.md
         - href: architecture/build-mobile-app-teams/bp-multiple.md
-    - href: architecture/from-arch-to-dev/intro.md
-    - topics:
-        - href: architecture/from-arch-to-dev/arch-to-dev.md
-    - href: architecture/domain-driven-design/intro.md
-    - topics:
-        - href: architecture/domain-driven-design/understanding-microservices.md
-        - href: architecture/domain-driven-design/domain-driven-design.md
-        - href: architecture/domain-driven-design/domain-driven-design-os.md
 
 #Development Best Practices
 - href: development/intro.md
 - topics:
+    # Extensibility
+    - href: development/extensibility/extensibility.md
+    - href: development/integrations/integrate-ecosystem.md
     - href: development/platform-best-practices/outsystems-platform-best-practices.md 
-    - href: development/platform-best-practices/outsystems-mobile-best-practices.md          
+    - href: development/platform-best-practices/outsystems-mobile-best-practices.md     
+    - href: development/database-optimization/database-optimization.md      
     - href: development/data/data-load.md
     - href: development/data/data-rendering.md
     - href: development/front-end/front-end-journey.md
@@ -33,6 +52,7 @@
     - href: development/reference-BPMN/Notation-Reference-for-BPMN-Practitioners.md
     - href: development/lifeTime-plugins/Life-Time-Plugins-Best-Practices.md
     - href: development/components/The-Complete-Guide-to-Creating-Components.md
+    - href: development/components/forge-components-best-practices.md    
     - href: development/build-dynamic-sql/build-dynamic-sql-statements.md
     - href: development/customizing-unhandled-errors/Customizing-OutSystems-Platform-Pages-for-Unhandled-Errors.md
 
@@ -40,7 +60,12 @@
 - href: lifecycle/intro.md
 - topics:
     - href: lifecycle/app-lifecycle/managing-app-lifecycle-portfolio.md
-    - href: lifecycle/clean-up-dev-environment/clean-up-development.md    
+    - href: lifecycle/tech-debt/tech-debt.md
+    - href: lifecycle/app-lifecycle/dev-del-scale.md
+    - href: lifecycle/clean-up-environment/clean-up-environment.md
+    - href: lifecycle/devops/devops-in-outsystems.md
+    - href: lifecycle/cicd/cicd-in-outsystems.md
+    - href: lifecycle/configuration-management/configuration-management-in-outsystems.md
     - href: lifecycle/troubleshoot-debugging-mobile/intro.md   
     - topics:
         - href: lifecycle/troubleshoot-debugging-mobile/troubleshooting-process.md
@@ -50,6 +75,7 @@
 #Performance and Monitoring Best Practices    
 - href: performance/performance-best-practices.md
 - topics:
+    - href: performance/monitoring/monitoring.md    
     - href: performance/data/audit-trails.md
     - href: performance/data/hot-cache.md     
     - href: performance/data/improving-performance-distributed-caching.md           
@@ -57,15 +83,19 @@
     - href: performance/infrastructure/infrastructure.md
     - href: performance/logic/logic.md
     - href: performance/queries/queries.md
+    - href: performance/queries/expand-inline-parameters.md
     - href: performance/references/references.md   
     - href: performance/top-10-rules/top-10-rules.md 
     - href: performance/user-interface/user-interface.md 
+    - href: performance/sql-server-best-practices.md
+
 
 #Security Best Practices    
 - href: security/intro.md
 - topics:
     - href: security/injection-XSS/Injection-and-Cross-Site-Script-(XSS).md
     - href: security/ext-rd-reactive-security-best-practices/ext-rd-reactive-security-best-practices.md
+    - href: security/data-security-rest/data-security-rest.md
 
 # OutSystems Automated Testing Best Practices
 - href: automated-testing/testing-guidelines.md
@@ -75,3 +105,19 @@
     - href: automated-testing/component-testing.md
     - href: automated-testing/integration-api-testing.md
     - href: automated-testing/web-ui-testing.md
+
+# Infrastructure Management Best Practices
+- href: infrastructure-management/intro.md
+- topics:
+    # Designing OutSystems Infrastructures
+    - href: infrastructure-management/design-infrastructure/designing-infrastructures.md
+    - topics:
+        - href: infrastructure-management/design-infrastructure/server-roles.md
+        - href: infrastructure-management/design-infrastructure/sizing-platform.md
+        - href: infrastructure-management/design-infrastructure/scaling-ha-servers.md
+        - href: infrastructure-management/design-infrastructure/disaster-recovery-high-availability.md
+        - href: infrastructure-management/design-infrastructure/exposing-your-apps.md
+        - href: infrastructure-management/design-infrastructure/infra-design-examples.md
+    - href: infrastructure-management/iis-tuning.md
+    - href: infrastructure-management/fine-tune-app-pool.md
+    - href: infrastructure-management/disk-space-usage-control.md

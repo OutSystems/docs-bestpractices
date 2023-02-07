@@ -2,6 +2,9 @@
 summary: Learn about Front-End Best-Practices.
 tags: OutSystems_Front-End; OutSystems_Scalable_Front-End; OutSystems_Front-End_Best_Practices
 en_title: Front-End Architecture Best Practices
+guid: 1ee12745-d16e-4b0b-bbd5-0c1fd820cbef
+locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Front-End Architecture Best Practices

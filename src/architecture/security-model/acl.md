@@ -1,18 +1,14 @@
 ---
 summary: Learn how to use Access Control List (ACL) in your applications to set up conditional access to data based on specific user profiles. 
 tags: best-practices, security-model
-en_title: Use Access Control List (ACL) to set up permission-based access to data
+guid: 3114f98f-16d0-4106-8628-5b0e80c6d21c
+locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Use Access Control List (ACL) to set up permission-based access to data
+# Use Access Control List to set up permission-based access to data
 
-<pre class="script-css">
-.custom-acl-table th, .custom-acl-table td  {
-    text-align: center;
-}
-</pre>
-
-## What is ACL?
+## What is Access Control List?
 
 An access control list (ACL) is a list of permissions attached to an object. The ACL stores what objects are granted to which users or group of users. Common uses of ACL are access to financial data to specific user profiles, data access based on user’s unit/branch or hierarchical accesses.
 
@@ -25,59 +21,13 @@ For Core Services that require ACL, we propose a model where each Core Service m
 
 The Core Services modules must isolate as much as possible the ACL logic in data retrieval methods (e.g., Web Service APIs), but for entities that are public and used outside the Core Service module, developers must know that the access to those tables need to be subject to ACL control.
 
-For that reason, we advise that the objects (Entities) with an associated ACL should be tracked on an ACL tracking list, like the following:
+For that reason, we advise that the objects (Entities) with an associated ACL should be tracked on an **ACL tracking list**, like the following:
 
-<table markdown="1" style="width: 100%;" class="custom-acl-table">
-<tr>
-<th colspan="3">
-ACL Tracking List
-</th>
-</tr>
-<tr>
-<th style="width: 33%">
-Core Service Module
-</th>
-<th style="width: 33%">
-Entity
-</th>
-<th style="width: 33%">
-ACL Entity
-</th>
-</tr>
-<tr>
-<td>
-Customer_CS
-</td>
-<td>
-Customer
-</td>
-<td>
-CustomerACL
-</td>
-</tr>
-<tr>
-<td>
-Employee_CS
-</td>
-<td>
-Employee
-</td>
-<td>
-EmployeeACL
-</td>
-</tr>
-<tr>
-<td>
-...
-</td>
-<td>
-...
-</td>
-<td>
-...
-</td>
-</tr>
-</table>
+|Core Service Module|Entity|ACL Entity|
+|---|---|---|
+|Customer_CS|Customer|CustomerACL|
+|Employee_CS|Employee|EmployeeACL|
+|...|...|...|
 
 ## ACL Patterns
 

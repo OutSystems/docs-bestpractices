@@ -2,14 +2,12 @@
 summary: Here you can find all existing best practices on Application Security.
 tags: article-page
 en_title: Security
+guid: dd01f53e-3854-4fd8-a125-e368e52457b4
+locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Security
-
-<pre class="script">
-template('MindTouch/Controls/PageOverview');
-</pre>
-
 
 ## A brief introduction to software security
 
@@ -76,8 +74,4 @@ Security certifications have gained high relevance because earning these certifi
 
 Compliance is the set of practices, processes, and tools that a company uses to guarantee that personnel and the company as a whole abide by internal rules of conduct and external rules and regulations. This compliance is attained with through a specific approach, being an iterative and continuous process, where you need to prove the compliance to have those certifications renewed.
 
-In this section you can find the following best practices related to security:
-
-<pre class="script">
-template('MindTouch/IDF3/Views/Guide');
-</pre>
+Check the other articles in this section for best practices related to security.

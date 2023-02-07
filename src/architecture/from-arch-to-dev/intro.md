@@ -1,6 +1,9 @@
 ---
-summary: Learn how create an architecture blueprint
+summary: Learn how to create an architecture blueprint
 tags: article-page; OutSystems-development-from-blueprint; architecture-blueprint; OutSystems-Architecture; 
+guid: e52a7581-4dc9-4848-88c3-7e5df4a5c614
+locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # From architecture to development
@@ -31,31 +34,11 @@ The architecture design process follows a 3 step approach.
 
 ![](images/iteration.png?width=180)
 
-<table markdown="1">
-<tr>
-<td>
-![](images/disclose_redldpi.png?width=70)
-</td>
-<td>
-**Disclose** business concepts and integration needs
-</td>
-</tr>
-<tr>
-<td>
-![](images/organize_redldpi.png?width=70)
-</td>
-<td>
-**Organize** concepts on the architecture Layer canvas
-</td> </tr>
-<tr>
-<td>
-![](images/assemble_redldpi.png?width=70)
-</td>
-<td>
-**Assemble** Matching recommended patterns
-</td>
-</tr>
-</table>
+|||
+|---|---|
+|![](images/disclose_redldpi.png?width=70)|**Disclose** business concepts and integration needs|
+|![](images/organize_redldpi.png?width=70)|**Organize** concepts on the architecture Layer canvas|
+|![](images/assemble_redldpi.png?width=70)|**Assemble** Matching recommended patterns|
 
 It's important to understand that you should iterate these three steps multiple times, until you feel comfortable with the design, and eventually repeat the process during the implementation, as you discover new concepts and/or details.
 
@@ -93,7 +76,7 @@ Let's have a quick recap of the [Architecture Canvas](https://success.outsystems
 | ![Core layer](images/core-layer.png) | Services around business concepts, exporting reusable entities, business rules, and business widgets. |
 | ![Foundation Layer](images/foundation-layer.png) | Business-agnostic services to extend the framework with highly reusable assets, UI Patterns, connectors to external systems, and integration of native code. |
 
-Keep in mind this article doesn't focus on the architecture design process, but on the process from the architecture to development, so it mentions only the essentials in this part. For detailed information about the Architecture Canvas and on the design process refer to [OutSystems Architect online training](https://www.outsystems.com/learn/courses/67/designing-apps-using-an-architecture-framework/).
+Keep in mind this article doesn't focus on the architecture design process, but on the process from the architecture to development, so it mentions only the essentials in this part. For detailed information about the Architecture Canvas and on the design process refer to [OutSystems Architect online training](https://www.outsystems.com/training/courses/193/designing-apps-using-an-architecture-framework/).
 
 Based on these principles, you end up with the following concepts of the application on the following layer canvas:
 
@@ -133,7 +116,7 @@ The figure below shows these patterns design:
 
 **Business Logic Module:** Another recommendation is to isolate **B**usiness **L**ogic (Actions) or **C**ore **W**idgets (Webblocks), to manage complexity, composition or to have its own lifecycle. In this case, it wasn't necessary to create a _CW eSpace. Maybe you can have it later, but for now, the eSpace **Booking_BL** addresses all business logic required.
 
-By applying these architectural patterns and using a common [naming convention](https://www.outsystems.com/learn/lesson/1223/module-naming/?LearningPathId=17) to the module names you end up with the following architecture blueprint for the modules:
+By applying these architectural patterns and using a common [naming convention](https://www.outsystems.com/training/lesson/2301/naming-conventions-for-modules) to the module names you end up with the following architecture blueprint for the modules:
 
 ![Architecture blueprint](images/architecture-blueprint.png?width=750)
 

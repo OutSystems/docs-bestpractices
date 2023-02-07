@@ -2,6 +2,9 @@
 summary: Learn about the best practices for storing data in the device’s local storage in mobile applications.
 tags: OutSystems_Mobile; OutSystems_Mobile_Data_Layer; Data_Layer
 en_title: Mobile Data Layer
+guid: b40244f8-f8f4-4282-b3e3-baa064e41481
+locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Mobile Data Layer
@@ -23,7 +26,7 @@ Improve the User Experience by following a Local Storage First strategy. This ap
 
 When designing the local storage it is important to focus on the mobile application use cases. Avoid sharing the local storage model between different mobile applications as each application has different use cases to take into account when designing the model. 
 
-![Local Storage Usage](images/data-layer/local-storage.png?width=750)
+![Local Storage Usage](images/data-layer/local-storage-diag.png)
 
 Use local storage whenerver possible.
 

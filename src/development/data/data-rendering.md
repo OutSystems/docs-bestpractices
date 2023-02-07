@@ -2,6 +2,9 @@
 summary: Learn about the best practices for rendering data on mobile apps, to avoid bad user experiences like image flickering or long loading times.
 tags: OutSystems_Mobile; OutSystems_Mobile_Data_Rendering; Data_Rendering
 en_title: Mobile Data Rendering
+guid: 0110f2d4-6724-432b-b46c-2a582a90ee76
+locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Mobile Data Rendering
@@ -57,7 +60,7 @@ Avoid designing list items with complex logic or complex widgets like JavaScript
 
 #### Avoid Expanding Content in List Items
 
-Do not design list items with expandable content, such as a trimmed description that has a 'Show All...' link. This impacts the behavior of the list while rendering. Use OutSystems UI patterns such as [SplitScreen](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Mobile_Patterns/SplitScreen_Pattern) or [MasterDetail](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Mobile_Patterns/MasterDetail_Pattern) instead.
+Do not design list items with expandable content, such as a trimmed description that has a 'Show All...' link. This impacts the behavior of the list while rendering. Use OutSystems UI patterns such as [MasterDetail](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Mobile_and_Reactive_Patterns/Adaptive/Master_Detail) instead.
 
 #### Fine-Tune How Lists Fetch Data on Demand
 

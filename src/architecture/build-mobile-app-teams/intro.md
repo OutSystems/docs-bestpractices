@@ -1,6 +1,9 @@
 ---
-summary:
-tags:
+summary: This series of articles helps you on providing guidelines and best practices on how you can leverage the power of having multiple independent development teams working on the same mobile apps, avoiding common mistakes and maximizing their productivity.
+tags: article-page
+guid: eeb1ecc6-8b4e-4c29-8f20-9c811cb1a65b
+locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Building mobile apps with multiple independent teams

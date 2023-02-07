@@ -2,6 +2,9 @@
 summary: Learn how to create an audit trail service in OutSystems, to track chronologically any security-relevant evidence of activities (automatic or human) that affected at any time a specific operation, procedure, or event.
 tags: OutSystems_Audit; OutSystems_AuditTrails; OutSystems_Audit-Trails
 en_title: Audit Trail
+guid: 641a7444-c8cf-4f13-bcce-e86e0b2fd1d7
+locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Audit Trail
@@ -77,7 +80,7 @@ Consider the following three architecture patterns/examples on how to implement 
 
 ### Based on OutSystems built-in LogMessage action
 
-![OutSystems Audit Trails Based on the built-in LogMessage action](images/audit-trails/outsystems-audit-trails-based-on-built-in_LogMessage_action.png?width=750)
+![OutSystems Audit Trails Based on the built-in LogMessage action](images/audit-trails/outsystems-audit-trails-based-on-built-in_logmessage_action.png?width=750)
 
 The **Audit_Lib** module provides a **MyLogMessage** public action, which references a **LogMessage** (system) built-in action.
 

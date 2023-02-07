@@ -2,13 +2,16 @@
 summary:
 tags:
 en_title: Reactive web security best practices
+guid: 0fbfbedf-163b-4765-9dbf-735fb3c0c074
+locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Reactive web security best practices
 
 <div class="info" markdown="1">
 
-This article was written by [Remco Dekkinga](https://www.outsystems.com/profile/1832/), OutSystems MVP
+This article was written by [Remco Dekkinga](https://www.outsystems.com/profile/jppqqjaygb/), OutSystems MVP
 
 </div>
 
@@ -46,17 +49,17 @@ For each and **every aggregate and server action** used at the client-side, a **
 
 ![](images/reactive-security-best-practices_0.png)
 
-When the screen where the aggregate or server action belongs to is made Public (the Anonymous role is selected), that REST API is also made Public.
+When the screen where the aggregate or server action belongs to is made available to the public (the Anonymous role is selected), that REST API is also made available to the public.
 
-Make sure that when you fetch data from the server in a public screen, the input parameters can’t be manipulated in any way to get different records.
+Make sure that when you fetch data from the server in a screen with the anonymous role active, the input parameters can’t be manipulated in any way to get different records.
 
 ![](images/reactive-security-best-practices_1.png)
 
-Take for instance the DoLogin(). This one is Public, but you can´t use it when you don´t have a working Username and Password combination.
+Take for instance the DoLogin(). This one is available to the public (the Login screen has the Anonymous role is selected), but you can’t use it when you don’t have a working Username and Password combination.
 
 ![](images/reactive-security-best-practices_2.png)
 
-When the screen is not public (assigned to one or more roles except the Anonymous role), the **system implements an authentication mechanism** based on the logged-in user.
+When the screen is not available to the public (assigned to one or more roles except the Anonymous role), the **system implements an authentication mechanism** based on the logged-in user.
 
 Only the logged-in user can use this REST API.
 
@@ -90,7 +93,7 @@ When you compare Traditional Web with Reactive Web there are more security angle
 
 1. Take the warnings in [TrueChange](http://gemoc.org/pub/20190625-MLE19/paper9.pdf)™ at heart. They will guide you through the biggest mistakes and help you improve the Client Code Quality.
 
-2. As an extra option, you can also look into the [Architecture Dashboard](https://success.outsystems.com/Documentation/Architecture_Dashboard/Introduction_to_Architecture_Dashboard), because this tool also has several [code analysis patterns](https://success.outsystems.com/Documentation/Architecture_Dashboard/Code_Patterns).
+2. As an extra option, you can also look into the [AI Mentor Studio](https://success.outsystems.com/Documentation/Architecture_Dashboard/Introduction_to_Architecture_Dashboard), because this tool also has several [code analysis patterns](https://success.outsystems.com/Documentation/Architecture_Dashboard/Code_Patterns).
 
 3. Don’t deploy test screens to other environments than the development environment. They are normally Public screens with quite some functionality which you can use to tamper with the database.
 

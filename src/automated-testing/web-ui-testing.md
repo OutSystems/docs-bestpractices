@@ -1,5 +1,8 @@
 ---
 en_title: Web UI Testing
+guid: 7b8f66bb-5f78-4ff7-8248-85d4a25b6589
+locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Web UI Testing

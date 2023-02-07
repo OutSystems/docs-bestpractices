@@ -1,6 +1,9 @@
 ---
 summary:
 tags:
+guid: 6a6bfbb7-9048-4ca6-b52d-1a474a784cc8
+locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Best practices with multiple teams
@@ -86,5 +89,7 @@ From bottom to top we will have:
 And that's it. You have a application prepared for multiple team development.
 
 <div class="info" markdown="1">
+
 Take all this information to the practice, by downloading [this sample](resources/multiple-bl.oap) that we prepared for you.
+
 </div>

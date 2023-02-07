@@ -1,20 +1,23 @@
 ---
 en_title: OutSystems Testing Guidelines
+guid: 5b8189ce-c413-481c-ba0a-ef1598996630
+locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# OutSystems Testing Guidelines
+# OutSystems testing guidelines
 
 Applications built with the OutSystems platform benefit from continuous integrity validation, which tracks the impact of changes across your application, (data model, business logic, and presentation) and ensures nothing is broken at deployment time.
 
-Self-healing capabilities automatically correct problems and notify developers of any issues they must handle. Whenever there’s a change, OutSystems tracks all dependencies, automates database updates, and analyzes the impact the change will have on running applications throughout their life cycle..
+Self-healing capabilities automatically correct problems and notify developers of any issues they must handle. Whenever there’s a change, OutSystems tracks all dependencies, automates database updates, and analyzes the impact the change will have on running applications throughout their life cycle.
 
 At a broader level, OutSystems does impact analysis for multiple applications when creating deployment plans in LifeTime. It assesses the impact of moving the selected application versions to the target environment before executing the deployment plan.
 
 So what do you get from testing with OutSystems? The number of bugs introduced is typically much smaller when compared with traditional development technologies, which translates to fewer test-and-fix cycles and greatly reduces development and delivery effort.
 
-Keep in mind that integrity validations, self-healing capabilities, and impact analysis won’t eliminate the need for testing during the application lifecycle. OutSystems actually goes software package integrity, validating the overall quality of application, which includes a set of functional, performance, and security criteria.
+Keep in mind that integrity validations, self-healing capabilities, and impact analysis won’t eliminate the need for testing during the application lifecycle. OutSystems actually does software package integrity, validating the overall quality of application, which includes a set of functional, performance, and security criteria.
 
-## Testing throughout Delivery Lifecycle
+## Testing throughout delivery lifecycle
 
 The following diagram depicts typical testing activities that can take place during the OutSystems software delivery lifecycle:
 
@@ -54,7 +57,7 @@ For more about UI testing, here are some useful links:
 
 * [Web UI Testing](web-ui-testing.md)
 
-Regression tests validate that previously accepted features still perform as expected in new versions of an application, and also that infrastructure changes don’t break the existing functionality. As your OutSystems low-code factory grows, so does the need to automate regression tests. In fact, automation is the only way to accelerate the validation of new changes to existing applications. Continuous delivery depends a lot on this capability, because you can only deliver changes as as quickly as you can validate their impact.
+Regression tests validate that previously accepted features still perform as expected in new versions of an application, and also that infrastructure changes don’t break the existing functionality. As your OutSystems low-code factory grows, so does the need to automate regression tests. In fact, automation is the only way to accelerate the validation of new changes to existing applications. Continuous delivery depends a lot on this capability, because you can only deliver changes as quickly as you can validate their impact.
 Performance tests evaluate application responsiveness and scalability. Load tests are the most common. Load tests validate application behavior under predefined workloads (expected vs. peak) across a variety of scenarios. For applications that are more data intensive, rather than user intensive, it may make more sense to test performance with large quantities of data instead. Performance tests are usually run in PRE environment, even though it compromises PRE for being a reference PRD environment when load tests take too long to execute. Ideally there should be a dedicated environment just for instantiating this specific capability.
 
 Acceptance/Functional tests validate that new functionality complies with business requirements before pushing new changes to production. Acceptance tests typically target business critical features in a release, and they’re normally performed manually in the QA environment prior to release. However, developers can use acceptance tests in DEV to validate features before promoting them to CI or QA.
@@ -67,7 +70,7 @@ Testing an application always requires investment from the delivery team. For th
 
 It is highly advisable to use realistic data whenever possible to support different testing activities. This allows for realistic testing scenarios and helps pinpoint data-related issues earlier in the delivery cycle, before reaching production. To achieve this, delivery teams should understand the options they have to make every test as fast and idempotent as possible. Read [Test Data Management](strategy.md#test-data-management)​ for further details.
 
-## Which Tests to Automate
+## Which tests to automate
 
 We know from State of DevOps Report that high-performance companies do automate most of their tests. If you have continuous delivery in mind as a goal, you should strive to automate regression testing as much as possible..
 
@@ -112,11 +115,11 @@ So, how do you decide which tests to automate? Well, we like the approach Angie 
     ![](images/guidelines-score-example-diag.png?width=500)
 
 
-## Segregating Automated Tests
+## Segregating automated tests
 
 Test automation greatly reduces regression testing on increasingly complex or mission-critical systems. It is also a critical part of any continuous delivery approach. When choosing which tests to automate, it’s highly advisable to adopt the [Testing Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html) approach, which states that test automation effort should be distributed according to a pyramid shape, with component tests on the bottom layer and moving all the way up to E2E tests. The reason for this is that component tests are easy to write and maintain, as well as very fast to run, whereas E2E tests are typically unstable, hard to maintain, and very time consuming to execute.
 
-![Testing pyramid](images/guidelines-testing-pyramid-diag.png?width=500)
+![Testing pyramid](images/guidelines-testing-pyramid-diag.png)
 
 A key concept for implementing the Testing Pyramid is to write testable applications. In OutSystems, this means adopting the [4-Layer Canvas architecture principles](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/01_The_4_Layer_Canvas) and distributing functionality into small, testable pieces. For instance, all business entities reside in core layer modules and are wrapped by public server actions that validate data correctness, dependencies, and calculations. No business logic should be in Screen actions because these are not testable with component tests.
 

@@ -1,6 +1,9 @@
 ---
 summary: Learn how to start developing from an architecture blueprint.
 tags: OutSystems-development-from-blueprint; architecture-blueprint; OutSystems-Architecture; 
+guid: aece0925-1c82-430e-ae4f-bc436e097eba
+locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Developing from the architecture blueprint
@@ -10,7 +13,7 @@ This article focus on putting into action the final architecture blueprint.
 The [previous article](intro.md) explained the use case of a fictitious client. The Soccer Fields Fictitious client wants to build a web application to allow their clients to reserve soccer fields online.
 
 <div class="info" markdown="1">
- 
+
 Before proceeding, download from the OutSystems Forge the [Soccer Fields App](https://www.outsystems.com/forge/component-overview/8895/soccer-fields-app) resources, the [Soccer Field Sample API](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=8896), and the [Field Core Services App](https://www.outsystems.com/forge/component-overview/8894/field-core-services), and install them on your personal environment to better follow the instructions provided.
 
 </div>
@@ -24,7 +27,7 @@ The application must:
 * Allow players to select a soccer field and book it.
 
 <div class="info" markdown="1">
- 
+
 An external system provides the list of soccer fields, meaning it’s not in the scope of this application to handle the actual field management or payment.
 
 </div>
@@ -235,7 +238,7 @@ In this partner, focus on 3 architectural patterns:
         
         Repeat the same receipt for creating the **Field_CreateOrUpdate** action.  
 
-1. **Local Replica of data**
+1. **Synchronization of data**
 
 The **Field_Sync** module is going to make the asynchronous synchronization logic from the external system into the local cached one. This module holds the timers and the logic, referencing the **Field_IS** and **Field_CS**. 
 
@@ -243,7 +246,7 @@ At a specific time, the sync timer triggers. Then, the sync algorithm gets a sub
 
 ![Sync field data algorithm](images/sync-field-data-algorithm.png)
 
-1. Set a logic timeout (10 minutes) and get the possible stored progress of a previous timer to continue processing. This scenario is to follow best practices when designing timers (never times out, doesn’t repeat work, ensures completeness, ensures data integrity);
+1. Set a logic timeout (10 minutes). The **GetSyncFieldCurrPages** aggregate gets the possible stored progress of a previous timer to continue processing. This scenario is to follow best practices when designing timers (never times out, doesn’t repeat work, ensures completeness, ensures data integrity);
 
 1. This **if** logic guarantees the start and recursion of the sync flow in case that you still have data to sync to your local cache;
 

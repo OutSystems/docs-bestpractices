@@ -1,15 +1,9 @@
 ---
 summary: Here you can find all existing best practices on Application Lifecycle.
 en_title: Lifecycle
+guid: 261b5ced-6b49-4d0c-9c39-58331f90da95
+locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Lifecycle
-
-<pre class="script">
-template('MindTouch/Controls/PageOverview');
-</pre>
-
-
-<pre class="script">
-template('MindTouch/IDF3/Views/Guide');
-</pre>

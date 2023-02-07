@@ -1,6 +1,9 @@
 ---
 summary:
 tags:
+guid: 493eee88-0bdd-40ee-b40e-011b1cf6c3c0
+locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Development best practices
