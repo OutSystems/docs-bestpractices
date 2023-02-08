@@ -3,6 +3,7 @@ summary: Learn how to use the OutSystems Architecture Canvas to identify your bu
 guid: 2b38e6ed-2c22-4d06-87b7-88d1db436ea4
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 # The Architecture Canvas
 

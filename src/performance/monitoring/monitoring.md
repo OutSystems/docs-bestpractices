@@ -3,6 +3,7 @@ summary:
 guid: f33f9001-87a0-49b4-aacc-30f866f13882
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Monitoring OutSystems applications

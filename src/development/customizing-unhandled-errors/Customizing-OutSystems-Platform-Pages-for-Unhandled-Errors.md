@@ -4,6 +4,7 @@ en_title: Customizing OutSystems Platform Pages for Unhandled Errors
 guid: 878d7f53-12a8-4101-a5bd-884e389b8025
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Customizing OutSystems Platform Pages for Unhandled Errors

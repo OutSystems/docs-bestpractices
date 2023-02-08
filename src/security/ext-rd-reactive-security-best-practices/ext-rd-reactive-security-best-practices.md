@@ -5,6 +5,7 @@ en_title: Reactive web security best practices
 guid: 0fbfbedf-163b-4765-9dbf-735fb3c0c074
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Reactive web security best practices

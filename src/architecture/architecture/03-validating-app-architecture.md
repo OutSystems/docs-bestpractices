@@ -3,6 +3,7 @@ summary: For a correctly designed architecure you must always adhere to 3 rules.
 guid: f0975aa9-dd78-42c9-9c69-536e6a3e57a3
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Validating your application architecture

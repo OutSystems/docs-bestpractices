@@ -3,6 +3,7 @@ summary: Extend the Architecture Canvas principles to application composition an
 guid: f3394f79-117e-4550-9556-16b76d0d9269
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Applying the Architecture Canvas to applications

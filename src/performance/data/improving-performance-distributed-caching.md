@@ -4,6 +4,7 @@ en_title: Improving Performance With Distributed Caching
 guid: 1592accf-a032-4d7b-bbf9-941f97df4d7e
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Improving performance with distributed caching

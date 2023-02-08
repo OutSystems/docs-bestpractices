@@ -5,6 +5,7 @@ en_title: Mobile Data Load
 guid: 0a6cd5bc-89d8-438b-a791-422f25bca587
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Mobile Data Load

@@ -3,6 +3,7 @@ summary: OutSystems reduces technical debt during the development process by eli
 guid: 94feeaa6-0e06-4bab-b262-f990f78ca1ba
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Handling technical debt with OutSystems

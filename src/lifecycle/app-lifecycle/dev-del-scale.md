@@ -5,6 +5,7 @@ en_title: Development and delivery at scale
 guid: 16193e47-1f0a-47a8-9870-2dd77d622a47
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Development and delivery at scale
