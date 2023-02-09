@@ -4,6 +4,7 @@ tags: best-practices, security-model
 guid: 3114f98f-16d0-4106-8628-5b0e80c6d21c
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Use Access Control List to set up permission-based access to data

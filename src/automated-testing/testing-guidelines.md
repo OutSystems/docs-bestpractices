@@ -3,6 +3,7 @@ en_title: OutSystems Testing Guidelines
 guid: 5b8189ce-c413-481c-ba0a-ef1598996630
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # OutSystems testing guidelines

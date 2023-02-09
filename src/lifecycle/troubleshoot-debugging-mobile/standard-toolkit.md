@@ -4,6 +4,7 @@ tags:
 guid: 6419e85e-475e-4e4e-a5ee-b4d85ea5e3ac
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Suggested standard toolkit

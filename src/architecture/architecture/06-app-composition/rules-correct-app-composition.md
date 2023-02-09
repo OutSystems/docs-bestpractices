@@ -3,6 +3,7 @@ summary: Your composed OutSystems application architecture must be aligned with 
 guid: f9b84cfe-1aaf-4050-9b45-1b98eafd098a
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # The 4 Rules for Correct Application Composition

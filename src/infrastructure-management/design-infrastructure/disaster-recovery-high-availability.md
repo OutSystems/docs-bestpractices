@@ -4,6 +4,7 @@ en_title: 04 Disaster recovery for OutSystems Platform servers
 guid: d11fba74-5734-4722-a8e7-8e15957af3b4
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Disaster Recovery and High Availability for OutSystems Platform servers

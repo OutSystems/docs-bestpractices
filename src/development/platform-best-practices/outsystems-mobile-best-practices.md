@@ -3,6 +3,7 @@ en_title: OutSystems Mobile Best Practices
 guid: 35d524c9-ab83-4f6e-b3fe-b2a89b2ff7af
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # OutSystems Mobile Best Practices

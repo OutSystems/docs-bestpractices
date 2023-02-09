@@ -3,6 +3,7 @@ summary: This article guides you through the steps to create a reusable componen
 guid: 43a62924-8342-415c-9fda-06b278a876c0
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # The complete guide to creating components

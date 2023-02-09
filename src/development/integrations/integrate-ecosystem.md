@@ -2,6 +2,7 @@
 summary: Developers need the ability to create seamless integration with the full range and scope of the business process management tools, data sources, and core business systems that your enterprise has developed over the years—as well as keep pace with future developments.
 locale: en-us
 guid: 76f0ff8d-00dc-4b9e-8da7-95df3bebb8cb
+platform-version: o11
 ---
 
 # Integrating OutSystems with your ecosystem
