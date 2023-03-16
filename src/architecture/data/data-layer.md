@@ -25,17 +25,17 @@ Improve the User Experience by following a Local Storage First strategy. This ap
 
 ### Use Local Storage
 
-When designing the local storage it is important to focus on the mobile application use cases. Avoid sharing the local storage model between different mobile applications as each application has different use cases to take into account when designing the model. 
+When designing the local storage it is important to focus on the mobile application use cases. Avoid sharing the local storage model between different mobile applications as each application has different use cases to take into account when designing the model.
 
 ![Local Storage Usage](images/data-layer/local-storage-diag.png)
 
-Use local storage whenerver possible.
+Use local storage whenever possible.
 
 * It is best for performance
 * Reduces the number of server calls
 * It is offline-ready
 
-#### Design a Lightweight Local Storage 
+#### Design a Lightweight Local Storage
 
 To denormalize the local storage correctly, analyze the main use cases and identify the most common data interactions.
 
@@ -74,7 +74,7 @@ Following the good practices of storing data in the device’s local storage, pr
 * Smooth navigation between screens
 * Increased performance
 * Server-side call avoidance
-*  Offline-ready
+* Offline-ready
 
 ## Common Pitfall Scenarios
 
