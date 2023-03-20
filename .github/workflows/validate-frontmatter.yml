@@ -21,7 +21,7 @@ jobs:
           node-version: 14
 
       - name: Install dependencies
-        run: npm install -g front-matter-validator
+        run: npm install -g frontmatter-validator
 
       - name: Validate frontmatter in markdown files
-        run: find . -type f -name "*.md" -exec front-matter-validator -f {} -s yaml \;
+        run: find . -type f -name "*.md" -exec frontmatter-validator -f {} -s yaml \;
