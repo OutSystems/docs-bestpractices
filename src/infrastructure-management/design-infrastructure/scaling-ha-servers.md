@@ -1,6 +1,5 @@
 ---
 summary: Your OutSystems Platform servers are ready to scale and be configured for high availability.
-en_title: 03 Scaling and high availability for OutSystems Platform servers
 guid: f28a3223-0889-43fc-8d3c-730053d89561
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -9,7 +8,13 @@ platform-version: o11
 
 # Scaling and high availability for OutSystems Platform servers
 
-OutSystems Platform is ready for you to design your infrastructure for high availability.
+<div class="info" markdown="1">
+
+The information in this article applies only to OutSystems self-managed infrastructures.
+
+</div>
+
+OutSystems is ready for you to design your infrastructure for high availability.
 
 Servers can be scaled for clustering, failover and performance. Databases should implement the recommended vendor policies.
 
@@ -22,9 +27,9 @@ The characteristics of each [OutSystems Platform server role](https://success.ou
 | **Front-end**             | Yes                 | Yes          |
 | **Deployment Controller** | No                  | Yes*         |
 | **Scheduler**             | Yes                 | Yes          |
-| **Lifetime Front-end**    | Yes                 | Yes          |
+| **LifeTime Front-end**    | Yes                 | Yes          |
 
-**Manual procedure*. Learn more about **[how to execute the appropriate actions](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/OutSystems_Platform_Failover_Procedures)*.*
+**Manual procedure*. Learn more about [how to execute the appropriate actions](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/OutSystems_Platform_Failover_Procedures).
 
 ### Front-end
 
@@ -34,15 +39,15 @@ The design can range from a segmented distribution of **Front-ends** that contai
 
 ![ ](images/scaling-ha-servers_0.png)
 
-To properly scale your **Front-end** horizontally, Outsystems recommends that you decide on a suitable set of hardware specs for the **Front-end** server, and replicate that configuration on subsequent **Front-end** machines.
+To properly scale your **Front-end** horizontally, OutSystems recommends that you decide on a suitable set of hardware specs for the **Front-end** server, and replicate that configuration on subsequent **Front-end** machines.
 
-### Deployment Controller
+### Deployment controller
 
 This service can only grow vertically since it has no cluster capability. Adding CPU cores, memory and increasing disk I/O will provide faster compile times for large/very active teams.
 
 ![ ](images/scaling-ha-servers_1.png)
 
-In a Production environment, it is only in use when new application versions are published. In a Development environment, it is used every time a developer publishes an eSpace, application or solution.
+In a Production environment, it's only in use when new application versions are published. In a Development environment, it's used every time a developer publishes an module, application or solution.
 
 ### Scheduler
 
@@ -58,23 +63,23 @@ LifeTime scales horizontally like any **Front-end,** mostly for high availabilit
 
 ![ ](images/scaling-ha-servers_3.png)
 
-You should set up a dedicated node with, at least, the [recommended hardware requirements](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_OutSystems_Infrastructures/02_Sizing_OutSystems_Platform) for a **Front-end** role.
+You should set up a dedicated node with, at least, the [recommended hardware requirements](sizing-platform.md) for a **Front-end** role.
 
 ## Database
 
-Within the databases that the OutSystems Platform supports, there are several high availability options. Check the following vendor documentation for specific extra details.
+Within the databases that the OutSystems supports, there are several high availability options. Check the following vendor documentation for specific extra details.
 
 * [SQL Server](https://msdn.microsoft.com/en-us/ms190202.aspx)
 
 * [Oracle](https://docs.oracle.com/en/database/oracle/oracle-database/19/high-availability.html)
 
-Check the [Infrastructure Design Examples ](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_OutSystems_Infrastructures/06_OutSystems_Platform_infrastructure_design_examples)for some simple scenarios where database high availability is represented.
+Check the [Infrastructure Design Examples](infra-design-examples.md)for some simple scenarios where database high availability is represented.
 
 ## Cache invalidation with high-availability
+
 RabbitMQ can be configured to work as a cluster, offering benefits like fault-tolerance, high availability and data replication. If your [application requires that the cache invalidation service is always available](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Cache_Invalidation_in_OutSystems_11#When_do_I_need_High_Availability.3F), [you should use a RabbitMQ cluster](https://success.outsystems.com/Support/Enterprise_Customers/High_availability_and_scalability_strategies).
-## More Information
 
-To learn more about how to set up your OutSystems Platform check the [Designing OutSystems infrastructures guide](designing-infrastructures.md).
 
-**Important:** The information in this article applies only to OutSystems Platform on-premises or private cloud deployments.
+To learn more about how to set up your OutSystems platform check the [Designing OutSystems infrastructures guide](designing-infrastructures.md).
+
 
