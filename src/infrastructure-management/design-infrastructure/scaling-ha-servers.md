@@ -10,7 +10,7 @@ platform-version: o11
 
 <div class="info" markdown="1">
 
-The information in this article applies only to OutSystems self-managed infrastructures.
+**Important:** The information in this guide applies only to OutSystems Platform on-premises or private cloud deployments.
 
 </div>
 

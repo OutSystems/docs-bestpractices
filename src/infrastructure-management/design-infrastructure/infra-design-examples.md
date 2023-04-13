@@ -10,6 +10,12 @@ platform-version: o11
 
 <div class="info" markdown="1">
 
+**Important:** The information in this guide applies only to OutSystems Platform on-premises or private cloud deployments.
+
+</div>
+
+<div class="info" markdown="1">
+
 Some parts of this content may look out of context without reading the remaining content in this section. Please make sure to read the [whole section](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_OutSystems_Infrastructures) for complete understanding of the topics discussed here.
 
 </div>

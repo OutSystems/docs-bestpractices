@@ -8,7 +8,11 @@ platform-version: o11
 
 # Guide to disk space usage and control on OutSystems Platform servers
 
-Permalink: [www.outsystems.com/goto/disk-space-usage-guide](http://www.outsystems.com/goto/disk-space-usage-guide)
+<div class="info" markdown="1">
+
+**Important:** The information in this guide applies only to OutSystems Platform on-premises or private cloud deployments.
+
+</div>
 
 ## Introduction
 

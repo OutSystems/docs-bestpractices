@@ -7,6 +7,12 @@ platform-version: o11
 
 # Understanding and fine tuning application pool recycling for use with OutSystems
 
+<div class="info" markdown="1">
+
+**Important:** The information in this guide applies only to OutSystems Platform on-premises or private cloud deployments.
+
+</div>
+
 An Application Pool is a mechanism used by IIS to isolate Web applications, allowing you to have different configurations (security, resource usage, etc) and preventing misbehaving applications from interfering with other applications.
 
 Generally, each Application Pool corresponds to one worker process. A worker process is a windows process (w3wp.exe) which runs Web Applications, and is responsible for handling requests sent to a Web Server for a specific application pool.

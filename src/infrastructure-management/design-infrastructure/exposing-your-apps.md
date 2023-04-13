@@ -9,6 +9,12 @@ platform-version: o11
 
 # Exposing your applications
 
+<div class="info" markdown="1">
+
+**Important:** The information in this guide applies only to OutSystems Platform on-premises or private cloud deployments.
+
+</div>
+
 An important part of designing your OutSystems Platform infrastructure is protecting your applications from external threats.
 
 Two of the strategies you can implement are the use of **Load Balancers** and **Reverse Proxies**. Both provide high availability, SSL offloading and prevent direct contact with the Internet.

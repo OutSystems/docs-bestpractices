@@ -9,6 +9,12 @@ platform-version: o11
 
 # Disaster Recovery and High Availability for OutSystems Platform servers
 
+<div class="info" markdown="1">
+
+**Important:** The information in this guide applies only to OutSystems Platform on-premises or private cloud deployments.
+
+</div>
+
 Once you design your infrastructure to support OutSystems, you need to understand if you are going to have an High Availability setup and Disaster Recovery plan or not.
 
 ## High Availability vs Disaster Recovery
