@@ -3,6 +3,7 @@ summary: When in an Enterprise context, your OutSystems applications will most l
 guid: 5a065377-1843-4d63-b7b9-135f9de77886
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Isolating an application Theme

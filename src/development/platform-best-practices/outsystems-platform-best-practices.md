@@ -5,6 +5,7 @@ en_title: OutSystems Platform Best Practices
 guid: 463d263b-5aba-4881-857e-2465a046c24d
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # OutSystems Platform Best Practices
@@ -52,7 +53,7 @@ This article aggregates a collection of best practices and conventions that you 
 ## Database
 
 * Avoid having hundreds of attributes in one Entity
-* Avoid large attributes (e.g. length of 4000)
+* Avoid large attributes (e.g. text attributes with length above 2000)
 * Check the Delete Rule of Foreign Keys to an Entity.
 * Remember to set the Is Mandatory property.
 * Add descriptions at least to the Entities.
@@ -126,7 +127,7 @@ Also:
 ## Logic and development
 
 * Remove unused or duplicate code.
-* A module with a size larger than 4 MB could indicate poor architecture (see [How to reduce the size of my eSpace](https://success.outsystems.com/Documentation/How-to_Guides/Development/How_to_reduce_the_size_of_my_eSpace)).
+* A module with a size larger than 4 MB could indicate poor architecture (see [How to reduce the size of my modules](https://success.outsystems.com/documentation/how_to_guides/development/how_to_reduce_the_size_of_my_modules/)).
 * Set at least one default button in your Web Screens.
 * Avoid changing Site Properties values in your logic.
 * Be careful about infinite recursion.
@@ -209,8 +210,6 @@ Here’s a quick list of several open apps you can use or refer to for examples:
 * Hierarchical tree example: [Directory](https://www.outsystems.com/forge/component-overview/614/directory)
 * Tags implementation example: [Documents](https://www.outsystems.com/forge/component-overview/612/documents)
 * Storing files (binary data) example: [Documents](https://www.outsystems.com/forge/component-overview/612/documents)
-* Inline table editing: [Expenses](https://www.outsystems.com/forge/component-overview/615/expenses)
-* Google Maps: [Expenses](https://www.outsystems.com/forge/component-overview/615/expenses)
 * Yearly Calendar: [Time Sheets](https://www.outsystems.com/forge/component-overview/613/time-sheets)
 * Charts: [Sales](https://www.outsystems.com/forge/component-overview/582/sales)
 * Using Email POP: [Cases](https://www.outsystems.com/forge/component-overview/584/cases)

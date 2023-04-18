@@ -3,6 +3,7 @@ summary: Your composed OutSystems application architecture must be aligned with 
 guid: f9b84cfe-1aaf-4050-9b45-1b98eafd098a
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # The 4 Rules for Correct Application Composition
@@ -41,7 +42,7 @@ Promoting ownership is key. If it's not possible to concentrate the ownership of
 
 If a project affects several sponsors, it's important to isolate each LOB (Line Of Business) in a different application. Different sponsors have different budgets, requirements and change paces.
 
-The following example above shows a common Portal to grant web access to all sorts of insurance simulators, from different LOBs: Auto, Life, and Property.  
+The following example shows a common Portal to grant web access to all sorts of insurance simulators, from different LOBs: Auto, Life, and Property.  
 
 ![application composition](images/The-4-Rules-for-Correct-Application-Composition_1.png)
 

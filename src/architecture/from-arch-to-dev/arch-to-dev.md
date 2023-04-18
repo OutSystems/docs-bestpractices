@@ -4,6 +4,7 @@ tags: OutSystems-development-from-blueprint; architecture-blueprint; OutSystems-
 guid: aece0925-1c82-430e-ae4f-bc436e097eba
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Developing from the architecture blueprint

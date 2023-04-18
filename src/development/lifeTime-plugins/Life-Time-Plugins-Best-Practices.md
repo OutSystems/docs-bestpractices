@@ -3,11 +3,12 @@ en_title: LifeTime Plugins Best Practices
 guid: 001b2cb1-c241-4f40-a4a4-4080b82bbfb7
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # LifeTime Plugins Best Practices
 
-This article is a guide for the end-to-end lifecycle process of [LifeTime plugins](https://success.outsystems.com/Documentation/How-to_Guides/How_to_create_a_LifeTime_Plugin), from the setup phase to the plugin deployment to production.
+This article is a guide for the end-to-end lifecycle process of [LifeTime plugins](https://success.outsystems.com/Documentation/How-to_Guides/Development/How_to_create_a_LifeTime_Plugin), from the setup phase to the plugin deployment to production.
 
 Make sure you have LifeTime installed in a dedicated environment. **Installing LifeTime in an existing environment is not supported from version OutSystems 11 onwards.**
 

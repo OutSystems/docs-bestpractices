@@ -4,6 +4,7 @@ tags:
 guid: 15d56444-9c84-48f9-813b-c662a0e152e1
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # The troubleshooting, debugging and monitoring process

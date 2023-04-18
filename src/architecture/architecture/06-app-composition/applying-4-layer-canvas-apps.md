@@ -3,6 +3,7 @@ summary: Extend the Architecture Canvas principles to application composition an
 guid: f3394f79-117e-4550-9556-16b76d0d9269
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Applying the Architecture Canvas to applications
@@ -13,7 +14,7 @@ The same way individual modules are classified in an Architecture Canvas, each a
 
 Applications should be placed in the same layer as the top-most module layer in it. The following representation displays the nature of the modules that compose each application, as well as the application adopting the nature of its top-most module.
 
-![](images/applying-4-layer-canvas-apps_0.png)
+![Application modules](images/applying-4-layer-canvas-apps_0.png)
 
 Applications are subject to the same validation rules, respecting the relations between them:
 
@@ -35,19 +36,19 @@ Commonly, people don’t start thinking about defining several applications, sta
 
 In the first project, a new application is created to hold all the modules that were conceived at the architecture design stage. This application results from the blending of components that will eventually be versioned and deployed to a Quality Assurance environment.
 
-![](images/applying-4-layer-canvas-apps_1.png)
+![Application architecture](images/applying-4-layer-canvas-apps_1.png)
 
 ### Second project
 
 On a second similar project, another application for a different business process is created, adding a few more **Core** and **Library** modules.
 
-![](images/applying-4-layer-canvas-apps_2.png)
+![Application architecture](images/applying-4-layer-canvas-apps_2.png)
 
 ### Third project
 
 Soon, in a third evolution project, **End-user #1** starts reusing **Core C** and **End-user #2** starts reusing **Core B**. Although there is no violation in terms of module architecture, the two **End-user** applications have side references to each other - a cycle in fact.
 
-![](images/applying-4-layer-canvas-apps_3.png)
+![Two end-user applications have side references](images/applying-4-layer-canvas-apps_3.png)
 
 This clearly implies that the two applications are strongly coupled. Deploying a new version of the first to Production may require to take the second along, and vice-versa.
 
@@ -55,7 +56,7 @@ This clearly implies that the two applications are strongly coupled. Deploying a
 
 The commonly reused resources must be isolated in a new application, as displayed in the following diagram - the **Core Application**.
 
-![](images/applying-4-layer-canvas-apps_4.png)
+![Isolated common resources](images/applying-4-layer-canvas-apps_4.png)
 
 Not only **Core B** and **Core C**, that are directly referenced, must be moved to this application, but also all their dependencies (**Library B** and **Library C**) to avoid upward references to the **End-user** applications.
 
@@ -71,7 +72,7 @@ Another common aspect you need to take into account is [isolating an application
 
 ## More information
 
-To learn more about how to design your application architecture check the [Designing the architecture of your OutSystems applications](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications) guide.
+To learn more about how to design your application architecture check the [Designing the architecture of your OutSystems applications](https://success.outsystems.com/documentation/Best_Practices/Architecture/Designing_the_Architecture_of_Your_OutSystems_Applications) guide.
 
 You can also check for further recommendations on how you should [compose your application landscape](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/Application_composition).
 
