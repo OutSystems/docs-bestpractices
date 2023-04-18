@@ -2,13 +2,14 @@
 summary: Developers need the ability to create seamless integration with the full range and scope of the business process management tools, data sources, and core business systems that your enterprise has developed over the years—as well as keep pace with future developments.
 locale: en-us
 guid: 76f0ff8d-00dc-4b9e-8da7-95df3bebb8cb
+platform-version: o11
 ---
 
 # Integrating OutSystems with your ecosystem
 
 <div class="info" markdown="1">
 
-Download the whitepaper version of this document by clicking [here](images/Integrating-OutSystems-with-your-ecosystem.pdf).
+Download the whitepaper version of this document [here](https://www.outsystems.com/1/integrating-outsystems-ecosystem/).
 </div>
 
 
@@ -268,7 +269,7 @@ The most powerful integration test is **1-Click Publish**, which validates all o
 
 Built-in impact analysis is done for integration, acceptance, and deployment,  simplifying the process of deploying complex application portfolios across environments.  
 
-The **[Architecture Dashboard](https://www.outsystems.com/platform/architecture-dashboard/)** monitors technical debt from integration through acceptance, visualizing complex cross-portfolio architectures to identify problems while also helping developers follow best practices and avoid common pitfalls.
+The **[AI Mentor Studio](https://www.outsystems.com/platform/architecture-dashboard/)** monitors technical debt from integration through acceptance, visualizing complex cross-portfolio architectures to identify problems while also helping developers follow best practices and avoid common pitfalls.
 
 **[LifeTime](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle)**, the OutSystems centralized management console, manages application environments, development, quality, production environments and version management from integration all the way through deployment and release.
 
@@ -292,7 +293,7 @@ As an app moves from integration to acceptance, OutSystems performs:
 *   Security testing
 *   User acceptance testing
 
-These test are handled within the Architecture Dashboard, the BDD framework.
+These test are handled within the AI Mentor Studio, the BDD framework.
  -->
 <!-- You can also configure [App Feedback](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Gather_user_feedback/Enable_user_feedback_for_apps?origin=d) in LifeTime so key users can send suggestions or report problems in an app, during the acceptance stage, deployment, and after release.  -->
 

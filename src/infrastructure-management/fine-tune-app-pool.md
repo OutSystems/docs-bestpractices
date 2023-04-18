@@ -2,9 +2,16 @@
 summary: 
 locale: en-us
 guid: 939F9A46-EBA1-4442-BD8B-6CAAA5CDE555
+platform-version: o11
 ---
 
 # Understanding and fine tuning application pool recycling for use with OutSystems
+
+<div class="info" markdown="1">
+
+**Important:** The information in this guide applies only to OutSystems Platform on-premises or private cloud deployments.
+
+</div>
 
 An Application Pool is a mechanism used by IIS to isolate Web applications, allowing you to have different configurations (security, resource usage, etc) and preventing misbehaving applications from interfering with other applications.
 

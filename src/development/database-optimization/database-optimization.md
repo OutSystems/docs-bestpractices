@@ -2,6 +2,7 @@
 guid: 50647fb9-512e-4af4-a76e-f81bc82a094c
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Database optimization

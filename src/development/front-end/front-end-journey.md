@@ -1,13 +1,13 @@
 ---
 summary:  Learn more about the Front-End journey and how a good UX/UI approach can help you through a faster and smoother application development. 
-tags: OutSystems_Front-End; 
-en_title: Front-End Journey: From Mockups to Code
+tags:
 guid: c8a658b6-cda4-4222-a1c6-14a743e3f9e9
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
-# Front-End Journey: From Mockups to Code
+# Front-end journey - from mockups to code
 
 The development of an application starts before the implementation of its core logic and functionalities. An initial journey of business analysis, test prototypes and design of reusable patterns is important to guarantee good alignment and to give the development team a good quick start to speed up the development.
 This journey goes through 3 different stages:
@@ -29,11 +29,7 @@ In the following session you will be guided through this journey, from the gathe
 src="https://www.youtube.com/embed/8ih45xQm8Gs">
 </iframe>
 
-## Your Custom Live Style Guide
+## Your custom live style guide
 
-The design of a Live Style Guide is an essential part of the transition from Hi-Fi Mockup to Code. To help you creating your custom Live Style Guide, you can take as a good quick start, the [OutSystems UI Style Guide](https://www.outsystems.com/forge/component-overview/5119/outsystems-ui-style-guide), available in the OutSystems Forge. 
-[//]: # (and follow the the procedures’ checklist to create your custom Live Style Guide.)
-
-* [OutSystems UI StyleGuide](https://www.outsystems.com/forge/component-overview/5119/outsystems-ui-style-guide)
-[//]: # (* Checklists to create your own LSG)
+The design of a live style guide is an essential part of the transition from Hi-Fi mockup to code. To help you creating your custom live style guide, you can take as a good quick start, the [OutSystems UI Reactive Style Guide Template](https://www.outsystems.com/forge/component-overview/7526/outsystems-ui-reactive-style-guide-template) and the [OutSystems UI Web Style Guide](https://www.outsystems.com/forge/component-overview/5119/outsystems-ui-style-guide), available in the OutSystems Forge.
 

@@ -4,6 +4,7 @@ en_title: Performance Best Practices - Infrastructure
 guid: 791cbc71-42c8-4f9a-9dd2-0af2830baa08
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Performance Best Practices - Infrastructure
@@ -153,6 +154,8 @@ If Windows Defender is active, or any other antivirus protection, disable the re
 * Temporary `ASP.NET` files location in `%WINDIR%\Microsoft.Net\framework64\v<version>\TemporaryASP.NET` Files (on a 64-bit system)
 
 * `.NET` Framework configuration files in `%WINDIR%\Microsoft.Net\framework64\v<version>\Config` (on a 64-bit system)
+
+* Temporary folder of the user used to run the OutSystems Deployment Controller Service. That can either be Windows Authentication user used for the Database or OSControllerUser (typically `C:\Users\OSControllerUser\AppData\Local\Temp`)
 
 * Optionally, the system temporary folder (typically `%TEMP%` or `C:\Windows\Temp`).
 

@@ -4,6 +4,7 @@ tags:
 guid: 9363e1f9-1611-45fd-a0c3-3b8c1fcd4e7f
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Domain Driven Design

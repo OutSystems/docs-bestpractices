@@ -5,6 +5,7 @@ en_title: Data Archiving
 guid: f00255a0-8205-46d7-aaf7-1b097cc552ea
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Data Archiving

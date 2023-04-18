@@ -2,6 +2,7 @@
 guid: 51a5ebb6-5a65-41c0-8641-e2bd11799438
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Application Lifecycle Management in OutSystems CI/CD
@@ -66,7 +67,7 @@ The ultimate success of CI/CD is based on automation, and, for testing, the succ
 
 <div class="info" markdown="1">
 
-[Architecture Dashboard](https://success.outsystems.com/Support/Enterprise_Customers/Handling_technical_debt_with_OutSystems) provides an integrated, bird’s eye view of an entire portfolio of applications and the interdependencies between modules in the developers’ environment. It classifies every architecture module into its correct class, identifies problems, and gives guidance for how to fix them.
+[AI Mentor Studio](https://success.outsystems.com/Support/Enterprise_Customers/Handling_technical_debt_with_OutSystems) provides an integrated, bird’s eye view of an entire portfolio of applications and the interdependencies between modules in the developers’ environment. It classifies every architecture module into its correct class, identifies problems, and gives guidance for how to fix them.
 
 </div>
 
@@ -306,6 +307,6 @@ The[ OutSystems Forge](http://www.outsystems.com/Forge/) includes accelerators t
 * [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/) is an automation tool that covers the entire application lifecycle, providing version control, reporting, requirements management, project management, automated builds, testing, and release management capabilities.
 * [Browserstack](https://www.browserstack.com/) is a cloud web and mobile testing platform that enables developers to test their websites and mobile applications across on-demand browsers, operating systems and real mobile devices, without requiring users to install or maintain an internal lab of virtual machines, devices or emulators.
 * [Elastic](https://www.elastic.co/pt/) is used for monitoring and analytics, Elastic is the most popular enterprise search engine that provides a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents.
-* [Katalon®](https://www.katalon.com/) provides a complete web testing solution to set up test projects, test suites, test cases, test objects for UI or API testing, custom keywords, test data files, and reporting. It easily integrates with Git for versioning and has plugins for integration with other tools like Jira®, Jenkins®, and Slack®.
+* [Katalon®](https://katalon.com/) provides a complete web testing solution to set up test projects, test suites, test cases, test objects for UI or API testing, custom keywords, test data files, and reporting. It easily integrates with Git for versioning and has plugins for integration with other tools like Jira®, Jenkins®, and Slack®.
 * [SauceLabs](https://saucelabs.com/) allows users to run tests in the cloud, providing a comprehensive test infrastructure for automated and manual testing of desktop and mobile applications using Selenium, Appium, and JavaScript unit testing frameworks. It also provides a secure testing protocol, Sauce Connect, for testing applications behind customer firewalls.
 * [Tricentis Tosca](https://www.tricentis.com/) is used to automate end-to-end testing for applications. It combines multiple aspects of software testing, such as test case design, test automation, test data design and generation, and analytics to test GUIs and APIs.

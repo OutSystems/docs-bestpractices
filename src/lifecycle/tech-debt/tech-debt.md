@@ -3,25 +3,26 @@ summary: OutSystems reduces technical debt during the development process by eli
 guid: 94feeaa6-0e06-4bab-b262-f990f78ca1ba
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Handling technical debt with OutSystems
 
 Since Ward Cunningham coined the phrase "technical debt" in 1992, it has sometimes been taken as an excuse for releasing quick-and-dirty code in the interests of development speed. Instead, it's better understood as an explanation for why it's sometimes OK to get a workable solution out the door — with a commitment to find an optimal one as soon as possible, and, in this way, repay a technical debt.
 
-However it's defined, taking on technical debt plays an important part in achieving excellence — as long as it's redeemed by bringing everything up to spec before it leads to a cascade of future problems. Like the financial world, from which this metaphor is drawn, ignoring long-term debt ultimately leads to overburdened, bankrupt enterprise software.
+However it's defined, taking on technical debt plays an important part in achieving excellence — as long as it's redeemed by bringing everything up to spec before it leads to a cascade of future problems. Like the financial world, from which this metaphor is drawn, ignoring long-term debt ultimately leads to overburdened, bankrupt enterprise software. 
 
 Even the best code has room for improvement — but, before enhancements can be tackled for the next release, disruptive technology may mature, markets may pivot, and additional user needs may be identified. Paying down a large backlog of technical debt at the beginning of a development cycle may block the quick response required to deal with new opportunities and challenges.
 
 ## OutSystems versus technical debt
 
-Applications built with OutSystems rely on standard architectures and frameworks. They don’t require proprietary components, runtime engines, or interpreters — so technical debt is effectively limited before development even begins. 
+Applications built with OutSystems rely on standard architectures and frameworks. They don’t require proprietary components, runtime engines, or interpreters — so technical debt is effectively limited before development even begins.
 
 Software deployment using classical programming methods typically comprises modifying database files, pre-processing code, compiling it, assembling it, and then linking the result to all of its function calls. Bugs in any step may only be revealed as the result of a failed compilation, which triggers a manual code review for troubleshooting.
 
 OutSystems orchestrates the entire deployment process using a combination of automation, AI, and analytics to identify architecture errors, faulty logic, and broken dependencies — during development, in real time. OutSystems preempts failed compilations by either applying corrective measures automatically or directing the developer to the source of the error — along with a suggestion about how to fix it. Modules can only be published when it will function correctly.
 
-Correct functioning, however, doesn't necessarily mean efficient functioning. While a short-term solution may solve the immediate problem, it may also leave a technical debt, in the form of an app that's difficult to maintain and costly to change. The OutSystems Architecture Dashboard provides a high-level analysis of your app, marks areas for improvement, and facilitates unhindered growth. 
+Correct functioning, however, doesn't necessarily mean efficient functioning. While a short-term solution may solve the immediate problem, it may also leave a technical debt, in the form of an app that's difficult to maintain and costly to change. The OutSystems AI Mentor Studio provides a high-level analysis of your app, marks areas for improvement, and facilitates unhindered growth. 
 
 This paper discusses how OutSystems helps reduce technical debt during development and assists in building a best-practices architecture to efficiently deal with it in the future.
 
@@ -53,7 +54,7 @@ OutSystems uses a versioning system that labels modules with an incremental vers
 
 ![compare and merge](images/conflicts-detected.png)
 
-## Architecture Dashboard
+## AI Mentor Studio
 
 Enterprises have moved away from legacy monolith systems — where a single stack contains all of the functionality of an application — so they can more quickly answer customer needs, respond to changing operational requirements, and meet business goals and objectives. 
 
@@ -77,14 +78,14 @@ While developing a conceptual design for application architecture is beyond the 
 
 
 *   [Designing the Architecture of Your OutSystems Applications](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_Architecture_of_Your_OutSystems_Applications)
-*   [Web and Mobile Architecture with Architecture Dashboard (presentation)](https://www.outsystems.com/events/tech-talks/architecture-dashboard/)
+*   [Web and Mobile Architecture with AI Mentor Studio (presentation)](https://www.outsystems.com/events/tech-talks/architecture-dashboard/)
 *   [Integration Patterns for Core Services Abstraction](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/05_Integration_Patterns_for_Core_Services_Abstraction)
 *   [Domains and Services Architecture](https://www.outsystems.com/learn/lesson/1696/domains-and-services-architecture)
 
 ### The architecture canvas
 
 
-The architecture canvas, as used by the OutSystems [Architecture Dashboard](https://success.outsystems.com/Documentation/Architecture_Dashboard/Introduction_to_Architecture_Dashboard), is a multi-layer framework that provides a systematic approach to speed up architecture design. It promotes the correct abstraction of reusable services and components, maximizes independent life cycles among all the parts of your architecture by setting the correct mutual dependencies, and minimizes the impact of changes, making it much easier to maintain and evolve your apps.
+The architecture canvas, as used by the OutSystems [AI Mentor Studio](https://success.outsystems.com/Documentation/Architecture_Dashboard/Introduction_to_Architecture_Dashboard), is a multi-layer framework that provides a systematic approach to speed up architecture design. It promotes the correct abstraction of reusable services and components, maximizes independent life cycles among all the parts of your architecture by setting the correct mutual dependencies, and minimizes the impact of changes, making it much easier to maintain and evolve your apps.
 
 
 ![architecture-canvas](images/architecture-canvas.png)
@@ -122,11 +123,11 @@ The figure below illustrates how an OutSystems app with a well-formed architectu
 ### Architecture canvas validation
 
 
-[Architecture Dashboard](https://success.outsystems.com/Documentation/Architecture_Dashboard/Introduction_to_Architecture_Dashboard) is the OutSystems technical debt monitoring tool. Powered by [AIFusion™](https://www.outsystems.com/evaluation-guide/what-is-aifusion/) and [CodeDNA](https://www.outsystems.com/blog/posts/ai-software-development/), it automatically performs code and runtime analysis before recommending solutions for improving the performance, security, architecture, and user experience of applications.
+[AI Mentor Studio](https://success.outsystems.com/Documentation/Architecture_Dashboard/Introduction_to_Architecture_Dashboard) is the OutSystems technical debt monitoring tool. Powered by [AIFusion™](https://www.outsystems.com/evaluation-guide/what-is-aifusion/) and [CodeDNA](https://www.outsystems.com/blog/posts/ai-software-development/), it automatically performs code and runtime analysis before recommending solutions for improving the performance, security, architecture, and user experience of applications.
 
 A guided refactoring capability powered by the CodeDNA engine identifies the opportunities for refactoring and code duplication across the factory, pointing architects and teams to the right points to make these improvements. Code duplication is one of the top technical debt issues. The guided refactoring capability is unique in our industry. It uses AI to detect, with incredible accuracy, where teams should focus on refactoring and ranks them by importance.
 
-Architecture Dashboard uses the following validation rules to evaluate the architecture of your applications:
+AI Mentor Studio uses the following validation rules to evaluate the architecture of your applications:
 
 
 
@@ -141,15 +142,15 @@ Architecture Dashboard uses the following validation rules to evaluate the archi
 
 For an in-depth discussion of these rules for architecture design see the Architecture design [appendix](#architecture-design-for-drchitecture-dashboard) below.
 
-### Using the Architecture Dashboard
+### Using the AI Mentor Studio
 
-The Architecture Dashboard is designed for:
+The AI Mentor Studio is designed for:
 
-*   [Architects](https://success.outsystems.com/Documentation/Architecture_Dashboard/Getting_started_with_Architecture_Dashboard/Getting_started_as_an_architect) who need to understand how the architecture evolves
-*   [Team leads](https://success.outsystems.com/Documentation/Architecture_Dashboard/Getting_started_with_Architecture_Dashboard/Getting_started_as_a_team_lead) who need to make sure that there are no problems with the architecture
-*   [Developers](https://success.outsystems.com/Documentation/Architecture_Dashboard/Getting_started_with_Architecture_Dashboard/Getting_started_as_a_developer) who need to make sure their code adheres to best practices and doesn’t introduce any performance or security issues
+*   [Architects](https://success.outsystems.com/Documentation/Architecture_Dashboard/Getting_started_with_Architecture_Dashboard/Getting_started_as_an_architect) who need an overview of the portfolio so they can focus on keeping technical debt under control  
+*   [Team leads](https://success.outsystems.com/Documentation/Architecture_Dashboard/Getting_started_with_Architecture_Dashboard/Getting_started_as_a_team_lead) who need an overview of the teams work so they can focus on ensuring the delivery of quality apps  
+*   [Developers](https://success.outsystems.com/Documentation/Architecture_Dashboard/Getting_started_with_Architecture_Dashboard/Getting_started_as_a_developer) who need to make sure their code adheres to best practices and doesn’t introduce any performance or security issues  
 
-Architecture Dashboard provides an integrated, bird’s eye view of technical debt across an entire portfolio of applications and the interdependencies between modules in the developers’ environment. The OutSystems AI engine classifies every architecture module into its correct class, automating architecture discovery. A heat map visualization of mild-to-severe problem areas helps IT leaders identify problem areas quickly and to prioritize them accordingly.
+AI Mentor Studio provides an integrated, bird’s eye view of technical debt across an entire portfolio of applications and the interdependencies between modules in the developers’ environment. The OutSystems AI engine classifies every architecture module into its correct class, automating architecture discovery. A heat map visualization of mild-to-severe problem areas helps IT leaders identify problem areas quickly and to prioritize them accordingly.
 
 
 ![architecture-dashboard](images/architecture-dashboard.png)
@@ -162,19 +163,14 @@ Clicking an app shows its dependencies and technical debt with other application
 
 Double-clicking one of the modules allows you to drill down into any identified issues, which are grouped by **Architecture**, **Performance**, **Maintainability** and **Security**, so you can quickly understand what's going on in that particular area.
 
-
 ![outsystems-architecture-integration-to-enterprise](images/architecture-dashboard-report.png)
 
+AI Mentor Studio explains the impact of this finding and gives a recommendation about how to fix it.  
 
-Architecture Dashboard explains the impact of this finding and gives a recommendation about how to fix it. In the screen below clicking the duplicated code pattern shows three instances of where duplicated code is being used, along with links to Service Center where this code can be found.
-
-![duplicate-code-report-highlight](images/duplicate-code-report-highlight.png)
-
-
-## Architecture design for Architecture Dashboard
+## Architecture design for AI Mentor Studio
 
 
-This appendix contains a detailed discussion of rules for canvas validation and application composition.
+This appendix contains a detailed discussion of rules for canvas validation and application composition. For more information on AI Mentor Studio’s analysis patterns, check [Code Analysis Patterns](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Manage_technical_debt/Code_Analysis_Patterns).
 
 ### Validation rules
 
@@ -269,4 +265,4 @@ OutSystems applications rely only on standard architectures and frameworks and r
 
 When developers write new code, or make changes to existing code, OutSystems provides immediate feedback on its impact. Corrective measures are applied automatically if possible. Otherwise the source of the error is linked, along with suggestions about how to fix it. This eliminates compilation errors, since an OutSystems app can't be published unless they function correctly.
 
-Correct functioning, however, doesn't necessarily mean efficient functioning. While a short-term solution may solve the immediate problem, it may also leave a technical debt, in the form of an app that's difficult to maintain and costly to change. The OutSystems Architecture Dashboard provides a high level analysis of your app, highlighting areas for improvement, and facilitates unhindered growth.
+Correct functioning, however, doesn't necessarily mean efficient functioning. While a short-term solution may solve the immediate problem, it may also leave a technical debt, in the form of an app that's difficult to maintain and costly to change. The OutSystems AI Mentor Studio provides a high level analysis of your app, highlighting areas for improvement, and facilitates unhindered growth.
