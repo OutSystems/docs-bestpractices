@@ -4,6 +4,7 @@ en_title: Performance Best Practices - Logic
 guid: faee48f5-9b43-40a6-906d-837feef414df
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Performance Best Practices - Logic

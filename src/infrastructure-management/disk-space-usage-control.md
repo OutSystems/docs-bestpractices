@@ -3,11 +3,16 @@ summary: OutSystems Platform Server uses disk space to store deployment objects 
 guid: 787114b3-a4af-452a-8acf-2644624e8cbe
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Guide to disk space usage and control on OutSystems Platform servers
 
-Permalink: [www.outsystems.com/goto/disk-space-usage-guide](http://www.outsystems.com/goto/disk-space-usage-guide)
+<div class="info" markdown="1">
+
+**Important:** The information in this guide applies only to OutSystems Platform on-premises or private cloud deployments.
+
+</div>
 
 ## Introduction
 

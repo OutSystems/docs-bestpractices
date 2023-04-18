@@ -4,6 +4,7 @@ summary: Workarounds to avoid expand inline parameters. Examples to fix expressi
 guid: 83c88799-85d5-4ac8-a882-f72bb417bb5c
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Avoid expand inline parameters for dynamic values

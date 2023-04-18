@@ -3,6 +3,7 @@ summary:
 guid: 17b6007b-d151-40bd-83b3-3e16ec524880
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # DevOps and ALM in OutSystems
@@ -165,7 +166,7 @@ While the specifics vary, there is a general consensus about testing. Especially
 
 There is no way to automate everything, and such an effort would prove self-defeating. Deciding which tests to automate requires a cost-benefit analysis: to make sure that the results will justify the effort of writing and maintaining automated test scripts. The [OutSystems Testing Guidelines ](https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Testing_Guidelines)give a detailed overview, and a workplan, for setting up automatic testing.
 
-A key concept for successful testing is to write testable applications: distributing functionality into small, testable pieces. In OutSystems, this means adopting a multi-layer framework architecture that promotes the correct abstraction of reusable services and components. [Architecture Dashboard](https://success.outsystems.com/Support/Enterprise_Customers/Handling_technical_debt_with_OutSystems) provides an integrated, bird’s eye view of an entire portfolio of applications and the interdependencies between modules in the developers’ environment, classifying every architecture module into its correct class.
+A key concept for successful testing is to write testable applications: distributing functionality into small, testable pieces. In OutSystems, this means adopting a multi-layer framework architecture that promotes the correct abstraction of reusable services and components. [AI Mentor Studio](https://success.outsystems.com/Support/Enterprise_Customers/Handling_technical_debt_with_OutSystems) provides an integrated, bird’s eye view of an entire portfolio of applications and the interdependencies between modules in the developers’ environment, classifying every architecture module into its correct class.
 
 The [test pyramid](https://martinfowler.com/articles/practical-test-pyramid.html), as illustrated below, shows how segregated testing facilitates creation of a healthy, fast, and maintainable test suite. Delivery teams can write a comprehensive set of easily automatable unit tests to cover critical business functionality, prepare a set of integration tests to define the scope of regression for each application deployment, and save more complicated automated UI tests for critical UI flows.
 
@@ -335,9 +336,9 @@ OutSystems enforces HTTPS/SSL encryption for native mobile applications, and rec
 OutSystems Cloud allows full database encryption at rest. On self-managed infrastructures, system administrators can use the database vendor’s technology to activate encryption of data at rest and while in transit to the database. Alternatively, developers may build encryption in sensitive fields and tables, typically leveraging Forge components, such as the[ Crypto API](https://www.outsystems.com/forge/component/437/cryptoapi/).
 
 
-#### Architecture Dashboard
+#### AI Mentor Studio
 
-When [Architecture Dashboard](https://success.outsystems.com/Documentation/Architecture_Dashboard/Introduction_to_Architecture_Dashboard) analyzes your application code and runtime performance it also scans for security issues, including:
+When [AI Mentor Studio](https://success.outsystems.com/Documentation/Architecture_Dashboard/Introduction_to_Architecture_Dashboard) analyzes your application code and runtime performance it also scans for security issues, including:
 
 
 
@@ -348,7 +349,7 @@ When [Architecture Dashboard](https://success.outsystems.com/Documentation/Archi
 *   JavaScript or HTML injection (Traditional Web apps)
 *   Compromised mobile apps: rooted (Android) or jailbroken (iOS)
 
-Along with each identified issue, Architecture Dashboard explains its impact and gives instructions for how to fix it. A list of all code analysis patterns can be found [here](https://success.outsystems.com/Documentation/Architecture_Dashboard/Code_Patterns#Security).
+Along with each identified issue, AI Mentor Studio explains its impact and gives instructions for how to fix it. A list of all code analysis patterns can be found [here](https://success.outsystems.com/Documentation/Architecture_Dashboard/Code_Patterns#Security).
 
 
 ### Third-party tools

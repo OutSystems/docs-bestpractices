@@ -5,6 +5,7 @@ en_title: Reactive web security best practices
 guid: 0fbfbedf-163b-4765-9dbf-735fb3c0c074
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Reactive web security best practices
@@ -93,7 +94,7 @@ When you compare Traditional Web with Reactive Web there are more security angle
 
 1. Take the warnings in [TrueChange](http://gemoc.org/pub/20190625-MLE19/paper9.pdf)™ at heart. They will guide you through the biggest mistakes and help you improve the Client Code Quality.
 
-2. As an extra option, you can also look into the [Architecture Dashboard](https://success.outsystems.com/Documentation/Architecture_Dashboard/Introduction_to_Architecture_Dashboard), because this tool also has several [code analysis patterns](https://success.outsystems.com/Documentation/Architecture_Dashboard/Code_Patterns).
+2. As an extra option, you can also look into the [AI Mentor Studio](https://success.outsystems.com/Documentation/Architecture_Dashboard/Introduction_to_Architecture_Dashboard), because this tool also has several [code analysis patterns](https://success.outsystems.com/Documentation/Architecture_Dashboard/Code_Patterns).
 
 3. Don’t deploy test screens to other environments than the development environment. They are normally Public screens with quite some functionality which you can use to tamper with the database.
 

@@ -4,9 +4,16 @@ en_title: 04 Disaster recovery for OutSystems Platform servers
 guid: d11fba74-5734-4722-a8e7-8e15957af3b4
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Disaster Recovery and High Availability for OutSystems Platform servers
+
+<div class="info" markdown="1">
+
+**Important:** The information in this guide applies only to OutSystems Platform on-premises or private cloud deployments.
+
+</div>
 
 Once you design your infrastructure to support OutSystems, you need to understand if you are going to have an High Availability setup and Disaster Recovery plan or not.
 
