@@ -4,6 +4,7 @@ tags: article-page; OutSystems-development-from-blueprint; architecture-blueprin
 guid: e52a7581-4dc9-4848-88c3-7e5df4a5c614
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # From architecture to development

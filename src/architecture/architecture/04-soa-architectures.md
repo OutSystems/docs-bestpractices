@@ -3,6 +3,7 @@ summary: When abstracting your concepts into services, core OutSystems modules s
 guid: 15d0b981-a3c5-4d65-a013-2e9837d81da5
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Service-Oriented Architectures for OutSystems applications

@@ -4,6 +4,7 @@ en_title: Performance Best Practices - Infrastructure
 guid: 791cbc71-42c8-4f9a-9dd2-0af2830baa08
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Performance Best Practices - Infrastructure

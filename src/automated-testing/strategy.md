@@ -3,6 +3,7 @@ en_title: Automated Testing Strategy
 guid: 43ac8c54-9bb3-4dd7-be5d-0301eeee07f9
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Automated Testing Strategy

@@ -3,13 +3,14 @@ summary: OutSystems is open by design. All application layers—front-end, back-
 guid: a95d9ab0-1dae-46a8-999b-75822aebe117
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # OutSystems extensibility
 
 <div class="info" markdown="1">
 
-Download the whitepaper version of this document by clicking [here](images/OutSystems-Extensibility.pdf).
+Download the whitepaper version of this document [here](https://www.outsystems.com/1/extensibility/).
 
 </div>
 

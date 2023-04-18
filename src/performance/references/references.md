@@ -4,6 +4,7 @@ en_title: Performance Best Practices - References
 guid: 30bb25e2-e67a-4d1a-b2ba-a486bb9e0f14
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Performance Best Practices - References

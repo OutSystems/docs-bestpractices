@@ -3,13 +3,14 @@ en_title: OutSystems Testing Guidelines
 guid: 5b8189ce-c413-481c-ba0a-ef1598996630
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
-# OutSystems Testing Guidelines
+# OutSystems testing guidelines
 
 Applications built with the OutSystems platform benefit from continuous integrity validation, which tracks the impact of changes across your application, (data model, business logic, and presentation) and ensures nothing is broken at deployment time.
 
-Self-healing capabilities automatically correct problems and notify developers of any issues they must handle. Whenever there’s a change, OutSystems tracks all dependencies, automates database updates, and analyzes the impact the change will have on running applications throughout their life cycle..
+Self-healing capabilities automatically correct problems and notify developers of any issues they must handle. Whenever there’s a change, OutSystems tracks all dependencies, automates database updates, and analyzes the impact the change will have on running applications throughout their life cycle.
 
 At a broader level, OutSystems does impact analysis for multiple applications when creating deployment plans in LifeTime. It assesses the impact of moving the selected application versions to the target environment before executing the deployment plan.
 
@@ -17,7 +18,7 @@ So what do you get from testing with OutSystems? The number of bugs introduced i
 
 Keep in mind that integrity validations, self-healing capabilities, and impact analysis won’t eliminate the need for testing during the application lifecycle. OutSystems actually does software package integrity, validating the overall quality of application, which includes a set of functional, performance, and security criteria.
 
-## Testing throughout Delivery Lifecycle
+## Testing throughout delivery lifecycle
 
 The following diagram depicts typical testing activities that can take place during the OutSystems software delivery lifecycle:
 
@@ -70,7 +71,7 @@ Testing an application always requires investment from the delivery team. For th
 
 It is highly advisable to use realistic data whenever possible to support different testing activities. This allows for realistic testing scenarios and helps pinpoint data-related issues earlier in the delivery cycle, before reaching production. To achieve this, delivery teams should understand the options they have to make every test as fast and idempotent as possible. Read [Test Data Management](strategy.md#test-data-management)​ for further details.
 
-## Which Tests to Automate
+## Which tests to automate
 
 We know from State of DevOps Report that high-performance companies do automate most of their tests. If you have continuous delivery in mind as a goal, you should strive to automate regression testing as much as possible..
 
@@ -115,7 +116,7 @@ So, how do you decide which tests to automate? Well, we like the approach Angie 
     ![](images/guidelines-score-example-diag.png?width=500)
 
 
-## Segregating Automated Tests
+## Segregating automated tests
 
 Test automation greatly reduces regression testing on increasingly complex or mission-critical systems. It is also a critical part of any continuous delivery approach. When choosing which tests to automate, it’s highly advisable to adopt the [Testing Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html) approach, which states that test automation effort should be distributed according to a pyramid shape, with component tests on the bottom layer and moving all the way up to E2E tests. The reason for this is that component tests are easy to write and maintain, as well as very fast to run, whereas E2E tests are typically unstable, hard to maintain, and very time consuming to execute.
 
