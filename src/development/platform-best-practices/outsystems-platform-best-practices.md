@@ -53,7 +53,7 @@ This article aggregates a collection of best practices and conventions that you 
 ## Database
 
 * Avoid having hundreds of attributes in one Entity
-* Avoid large attributes (e.g. length of 4000)
+* Avoid large attributes (e.g. text attributes with length above 2000)
 * Check the Delete Rule of Foreign Keys to an Entity.
 * Remember to set the Is Mandatory property.
 * Add descriptions at least to the Entities.
