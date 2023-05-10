@@ -163,7 +163,7 @@ Clicking an app shows its dependencies and technical debt with other application
 
 Double-clicking one of the modules allows you to drill down into any identified issues, which are grouped by **Architecture**, **Performance**, **Maintainability** and **Security**, so you can quickly understand what's going on in that particular area.
 
-![outsystems-architecture-integration-to-enterprise](images/architecture-dashboard-report.png)
+![outsystems-architecture-integration-to-enterprise](images/use-report-fix-ams.png)
 
 AI Mentor Studio explains the impact of this finding and gives a recommendation about how to fix it.  
 
