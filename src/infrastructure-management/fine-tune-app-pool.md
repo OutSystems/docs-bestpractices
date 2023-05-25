@@ -36,16 +36,8 @@ You can check the baseline values that are recommended for an OutSystems install
 The values should be:
 
 * High enough not to cause unnecessary recycles under load;
-* Low enough so that the recycles are triggered before they affect other application pools.
+* Low enough so that the recycles are triggered before they affect other application pools;
+* Values should not be a proportional division over the available memory;
+* None of the pool limit should be set to less than 50% of the total available memory, because that could cause the pool to be recycle before it tried to free memory.
 
-After collecting data on real-world usage, you can parcel the available memory proportionally between the application pools. You should review these values periodically as the usage of your applications changes or when you deploy new applications.
-
-## Example configuration
-
-You have two application pools: OutSystemsApplications and ServiceCenterAppPool. Real-world usage data shows that the maximum consumed memory for the former is 700 MB and for the latter (even when publishing a large solution) is 300 MB.
-
-If your server has 4 GB of RAM memory, you should set aside some for the operating system and divide the remaining among the application pools as follows:
-
-* Operating system: 1 GB
-* ServiceCenterAppPool: 900 MB
-* OutSystemsApplications: 2100 MB
+After collecting data on real-world usage, you should review these values periodically as the usage of your applications changes or when you deploy new applications.
