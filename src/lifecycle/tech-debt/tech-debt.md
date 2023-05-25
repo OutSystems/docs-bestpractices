@@ -153,17 +153,17 @@ The AI Mentor Studio is designed for:
 AI Mentor Studio provides an integrated, bird’s eye view of technical debt across an entire portfolio of applications and the interdependencies between modules in the developers’ environment. The OutSystems AI engine classifies every architecture module into its correct class, automating architecture discovery. A heat map visualization of mild-to-severe problem areas helps IT leaders identify problem areas quickly and to prioritize them accordingly.
 
 
-![architecture-dashboard](images/architecture-dashboard.png)
+![architecture-dashboard](images/use-overview-infra-ams.png)
 
 
 Clicking an app shows its dependencies and technical debt with other applications.
 
-![app-dependencies](images/app-dependencies.png)
+![app-dependencies](images/use-select-app-ams.png)
 
 
 Double-clicking one of the modules allows you to drill down into any identified issues, which are grouped by **Architecture**, **Performance**, **Maintainability** and **Security**, so you can quickly understand what's going on in that particular area.
 
-![outsystems-architecture-integration-to-enterprise](images/architecture-dashboard-report.png)
+![outsystems-architecture-integration-to-enterprise](images/use-report-fix-ams.png)
 
 AI Mentor Studio explains the impact of this finding and gives a recommendation about how to fix it.  
 

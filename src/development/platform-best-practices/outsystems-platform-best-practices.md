@@ -53,7 +53,7 @@ This article aggregates a collection of best practices and conventions that you 
 ## Database
 
 * Avoid having hundreds of attributes in one Entity
-* Avoid large attributes (e.g. length of 4000)
+* Avoid large attributes (e.g. text attributes with length above 2000)
 * Check the Delete Rule of Foreign Keys to an Entity.
 * Remember to set the Is Mandatory property.
 * Add descriptions at least to the Entities.
@@ -127,7 +127,7 @@ Also:
 ## Logic and development
 
 * Remove unused or duplicate code.
-* A module with a size larger than 4 MB could indicate poor architecture (see [How to reduce the size of my module](https://success.outsystems.com/Documentation/How-to_Guides/Development/How_to_reduce_the_size_of_my_modules)).
+* A module with a size larger than 4 MB could indicate poor architecture (see [How to reduce the size of my modules](https://success.outsystems.com/documentation/how_to_guides/development/how_to_reduce_the_size_of_my_modules/)).
 * Set at least one default button in your Web Screens.
 * Avoid changing Site Properties values in your logic.
 * Be careful about infinite recursion.
