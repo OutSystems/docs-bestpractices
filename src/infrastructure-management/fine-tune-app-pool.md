@@ -38,6 +38,6 @@ The values should be:
 * High enough not to cause unnecessary recycles under load;
 * Low enough so that the recycles are triggered before they affect other application pools;
 * Values should not be a proportional division over the available memory;
-* None of the pool limit should be set to less than 50% of the total available memory, because that could cause the pool to be recycle before it tried to free memory.
+* None of the pool limits should be set to less than 50% of the total available memory, because that could cause the pool to be recycled before they had a chance to free memory.
 
 After collecting data on real-world usage, you should review these values periodically as the usage of your applications changes or when you deploy new applications.
