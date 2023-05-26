@@ -33,19 +33,16 @@ A two-step "wizard" appears. In the first step select which settings to use, and
 
 You can check the baseline values that are recommended for an OutSystems installation in the Installation Checklist. These values are only initial guidelines: you should fine-tune your memory configuration by collecting performance data from each application pool and adjusting these values accordingly. You can use the method described in [this forum post](https://www.outsystems.com/forums/discussion/10298/identifying-application-related-processor-overload-under-the-net-stack/) to collect memory usage data (you only need to use the "Process\Private Bytes" counter for all the w3wp.exe processes instead of all the counters mentioned in the post).
 
-The values should be:
+Set the values:
 
-* High enough not to cause unnecessary recycles under load;
+* High enough not to cause unnecessary recycles under load.
 * Low enough so that the recycles are triggered before they affect other application pools.
+* To not be a proportional division over the available memory.
+* So the pool limits are set to at least 50% of the total available memory because doing so could cause the pool to be recycled before it can free memory.
 
-After collecting data on real-world usage, you can parcel the available memory proportionally between the application pools. You should review these values periodically as the usage of your applications changes or when you deploy new applications.
+Set the values:
+Low enough to trigger recycles before they impact other application pools.
+To not be a proportional division over the available memory.
+So the pool limits are set to at least 50% of the total available memory because doing so could cause the pool to be recycled before it can free memory.
 
-## Example configuration
-
-You have two application pools: OutSystemsApplications and ServiceCenterAppPool. Real-world usage data shows that the maximum consumed memory for the former is 700 MB and for the latter (even when publishing a large solution) is 300 MB.
-
-If your server has 4 GB of RAM memory, you should set aside some for the operating system and divide the remaining among the application pools as follows:
-
-* Operating system: 1 GB
-* ServiceCenterAppPool: 900 MB
-* OutSystemsApplications: 2100 MB
+After collecting data on real-world usage, you should review these values periodically as the usage of your applications changes or when you deploy new applications.
