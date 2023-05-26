@@ -33,11 +33,16 @@ A two-step "wizard" appears. In the first step select which settings to use, and
 
 You can check the baseline values that are recommended for an OutSystems installation in the Installation Checklist. These values are only initial guidelines: you should fine-tune your memory configuration by collecting performance data from each application pool and adjusting these values accordingly. You can use the method described in [this forum post](https://www.outsystems.com/forums/discussion/10298/identifying-application-related-processor-overload-under-the-net-stack/) to collect memory usage data (you only need to use the "Process\Private Bytes" counter for all the w3wp.exe processes instead of all the counters mentioned in the post).
 
-The values should be:
+Set the values:
 
-* High enough not to cause unnecessary recycles under load;
-* Low enough so that the recycles are triggered before they affect other application pools;
-* Values should not be a proportional division over the available memory;
-* None of the pool limits should be set to less than 50% of the total available memory, because that could cause the pool to be recycled before they had a chance to free memory.
+* High enough not to cause unnecessary recycles under load.
+* Low enough so that the recycles are triggered before they affect other application pools.
+* To not be a proportional division over the available memory.
+* So the pool limits are set to at least 50% of the total available memory because doing so could cause the pool to be recycled before it can free memory.
+
+Set the values:
+Low enough to trigger recycles before they impact other application pools.
+To not be a proportional division over the available memory.
+So the pool limits are set to at least 50% of the total available memory because doing so could cause the pool to be recycled before it can free memory.
 
 After collecting data on real-world usage, you should review these values periodically as the usage of your applications changes or when you deploy new applications.
