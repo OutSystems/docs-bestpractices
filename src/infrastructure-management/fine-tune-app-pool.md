@@ -40,9 +40,4 @@ Set the values:
 * To not be a proportional division over the available memory.
 * So the pool limits are set to at least 50% of the total available memory because doing so could cause the pool to be recycled before it can free memory.
 
-Set the values:
-Low enough to trigger recycles before they impact other application pools.
-To not be a proportional division over the available memory.
-So the pool limits are set to at least 50% of the total available memory because doing so could cause the pool to be recycled before it can free memory.
-
 After collecting data on real-world usage, you should review these values periodically as the usage of your applications changes or when you deploy new applications.
