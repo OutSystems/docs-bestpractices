@@ -83,11 +83,6 @@ menu in the Administration top menu.
 
 The resource consumption of the Scheduler role happens at CPU level only and depends on the timer and BPT logic.
 
-<div class="info" markdown="1">
-
-If you want to take this information offline, click [here](https://success.outsystems.com/@api/deki/files/18568/Server_Roles_Apr_2019.pdf?revision=1) to get your Server Roles datasheet.
-
-</div>
 
 ## More Information
 
