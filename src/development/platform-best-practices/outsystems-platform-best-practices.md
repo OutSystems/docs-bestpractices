@@ -25,7 +25,7 @@ This article aggregates a collection of best practices and conventions that you 
 * Suffix foreign keys with “Id” (for example, "CustomerId").
 * Include the Entity's Name in the Record's name (for example, "Customer" instead of "record").
 * Group Screens with a prefix (for example, "Customer_Edit" and "Customer_Show").
-* Prefix actions invoked byTimers with "Timer_".
+* Prefix actions invoked by Timers with "Timer_".
 * Set the Name property of ShowRecords, EditRecords and TableRecords.
 
 ### Coding conventions
