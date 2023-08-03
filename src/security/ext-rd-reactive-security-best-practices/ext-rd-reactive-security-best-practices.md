@@ -22,17 +22,17 @@ Specifically, a Reactive Web App consists of two parts, **client-side** and **se
 
 ## Client-side security
 
-A rule of thumb for client-side security is that the code that is on the client-side and can be abused by the end-user via its unauthorized modification which can result in changes in content or behavior of your application.
+A rule of thumb for client-side security is that the code that is on the client-side can be abused by the end-user via its unauthorized modification which can result in changes in content or behavior of your application.
 
 ### Don’t expose sensitive data on the client-side
 
 **Client-side code** (UI, client actions, screen and block variables, and input parameters) converts into web resources (HTML, JavaScript and CSS). This means that it can be manipulated. That's why we need to make sure that all security sensitive code and data is on the server side.
 
-When using [**Client Variables**](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Data/Handling_Data/Client_Variable), remember that they are stored in the browser’s local storage ([HTML Web Storage](https://www.w3schools.com/html/html5_webstorage.asp)) and they are [shareable between applications](https://success.outsystems.com/Documentation/11/Developing_an_Application/Use_Data/Share_a_Client_Variable_between_apps). Make sure that you never store sensitive data in client variables and don’t use them to control the flows of your application, because they can be manipulated using tools that alter client-side code in the user’s browser.
+When using [**Client Variables**](https://success.outsystems.com/documentation/11/reference/outsystems_language/data/handling_data/client_variable/), remember that they are stored in the browser’s local storage ([HTML Web Storage](https://www.w3schools.com/html/html5_webstorage.asp)) and they are [shareable between applications](https://success.outsystems.com/documentation/11/developing_an_application/use_data/share_a_client_variable_between_apps/). Make sure that you never store sensitive data in client variables and don’t use them to control the flows of your application, because they can be manipulated using tools that alter client-side code in the user’s browser.
 
 ### Retrieve only the necessary data for the screen
 
-When you need data, don’t fetch all fields. Only fetch the data that is needed for the screen. Since the latest versions of the OutSystems Platform, the [**aggregates**](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Data/Handling_Data/Queries/Aggregate) **are optimized** and handle this security risk for you. When you work with an older version, update your platform or minimize this risk by limiting the data that comes back from the aggregates.
+When you need data, don’t fetch all fields. Only fetch the data that is needed for the screen. Since the latest versions of the OutSystems Platform, the [**aggregates**](https://success.outsystems.com/documentation/11/reference/outsystems_language/data/handling_data/queries/aggregate/) **are optimized** and handle this security risk for you. When you work with an older version, update your platform or minimize this risk by limiting the data that comes back from the aggregates.
 
 ### Securing server calls
 
@@ -42,7 +42,7 @@ For instance, if retrieving data about the current logged-in user, instead of us
 
 A common good practice is to place the GetUserId() inside the aggregate. The aggregate is running on the server, which is secured and the attacker can’t alter this query anymore to access data from other users.
 
-This same best practice works for [fetching data based on user roles](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Logic/Built-in_Functions/Roles) or when you fetch data from the server and you send an identifier or another element that uniquely identifies an element as input parameter to the server.
+This same best practice works for [fetching data based on user roles](https://success.outsystems.com/documentation/11/reference/outsystems_language/logic/built_in_functions/roles/) or when you fetch data from the server and you send an identifier or another element that uniquely identifies an element as input parameter to the server.
 
 ### Protect screens and aggregates with roles
 
@@ -84,7 +84,7 @@ A third option is to consider using [JSON Web Token](https://jwt.io/introduction
 
 ### Validate security in core modules
 
-When you have server actions that you expose to Reactive applications, you should always think about the possibility that the user is not correctly identified. Start an action with [User and Roles validations](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Logic/Built-in_Functions/Roles) on by using GetUserId() and `Check<RoleName>Role()`, to see if this user is allowed to execute this action.
+When you have server actions that you expose to Reactive applications, you should always think about the possibility that the user is not correctly identified. Start an action with [User and Roles validations](https://success.outsystems.com/documentation/11/reference/outsystems_language/logic/built_in_functions/roles/) on by using GetUserId() and `Check<RoleName>Role()`, to see if this user is allowed to execute this action.
 
 ## Tips
 
@@ -94,7 +94,7 @@ When you compare Traditional Web with Reactive Web there are more security angle
 
 1. Take the warnings in [TrueChange](http://gemoc.org/pub/20190625-MLE19/paper9.pdf)™ at heart. They will guide you through the biggest mistakes and help you improve the Client Code Quality.
 
-2. As an extra option, you can also look into the [AI Mentor Studio](https://success.outsystems.com/Documentation/Architecture_Dashboard/Introduction_to_Architecture_Dashboard), because this tool also has several [code analysis patterns](https://success.outsystems.com/Documentation/Architecture_Dashboard/Code_Patterns).
+2. As an extra option, you can also look into the [AI Mentor Studio](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/manage_technical_debt/), because this tool also has several [code analysis patterns](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/manage_technical_debt/code_analysis_patterns/).
 
 3. Don’t deploy test screens to other environments than the development environment. They are normally Public screens with quite some functionality which you can use to tamper with the database.
 
