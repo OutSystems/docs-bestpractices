@@ -125,7 +125,7 @@ If the mobile device was online when the crash occurred, then this log record ge
 
     * Memory leak that slowly consumes available memory
 
-    * Actions that take a long time to process because of suboptimal business logic or other [<--OTHER WHAT? THIS DOESN'T MAKE SENSE TO ME.] trying to process too much data in one operation
+    * Actions that take a long time to process because of suboptimal business logic or other trying to process too much data in one operation
 
     * Serialize and deserialize operations on large data sets/objects
 
