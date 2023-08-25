@@ -46,11 +46,11 @@ Use the [OutSystems UI](https://www.outsystems.com/outsystems-ui/) framework or 
 
 ### Design an Empty State for Content Being Fetched
 
-When a user navigates to a screen, the static content is usually rendered first, while the dynamic content takes more time since it is [fetched asynchronously](https://success.outsystems.com/Documentation/11/Developing_an_Application/Implement_Application_Logic/Screen_and_Block_Lifecycle_Events). This results in a poor UI experience, where an apparently incomplete screen is displayed with content moving around while the dynamic data is being rendered.
+When a user navigates to a screen, the static content is usually rendered first, while the dynamic content takes more time since it is [fetched asynchronously](https://success.outsystems.com/documentation/11/developing_an_application/implement_application_logic/screen_and_block_lifecycle_events/). This results in a poor UI experience, where an apparently incomplete screen is displayed with content moving around while the dynamic data is being rendered.
 
 **Recommendation**
 
-Improve the user experience by [designing and displaying an empty state image](https://success.outsystems.com/Documentation/How-to_Guides/How_to_improve_list_slowness_on_low-end_devices) while the dynamic content is being fetched. A couple of good examples are Facebook or LinkedIn.
+Improve the user experience by [designing and displaying an empty state image](https://success.outsystems.com/documentation/how_to_guides/front_end/how_to_improve_list_slowness_on_low_end_devices/) while the dynamic content is being fetched. A couple of good examples are Facebook or LinkedIn.
 
 ![image alt text](images/OutSystems-Mobile-Best-Practices-0.png)
 
@@ -66,7 +66,7 @@ Delay the rendering of the secondary content so that the main content is rendere
 
 1. Place the secondary content in a Block inside the *True* branch of a*n If w*idget. The Block must enclose all the logic to fetch the secondary content so that data fetching of the secondary content only runs when the Block is rendered.
 
-2. On the* False *branch of the *If* widget, place [an empty state](https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Mobile_Best_Practices#Design_an_Empty_State_for_Content_Being_Fetched) to avoid content from moving around when the secondary content is fetched.
+2. On the* False *branch of the *If* widget, place [an empty state](#design-an-empty-state-for-content-being-fetched) to avoid content from moving around when the secondary content is fetched.
 
 3. Set the *If* condition to a variable holding *False* by default.
 
@@ -109,7 +109,7 @@ Use the following techniques to design a lightweight local storage:
 * Design the local storage data model using only the attributes that you need, instead of all attributes of the corresponding server entity. Consider [denormalizing](https://en.wikipedia.org/wiki/Denormalization) the local data model to avoid complex queries like having multiple JOINS.
 ![image alt text](images/OutSystems-Mobile-Best-Practices-4.png)
 
-* Identify the best [data synchronization patterns](https://success.outsystems.com/Documentation/11/Developing_an_Application/Use_Data/Offline) for your use case and define exactly when to run them.
+* Identify the best [data synchronization patterns](https://success.outsystems.com/documentation/11/developing_an_application/use_data/offline/) for your use case and define exactly when to run them.
 
 * Keep only the entity records you need for your use case in the local storage, instead of all records. For example, get only the open tasks for a given time period, instead of all tasks.
 
@@ -139,7 +139,7 @@ For example, consider the following possible approaches:
 
 * Do not perform lengthy operations when the mobile app starts. For example, if you must synchronize data that is used in the first screen of the app, keep the data transfer to a minimum and postpone the transfer of secondary data.
 
-**Tip**: To provide an amazing user experience, we also recommend that you [customize the native splash screen](https://success.outsystems.com/Documentation/11/Delivering_Mobile_Apps/Customize_Your_Mobile_App/Use_Custom_Splash_Screens).
+**Tip**: To provide an amazing user experience, we also recommend that you [customize the native splash screen](https://success.outsystems.com/documentation/11/delivering_mobile_apps/customize_your_mobile_app/use_custom_splash_screens/).
 
 ### Optimize Fetching Server Data for a Screen
 
@@ -171,7 +171,7 @@ Avoid designing list items with complex logic or complex widgets like JavaScript
 
 **Avoid expanding content in list items**
 
-Do not design list items with content that can be expanded, such as a description that is trimmed and has a 'Show All...' link. This will impact the behavior of the list while rendering. Use OutSystems UI patterns such as [MasterDetail](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Mobile_and_Reactive_Patterns/Adaptive/Master_Detail) instead.
+Do not design list items with content that can be expanded, such as a description that is trimmed and has a 'Show All...' link. This will impact the behavior of the list while rendering. Use OutSystems UI patterns such as [MasterDetail](https://success.outsystems.com/documentation/11/developing_an_application/design_ui/patterns/using_mobile_and_reactive_patterns/adaptive/master_detail/) instead.
 
 **Fine tune how lists fetch data on demand**
 
@@ -199,7 +199,7 @@ Using big image files in your mobile app can increase the download time (or even
 
 **Recommendation**
 
-Reduce image size (in bytes) and adapt its dimensions (height/width) considering your target user's experience — follow [Google's Image Optimization](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization) recommendations. Also, consider delaying the fetch of images to a later stage. Refer to the best practice to [Prioritize Screen Content Rendering](https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Mobile_Best_Practices#Prioritize_Screen_Content_Rendering).
+Reduce image size (in bytes) and adapt its dimensions (height/width) considering your target user's experience — follow [Google's Image Optimization](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization) recommendations. Also, consider delaying the fetch of images to a later stage. Refer to the best practice to [Prioritize Screen Content Rendering](#prioritize-screen-content-rendering).
 
 ## JavaScript
 
@@ -213,7 +213,7 @@ The most common components for implementing a mobile app are provided in [OutSys
 
 Keep in mind that OutSystems low-code is more performant but if you decide to use your own JavaScript, it's important that you read and follow the best practices in this section.
 
-**Use the OutSystems public [JavaScript API](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/JavaScript_API) and not internal APIs**
+**Use the OutSystems public [JavaScript API](https://success.outsystems.com/documentation/11/reference/outsystems_apis/javascript_api/) and not internal APIs**
 
 Internal APIs are not supported and can change in any upgrade, thus breaking your JavaScript code.
 
@@ -237,7 +237,7 @@ External JavaScript libraries can be too complex to run on mobile devices.
 
 Find OutSystems components in [OutSystems UI](https://www.outsystems.com/outsystems-ui/) or in the [OutSystems Forge](https://www.outsystems.com/forge/) and use them instead of external JavaScript libraries.
 
-However, if it is clear that you really need to [use the JavaScript library](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/JavaScript/Extend_Your_Mobile_and_Reactive_Apps_Using_JavaScript/Use_JavaScript_Code_from_an_External_Library), use it in a Script element and not in JavaScript nodes.
+However, if it is clear that you really need to [use the JavaScript library](https://success.outsystems.com/documentation/11/extensibility_and_integration/javascript/extend_your_mobile_and_reactive_apps_using_javascript/use_javascript_code_from_an_external_library/), use it in a Script element and not in JavaScript nodes.
 
 ![image alt text](images/OutSystems-Mobile-Best-Practices-9.png)
 
@@ -310,7 +310,7 @@ However, if you really must use JavaScript, use the window.requestAnimationFrame
 
 ## Troubleshooting
 
-Understanding bugs in your mobile apps can sometimes be a hard task, but there are [a few techniques](https://success.outsystems.com/Documentation/11/Developing_an_Application/Troubleshooting_Applications/Solve_Common_Mobile_App_Development_Issues) that facilitate that troubleshooting process. Also following the development guidelines presented below allows you to more easily replicate and fix a problem in your mobile app.
+Understanding bugs in your mobile apps can sometimes be a hard task, but there are [a few techniques](https://success.outsystems.com/documentation/11/developing_an_application/troubleshooting_applications/solve_common_mobile_app_development_issues/) that facilitate that troubleshooting process. Also following the development guidelines presented below allows you to more easily replicate and fix a problem in your mobile app.
 
 ### Define Fallbacks for Your Native Plugins
 
@@ -332,5 +332,5 @@ Client-side issues can be hard to troubleshoot, especially when they seem to occ
 
 **Recommendation**
 
-OutSystems provides [a way for you to log information](https://success.outsystems.com/Documentation/11/Developing_an_Application/Troubleshooting_Applications/Log_Information_in_Action_Flows) in a mobile app. However, you can also create your client-side logging system that stores log entries in local storage. Then provide a way for the user to upload these logs in case of errors. This will allow you to analyze what might have caused an issue in that specific user's device.
+OutSystems provides [a way for you to log information](https://success.outsystems.com/documentation/11/developing_an_application/troubleshooting_applications/log_information_in_action_flows/) in a mobile app. However, you can also create your client-side logging system that stores log entries in local storage. Then provide a way for the user to upload these logs in case of errors. This will allow you to analyze what might have caused an issue in that specific user's device.
 

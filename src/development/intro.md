@@ -12,4 +12,4 @@ OutSystems lets you build great and secure web and mobile apps. In this section,
 
 ![Best practices to build your apps](images/development-best-practices-diag.png)
 
-For more information on how to develop an app in OutSystems, see [Developing an Application](https://success.outsystems.com/Documentation/11/Developing_an_Application).
+For more information on how to develop an app in OutSystems, see [Developing an Application](https://success.outsystems.com/documentation/11/developing_an_application/).
