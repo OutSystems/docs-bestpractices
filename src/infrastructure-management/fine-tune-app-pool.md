@@ -15,13 +15,13 @@ platform-version: o11
 
 An Application Pool is a mechanism used by IIS to isolate Web applications, allowing you to have different configurations (security, resource usage, etc) and preventing misbehaving applications from interfering with other applications.
 
-Generally, each Application Pool corresponds to one worker process. A worker process is a windows process (w3wp.exe) which runs Web Applications, and is responsible for handling requests sent to a Web Server for a specific application pool.
+Generally, each Application Pool corresponds to one worker process. A worker process is a Windows process (w3wp.exe) that runs Web Applications, and is responsible for handling requests sent to a Web Server for a specific application pool.
 
 ## What is application pool recycling in IIS?
 
 Recycling means that the worker process that handles requests for that application pool is terminated and a new one is started. This is generally done to avoid unstable states that can lead to application crashes, hangs, or memory leaks.
 
-By default IIS uses the overlapped recycle method, which keeps the old process up until the current requests are finished processing (or a set timeout elapses) while the new process handles new requests. This ensures service continuity so that you usually do not notice a recycle.
+By default, IIS uses the overlapped recycle method, which keeps the old process up until the current requests are finished processing (or a set timeout elapses) while the new process handles new requests. This ensures service continuity so that you usually do not notice a recycle.
 
 ## Where can I configure automatic application pool recycling?
 
@@ -39,10 +39,5 @@ Set the values:
 * Low enough so that the recycles are triggered before they affect other application pools.
 * To not be a proportional division over the available memory.
 * So the pool limits are set to at least 50% of the total available memory because doing so could cause the pool to be recycled before it can free memory.
-
-Set the values:
-Low enough to trigger recycles before they impact other application pools.
-To not be a proportional division over the available memory.
-So the pool limits are set to at least 50% of the total available memory because doing so could cause the pool to be recycled before it can free memory.
 
 After collecting data on real-world usage, you should review these values periodically as the usage of your applications changes or when you deploy new applications.
