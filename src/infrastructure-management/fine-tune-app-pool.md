@@ -15,7 +15,7 @@ platform-version: o11
 
 An Application Pool is a mechanism used by IIS to isolate Web applications, allowing you to have different configurations (security, resource usage, etc) and preventing misbehaving applications from interfering with other applications.
 
-Generally, each Application Pool corresponds to one worker process. A worker process is a Windows process (w3wp.exe) that runs Web Applications, and is responsible for handling requests sent to a Web Server for a specific application pool.
+Generally, each Application Pool corresponds to one worker process. A worker process is a Windows process (w3wp.exe) that runs web applications, and is responsible for handling requests sent to a Web Server for a specific application pool.
 
 ## What is application pool recycling in IIS?
 
@@ -38,6 +38,6 @@ Set the values:
 * High enough not to cause unnecessary recycles under load.
 * Low enough so that the recycles are triggered before they affect other application pools.
 * To not be a proportional division over the available memory.
-* So the pool limits are set to at least 50% of the total available memory because doing so could cause the pool to be recycled before it can free memory.
+* So that the pool limits are set to at least 50% of the total physical available memory. This prevents the pool from being recycled before it can free memory.
 
 After collecting data on real-world usage, you should review these values periodically as the usage of your applications changes or when you deploy new applications.
