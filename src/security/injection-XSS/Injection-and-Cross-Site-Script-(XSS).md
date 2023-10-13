@@ -78,9 +78,8 @@ To reduce the likelihood of a successful XSS event on OutSystems, you can enable
 
 One disadvantage is maintaining a white list of permitted resources. This typically involves communicating with third party sites to determine their inclusion’s authenticity.
 
-In OutSystems you enable this feature through the Service Center / Administration / Security as shown below:
+In OutSystems, you enable CSP in LifeTime. See [Apply Content Security Policy](https://www.outsystems.com/tk/redirect?g=e59d9233-7c2d-43ae-b8a2-f55d75263c68) for further instructions.
 
-![image alt text](images/Injection-and-Cross-Site-Script-7.png)
 
 #### Enforce HTTPS Security
 
