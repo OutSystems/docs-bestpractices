@@ -85,7 +85,7 @@ Separate specific tenants into their own production infrastructure. To achieve t
 
     * Backup restore: Request a full backup restore of the production database into a new database. After that, remove the data that does not belong to the migrated tenants from the new database. The newly created database is then ready to be used new infrastructure repository.
 
-* If there is common Master Data, to complete the separation of tenants into their own production infrastructure, the application needs to ensure access to this common data, A database connection to a common catalog is one way to do this. Another option is through replication from a common source to the local database (to avoid performance issues). By using these strategies, the application will behave the same way whether it’s deployed with all tenants in the same infrastructure or not. For more details on how to consume common Master data, refer to this [Master Data Management article](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/OutSystems_master_data_management_(MDM)_solution#Consumers_of_the_MDM) in our Knowledge Base.
+* If there is common Master Data, to complete the separation of tenants into their own production infrastructure, the application needs to ensure access to this common data, A database connection to a common catalog is one way to do this. Another option is through replication from a common source to the local database (to avoid performance issues). By using these strategies, the application will behave the same way whether it’s deployed with all tenants in the same infrastructure or not.
 
 #### Scenario 2: Manually Partitioning OutSystems Entities
 
