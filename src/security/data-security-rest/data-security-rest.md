@@ -4,11 +4,12 @@ tags:
 guid: 5f4a803b-5b64-4b4b-bef7-eba1cc149941
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Securing data at rest with encryption
 
-OutSystems is responsible for the secure management of all stack components, including database servers, front-end servers, load balancers, and all the related logs produced by the infrastructure assets. For all of these, OutSystems manages the keys to encrypt the assets for you seamlessly and is therefore responsible for the security of data stored. OutSystems acts as a data processor in the OutSystems Cloud environments.
+OutSystems is responsible for the secure management of all the stack components, including database servers, front-end servers, load balancers, and all the related logs produced by the infrastructure assets. For all of these, OutSystems manages the keys to encrypt the assets for you seamlessly and is therefore responsible for the security of data stored. OutSystems acts as a data processor in the OutSystems Cloud environments.
 
 [See our Data Processing Agreement](https://www.outsystems.com/legal/master-subscription-agreement/data-processing-addendum/)
 
@@ -177,11 +178,10 @@ Where OutSystems manages keys, they are managed by key custodians following IAM 
 
 OutSystems restricts the use of data storage in your cloud environment’s front-end servers. However, in some cases, applications designed to run in OutSystems might need to manipulate large binary files. Examples include applications that allow documents to be stored or business processes with a step for uploading attachments.
 
-![](images/cloud-rest-security.png)
-
 One of the possible strategies is to temporarily store the document in the available folder - D:\user - on the OutSystems cloud front-end servers. You can use up to 2 GB of storage. If not previously removed by the applications, the files will be automatically deleted after 30 days.
 
 ### Front-end server volumes encryption at rest
+
 OutSystems uses AWS provided disk volume encryption and key management:
 
 Your applications run on cloud-based virtualized servers that are provisioned with storage volumes that can be encrypted, AWS EBS volumes - [Elastic Block Storage](https://aws.amazon.com/ebs/).
@@ -195,6 +195,11 @@ The server encryption occurs on the server that hosts each of your virtualized s
 Encryption is also provided when data moves between the instances and the storage volumes.
 
 Dedicated encryption keys are used to encrypt each asset delivered to customers.
+
+<div class="info">
+
+This is available by default on all Sentry offer Front-end servers. It's not available in any other editions.
+</div>
 
 ## Securing data at rest on OutSystems Cloud databases 
 
@@ -224,7 +229,7 @@ OutSystems manages the database server encryption keys with the following polici
 
 * Database encryption is available by default in all Sentry database servers so you won't need to explicitly request if you have a Sentry edition.
 
-* Note that this capability is supported for class 2 and higher of the OutSystems Cloud database servers so that the overhead on performance (approximately 30%) does not compromise systems availability.
+* Note that this capability is supported for class 2 and higher of the OutSystems Cloud database servers so that the overhead on performance doesn't compromise systems availability.
 
 * Transparent data encryption features are available for self-managed environments. This feature is not available for OutSystems Cloud environments.
 
@@ -253,7 +258,7 @@ Regarding data at rest, OutSystems recommends that you:
 
 * Define your policies and controls to govern the storage of data.
 
-* Execute [Thread Model Analysis](https://www.owasp.org/index.php/Application_Threat_Modeling) on systems and business data.
+* Execute [Threat Model Analysis](https://www.owasp.org/index.php/Application_Threat_Modeling) on systems and business data.
 
 * Build encryption capabilities based on sound and robust encryption algorithms to encrypt sensitive data, typically leveraging Forge components such as the Crypto API.
 

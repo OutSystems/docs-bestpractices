@@ -4,9 +4,16 @@ en_title: 05 Exposing your applications
 guid: 3a108c75-4daf-4605-ac95-0f9815fae5ea
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Exposing your applications
+
+<div class="info" markdown="1">
+
+**Important:** The information in this guide applies only to OutSystems Platform on-premises or private cloud deployments.
+
+</div>
 
 An important part of designing your OutSystems Platform infrastructure is protecting your applications from external threats.
 

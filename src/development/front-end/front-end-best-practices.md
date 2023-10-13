@@ -5,6 +5,7 @@ en_title: Front-End Architecture Best Practices
 guid: 1ee12745-d16e-4b0b-bbd5-0c1fd820cbef
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Front-End Architecture Best Practices

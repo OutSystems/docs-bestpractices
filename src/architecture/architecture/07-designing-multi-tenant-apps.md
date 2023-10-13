@@ -3,6 +3,7 @@ summary: Multi-tenant applications are able to serve multiple organizations usin
 guid: 5ac20ed6-ef00-42d5-bea0-8af2925de734
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Designing Scalable Multi-Tenant Applications
@@ -41,7 +42,7 @@ At the database level, when defining one table as multi-tenant, a column with th
 
 ### Disadvantages
 
-* Lower degree of data isolation: data from all tenants are in the same table, which has a column that identifies which tenant that row belongs to. See [Security Concerns](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/Designing_Scalable_Multi-Tenant_Applications#Security_Concerns),[ ](https://docs.google.com/document/d/1p4qqnN9e_Yu3s8yav3MII-Z7NzfqWSXwTlACF4N7qzs/edit#heading=h.uvufl5o9zcb1)which explains techniques for preventing one tenant from "seeing" data from other tenants.
+* Lower degree of data isolation: data from all tenants are in the same table, which has a column that identifies which tenant that row belongs to. See [Security Concerns](#security-concerns) which explains techniques for preventing one tenant from "seeing" data from other tenants.
 
 * A higher number of rows per table. To overcome this potential performance bottleneck, you should:
 
@@ -85,21 +86,21 @@ Separate specific tenants into their own production infrastructure. To achieve t
 
     * Backup restore: Request a full backup restore of the production database into a new database. After that, remove the data that does not belong to the migrated tenants from the new database. The newly created database is then ready to be used new infrastructure repository.
 
-* If there is common Master Data, to complete the separation of tenants into their own production infrastructure, the application needs to ensure access to this common data, A database connection to a common catalog is one way to do this, Another option is through replication from a common source to the local database (to avoid performance issues). By using these strategies, the application will behave the same way whether it’s deployed with all tenants in the same infrastructure or not. For more details on how to consume common Master data, refer to this [Master Data Management article](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/OutSystems_master_data_management_(MDM)_solution#Consumers_of_the_MDM) in our Knowledge Base.
+* If there is common Master Data, to complete the separation of tenants into their own production infrastructure, the application needs to ensure access to this common data, A database connection to a common catalog is one way to do this. Another option is through replication from a common source to the local database (to avoid performance issues). By using these strategies, the application will behave the same way whether it’s deployed with all tenants in the same infrastructure or not.
 
 #### Scenario 2: Manually Partitioning OutSystems Entities
 
 OutSystems does not have any mechanism for partitioning data from within the development tools, but changes to the meta-model can be applied manually. 
 
-### Security Concerns
+### Security Concerns { #security-concerns }
 
-It’s understable that there are concerns over one tenant seeing data that belongs to another. A common misconception is that only physical separation can provide an appropriate level of security. In fact, data stored using a shared approach can also provide strong data safety, but it requires the use of more sophisticated design patterns.
+It’s understandable there are concerns over one tenant seeing data that belongs to another. A common misconception is that only physical separation can provide an appropriate level of security. In fact, data stored using a shared approach can also provide strong data safety, but it requires the use of more sophisticated design patterns.
 
 With OutSystems, the only way that a tenant can see data from another tenant is when the developer exposes data explicitly during development. There are two scenarios where the developer may expose tenant data:
 
 1. Reference the multi-tenant table and explicitly check the "Show Tenant Identifier." This property should be used only in back-office applications to implement screens to list information (for example, users) independently of their tenant.
 
-2. Explicitly reference the action "TenantSwitch(tenant id)", switching the runtime of the application to another tenant.
+2. Explicitly reference the action "TenantSwitch(tenant id)", switching the application's TenantId to another tenant at runtime.
 
 Besides these two scenarios, there is no other way that tenant data can be accessed incorrectly. To prevent them from happening:
 

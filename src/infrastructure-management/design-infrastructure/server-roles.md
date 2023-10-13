@@ -4,9 +4,16 @@ en_title: 01 OutSystems Platform server roles
 guid: 729b4d15-ee4c-4e1e-8ac7-8a487818703b
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # OutSystems Platform Server Roles
+
+<div class="info" markdown="1">
+
+**Important:** The information in this guide applies only to OutSystems Platform on-premises or private cloud deployments.
+
+</div>
 
 <div class="warning" markdown="1">
 
@@ -76,11 +83,6 @@ menu in the Administration top menu.
 
 The resource consumption of the Scheduler role happens at CPU level only and depends on the timer and BPT logic.
 
-<div class="info" markdown="1">
-
-If you want to take this information offline, click [here](https://success.outsystems.com/@api/deki/files/18568/Server_Roles_Apr_2019.pdf?revision=1) to get your Server Roles datasheet.
-
-</div>
 
 ## More Information
 

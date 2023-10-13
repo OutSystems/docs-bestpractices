@@ -5,13 +5,14 @@ en_title: Data Archiving
 guid: f00255a0-8205-46d7-aaf7-1b097cc552ea
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Data Archiving
 
 ## What's data archiving
 
-Data archiving is the process of identifying and moving data from the primary storage into a secondary storage, for long term storage. Archived data consists of data that's is no longer relevant for daily operations but that's still important to the organization and may be needed for future reference, or data that must be retained for regulatory compliance.
+Data archiving is the process of identifying and moving data from the primary storage into a secondary storage, for long term storage. Archived data consists of data that's no longer relevant for daily operations but that's still important to the organization and may be needed for future reference, or data that must be retained for regulatory compliance.
 
 Data archiving is an important practice when dealing with a large volume of data, to help mitigate eventual performance impacts.
 

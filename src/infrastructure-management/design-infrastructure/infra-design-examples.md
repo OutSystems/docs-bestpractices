@@ -3,9 +3,16 @@ summary: Your IT and operations departments can use these recommendations on how
 guid: 48d54fc2-feb6-4aeb-ad2a-d40b306757f5
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Infrastructure design examples
+
+<div class="info" markdown="1">
+
+**Important:** The information in this guide applies only to OutSystems Platform on-premises or private cloud deployments.
+
+</div>
 
 <div class="info" markdown="1">
 

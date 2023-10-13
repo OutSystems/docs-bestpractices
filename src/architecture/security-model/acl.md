@@ -1,15 +1,15 @@
 ---
 summary: Learn how to use Access Control List (ACL) in your applications to set up conditional access to data based on specific user profiles. 
 tags: best-practices, security-model
-en_title: Use Access Control List (ACL) to set up permission-based access to data
 guid: 3114f98f-16d0-4106-8628-5b0e80c6d21c
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
-# Use Access Control List (ACL) to set up permission-based access to data
+# Use Access Control List to set up permission-based access to data
 
-## What is ACL?
+## What is Access Control List?
 
 An access control list (ACL) is a list of permissions attached to an object. The ACL stores what objects are granted to which users or group of users. Common uses of ACL are access to financial data to specific user profiles, data access based on user’s unit/branch or hierarchical accesses.
 
@@ -51,7 +51,7 @@ With the below query, we are able to get a hierarchical view over the sales of t
 
 ![ACL SQL Example](images/acl-example.png) 
 
-* ACL provides, per user, the full list of users belonging to his hierarchy
+* ACL provides, per user, the full list of users belonging to their hierarchy
 
 * On every user profile update, recreate the ACL list
 

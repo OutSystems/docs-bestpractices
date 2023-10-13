@@ -5,6 +5,7 @@ en_title: 02 Sizing OutSystems Platform
 guid: 9fe9358a-9bfb-458d-bea1-c984ff641797
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Sizing OutSystems Platform

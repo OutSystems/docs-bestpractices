@@ -4,6 +4,7 @@ en_title: Performance Best Practices - Logic
 guid: faee48f5-9b43-40a6-906d-837feef414df
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Performance Best Practices - Logic
@@ -96,7 +97,7 @@ Avoid using large session variables. An increase of the number of concurrent use
 
 ### Importance
 
-Each web request loads the current session context. If the session variables are large text strings then each request will take longer to get the session variables from the session data model which can cause contention in the session data model further impacting otherapplication users. This is even more important when you use AJAX as it will increase the number of requests.
+Each web request loads the current session context. If the session variables are large text strings then each request will take longer to get the session variables from the session data model which can cause contention in the session data model further impacting other application users. This is even more important when you use AJAX as it will increase the number of requests.
 
 ### Remarks
 

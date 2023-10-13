@@ -4,6 +4,7 @@ en_title: Performance Best Practices - Infrastructure
 guid: 791cbc71-42c8-4f9a-9dd2-0af2830baa08
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Performance Best Practices - Infrastructure
@@ -150,11 +151,13 @@ If Windows Defender is active, or any other antivirus protection, disable the re
 
 * OutSystems Platform Server installation folder (the default is `C:\Program Files\OutSystems\Platform Server\`)
 
-* Temporary `ASP.NET` files location in `%WINDIR%\Microsoft.Net\framework64\v<version>\TemporaryASP.NET` Files (on a 64-bit system)
+* Temporary ASP.NET files location in `%WINDIR%\Microsoft.Net\Framework64\v4.0.30319\Temporary ASP.NET Files` (the default on a 64-bit system)
 
-* `.NET` Framework configuration files in `%WINDIR%\Microsoft.Net\framework64\v<version>\Config` (on a 64-bit system)
+* .NET Framework configuration files in `%WINDIR%\Microsoft.Net\Framework64\v4.0.30319\Config` (on a 64-bit system)
 
-* Optionally, the system temporary folder (typically `%TEMP%` or `C:\Windows\Temp`).
+* Temporary folder of the user account used to run the OutSystems Deployment Controller Service. This can either be the Windows Authentication account configured for Administrator access to the Platform database or a specific account depending on the Platform Server version installed, which be be determined in the [Default Platform Server and database configurations](https://success.outsystems.com/documentation/11/setup_and_maintain_your_outsystems_infrastructure/setting_up_outsystems/default_platform_server_and_database_configurations/#services) (typically `C:\Users\OutSystems Deployment Controller Service\AppData\Local\Temp`)
+
+* Optionally, the system temporary folder (typically `C:\Windows\Temp`).
 
 ### Importance
 

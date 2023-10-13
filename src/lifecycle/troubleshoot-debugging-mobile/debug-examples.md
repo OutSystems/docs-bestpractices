@@ -4,6 +4,7 @@ tags:
 guid: 56836d39-dbcb-4b9d-ace8-4f89884a2771
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Mobile app troubleshooting and debugging scenarios examples
@@ -124,7 +125,7 @@ If the mobile device was online when the crash occurred, then this log record ge
 
     * Memory leak that slowly consumes available memory
 
-    * Actions that take a long time to process because of suboptimal business logic or other [<--OTHER WHAT? THIS DOESN'T MAKE SENSE TO ME.] trying to process too much data in one operation
+    * Actions that take a long time to process because of suboptimal business logic or other trying to process too much data in one operation
 
     * Serialize and deserialize operations on large data sets/objects
 

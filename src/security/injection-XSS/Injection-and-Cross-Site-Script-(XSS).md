@@ -3,9 +3,10 @@ en_title: Injection and Cross Site Script (XSS)
 guid: f2de9e37-9a7e-4f1d-951a-271954eaa4f2
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
-# Injection and Cross Site Script (XSS)
+# Injection and Cross Site Script - XSS
 
 Injection flaws and Cross Site Script are still the most common application vulnerabilities. You can find here a set of best practices for development and OutSystems platform configurations to protect your application from these kinds of vulnerabilities.
 
@@ -43,7 +44,7 @@ However, an attacker may exploit this assumption by modifying the URL parameter 
 
 By passing this query parameter directly into the SQL statement, the code returns every user in the database and exposes their personal information. This is a bad idea. [OWASP](https://www.owasp.org/), therefore, suggests developers sanitize all inputs before a statement execution or avoid interpretation entirely by using safe APIs.
 
-How does this work in OutSystems? When you set the **Expand Inline** property to** Yes** you deactivate the default escape content from the platform, and you need to take care.
+How does this work in OutSystems? When you set the **Expand Inline** property to **Yes** you deactivate the default escape content from the platform, and you need to take care.
 
 For a SQL clause with non-string literals, or If additional security is required, the VerifySqlLiteral() or the  [EncodeSql()](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Logic/Built-in_Functions/Text#EncodeSql) functions can be used, from the Sanitization Extension, to ensure it only contains valid SQL literals. With the tradeoff that Variables with SQL reserved characters are rejected, of course. See below the wrong way (Figure 1) and correct wat (Figure 2) way:
 

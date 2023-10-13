@@ -4,6 +4,7 @@ en_title: Building Dynamic SQL Statements the Right Way
 guid: 373e4dbc-5192-4f28-b438-120fff238be3
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Building Dynamic SQL Statements the Right Way
@@ -14,7 +15,7 @@ Also, check the [SQL Injection Warning](https://success.outsystems.com/Documenta
 
 ## Switching a filter condition on or off
 
-Use an extra variable that switches a condition on/off without using parameters with the **Expand Inline** property enabled.
+Use an extra variable that switches a condition on/off without using parameters with the **Expand Inline** property enabled. You do not need to set Expand Line for `filterBySurname`.
 
 For example, if you wanted to provide an optional filter by surname, you could define your SQL query in the following way:
 

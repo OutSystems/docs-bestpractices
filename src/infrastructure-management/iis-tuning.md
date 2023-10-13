@@ -3,9 +3,16 @@ summary: Understanding and fine tuning ASP.NET process model settings on a Micro
 guid: 9705fd12-e670-49a6-b669-b2a52a7bbe94
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Tuning IIS for OutSystems
+
+<div class="info" markdown="1">
+
+**Important:** The information in this guide applies only to OutSystems Platform on-premises or private cloud deployments.
+
+</div>
 
 ASP.Net allows system administrators to manage aspects of the ASP.NET worker process. Examples include the size of the CLR thread pool to service requests, and the number of instances created at a time. 
 

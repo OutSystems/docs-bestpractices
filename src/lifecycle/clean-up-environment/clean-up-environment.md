@@ -4,6 +4,7 @@ tags:
 guid: c2af5ea2-2154-40c4-9756-34783923865c
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 # Best practices for a tidy and clean environment
 
@@ -41,9 +42,9 @@ Because of that, it's important in Development environments, to regularly clean 
 
 You can also implement your own solution, allowing a more flexible clean up of old modules, using the DbCleaner API actions:
 
-* [ModuleVersion_ListOldest](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/DbCleaner_API#ModuleVersion_ListOldest): Returns a list of module versions that are stored in the database and that were published before the specified date and time. This action doesn't return the module version that's currently published nor module versions used in tagged versions of applications or solutions.
-* [ModuleVersion_Delete](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/DbCleaner_API#ModuleVersion_Delete): Deletes the specified module version of the specified module from the database.
-* [ModuleVersion_DeleteAll](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/DbCleaner_API#ModuleVersion_DeleteAll): Deletes module versions that were published before the specified date and time. This action doesn't delete the module version that's currently published nor module versions used in tagged versions of applications or solutions.
+* [ModuleVersion_ListOldest](https://success.outsystems.com/documentation/11/reference/outsystems_apis/dbcleaner_api/#moduleversion_listoldest): Returns a list of module versions that are stored in the database and that were published before the specified date and time. This action doesn't return the module version that's currently published nor module versions used in tagged versions of applications or solutions.
+* [ModuleVersion_Delete](https://success.outsystems.com/documentation/11/reference/outsystems_apis/dbcleaner_api/#moduleversion_delete): Deletes the specified module version of the specified module from the database.
+* [ModuleVersion_DeleteAll](https://success.outsystems.com/documentation/11/reference/outsystems_apis/dbcleaner_api/#moduleversion_deleteall): Deletes module versions that were published before the specified date and time. This action doesn't delete the module version that's currently published nor module versions used in tagged versions of applications or solutions.
 
 
 <div class="info" markdown="1">
@@ -70,8 +71,8 @@ Once you delete the Solution version, you can then delete the module version ass
 
 ## Application tagged versions
 
-In case you are confident that you won’t need to rollback to a specific [tagged version](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Deploy_Applications/Tag_a_Version), you can also delete application versions.
-Since LifeTime Management Console Release Feb.2019, [LifeTime API v2](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_API_v2) provides a method to delete an application version if it's not “InUse”.
+In case you are confident that you won’t need to rollback to a specific [tagged version](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/deploy_applications/tag_a_version/), you can also delete application versions.
+Since LifeTime Management Console Release Feb.2019, [LifeTime API v2](https://success.outsystems.com/documentation/11/reference/outsystems_apis/lifetime_api_v2/) provides a method to delete an application version if it's not “InUse”.
 
 ` DELETE /lifetimeapi/rest/v2/applications/{ApplicationKey}/versions/{VersionKey}/ `
 
@@ -114,25 +115,25 @@ Application data is basically all the information that's stored in the database 
 ### Test data
 
 Especially in the development environment is common to have test/dummy data. This is the result of the developers’ tests during the development of different features. Although this data isn't critical for the application to run, it’s common that this data to grow and sometimes may even have some inconsistencies, being useful to clean it from time to time. 
-With OutSystems, you don’t need to have access to the database to perform these cleaning operations. Check [How to delete data from Entities](https://success.outsystems.com/Documentation/How-to_Guides/Data/How_to_delete_data_from_Entities) to implement your own delete data logic.
+With OutSystems, you don’t need to have access to the database to perform these cleaning operations. Check [How to delete data from Entities](https://success.outsystems.com/documentation/how_to_guides/data/how_to_delete_data_from_entities/) to implement your own delete data logic.
 
 ### Entities and Attributes
 
 When you delete Entities and Attributes in your applications, OutSystems doesn't delete the corresponding table or column in the database. Your data is safely stored just in case you want to rollback your application. If you feel that those entities and attributes are no longer used, then it’s a best practice to delete them, thus freeing database space. For that OutSystems provides the DbCleaner API methods:
 
-* [Attribute_ListDeleted](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/DbCleaner_API#Attribute_ListDeleted): Returns a list of attributes, with their information, that have been deleted from module’s meta model but are still physically present in the database.
-* [Attribute_DropColumn](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/DbCleaner_API#Attribute_DropColumn): Physically deletes the database table column associated to the specified entity attribute. If the entity attribute still exists in a module's meta model, the delete operation it's not performed.
-* [Entity_ListDeleted](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/DbCleaner_API#Entity_ListDeleted): Returns a list of entities, with their information, that have been deleted from module’s meta model but are still physically present in the database.
-* [Entity_DropTable](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/DbCleaner_API#Entity_DropTable): Physically deletes the database table associated to the specified entity. If the entity still exists in a module's meta model, the delete operation isn't performed.
+* [Attribute_ListDeleted](https://success.outsystems.com/documentation/11/reference/outsystems_apis/dbcleaner_api/#attribute_listdeleted): Returns a list of attributes, with their information, that have been deleted from module’s meta model but are still physically present in the database.
+* [Attribute_DropColumn](https://success.outsystems.com/documentation/11/reference/outsystems_apis/dbcleaner_api/#attribute_dropcolumn): Physically deletes the database table column associated to the specified entity attribute. If the entity attribute still exists in a module's meta model, the delete operation it's not performed.
+* [Entity_ListDeleted](https://success.outsystems.com/documentation/11/reference/outsystems_apis/dbcleaner_api/#entity_listdeleted): Returns a list of entities, with their information, that have been deleted from module’s meta model but are still physically present in the database.
+* [Entity_DropTable](https://success.outsystems.com/documentation/11/reference/outsystems_apis/dbcleaner_api/#entity_droptable): Physically deletes the database table associated to the specified entity. If the entity still exists in a module's meta model, the delete operation isn't performed.
 
 
 ## Processes
 
 Business Process Technology (BPT) Processes can also be consuming unnecessary database space. It’s common that you launch some processes to test the functionality when you are developing.
-To clean all the logged information of old processes, OutSystems provides the [BPT API](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/BPT_API) methods:
+To clean all the logged information of old processes, OutSystems provides the [BPT API](https://success.outsystems.com/documentation/11/reference/outsystems_apis/bpt_api/) methods:
 
-* [Process_Delete](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/BPT_API#Process_Delete): Deletes all the logged information of an instance of a top level Process, which must be either terminated or closed.
-* [Process_BulkDelete](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/BPT_API#Process_BulkDelete): Deletes all the logged information of instances of top level Processes that have terminated or closed before the given date.
+* [Process_Delete](https://success.outsystems.com/documentation/11/reference/outsystems_apis/bpt_api/#process_delete): Deletes all the logged information of an instance of a top level Process, which must be either terminated or closed.
+* [Process_BulkDelete](https://success.outsystems.com/documentation/11/reference/outsystems_apis/bpt_api/#process_bulkdelete): Deletes all the logged information of instances of top level Processes that have terminated or closed before the given date.
 
 Add them as references on your application and invoke them to delete old instances.
 
@@ -140,20 +141,20 @@ Add them as references on your application and invoke them to delete old instanc
 ## Emails
 
 Such as Processes, Emails can also be consuming unnecessary database space. This is especially relevant as emails can have attachments, sometimes quite big (>1MB).
-To clean email information, OutSystems provides the [Emails API](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/Emails_API) so you can easily implement your cleaning mechanism.
+To clean email information, OutSystems provides the [Emails API](https://success.outsystems.com/documentation/11/reference/outsystems_apis/emails_api/) so you can easily implement your cleaning mechanism.
 
 
 ## Logs
 
-[Log information](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Monitor_and_Troubleshoot/Logging_database_and_architecture) reflects the lifecycle of accesses to applications by end users or external systems. There are two log types:
+[Log information](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/monitor_and_troubleshoot/logging_database_and_architecture/) reflects the lifecycle of accesses to applications by end users or external systems. There are two log types:
 
 * Top-level logs (Screen, Integration, Mobile Request, Cyclic Job)
 * Drill logs (Error, General, Integration, Extension)
 
-The design of the log model aims to have minimal interference in the application runtime and even in the Development environment their impact is somehow controlled with the [rotation of the logs](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Monitor_and_Troubleshoot/Logging_database_and_architecture/The_log_tables_and_views#The_rotation_of_the_logs).
+The design of the log model aims to have minimal interference in the application runtime and even in the Development environment their impact is somehow controlled with the [rotation of the logs](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/monitor_and_troubleshoot/logging_database_and_architecture/the_log_tables_and_views/).
 Every week the Log Service truncates one of the weekly tables to clear space from the database and allow new logs to be inserted when the time for that table to be used again comes.
 
-While delete logs isn't a supported action, from OutSystems 11 you can [store log data in a separate database](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Keep_OutSystems_log_data_in_a_separate_database), reducing the impact that log-writing operations could have on running applications while application data is being accessed. 
+While delete logs isn't a supported action, from OutSystems 11 you can [store log data in a separate database](https://success.outsystems.com/documentation/11/setup_and_maintain_your_outsystems_infrastructure/setting_up_outsystems/keep_outsystems_log_data_in_a_separate_database/), reducing the impact that log-writing operations could have on running applications while application data is being accessed. 
 
 ## Additional considerations
 
@@ -170,7 +171,7 @@ If you have a development environment installed **on-premises**, besides having 
 ### Automate the clean-Up
 
 The clean-up of the Development environment should be a regular concern, and not just an on-time task because you are experiencing some issues ("better safe than sorry").
-With that in mind, a possible approach is to implement a periodic clean-up logic (using [OutSystems Timers](https://success.outsystems.com/Documentation/11/Developing_an_Application/Use_Timers/Create_and_Run_Timers)), that can address the different components described in this article.
+With that in mind, a possible approach is to implement a periodic clean-up logic (using [OutSystems Timers](https://success.outsystems.com/documentation/11/developing_an_application/use_timers/create_and_run_timers/)), that can address the different components described in this article.
 
 If you don’t want to create your clean-up solution from scratch, you can explore the components available on the OutSystems Forge. Search for “cleaner” or “database space” and you’ll find some different options from OutSystems Community members.
 
@@ -188,7 +189,7 @@ Thus, it's recommended that:
 
 1. On a frequent basis (for example, every month), you should access the list of all active users and validate whether any of them shouldn't be there.
 
-You can access the list of your users through the LifeTime of your environment, in the User Management tab. You can read more about user management in the [Manage IT Users page](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Manage_IT_Users).
+You can access the list of your users through the LifeTime of your environment, in the User Management tab. You can read more about user management in the [Manage IT Users page](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/manage_it_users/).
 
 ### Keep your development environment updated
 
@@ -227,9 +228,9 @@ Besides going through the actions that you may take to maintain your environment
 
 Therefore, it's a good idea to keep track of what's happening in your factory. To do it, you can develop a set of automated reports that can warn you about the imminence of critical issues. Some examples are:
 
-* **Size of the bigger applicational tables in your database** - Identify tables that are bigger than they should be so that you can act on it. For example, implement a strategy of [Data Archiving](https://success.outsystems.com/Documentation/Best_Practices/Architecture/Data_Archiving) or even delete data you no longer need.
+* **Size of the bigger applicational tables in your database** - Identify tables that are bigger than they should be so that you can act on it. For example, implement a strategy of [Data Archiving](../../architecture/data/archive.md) or even delete data you no longer need.
 
-* **Size of the Log Tables** - The default rotation period of one week may not be adequate in your environment. Please take a look at [log tables and views](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Monitor_and_Troubleshoot/Logging_database_and_architecture/The_log_tables_and_views) to know more about the log tables and rotation period.
+* **Size of the Log Tables** - The default rotation period of one week may not be adequate in your environment. Please take a look at [log tables and views](https://success.outsystems.com/documentation/11/managing_the_applications_lifecycle/monitor_and_troubleshoot/logging_database_and_architecture/the_log_tables_and_views/) to know more about the log tables and rotation period.
 
 * **Size of the Email and Process Log tables** - While Log tables are rotated, Email and Process Logs aren't. These tables continue growing indefinitely. To avoid this untenable growth, please consider deleting older data. If you can’t delete it, archive that data in a separate table/database.
 
@@ -242,7 +243,7 @@ Some components on the [Forge](https://www.outsystems.com/forge/) already have s
 
 <div class="info" markdown="1">
 
-Keep in mind that, as good practice, you should always validate if the components still have these features before using it. Also, note that it's the OutSystems community that develops these components, and they **are not** supported by OutSystems. If you want to know more about it, check the [Forge FAQs](https://success.outsystems.com/Support/Forge_Components/Forge_FAQs).
+Keep in mind that, as good practice, you should always validate if the components still have these features before using it. Also, note that it's the OutSystems community that develops these components, and they **are not** supported by OutSystems. If you want to know more about it, check the [Forge FAQs](https://success.outsystems.com/support/forge_components/forge_faqs/curating_projects/).
 
 </div>
 
