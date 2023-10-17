@@ -90,6 +90,7 @@ This article aggregates a collection of best practices and conventions that you 
 
 * Find out what needs improvement by observing your users.
 * Reduce the size of the images in your module.
+* Make sure when double-clicking a button it behaves as expected.
 
 ## Architecture
 
