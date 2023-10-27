@@ -41,7 +41,7 @@ Avoid text attributes with more than 2000 characters. Store binary and large tex
 
 ### Solution
 
-Reduce Text Attribute length to the minimum possible value. Avoid text attributes with lengths greater than 2000. Service Studio text attributes with length below or equal to 2000 are created as VarChar columns in SQL Server; otherwise they are created as Text columns.
+Reduce Text Attribute length to the minimum possible value. Avoid text attributes with lengths greater than 2000. Service Studio text attributes with length less than or equal to 2000 are created as VarChar columns in SQL Server; otherwise they are created as Text columns.
 
 Isolate Binary Data Attributes in separate Entities.
 
