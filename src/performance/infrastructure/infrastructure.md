@@ -43,7 +43,7 @@ The Frontend Server has large kernel CPU usage and slow overall performance.
 
 ### Importance
 
-Frequent recycling of worker process(es) imply that applications are being unloaded from memory, forcing a runtime recompilation of the ```ASP.NET``` application, and a reload of its assemblies and cache. This causes a slow performance scenario.
+Frequent recycling of worker process(es) imply that applications are being unloaded from memory, forcing a runtime recompilation of the `ASP.NET` application, and a reload of its assemblies and cache. This causes a slow performance scenario.
 
 ### Remarks
 
