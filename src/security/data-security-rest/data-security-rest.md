@@ -51,7 +51,9 @@ In the OutSystems cloud environments provisioned in your infrastructure, data wi
 
 * Application data cannot be stored in the front-end servers, apart from a specific directory (D:\User) that can be used to store temporary files. Sentry offer contains security controls that apply countermeasures when uploading malware. Malicious files are removed after upload but note that no notification is shown at runtime.
 
-In the following table, you can find the retention period and responsibilities for the cloud environment assets.
+In the following table, you can find the retention period and responsibilities for the cloud environment assets. 
+
+**Note**: The retention periods listed assume an active, paid-up subscription to the applicable OutSystems products. If your subscription has terminated, the retention periods no longer apply. In this case, the terms of the Master Subscription Agreement with OutSystems apply.
 
 <table markdown="1">
 <tbody>
@@ -89,7 +91,8 @@ In the following table, you can find the retention period and responsibilities f
 <p>Not present</p>
 </td>
 <td>
-<p>Defined by you <sup>1</sup></p>
+<p>Defined by you in the application logic.
+ <sup>1</sup></p>
 </td>
 </tr>
 <tr>
@@ -164,7 +167,7 @@ In the following table, you can find the retention period and responsibilities f
 </tbody>
 </table>
 
-1 OutSystems provides you with the ability to delete application data.  You have ownership and control over your application's data and are free to manage it according to your requirements for data retention. You can also export your data to another storage facility that you own in order to implement specific retention requirements.
+1 OutSystems allows you to delete application data. You have ownership and control over your application's data and are free to manage it according to your requirements for data retention. You can also export your data to another storage facility that you own in order to implement specific retention requirements.
 
 ## Securing data at rest on Cloud front-end servers
 
