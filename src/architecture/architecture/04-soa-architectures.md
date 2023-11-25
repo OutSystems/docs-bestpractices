@@ -6,7 +6,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 ---
 
-# Service-Oriented Architectures for OutSystems applications
+# Service-oriented architectures for OutSystems applications
 
 When abstracting your concepts into OutSystems Services, you **must** make sure that the core of your Services is:
 
@@ -20,7 +20,7 @@ This is key to allow you to keep your architecture flexible and able to cope wit
 
 ## Implementing your Service-Oriented Architecture
 
-On the example depicted below, you can see 3 levels composing the services:
+In the example depicted below, you can see 3 levels composing the services:
 
 * The **External API**
 
@@ -39,7 +39,9 @@ This level is a composition of APIs that exposes the services to external consum
 It is merely a technical wrapper for the real services implemented at the **Core Services** layer. This level translates those services to the APIs agreed with external systems.
 
 <div class="warning" markdown="1">
+
 No business logic should be added at this level.
+
 </div>
 
 Several versions of the API may be kept at this level to comply with different consumer specifications. For example, a consumer may be sending an input as a Record collection, while another consumer sends the same information via a XML input. Both versions must translate the different types of inputs into an *OutSystems Record List* before calling the actual service.
@@ -76,12 +78,14 @@ A business audit can keep track of all the business transactions, regardless if 
 This level is a technical wrapper of external producers, normalizing data structures and abstracting integration complexity (recovering from errors, authentication on external systems, among others).
 
 <div class="warning" markdown="1">
+
 No business logic should be added at this level.
+
 </div>
 
 An **Integration Service** can also abstract the fact that a certain concept is distributed across different systems.
 
-For example, complementary Customer information is kept in both the **CRM** and the **ERP** systems. **Library** module **Customer_IS** integrates with both systems, providing all the APIs required to retrieve mashed up Customer information into a normalized Customer data structure.
+For example, complementary Customer information is kept in both the **CRM** and the **ERP** systems. **Library** module **Customer_IS** integrates with both systems, providing all the APIs required to retrieve mashed-up Customer information into a normalized Customer data structure.
 
 A **Core Service** consuming this **Integration Service**, has no knowledge of where the information is coming from. This gives you the flexibility to change the external systems without any impact on the **Core Services**.
 
@@ -89,9 +93,9 @@ A **Core Service** consuming this **Integration Service**, has no knowledge of w
 
 Check some OutSystems architecture patterns to get further details on how you can implement the following cases:
 
-* [Integration Patterns for Core Services Abstraction](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/05_Integration_Patterns_for_Core_Services_Abstraction)
+* [Integration Patterns for Core Services Abstraction](05-integration-patterns.md)
 
 ## More information
 
-To learn more about how to design your application architecture check the [Designing the architecture of your OutSystems applications](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications) guide.
+To learn more about how to design your application architecture check the [Designing the architecture of your OutSystems applications](intro.md)) guide.
 
