@@ -5,6 +5,7 @@ guid: e7784786-6c20-4455-b5b1-26030914dd69
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/vqcqBzIzCkJa5I0Q7Cud0a/Development?node-id=442:318
 ---
 
 # Notation Reference for BPMN Practitioners

@@ -4,6 +4,7 @@ guid: 2a701988-2780-4aff-954c-a88fb24ff10f
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=1343:663
 ---
 
 # Microservices Architecture in OutSystems

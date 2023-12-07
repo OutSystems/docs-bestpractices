@@ -6,6 +6,7 @@ guid: 24fbf144-fff4-426c-917f-d30f2b1eb523
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=1343:252
 ---
 
 # Translating business concepts into application modules

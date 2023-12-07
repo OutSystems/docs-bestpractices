@@ -3,6 +3,7 @@ summary: Developers need the ability to create seamless integration with the ful
 locale: en-us
 guid: 76f0ff8d-00dc-4b9e-8da7-95df3bebb8cb
 platform-version: o11
+figma: https://www.figma.com/file/vqcqBzIzCkJa5I0Q7Cud0a/Development?node-id=1043:388
 ---
 
 # Integrating OutSystems with your ecosystem

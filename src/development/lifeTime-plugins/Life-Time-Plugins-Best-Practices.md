@@ -4,6 +4,7 @@ guid: 001b2cb1-c241-4f40-a4a4-4080b82bbfb7
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # LifeTime Plugins Best Practices

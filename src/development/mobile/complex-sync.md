@@ -6,6 +6,7 @@ guid: 134bfe6b-170d-4ca3-86f4-25664431bd20
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/vqcqBzIzCkJa5I0Q7Cud0a/Development?node-id=342:260
 ---
 
 # Handling Optimized Complex Synchronization on Mobile Devices

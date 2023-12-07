@@ -5,6 +5,7 @@ guid: 56836d39-dbcb-4b9d-ace8-4f89884a2771
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jGLm9nVlJMS9yYNz7I7DoG/Lifecycle?node-id=443:261
 ---
 
 # Mobile app troubleshooting and debugging scenarios examples

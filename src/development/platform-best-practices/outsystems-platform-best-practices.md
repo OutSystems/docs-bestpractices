@@ -6,6 +6,7 @@ guid: 463d263b-5aba-4881-857e-2465a046c24d
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # OutSystems Platform Best Practices

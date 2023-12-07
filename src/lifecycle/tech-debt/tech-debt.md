@@ -4,6 +4,7 @@ guid: 94feeaa6-0e06-4bab-b262-f990f78ca1ba
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jGLm9nVlJMS9yYNz7I7DoG/Lifecycle?type=design&node-id=842%3A521&mode=design&t=SyFgYReavcdsILfu-1
 ---
 
 # Handling technical debt with OutSystems

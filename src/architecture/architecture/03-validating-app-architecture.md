@@ -4,6 +4,7 @@ guid: f0975aa9-dd78-42c9-9c69-536e6a3e57a3
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=1343:439
 ---
 
 # Validating your application architecture

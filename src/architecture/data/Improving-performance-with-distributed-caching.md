@@ -4,6 +4,7 @@ guid: a8b95890-989f-4c6e-9faf-151f07b96f6f
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/8BOBojsM2YFC0g7LBLPKfU/Performance-and-monitoring?type=design&node-id=543%3A15&mode=design&t=T1oWQ8uzeqVZBMoI-1
 ---
 
 # Improving Performance With Distributed Caching

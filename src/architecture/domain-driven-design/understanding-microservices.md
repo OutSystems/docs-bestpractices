@@ -5,6 +5,7 @@ guid: b161ae4a-7e15-4b76-93d8-f3096d4948c6
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=1344:718
 ---
 
 # Understanding microservices

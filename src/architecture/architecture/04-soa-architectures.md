@@ -4,6 +4,7 @@ guid: 15d0b981-a3c5-4d65-a013-2e9837d81da5
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?type=design&node-id=1343%3A628&mode=design&t=PRLoJ75Xb7DcRPoX-1
 ---
 
 # Service-oriented architectures for OutSystems applications

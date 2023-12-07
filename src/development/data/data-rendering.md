@@ -6,6 +6,7 @@ guid: 0110f2d4-6724-432b-b46c-2a582a90ee76
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/vqcqBzIzCkJa5I0Q7Cud0a/Development?node-id=342:252
 ---
 
 # Mobile Data Rendering

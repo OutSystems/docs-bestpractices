@@ -5,6 +5,7 @@ guid: 6f1265f0-a96e-45cb-b813-8460434ba1ab
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Forge components best practices

@@ -5,6 +5,7 @@ guid: 4f078a11-41cd-4ac8-a40f-e3e1edc6dc5d
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jGLm9nVlJMS9yYNz7I7DoG/Lifecycle?node-id=443:248
 ---
 
 # Extending your toolbox
