@@ -27,7 +27,7 @@ Improve the User Experience by following a Local Storage First strategy. This ap
 
 When designing the local storage it is important to focus on the mobile application use cases. Avoid sharing the local storage model between different mobile applications as each application has different use cases to take into account when designing the model.
 
-![Local Storage Usage](images/data-layer/local-storage-diag.png)
+![Local Storage Usage](images/local-storage-diag.png)
 
 Use local storage whenever possible.
 
@@ -41,7 +41,7 @@ To denormalize the local storage correctly, analyze the main use cases and ident
 
 Local storage entity actions use **individual transactions**, so avoid writing multiple times in the local storage in the same request. If not possible, then design the model to endure the loss of transaction.
 
-![Local Storage Data Model](images/data-layer/local-storage-data-model.png?width=700)
+![Local Storage Data Model](images/local-storage-data-model.png)
 
 * Don't copy the server data model
     * Denormalize the local storage
