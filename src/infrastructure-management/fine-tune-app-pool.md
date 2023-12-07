@@ -3,6 +3,7 @@ summary:
 locale: en-us
 guid: 939F9A46-EBA1-4442-BD8B-6CAAA5CDE555
 platform-version: o11
+figma:
 ---
 
 # Understanding and fine tuning application pool recycling for use with OutSystems

@@ -6,6 +6,7 @@ guid: b36910c2-01cc-4e7b-95e8-9526ede4e1e3
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/8BOBojsM2YFC0g7LBLPKfU/Performance%20and%20monitoring?node-id=543:7
 ---
 
 # Optimize Data For Your Use Cases Using Hot Cache

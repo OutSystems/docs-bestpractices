@@ -5,6 +5,7 @@ guid: 394deb7e-f63e-4ff4-831f-a4132c250bfd
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Performance and monitoring

@@ -5,6 +5,7 @@ guid: 5f4a803b-5b64-4b4b-bef7-eba1cc149941
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rmma8067fGUqhlUhXheHOZ/Security?type=design&node-id=743%3A240&mode=design&t=eBMr5Nk8q9gxFEGk-1
 ---
 
 # Securing data at rest with encryption

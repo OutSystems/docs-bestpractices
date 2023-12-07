@@ -6,6 +6,7 @@ guid: 641a7444-c8cf-4f13-bcce-e86e0b2fd1d7
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/8BOBojsM2YFC0g7LBLPKfU/Performance%20and%20monitoring?node-id=147:325
 ---
 
 # Audit Trail

@@ -4,6 +4,7 @@ guid: 9705fd12-e670-49a6-b669-b2a52a7bbe94
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Tuning IIS for OutSystems

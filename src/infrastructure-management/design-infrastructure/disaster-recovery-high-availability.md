@@ -5,6 +5,7 @@ guid: d11fba74-5734-4722-a8e7-8e15957af3b4
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/s4ggSCmhDxaNG5P4tzUjbh/Infrastructure%20Management?node-id=102:226
 ---
 
 # Disaster Recovery and High Availability for OutSystems Platform servers

@@ -4,6 +4,7 @@ guid: 33518ed5-11df-42fe-8cba-daa3622ea514
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Automated Testing Tools
