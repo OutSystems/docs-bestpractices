@@ -61,7 +61,7 @@ When fetching data from an external system of records we can classify two types 
 
 Before explaining the integration patterns, use the following decision tree to help you select the patterns, according to your data needs. For your application, pick all the patterns collected in your selected path.
 
-![Decision tree to select integration patterns](images/decision-tree-integration-patterns.jpg?width=800)
+![Decision tree to select integration patterns](images/decision-tree-integration-patterns.png)
 
 <div class="info" markdown="1">
 
