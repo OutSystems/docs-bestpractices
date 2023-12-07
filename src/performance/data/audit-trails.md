@@ -18,14 +18,13 @@ Audit Trail is the simplest, yet also one of the most effective forms of trackin
 
 In this context, there are the following two types of Audit Trail in OutSystems:
 
-
 * [Business Audit](#business-audit)
 * [OutSystems Platform Audit](#outsystems-platform-audit)
 
 In conjunction with appropriate tools and procedures, audit trails can help in detecting security violations, performance problems, and flaws in applications.
 
 ### Business Audit 
-A Business Audit relates to business requirements to collect or track the application end users’ behavior or to provide information for Auditors. For example, log any update over a table record: “who” did “what” and “how” the system behaved, and what were the values before and after the update. The value to collect this information is, for example, to set up an alarmist process on top, to alert decision-maker teams if any business rules were violated or a threshold value reached. 
+A Business Audit relates to business requirements to collect or track the application end users’ behavior or to provide information for Auditors. For example, log any update over a table record: “who” did “what” and “how” the system behaved, and what were the values before and after the update. The value to collect this information is, for example, to set up an alarmist process on top, to alert decision-maker teams if any business rules were violated or a threshold value reached.
 
 Use Business Audits when there are business requirements to log a specific end user behavior or automatic system actions in an application:
 
@@ -34,7 +33,6 @@ Use Business Audits when there are business requirements to log a specific end u
 * Tracking all customer communication - it can help a great deal with dispute resolution and also with keeping customers happy by providing relevant information about their past communications.
 * Operational transactions. Imagine the example of a transportation network company. The ability to audit pickup and dropoff times, as well as routes, helps with pricing and staffing considerations.
 * You can also use Business Audits associated with more Non-Functional Requirements (NFRs), such as tracing a user during a session: from the moment users log in until the logout.
-
 
 Implementing a Business Audit system can prevent you against potential legal actions and accusations, but it can also give you important business intelligence to make business decisions based on facts. It may seem to be something not so relevant at the beginning, but it’s incredibly important.
 
@@ -58,8 +56,7 @@ Consider the following concerning the technical logs collected by OutSystems:
 
 These logs are stored in a dedicated set of OutSystems tables and can be consulted in [Service Center under Monitoring menu](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Monitor_and_Troubleshoot/View_the_Environment_Logs_and_Status):
 
-![Service Center Monitoring Menu](images/audit-trails/service-center-monitpring-menu.png?width=1000)
-
+![Service Center Monitoring Menu](images/service-center-monitpring-menu.png)
 
 Considering that the platform logs have a recycling rate, these should be collected periodically and stored externally. The recommendation is to build an ETL process to execute this task, due to the high number of records.
 
@@ -67,7 +64,7 @@ Considering that the platform logs have a recycling rate, these should be collec
 
 For Standard Audit Trail systems, there is an industry common architecture pattern to consider, depicted by the following figure:
 
-![Standard Audit Trail System - generic architecture](images/audit-trails/standard-audit-trail-system_generic-architecture.png?width=750)
+![Standard Audit Trail System - generic architecture](images/standard-audit-trail-system_generic-architecture.png)
 
 *[(Source)](https://docs.aws.amazon.com/en_pv/whitepapers/latest/microservices-on-aws/auditing.html)*
 
@@ -81,11 +78,11 @@ Consider the following three architecture patterns/examples on how to implement 
 
 ### Based on OutSystems built-in LogMessage action
 
-![OutSystems Audit Trails Based on the built-in LogMessage action](images/audit-trails/outsystems-audit-trails-based-on-built-in_logmessage_action.png?width=750)
+![OutSystems Audit Trails Based on the built-in LogMessage action](images/outsystems-audit-trails-based-on-built-in_logmessage_action.png)
 
 The **Audit_Lib** module provides a **MyLogMessage** public action, which references a **LogMessage** (system) built-in action.
 
-All logged messages are available throughout the Service Center) using the navigation menu **Monitoring > General**, filtered by the **ModuleName** value.
+All logged messages are available throughout the Service Center using the navigation menu **Monitoring > General**, filtered by the **ModuleName** value.
 
 ###  Centralized Audit Trail (using server entities)
 
@@ -93,7 +90,7 @@ Although OutSystems provides a system log audit action, we recommend building a 
 
 The following figure depicts the centralized Audit Trail:
 
-![OutSystems Centralized Audit Trail using server entities](images/audit-trails/outsystems-centralized-audit-trail-using-server-entities.png?width=800)
+![OutSystems Centralized Audit Trail using server entities](images/outsystems-centralized-audit-trail-using-server-entities.png)
 
 1. The data is stored in the **QuickLog** entity quickly, due to performance reasons.
 1. The timer moves the **staged** data from **QuickLog** into the main **AuditLog** entity asynchronously.
@@ -110,7 +107,7 @@ Use it to write a debug log that allows the IT teams to trace the application fl
 
 The following figure depicts the foundation application that supports all applications that log with an External Audit logging system integration:
 
-![OutSystems Extended Centralized Audit Trail](images/audit-trails/outsystems-extended-centralized-audit-trail.png?width=600)
+![OutSystems Extended Centralized Audit Trail](images/outsystems-extended-centralized-audit-trail.png)
 
 * **Audit Library Application**
 
@@ -142,9 +139,8 @@ The following figure depicts the foundation application that supports all applic
 * **Entity Read-Only Pattern**
 
     To ensure all transactions are logged, expose your entities as read-only. This enforces the centralization of the create, update and delete operations into the module that defines the entities and logs every transaction.
-      
-    For bulk update operations, you can only log the overall operation, and not the individual changes.
 
+    For bulk update operations, you can only log the overall operation, and not the individual changes.
 
 ## Advanced implementation
 
@@ -167,14 +163,12 @@ The following list shows good examples of when you should consider this approach
 
 You can download from the OutSystrems Forge, a component that allows you to integrate with a NoSQL Database: the [Amazon DynamoDB Connector](https://www.outsystems.com/forge/component-overview/3549/amazon-dynamodb-connector).
 
-
-
 The following picture depicts the pattern in OutSystems that can implement these Auditing operations:
 
-![OutSystems Advanced Audit Trail implementation](images/audit-trails/outsystems-advanced-audit-trail-implementation.png?width=500)
+![OutSystems Advanced Audit Trail implementation](images/outsystems-advanced-audit-trail-implementation.png)
 
 The following list details the Public Actions:
-       
+
 ```
 Audit_Create(Async)                     Audit_Delete(Async)                     Audit_ListCreate(Async)
 - ObjectName                            - ObjectName                            - ObjectName
