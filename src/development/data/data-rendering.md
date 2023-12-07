@@ -22,7 +22,7 @@ This article introduces the Best Practices for data rendering on mobile applicat
 
 Improve the user experience by designing and displaying an empty state image while the dynamic content is being fetched. A couple of good examples are Facebook or LinkedIn.
 
-![Empty State Image](images/data-render/empty-state-image.png?width=750)
+![Empty State Image](images/empty-state-image.png)
 
 This strategy is valid for all dynamic content in the screen such as blocks, cards or list items. When the empty state turns into the fetched content you may experience some flickering. To avoid flickering when the empty state turns into the fetched content, choose one image that assures a smooth transition, such as a blurred gray line or a spinner.
 
@@ -38,13 +38,13 @@ Delay the rendering of the secondary content so that the main content is rendere
 
 1. In the **On Render** event of the screen, add logic to set the variable to True so that the secondary content starts to render.
 
-![Prioritized Screen Content](images/data-render/prioritized-screen-content.png?width=320)
+![Prioritized Screen Content](images/prioritized-screen-content.png)
 
 ### Set the Width and Height of Image Widgets
 
 Set the width and height of the Image widget to the expected size of the final image.
 
-![Image Properties](images/data-render/image-properties.png?width=300)
+![Image Properties](images/image-properties.png)
 
 ### Optimize List Load
 
@@ -65,7 +65,7 @@ Do not design list items with expandable content, such as a trimmed description 
 
 #### Fine-Tune How Lists Fetch Data on Demand
 
-Adjust the number of records that are initially loaded, the increment when scrolling down, and the scroll threshold to trigger the **On Scroll Ending** event. It provides a better user experience when using lists by avoiding visual glitches and slow list scrolls. 
+Adjust the number of records that are initially loaded, the increment when scrolling down, and the scroll threshold to trigger the **On Scroll Ending** event. It provides a better user experience when using lists by avoiding visual glitches and slow list scrolls.
 
 The values to use depend on the size of the records:
 
@@ -77,7 +77,7 @@ The values to use depend on the size of the records:
 
 The following figure shows examples of values to use in different situations. Start with these as initial guidelines and then test and adjust to your specific case.
 
-![Guidelines for Fetching Data on Lists](images/data-render/guidelines-fetching-data-on-lists.png?width=750)
+![Guidelines for Fetching Data on Lists](images/guidelines-fetching-data-on-lists.png)
 
 ## Benefits
 
