@@ -3,6 +3,7 @@ guid: 101e446d-c525-4d85-ad1a-2e4ca67c7045
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jGLm9nVlJMS9yYNz7I7DoG/Lifecycle?node-id=944:2157
 ---
 
 # ALM in OutSystems: configuration management

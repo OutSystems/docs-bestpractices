@@ -4,6 +4,7 @@ guid: c3feac47-4625-4632-a11f-6bbcba99482b
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Integration/API Testing

@@ -4,6 +4,7 @@ guid: f33f9001-87a0-49b4-aacc-30f866f13882
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/8BOBojsM2YFC0g7LBLPKfU/Performance-and-monitoring?type=design&node-id=643%3A240&mode=design&t=YxitaZ5KazyCMyAI-1
 ---
 
 # Monitoring OutSystems applications

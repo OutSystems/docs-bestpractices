@@ -4,6 +4,7 @@ guid: 5a065377-1843-4d63-b7b9-135f9de77886
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=1343:653
 ---
 
 # Isolating an application Theme

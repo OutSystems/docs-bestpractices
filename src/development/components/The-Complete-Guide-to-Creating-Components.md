@@ -4,6 +4,7 @@ guid: 43a62924-8342-415c-9fda-06b278a876c0
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/vqcqBzIzCkJa5I0Q7Cud0a/Development?node-id=342:268
 ---
 
 # The complete guide to creating components
@@ -104,17 +105,17 @@ Using only classes in your CSS selectors limits reusability of your component be
 
 1. Add a wrapper div and set the "Name" property.
 
-    ![](images/The-Complete-Guide-to-Creating-Components_1.png?width=250)
+    ![](images/The-Complete-Guide-to-Creating-Components_1.png)
 
 1. In the action that includes the JavaScript node with the selector, add an input parameter and set it as the MyBlockWrapper element ID.
 
-    ![](images/The-Complete-Guide-to-Creating-Components_2.png?width=450)
+    ![](images/The-Complete-Guide-to-Creating-Components_2.png)
 
 1. Build your selector with a CSS class related to the ID you passed as an input. In this example, the element where the CSS class exists is a child of the Wrapper element, but it could also be the same element.
 
-    ![](images/The-Complete-Guide-to-Creating-Components_3.png?width=450)
+    ![](images/The-Complete-Guide-to-Creating-Components_3.png)
 
-    ![](images/The-Complete-Guide-to-Creating-Components_4.png?width=450)
+    ![](images/The-Complete-Guide-to-Creating-Components_4.png)
 
 #### Balancing limits and customization
 
@@ -172,7 +173,9 @@ CSS properties prefaced with **-servicestudio-** can **improve the preview and d
 
 Using **-servicestudio-** tags helps developers set the values without compromising other features:
 
-![](images/The-Complete-Guide-to-Creating-Components_19.png)![](images/The-Complete-Guide-to-Creating-Components_20.png)
+![](images/The-Complete-Guide-to-Creating-Components_19.png)
+
+![](images/The-Complete-Guide-to-Creating-Components_20.png)
 
 #### Sample content inside placeholders
 
@@ -180,9 +183,9 @@ A [placeholder](https://success.outsystems.com/Documentation/11/Reference/OutSys
 
 Avoid using sample content for simple things, such as texts and images, because it's distracting and developers must delete it. Instead, add sample content only if it's mandatory or it helps developers.
 
- ![](images/The-Complete-Guide-to-Creating-Components_21.png?width=300)
+ ![](images/The-Complete-Guide-to-Creating-Components_21.png)
 
- ![](images/The-Complete-Guide-to-Creating-Components_22.png?width=300)
+ ![](images/The-Complete-Guide-to-Creating-Components_22.png)
 
 ### Non-functional requirements
 
@@ -236,19 +239,19 @@ Keep in mind these naming conventions:
 
 Take a look at the complete list of OutSystems [Naming Conventions](../platform-best-practices/outsystems-platform-best-practices.md).
 
-![](images/The-Complete-Guide-to-Creating-Components_6.png?width=500)
+![](images/The-Complete-Guide-to-Creating-Components_6.png)
 
-![](images/The-Complete-Guide-to-Creating-Components_7.jpg?width=500)
+![](images/The-Complete-Guide-to-Creating-Components_7.png)
 
 **Descriptions provide visual cues during development, enhancing that experience**. For example:
 
 * Hover over **application dependencies** to see their description.
-    
-    ![](images/The-Complete-Guide-to-Creating-Components_8.png?width=500)
+
+    ![](images/The-Complete-Guide-to-Creating-Components_8.png)
 
 * Check a module's description, by hovering in the **Manage Dependencies** popup window.
-    
-    ![](images/The-Complete-Guide-to-Creating-Components_9.png?width=500)
+
+    ![](images/The-Complete-Guide-to-Creating-Components_9.png)
 
 * The search box allows you to search for the name and the description. Note that only components with an icon appear in the toolbox on the left.
 
@@ -270,11 +273,11 @@ Setting an application icon defines the **main icon of your component**. Users c
 
 For application icons, use *.png* format to allow transparencies and 1024 x 1024 px as the size. Keep in mind the file size as large files slow the screen-loading speed.
 
-![](images/The-Complete-Guide-to-Creating-Components_12.png?width=100)
+![](images/The-Complete-Guide-to-Creating-Components_12.png)
 
 #### Module icons
 
-Setting icons for modules allows developers to relate them to your application in the Manage Dependencies window. 
+Setting icons for modules allows developers to relate them to your application in the Manage Dependencies window.
 
 Module icons should be 1024 x 1024 px.
 
@@ -292,7 +295,7 @@ The size of block icons (.ico format) should be 32 x 32 px.
 
 Setting image icons for actions helps to easily identify which component an action in a flow belongs to.
 
-![](images/The-Complete-Guide-to-Creating-Components_15.png?width=200)
+![](images/The-Complete-Guide-to-Creating-Components_15.png)
 
 #### Client and Server Action icons
 
@@ -316,11 +319,11 @@ If you have logic-related code in your component that's unclear, then **add note
 
 Have a look at this example with a JavaScript node:
 
-![](images/The-Complete-Guide-to-Creating-Components_23.png?width=700)
+![](images/The-Complete-Guide-to-Creating-Components_23.png)
 
 Because people think differently, use comments to explain complex code and to summarize it. Consider how useful this is for a developer with limited knowledge of JavaScript, who wants to understand the feature behind a JavaScript node.
 
-![](images/The-Complete-Guide-to-Creating-Components_24.png?width=500)
+![](images/The-Complete-Guide-to-Creating-Components_24.png)
 
 ## Sharing a component
 

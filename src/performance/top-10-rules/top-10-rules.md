@@ -5,6 +5,7 @@ guid: 5ec53f32-ba14-4732-bbdf-44b8588c5fd2
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Performance Top 10 Rules

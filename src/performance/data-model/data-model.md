@@ -5,6 +5,7 @@ guid: 22ab786d-afc3-4ac2-aa9b-d3ea7df7292b
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Performance Best Practices - Data model
@@ -41,7 +42,7 @@ Avoid text attributes with more than 2000 characters. Store binary and large tex
 
 ### Solution
 
-Reduce Text Attribute length to the minimum possible value. Avoid text attributes with lengths greater than 2000. Service Studio text attributes with length below 2000 are created as VarChar columns in SQL Server; otherwise they are created as Text columns.
+Reduce Text Attribute length to the minimum possible value. Avoid text attributes with lengths greater than 2000. Service Studio text attributes with length less than or equal to 2000 are created as VarChar columns in SQL Server; otherwise they are created as Text columns.
 
 Isolate Binary Data Attributes in separate Entities.
 

@@ -6,6 +6,7 @@ guid: dd01f53e-3854-4fd8-a125-e368e52457b4
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rmma8067fGUqhlUhXheHOZ/Security?node-id=147:324
 ---
 
 # Security

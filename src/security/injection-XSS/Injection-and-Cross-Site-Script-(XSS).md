@@ -4,6 +4,7 @@ guid: f2de9e37-9a7e-4f1d-951a-271954eaa4f2
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rmma8067fGUqhlUhXheHOZ/Security?node-id=147:325
 ---
 
 # Injection and Cross Site Script - XSS

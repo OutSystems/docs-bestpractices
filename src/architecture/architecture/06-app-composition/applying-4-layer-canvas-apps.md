@@ -4,6 +4,7 @@ guid: f3394f79-117e-4550-9556-16b76d0d9269
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=1343:643
 ---
 
 # Applying the Architecture Canvas to applications

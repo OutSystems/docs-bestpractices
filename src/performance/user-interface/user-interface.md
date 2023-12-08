@@ -5,6 +5,7 @@ guid: eda645ae-a7e2-4844-af65-4b45d8d69b18
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Performance Best Practices - User Interface

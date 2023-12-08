@@ -4,6 +4,7 @@ guid: 5b8189ce-c413-481c-ba0a-ef1598996630
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/9aIL4vSsuMMBfHMQDs8PLm/OutSystems%20Testing%20Guidelines?node-id=147:324
 ---
 
 # OutSystems testing guidelines

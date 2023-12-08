@@ -4,6 +4,7 @@ guid: 5ac20ed6-ef00-42d5-bea0-8af2925de734
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=1343:659
 ---
 
 # Designing Scalable Multi-Tenant Applications

@@ -5,6 +5,7 @@ guid: 791cbc71-42c8-4f9a-9dd2-0af2830baa08
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Performance Best Practices - Infrastructure
@@ -43,7 +44,7 @@ The Frontend Server has large kernel CPU usage and slow overall performance.
 
 ### Importance
 
-Frequent recycling of worker process(es) imply that applications are being unloaded from memory, forcing a runtime recompilation of the ```ASP.NET``` application, and a reload of its assemblies and cache. This causes a slow performance scenario.
+Frequent recycling of worker process(es) imply that applications are being unloaded from memory, forcing a runtime recompilation of the `ASP.NET` application, and a reload of its assemblies and cache. This causes a slow performance scenario.
 
 ### Remarks
 

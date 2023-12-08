@@ -6,6 +6,7 @@ guid: 94c591a5-e7a6-4015-af21-ad87c1012fc7
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=1343:630
 ---
 # Integration Patterns for Core Services Abstraction
 
@@ -61,7 +62,7 @@ When fetching data from an external system of records we can classify two types 
 
 Before explaining the integration patterns, use the following decision tree to help you select the patterns, according to your data needs. For your application, pick all the patterns collected in your selected path.
 
-![Decision tree to select integration patterns](images/decision-tree-integration-patterns.jpg?width=800)
+![Decision tree to select integration patterns](images/decision-tree-integration-patterns.png)
 
 <div class="info" markdown="1">
 

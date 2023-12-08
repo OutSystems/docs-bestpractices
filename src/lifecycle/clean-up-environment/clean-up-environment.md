@@ -5,6 +5,7 @@ guid: c2af5ea2-2154-40c4-9756-34783923865c
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jGLm9nVlJMS9yYNz7I7DoG/Lifecycle?type=design&node-id=443%3A239&mode=design&t=SyFgYReavcdsILfu-1
 ---
 # Best practices for a tidy and clean environment
 

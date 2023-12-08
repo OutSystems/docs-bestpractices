@@ -5,6 +5,7 @@ guid: 878d7f53-12a8-4101-a5bd-884e389b8025
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/vqcqBzIzCkJa5I0Q7Cud0a/Development?node-id=342:294
 ---
 
 # Customizing OutSystems Platform Pages for Unhandled Errors

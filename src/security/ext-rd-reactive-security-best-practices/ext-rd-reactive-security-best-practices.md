@@ -6,6 +6,7 @@ guid: 0fbfbedf-163b-4765-9dbf-735fb3c0c074
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rmma8067fGUqhlUhXheHOZ/Security?node-id=542:242
 ---
 
 # Reactive web security best practices

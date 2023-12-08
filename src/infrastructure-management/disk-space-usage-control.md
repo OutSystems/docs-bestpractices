@@ -4,6 +4,7 @@ guid: 787114b3-a4af-452a-8acf-2644624e8cbe
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Guide to disk space usage and control on OutSystems Platform servers

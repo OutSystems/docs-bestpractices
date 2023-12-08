@@ -5,6 +5,7 @@ guid: eeb1ecc6-8b4e-4c29-8f20-9c811cb1a65b
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Building mobile apps with multiple independent teams
@@ -33,7 +34,7 @@ Having to deal with all this while having different teams developing, it's huge.
 
 Besides this section we recommend checking the following resources:
 
-* [Mobile Tech Talks](https://www.outsystems.com/learn/courses/109/mobile/)
+* [Mobile Tech Talks](https://learn.outsystems.com/training/journeys/odc-2018-mobile-551)
 
 * [Mobile Architecture Tech Talks](https://www.outsystems.com/learn/lesson/1702/mobile-architecture)
 

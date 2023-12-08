@@ -5,6 +5,7 @@ guid: c0065df4-adb5-47d3-9f2f-e8da275b1aed
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jGLm9nVlJMS9yYNz7I7DoG/Lifecycle?node-id=147:325
 ---
 
 # Managing the Application Lifecycle of Your Portfolio

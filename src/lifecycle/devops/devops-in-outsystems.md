@@ -4,6 +4,7 @@ guid: 17b6007b-d151-40bd-83b3-3e16ec524880
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/jGLm9nVlJMS9yYNz7I7DoG/Lifecycle?node-id=943:444
 ---
 
 # DevOps and ALM in OutSystems

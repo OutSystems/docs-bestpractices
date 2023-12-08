@@ -4,6 +4,7 @@ guid: 33518ed5-11df-42fe-8cba-daa3622ea514
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Automated Testing Tools
@@ -108,7 +109,7 @@ Additionally, Test Framework acts as a factory quality monitor by providing a da
 
 JMeter may be used for load testing. Since OutSystems applications are standard web applications, any strategy or tool currently used to test traditional web apps can apply. OutSystems recommends the following webinars explaining how to implement simple load testing scenarios using the open-source tool JMeter, for both web and mobile applications (server-side only):
 
-* [How to set up a load test in 5 minutes](https://www.outsystems.com/learn/courses/36/webinar-how-to-set-up-a-load-test-in-5-minutes/)
+* [How to set up a load test in 5 minutes](https://learn.outsystems.com/training/journeys/tester-654/how-to-set-up-a-load-test-in-5-minutes/o11/2467)
 * [Load testing applications expert talk](https://www.outsystems.com/training/courses/161/load-testing-applications-expert-talk/)
 
 ### AppFeedback 

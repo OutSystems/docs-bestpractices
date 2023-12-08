@@ -5,6 +5,7 @@ guid: 493eee88-0bdd-40ee-b40e-011b1cf6c3c0
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=147:361
 ---
 
 # Development best practices

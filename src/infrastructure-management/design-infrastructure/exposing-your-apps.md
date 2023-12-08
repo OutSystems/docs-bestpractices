@@ -5,6 +5,7 @@ guid: 3a108c75-4daf-4605-ac95-0f9815fae5ea
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Exposing your applications

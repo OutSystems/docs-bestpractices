@@ -4,6 +4,7 @@ guid: f71daee2-c2a5-4e58-ace9-6501bb9caa2e
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Designing the Architecture of Your OutSystems Applications

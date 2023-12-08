@@ -4,6 +4,7 @@ guid: 48d54fc2-feb6-4aeb-ad2a-d40b306757f5
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/s4ggSCmhDxaNG5P4tzUjbh/Infrastructure-Management?type=design&node-id=102%3A230&mode=design&t=NaxT2dSeMuD9zH0S-1
 ---
 
 # Infrastructure design examples

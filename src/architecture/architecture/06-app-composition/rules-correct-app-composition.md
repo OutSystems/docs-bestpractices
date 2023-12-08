@@ -4,6 +4,7 @@ guid: f9b84cfe-1aaf-4050-9b45-1b98eafd098a
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=1343:650
 ---
 
 # The 4 Rules for Correct Application Composition

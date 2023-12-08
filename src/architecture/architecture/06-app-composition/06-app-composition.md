@@ -5,6 +5,7 @@ guid: dd85b743-88c8-4cba-8214-de594cffeefa
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Application composition

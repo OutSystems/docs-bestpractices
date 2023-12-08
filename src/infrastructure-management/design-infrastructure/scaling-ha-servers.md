@@ -4,6 +4,7 @@ guid: f28a3223-0889-43fc-8d3c-730053d89561
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/s4ggSCmhDxaNG5P4tzUjbh/Infrastructure-Management?type=design&node-id=101%3A242&mode=design&t=NaxT2dSeMuD9zH0S-1
 ---
 
 # Scaling and high availability for OutSystems Platform servers

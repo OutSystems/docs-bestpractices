@@ -4,6 +4,7 @@ guid: c337cff4-b4f5-454f-85d5-57fd31f67d2c
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # SQL Server best practices

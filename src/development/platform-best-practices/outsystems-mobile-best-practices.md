@@ -4,6 +4,7 @@ guid: 35d524c9-ab83-4f6e-b3fe-b2a89b2ff7af
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/vqcqBzIzCkJa5I0Q7Cud0a/Development?node-id=147:325
 ---
 
 # OutSystems Mobile Best Practices
