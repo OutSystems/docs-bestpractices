@@ -30,29 +30,26 @@ As a basis for discussion in this article, the delivery pipeline figured below i
 
 This delivery pipeline comprises the following:
 
-
 * **Development (DEV)**: primary development environment
 * **Regression (REG)**: regression test environment
 * **Acceptance (ACC)**: environment for manual exploratory testing. Promotion to the two environments in the automatic deployment lane requires manual approval.
-* **Pre-Production (PRE)**: a dry-run environment to rehearse deployment in a production-like environment. If no problems are detected the release candidate is automatically promoted. 
+* **Pre-Production (PRE)**: a dry-run environment to rehearse deployment in a production-like environment. If no problems are detected the release candidate is automatically promoted.
 * **Production (PRD)**: Ready for release
 
 If your enterprise is in the early stages of adapting DevOps to ramp-up CI/CD, bear in mind that the solution offered here is illustrative only. While similar workflows have been implemented successfully throughout the industry, matching your particular needs may require minor tweaking—or major modifications.
 
-On the other hand, your enterprise may already be well along the CI/CD journey, and you are now ready to check out options in order to up your game. However, your DevOps team probably has a toolset already in place that has served them well up till now and which, naturally, they would be loath to change. So, in this case, you would need a very good reason to adopt OutSystems for your software factory. 
+On the other hand, your enterprise may already be well along the CI/CD journey, and you are now ready to check out options in order to up your game. However, your DevOps team probably has a toolset already in place that has served them well up till now and which, naturally, they would be loath to change. So, in this case, you would need a very good reason to adopt OutSystems for your software factory.
 
 Here are three:
 
-
-* The OutSystems platform eliminates the need for many of the tests required by traditional software development technologies. For example, [Service Studio](https://success.outsystems.com/Documentation/11/Getting_started/Service_Studio_Overview), the OutSystems visual development environment, prevents the introduction of faulty logic and broken dependencies into code. 
+* The OutSystems platform eliminates the need for many of the tests required by traditional software development technologies. For example, [Service Studio](https://success.outsystems.com/Documentation/11/Getting_started/Service_Studio_Overview), the OutSystems visual development environment, prevents the introduction of faulty logic and broken dependencies into code.
 * [LifeTime](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle), the OutSystems infrastructure environment console that manages deployment, automatically assesses the impact of moving an application to a target environment. It checks software package integrity and validates the overall quality of the application before promoting a release candidate to the next level.
-* OutSystems generates standard, platform-agnostic applications, so any testing framework, automation platform, or orchestration server—from any vendor—can be integrated into your OutSystems CI/CD pipeline using easily accessed [APIs](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs). 
+* OutSystems generates standard, platform-agnostic applications, so any testing framework, automation platform, or orchestration server—from any vendor—can be integrated into your OutSystems CI/CD pipeline using easily accessed [APIs](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs).
 
 The workflow described in this article leans heavily on OutSystems core functionality and OutSystems-supported tools—along with a pair of free, open-source, third-party tools: [Selenium](https://www.selenium.dev/), a platform for E2E testing with over 50,000 users, and [Jenkins](https://www.jenkins.io/), an orchestration server with over 150,000 active installations.
 
 The toolset in this example only touches on the wealth of available tools that have been [cataloged in exuberant detail](https://landscape.cncf.io/?fullscreen=yes) by the [Cloud Native Computing Foundation](https://www.cncf.io/). The
 [appendix](#appendix) to this article includes an extensive, though not exhaustive, list of testing and automation solutions that have been successfully integrated into OutSystems factories.
-
 
 ## Continuous integration
 
@@ -86,27 +83,22 @@ The test pyramid comprises:
 * A smaller number of [integration tests](https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Testing_Guidelines/Integration%2F%2FAPI_Testing) to validate integration with external systems, such as exposed APIs
 * A select few [E2E tests](https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Testing_Guidelines/Web_UI_Testing) to validate complete functionality from an end-user or system perspective
 
-
 ### Component tests
 
 [Component tests](https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Testing_Guidelines/Component_Testing), or unit tests, validate the behavior of single units of code, such as action elements that implement business logic. Component tests are easy to write and, because they are limited in scope, they are ideal candidates for automation.
 
-Behavior-driven development (BDD) lends itself to component testing—and it can also be adapted for integration tests and even some E2E tests. 
+Behavior-driven development (BDD) lends itself to component testing—and it can also be adapted for integration tests and even some E2E tests.
 
-A typical BDD test script uses the following syntax: 
-
-
+A typical BDD test script uses the following syntax:
 
 * **Scenario**: The specific scenario that illustrates a business rule
 * **Given**: The initial scenario context—the required pre-conditions to conduct the action/event being tested
-* **When**: A specific action/event 
+* **When**: A specific action/event
 * **Then**: The expected outcome of conducting the action/event in the system
 
 Because BDD tests are based on a human-readable language,[ such as Gherkin](https://www.guru99.com/gherkin-test-cucumber.html), all participants in a software project can collaborate on defining a common understanding of how the software should behave.
 
 Two OutSystems components for creating BDD tests are available for free download from the Forge:
-
-
 
 * [BDDFramework](https://www.outsystems.com/forge/component-overview/1201/bddframework) (for server-side tests)
 * [BDDFramework Client Side](https://www.outsystems.com/forge/component-overview/10917/bddframework-client-side) (for client-side tests) 
@@ -123,8 +115,7 @@ See [The Complete Guide To BDD Testing In OutSystems](https://www.outsystems.com
 
 [Integration tests](https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Testing_Guidelines/Integration%2F%2FAPI_Testing), often called API tests, validate integration with external systems, such as a middleware layer or applications that expose APIs to external parties.  
 
-For this example, the BDD test framework, described above, is also used to write integration tests. 
-
+For this example, the BDD test framework, described above, is also used to write integration tests.
 
 ### E2E tests
 
@@ -139,7 +130,7 @@ Continuous delivery is the principle of building applications that can be safely
 
 Among its many roles in the application lifecycle, [LifeTime](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle) handles deployment processes across all environments, analyzing the exact impact an application will have in production. When a suite of tests is in place and a release candidate is ready for promotion, all that is missing is a way to automate the journey.
 
-The [OutSystems-pipeline](https://github.com/OutSystems/outsystems-pipeline), an open-source accelerator developed and maintained by OutSystems, is a Python package[ distributed on PyPI.org](https://pypi.org/project/outsystems-pipeline/). It allows you to extend the built-in capabilities of **LifeTime** and [LifeTime APIs](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_API_v2/LifeTime_API_Examples?_gl=1%2A143xumj%2A_ga%2AMjA1MDQ1MDcwLjE2MDE1MzExNjY.%2A_ga_ZD4DTMHWR2%2AMTYyNTU2OTU0MC41ODYuMS4xNjI1NTY5NTc1LjI1) to trigger automatic testing and deployment in complex application portfolios, and can be used to create an OutSystems CI/CD pipeline using any DevOps automation tool that can read Python scripts. 
+The [OutSystems-pipeline](https://github.com/OutSystems/outsystems-pipeline), an open-source accelerator developed and maintained by OutSystems, is a Python package[ distributed on PyPI.org](https://pypi.org/project/outsystems-pipeline/). It allows you to extend the built-in capabilities of **LifeTime** and [LifeTime APIs](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_API_v2/LifeTime_API_Examples?_gl=1%2A143xumj%2A_ga%2AMjA1MDQ1MDcwLjE2MDE1MzExNjY.%2A_ga_ZD4DTMHWR2%2AMTYyNTU2OTU0MC41ODYuMS4xNjI1NTY5NTc1LjI1) to trigger automatic testing and deployment in complex application portfolios, and can be used to create an OutSystems CI/CD pipeline using any DevOps automation tool that can read Python scripts.
 
 The OutSystems-pipeline project comes with example scripts and pipeline templates, including detailed instructions for building an Outsystems pipeline with [Jenkins](https://github.com/OutSystems/outsystems-pipeline/wiki/Building-an-OutSystems-pipeline-with-Jenkins)<span style="text-decoration:underline;"> </span>or [Azure DevOps](https://github.com/OutSystems/outsystems-pipeline/wiki/Building-an-OutSystems-pipeline-with-Azure-DevOps).
 
@@ -149,21 +140,17 @@ The OutSystems Professional Services team provides hands-on services to help cus
 
 </div>
 
-
 ## The OutSystems delivery pipeline
 
 When developers have completed work on a release candidate, it is ready to begin the journey through the pipeline to production.
 
 In the examples below, Jenkins is used at the pipeline’s orchestration server.
 
-
 ### Development
 
-**Development (DEV)** is the primary environment for developing OutSystems applications and BDDFramework apps to test component functionality. 
-
+**Development (DEV)** is the primary environment for developing OutSystems applications and BDDFramework apps to test component functionality.
 
 ![continuous deployment dev envioronment](images/continuous-deployment-dev.png "continuous deployment dev environment")
-
 
 Typically, the **DEV** environment uses mock data, so that developers can publish changes frequently and verify that everything functions correctly and has no negative impact on existing code.
 
@@ -172,10 +159,9 @@ Typically, the **DEV** environment uses mock data, so that developers can publis
 Developers may use [Feature Toggle](https://www.outsystems.com/forge/component-overview/9664/feature-toggle-management), a component available for free download from the Forge, to hide unfinished code or exclude deployment of a feature that is not intended for the current release.
 </div>
 
-Once the development of a new feature or change request is complete, the app is ready to be promoted from **Development** to **Regression**. In the **App** screen in **LifeTime**, as seen below, the developer creates a release candidate by clicking **[Tag Version](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Deploy_Applications/Tag_a_Version)**. 
+Once the development of a new feature or change request is complete, the app is ready to be promoted from **Development** to **Regression**. In the **App** screen in **LifeTime**, as seen below, the developer creates a release candidate by clicking **[Tag Version](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Deploy_Applications/Tag_a_Version)**.
 
 ![select app for tagging](images/select-app-for-tagging.png "select app for tagging")
-
 
 <div class="info" markdown="1">
 
@@ -225,70 +211,49 @@ The **Regression (REG)** environment is where BDD regression tests are performed
 
 Other tests, such a E2E tests, code validation checks, static code analysis tools, dynamic code analysis tools, and others, can also be added to the automated testing in the regression environment as long as it doesn’t compromise the speed of the feedback loop.
 
-
-
 ![continuous deployment reg environment](images/continuous-deployment-reg.png "continuous deployment reg environment")
-
 
 Regression tests automatically begin to run when Jenkins is informed that the app has been successfully deployed.
 
-
 ![jenkins stage 2](images/jenkins-stage-2.png "jenkins stage 2")
-
 
 If all regression tests are successful the release candidate is automatically promoted to the **Acceptance (ACC)** environment.
 
 However, if one or more of the regression tests fail, the problem must be fixed immediately. The pipeline is blocked, and nothing else can be promoted, until the error is fixed.
 
-
-
 ![regression error](images/regression-error.png "regression error")
 
-### Acceptance 
+### Acceptance
 
 If the regression suite is executed successfully, the release candidate is automatically deployed to the **Acceptance (ACC)** environment.
 
-
-![continuous deployment acc enviornment](images/continuous-deployment-quality.png "continuous deployment acc enviornment")
-
+![continuous deployment acc environment](images/continuous-deployment-quality.png "continuous deployment acc environment")
 
 In contrast to previous and subsequent environments, promotion of a release candidate from **Acceptance** requires the approval of an authorized user, often a business representative. This allows for smoke tests, sanity tests of newly developed features, exploratory testing, lengthy automated tests, complex UI tests, load and security testing, and others—depending on the needs and requirements of the enterprise.
 
 To run these manual and exploratory tests, go to **LifeTime** and select **Open in browser** from the dropdown menu in the **Acceptance** environment.
 
-
-
 ![acceptance sanity checks](images/acceptance-sanity-checks.png "acceptance sanity checks")
-
 
 When the release candidate has been approved, the authorized representative clicks **Proceed** in the Jenkins pipeline window.
 
-
-![enkins acc](images/jenkins-acc.png "jenkins acc")
-
-
+![Jenkins acc](images/jenkins-acc.png "jenkins acc")
 
 ### Pre-Production
 
 **Pre-production (PRE)** is considered a dry-run deployment, using data that closely matches the production environment and real-world data. It is also aligned with PRD in terms of code. This allows for rehearsing deployments in a production-like environment, with the same version of dependencies as there are in **Production**.
 
-
 ![continuous deployment pre environment](images/continuous-deployment-pre.png "continuous deployment pre environment")
 
-
 If the deployment is successful the pipeline automatically promotes the app to **Production (PRD)**.
-
 
 ### Production
 
 And there you have it. The release candidate has gone through the deployment pipeline. The enterprise can go forward with high confidence that users will have an error-free experience with the newly released app.
 
-
 ![continuous deployment prd environment](images/continuous-deployment-prod.png "continuous deployment prd environment")
 
-
 As mentioned above, a CI/CD journey can be made with more or fewer environments, a different deployment orchestration platform running another suite of tests with additional manual promotions or with no human intervention at all. The best choice is the one that works.
-
 
 ## Appendix: other testing and automation tools {#appendix}
 
@@ -296,11 +261,9 @@ The testing and automation platforms used in this example are easily available a
 
 <div class="info" markdown="1">
 
-The[ OutSystems Forge](http://www.outsystems.com/Forge/) includes accelerators to integrate many of these tools into your OutSystems installation. 
+The[ OutSystems Forge](http://www.outsystems.com/Forge/) includes accelerators to integrate many of these tools into your OutSystems installation.
 
 </div>
-
-
 
 * [Ghost Inspector](https://www.outsystems.com/forge/component-overview/1316/ghost-inspector) is an automated website testing and monitoring service that checks for problems with your website or application. It carries out operations in a browser, the same way a user would, to ensure that everything is working properly.
 * [Applitools](https://applitools.com/) is designed to test and monitor critical functional and visual aspects of any web, mobile, and native app in a fully automated way.
