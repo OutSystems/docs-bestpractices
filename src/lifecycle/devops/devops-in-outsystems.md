@@ -165,7 +165,7 @@ When compared to traditional development technologies, the OutSystems platform r
 
 While the specifics vary, there is a general consensus about testing. Especially with agile development practices, DevOps culture, and continuous integration and continuous deployment, a strategy to integrate automated tests is vital so teams can move fast—and move with confidence.
 
-There is no way to automate everything, and such an effort would prove self-defeating. Deciding which tests to automate requires a cost-benefit analysis: to make sure that the results will justify the effort of writing and maintaining automated test scripts. The [OutSystems Testing Guidelines ](../../automated-testing/testing-guidelines.md)give a detailed overview, and a workplan, for setting up automatic testing.
+There is no way to automate everything, and such an effort would prove self-defeating. Deciding which tests to automate requires a cost-benefit analysis: to make sure that the results will justify the effort of writing and maintaining automated test scripts. The [OutSystems Testing Guidelines ](https://www.outsystems.com/tk/redirect?g=5b8189ce-c413-481c-ba0a-ef1598996630)give a detailed overview, and a workplan, for setting up automatic testing.
 
 A key concept for successful testing is to write testable applications: distributing functionality into small, testable pieces. In OutSystems, this means adopting a multi-layer framework architecture that promotes the correct abstraction of reusable services and components. [AI Mentor Studio](../tech-debt/tech-debt.md) provides an integrated, bird’s eye view of an entire portfolio of applications and the interdependencies between modules in the developers’ environment, classifying every architecture module into its correct class.
 
@@ -173,19 +173,19 @@ The [test pyramid](https://martinfowler.com/articles/practical-test-pyramid.html
 
 ![test pyramid](images/guidelines-testing-pyramid-diag.png " test pyramid")
 
-The tests described below are easily available and field-tested, but they do not represent a comprehensive list by any means. OutSystems generates standard applications, so any testing framework or vendor can be used, according to customer needs.
+The tests described below are easily available and field-tested, but they don't represent a comprehensive list by any means. OutSystems generates standard applications, so any testing framework or vendor can be used, according to customer needs.
 
 
 ### Component tests
 
-[Component tests](../../automated-testing/component-testing.md) validate the behavior of single units of code. These tests correspond to unit tests in traditional high-code technologies. In OutSystems, these map to action elements that implement business logic.
+[Component tests](https://www.outsystems.com/tk/redirect?g=0f836bfe-225b-41b0-851e-91b04544362c) validate the behavior of single units of code. These tests correspond to unit tests in traditional high-code technologies. In OutSystems, these map to action elements that implement business logic.
 
 
 #### BDD test framework
 
-Many enterprises, especially those with CI/CD pipelines, use some form of behavior-driven development, or BDD, in order to frequently analyze various test results. Anyone building with OutSystems can take advantage of BDD frameworks, where all participants in a software project, both technical and non-technical—developers and business analysts—can collaborate to define a common understanding of how the software should behave. 
+Many enterprises, especially those with CI/CD pipelines, use some form of behavior-driven development, or BDD, to frequently analyze various test results. Anyone building with OutSystems can take advantage of BDD frameworks, where all participants in a software project, both technical and non-technical—developers and business analysts—can collaborate to define a common understanding of how the software should behave. 
 
-To implement BDD testing, Outsystems provides two components from the Forge to create separate apps for test scenarios, [BDDFramework](https://www.outsystems.com/forge/component-overview/1201/bddframework) for server-side tests, and [BDDFramework Client Side](https://www.outsystems.com/forge/component-overview/10917/bddframework-client-side) for client-side tests. 
+To implement BDD testing, OutSystems provides two components from the Forge to create separate apps for test scenarios, [BDDFramework](https://www.outsystems.com/forge/component-overview/1201/bddframework) for server-side tests, and [BDDFramework Client Side](https://www.outsystems.com/forge/component-overview/10917/bddframework-client-side) for client-side tests. 
 
 Each test is built using the following syntax: 
 
@@ -206,7 +206,7 @@ See the [Complete Guide To BDD Testing In OutSystems](https://www.outsystems.com
 
 ### Integration tests
 
-[Integration tests](../../automated-testing/integration-api-testing.md/#api-integration-tests), often called API tests, validate integration with external systems, such as a middleware layer, or a direct integration with any other independent system, such as applications that expose APIs to external parties.  
+[Integration tests](https://success.outsystems.com/documentation/11/testing_your_application/outsystems_testing_guidelines/integration/api_testing/#api-integration-tests), often called API tests, validate integration with external systems, such as a middleware layer, or a direct integration with any other independent system, such as applications that expose APIs to external parties.  
 
 
 #### BDD test framework
@@ -221,7 +221,7 @@ See the [Complete Guide To BDD Testing In OutSystems](https://www.outsystems.com
 
 ### E2E tests
 
-[End-to-End (E2E) tests](../../automated-testing/web-ui-testing.md), also called system tests, validate complete functionality from an end-user or system perspective. End-to-end tests are typically executed through a web or mobile user interface, though not all E2E tests are UI tests. Because of the complexity of developing a testing script and the high maintenance required, typically such tests are limited to critical use cases, particularly ones with happy paths.
+[End-to-End (E2E) tests](https://www.outsystems.com/tk/redirect?g=7b8f66bb-5f78-4ff7-8248-85d4a25b6589), also called system tests, validate complete functionality from an end-user or system perspective. End-to-end tests are typically executed through a web or mobile user interface, though not all E2E tests are UI tests. Because of the complexity of developing a testing script and the high maintenance required, typically such tests are limited to critical use cases, particularly ones with happy paths.
 
 
 #### BDD test framework
