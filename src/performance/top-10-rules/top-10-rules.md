@@ -46,7 +46,7 @@ Screen preparation processing affects the user experience and therefore should b
 
 ## Avoid using preparation data in screen actions
 
-Don't use preparation data in screen actions because it increases the network traffic between the server and the browser. This in turn increases network usage and degrade server request processing performance.
+Don't use preparation data in screen actions because it increases the network traffic between the server and the browser. This in turn increases network usage and degrades server request processing performance. This applies only to traditional web apps. 
 
 ## Minimize the number of fields fetched from the database
 
