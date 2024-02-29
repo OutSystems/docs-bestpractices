@@ -39,7 +39,7 @@ This article aggregates a collection of best practices and conventions that you 
 
 ### Reusability
 
-* Reuse logic with User Actions.
+* Reuse logic with Server Actions.
 * Reuse screen parts with Blocks.
 * Encapsulate data formatting with User Functions.
 * Use RefreshQuery to rerun a Query.
@@ -106,7 +106,7 @@ Also:
 * Avoid circular references between modules.
 * Clearly define the responsibilities of each module.
 * Remove unused references.
-* Encapsulate business logic in User Actions.
+* Encapsulate business logic in Server Actions.
 * Create user story driven interfaces.
 * Don't isolate the data model in one module. Modules should be functional units instead of architectural units.
 * Use asynchronous logic when possible.
@@ -176,7 +176,7 @@ Also:
 * Avoid long-running Timers and batch jobs.
 * Simplify screen Preparations.
 * Place as little information as possible in Session Variables.
-* Avoid using isolated Aggregates in User Actions.
+* Avoid using isolated Aggregates in Server Actions.
 * Avoid using queries inside If branches in Preparation.
 * Avoid chained Web Service calls. Return as much as possible in a single call.
 
