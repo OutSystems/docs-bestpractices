@@ -43,4 +43,3 @@ The following 3 rules follow the same baseline: abstract your pattern, think in 
     * They should be clean and ready to use for every project, regardless of the business.
 
     * Only aggregate the functional logic if needed.
-
