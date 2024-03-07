@@ -23,7 +23,6 @@ figma:
 * Define your own rules for scalability.
 * Create a platform to centralize all information (aka Style Guide aka Docs).
 
-
 ## The 3 Sacred Don’ts While Building a Scalable Pattern
 
 The following 3 rules follow the same baseline: abstract your pattern, think in structure only,
