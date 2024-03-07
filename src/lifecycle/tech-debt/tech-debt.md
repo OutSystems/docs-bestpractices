@@ -39,11 +39,11 @@ When a developer makes changes to a model, the TrueChange™ engine provides imm
 
 In the image below TrueChange has identified two errors, noted three unused arguments and given a warning about a security concern. Clicking links in the TrueChange tab brings the developer to the issue to be corrected. **1-Click Publish** remains disabled until all errors have been resolved.
 
-![true-change-error-window](images/true-change-window.png)
+![Screenshot of the OutSystems TrueChange window highlighting errors and warnings in the development environment.](images/true-change-window.png "OutSystems TrueChange Window")
 
 Developers may also [debug applications](https://success.outsystems.com/Documentation/11/Developing_an_Application/Troubleshooting_Applications/Debugging_Applications) by setting [breakpoints](https://success.outsystems.com/Documentation/11/Developing_an_Application/Troubleshooting_Applications/Debugging_Applications/Breakpoints) at specific points in a module and then running the logic step-by-step to find any issues in logic design.
 
-![debugger window](images/debugger-intro-ss.png)
+![Screenshot of the OutSystems debugger interface showing the debugging process in the Service Studio.](images/debugger-intro-ss.png "OutSystems Debugger Interface")
 
 The **Debugger** tab shows app information, including variable and runtime values, along with current debugging context (current thread, event name, UI flow, screen and action). The developer can use the **Debugger Toolbar** and the menu to track down and correct the problems.
 
@@ -53,7 +53,7 @@ OutSystems uses a versioning system that labels modules with an incremental vers
 
 [Compare and Merge](https://success.outsystems.com/Documentation/11/Developing_an_Application/Merge_the_Work) first tries to merge new code with the changes that other developers published in the meantime. If automatic integration isn´t possible, the developer can review the results in the **Compare and Merge** window, as seen in the image below. Drilling down into conflicts, shown in red, displays the changes between the versions. Once the conflicts have been reconciled and all the merges approved, the app can then be published.
 
-![compare and merge](images/conflicts-detected.png)
+![Screenshot of the OutSystems Compare and Merge window displaying detected conflicts during code integration.](images/conflicts-detected.png "OutSystems Compare and Merge Conflicts")
 
 ## AI Mentor Studio
 
@@ -89,7 +89,7 @@ While developing a conceptual design for application architecture is beyond the 
 The architecture canvas, as used by the OutSystems [AI Mentor Studio](https://success.outsystems.com/Documentation/Architecture_Dashboard/Introduction_to_Architecture_Dashboard), is a multi-layer framework that provides a systematic approach to speed up architecture design. It promotes the correct abstraction of reusable services and components, maximizes independent life cycles among all the parts of your architecture by setting the correct mutual dependencies, and minimizes the impact of changes, making it much easier to maintain and evolve your apps.
 
 
-![architecture-canvas](images/architecture-canvas.png)
+![Illustration of the OutSystems architecture canvas showing the multi-layer framework for application design.](images/architecture-canvas.png "OutSystems Architecture Canvas")
 
 
 All modules are sorted into layers as follows:
@@ -118,7 +118,7 @@ All modules are sorted into layers as follows:
 The figure below illustrates how an OutSystems app with a well-formed architecture integrates with a typical enterprise IT ecosystem.
 
 
-![outsystems-architecture-integration-to-enterprise](images/outsystems-architecture-integration-to-enterprise.png)
+![Diagram illustrating how an OutSystems application with a well-formed architecture integrates with a typical enterprise IT ecosystem.](images/outsystems-architecture-integration-to-enterprise.png "OutSystems Architecture Integration with Enterprise")
 
 
 ### Architecture canvas validation
@@ -138,7 +138,7 @@ AI Mentor Studio uses the following validation rules to evaluate the architectur
 
  
 
-![architecture-validation-rules](images/architecture-validation-rules.png)
+![Diagram showing the validation rules for OutSystems architecture design, including no upward, side, or circular references.](images/architecture-validation-rules.png "OutSystems Architecture Validation Rules")
 
 
 For an in-depth discussion of these rules for architecture design see the Architecture design [appendix](#architecture-design-for-drchitecture-dashboard) below.
@@ -154,17 +154,17 @@ The AI Mentor Studio is designed for:
 AI Mentor Studio provides an integrated, bird’s eye view of technical debt across an entire portfolio of applications and the interdependencies between modules in the developers’ environment. The OutSystems AI engine classifies every architecture module into its correct class, automating architecture discovery. A heat map visualization of mild-to-severe problem areas helps IT leaders identify problem areas quickly and to prioritize them accordingly.
 
 
-![architecture-dashboard](images/use-overview-infra-ams.png)
+![Screenshot of the AI Mentor Studio overview interface displaying a heatmap visualization of technical debt across applications.](images/use-overview-infra-ams.png "AI Mentor Studio Overview")
 
 
 Clicking an app shows its dependencies and technical debt with other applications.
 
-![app-dependencies](images/use-select-app-ams.png)
+![Screenshot of the AI Mentor Studio interface showing the selection of an app to view its dependencies and technical debt.](images/use-select-app-ams.png "Selecting an App in AI Mentor Studio")
 
 
 Double-clicking one of the modules allows you to drill down into any identified issues, which are grouped by **Architecture**, **Performance**, **Maintainability** and **Security**, so you can quickly understand what's going on in that particular area.
 
-![outsystems-architecture-integration-to-enterprise](images/use-report-fix-ams.png)
+![Screenshot of the AI Mentor Studio report interface detailing issues and providing recommendations for fixes.](images/use-report-fix-ams.png "AI Mentor Studio Report and Fix Recommendations")
 
 AI Mentor Studio explains the impact of this finding and gives a recommendation about how to fix it.  
 
@@ -183,7 +183,7 @@ The following validation rules are used for correct architecture design of all o
 
 An upward reference tends to create a cluster where any two modules, directly or indirectly, have a circular dependency.
 
-![no-upward-references](images/no-upward-references.png)
+![Diagram illustrating the 'No Upward References' rule in OutSystems architecture design.](images/no-upward-references.png "No Upward References Rule")
 
 
 In the example above, foundation module X — by definition non-functional — shouldn't depend on functional or end-user modules.
@@ -195,7 +195,7 @@ Another unexpected effect of this upward reference from foundation module X is t
 
 End-user modules shouldn't provide reusable services, as seen in the figure below. The side reference between EU1 and EU2 means that their lifecycles are linked and they can only be released at the same time.
 
-![no-side-references](images/no-side-references.png)
+![Diagram illustrating the 'No Side References' rule in OutSystems architecture design.](images/no-side-references.png "No Side References Rule")
 
 Maintaining correct isolation between end-user modules give them independent lifecycles with a versioning pace set by their different sponsors or project teams.
 
@@ -203,7 +203,7 @@ Maintaining correct isolation between end-user modules give them independent lif
 
 A cycle is always undesirable, since it brings unexpected impacts and hard-to-manage code. A cycle between modules indicates that the concepts aren't correctly abstracted.
 
-![no-circular-references](images/no-circular-references.png)
+![Diagram illustrating the 'No Circular References' rule in OutSystems architecture design.](images/no-circular-references.png "No Circular References Rule")
 
 
 ### Application composition rules
@@ -215,12 +215,12 @@ So, in addition to an end-user application, which fits the common definition for
 
 The type of application is defined by the modules in the topmost row, as can be seen in the figure below, 
 
-![application-type](images/application-type.png)
+![Diagram showing different types of OutSystems applications, including end-user, core, and foundation applications.](images/application-type.png "OutSystems Application Types")
 
 
 Just as modules must be designed using the validation rules, so composing applications from these well-formed modules must be layered in the same way.
 
-![composition-rules](images/composition-rules.png)
+![Diagram depicting the application composition rules for OutSystems, emphasizing the layering and dependency rules.](images/composition-rules.png "OutSystems Application Composition Rules")
 
 * No upward references
 * No side references between end users
@@ -233,12 +233,12 @@ Just as modules must be designed using the validation rules, so composing applic
 
 The example below shows two end-user applications. Both the first and second project are well formed. However, the third project, which combines both of them together, has an unacceptable upward reference in its design.
 
-![no-upward-references-in-applications](images/no-upward-references-in-applications.png)
+![Diagram showing an example of upward references in OutSystems applications and how they should be avoided.](images/no-upward-references-in-applications.png "Avoiding Upward References in Applications")
 
 
 Because end-user applications shouldn't provide services to other applications, this validation error is corrected by creating a new core application that isolates the common service to which Application 1 and Application 2 connect, as seen in the figure below:
 
-![common-service-isolation](images/common-service-isolation.png)
+![Diagram illustrating the isolation of common services into a core application to avoid upward references.](images/common-service-isolation.png "Isolation of Common Services in OutSystems")
 
 
 #### Clarify ownership
@@ -248,7 +248,7 @@ Having more than one owner for an application results in complex deployment mana
 
 A solution, seen on the right side of the figure, splits the app so ownership is clearly defined.
 
-![clarify-ownership](images/clarify-ownership.png)
+![Diagram suggesting the splitting of applications to clarify ownership and simplify deployment management.](images/clarify-ownership.png "Clarifying Ownership of OutSystems Applications")
 
 #### Avoid mixing sponsors
 
@@ -256,7 +256,7 @@ For the same reason, avoid mixing sponsors. As an example, consider a portal tha
 
 The right side of the figure shows that creating independent applications per line of business — and a portal application with a fourth sponsor — allows each LOB to determine its own pace of delivery.
 
-![avoid-mixing-sponsors](images/avoid-mixing-sponsors.png)
+![Diagram illustrating the separation of applications by line of business to allow independent deployment cycles.](images/avoid-mixing-sponsors.png "Avoid Mixing Sponsors in OutSystems Applications")
 
 
 ## Summary

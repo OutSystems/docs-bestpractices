@@ -29,19 +29,19 @@ The following diagram represents a development portion of an OutSystems  factory
 
 Since predicted team growth was considered in advance, a dedicated **Deployment Controller** was set up and the development database was isolated on a dedicated SQL Server instance.
 
-![ ](images/infra-design-example1-diag.png)
+![Diagram of a non-productive OutSystems infrastructure with development and quality assurance environments, including a dedicated deployment controller and isolated databases.](images/infra-design-example1-diag.png "Non-productive Environments Infrastructure Diagram")
 
 ## Example 2: Production environment
 
 The following example depicts a .NET Production environment with 3 **Front-ends**. These machines are serving requests through a load balancer and on top of a SQL Server database cluster for high availability.
 
-![ ](images/infra-design-example2-diag.png)
+![Diagram of a .NET production environment for OutSystems with three front-ends, a load balancer, and a SQL Server database cluster for high availability.](images/infra-design-example2-diag.png "Production Environment Infrastructure Diagram")
 
 ## Example 3 - LifeTime environment
 
 This example shows a standard **LifeTime** setup.
 
-![ ](images/infra-design-example3-diag.png)
+![Diagram showing a standard LifeTime setup for OutSystems with a front-end server and a dedicated database server.](images/infra-design-example3-diag.png "LifeTime Environment Infrastructure Diagram")
 
 ## Example 4 - Production environment with zones
 
@@ -49,7 +49,7 @@ An OutSystems zone is a logical separation of applications across **Front-ends**
 
 This example shows an environment with isolated zones for public access, for partners via a secure VPN, and for internal users.
 
-![ ](images/infra-design-example4-diag.png)
+![Diagram of an OutSystems production environment with isolated zones for public access, partners via secure VPN, and internal users, including front-ends and load balancers.](images/infra-design-example4-diag.png "Production Environment with Zones Infrastructure Diagram")
 
 ## More information
 

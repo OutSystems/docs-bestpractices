@@ -28,7 +28,7 @@ An understanding of the existing server roles is key to design the OutSystems pl
 
 ***
 
-![ ](images/server-roles_0.png)
+![Illustration of the Front-end server role in OutSystems infrastructure, showing its functions and resource distribution.](images/server-roles_0.png "Front-end Server Role")
 
 **Front-end** role handles both application logic and delivery to end-user. It can be installed as a standalone server or sharing a server
 with one of the following roles:
@@ -48,7 +48,7 @@ The Front-end resource usage is distributed through the CPU, Memory and Network 
 
 ***
 
-![ ](images/server-roles_1.png)
+![Diagram of the Deployment Controller server role in OutSystems infrastructure, detailing its responsibilities and resource usage.](images/server-roles_1.png "Deployment Controller Server Role")
 
 The ***Deployment Controller*** handles the application compilation for deployment in Front-ends and license validation.
 Each of the following environments must have one server with this role:
@@ -72,7 +72,7 @@ When compiling application code, its resource usage depends on:
 
 ***
 
-![ ](images/server-roles_2.png)
+![Graphic representation of the Scheduler server role in OutSystems infrastructure, highlighting its purpose and CPU resource consumption.](images/server-roles_2.png "Scheduler Server Role")
 
 The **Scheduler** role provides asynchronous execution of background tasks called timers, BPT processes and outbound email to an
 SMTP server.

@@ -89,7 +89,7 @@ Mirror the data source modules in the **archive catalog** side, in a way simple 
 
 * Add Indexes based on your archiving search criteria.
 
-![](images/archive-1.png?width=600)
+![Diagram showing the main catalog with CS1 and CS2 entities and the archive catalog with CS1_Arch and CS2_Arch entities.](images/archive-1.png "Light Archiving Step 1: Main and Archive Catalog Structure")
 
 To minimize impacts, set the schemas on different tablespaces and discs ([Multiple Database Catalogs and Schemas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Multiple_Database_Catalogs_and_Schemas) feature is available for [on-premises installations](https://success.outsystems.com/Documentation/11/Setting_Up_OutSystems/Possible_setups_for_an_OutSystems_infrastructure#On-premises_infrastructure)).
 
@@ -107,7 +107,7 @@ This module (for example, “Archiving Engine”) implements all the archiving a
 
 You can use Site Properties for simple configuration, such as the archiving frequency and thresholds, and use the Service Center console to update them in runtime. In case your archiving mechanism requires more complex configurations, you should implement a dedicated back-office.
 
-![](images/archive-2.png?width=600)
+![Flowchart illustrating the Archiving Engine module connecting the main catalog to the archive catalog, with a Service Center/Backoffice component at the top.](images/archive-2.png "Light Archiving Step 2: Archiving Engine Module")
 
 **3. Create a new module that exposes search and restore functionality to end users**
 
@@ -118,7 +118,7 @@ This module (for example, “Archive Search”) implements the UI where the end 
 
 Due to the volume of data, the archive catalog is less performant than the main catalog. To manage the end user expectations in terms of response time, implement a toggle that the end user must explicitly set before interacting with the archived data.
 
-![](images/archive-3.png?width=600)
+![Diagram showing the interaction between the Archiving Engine, main catalog, archive catalog, and the Archive Search module for end users.](images/archive-3.png "Light Archiving Step 3: Archive Search Module")
 
 **Step 4. Create a Timer to asynchronously run the archiving process**
 
@@ -126,7 +126,7 @@ Create a Timer that runs your archiving process implemented in the “Archiving 
 
 The following is an example of the archiving process logic:
 
-![](images/archive-4.png?width=300)
+![Flowchart detailing the archiving process logic with steps such as setting the archive threshold and moving data into the archive catalog.](images/archive-4.png "Light Archiving Step 4: Archiving Process Logic")
 
 1. **Set Archive Threshold** - Sets the number of records to archive by iteration. This threshold can be defined using a Site Property, so it can be adjusted without redeploying the module.
 
@@ -156,7 +156,7 @@ Optimization tip: On start, switch off the indexation on the archive and rebuild
 
 Delete the data that's already archived from the main catalog. Use an independent log execution Timer, with its own schedule and running in off-peak hours.
 
-![](images/archive-5.png?width=600)
+![Diagram illustrating the purging process where records with the IsArchived flag set to True are purged from the main catalog by the Archiving Engine.](images/archive-5.png "Light Archiving Step 5: Purging Archived Data")
 
 For further information, check the [best practices for Data Purging](purge.md).
 
@@ -170,7 +170,7 @@ This component (for example, “Archive_Lib”) is used as a centralized, genera
 
 The archived records are stored in JSON format, along with metadata attributes (tags), to allow for searching and retrieval in a set of self-contained screens. Below is a proposed specification for this component:
 
-![](images/archive-6.png?width=400)
+![Entity-relationship diagram of the centralized archive component with ArchiveEntry, ArchiveEntryData, and ArchiveEntryTag entities.](images/archive-6.png "Historical Archiving: Centralized Archive Component")
 
 This solution avoids having to design and maintain an archive repository per Entity. On the other hand, you do have to consider that by using this approach, all data is archived under the same group of archived Entities. These will grow and may become a performance bottleneck, even for auditing purposes. You can comprise the maintenance costs and create one clone of the Archive component per set of business applications.
 

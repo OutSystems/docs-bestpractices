@@ -97,7 +97,7 @@ If you have a lot of advanced scenarios, consider having a page dedicated to exp
 
 Be sure to take advantage of expressions in the **Style Classes** property. This approach  generates code that changes the "class" attribute instead of using the "style" one, preventing unnecessary data on your DOM and **simplifying customization**. Keep in mind that everything that's static but conditional can be a CSS class, so use the inline style attribute only when you have a dynamic style. You may also leave a comment explaining the math behind it.
 
-![](images/The-Complete-Guide-to-Creating-Components_0.png)
+![Screenshot highlighting the use of conditional CSS class application in OutSystems.](images/The-Complete-Guide-to-Creating-Components_0.png "Conditional CSS Application in OutSystems")
 
 #### CSS selectors for enhanced reusability
 
@@ -105,17 +105,17 @@ Using only classes in your CSS selectors limits reusability of your component be
 
 1. Add a wrapper div and set the "Name" property.
 
-    ![](images/The-Complete-Guide-to-Creating-Components_1.png)
+    ![Image showing a wrapper element named 'MyBlockWrapper' in OutSystems.](images/The-Complete-Guide-to-Creating-Components_1.png "Wrapper Element in OutSystems")
 
 1. In the action that includes the JavaScript node with the selector, add an input parameter and set it as the MyBlockWrapper element ID.
 
-    ![](images/The-Complete-Guide-to-Creating-Components_2.png)
+    ![Screenshot displaying the properties of the 'MyBlockWrapper' element in OutSystems.](images/The-Complete-Guide-to-Creating-Components_2.png "Wrapper Element Properties")
 
 1. Build your selector with a CSS class related to the ID you passed as an input. In this example, the element where the CSS class exists is a child of the Wrapper element, but it could also be the same element.
 
-    ![](images/The-Complete-Guide-to-Creating-Components_3.png)
+    ![Image showing the configuration of a JavaScript node with the 'CssSelector' name in OutSystems.](images/The-Complete-Guide-to-Creating-Components_3.png "JavaScript Node Configuration")
 
-    ![](images/The-Complete-Guide-to-Creating-Components_4.png)
+    ![Code snippet illustrating the use of a JavaScript CSS selector in OutSystems.](images/The-Complete-Guide-to-Creating-Components_4.png "JavaScript Code for CSS Selector")
 
 #### Balancing limits and customization
 
@@ -129,7 +129,7 @@ When writing your code, especially CSS and JavaScript, keep it flexible. Develop
 
 When designing the component's API, provides mechanisms for the developer to **extend its functionality**. For example, a component that created JavaScript Objects should have a function that provides access to them. This way, the developer can add features, creating a component that wraps another.
 
-![](images/The-Complete-Guide-to-Creating-Components_5.png?width=600)
+![Diagram illustrating how a component can be extended with JavaScript objects in OutSystems.](images/The-Complete-Guide-to-Creating-Components_5.png "Component Extensibility Illustration")
 
 ### Using lifecycle events correctly (mobile and reactive web apps only)
 
@@ -163,9 +163,9 @@ You can use it to display an image that replaces a runtime UI or adds UI to a co
 
 The following example of the Silk Ui Mobile FloatingActions pattern provides a clickable circle that expands to provide extra options:
 
-![](images/The-Complete-Guide-to-Creating-Components_17.png)
+![Image showing the UI structure of the FloatingActions pattern in OutSystems.](images/The-Complete-Guide-to-Creating-Components_17.png "Floating Actions UI Structure")
 
-![](images/The-Complete-Guide-to-Creating-Components_18.gif)
+![Animated preview of the FloatingActions UI pattern in OutSystems.](images/The-Complete-Guide-to-Creating-Components_18.gif "Floating Actions Preview")
 
 #### Service Studio CSS Tags for a better development experience
 
@@ -173,9 +173,9 @@ CSS properties prefaced with **-servicestudio-** can **improve the preview and d
 
 Using **-servicestudio-** tags helps developers set the values without compromising other features:
 
-![](images/The-Complete-Guide-to-Creating-Components_19.png)
+![Screenshot highlighting the use of -servicestudio- CSS tags for better preview in OutSystems.](images/The-Complete-Guide-to-Creating-Components_19.png "Service Studio CSS Tags")
 
-![](images/The-Complete-Guide-to-Creating-Components_20.png)
+![Image showing how CSS properties with -servicestudio- tags adapt the layout during development in OutSystems.](images/The-Complete-Guide-to-Creating-Components_20.png "Service Studio CSS Adaptation")
 
 #### Sample content inside placeholders
 
@@ -183,9 +183,9 @@ A [placeholder](https://success.outsystems.com/Documentation/11/Reference/OutSys
 
 Avoid using sample content for simple things, such as texts and images, because it's distracting and developers must delete it. Instead, add sample content only if it's mandatory or it helps developers.
 
- ![](images/The-Complete-Guide-to-Creating-Components_21.png)
+ ![Screenshot showing a placeholder with sample content in OutSystems.](images/The-Complete-Guide-to-Creating-Components_21.png "Placeholder Sample Content")
 
- ![](images/The-Complete-Guide-to-Creating-Components_22.png)
+ ![Image displaying the structure of a search component with a placeholder in OutSystems.](images/The-Complete-Guide-to-Creating-Components_22.png "Search Component Structure")
 
 ### Non-functional requirements
 
@@ -239,25 +239,25 @@ Keep in mind these naming conventions:
 
 Take a look at the complete list of OutSystems [Naming Conventions](../platform-best-practices/outsystems-platform-best-practices.md).
 
-![](images/The-Complete-Guide-to-Creating-Components_6.png)
+![Screenshot showing an example of a well-named component in OutSystems.](images/The-Complete-Guide-to-Creating-Components_6.png "Component Naming Example")
 
-![](images/The-Complete-Guide-to-Creating-Components_7.png)
+![Image displaying an example of a poorly named component in OutSystems.](images/The-Complete-Guide-to-Creating-Components_7.png "Poor Component Naming Example")
 
 **Descriptions provide visual cues during development, enhancing that experience**. For example:
 
 * Hover over **application dependencies** to see their description.
 
-    ![](images/The-Complete-Guide-to-Creating-Components_8.png)
+    ![Screenshot showing the description of application dependencies in OutSystems.](images/The-Complete-Guide-to-Creating-Components_8.png "Application Dependencies Description")
 
 * Check a module's description, by hovering in the **Manage Dependencies** popup window.
 
-    ![](images/The-Complete-Guide-to-Creating-Components_9.png)
+    ![Image of the Manage Dependencies popup window with component descriptions in OutSystems.](images/The-Complete-Guide-to-Creating-Components_9.png "Manage Dependencies Popup")
 
 * The search box allows you to search for the name and the description. Note that only components with an icon appear in the toolbox on the left.
 
-    ![](images/The-Complete-Guide-to-Creating-Components_10.png)
+    ![Screenshot of the search box feature in OutSystems, used to find components.](images/The-Complete-Guide-to-Creating-Components_10.png "Component Search Box")
 
-    ![](images/The-Complete-Guide-to-Creating-Components_11.png)
+    ![Image showing the toolbox in OutSystems with components that have icons.](images/The-Complete-Guide-to-Creating-Components_11.png "Component Toolbox")
 
 ### Icons for visual reference { #icons }
 
@@ -273,7 +273,7 @@ Setting an application icon defines the **main icon of your component**. Users c
 
 For application icons, use *.png* format to allow transparencies and 1024 x 1024 px as the size. Keep in mind the file size as large files slow the screen-loading speed.
 
-![](images/The-Complete-Guide-to-Creating-Components_12.png)
+![Screenshot of an application icon representing a component in OutSystems.](images/The-Complete-Guide-to-Creating-Components_12.png "Application Icon Example")
 
 #### Module icons
 
@@ -281,7 +281,7 @@ Setting icons for modules allows developers to relate them to your application i
 
 Module icons should be 1024 x 1024 px.
 
-![](images/The-Complete-Guide-to-Creating-Components_13.png)
+![Image showing a module icon as it appears in the Manage Dependencies window in OutSystems.](images/The-Complete-Guide-to-Creating-Components_13.png "Module Icon in Dependencies")
 
 #### Block icons
 
@@ -289,13 +289,13 @@ Setting icons for blocks helps developers identify which component the UI elemen
 
 The size of block icons (.ico format) should be 32 x 32 px.
 
-![](images/The-Complete-Guide-to-Creating-Components_14.png)
+![Screenshot of a block icon used to identify a UI element in OutSystems.](images/The-Complete-Guide-to-Creating-Components_14.png "Block Icon Example")
 
 #### Action icons
 
 Setting image icons for actions helps to easily identify which component an action in a flow belongs to.
 
-![](images/The-Complete-Guide-to-Creating-Components_15.png)
+![Image displaying an action icon within a flow in OutSystems.](images/The-Complete-Guide-to-Creating-Components_15.png "Action Icon in Flow")
 
 #### Client and Server Action icons
 
@@ -303,7 +303,7 @@ Service Studio visually distinguishes Client Actions and Server Actions. This vi
 
 For example, if you're working on a client-side form for an offline application you use client-side validations and avoid Server Actions. Your component should make the same distinction if possible and applicable.
 
-![](images/The-Complete-Guide-to-Creating-Components_16.png)
+![Screenshot showing the visual distinction between client and server action icons in OutSystems.](images/The-Complete-Guide-to-Creating-Components_16.png "Client and Server Action Icons")
 
 If you're implementing both Client and Server Actions, consider using different styles for the same icon. OutSystems already provides you with the default icons for Client and Server Actions. If you want to change them, make replacement icons 32 x 32 px.
 
@@ -319,11 +319,11 @@ If you have logic-related code in your component that's unclear, then **add note
 
 Have a look at this example with a JavaScript node:
 
-![](images/The-Complete-Guide-to-Creating-Components_23.png)
+![Image of a JavaScript node with explanatory comments in OutSystems.](images/The-Complete-Guide-to-Creating-Components_23.png "JavaScript Node Comment Example")
 
 Because people think differently, use comments to explain complex code and to summarize it. Consider how useful this is for a developer with limited knowledge of JavaScript, who wants to understand the feature behind a JavaScript node.
 
-![](images/The-Complete-Guide-to-Creating-Components_24.png)
+![Screenshot showing a complex code snippet with comments for clarity in OutSystems.](images/The-Complete-Guide-to-Creating-Components_24.png "Complex Code Comment Example")
 
 ## Sharing a component
 

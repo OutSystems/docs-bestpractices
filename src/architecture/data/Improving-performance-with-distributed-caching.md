@@ -19,13 +19,13 @@ By avoiding the high latency data access of a persistent data store, caching can
 
 In an OutSystems application that uses local cache to store query or action results, each **Front-End** stores the cache data into its own process memory using it as a cache storage. In this case, each **Front-End** will see only the cache data that sits in its own cache storage. Therefore, all the other servers will have to do another access to the data store to fetch the same data again.
 
-![image alt text](images/Improving-performance-with-distributed-caching_0.png)
+![Diagram showing local cache architecture with Front-End servers and a Database server.](images/Improving-performance-with-distributed-caching_0.png "Local Cache Architecture")
 
 A distributed cache, however, stores the cached data on other infrastructure resources and manages it in a synchronized fashion, making the same cached data remotely available to all the **Front-Ends** in a transparent way. For example, the **Front-Ends** don’t have the knowledge of which infrastructure resources are used to store the cache data and what the topology of that infrastructure is.
 
 That knowledge resides in the distributed cache synchronization and routing mechanisms. This way, the **Front-Ends** only need to know the remote endpoint and socket port to connect to the distributed cache.
 
-![image alt text](images/Improving-performance-with-distributed-caching_1.png)
+![Diagram illustrating distributed cache architecture with Front-End servers, Cache Synchronization, and a Load Balancer.](images/Improving-performance-with-distributed-caching_1.png "Distributed Cache Architecture")
 
 ## Patterns for populating a Distributed Cache
 
@@ -39,7 +39,7 @@ The next time the application tries to get the same data, it will find what it's
 
 Another possibility is to update the cached stale data with the new data as part of the Action logic instead of invalidating the cache entry. In a situation where a continuous query is made to a set of Entities (read-only) that expose CRUD Actions it might be wiser to implement the cache access (reads and writes) inside the exposed CRUD operations, making it transparent for the consumers of those Entities.
 
-![image alt text](images/Improving-performance-with-distributed-caching_2.png)
+![Flowchart demonstrating the Cache Aside pattern for populating a distributed cache on demand.](images/Improving-performance-with-distributed-caching_2.png "Cache Aside Pattern")
 
 This strategy is more suitable for cases where highly transient data needs to be cached, like data that would be otherwise stored in Session, or data that serves as support to business logic during a couple of web requests, relieving the size of the Session or the data store resources when providing the necessary data for those operations.
 
@@ -53,7 +53,7 @@ The following Action flow depicts the steps involved in this strategy:
 
 3. Store a copy of the item in the cache.
 
-![image alt text](images/Improving-performance-with-distributed-caching_3.png)
+![Action flow diagram for implementing the on demand or Cache Aside pattern.](images/Improving-performance-with-distributed-caching_3.png "On Demand Cache Population Flow")
 
 ### Background Data Push
 
@@ -61,7 +61,7 @@ A Timer background Action pushes data into the distributed cache on a regular sc
 
 This approach works great with high latency data sources or operations that don't always require the latest data.
 
-![image alt text](images/Improving-performance-with-distributed-caching_4.png)
+![Flowchart showing the Background Data Push pattern for updating a distributed cache.](images/Improving-performance-with-distributed-caching_4.png "Background Data Push Pattern")
 
 A possible application scenario for this strategy is the integration with external systems:
 
@@ -83,9 +83,9 @@ The following Action flow depicts the steps involved in this strategy:
 
 3. Any Front End reads the data from the cache.
 
-![image alt text](images/Improving-performance-with-distributed-caching_5.png)
+![Action flow diagram for implementing the Background Data Push strategy.](images/Improving-performance-with-distributed-caching_5.png "Background Data Push Implementation Flow")
 
-![image alt text](images/Improving-performance-with-distributed-caching_6.png)![image alt text](images/Improving-performance-with-distributed-caching_7.png)
+![Screenshot of the Timer configuration for the Background Data Push pattern.](images/Improving-performance-with-distributed-caching_6.png "Timer Configuration for Background Data Push")![Flowchart depicting the retrieval of product catalog data from the distributed cache.](images/Improving-performance-with-distributed-caching_7.png "Product Catalog Cache Retrieval")
 
  
 
@@ -129,7 +129,7 @@ This module is an abstraction over the infrastructure and protocols used to impl
 
  
 
-![image alt text](images/Improving-performance-with-distributed-caching_8.png)
+![Diagram showing the integration of the dmCache module with Core Business modules and cache connectors.](images/Improving-performance-with-distributed-caching_8.png "Distributed Cache Module Integration")
 
 This module should be used in [Core Business modules](https://www.outsystems.com/learn/courses/67/designing-apps-using-an-architecture-framework/) that isolate or expose entities as read only or implement Entity CRUD operations or background jobs. The **dmCache** should not be used directly by End User UI Modules.
 

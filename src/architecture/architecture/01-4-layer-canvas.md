@@ -16,7 +16,7 @@ These applications/modules have different change life cycles and are maintained 
 
 Each layer and sub layer sets a different nature of the functionality to be captured in a module:
 
-![](images/layers_canvas_0.png)
+![Diagram of the OutSystems Architecture Canvas showing different layers including Orchestration Modules, End-user Modules, Core Modules, and Foundation Modules.](images/layers_canvas_0.png "OutSystems Architecture Canvas Layers")
 
 <div class="info" markdown="1">
 
@@ -26,7 +26,7 @@ The orchestration layer is used in OutSystems 10 for hyperlinks between screens 
 
 Sub layers are shown in detail below:
 
-![](images/sub_layers_canvas.png)
+![Detailed diagram of the OutSystems Architecture Canvas sub layers, including Orchestration, Enduser, Core, and Foundation with their respective external modules.](images/sub_layers_canvas.png "OutSystems Architecture Canvas Sub Layers")
 
 
 ## Architecture design with the Architecture Canvas
@@ -35,14 +35,14 @@ The Architecture Canvas is used in two different stages of the architecture desi
 
 1. **Identifying concepts (functional, non-functional and integration needs)**
 The canvas helps collecting architecture requirements in a structured and systematic way.
-![ ](images/4-layer-canvas_4.png)
+![Illustration of the Architecture Canvas used for identifying concepts such as User Processes, Business Concepts, and Utilities and Integration.](images/4-layer-canvas_4.png "Identifying Concepts on the Architecture Canvas")
 
 2. **Define modules**
 Design the modules that implement the identified concepts, following [recommended patterns](05-integration-patterns.md).
 
 Designing an architecture is not a one-time event. It is a continuous process. The architecture must be iterated, cycling these two stages, as a solution evolves and new concepts and needs emerge from your business.
 
-![ ](images/4-layer-canvas_5.png)
+![Graphic representing the iterative process of architecture design, with two steps: 1. Identify Concepts and 2. Define Modules.](images/4-layer-canvas_5.png "Architecture Iteration Process")
 
 ## Using the Architecture Canvas
 

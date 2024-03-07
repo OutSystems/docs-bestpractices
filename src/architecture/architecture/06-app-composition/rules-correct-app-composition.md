@@ -35,7 +35,7 @@ With different teams developing different projects simultaneously, it's common t
 
 Having more than one owner for an application results in complex deployment management, as accountability for what has been changed becomes unclear.
 
-![application composition](images/The-4-Rules-for-Correct-Application-Composition_0.png)
+![Diagram showing the split of common applications into individual apps with dedicated owners for each module.](images/The-4-Rules-for-Correct-Application-Composition_0.png "Application Ownership Split Diagram")
 
 Promoting ownership is key. If it's not possible to concentrate the ownership of one application, consider splitting it in such a way that ownership is clearly defined.
 
@@ -45,7 +45,7 @@ If a project affects several sponsors, it's important to isolate each LOB (Line 
 
 The following example shows a common Portal to grant web access to all sorts of insurance simulators, from different LOBs: Auto, Life, and Property.  
 
-![application composition](images/The-4-Rules-for-Correct-Application-Composition_1.png)
+![Diagram illustrating the separation of a common portal into individual LOB applications with a shared services layer.](images/The-4-Rules-for-Correct-Application-Composition_1.png "LOB Application Split Diagram")
 
 Splitting the application upfront, by LOB, enables the independent evolution of each one. The isolation of all the common services clearly sets the border between what must be carefully planned due to the expected transversal impact, and what can be flexibly changed inside each LOB.
 

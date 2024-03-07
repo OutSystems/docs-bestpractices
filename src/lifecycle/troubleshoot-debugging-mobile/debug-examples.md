@@ -26,7 +26,7 @@ In this article, you can find information on a few possible Mobile Application s
 
     Tools that allow you to review logs are typically the most useful in this situation. The screenshot below shows a log entry indicating that a Column length change caused an error during the upgrade process, as existing data exceeds the new Column length:
 
-    ![](images/OutSystems_provides_rich_13.png)
+    ![Log entry indicating a column length change error during the mobile app upgrade process.](images/OutSystems_provides_rich_13.png "Log Entry Showing Column Length Error During Upgrade")
 
 ## Expected data not showing up in the app
 
@@ -46,7 +46,7 @@ In this article, you can find information on a few possible Mobile Application s
 
         The screenshot below shows a situation where a SQL query in Stetho shows all records have IsActive set to 0 (False) while the Aggregate executing on the client side has a filter condition set to IsActive = True, which explains why no data shows in the app UI.
 
-        ![](images/OutSystems_provides_rich_14.png)
+        ![SQL query result in Stetho showing records with IsActive set to 0, explaining missing data in the app UI.](images/OutSystems_provides_rich_14.png "SQL Query Result in Stetho Plugin")
 
 ## Unwanted UI flicker
 
@@ -64,7 +64,7 @@ In this article, you can find information on a few possible Mobile Application s
 
 Tip: One thing that can be useful is to edit the transition durations in the base CSS file to slow down transitions, which provides a better opportunity for looking at the UI flicker in 'slow motion’:
 
-![](images/OutSystems_provides_rich_15.png)
+![CSS file snippet showing transition duration values to be changed for debugging UI flicker.](images/OutSystems_provides_rich_15.png "CSS File with Transition Duration")
 
 In this example, as shown in the screenshots that follow:
 
@@ -74,9 +74,9 @@ In this example, as shown in the screenshots that follow:
 
 1. It's now visible that the CSS attached to the 'Flow the Screen' is part of 'has a class' definition that changes the padding values, which is the reason for the ‘flicker’!
 
-![](images/OutSystems_provides_rich_16.gif)
+![Animated GIF demonstrating UI flicker during list element transition in a mobile app.](images/OutSystems_provides_rich_16.gif "UI Flicker Animation")
 
-![](images/OutSystems_provides_rich_17.png)
+![Screenshot of UI inspection highlighting a div element and associated CSS class causing flicker.](images/OutSystems_provides_rich_17.png "UI Inspection Revealing CSS Class")
 
 ## Mobile app crashes
 
@@ -98,13 +98,13 @@ In this example, as shown in the screenshots that follow:
 
 The screenshot below shows an example of using the Logcat module of Android Studio to realize that a Plugin is causing this application to crash:
 
-![](images/OutSystems_provides_rich_18.png)
+![Logcat output in Android Studio showing a plugin causing the mobile app to crash.](images/OutSystems_provides_rich_18.png "Logcat Output in Android Studio")
 
 Note how the Native App Shell handler generates an additional log message that provides more details, including the network connection type and status, version numbers for Cordova, Native App Shell, and device Operating System, Device Model, and UUID. 
 
 If the mobile device was online when the crash occurred, then this log record gets sent to the OS platform and is visible in Service Center:
 
-![](images/OutSystems_provides_rich_19.png)
+![Detailed crash log message with device and app information from the Native App Shell handler.](images/OutSystems_provides_rich_19.png "Detailed Crash Log Message")
 
 ## Intermittent data loss reported by users
 
@@ -118,7 +118,7 @@ If the mobile device was online when the crash occurred, then this log record ge
 
     Here, if there's a suspiction of a synchronization issue that might occur only under degraded network conditions, a Tool like Charles is useful to simulate an unreliable network and test the Mobile App under these conditions. The screenshot below shows an example of a synchronization action that does fail when the app is running under a simulated degraded network connection:
 
-    ![](images/OutSystems_provides_rich_20.png)
+    ![Screenshot of Charles tool showing a failed synchronization action under simulated degraded network conditions.](images/OutSystems_provides_rich_20.png "Failed Synchronization Action in Charles")
 
 ## Abnormal memory consumption reported by users when using the app
 
@@ -134,11 +134,11 @@ If the mobile device was online when the crash occurred, then this log record ge
 
     Any Tool that allows to profile memory usage as the app is running is helpful in this scenario. Start with the easiest Tool, typically the Developer Tools of Chrome or Safari. In the screenshot below, the Timeline feature of Chrome Developer Tools is used to generate a recording while navigating between a few Screens in the application. The recording clearly shows how allocated memory grows significantly as we move from one Screen to another:
  
-    ![](images/OutSystems_provides_rich_21.png)
+    ![Memory timeline from Chrome Developer Tools showing increasing JavaScript heap size during page transitions.](images/OutSystems_provides_rich_21.png "Chrome Developer Tools Memory Timeline")
 
     The Memory Tool of Chrome Developer Tools also allows to take snapshots of the memory usage at different points in time, compare snapshots, and force the Garbage Collector to run to help confirm there is a memory leak 
 
-    ![](images/OutSystems_provides_rich_22.png)
+    ![Memory snapshot comparison in Chrome Developer Tools indicating a potential memory leak.](images/OutSystems_provides_rich_22.png "Memory Snapshot Comparison in Chrome Developer Tools")
 
 <div class="info" markdown="1">
 

@@ -181,7 +181,7 @@ Comprehensive analytics and monitoring tools, built into OutSystems, enable proa
 The analytics dashboard in LifeTime covers all aspects of the [end-user experience](https://www.outsystems.com/evaluation-guide/what-kind-of-monitoring-and-analytics-does-outsystems-offer/#End-user_experience_analytics), based on industry standard indicators of user satisfaction. Developers can detect, troubleshoot, and solve performance issues even before end users report them.
 
 
-![](images/performance-monitoring.png)
+![Screenshot of the Performance Monitoring dashboard in OutSystems showing various performance metrics.](images/performance-monitoring.png "Performance Monitoring Dashboard")
 
 The **End User Experience** dashboard displays the execution times of all queries, web service invocations, screen renderings, schedulers and invocations to adapters, external systems and custom APIs, which are all tracked asynchronously. Performance reports provide valuable tuning and optimization information for applications.
 
@@ -199,13 +199,13 @@ OutSystems supports business process modeling so teams can quickly create a proc
 
 The [Business Activity Monitoring](http://www.outsystems.com/forge/component/132/business-activity-monitoring/) dashboard, an Outsystems-supported extension from the Forge, enables developers to start monitoring and optimizing their processes right after deploying them for the first time without the need for any development effort. Reports can be easily modified and extended to align with the business language of the organization using them.
 
-![](images/business-activity-monitoring.png)
+![Screenshot of the Business Activity Monitoring dashboard with graphs displaying top activities and processes.](images/business-activity-monitoring.png "Business Activity Monitoring Dashboard")
 
 #### Logging
 
 OutSystems logs everything. Applications are automatically instrumented to create over a dozen types of error logs. LifeTime uses this data for its analytics dashboards, and developers have access to all of these logs, in Service Center, without having to write a single line of code. 
 
-![](images/screens-performance-report.png)
+![Screenshot of the Screens Performance report in OutSystems Service Center with detailed metrics.](images/screens-performance-report.png "Screens Performance Report")
 
 These metrics are captured asynchronously at run time, so application performance isn't compromised while creating a constant stream of metrics. Events captured include:
 
@@ -245,14 +245,14 @@ Every enterprise must find a testing solution for each stage of development, as 
 
 Typical stages and testing types 
 
-![](images/typical-stages-and-testing.png)
+![Diagram illustrating the typical stages and types of testing in a software development lifecycle.](images/typical-stages-and-testing.png "Typical Stages and Testing Types")
 
 OutSystems supports a modern development approach that automatically performs validations regarding factor analysis and impact analysis, alerting developers about conflicts with existing code before new features can be merged. When staging an application to the next environment OutSystems provides feedback about missing dependencies that might cause runtime issues after deployment. 
 
 All this is provided automatically, with no need for any scripting.
 
 
-![](images/built-in-testing.png)
+![Illustration of OutSystems built-in testing capabilities across different stages of development.](images/built-in-testing.png "Built-in Testing Capabilities")
 
 Aside from handling many aspects of automatic testing that are required for building a continuous development pipeline, OutSystems’s built-in tools and technologies facilitate easy integration with major third-party testing platforms so you can continue to work the way you are used to, or choose a tool that answers your needs, all orchestrated within the OutSystems environment.
 
@@ -308,7 +308,7 @@ OutSystems [AppShield](https://www.outsystems.com/forge/component-overview/9379/
 
 The figure below shows the built-in test automation provided by OutSystems and the many third-party tools that can be integrated into the CI/CD workflow.
 
-![](images/built-in-and-extensions-testing.png)
+![Diagram showing the integration of built-in and third-party testing tools in the OutSystems platform.](images/built-in-and-extensions-testing.png "Built-in and Third-party Testing Integration")
 
 Popular third-party automation tools can be integrated into your OutSystems CI/CD workflow, including:
 
@@ -400,6 +400,6 @@ Custom machine learning automates decisions in businesses process by providing p
 
 **[Azure ML](https://www.outsystems.com/forge/component-overview/5657/azure-ml-connector),** an OutSystems-supported connector available from the Forge, can be used to create an interactive, visual workspace easily and quickly build, test, and deploy models using pre-built machine learning algorithms. No programming is required; the machine learning model is constructed by connecting datasets and analysis modules on an interactive canvas, and then deploying it.
 
-![](images/azure-ml.png)
+![Screenshot of the Azure Machine Learning Studio interface showing a machine learning model workflow.](images/azure-ml.png "Azure Machine Learning Studio")
 
 Azure Machine Learning Studio publishes models as web services that can easily be consumed by OutSystems applications.

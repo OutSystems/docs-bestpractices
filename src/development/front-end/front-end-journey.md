@@ -19,7 +19,7 @@ This journey goes through 3 different stages:
 
 1. Next step is the **Front-End Development**, where we convert the mockups into application screens and user interactions.
 
-![The Front-End Journey](images/front-end-journey.png)
+![Diagram illustrating the front-end development journey from UX with low-fidelity wireframes, to UI with high-fidelity mockups, to front-end with a live style guide including HTML, CSS, and JS.](images/front-end-journey.png "Front-End Development Journey")
 
 
 ## UX/UI: Design for OutSystems

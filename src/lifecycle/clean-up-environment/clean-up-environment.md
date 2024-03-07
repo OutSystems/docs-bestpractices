@@ -37,7 +37,7 @@ Because of that, it's important in Development environments, to regularly clean 
 1. A list of the module versions displays (list limited to 100 records)
 1. Proceed by clicking Delete Displayed Versions
 
-![](images/servicecenter-old-module-versions.png?width=500)
+![Screenshot of the Service Center interface showing the option to check and delete old module versions.](images/servicecenter-old-module-versions.png "Service Center Old Module Versions Deletion Interface")
 
 ### DbCleaner API
 
@@ -66,7 +66,7 @@ Solutions aggregate sets of modules in the environment. If you have created Solu
 1. In the Versions tab, select the version to delete
 1. Proceed by clicking the Delete button
 
-![](images/servicecenter-solution-version-delete.png?width=500)
+![Screenshot of the Service Center interface highlighting the delete button for removing a solution version.](images/servicecenter-solution-version-delete.png "Service Center Solution Version Deletion Interface")
 
 Once you delete the Solution version, you can then delete the module version associated with it, as described in the [Module versions](#module-versions) section.
 
@@ -96,7 +96,7 @@ It's a best practice, as part of a regular Factory management, to clean/delete t
 1. Navigate to a specific Application detail screen
 1. Proceed by clicking the Delete button
 
-![](images/servicecenter-application-delete.png?width=500)
+![Screenshot of the Service Center interface highlighting the delete button for removing an application.](images/servicecenter-application-delete.png "Service Center Application Deletion Interface")
 
 <div class="subtopic">Delete Module</div>
 
@@ -106,7 +106,7 @@ It's a best practice, as part of a regular Factory management, to clean/delete t
 1. Navigate to a specific Module detail screen
 1. Proceed by clicking the Delete button
 
-![](images/servicecenter-module-delete.png?width=700)
+![Screenshot of the Service Center interface highlighting the delete button for removing a module.](images/servicecenter-module-delete.png "Service Center Module Deletion Interface")
 
 
 ## Application data
@@ -240,7 +240,7 @@ Please note that if for any reason you need to deploy an app that was already de
 
 Some components on the [Forge](https://www.outsystems.com/forge/) already have some of these housekeeping tasks implemented, while others also have some automated ones. The following table gives you guindance on Forge components with some out of the box housekeeping tasks:
 
-![](images/table.png)
+![Table summarizing housekeeping features available in various Forge components for OutSystems.](images/table.png "Forge Components Housekeeping Features Table")
 
 <div class="info" markdown="1">
 

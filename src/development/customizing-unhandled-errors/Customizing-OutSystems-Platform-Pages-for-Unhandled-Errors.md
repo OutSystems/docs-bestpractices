@@ -24,19 +24,19 @@ OutSystems Platform displays specific pages for the type of errors that it handl
 
 ### Internal Errors
 
-These errors occur when not handled by the application, i.e., unhandled errors. OutSystems displays the following page:![image alt text](images/Customizing-OutSystems-Platform-Pages-for-Unhandled-Errors_0.png)
+These errors occur when not handled by the application, i.e., unhandled errors. OutSystems displays the following page:![Screenshot of the default internal error page in OutSystems with a message prompting to try again later.](images/Customizing-OutSystems-Platform-Pages-for-Unhandled-Errors_0.png "Default Internal Error Page")
 
 ### Resource Not Found Errors
 
 These errors occur when navigating to a page (URL) that does not exist within the scope of the application. OutSystems displays the following page:
 
-![image alt text](images/Customizing-OutSystems-Platform-Pages-for-Unhandled-Errors_1.png)
+![Screenshot of the default resource not found error page in OutSystems advising to check the URL.](images/Customizing-OutSystems-Platform-Pages-for-Unhandled-Errors_1.png "Default Resource Not Found Error Page")
 
 ### Application Temporarily Offline Error Page
 
 These errors occur when an application is being deployed (at that moment) and the license does not include the Hot Deployment feature. OutSystems displays the following page:
 
-![image alt text](images/Customizing-OutSystems-Platform-Pages-for-Unhandled-Errors_2.png)
+![Screenshot of the default application temporarily offline error page in OutSystems indicating maintenance.](images/Customizing-OutSystems-Platform-Pages-for-Unhandled-Errors_2.png "Default Application Temporarily Offline Error Page")
 
 ### Application Unavailable Error Pages
 
@@ -44,11 +44,11 @@ These errors occur when an application is unavailable for one the following reas
 
 * The application was taken offline in Service Center.
 OutSystems displays the following page:
-![image alt text](images/Customizing-OutSystems-Platform-Pages-for-Unhandled-Errors_3.png)
+![Screenshot of the default application unavailable error page in OutSystems for an offline application.](images/Customizing-OutSystems-Platform-Pages-for-Unhandled-Errors_3.png "Default Application Unavailable Error Page - Offline")
  
 
 * The application was automatically shut down by the OutSystems Platform due to licensing issues as, for example, the license has expired.
-OutSystems displays the following page:![image alt text](images/Customizing-OutSystems-Platform-Pages-for-Unhandled-Errors_4.png)
+OutSystems displays the following page:![Screenshot of the default application unavailable error page in OutSystems due to a licensing error.](images/Customizing-OutSystems-Platform-Pages-for-Unhandled-Errors_4.png "Default Application Unavailable Error Page - Licensing Error")
 
 ## Customizing Error Handling Pages
 

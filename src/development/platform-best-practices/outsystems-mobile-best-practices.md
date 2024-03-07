@@ -53,7 +53,7 @@ When a user navigates to a screen, the static content is usually rendered first,
 
 Improve the user experience by [designing and displaying an empty state image](https://success.outsystems.com/documentation/how_to_guides/front_end/how_to_improve_list_slowness_on_low_end_devices/) while the dynamic content is being fetched. A couple of good examples are Facebook or LinkedIn.
 
-![image alt text](images/OutSystems-Mobile-Best-Practices-0.png)
+![Example of a mobile app screen displaying an empty state design while content is being fetched.](images/OutSystems-Mobile-Best-Practices-0.png "Empty State Design Example")
 
 This strategy is valid for all dynamic content in the screen such as blocks, cards or list items. When the empty state turns into the fetched content you may experience some flickering. To avoid flickering when the empty state turns into the fetched content, choose one image that assures a smooth transition, such as a blurred gray line or a spinner.
 
@@ -73,7 +73,7 @@ Delay the rendering of the secondary content so that the main content is rendere
 
 4. In the On Render event of the screen, add logic to set the variable to *True* so that the secondary content starts to render.
 
-![image alt text](images/OutSystems-Mobile-Best-Practices-1.png)
+![Illustration of prioritizing content rendering in an OutSystems mobile app using conditional blocks.](images/OutSystems-Mobile-Best-Practices-1.png "Content Rendering Priority in OutSystems")
 
 ### Set the Width and Height of Image Widgets
 
@@ -83,7 +83,7 @@ If you do not set the width and height of an Image widget, the user can get a fl
 
 Set the width and height of the Image widget to the expected size of the final image.
 
-![image alt text](images/OutSystems-Mobile-Best-Practices-2.png)
+![Screenshot showing how to set width and height properties for an image widget in OutSystems.](images/OutSystems-Mobile-Best-Practices-2.png "Setting Image Widget Dimensions")
 
 ## Performance
 
@@ -93,7 +93,7 @@ Handling data or implementing logic specifically for mobile scenarios can have a
 
 OutSystems automatically detects potential performance issues while you are developing your mobile app in Development Environment. Not paying attention to them may result in a bad performance of the application. 
 
-![image alt text](images/OutSystems-Mobile-Best-Practices-3.png)
+![OutSystems development environment interface displaying performance warnings.](images/OutSystems-Mobile-Best-Practices-3.png "OutSystems Performance Warnings")
 
 **Recommendation**
 
@@ -108,7 +108,7 @@ Keeping a large amount of data in the device's local storage, for example in off
 Use the following techniques to design a lightweight local storage:
 
 * Design the local storage data model using only the attributes that you need, instead of all attributes of the corresponding server entity. Consider [denormalizing](https://en.wikipedia.org/wiki/Denormalization) the local data model to avoid complex queries like having multiple JOINS.
-![image alt text](images/OutSystems-Mobile-Best-Practices-4.png)
+![Diagram comparing server database and optimized local storage data models in OutSystems.](images/OutSystems-Mobile-Best-Practices-4.png "Local Storage Data Model Design")
 
 * Identify the best [data synchronization patterns](https://success.outsystems.com/documentation/11/developing_an_application/use_data/offline/) for your use case and define exactly when to run them.
 
@@ -122,7 +122,7 @@ Use the following techniques to design a lightweight local storage:
 
 When your mobile app starts, it displays a splash screen while internal operations are running. Adding heavy or lengthy operations to the splash screen will increase the time that the users must wait to use the app. Additionally, if the splash screen has a complex UI, the users may see a blank screen before the splash screen renders.
 
-![image alt text](images/OutSystems-Mobile-Best-Practices-5.png)
+![Example of a simple and fast-loading splash screen for a mobile app.](images/OutSystems-Mobile-Best-Practices-5.png "Splash Screen Best Practices")
 
 **Recommendation**
 
@@ -150,7 +150,7 @@ Using the On After Fetch of server aggregates to execute other aggregates in seq
 
 Create a Data Action containing aggregates in the correct order. This action will run in the server in a single request and return all data.
 
-![image alt text](images/OutSystems-Mobile-Best-Practices-6.png)
+![Flowchart demonstrating optimized server data fetching for a screen in OutSystems.](images/OutSystems-Mobile-Best-Practices-6.png "Optimized Data Fetching for a Screen")
 
 ### Optimize the Loading of Lists
 
@@ -188,7 +188,7 @@ The values to use depend on the size of the records:
 
 The next picture shows examples of values to use in different situations. You should start with these as initial guidelines and then test and adjust to your specific case.
 
-![image alt text](images/OutSystems-Mobile-Best-Practices-7.png)
+![Table with examples of initial records, increment, and scroll threshold values for list optimization.](images/OutSystems-Mobile-Best-Practices-7.png "List Fetching Optimization Parameters")
 
 **Provide visual feedback while fetching data on demand**
 
@@ -228,7 +228,7 @@ Follow the best practices for JavaScript development like the ones described in 
 
 For example, use performant [JavaScript selectors](https://www.w3schools.com/w3js/w3js_selectors.asp) to obtain elements from the DOM, and avoid [properties and methods](https://gist.github.com/paulirish/5d52fb081b3570c81e3a) that trigger the browser to recalculate geometric information for the elements — known as [Layout or Reflow](https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing).
 
-![image alt text](images/OutSystems-Mobile-Best-Practices-8.png)
+![Badge symbolizing best practice standards for JavaScript development.](images/OutSystems-Mobile-Best-Practices-8.png "JavaScript Best Practice Badge")
 
 ### Avoid Using External JavaScript Libraries
 
@@ -240,7 +240,7 @@ Find OutSystems components in [OutSystems UI](https://www.outsystems.com/outsyst
 
 However, if it is clear that you really need to [use the JavaScript library](https://success.outsystems.com/documentation/11/extensibility_and_integration/javascript/extend_your_mobile_and_reactive_apps_using_javascript/use_javascript_code_from_an_external_library/), use it in a Script element and not in JavaScript nodes.
 
-![image alt text](images/OutSystems-Mobile-Best-Practices-9.png)
+![Diagram showing the correct way to implement JavaScript libraries in OutSystems.](images/OutSystems-Mobile-Best-Practices-9.png "Using JavaScript Libraries in OutSystems")
 
 Using JavaScript code in Script elements allows:
 
@@ -258,7 +258,7 @@ Encapsulate the repeated JavaScript code in a JavaScript node inside a client ac
 
 For example, encapsulate troubleshooting JavaScript functions such as console.log(), console.error() and alert() in client actions.
 
-![image alt text](images/OutSystems-Mobile-Best-Practices-10.png)
+![Illustration of refactoring repeated JavaScript code into a client action in OutSystems.](images/OutSystems-Mobile-Best-Practices-10.png "Refactoring JavaScript Code into Client Actions")
 
 ### Avoid Manipulating the DOM
 
@@ -270,7 +270,7 @@ Do not use JavaScript that manipulates the DOM. This is only for advanced use ca
 
 If you are implementing a known mobile pattern, look for it in [OutSystems UI](https://www.outsystems.com/outsystems-ui/) or the [OutSystems Forge](https://www.outsystems.com/forge/).
 
-![image alt text](images/OutSystems-Mobile-Best-Practices-11.png)
+![Warning sign indicating to avoid direct DOM manipulation in OutSystems applications.](images/OutSystems-Mobile-Best-Practices-11.png "Avoid DOM Manipulation Warning")
 
 ### Avoid Using Global Objects
 
@@ -283,7 +283,7 @@ Avoid using objects that get attached to the window object, like global variable
 * Use browser features like [localStorage and sessionStorage](https://www.w3schools.com/html/html5_webstorage.asp) objects.
 
 * Use the 'var' keyword when declaring JavaScript variables to limit their scope.
-![image alt text](images/OutSystems-Mobile-Best-Practices-12.png)
+![Code snippet demonstrating the use of 'var' to declare a variable in JavaScript.](images/OutSystems-Mobile-Best-Practices-12.png "JavaScript Global Object Usage")
 
 ### Change Widgets Style using OutSystems Low-code
 
@@ -293,7 +293,7 @@ Using JavaScript to add/remove CSS classes to change the style of widgets may be
 
 Use the Style Classes property of widgets to change the CSS classes applied to them. In this property you can use expressions that are evaluated at runtime to change the styles dynamically.
 
-![image alt text](images/OutSystems-Mobile-Best-Practices-13.png)
+![Screenshot showing how to dynamically change widget style classes using OutSystems low-code.](images/OutSystems-Mobile-Best-Practices-13.png "Dynamic Style Classes in OutSystems")
 
 ### Use CSS for Animations instead of JavaScript
 
@@ -303,7 +303,7 @@ JavaScript animations typically run on the device's Central Processing Unit (CPU
 
 Use OutSystems low-code and style classes to run animations on the device's Graphics Processing Unit (GPU) and remove load from the CPU. For example, in [Making Magic with WebSockets and CSS3](https://www.outsystems.com/blog/magic.html), cards are animated using CSS.
 
-![image alt text](images/OutSystems-Mobile-Best-Practices-14.png)
+![Code example of using CSS for animations in an OutSystems application.](images/OutSystems-Mobile-Best-Practices-14.png "CSS Animations in OutSystems")
 
 Learn more about how to properly animate elements in your mobile apps in [Smooth as Butter: Achieving 60 FPS Animations with CSS3](https://medium.com/outsystems-experts/how-to-achieve-60-fps-animations-with-css3-db7b98610108) and [FLIP Your 60 FPS Animations, FLIP 'Em Good](https://www.outsystems.com/blog/flip-60-fps-animations-flip-em-good.html).
 
@@ -323,7 +323,7 @@ Include sensible fallbacks in your apps to account for when the plugins are miss
 
 In the following example, the AddToContacts action of the Contacts native plugin was wrapped in a client action called AddToContacts_Safe that first validates if the plugin is available:
 
-![image alt text](images/OutSystems-Mobile-Best-Practices-15.png)
+![Flowchart showing how to define fallbacks for native plugins in OutSystems.](images/OutSystems-Mobile-Best-Practices-15.png "Fallbacks for Native Plugins in OutSystems")
 
 Having these fallbacks in place also helps avoiding issues in the apps running in devices that do not support a given plugin.
 

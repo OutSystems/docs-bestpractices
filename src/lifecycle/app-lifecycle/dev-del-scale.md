@@ -31,7 +31,7 @@ With the growth of a software factory, it becomes more difficult to isolate deve
 
 [Domain-driven-design](https://success.outsystems.com/Documentation/Best_Practices/Architecture/OutSystems_Domain_Driven_Architecture/Domain_Driven_Design_with_OutSystems) (DDD) is a recommended approach for building **loosely coupled architectures**. A loosely coupled architecture **isolates different pieces of software** (self-contained domains) by reducing the dependencies between them to a minimum. Building and deploying apps using a loosely coupled architecture provides benefits such as, more **scalability**, **resilience**, **maintainability**, and **less dependencies between development teams**. A DDD approach to architecture structures a software system as a set of business-domain-aligned components. Also aligning the ownership model with business domains, means each domain is owned by one team (and one team may own several systems or components related to the same domain). This allows each business domain to evolve at a different speed, based on the change rate appropriate for that domain.
 
-![Domain definition](images/domain-definition.png)
+![Diagram illustrating domain-driven design with vertical and horizontal domains, showing business verticals and foundation services.](images/domain-definition.png "Domain-Driven Design Architecture")
 
 
 OutSystems [AI Mentor Studio](https://success.outsystems.com/Documentation/Architecture_Dashboard/Introduction_to_Architecture_Dashboard) provides a bird-eye-view of the entire application’s architecture, facilitating the correct domain assessment by detecting unexpected dependencies between applications and wrong architecture patterns.
@@ -45,7 +45,7 @@ By reversing Conway's Law in favor of building a good **business-oriented** arch
 Having cross-functional teams benefits communication, quality, speed, and innovation and contributes to autonomy and independence. A cross-functional team contains all the roles and profiles necessary to cover the entire lifecycle of the application or component.  As such, **a cross-functional team is fully independent and autonomous to promote code changes from development to production**, and quickly act upon any feedback collected along the way. This is in stark contrast to mono/single-functional teams, where there are silos containing each of the lifecycle functions, that require multiple handovers for a single change and that rely on formal communication channels that end up creating queues that impact lead time.
 
 
-![Functional teams and cross-functional teams](images/functional-teams-vs-cross-functional-teams.png)
+![Comparison diagram between functional teams with siloed roles and cross-functional teams with integrated roles.](images/functional-teams-vs-cross-functional-teams.png "Functional Teams vs Cross-Functional Teams")
 
 ### Ownership and governance
 
@@ -53,13 +53,13 @@ By not having the correct ownership and governance model in place, you are left 
 
 Team ownership models can be adopted according to the business organization, factory maturity and size, and available capabilities. By defining a clear **strong ownership** of shared components, where for example, **only one team is the owner of each software domain**, no software domain is without an owner, and the owner executes all changes, then team collision is reduced. A well defined  ownership model is more scalable and helps in the streamlining of independent development and release lifecycles. The ownership model should be aligned with the team structures and the governance model should reflect both.
 
-![Ownership governance model](images/ownership-governance-model.png)
+![Diagram showing the ownership and governance model with different teams responsible for various domains.](images/ownership-governance-model.png "Ownership and Governance Model")
 
 ## Collaboration 
 
 As the application portfolio, number of teams, and the number of developers grow, finding the right balance between work isolation (develop and test without impact) and collaboration is key to keeping a high pace of delivery, while managing different releases. One common practice for handling this challenge is branching. While branching enables a complete isolation of ongoing work and allows you to keep maintaining major releases, it can also bring other tasks, such as managing extra environments to get runtime isolation for testing different releases. On the other hand, branching potentials the merge hell by reducing the frequency of code integration. *"We used to draw branching as parallel lines, but actually we should redraw as diverging lines to show the effective merge pain over time…"* ([Jonny LeRoy](https://twitter.com/jahnnie/status/937917022247120898))
 
-![Branching - Parallel lines versus diverging lines](images/branching-parallel-lines-diverging-lines.png)
+![Illustration contrasting parallel lines representing traditional branching with diverging lines indicating merge challenges over time.](images/branching-parallel-lines-diverging-lines.png "Branching Strategies: Parallel vs Diverging Lines")
 
 Part of OutSystems’ vision is to provide capabilities that remove developers' effort of managing different feature branches, avoid merging problems, while ensuring a true **continuous integration** approach. This includes providing a short-lived branching capability where developers can work and test in isolation before sharing, ensuring that only small batches of completed code are shared. Feature isolation allows developers to manage work in progress. Incomplete features can be safely promoted to the next stage using trunk-based development patterns (such as, feature toggling mechanism)  which manage incomplete features that are merged, increasing the collaboration between  developers and the feedback from business, while experimenting with new incomplete solutions.
 
@@ -69,7 +69,7 @@ The small batch approach allows developers to decompose complex solutions into s
 
 Working in small batches is one of a set of capabilities that drives higher software delivery and organizational performance. These capabilities were discovered by the [DORA State of DevOps research program](https://www.devops-research.com/research.html), an independent, academically rigorous investigation into the practices and capabilities that drive high performance. As per the [The State of DevOps Report 2019](https://services.google.com/fh/files/misc/state-of-devops-2019.pdf), the following image shows how higher performers compare to low performers: 
 
-![Elite performers versus low performers](images/elite-performers-vs-low-performers.png)
+![Infographic comparing elite performers with low performers in terms of throughput and stability metrics.](images/elite-performers-vs-low-performers.png "Comparison of Elite Performers vs Low Performers")
 
 Working in small batches helps anticipate failures. At the same time it lowers the deployment risk since the amount of change applied in each deployment is smaller and therefore less likely to go wrong. Smaller parts can be tested immediately after they are merged into the code base. It allows issues to be spotted and solved straight away. Consistently integrating code to the code base for deployment  **accelerates the release rate which helps realize business value faster** (in contrast to an infrequent release rate). Additionally, it helps **enhance productivity** by ensuring fewer errors. Less errors means less time spent fixing them and more time on developing a quality product. 
 
@@ -93,7 +93,7 @@ When dealing with multiple simultaneous parallel developments on the same code-b
 
 Technical feature toggling applies when you're implementing a feature or behavior in an application (for example, a new checkout process) that uses multiple code elements (screens, widgets, services, entities) and you'd like to logically isolate this work from other devs and testers until it's finished (meaning they won't see the new behavior while interacting with the application). Because feature toggling requires backward-compatibility between the current and new behaviors, it may require the use of API/UI versioning as well, and changes to the database model must be incremental.
 
-![Feature flags or toggles](images/feature-flags.png)
+![Flowchart demonstrating how feature flags or toggles control the release of new features to end users.](images/feature-flags.png "Feature Flags Mechanism")
 
 You can find the [Feature Toggle Library](https://www.outsystems.com/forge/component-overview/9663/feature-toggle-library) component in the OutSystems Community. To learn more about how to implement and use feature toggles, see [Feature toggle in OutSystems](https://success.outsystems.com/Documentation/How-to_Guides/Development/Feature_toggle_in_OutSystems). 
 

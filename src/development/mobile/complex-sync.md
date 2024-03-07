@@ -15,7 +15,7 @@ This article describes Best Practices to deal with more demanding synchronizatio
 
 When syncing information from the server to the device it's important to only synchronize relevant data. On each use case, consider which records (rows) and attributes (columns) should be synchronized, and when to sync.
 
-![](images/mobile-complex-synchronization.png?width=400)
+![Diagram illustrating the strategy for complex data synchronization in mobile applications.](images/mobile-complex-synchronization.png "Mobile Complex Synchronization Strategy")
 
 **Sync only when required**
 
@@ -42,7 +42,7 @@ To illustrate the **top principles** let's consider a mobile app designed to sup
 
 ### Design a lightweight local database
     
-![Lightweight local database](images/lightweight-data-model.png)
+![Data model diagram showing the denormalization process for a lightweight local database in a mobile app.](images/lightweight-data-model.png "Lightweight Data Model for Mobile")
 
 * Since the main uses cases are **presenting appointments information** and provide **available doctor's data** we should denormalize the server side relational data model.
 
@@ -56,13 +56,13 @@ To illustrate the **top principles** let's consider a mobile app designed to sup
 
 The text input of OfflineDataSync action is used to define the several flows of synchronization. By using this input we can fine tune the amount of data to sync on each flow or moment of our application.
 
-![](images/sync-unit-logic.png)
+![Flowchart depicting the logic behind sync units in offline data synchronization.](images/sync-unit-logic.png "Sync Unit Logic Flowchart")
 
 **Local SyncProperties per SyncUnit**
 
 Create a local entity to keep track of the last synchronization moment per SyncUnit. This will allows us to communicate with the server and retrieve only updated information through the use of time deltas. Compare the **LastSyncOn** from that sync unit with the **CreatedOn**, **UpdatedOn**, and **DeletedOn** attributes from the server DB to know which records to fetch.
 
-![](images/sync-properties-entity.png)
+![Entity diagram for SyncProperties showing the relationship with SyncUnitId and LastSyncOn attributes.](images/sync-properties-entity.png "Sync Properties Entity Diagram")
 
 ### Synchronization moments
 
@@ -83,17 +83,17 @@ Create a local entity to keep track of the last synchronization moment per SyncU
 SyncUnit = "Login"
 :   To support all the offline use cases we need to **synchronously** sync all the doctors and appointments right after login. This sync only retrieves information from the server, no data is sent.
 
-    ![](images/sync-unit-login.png)
+    ![Diagram illustrating the synchronization process during the login phase in a mobile application.](images/sync-unit-login.png "Sync Unit Login Process")
 
 SyncUnit = "SendAppointments"
 :   TriggerOfflineDataSync at the Create Appointment action to send the new appointment to the server **asynchronously**. 
 
-    ![](images/sync-unit-send-appointments.png)
+    ![Diagram showing the process of sending appointments to the server asynchronously using a sync unit.](images/sync-unit-send-appointments.png "Sync Unit Send Appointments Process")
 
 SyncUnit = "Online"
 :   When the app regains connectivity we trigger a complete sync, where we send new data to the server and retrieve updated data. Since this sync is complete and bidirectional we discard all other pending sync requests by setting the DiscardPendingSync input to true.
 
-    ![](images/sync-unit-online.png)
+    ![Diagram illustrating the online synchronization process when the app regains connectivity.](images/sync-unit-online.png "Sync Unit Online Synchronization")
 
 ### Minimize the number of server requests
 

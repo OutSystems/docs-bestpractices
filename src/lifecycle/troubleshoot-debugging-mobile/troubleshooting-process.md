@@ -67,7 +67,7 @@ Troubleshooting and debugging might look complex, but they're very much exercise
 
     A recommended high-level process looks like the one depicted in the following diagram:
 
-    ![](images/OutSystems_provides_rich_0.png)
+    ![Flowchart showing the steps of the troubleshooting and debugging process: Symptom, Hypothesis, Tool, Root Cause, Fix, and Test.](images/OutSystems_provides_rich_0.png "Troubleshooting and Debugging Process Diagram")
 
     * Observe the symptoms (or review them from a bug report).
 

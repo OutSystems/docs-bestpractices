@@ -49,7 +49,7 @@ You can set up a purging process by using a Timer that asynchronously deletes re
 
 The following is an example of the purge process logic:
 
-![](images/purge-1.png?width=300)
+![Flowchart illustrating the data purging process with steps: 1. Set Purge Threshold, 2. Check Records To Purge, 3. Has Records to Purge decision point, 4. Purge Records in Bulk, and 5. Wake Purge Data.](images/purge-1.png "Data Purging Process Diagram")
 
 1. **Set Purge Threshold** - Sets the number of records to purge by iteration. This threshold can be defined using a Site Property, so it can be adjusted without redeploying the module.
 

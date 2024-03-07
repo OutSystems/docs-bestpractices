@@ -32,10 +32,10 @@ OutSystems already solves some of these burdens by:
 
 |1. Adopting a single stack||
 |--|--|
-|<br/><br/><br/>OutSystems provides you with built-in capabilities that handle:<br/>* Security<br/>* Debugging and troubleshooting<br/>* Monitor and logging|![](images/outsystems_domain_driven_architecture_6.png?width=250)|
+|<br/><br/><br/>OutSystems provides you with built-in capabilities that handle:<br/>* Security<br/>* Debugging and troubleshooting<br/>* Monitor and logging|![Illustration of OutSystems domain-driven architecture with multiple hexagons representing different services.](images/outsystems_domain_driven_architecture_6.png "OutSystems Domain-Driven Architecture Capabilities")|
 
 |2. Exposing a query model||
 |--|--|
-|<br/><br/><br/>By exposing a query model, data mashup is now possible, as you can query entities directly to read data and use APIs to write data.<br/>* Limited data mashup|![](images/outsystems_domain_driven_architecture_7.png?width=250)|
+|<br/><br/><br/>By exposing a query model, data mashup is now possible, as you can query entities directly to read data and use APIs to write data.<br/>* Limited data mashup|![Diagram showing OutSystems domain-driven architecture with hexagons and icons representing data queries and API interactions.](images/outsystems_domain_driven_architecture_7.png "OutSystems Query Model in Domain-Driven Architecture")|
 
 With this initial context in mind, it's now time to ask the question: when should you adopt a domain architecture (and therefore a microservices architecture) in OutSystems? Let’s dig into it!

@@ -30,11 +30,11 @@ Take the following actions into account:
 
 The following diagram shows an example of a timeline for events and actions:
 
-![Parallel Data Fetches](images/parallel_data_fetches.png)
+![Diagram illustrating parallel data fetches in a mobile application, highlighting the grouping of server calls for optimization.](images/parallel_data_fetches.png "Parallel Data Fetches Diagram")
 
 The following diagram shows an example of a timeline for events and actions:
 
-![Timeline for events and actions](images/timeline_events_actions.png)
+![Timeline showing the sequence of events and actions during data loading in a mobile application, including OnInitialize, Fetch Data actions, and OnRender events.](images/timeline_events_actions.png "Timeline of Events and Actions")
 
 Proceed with the following instructions by order:
 
@@ -61,7 +61,7 @@ Most typical bad practices occur when developers try to use the **OnInitialize**
 
 In the following example, the screen rendering is delayed and blocks the user until all actions end. This results in a blocking screen with unnecessary high loading time.
 
-![Common pitfall scenario](images/incorrect_approach.png)
+![Diagram depicting an incorrect approach to data loading in a mobile app, showing a blocking screen due to synchronous server calls.](images/incorrect_approach.png "Incorrect Approach to Data Loading")
 
 ## Additional Information
 

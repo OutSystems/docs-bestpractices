@@ -19,7 +19,7 @@ However, user roles shouldn’t be used if you want to set up a hierarchical per
 
 For Core Services that require ACL, we propose a model where each Core Service module is responsible for setting the data access rules.
 
-![Core Services Access Control List](images/access-control-list.png)
+![Diagram illustrating the concept of an Access Control List in a data access scenario.](images/access-control-list.png "Access Control List Diagram")
 
 The Core Services modules must isolate as much as possible the ACL logic in data retrieval methods (e.g., Web Service APIs), but for entities that are public and used outside the Core Service module, developers must know that the access to those tables need to be subject to ACL control.
 
@@ -37,20 +37,20 @@ For that reason, we advise that the objects (Entities) with an associated ACL sh
 
 When creating data, if a good module isolation is being made, it should be handled by the proper Core Service who will be responsible by setting up the ACL, accordingly to the rules in place. For instance, when creating a Customer, read/write accesses can be given based on current Unit, Branch, etc.
 
-![Creating new ACL Records](images/creating-new-acl-record.png)
+![Flowchart showing the process of creating a new ACL record in the Customer_CS service.](images/creating-new-acl-record.png "Creating New ACL Record Process")
 
 ### Accessing new ACL Records
 
 Accessing data should consider the access rules stored in the ACL, so when retrieving data from a given Entity, a join to the proper ACL entity should be made. This way, the result set will have only data compliant with the ACL rules.
 
-![Accessing new ACL Records](images/accessing-new-acl-records.png)
+![Flowchart demonstrating how to access new ACL records by joining with the ACL table.](images/accessing-new-acl-records.png "Accessing New ACL Records Process")
 
 #### Example
 
 Let’s see a possible approach on querying data controlled by an ACL.
 With the below query, we are able to get a hierarchical view over the sales of the user’s team. While a Sales Account can only see its own sales, the Sales Director (parent in the hierarchy) is able to see the whole team sales.
 
-![ACL SQL Example](images/acl-example.png) 
+![Screenshot of an SQL query example for accessing data controlled by an ACL.](images/acl-example.png "ACL Query Example") 
 
 * ACL provides, per user, the full list of users belonging to their hierarchy
 
@@ -71,7 +71,7 @@ To improve performance of ACL rules, access control should be restricted to crit
 
 For example, if access control is set at Branch level, it is not necessary to do it on Unit or User level.
 
-![ACL Hierarchical example](images/acl-hierarchical-example.png?width=300)
+![Diagram showing the hierarchical control in ACL with Branch, Unit, and User levels.](images/acl-hierarchical-example.png "ACL Hierarchical Control Diagram")
 
 ## Best Practices
 
@@ -79,15 +79,15 @@ For Core Services where ACL is applicable, some conventions/best practices shoul
 
 * ACL tables should have the same name than the Entity, followed by a suffix “ACL”.
 
-    ![ACL Entity naming convention](images/acl-entity.png)
+    ![Screenshot showing the naming convention for ACL entities in the database.](images/acl-entity.png "ACL Entity Naming Convention")
 
 * The ACL table should have the same “Public” property as the Entity. If possible, keep this property set to No, to have total control of ACL rules enforcement inside the Core Service.
 
-    ![ACL Public property](images/acl-entity-private.png)
+    ![Screenshot depicting the privacy settings for an ACL entity, set to 'No' for public access.](images/acl-entity-private.png "ACL Entity Privacy Settings")
 
 * When creating a new record on an Entity subject to ACL rules, the ACL record(s) should also be created. The logic to handle ACL rules creation should be placed in a separate server action to facilitate application management.
 
-    ![ACL Create Server Action](images/create-acl-logic.png?width=400)
+    ![Flowchart illustrating the process of creating ACL rules after a new record creation.](images/create-acl-logic.png "Create ACL Logic Flowchart")
 
 <div class="info" markdown="1">
 
@@ -97,10 +97,10 @@ Changes on a record subject to ACL may require reprocessing the ACL rules for it
 
 * When retrieving data from an Entity with ACL rules, make a join between the Entity and the ACL entity to get the expected results list.
 
-    ![Retrieving ACL data](images/retrieving-acl-data.png?width=400)
+    ![Screenshot showing the data retrieval process from an Entity with ACL rules using a join operation.](images/retrieving-acl-data.png "Retrieving Data with ACL Rules")
 
 * It may be necessary to create a reset action to remount the ACL rules. This action should implement the logic needed to recreate the full ACL table or only a subset of it.
 
     A good practice is to store all the actions related to ACL within a specific folder.
 
-    ![ACL Reset](images/acl-reset.png?width=500)
+    ![Diagram illustrating the reset action for remounting ACL rules within the Customer_CS module.](images/acl-reset.png "ACL Reset Action Diagram")

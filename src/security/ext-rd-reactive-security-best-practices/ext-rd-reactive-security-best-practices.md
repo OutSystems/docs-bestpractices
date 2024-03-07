@@ -49,17 +49,17 @@ This same best practice works for [fetching data based on user roles](https://su
 
 For each and **every aggregate and server action** used at the client-side, a **REST API method** is created to handle its specific request.
 
-![](images/reactive-security-best-practices_0.png)
+![Screenshot showing the REST API method creation for aggregates and server actions in a Reactive Web App.](images/reactive-security-best-practices_0.png "REST API Method Creation for Aggregates and Server Actions")
 
 When the screen where the aggregate or server action belongs to is made available to the public (the Anonymous role is selected), that REST API is also made available to the public.
 
 Make sure that when you fetch data from the server in a screen with the anonymous role active, the input parameters can’t be manipulated in any way to get different records.
 
-![](images/reactive-security-best-practices_1.png)
+![Interface snippet displaying role-based access control settings for a public screen in a Reactive Web App.](images/reactive-security-best-practices_1.png "Role-based Access Control for Public Screens")
 
 Take for instance the DoLogin(). This one is available to the public (the Login screen has the Anonymous role is selected), but you can’t use it when you don’t have a working Username and Password combination.
 
-![](images/reactive-security-best-practices_2.png)
+![Configuration panel for a server action named DoLogin, showing fields for username and password.](images/reactive-security-best-practices_2.png "Server Action Configuration for User Authentication")
 
 When the screen is not available to the public (assigned to one or more roles except the Anonymous role), the **system implements an authentication mechanism** based on the logged-in user.
 
@@ -79,7 +79,7 @@ As a second option you can do both the identity validation and the reset passwor
 
 A third option is to consider using [JSON Web Token](https://jwt.io/introduction/) (JWT) to encrypt the session and to send only encrypted data. There are different ways to do it, which are beyond the scope of this article, but one way to implement it can be with the [JWT Forge component](https://www.outsystems.com/forge/component-overview/1853/jwt).
 
-![](images/reactive-security-best-practices_3.png?width=420)
+![Diagram illustrating the user authentication process using JWT, from sign-in to API call verification.](images/reactive-security-best-practices_3.png "User Authentication Flow Using JWT")
 
 ## Server-side security
 
@@ -91,7 +91,7 @@ When you have server actions that you expose to Reactive applications, you shoul
 
 When you compare Traditional Web with Reactive Web there are more security angles that you need to be aware of
 
-![](images/reactive-security-best-practices_4.png)
+![Screenshot of the TrueChange interface displaying a security warning related to client-side database operations.](images/reactive-security-best-practices_4.png "TrueChange Security Warning Interface")
 
 1. Take the warnings in [TrueChange](http://gemoc.org/pub/20190625-MLE19/paper9.pdf)™ at heart. They will guide you through the biggest mistakes and help you improve the Client Code Quality.
 

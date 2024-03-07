@@ -26,7 +26,7 @@ As might be expected, there is no one-size-fits-all CI/CD and no infallible tool
 
 As a basis for discussion in this article, the delivery pipeline figured below is used to explore how testing and automation can be integrated in an OutSystems factory.
 
-![continuous delivery pipeline](images/continuous-delivery-pipeline.png "continuous delivery pipeline ")
+![Diagram illustrating the CI/CD continuous delivery pipeline with development, regression, acceptance, pre-production, and production stages.](images/continuous-delivery-pipeline.png "Continuous Delivery Pipeline Diagram")
 
 This delivery pipeline comprises the following:
 
@@ -75,7 +75,7 @@ Designing a test suite, and then deciding what to automate, requires a cost-bene
 
 The core of that strategy is the [test pyramid](https://martinfowler.com/articles/practical-test-pyramid.html), as illustrated below. It shows how segregated testing facilitates creation of a healthy, fast, and maintainable test suite.
 
-![test pyramid](images/guidelines-testing-pyramid-diag.png "test pyramid")
+![Diagram of the test pyramid showing the distribution of component, integration, and E2E tests in a testing strategy.](images/guidelines-testing-pyramid-diag.png "Testing Pyramid Diagram")
 
 The test pyramid comprises:
 
@@ -105,7 +105,7 @@ Two OutSystems components for creating BDD tests are available for free download
 
 Using these components, developers use **Service Studio** to create a testing app in parallel to the module to be tested. The screen below illustrates a typical BDD scenario for a business rule that has successfully passed.
 
-![bdd test passed](images/bdd-test-passed.png "bdd test passed")
+![Screenshot of a BDD test scenario indicating all steps have passed successfully.](images/bdd-test-passed.png "BDD Test Passed Example")
 
 
 See [The Complete Guide To BDD Testing In OutSystems](https://www.outsystems.com/blog/posts/bdd-testing/) for full instructions about setting up a BDD framework. 
@@ -150,7 +150,7 @@ In the examples below, Jenkins is used at the pipeline’s orchestration server.
 
 **Development (DEV)** is the primary environment for developing OutSystems applications and BDDFramework apps to test component functionality.
 
-![continuous deployment dev envioronment](images/continuous-deployment-dev.png "continuous deployment dev environment")
+![Diagram showing the continuous deployment process in the development environment with mock data.](images/continuous-deployment-dev.png "Continuous Deployment Development Environment")
 
 Typically, the **DEV** environment uses mock data, so that developers can publish changes frequently and verify that everything functions correctly and has no negative impact on existing code.
 
@@ -161,7 +161,7 @@ Developers may use [Feature Toggle](https://www.outsystems.com/forge/component-o
 
 Once the development of a new feature or change request is complete, the app is ready to be promoted from **Development** to **Regression**. In the **App** screen in **LifeTime**, as seen below, the developer creates a release candidate by clicking **[Tag Version](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Deploy_Applications/Tag_a_Version)**.
 
-![select app for tagging](images/select-app-for-tagging.png "select app for tagging")
+![Screenshot of the OutSystems LifeTime interface highlighting the 'Tag Version' option for an application.](images/select-app-for-tagging.png "Selecting an App for Tagging in LifeTime")
 
 <div class="info" markdown="1">
 
@@ -172,7 +172,7 @@ In the **Tag Version** screen developers give the app a major version number alo
 
 When the information has been keyed in the developer clicks **Tag Version**.
 
-![tag in lifetime](images/tag-in-lifetime.png "tag in lifetime")
+![Screenshot showing the 'Tag Version' screen in OutSystems LifeTime with fields for version number and description.](images/tag-in-lifetime.png "Tagging a Version in LifeTime")
 
 
 In the screen below you can see that the BDD test app (**App_Tests**) has already been tagged and is also being promoted to **Regression**. 
@@ -187,21 +187,21 @@ In the **Plugins** menu select **Trigger Pipeline** to open the **Pipeline** scr
 
 
 
-![trigger pipeline](images/trigger-pipeline.png "trigger pipeline")
+![Screenshot of the OutSystems LifeTime interface with the 'Trigger Pipeline' option highlighted.](images/trigger-pipeline.png "Triggering a Pipeline in LifeTime")
   
 
 The screen below shows all of the pipelines that have been created for the OutSystems factory. **Pipelines/App-Pipeline@Jenkins** indicates that both the app and BDD test app have newer versions available. Click **Trigger Pipeline**. 
 
 
 
-![pipeline plugin](images/pipeline-plugin.png "pipeline plugin")
+![Screenshot showing the pipeline plugin interface in OutSystems LifeTime with options to trigger pipelines.](images/pipeline-plugin.png "Pipeline Plugin in LifeTime")
 
 
 In the Jenkins pipeline screen you can track the progress of the actions specified for the deployment as they run.
 
 
 
-![jenkins stage 1](images/jenkins-stage-1.png "jenkins stage 1")
+![Screenshot of the Jenkins pipeline interface showing the initial stages of the deployment process.](images/jenkins-stage-1.png "Jenkins Pipeline Stage 1")
 
 
 
@@ -211,39 +211,39 @@ The **Regression (REG)** environment is where BDD regression tests are performed
 
 Other tests, such a E2E tests, code validation checks, static code analysis tools, dynamic code analysis tools, and others, can also be added to the automated testing in the regression environment as long as it doesn’t compromise the speed of the feedback loop.
 
-![continuous deployment reg environment](images/continuous-deployment-reg.png "continuous deployment reg environment")
+![Diagram showing the continuous deployment process in the regression environment.](images/continuous-deployment-reg.png "Continuous Deployment Regression Environment")
 
 Regression tests automatically begin to run when Jenkins is informed that the app has been successfully deployed.
 
-![jenkins stage 2](images/jenkins-stage-2.png "jenkins stage 2")
+![Screenshot of the Jenkins pipeline interface showing the regression testing stage.](images/jenkins-stage-2.png "Jenkins Pipeline Stage 2")
 
 If all regression tests are successful the release candidate is automatically promoted to the **Acceptance (ACC)** environment.
 
 However, if one or more of the regression tests fail, the problem must be fixed immediately. The pipeline is blocked, and nothing else can be promoted, until the error is fixed.
 
-![regression error](images/regression-error.png "regression error")
+![Screenshot of a regression test error in the Jenkins pipeline interface.](images/regression-error.png "Regression Test Error")
 
 ### Acceptance
 
 If the regression suite is executed successfully, the release candidate is automatically deployed to the **Acceptance (ACC)** environment.
 
-![continuous deployment acc environment](images/continuous-deployment-quality.png "continuous deployment acc environment")
+![Diagram showing the continuous deployment process in the acceptance environment with manual approval.](images/continuous-deployment-quality.png "Continuous Deployment Acceptance Environment")
 
 In contrast to previous and subsequent environments, promotion of a release candidate from **Acceptance** requires the approval of an authorized user, often a business representative. This allows for smoke tests, sanity tests of newly developed features, exploratory testing, lengthy automated tests, complex UI tests, load and security testing, and others—depending on the needs and requirements of the enterprise.
 
 To run these manual and exploratory tests, go to **LifeTime** and select **Open in browser** from the dropdown menu in the **Acceptance** environment.
 
-![acceptance sanity checks](images/acceptance-sanity-checks.png "acceptance sanity checks")
+![Screenshot of the OutSystems LifeTime interface with options for conducting sanity checks in the acceptance environment.](images/acceptance-sanity-checks.png "Acceptance Environment Sanity Checks")
 
 When the release candidate has been approved, the authorized representative clicks **Proceed** in the Jenkins pipeline window.
 
-![Jenkins acc](images/jenkins-acc.png "jenkins acc")
+![Screenshot of the Jenkins pipeline interface showing the acceptance stage with a 'Proceed' button.](images/jenkins-acc.png "Jenkins Acceptance Stage")
 
 ### Pre-Production
 
 **Pre-production (PRE)** is considered a dry-run deployment, using data that closely matches the production environment and real-world data. It is also aligned with PRD in terms of code. This allows for rehearsing deployments in a production-like environment, with the same version of dependencies as there are in **Production**.
 
-![continuous deployment pre environment](images/continuous-deployment-pre.png "continuous deployment pre environment")
+![Diagram showing the continuous deployment process in the pre-production environment.](images/continuous-deployment-pre.png "Continuous Deployment Pre-Production Environment")
 
 If the deployment is successful the pipeline automatically promotes the app to **Production (PRD)**.
 
@@ -251,7 +251,7 @@ If the deployment is successful the pipeline automatically promotes the app to *
 
 And there you have it. The release candidate has gone through the deployment pipeline. The enterprise can go forward with high confidence that users will have an error-free experience with the newly released app.
 
-![continuous deployment prd environment](images/continuous-deployment-prod.png "continuous deployment prd environment")
+![Diagram showing the continuous deployment process in the production environment.](images/continuous-deployment-prod.png "Continuous Deployment Production Environment")
 
 As mentioned above, a CI/CD journey can be made with more or fewer environments, a different deployment orchestration platform running another suite of tests with additional manual promotions or with no human intervention at all. The best choice is the one that works.
 

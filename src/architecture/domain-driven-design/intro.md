@@ -16,13 +16,13 @@ In this section you can find information on all aspects of using a Domain Driven
 
 With the **growth of a software factory**, it becomes more and more difficult to isolate development and deployment. Both become more complex and slow. Small change requests become harder to implement. Planning becomes hard. This all means that the teams are at odds with each other. 
 
-![](images/outsystems_domain_driven_architecture_0.png)
+![Illustration of the complexity and interdependency in software development.](images/outsystems_domain_driven_architecture_0.png "Complexity in Software Development")
 
 The teams start facing growing pains to cope with the interests of the business because everything starts to become interdependent. It becomes hard to avoid ripple effects where changes impact other businesses. Decisions are harder to make as more decision-makers are involved. 
 
 The need to decouple the large monolith into small, serviceable pieces becomes imperative, providing team isolation and lifecycle independence.
 
-![](images/outsystems_domain_driven_architecture_1.png)
+![Diagram showing the transition from a monolithic architecture to decoupled services.](images/outsystems_domain_driven_architecture_1.png "Decoupling Monolithic Architecture")
 
 As the software complexity increases, it also increases the need to split and organize the software into smaller serviceable pieces that can be independently managed by teams.
 
@@ -36,10 +36,10 @@ Is this always true? Does it apply to any software factory? Let’s look into bo
 
 |Simple logic and faster centralized development?|Continuous integration, continuous delivery and scalability?|
 |--|--|
-|![Monolith approach](images/outsystems_domain_driven_architecture_2.png)|![Microservices approach](images/outsystems_domain_driven_architecture_3.png)|
+|![Graphic representing a centralized development model with simple logic and faster development.](images/outsystems_domain_driven_architecture_2.png "Centralized Development Model")|![Graphic representing a model with continuous integration, continuous delivery, and scalability.](images/outsystems_domain_driven_architecture_3.png "Continuous Integration and Delivery Model")|
 
    
 Each option has advantages and disadvantages. Let’s look into the main ones:
 
-![Advantages of monolith and microservices](images/outsystems_domain_driven_architecture_4.png)
+![Comparative diagrams showing the evolution of software complexity from small apps to large monoliths and decoupled services.](images/outsystems_domain_driven_architecture_4.png "Software Complexity and Architecture")
 

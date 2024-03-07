@@ -118,17 +118,17 @@ For the **RSVP** app Service Center is consulted daily for logged errors, slow q
 
 Log into [Service Center](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Monitor_and_Troubleshoot/View_the_Environment_Logs_and_Status) and select the Monitoring menu to view the Error Log.
 
-![Error Log](images/monitoring-sc-errors.png)
+![Screenshot of the OutSystems Service Center Error Log interface showing a list of errors with details such as time of log, module, message, and source.](images/monitoring-sc-errors.png "OutSystems Service Center Error Log")
 
 Each log entry is identified by a timestamp, the module where the error occurred, the actual error message, and a Detail link to view additional information.
 
-![Error Log detail](images/error-detail.png)
+![Detailed view of a service action error in OutSystems Service Center, displaying error message, stack trace, and HTTP trace information.](images/error-detail.png "Service Action Error Detail in OutSystems")
 
 The **Error detail** page includes the error ID, the session ID, environment information, and a stack trace.
 
 In addition, the **Request Key** can be used to correlate all log and performance events. Click it to see the Request Log.
 
-![Request log](images/request-log.png)
+![Screenshot of the OutSystems Request Log showing a list of web screen requests and associated errors with timestamps and module information.](images/request-log.png "OutSystems Request Log")
 
 Here you can see that a particular web screen request generated two different errors, both in the same module. You have identified a probable source for this particular error; now your developers know where to go to begin fixing it.
 Other Service Center monitoring logs include:
@@ -154,11 +154,11 @@ Other Service Center monitoring logs include:
 
 For the **On the Move** app Service Center Analytics is consulted daily to view a number of pre-aggregated reports, all of which can be filtered by type and by date.
 
-![Service Center reports](images/reports-sc.png)
+![Screenshot of the OutSystems Service Center Reports interface with options to create new reports and filter existing ones by type and date.](images/reports-sc.png "OutSystems Service Center Reports")
 
 Among the most useful reports is **Top Errors**, arranged according to the number of errors and the module in which the errors occurred.
 
-![Top errors report](images/top-errors-sc.png)
+![Screenshot of the Top Errors report in OutSystems Service Center, listing errors by module and message with a count of occurrences.](images/top-errors-sc.png "Top Errors Report in OutSystems Service Center")
 
 By clicking through to the module you can pinpoint the source of the problem and begin the process of correcting the error.
 
@@ -176,7 +176,7 @@ Log into LifeTime to view the Applications dashboard.
 
 Log into LifeTime and click the **Analytics** menu to view the analytics dashboard. It covers all aspects of the [end-user experience](https://www.outsystems.com/evaluation-guide/what-kind-of-monitoring-and-analytics-does-outsystems-offer/#End-user_experience_analytics), a metric based on industry standard indicators of user satisfaction.
 
-![LifeTime analytics](images/tlc-apdex.png)
+![Screenshot of the OutSystems LifeTime Analytics Dashboard showing the Application Performance Index and response time distribution for the TLC application.](images/tlc-apdex.png "OutSystems LifeTime Analytics Dashboard")
 
 The analytics dashboard gives a view of all of your applications by environment. By regularly checking LifeTime developers can detect, troubleshoot, and solve performance issues even before end users report them. 
 
@@ -184,7 +184,7 @@ The **End User Experience** tab displayed above shows the execution times of all
 
 The **Application Performance Index** pane shows a downward trend, and the Screen Action pane shows that the [APDEX](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Monitor_and_Troubleshoot/The_APDEX_Performance_Score) value for Preparation is 59%, which indicates the source of the problem.
 
-![APDEX trend](images/analytics-drilldown.png)
+![Screenshot of an analytics drilldown in OutSystems LifeTime, highlighting performance issues in the Preparation screen action.](images/analytics-drilldown.png "Analytics Drilldown in OutSystems LifeTime")
 
 To investigate further click the problematic module and drill down to see more information to direct your developers’ troubleshooting efforts.
 
@@ -244,7 +244,7 @@ You can configure [App Feedback](https://success.outsystems.com/Documentation/11
 
 Like Performance Monitoring API, MonitorProbe gives you access to data that's otherwise accessible only through a direct query to the OutSystems platform database, such as logs and timers.
 
-![Monitor Probe REST API](images/monitor-probe.png)
+![Screenshot of the MonitorProbe REST API interface with a list of GET operations for various log types such as Errors, Extensions, and Integrations.](images/monitor-probe.png "MonitorProbe REST API Interface")
 
 MonitorProbe presents the raw data about application behavior and performance in an easily accessible manner for monitoring and troubleshooting. In addition, using a tool that can import the exposed data, such as  [Microsoft Excel](https://support.microsoft.com/en-us/office/import-data-from-external-data-sources-power-query-be4330b3-5356-486c-a168-b68e9e616f5a), you can build your own visualizations and create alerts on top of the OutSystems monitoring data.
 
@@ -322,7 +322,7 @@ Elastic is a powerful monitoring and observability tool that you can use to leve
 
 Elastic allows you to monitor software services and applications in real time, collecting detailed performance information on response time for incoming requests, database queries, calls to caches, external HTTP requests, among others.
 
-![Elastic monitoring](images/elastic-monitoring.png)
+![Diagram illustrating the integration of OutSystems monitoring data with Elastic stack components like logstash and Kibana for a comprehensive monitoring dashboard.](images/elastic-monitoring.png "Elastic Monitoring Dashboard")
 
 With **Elastic** integrated into your monitoring workflow, as seen above, you can extract extensive data logs for web and mobile apps, capturing log formats, networks, and firewalls from both cloud and on-premises sources that enriches the data collected by OutSystems.
 

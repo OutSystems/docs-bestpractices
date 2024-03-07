@@ -28,7 +28,7 @@ In an OutSystems factory, developers working in tandem are encouraged to frequen
 The **Service Center** console (https://&lt;environment_name>/ServiceCenter) gives every module an incremental version number as it is published. These versions can be accessed by going to **Factory>Modules**, clicking a published module, and viewing the **Versions** column.
 
 
-![published version](images/versions-dev-sc.png "published version")
+![Screenshot of the OutSystems Service Center showing a list of module versions with version number, upload date, and publisher details.](images/versions-dev-sc.png "OutSystems Service Center Module Versions")
 
 
 In the module detail screen, you can see the module’s **Version** number **(A)**, the date and time it was **Uploaded** **(B)**, and the developer **(C)** who published it.
@@ -57,13 +57,13 @@ To tag an app, go to **LifeTime** (https://&lt;environment_name>/Lifetime), sear
 The application screen shows that changes have been made in the development environment, as indicated by the **+** mark by both the version number and the link to the app in **Service Center**. Click **Tag Version**.
 
 
-![tag app version](images/tag-version-lt.png "tag app version")
+![Screenshot of the OutSystems LifeTime interface highlighting the option to tag a new version of an application.](images/tag-version-lt.png "Tagging App Version in OutSystems LifeTime")
 
 
 Type a new **Version** number and a meaningful **Description**, and then click **Tag Version**.
 
 
-![tag app version details](images/tag-version-details-lt.png "tag app version details")
+![Screenshot of the OutSystems LifeTime 'Tag Version' dialog box where a user can enter a new version number and description.](images/tag-version-details-lt.png "OutSystems LifeTime Tag Version Details")
 
 
 <div class="info" markdown="1">
@@ -78,7 +78,7 @@ The dropdown control at the top of the **Deployment** pane gives a list of the m
 To promote a tagged app from **Development** to **Quality**, open **LifeTime** (https://&lt;environment_name>/Lifetime) and click the **Deploy** button between the current environment and the one to which it is to be promoted.
 
 
-![set up deployment plan](images/set-up-deployment-plan-lt.png "set up deployment plan")
+![Screenshot of the OutSystems LifeTime interface with the 'Deploy' button highlighted, indicating the start of setting up a deployment plan.](images/set-up-deployment-plan-lt.png "Setting Up Deployment Plan in OutSystems LifeTime")
 
 
 In the **Deployment Plan** screen you are prompted to select an app for deployment.
@@ -92,27 +92,27 @@ A [Deployment Plan](https://success.outsystems.com/Documentation/11/Managing_the
 When the app has been selected, click **Add to Deployment Plan**. 
 
 
-![choose apps for deployment](images/choose-apps-for-deployment-lt.png "choose apps for deployment")
+![Screenshot of the OutSystems LifeTime interface showing the selection of applications to add to a deployment plan.](images/choose-apps-for-deployment-lt.png "Choosing Applications for Deployment in OutSystems LifeTime")
 
 
 In the next screen, click **Validate Now**.
 
 
-![deployment plan dropdown](images/deployment-plan-dropdown-lt.png "deployment plan dropdown")
+![Screenshot of the OutSystems LifeTime 'Deployment Plan' screen with the 'Validate Now' button highlighted.](images/deployment-plan-dropdown-lt.png "OutSystems LifeTime Deployment Plan Dropdown")
 
 
 At the end of the validation process the available deployment options change from blue to green. Click **CONTINUE** to initiate immediate deployment or the **Deploy** dropdown for additional options.
 
 
 
-![continue deployment](images/continue-deployment-lt.png "continue deployment")
+![Screenshot of the OutSystems LifeTime interface with the 'CONTINUE' button highlighted to proceed with deployment.](images/continue-deployment-lt.png "Continuing Deployment in OutSystems LifeTime")
 
 
 After adding any relevant **Deployment Notes**, click **Deploy Now** to continue.
 
 
 
-![deploy now](images/deploy-now-lt.png "deploy now")
+![Screenshot of the OutSystems LifeTime interface with the 'Deploy Now' button highlighted for immediate deployment.](images/deploy-now-lt.png "Deploy Now Option in OutSystems LifeTime")
 
 
 **LifeTime** verifies the deployment process, retrieves the application from version control, analyzes the impact on running business processes, generates the compiled code, analyzes the database, distributes the compiled application to front-end servers, and deploys the app to the new environment.
@@ -180,7 +180,7 @@ Typically, mock data is used for development, so the sample database is replaced
 When the same external database is to be integrated in a subsequent environment, such as from quality to development, you can save time by clicking **Copy from Source for a new configuration**. 
 
 
-![copy from source](images/ext-db-16-ea.png "copy from source")
+![Screenshot of the OutSystems interface showing the 'Copy from Source for a new configuration' option for external database integration.](images/ext-db-16-ea.png "Copy from Source for External Database Configuration")
 
 
 </div>
@@ -193,13 +193,13 @@ When the same external database is to be integrated in a subsequent environment,
 After the initial deployment step has been completed click **Configure application settings**.
 
 
-![configuration app settings](images/configure-app-settings.png "configuration app settings")
+![Screenshot of the OutSystems interface with the 'Configure application settings' option after initial deployment.](images/configure-app-settings.png "Configuring Application Settings in OutSystems")
 
 
 In the next window the default site properties are displayed. Type in a new value for the target environment. The change is saved automatically. Click **Continue**.
 
 
-![configuration app setting screen](images/configure-app-setting-screen.png "configuration app setting screen")
+![Screenshot of the OutSystems interface where default site properties can be changed for the target environment.](images/configure-app-setting-screen.png "Application Settings Configuration Screen in OutSystems")
 
 
 The changed site properties are now overwritten in the **Quality** environment. The original default values are used in subsequent environments unless you modify them during deployment.
@@ -209,13 +209,13 @@ However, while this is the easiest way to modify default site properties for dif
 For example, to change a site property at run time, open **Service Center** in the production environment (https://&lt;production_environment_name>/ServiceCenter), go to **Factory>Modules**, click the published module, select **Site Properties**, and then click the site property that requires a configuration change.
 
 
-![change site properties](images/change-site-properties-sc.png "change site properties")
+![Screenshot of the OutSystems Service Center showing the option to change site properties for a published module.](images/change-site-properties-sc.png "Changing Site Properties in OutSystems Service Center")
 
 
 In the **Site Property** screen you can see the default value. Change the current value, as needed, and then click **Apply**. No redeployment is necessary.
 
 
-![change site property currency](images/change-a-site-property-sc.png "change site property currency")
+![Screenshot of the OutSystems Service Center showing the 'Site Property' screen where a specific property value can be changed.](images/change-a-site-property-sc.png "Changing a Specific Site Property in OutSystems Service Center")
 
 
 ### Timers {#timers}
@@ -231,13 +231,13 @@ In classical coding **Timers** are called batch jobs.
 A [timer’s](https://success.outsystems.com/Documentation/11/Developing_an_Application/Use_Timers) schedule, priority, and timeout are configured during development in **Service Studio**. Using the example of a daily email blast, it is impractical to wait all day to verify the timer’s functionality. For testing purposes, open **Service Center** in the development environment (https://&lt;development_environment_name>/ServiceCenter), go to **Factory>Modules**, click the published module, select **Timers**, and then click the timer you wish to test.
 
 
-![modify timer in qa](images/modify-timer-in-qa-sc.png "modify timer in qa")
+![Screenshot of the OutSystems Service Center showing the option to modify timer settings in a specific environment.](images/modify-timer-in-qa-sc.png "Modifying Timer Settings in OutSystems Service Center")
 
 
 With the timer selected, click **Run Now**. When it is finished you can view the **Timer reports** to verify that it is working as expected.
 
 
-![run timer now](images/timer-run-now-sc.png "run timer now")
+![Screenshot of the OutSystems Service Center showing the 'Run Now' button for a selected timer.](images/timer-run-now-sc.png "Running a Timer Immediately in OutSystems Service Center")
 
 
 Another typical scenario is to override default properties permanently in a single environment. For example, during QA testing it is inconvenient to wait an entire cycle just to see if a timer works as expected.
@@ -245,14 +245,14 @@ Another typical scenario is to override default properties permanently in a sing
 In this case, open **Service Center** in the quality environment (https://&lt;quality_environment_name>/ServiceCenter), go to **Factory>Modules**, click the published module, select **Timers**, and then click the timer which requires a configuration change.
 
 
-![modify timer](images/modify-timer-in-qa-sc.png "modify timer")
+![Screenshot of the OutSystems Service Center showing the option to modify timer settings in a specific environment.](images/modify-timer-in-qa-sc.png "Modifying Timer Settings in OutSystems Service Center")
 
 
 Change all of the timer parameters required for testing in the quality environment. No redeployment is necessary. When the app is promoted to the next environment the default timer parameters apply.
 
 
 
-![modify timer parameters](images/modify-timer-parameters-qa-sc.png "modify timer parameters")
+![Screenshot of the OutSystems Service Center showing the modification of timer parameters in the quality environment.](images/modify-timer-parameters-qa-sc.png "Modifying Timer Parameters in OutSystems Service Center")
 
 
 ### Web-service endpoints {#endpoints}
@@ -263,7 +263,7 @@ Once an app has been deployed to production and becomes a candidate for release,
 
 
 
-![change soap web service](images/change-soap-web-services-sc.png "change soap web service")
+![Screenshot of the OutSystems Service Center showing the option to change the configuration of SOAP web services.](images/change-soap-web-services-sc.png "Changing SOAP Web Services Configuration in OutSystems Service Center")
 
 
 Make the required changes in all exposed and consumed integrations as required. No redeployment is necessary. When the app is released calls go to and from the modified endpoints.
@@ -276,11 +276,11 @@ A final configuration management deals with suspending a specific business proce
 In this case, open **Service Center** in the production environment (https://&lt;production_environment_name>/ServiceCenter), go to **Monitoring>Processes**, and click the process you wish to halt.
 
 
-![select business process](images/select-process-sc.png "select business process")
+![Screenshot of the OutSystems Service Center showing the selection of a business process for configuration.](images/select-process-sc.png "Selecting a Business Process in OutSystems Service Center")
 
 
 In the **Process** screen click **Lock Process**. This process will not run until it is unlocked.
 
 
 
-![lock business process](images/lock-process-sc.png "lock business process")
+![Screenshot of the OutSystems Service Center showing the 'Lock Process' option for a specific business process.](images/lock-process-sc.png "Locking a Business Process in OutSystems Service Center")

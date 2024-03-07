@@ -57,7 +57,7 @@ Consider the following concerning the technical logs collected by OutSystems:
 
 These logs are stored in a dedicated set of OutSystems tables and can be consulted in [Service Center under Monitoring menu](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Monitor_and_Troubleshoot/View_the_Environment_Logs_and_Status):
 
-![Service Center Monitoring Menu](images/service-center-monitpring-menu.png)
+![Screenshot of the OutSystems Service Center Monitoring menu highlighting the General log section.](images/service-center-monitpring-menu.png "OutSystems Service Center Monitoring Menu")
 
 Considering that the platform logs have a recycling rate, these should be collected periodically and stored externally. The recommendation is to build an ETL process to execute this task, due to the high number of records.
 
@@ -65,7 +65,7 @@ Considering that the platform logs have a recycling rate, these should be collec
 
 For Standard Audit Trail systems, there is an industry common architecture pattern to consider, depicted by the following figure:
 
-![Standard Audit Trail System - generic architecture](images/standard-audit-trail-system_generic-architecture.png)
+![Diagram illustrating the generic architecture pattern for a standard audit trail system with users, services, audit trail logging, and external audit integration components.](images/standard-audit-trail-system_generic-architecture.png "Generic Architecture of a Standard Audit Trail System")
 
 *[(Source)](https://docs.aws.amazon.com/en_pv/whitepapers/latest/microservices-on-aws/auditing.html)*
 
@@ -79,7 +79,7 @@ Consider the following three architecture patterns/examples on how to implement 
 
 ### Based on OutSystems built-in LogMessage action
 
-![OutSystems Audit Trails Based on the built-in LogMessage action](images/outsystems-audit-trails-based-on-built-in_logmessage_action.png)
+![Flowchart showing the OutSystems Audit_Lib module using the built-in LogMessage action to implement audit trails.](images/outsystems-audit-trails-based-on-built-in_logmessage_action.png "OutSystems Audit Trails Based on Built-in LogMessage Action")
 
 The **Audit_Lib** module provides a **MyLogMessage** public action, which references a **LogMessage** (system) built-in action.
 
@@ -91,7 +91,7 @@ Although OutSystems provides a system log audit action, we recommend building a 
 
 The following figure depicts the centralized Audit Trail:
 
-![OutSystems Centralized Audit Trail using server entities](images/outsystems-centralized-audit-trail-using-server-entities.png)
+![Diagram depicting the centralized audit trail architecture in OutSystems using server entities QuickLog and AuditLog.](images/outsystems-centralized-audit-trail-using-server-entities.png "OutSystems Centralized Audit Trail Using Server Entities")
 
 1. The data is stored in the **QuickLog** entity quickly, due to performance reasons.
 1. The timer moves the **staged** data from **QuickLog** into the main **AuditLog** entity asynchronously.
@@ -108,7 +108,7 @@ Use it to write a debug log that allows the IT teams to trace the application fl
 
 The following figure depicts the foundation application that supports all applications that log with an External Audit logging system integration:
 
-![OutSystems Extended Centralized Audit Trail](images/outsystems-extended-centralized-audit-trail.png)
+![Architecture diagram of the OutSystems extended centralized audit trail showing the Audit_Lib application, LogMessage_IS module, and ExternalAudit_IS module.](images/outsystems-extended-centralized-audit-trail.png "OutSystems Extended Centralized Audit Trail Architecture")
 
 * **Audit Library Application**
 
@@ -166,7 +166,7 @@ You can download from the OutSystrems Forge, a component that allows you to inte
 
 The following picture depicts the pattern in OutSystems that can implement these Auditing operations:
 
-![OutSystems Advanced Audit Trail implementation](images/outsystems-advanced-audit-trail-implementation.png)
+![Diagram illustrating the advanced audit trail implementation in OutSystems with the Audit_Lib module and DynamoDB Connector.](images/outsystems-advanced-audit-trail-implementation.png "OutSystems Advanced Audit Trail Implementation")
 
 The following list details the Public Actions:
 

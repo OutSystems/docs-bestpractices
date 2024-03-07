@@ -21,7 +21,7 @@ Once you identify your concepts, you must translate them into application module
 
 Consider the following example of concepts identified with the [Architecture Canvas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/01_The_4_Layer_Canvas) method.
 
-![](images/architecture-canvas-concepts-diag.png)
+![Diagram illustrating the Architecture Canvas method with concepts categorized into User processes, Business concepts, and Utilities and integration.](images/architecture-canvas-concepts-diag.png "Architecture Canvas Concept Diagram")
 
 The number of modules that need to be defined to implement these concepts depends on the concept granularity. To define an architecture, concepts don’t need to be captured at very low level (like in this example). However, the correct granularity is influenced by the following criteria:
 

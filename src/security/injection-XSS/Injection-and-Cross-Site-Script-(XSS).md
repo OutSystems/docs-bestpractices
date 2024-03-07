@@ -31,17 +31,17 @@ In such cases the typical strategy is to escape the inline parameter String Lite
 
 **See the example code below:**
 
-![image alt text](images/Injection-and-Cross-Site-Script-0.png)
+![Screenshot of the OutSystems IDE with a SQL query vulnerable to injection due to the Expand Inline property set to Yes.](images/Injection-and-Cross-Site-Script-0.png "OutSystems IDE showing a vulnerable SQL query")
 
 **Figure 1 **shows that the code assumes the request arrives with a valid client id, like OU12345. If this happens we have the SQL in **Figure 2**, and everything occurs rightly:
 
  
 
-![image alt text](images/Injection-and-Cross-Site-Script-1.png)
+![Code snippet of a safe SQL query using a valid client ID OU12345 in the WHERE clause.](images/Injection-and-Cross-Site-Script-1.png "Example of a safe SQL query with a valid client ID")
 
 However, an attacker may exploit this assumption by modifying the URL parameter passing the string  **DUMMYSTR OR 1 = 1**. If this happens, we have the code below, and the attacker has access to all the client database, as shown in **Figure 3**:
 
-![image alt text](images/Injection-and-Cross-Site-Script-2.png)
+![Code snippet demonstrating an SQL injection attack with the input 'DUMMYSTR OR 1 = 1' leading to a data breach.](images/Injection-and-Cross-Site-Script-2.png "Example of an SQL injection attack")
 
 By passing this query parameter directly into the SQL statement, the code returns every user in the database and exposes their personal information. This is a bad idea. [OWASP](https://www.owasp.org/), therefore, suggests developers sanitize all inputs before a statement execution or avoid interpretation entirely by using safe APIs.
 
@@ -49,7 +49,7 @@ How does this work in OutSystems? When you set the **Expand Inline** property to
 
 For a SQL clause with non-string literals, or If additional security is required, the VerifySqlLiteral() or the  [EncodeSql()](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Logic/Built-in_Functions/Text#EncodeSql) functions can be used, from the Sanitization Extension, to ensure it only contains valid SQL literals. With the tradeoff that Variables with SQL reserved characters are rejected, of course. See below the wrong way (Figure 1) and correct wat (Figure 2) way:
 
-![image alt text](images/Injection-and-Cross-Site-Script-3.png)  ![image alt text](images/Injection-and-Cross-Site-Script-4.png)
+![Screenshot showing an incorrect SQL query that concatenates user input directly without sanitization, making it vulnerable to injection.](images/Injection-and-Cross-Site-Script-3.png "Incorrect SQL query without input sanitization")  ![Screenshot showing a correct SQL query that uses EncodeSql() function to sanitize user input, preventing SQL injection.](images/Injection-and-Cross-Site-Script-4.png "Correct SQL query with input sanitization")
 
  
 
@@ -59,7 +59,7 @@ Javascript is one of the most popular and widely used technologies for web pages
 
  
 
-![image alt text](images/Injection-and-Cross-Site-Script-5.png)     ![image alt text](images/Injection-and-Cross-Site-Script-6.png)
+![Screenshot of the OutSystems IDE where the Escape Content property is set to No, indicating a potential JavaScript injection vulnerability.](images/Injection-and-Cross-Site-Script-5.png "OutSystems IDE showing a JavaScript injection vulnerability")     ![Code snippet showing unsafe JavaScript code concatenating an HTML snippet without using EncodeHtml(), risking an injection attack.](images/Injection-and-Cross-Site-Script-6.png "Unsafe JavaScript code without HTML encoding")
 
  
 

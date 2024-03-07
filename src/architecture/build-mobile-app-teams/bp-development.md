@@ -38,7 +38,7 @@ In that case, similar to the recommendation in the architecture designs, we can 
 
 The following image shows us a real example of this. This example belongs to a customer, so for security purposes the name of some modules have been changed to hide internal information.
 
-![Example of End-User module consuming Mobile Core Widgets](images/how_to_build_mobile_app_8.png)
+![Diagram illustrating the layered architecture with End-User, Core Business, and Foundation levels for a mobile app.](images/how_to_build_mobile_app_8.png "Layered Architecture Diagram")
 
 This means that developers working on the customer blocks will not clash into developers working into the common blocks or the product blocks.
 
@@ -49,7 +49,7 @@ Even with all of this best practices there’s still a chance that we’ll have 
 
 For that we have the visual merging tool, similar to the one that you might be familiar with from the traditional web development.
 
-![](images/how_to_build_mobile_app_9.png)
+![Screenshot of the visual merging tool interface showing two versions of a project for comparison and merging.](images/how_to_build_mobile_app_9.png "Visual Merging Tool Interface")
 
 
 This tool allows you to merge your work with another developer and is a great way to identify changes and see what has been affected in each one of the versions, allowing you to select one of the versions to keep.
@@ -58,7 +58,7 @@ This tool allows you to merge your work with another developer and is a great wa
 
 If a conflict occurs, you’ll still need to select one of the versions to keep, while the other will be lost. This means that if you don’t define priorities or if you don’t understand what was done in both versions, some work might be lost.
 
-![](images/how_to_build_mobile_app_10.png)
+![Screenshot of a visual merge conflict resolution interface highlighting changes between two versions of a project.](images/how_to_build_mobile_app_10.png "Visual Merge Conflict Resolution")
 
 
 **That’s why good communication is crucial when dealing with these scenarios.**
@@ -102,18 +102,18 @@ Here are two examples on how to do it:
 
 * **Example 1**  
 
-    ![](images/how_to_build_mobile_app_11.png)
+    ![Flowchart showing the deployment lifecycle of sandbox applications from Development to Testing to Pre-Production.](images/how_to_build_mobile_app_11.png "Sandbox Deployment Lifecycle Example 1")
 
     In this situation, we have a test app (or sandbox) per team. Since we need to test these sandboxes independently in the new environments to validate the new features, they need to be published along with the "normal" application.
 
-    ![](images/how_to_build_mobile_app_12.png)
+    ![Flowchart showing the deployment lifecycle of a mobile application from Pre-Production to Production.](images/how_to_build_mobile_app_12.png "Mobile App Deployment Lifecycle")
 
     **In this scenario, the deployment lifecycle of the sandbox applications is Development → Testing → Pre-Production.**
 
     **For the mobile application, the deployment lifecycle is Pre-Production → Production.**
 
 * **Example 2**
-    ![](images/how_to_build_mobile_app_13.png)
+    ![Flowchart showing a new Integration environment in the deployment lifecycle of sandbox applications for end-to-end testing.](images/how_to_build_mobile_app_13.png "Sandbox Deployment with New Integration Environment")
 
    In this scenario, there's a new environment, called Integrations, that has the responsibility of converting the screens and logic of the sandbox applications into the actual mobile application.
    

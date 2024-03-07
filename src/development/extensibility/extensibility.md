@@ -47,25 +47,25 @@ As an example, Integration Studio provides automatic wizards that [reverse engin
 
 A typical workflow begins by selecting an [application template](https://success.outsystems.com/Documentation/11/Developing_an_Application/Application_Templates) that contains common elements, such as screen layouts, CSS, and basic logic, which developers use to quickly build reactive web apps, phone apps, or tablet apps that conform to company style guides and business rules.
 
-![](images/application-template_ss.png)
+![Screenshot of OutSystems application template selection screen offering options for reactive web app, tablet app, and phone app.](images/application-template_ss.png "OutSystems Application Template Selection")
 
 In addition to the built-in application templates, developers can choose from hundreds of [Forge application templates](https://www.outsystems.com/forge/list?q=&t=&o=&tr=False&oss=False&c=%200,5380,5392&a=&v=&hd=False&tn=&scat=forge), provided by the OutSystems community, to install and modify to create a new app, just like other application templates.
 
 The look and feel of the app is set in the OutSystems theme, which is part of the [OutSystems UI](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI) framework. Using the [Theme Editor](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Look_and_Feel/Customize_the_look_of_your_app_with_Theme_Editor), the overall style of the app can be customized in Service Studio, including default colors of screens and UI elements, default font and size, spacing and borders.
 
-![](images/theme-editor.gif)
+![Animated GIF showing the OutSystems Theme Editor interface where users can customize application themes.](images/theme-editor.gif "OutSystems Theme Editor Interface")
 
 [Screen templates](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/ScreenOverview?RuntimeId=2) for both web, mobile, and reactive apps provide theme-consistent UI and for such functions as dashboards, details, forms, galleries, lists, and onboarding. Each screen is populated with widgets and containers that can be modified and rearranged as required, including sample data that developers can use for testing on a computer or mobile phone. 
 
-![](images/screen-templates-service-studio.png)
+![Screenshot of OutSystems Service Studio displaying a variety of screen templates for web and mobile applications.](images/screen-templates-service-studio.png "OutSystems Screen Templates in Service Studio")
 
 Sometimes none of the built-in screen templates answer the needs of a particular function or activity. In this case, a new [custom screen template](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Creating_Screen_Templates) can be built from scratch by dragging and dropping [UI patterns](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/PatternOverview) to set the page layout, types of content and interaction, navigation and numbers, utilities and widgets—all from an extensive selection in the Service Studio toolbox. Once the new screen template has been published, it is available for use in any app in your environment.
 
-![](images/outsystems-ui-patterns.png)
+![Screenshot showcasing a collection of OutSystems UI patterns for adaptive, content, interaction, navigation, numbers, utilities, and widgets.](images/outsystems-ui-patterns.png "OutSystems UI Patterns")
 
 [The look and feel of widgets](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Look_and_Feel/Change_the_look_of_widgets_with_Styles_Editor) can be customized using the Styles Editor panel for editing basic visual properties, such as font color, margins, or border thickness. The changes can be made locally to affect only the selected widget, or saved globally for all widgets of that type used in the app.
 
-![](images/styles-editor-animation.gif)
+![Animated GIF demonstrating the use of the OutSystems Styles Editor panel to customize widget properties.](images/styles-editor-animation.gif "OutSystems Styles Editor Panel")
 
 Once developers have customized one of the OutSystems application templates, created screens, built logic, and published the app, they can save it as a [custom application template](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Reuse_UI/Create_a_Custom_Application_Template) that can be used as a starting point to develop additional apps, to define its look and feel, and put in place common functionality and manage dependencies.
 
@@ -87,7 +87,7 @@ Developers use [OutSystems UI](https://www.outsystems.com/outsystems-ui/) to twe
 
 For these situations, new styles can be created, or existing classes modified, in the [CSS editor](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Look_and_Feel/Cascading_Style_Sheets_(CSS)), which overrides the properties in the base CSS, for themes, screens, emails, blocks and widgets. The OutSystems UI makes extensive use of CSS variables for [color](https://outsystemsui.outsystems.com/StyleGuidePreview/Color), [typography](https://outsystemsui.outsystems.com/StyleGuidePreview/Typography), [borders](https://outsystemsui.outsystems.com/StyleGuidePreview/Border), [spacing](https://outsystemsui.outsystems.com/StyleGuidePreview/Spacing), and [shadows](https://outsystemsui.outsystems.com/StyleGuidePreview/Shadow), and these can be modified within the CSS editor. 
 
-![CSS editor](images/css-extensibility.gif)
+![Animated GIF illustrating the process of customizing CSS styles within the OutSystems platform.](images/css-extensibility.gif "CSS Extensibility in OutSystems")
 
 In some cases developers may decide to use an external CSS that is compliant with OutSystems UI by using the @import rule in the OutSystems UI CSS. 
 
@@ -194,7 +194,7 @@ The flow when calling a SAP remote function allows you to:
 * customize the values to be sent to SAP (OnBeforeCall)
 * customize the values returned by SAP (OnAfterCall)
 
-![](images/SAP_Remote_Function_Flow.png)
+![Flowchart depicting the steps involved in connecting to SAP and calling a remote function within OutSystems.](images/SAP_Remote_Function_Flow.png "SAP Remote Function Call Flow in OutSystems")
 
 When integrating with SAP, OutSystems uses, by default, the credentials provided when the connection to the SAP system was created. You can also use different credentials by configuring a different connection by environment or using a dynamic login.
 
@@ -237,7 +237,7 @@ If developers need tighter control of an Excel export, they can use [Advanced Mi
 
 The [OutSystems Forge](http://www.outsystems.com/Forge/) is a repository of reusable, open code connectors, widgets, libraries, themes and templates, mobile plugins, applications, reporting, and developer tools that help speed up app delivery time that can be installed and reused as if they belong to OutSystems itself.
 
-![](images/outsystems-forge-repository.png)
+![Screenshot of the OutSystems Forge repository homepage highlighting available apps, recent additions, and featured components.](images/outsystems-forge-repository.png "OutSystems Forge Repository")
 
 Among the more that 3000 currently available extensions developers can find the following:
 

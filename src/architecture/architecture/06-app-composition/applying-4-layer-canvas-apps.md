@@ -15,7 +15,7 @@ The same way individual modules are classified in an Architecture Canvas, each a
 
 Applications should be placed in the same layer as the top-most module layer in it. The following representation displays the nature of the modules that compose each application, as well as the application adopting the nature of its top-most module.
 
-![Application modules](images/applying-4-layer-canvas-apps_0.png)
+![Diagram showing the classification of applications into Orchestration, End-User, Core, and Library layers according to the Architecture Canvas principles.](images/applying-4-layer-canvas-apps_0.png "Architecture Canvas Layer Classification")
 
 Applications are subject to the same validation rules, respecting the relations between them:
 
@@ -37,19 +37,19 @@ Commonly, people don’t start thinking about defining several applications, sta
 
 In the first project, a new application is created to hold all the modules that were conceived at the architecture design stage. This application results from the blending of components that will eventually be versioned and deployed to a Quality Assurance environment.
 
-![Application architecture](images/applying-4-layer-canvas-apps_1.png)
+![Diagram of the first project showing an End-User Application composed of End-User, Core, and Library modules.](images/applying-4-layer-canvas-apps_1.png "First Project Application Composition")
 
 ### Second project
 
 On a second similar project, another application for a different business process is created, adding a few more **Core** and **Library** modules.
 
-![Application architecture](images/applying-4-layer-canvas-apps_2.png)
+![Diagram of the second project illustrating an additional End-User Application with its own set of Core and Library modules.](images/applying-4-layer-canvas-apps_2.png "Second Project Application Composition")
 
 ### Third project
 
 Soon, in a third evolution project, **End-user #1** starts reusing **Core C** and **End-user #2** starts reusing **Core B**. Although there is no violation in terms of module architecture, the two **End-user** applications have side references to each other - a cycle in fact.
 
-![Two end-user applications have side references](images/applying-4-layer-canvas-apps_3.png)
+![Diagram of the third project highlighting the cyclic dependencies between two End-User Applications through Core modules.](images/applying-4-layer-canvas-apps_3.png "Third Project Application Dependencies")
 
 This clearly implies that the two applications are strongly coupled. Deploying a new version of the first to Production may require to take the second along, and vice-versa.
 
@@ -57,7 +57,7 @@ This clearly implies that the two applications are strongly coupled. Deploying a
 
 The commonly reused resources must be isolated in a new application, as displayed in the following diagram - the **Core Application**.
 
-![Isolated common resources](images/applying-4-layer-canvas-apps_4.png)
+![Diagram showing the isolation of commonly reused Core and Library modules into a separate Core Application to avoid coupling between End-User Applications.](images/applying-4-layer-canvas-apps_4.png "Isolated Core Application")
 
 Not only **Core B** and **Core C**, that are directly referenced, must be moved to this application, but also all their dependencies (**Library B** and **Library C**) to avoid upward references to the **End-user** applications.
 

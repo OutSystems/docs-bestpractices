@@ -19,9 +19,9 @@ A Theme module includes the following components:
 
 * Logo images
 
-* ![Diagram showing the login flow and exception handling components within the Theme module.](images/isolating-app-theme_0.png "Login Flow and Exception Handling Components") Login flow and exception handling
+* ![Diagram illustrating login flow and exception handling components in an application theme.](images/isolating-app-theme_0.png "Login Flow and Exception Handling Components") Login flow and exception handling
 
-* ![Illustration of menu and navigation support logic in the Theme module.](images/isolating-app-theme_1.png "Menu and Navigation Support Logic") Menu and navigation support logic
+* ![Diagram showing menu and navigation support logic within an application theme.](images/isolating-app-theme_1.png "Menu and Navigation Support Logic") Menu and navigation support logic
 
 * Transversal roles (normally job roles like Manager or Employee) that can be reused in any application. This roles may influence the menu entries to be displayed.
 
@@ -35,7 +35,7 @@ The Theme module should be restricted to global look & feel elements and never b
 
 The following example shows a Global theme that is reused by several applications, supplying a common menu and login flow. This scenario makes sense if all the applications belong to a common Portal.
 
-![Architecture diagram showing a Global theme reused by several applications with a common menu and login flow.](images/isolating-app-theme_2.png "Global Theme Reuse Across Applications")
+![Architecture diagram depicting global theme reuse across multiple applications, with common services and system components.](images/isolating-app-theme_2.png "Global Theme Reuse Across Applications")
 
 It is based on one of the built-in themes supplied in OutSystems UI.
 
@@ -49,7 +49,7 @@ Services inside each application are specific for that application, hence they c
 
 If the applications are independent from each other and all they need is to share the global look & feel, then each application must have its own theme module.
 
-![Architecture diagram depicting independent application themes each inheriting from a common global theme with their own menus and login flows.](images/isolating-app-theme_3.png "Independent Application Themes Inheriting Global Theme")
+![Architecture diagram showing independent application themes inheriting from a global theme, with separate app themes and common services.](images/isolating-app-theme_3.png "Independent Application Themes Inheriting Global Theme")
 
 In this case, each application theme inherits the common global theme, but defines its own menu and/or login flow.
 

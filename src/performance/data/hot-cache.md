@@ -40,11 +40,11 @@ These are the possible levels of cache (and their visual representation):
 
 ||Cache Level|Description|
 |---|---|---|
-|![Client Side Cache](images/level-client-side-cache.png)|Client Side Cache|Local cache of specific data for a user. Normally set on the Mobile application as the local storage.|
-|![Hot Cache](images/level-hot-cache.png?width=50)|Hot Cache|Cached Pre digest or calculated data. Focus on active processes or requirements.|
-|![Cold Cache](images/level-cold-cache.png?width=50)|Cold Cache|Normalized data model with all relations. Relationships between entities are kept for easier searching.|
-|![Staging Cache](images/level-staging-cache.png?width=50)|Staging Cache|Cached staging data gathered from external systems, to be processed into the Cold data.|
-|![Master of records](images/level-master-of-records.png?width=50)|Master of records|External master of data|
+|![Icon representing client side cache, typically used in mobile applications for local storage.](images/level-client-side-cache.png "Client Side Cache")|Client Side Cache|Local cache of specific data for a user. Normally set on the Mobile application as the local storage.|
+|![Icon representing hot cache, indicating pre-digested or calculated data focused on active processes.](images/level-hot-cache.png "Hot Cache")|Hot Cache|Cached Pre digest or calculated data. Focus on active processes or requirements.|
+|![Icon representing cold cache, showing a normalized data model with maintained entity relationships for easier searching.](images/level-cold-cache.png "Cold Cache")|Cold Cache|Normalized data model with all relations. Relationships between entities are kept for easier searching.|
+|![Icon representing staging cache, where data from external systems is temporarily stored for processing into cold data.](images/level-staging-cache.png "Staging Cache")|Staging Cache|Cached staging data gathered from external systems, to be processed into the Cold data.|
+|![Icon representing the master of records, indicating the external master source of data.](images/level-master-of-records.png "Master of Records")|Master of records|External master of data|
 
 Please note that, although there are multiple layers, you don't always need to have the full set of data layers - make sure you design your architecture according to the use case. Most of applications are only built around the normalized database (Cold Data Layer), and implement a local replica of the external master of records, to speed up data access and reduce the number of calls to the external system - learn more on how you can [abstracting your Core Services according to integration](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/05_Integration_Patterns_for_Core_Services_Abstraction). For mobile applications, it's particularly important the usage of client side cache, to boost performance and decrease the number of server calls.
 
@@ -60,7 +60,7 @@ This is where the **Hot Cache** pattern can bring great benefits. Instead of dir
 
 For example, let's take a look at a simple web store. This web store (WebShop) differentiates the product pricing based on customer, customer type and product category. Let's also assume this is a large store, with over a million products and customers. Following the 4-layer canvas we could have the following architecture diagram:
 
-![WebShop Example Architecture](images/hot-cache-data-pattern.png?width=800)
+![Architecture diagram showing the hot cache data pattern with WebShop, Product_CS, Pricing_CS, and Customer_CS layers.](images/hot-cache-data-pattern.png "Hot Cache Data Pattern")
 
 **WebShop**: Showing online catalog, with correct prices per customer, requires costly computation and data mashup.
 
@@ -90,7 +90,7 @@ For example, in the WebShop, we need new entities that store all the catalogs pe
 
 There are two new modules to support the hot cache implementation:
 
-![Hot Cache Architecture](images/hot-cache-implementation-architecture.png?width=800)
+![Architecture diagram illustrating the implementation of hot cache with Catalog_BL and Promotion_Eng modules.](images/hot-cache-implementation-architecture.png "Hot Cache Implementation Architecture")
 
 **Catalog_BL** - Business Logic (BL) module, where the Hot Cache entities are defined. It will contain the individual customer catalogs, weekly prices and price history.
 

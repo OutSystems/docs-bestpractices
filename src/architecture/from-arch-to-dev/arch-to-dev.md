@@ -39,7 +39,7 @@ An external system provides the list of soccer fields, meaning it’s not in the
 
 In the [previous article](intro.md), you ended up with a final architecture blueprint. The image below shows it and sets the starting point of the development phase. 
 
-![architecture blueprint](images/architecture-blueprint-starting-points.png?width=750)
+![Diagram of the final architecture blueprint for the Soccer Fields application.](images/architecture-blueprint-starting-points.png "Architecture Blueprint Starting Points")
 
 The following sections explain the process of translating a blueprint into an actual OutSystems application.
 
@@ -55,8 +55,8 @@ The following table shows some conventions:
 
 |Conventions | |
 |------------|-|
-| Rectangles with round corners represent the **modules**. The rectangle color allows mapping each module to the level in the [Architecture Canvas.](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/01_The_4_Layer_Canvas) | ![](images/archictecture-modules.png) |
-| Rectangles with modules inside represent **Applications**. The rectangle color is lighter than the module color, and it also allows you to map the application to the architecture layers. | ![](images/architecture-applications.png) |
+| Rectangles with round corners represent the **modules**. The rectangle color allows mapping each module to the level in the [Architecture Canvas.](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/01_The_4_Layer_Canvas) | ![Icon representing modules in the architecture blueprint with rounded rectangle shapes.](images/archictecture-modules.png "Architecture Modules Icon") |
+| Rectangles with modules inside represent **Applications**. The rectangle color is lighter than the module color, and it also allows you to map the application to the architecture layers. | ![Icon representing applications in the architecture blueprint with rectangles containing modules.](images/architecture-applications.png "Architecture Applications Icon") |
 
 The architecture design must document the nature of each element. The architect is responsible for adding such details.
 
@@ -74,7 +74,7 @@ A good way of making sure the architecture is solid and you understand it, is to
 
 This is most important at the core level, where incorrect dependencies lead to circular reference, due to the lack of proper concept isolation. This results in code refactoring, that tend to have high risk and costs.
 
-![](images/module_dependencies.png?width=450)
+![Diagram illustrating the dependencies between modules in the architecture blueprint.](images/module_dependencies.png "Module Dependencies Diagram")
 
 Here are some insights:
 
@@ -105,31 +105,31 @@ Following your architecture design let’s create the first application and modu
 
     * By default, it's a good practice to create the module with the application name without spaces. Therefore you need to rename it to **SF_Th**, select the **Responsive** module type, and then click on the **CREATE MODULE** button:
 
-    ![Creating a module](images/creating-a-module.png)
+    ![Screenshot of the module creation interface in Service Studio with the module name 'SF_Th' and module type options.](images/creating-a-module.png "Creating a Module in Service Studio")
 
  
 1. Before publishing your application, you may want to delete the **Emails** and the **MainFlow** UI flows. After this, you are ready to Publish your application by clicking on the **1-Click Publish** button:
 
     1. Delete "Emails" and “MainFlow” UI flows:
 
-    ![Delete Emails and MainFlow UI flows](images/delete-ui-flows.png)
+    ![Screenshot highlighting the 'Emails' and 'MainFlow' UI flows to be deleted in Service Studio.](images/delete-ui-flows.png "Delete UI Flows in Service Studio")
 
 1. Create the front-end module for this application: **Soccer Fields**. Create a new **Responsive** module and publish it:
 
-    ![Creating the front-end module](images/creating-front-end-module.png)
+    ![Screenshot showing the process of creating a new front-end module named 'SoccerFields' in Service Studio.](images/creating-front-end-module.png "Creating Front-End Module in Service Studio")
 
 1. Set the **SoccerFields** module as the Home module.
 
-    ![Setting the SoccerFields module as the Home module](images/setting-home-module.png)
+    ![Screenshot depicting how to set the 'SoccerFields' module as the Home module in Service Studio.](images/setting-home-module.png "Setting Home Module in Service Studio")
 
 1. If you had a good look at the application composition, you noticed that this application is going to include two new modules: **Booking_BL** and **Player_CS**. Create these two new modules and remember to select the **Blank** module type, depicted in the figure below:
     * **Booking_BL**:
 
-        ![Creating the Booking_BL module](images/creating-booking-bl-module.png)
+        ![Screenshot of the Service Studio interface for creating a new module named 'Booking_BL'.](images/creating-booking-bl-module.png "Creating Booking_BL Module in Service Studio")
 
     * **Player_CS**:
 
-        ![Creating the Player_CS module](images/creating-player-cs-modules.png)
+        ![Screenshot showing the creation of a new module named 'Player_CS' in Service Studio.](images/creating-player-cs-modules.png "Creating Player_CS Module in Service Studio")
 
 ### The core application
 
@@ -137,7 +137,7 @@ Following your architecture design let’s create the first application and modu
 
 1. Create the first module for the "Field Core Services" application. As depicted in the picture below, the first core module (**Field_IS**) has the **Blank** module type instead of **Responsive**. The reason is the “Field Core Services” is a core services application and it shouldn't host any end-user screens, according to the best practices.
 
-    ![Creating the Field_IS module](images/creating-field-is-modules.png)
+    ![Screenshot of the Service Studio interface for creating a new module named 'Field_IS'.](images/creating-field-is-modules.png "Creating Field_IS Module in Service Studio")
 
 1. After clicking on **CREATE MODULE**, publish your application by clicking on the **1-Click Publish** button.
 
@@ -168,7 +168,7 @@ As referred before, the architect has to document the architecture patterns in t
 
 For this use case, there is an important integration pattern, to retrieve the soccer field information. 
 
-![Retrieving soccer field information](images/retrieving-soccer-field-info.png)
+![Diagram showing the architectural patterns for retrieving soccer field information.](images/retrieving-soccer-field-info.png "Retrieving Soccer Field Information Diagram")
 
 In this partner, focus on 3 architectural patterns:
 
@@ -189,17 +189,17 @@ In this partner, focus on 3 architectural patterns:
         Open the **Field_IS** module, click on the **Logic** tab, and under the **Integrations** folder, right-click on the REST node and select **Consume REST API…**. Let’s assume the team that developed the external API provided you with a swagger spec. In this case, you're using the sample fake service already mentioned. So, you just need to click on **ADD ALL METHODS** and fill the URL of the swagger file.
         After clicking **OK** , the external API should look like this: 
     
-        ![Consuming the external API](images/consuming-external-api.png)
+        ![Screenshot of the REST API methods in Service Studio after consuming an external API.](images/consuming-external-api.png "Consuming External API in Service Studio")
 
     1. Send the API Key
 
         To complete the integration with the external API, you need to send a valid key in the **API_KEY** request header. To accomplish this, implement the **OnBeforeRequest** event. You just need to select the endpoint, click on the dropdown next to the **On Before Request** property and select **New OnBeforeRequest**, like you can see on the picture below:
 
-        ![Send the API Key](images/sending-api-key.png)
+        ![Screenshot showing the process of adding a new 'OnBeforeRequest' event to send the API key.](images/sending-api-key.png "Sending API Key in Service Studio")
 
         The implementation of the **OnBeforeRequest** event should look like this:
 
-        ![Implementing the OnBeforeRequest event](images/implementing-onbeforerequest-event.png)
+        ![Screenshot of the logic flow for implementing the 'OnBeforeRequest' event in Service Studio.](images/implementing-onbeforerequest-event.png "Implementing OnBeforeRequest Event in Service Studio")
 
     1. Retrieve a list of Fields with summary data.
 
@@ -209,11 +209,11 @@ In this partner, focus on 3 architectural patterns:
 
         The structure attributes should look like this:
 
-        ![Field_IS_Summary structure](images/field-is-summary-structure.png)
+        ![Screenshot showing the 'Field_IS_Summary' structure with attributes like Name, Dimension, and City.](images/field-is-summary-structure.png "Field_IS Summary Structure in Service Studio")
 
         Now you're ready to create the server action that the core service is going to consume. Click on **Add Server Action** and name it **Field_IS_GetSummaryFields**. Set the Public property to “Yes” and implement the following logic:
 
-        ![Creating the Field_IS_GetSummaryFields action](images/creating-field-is-getsummaryfields-action.png)
+        ![Screenshot of the logic flow for creating the 'Field_IS_GetSummaryFields' server action in Service Studio.](images/creating-field-is-getsummaryfields-action.png "Creating Field_IS_GetSummaryFields Action in Service Studio")
 
 
 1. **Local Replica of data**
@@ -226,7 +226,7 @@ In this partner, focus on 3 architectural patterns:
 
         Set the Public property, and also the Expose Read-only property to **yes**. You want to avoid that other external modules can change data directly. The following screen shows how the entity should look like.
         
-        ![Field Entity](images/field-entity.png)
+        ![Screenshot of the 'Field' entity properties in Service Studio with attributes like Name, Dimension, and City.](images/field-entity.png "Field Entity in Service Studio")
 
  
 
@@ -236,7 +236,7 @@ In this partner, focus on 3 architectural patterns:
         
         For this scenario, create actions for the 2 major operations that are normally used for creating any type of field records. Create a new folder on the server actions and add the **Field_Create** action. Add a Field as an input parameter and an **id** as a Field identifier as an output parameter. On the body of the action just drag the **CreateOrUpdateField** internal action, and add one assignment at the end for returning the created **id**.  
         
-        ![Creating CRUD ](images/creating-crud.png)
+        ![Screenshot showing the creation of CRUD actions for the 'Field' entity in Service Studio.](images/creating-crud.png "Creating CRUD Actions in Service Studio")
         
         Repeat the same receipt for creating the **Field_CreateOrUpdate** action.  
 
@@ -246,7 +246,7 @@ The **Field_Sync** module is going to make the asynchronous synchronization logi
 
 At a specific time, the sync timer triggers. Then, the sync algorithm gets a subset of data fields from the external system using the **Field_IS_GetSummaryFields**"** created on step 1. The following screen and the described steps exemplify the sync field data algorithm.
 
-![Sync field data algorithm](images/sync-field-data-algorithm.png)
+![Screenshot of the logic flow for the synchronization algorithm of field data in Service Studio.](images/sync-field-data-algorithm.png "Sync Field Data Algorithm in Service Studio")
 
 1. Set a logic timeout (10 minutes). The **GetSyncFieldCurrPages** aggregate gets the possible stored progress of a previous timer to continue processing. This scenario is to follow best practices when designing timers (never times out, doesn’t repeat work, ensures completeness, ensures data integrity);
 

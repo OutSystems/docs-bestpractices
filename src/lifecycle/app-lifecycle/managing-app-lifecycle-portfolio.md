@@ -12,7 +12,7 @@ figma: https://www.figma.com/file/jGLm9nVlJMS9yYNz7I7DoG/Lifecycle?node-id=147:3
 
 OutSystems provides out-of-the-box a unified console, [LifeTime](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle), to manage the applications’ lifecycle. It gives you visibility of all stages of your applications, manages the deployment of applications, IT users, and security across all environments.
 
-![](images/managing-app-lifecycle-portfolio-0.png)
+![Screenshot of OutSystems LifeTime management console showing various applications in different stages of development, testing, and production.](images/managing-app-lifecycle-portfolio-0.png "OutSystems LifeTime Management Console Overview")
 
 For customers with large application portfolios, OutSystems highly recommends automating key portfolio management activities such as:
 
@@ -26,7 +26,7 @@ For customers with large application portfolios, OutSystems highly recommends au
 
 The OutSystems LifeTime includes a built-in mechanism that allows you to [control who is able to create applications](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Manage_IT_Users/Control_Who_Creates_Applications). 
 
-![](images/managing-app-lifecycle-portfolio-1.png)
+![User interface for configuring role-based permissions in OutSystems, with options for full control, changing and deploying applications, and other permissions.](images/managing-app-lifecycle-portfolio-1.png "OutSystems Role Configuration Interface")
 
 With [APIs](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_API_v2), it is possible to automatically integrate the application creation step into your portfolio approval process. No matter if the process is done with an OutSystems app or a third-party tool. This reduces application sprawl by preventing new applications from being created without being associated with an approved business idea or need.
 
@@ -48,19 +48,19 @@ OutSystems allows you to automatically detect unused applications across all env
 
 Service Center provides these capabilities, which are used by the [Application Portfolio Manager](https://www.outsystems.com/forge/component-overview/7870/application-portfolio-manager) component. After flagging unused applications you can archive them, moving the application to an offline state.
 
-![](images/managing-app-lifecycle-portfolio-2.png)
+![Dashboard displaying application usage statistics over the last 30 days in the OutSystems platform.](images/managing-app-lifecycle-portfolio-2.png "Application Portfolio Management Dashboard")
 
-![](images/managing-app-lifecycle-portfolio-3.png)
+![Detailed view of an application's usage metrics, including screen hits and web services calls over the last 30 days.](images/managing-app-lifecycle-portfolio-3.png "Detailed Application Usage Metrics")
 
-![](images/managing-app-lifecycle-portfolio-4.png)
+![Prompt suggesting to archive or retire an unused application within the OutSystems platform.](images/managing-app-lifecycle-portfolio-4.png "Application Retirement Prompt")
 
 It is also possible to retire applications. Note this will permanently delete the application from the environment. If you want to recover the application later ensure that you [download](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_API_v2#operation--applications--ApplicationKey--versions--VersionKey--content--get) and store a backup before it is retired.
 
-![](images/managing-app-lifecycle-portfolio-5.png)
+![Interface showing options to archive or retire an application, with detailed last usage information.](images/managing-app-lifecycle-portfolio-5.png "Application Archiving Options")
 
 It’s possible to check when an application was last updated by the development team. This can be done directly, through the LifeTime management console, or automatically via [APIs](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_API_v2#operation--applications--ApplicationKey--versions--VersionKey---get) by checking the creation date of deployed versions of your applications.
 
-![](images/managing-app-lifecycle-portfolio-6.png)
+![Screenshot of the OutSystems application version management interface, showing different versions of an application across development, testing, and production environments.](images/managing-app-lifecycle-portfolio-6.png "OutSystems Application Version Management")
 
 Additionally, through [APIs](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs), it is possible to customize dashboards that allow you to detect applications that are not being used, based on other technical or business parameters.
 

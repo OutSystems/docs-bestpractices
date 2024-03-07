@@ -31,7 +31,7 @@ In the example depicted below, you can see 3 levels composing the services:
 
 Note that the example reflects how it is vital that **Core Services** are to be properly isolated from external systems.
 
-![ ](images/Service-Oriented-Architectures-for-OutSystems-applications_0.png)
+![Diagram illustrating the layers of Service-Oriented Architecture in OutSystems, including External API, Core Services, and Integration Services, with connections to external consumers and systems like CRM, ERP, and CMS.](images/Service-Oriented-Architectures-for-OutSystems-applications_0.png "Service-Oriented Architecture Layers Diagram")
 
 ### External API level
 

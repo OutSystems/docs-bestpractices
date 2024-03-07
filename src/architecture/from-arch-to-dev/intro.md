@@ -34,13 +34,13 @@ Note that an external system provides the list of soccer fields, meaning it's no
 
 The architecture design process follows a 3 step approach.
 
-![](images/iteration.png?width=180)
+![Diagram of the architecture design iteration process with three segments: Disclose, Organize, and Assemble.](images/iteration.png "Architecture Design Iteration Process")
 
 |||
 |---|---|
-|![](images/disclose_redldpi.png?width=70)|**Disclose** business concepts and integration needs|
-|![](images/organize_redldpi.png?width=70)|**Organize** concepts on the architecture Layer canvas|
-|![](images/assemble_redldpi.png?width=70)|**Assemble** Matching recommended patterns|
+|![Icon representing the Disclose step in the architecture design process.](images/disclose_redldpi.png "Disclose Step Icon")|**Disclose** business concepts and integration needs|
+|![Icon representing the Organize step in the architecture design process.](images/organize_redldpi.png "Organize Step Icon")|**Organize** concepts on the architecture Layer canvas|
+|![Icon representing the Assemble step in the architecture design process.](images/assemble_redldpi.png "Assemble Step Icon")|**Assemble** Matching recommended patterns|
 
 It's important to understand that you should iterate these three steps multiple times, until you feel comfortable with the design, and eventually repeat the process during the implementation, as you discover new concepts and/or details.
 
@@ -74,15 +74,15 @@ Let's have a quick recap of the [Architecture Canvas](https://success.outsystems
 
 | Layer | Description |
 |---|---|
-| ![End User Layer](images/end-user-layer.png) | User interfaces and processes, reusing **Core** and **Library** to implement the user stories. |
-| ![Core layer](images/core-layer.png) | Services around business concepts, exporting reusable entities, business rules, and business widgets. |
-| ![Foundation Layer](images/foundation-layer.png) | Business-agnostic services to extend the framework with highly reusable assets, UI Patterns, connectors to external systems, and integration of native code. |
+| ![Icon for the End User Layer, indicating user interfaces and processes.](images/end-user-layer.png "End User Layer Icon") | User interfaces and processes, reusing **Core** and **Library** to implement the user stories. |
+| ![Icon for the Core Layer, indicating core business services.](images/core-layer.png "Core Layer Icon") | Services around business concepts, exporting reusable entities, business rules, and business widgets. |
+| ![Icon for the Foundation Layer, indicating non-business services.](images/foundation-layer.png "Foundation Layer Icon") | Business-agnostic services to extend the framework with highly reusable assets, UI Patterns, connectors to external systems, and integration of native code. |
 
 Keep in mind this article doesn't focus on the architecture design process, but on the process from the architecture to development, so it mentions only the essentials in this part. For detailed information about the Architecture Canvas and on the design process refer to [OutSystems Architect online training](https://www.outsystems.com/training/courses/193/designing-apps-using-an-architecture-framework/).
 
 Based on these principles, you end up with the following concepts of the application on the following layer canvas:
 
-![Architecture layer canvas](images/architecture_layer_canvas.png?width=750)
+![Architecture Layer Canvas showing the distribution of application components across different layers.](images/architecture_layer_canvas.png "Architecture Layer Canvas")
 
 The main concepts identified were:
 
@@ -114,13 +114,13 @@ Based on these principles and looking into the architecture patterns and best pr
 
 The figure below shows these patterns design:
 
-![](images/integration-patterns.png?width=350)
+![Diagram illustrating integration patterns for external master entities with batch sync.](images/integration-patterns.png "Integration Patterns Diagram")
 
 **Business Logic Module:** Another recommendation is to isolate **B**usiness **L**ogic (Actions) or **C**ore **W**idgets (Webblocks), to manage complexity, composition or to have its own lifecycle. In this case, it wasn't necessary to create a _CW eSpace. Maybe you can have it later, but for now, the eSpace **Booking_BL** addresses all business logic required.
 
 By applying these architectural patterns and using a common [naming convention](https://www.outsystems.com/training/lesson/2301/naming-conventions-for-modules) to the module names you end up with the following architecture blueprint for the modules:
 
-![Architecture blueprint](images/architecture-blueprint.png?width=750)
+![Blueprint diagram showing the architecture of the Soccer Fields application with various modules.](images/architecture-blueprint.png "Architecture Blueprint")
 
 Looking at the main functionalities and responsibilities of each module, you have the following:
 
@@ -146,13 +146,13 @@ An OutSystems application is a set of modules defined in Service Studio that con
 
 Consider the figure below:
 
-![Set of modules of an OutSystems application](images/modules-of-an-OutSystems-application.png?width=400)
+![Illustration of the modules of an OutSystems application organized by layer.](images/modules-of-an-OutSystems-application.png "OutSystems Application Modules")
 
 Applications need to respect layers as modules need, but what defines an application layer is the topmost layer of the modules inside it. In other words, if you have an application composed of modules from the Foundation layer only, then this application is a Foundation Application. If you have another application with modules of the foundation layer but also with one or more modules of the core layer, then this application is a core application.
 
 Here's the application composition for the Soccer Fields App:
 
-![Soccer Fields app composition](images/soccer-fields-app-composition.png?width=750)
+![Diagram showing the composition of the Soccer Fields application with its modules and layers.](images/soccer-fields-app-composition.png "Soccer Fields App Composition")
 
 As you can see, there are two applications:
 

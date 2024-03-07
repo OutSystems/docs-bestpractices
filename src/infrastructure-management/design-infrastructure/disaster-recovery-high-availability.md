@@ -40,7 +40,7 @@ Keep in mind that this examples are technology agnostic. They just show a simple
 
 This design example prevents localized system events. By having redundancy you are able to balance your load to respond to any existing events.
 
- ![ ](images/disaster-recovery-high-availability_0.png)
+ ![Diagram illustrating a localized high availability design with redundant servers for load balancing.](images/disaster-recovery-high-availability_0.png "Localized High Availability Design")
 
  
 
@@ -49,7 +49,7 @@ This design example prevents localized system events. By having redundancy you a
 This design example prevents geographic system events. By having redundancy both at the datacenter level and within the datacenter you can cope with geographical system events:
 
  
-![ ](images/disaster-recovery-high-availability_1.png)
+![Diagram showing a geographic high availability design with redundancy across datacenters and within a datacenter.](images/disaster-recovery-high-availability_1.png "Geographic High Availability Design")
 
 ## Disaster Recovery
 
@@ -59,7 +59,7 @@ A disaster recovery happens after you had any kind of disaster. Here you are def
 
 * **Recovery time objective (RTO)** - is the targeted time frame and service level within a business process that it must be restored after a disaster (or disruption) in order to avoid unacceptable consequences associated with a break in business continuity.
 
- ![ ](images/disaster-recovery-high-availability_2.png)
+ ![Graph depicting the relationship between Recovery Point Objective (RPO) and Recovery Time Objective (RTO) for disaster recovery planning.](images/disaster-recovery-high-availability_2.png "Disaster Recovery RPO and RTO Graph")
 
 Optimally, the more critical is your business process the less **RPO** vs **RTO** is to be aimed. This is achieved through a conjunction of an High Availability design and a set of policies and procedures contained in a Disaster Recovery Plan.
 

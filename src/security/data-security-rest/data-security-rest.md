@@ -38,7 +38,7 @@ Additionally, a dedicated management environment is provisioned by OutSystems co
 
 The following diagram illustrates the concepts described above: 
 
-![](images/data-security-rest-1.png)
+![Diagram showing the structure of OutSystems Cloud environments with dedicated AWS account, customer VPC, and isolated DEV, TEST/QA, and PRD environments.](images/data-security-rest-1.png "OutSystems Cloud Environment Structure")
 
 ### Data location and sovereignty
 OutSystems keeps cloud environment data in the AWS Region you select, which enables you to maintain compliance with data residency regulations.
@@ -277,7 +277,7 @@ We have already detailed how data is encrypted at rest at the storage level. Sin
 #### Use envelope encryption techniques
 One of the best approaches for encrypting data at the application level is to apply envelope encryption. Envelope encryption can be better defined as a way to secure the data and the keys that protect that data, and it is agnostic to the encryption algorithm used. When using envelope encryption at least two distinct keys need to be used:
 
-**Data encryption key** ![](images/data-key.png)
+**Data encryption key** ![Icon representing a Data Encryption Key (DEK) used in envelope encryption.](images/data-key.png "Data Encryption Key Icon")
 
 The Data Encryption Key (DEK) is the key used to encrypt the data itself. This key should be:
 
@@ -287,7 +287,7 @@ The Data Encryption Key (DEK) is the key used to encrypt the data itself. This k
 
 1. Stored in an encrypted format
 
-**Key encryption key** ![](images/key-key.png)
+**Key encryption key** ![Icon representing a Key Encryption Key (KEK) used to encrypt the DEK in envelope encryption.](images/key-key.png "Key Encryption Key Icon")
 
 The Key Encryption Key (KEK) is the key used to encrypt (or wrap) the DEK. This key should be:
 
@@ -304,7 +304,7 @@ The following picture shows how to encrypt data using envelope encryption and a 
 
 If you haven’t done it already, start by generating a DEK, then feed the clear text data and the DEK to the encryption algorithm that is obtaining the encrypted data that can be stored. The DEK should then be fed to a function that is responsible for wrapping (encrypting) the DEK and then stores it in the database alongside the encrypted data.
 
-![](images/data-encription-envelope.png)
+![Flowchart illustrating the envelope encryption process for data encryption using a Data Encryption Key (DEK) and a Key Encryption Key (KEK).](images/data-encription-envelope.png "Envelope Encryption Process for Data Encryption")
 
 The encryption of the DEK can be done in two ways:
 
@@ -319,7 +319,7 @@ The following picture describes how to decrypt data using envelope encryption.
 
 Retrieve both the encrypted data and the wrapped DEK from storage. Start by unwrapping (decrypting) the DEK. Feed both the DEK and the encrypted data to the decryption function and obtain clear text data.
 
-![](images/data-decription-envelope.png)
+![Flowchart illustrating the envelope encryption process for data decryption, showing the unwrapping of the DEK and decryption of data.](images/data-decription-envelope.png "Envelope Encryption Process for Data Decryption")
 
 The unwrapping of the DEK can be done in two ways, depending on how it was wrapped:
 
@@ -336,7 +336,7 @@ For the following examples, we used the CryptoAPI Forge component. The CryptoAPI
 
 Here are the ways you can use the platform's unique secret key as KEK and store the wrapped DEK in the database.
 
-![](images/os-encription-envelope.png)
+![Flowchart demonstrating the OutSystems envelope encryption process, including generating and storing the DEK.](images/os-encription-envelope.png "OutSystems Envelope Encryption Process")
 
 ##### Encrypting data
 Generate a DEK
@@ -345,14 +345,14 @@ Since we are going to use the Advanced Encryption Standard (AES), we start by cr
 ##### Encrypt data
 Next, we use a function that receives the clear text data, reads the DEK, encrypts the data using the DEK, and returns the encrypted data to be stored.
 
-![](images/os-encription-envelope-detail.png)
+![Detailed flowchart showing the steps for encrypting data in OutSystems using envelope encryption.](images/os-encription-envelope-detail.png "OutSystems Data Encryption Detail")
 
 The data is now ready to be stored in an encrypted format.
 
 #### Decrypting data
 Decrypting the data is as simple as retrieving the DEK, feeding it alongside the encrypted data to the decryption function, and obtaining the clear text data.
 
- ![](images/os-decription-envelope-detail.png) 
+ ![Detailed flowchart showing the steps for decrypting data in OutSystems using envelope encryption.](images/os-decription-envelope-detail.png "OutSystems Data Decryption Detail") 
 
 The function AES_ReadKey retrieves the wrapped DEK, performs the unwrap operation, and returns the DEK. Both the DEK and the encrypted data are then fed to the decryption algorithm that returns the clear text data.
 

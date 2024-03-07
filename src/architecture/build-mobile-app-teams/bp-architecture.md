@@ -13,11 +13,11 @@ The first step for your success is to understand the Architectural changes of a 
 
 If you’ve had the chance to work with OutSystems in the past or have been exposed to some of our documentation, you might have heard about the Architecture Canvas. This canvas is the usual starting point of an application, from an architecture point of view.
 
-![Sample of Architecture Canvas Architecture for a Web Application](images/how_to_build_mobile_app_0.png)
+![Diagram of the Architecture Canvas showing different layers for application development.](images/how_to_build_mobile_app_0.png "Architecture Canvas Overview")
 
 This canvas clearly identifies what you should place in each one of the layers, making sure that you’re able to take advantage of the following aspects:
 
-![Advantages of using an Architecture Canvas](images/how_to_build_mobile_app_1.png)
+![Graphic highlighting the benefits of using the Architecture Canvas, such as consensus, risk reduction, and cost savings.](images/how_to_build_mobile_app_1.png "Architecture Canvas Benefits")
 
 **We saw a sample of the canvas for a web application. Is this canvas different in a mobile application?**
 
@@ -25,7 +25,7 @@ The short answer is no; the long answer is yes.
 
 * No, the canvas isn’t different, and the same layers apply to a mobile application:
 
-    ![Layers of an Architecture Canvas](images/how_to_build_mobile_app_2.png)
+    ![Diagram illustrating the layers of mobile application architecture, including orchestration, end-user, core business, and foundation modules.](images/how_to_build_mobile_app_2.png "Mobile Application Architecture Layers")
 
 
 * Yes, there are some differences in the way we create the modules for a mobile application:
@@ -54,7 +54,7 @@ The usual approach that we recommend is to have all the screens inside the End-U
 
 These blocks should be part of our Mobile Core Widgets (_MCW) modules, which are part of the Core Modules Layer in our architecture canvas:
 
-![Example of a Mobile App Architecture](images/how_to_build_mobile_app_3.png)
+![Detailed view of the core modules layer in mobile architecture, showing the relationship between end-user modules and mobile core widgets.](images/how_to_build_mobile_app_3.png "Core Modules in Mobile Architecture")
 
 Notice that in this example we have four different theme modules. This is a common scenario in big mobile applications.
 
@@ -69,17 +69,17 @@ In more complex scenarios, we can use another type of module, the MUI (Mobile UI
 
 As an example, let’s discuss a home banking scenario. Let’s say we have two main business use cases: checking the accounts and checking the card information.
 
-![Home-banking scenario](images/how_to_build_mobile_app_4.png)
+![Illustration of two main use cases for a home banking scenario: checking accounts and card information.](images/how_to_build_mobile_app_4.png "Home Banking Use Cases")
 
 We’ll start by evaluating the required elements in the End-User Modules layer and, as previously mentioned, we will only place one single module here.
 
-![Homebanking End-User Module](images/how_to_build_mobile_app_5.png)
+![Diagram showing a single end-user module for a home banking mobile application.](images/how_to_build_mobile_app_5.png "End-User Module for Home Banking")
 
 In this example, we will use the aforementioned MUI modules to compose the blocks from the MCW modules. The goal is to make sure MUI modules have the exact content that will be displayed in the screens of the End-User Module.
 
-![MUI Modules (Mobile User Interface)](images/how_to_build_mobile_app_6.png)
+![Diagram explaining how MUI modules compose blocks from MCW modules for a mobile application.](images/how_to_build_mobile_app_6.png "Composition of MUI Modules")
 
 So, as previously mentioned, the goal for the MCW modules is to provide blocks that will act as building blocks for the MUI modules. They should be separated into concepts, but for the sake of this example we will use a single MCW module.
 
-![MCW Module (Mobile Core Widgets)](images/how_to_build_mobile_app_7.png)
+![Structure of a single MCW module showing how it provides blocks for the MUI modules in a mobile application.](images/how_to_build_mobile_app_7.png "MCW Module Structure")
 

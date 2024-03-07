@@ -22,7 +22,7 @@ Its premise is:
 
 A simple premise, right? It seems like it, but pulling it off in the messy real world is hard. It calls for new skills, discipline, and a systematic approach.
 
-![](images/outsystems_domain_driven_architecture_9.png?width=750)
+![Diagram illustrating independent CI/CD pipelines for different products or teams, with hexagonal architecture patterns showing loose coupling between domains.](images/outsystems_domain_driven_architecture_9.png "Domain Driven Design Architecture")
 
 ## What's a domain?
 

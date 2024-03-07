@@ -25,7 +25,7 @@ Demand for some level of software security, even for small applications, is grow
 
 The CIA Security Triangle is a model that represents the three base pillars of information security within an organization, confidentiality, integrity, and availability. This triad is considered the most crucial components of security, and they’re used to guide the policies that protect an organization’s information.
 
-![](images/cia_model.png)
+![The CIA Security Triangle illustrating the three pillars of information security: Confidentiality, Integrity, and Availability.](images/cia_model.png "CIA Security Triangle")
 
 Checking them in detail:
 
@@ -54,7 +54,7 @@ More recently, complementary concepts to the CIA model were added, such as:
 
 The OSI Model is a shared responsibility model that serves as a standard for defining the way computers communicate with each other. It's divided into seven layers; each layer serves the layer above it and is served by the layer below it:
 
-![](images/osi_model.png)
+![Diagram of the OSI Model showing its seven layers: Application, Presentation, Session, Transport, Network, Data Link, and Physical.](images/osi_model.png "OSI Model Layers")
 
 The security of the applications developed in OutSystems is of utmost importance. OutSystems continuously works to provide and improve the built-in security protection in the host layers, by applying the latest security features in the platform. 
 

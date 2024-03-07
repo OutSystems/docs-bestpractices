@@ -23,7 +23,7 @@ This article introduces the Best Practices for data rendering on mobile applicat
 
 Improve the user experience by designing and displaying an empty state image while the dynamic content is being fetched. A couple of good examples are Facebook or LinkedIn.
 
-![Empty State Image](images/empty-state-image.png)
+![Illustration of a mobile app screen with an empty state placeholder image.](images/empty-state-image.png "Empty State Placeholder")
 
 This strategy is valid for all dynamic content in the screen such as blocks, cards or list items. When the empty state turns into the fetched content you may experience some flickering. To avoid flickering when the empty state turns into the fetched content, choose one image that assures a smooth transition, such as a blurred gray line or a spinner.
 
@@ -39,13 +39,13 @@ Delay the rendering of the secondary content so that the main content is rendere
 
 1. In the **On Render** event of the screen, add logic to set the variable to True so that the secondary content starts to render.
 
-![Prioritized Screen Content](images/prioritized-screen-content.png)
+![Diagram showing the prioritization of content rendering in a mobile app, with the main content loading first followed by secondary content.](images/prioritized-screen-content.png "Content Prioritization in Mobile App")
 
 ### Set the Width and Height of Image Widgets
 
 Set the width and height of the Image widget to the expected size of the final image.
 
-![Image Properties](images/image-properties.png)
+![Screenshot of the Image widget properties panel with fields for name, type, image content, default image, layout, width, margin, and attributes.](images/image-properties.png "Image Widget Properties")
 
 ### Optimize List Load
 
@@ -78,7 +78,7 @@ The values to use depend on the size of the records:
 
 The following figure shows examples of values to use in different situations. Start with these as initial guidelines and then test and adjust to your specific case.
 
-![Guidelines for Fetching Data on Lists](images/guidelines-fetching-data-on-lists.png)
+![Infographic presenting guidelines for fetching data in lists, with different scenarios and recommended settings for initial records, increment, and scroll threshold.](images/guidelines-fetching-data-on-lists.png "Guidelines for Fetching Data in Lists")
 
 ## Benefits
 
