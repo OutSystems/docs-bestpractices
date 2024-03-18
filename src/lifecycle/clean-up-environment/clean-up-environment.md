@@ -47,13 +47,11 @@ You can also implement your own solution, allowing a more flexible clean up of o
 * [ModuleVersion_Delete](https://success.outsystems.com/documentation/11/reference/outsystems_apis/dbcleaner_api/#moduleversion_delete): Deletes the specified module version of the specified module from the database.
 * [ModuleVersion_DeleteAll](https://success.outsystems.com/documentation/11/reference/outsystems_apis/dbcleaner_api/#moduleversion_deleteall): Deletes module versions that were published before the specified date and time. This action doesn't delete the module version that's currently published nor module versions used in tagged versions of applications or solutions.
 
-
 <div class="info" markdown="1">
 
 In both cases, be aware that only the module versions not associated with tagged Application or Solution versions are deleted. This way, if you have the need to rollback the application to a previous version, it’s guaranteed that the code isn't lost.
 
 </div>
-
 
 ## Solution versions
 
@@ -81,7 +79,6 @@ A sample implementation of the API can be found in the Forge Component [Lifetime
 
 Once you delete the tagged application version, you can then delete the module version associated with it, as described in the [Module versions](#module-versions) section.
 
-
 ## Temporary test Modules
 
 While developing applications your team may need to create some temporary test modules, proof of concept (POC’s), and often deploy and test some Forge components.
@@ -107,7 +104,6 @@ It's a best practice, as part of a regular Factory management, to clean/delete t
 1. Proceed by clicking the Delete button
 
 ![Screenshot of the Service Center interface highlighting the delete button for removing a module.](images/servicecenter-module-delete.png "Service Center Module Deletion Interface")
-
 
 ## Application data
 
@@ -138,12 +134,12 @@ To clean all the logged information of old processes, OutSystems provides the [B
 
 Add them as references on your application and invoke them to delete old instances.
 
+In cases where large amounts of data is consistently generated in the database through the use of BPT processes, it may come to a point that remedial action is necessary to ensure smooth, continued functionality.For self-managed infrastructures using SQL Server, refer to [Reseeding identity values in BPT tables - SQL Server](https://success.outsystems.com/documentation/11/developing_an_application/use_processes_bpt/reseeding_identity_values_in_bpt_tables_sql_server/). 
 
 ## Emails
 
 Such as Processes, Emails can also be consuming unnecessary database space. This is especially relevant as emails can have attachments, sometimes quite big (>1MB).
 To clean email information, OutSystems provides the [Emails API](https://success.outsystems.com/documentation/11/reference/outsystems_apis/emails_api/) so you can easily implement your cleaning mechanism.
-
 
 ## Logs
 
