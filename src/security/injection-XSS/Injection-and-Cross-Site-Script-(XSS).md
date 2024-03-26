@@ -1,12 +1,11 @@
 ---
-en_title: Injection and Cross Site Script (XSS)
+summary: The article provides best practices and OutSystems platform configurations to prevent injection flaws and XSS, detailing how to use built-in functions for input sanitization and secure coding techniques.
 guid: f2de9e37-9a7e-4f1d-951a-271954eaa4f2
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rmma8067fGUqhlUhXheHOZ/Security?node-id=147:325
 ---
-
 # Injection and Cross Site Script - XSS
 
 Injection flaws and Cross Site Script are still the most common application vulnerabilities. You can find here a set of best practices for development and OutSystems platform configurations to protect your application from these kinds of vulnerabilities.
@@ -77,7 +76,7 @@ XSS attacks typically happen when malicious user-generated content bypasses webs
 
 To reduce the likelihood of a successful XSS event on OutSystems, you can enable the CSP protection on the Service Center / Security and specify more than a dozen configurations to increase your security.
 
-One disadvantage is maintaining a white list of permitted resources. This typically involves communicating with third party sites to determine their inclusion’s authenticity.
+One disadvantage is maintaining an allowlist of permitted resources. This typically involves communicating with third party sites to determine their inclusion’s authenticity.
 
 In OutSystems, you enable CSP in LifeTime. See [Apply Content Security Policy](https://www.outsystems.com/tk/redirect?g=e59d9233-7c2d-43ae-b8a2-f55d75263c68) for further instructions.
 
