@@ -1,7 +1,5 @@
 ---
-summary: Here you can find all existing best practices on Application Security.
-tags: article-page
-en_title: Security
+summary: 
 guid: dd01f53e-3854-4fd8-a125-e368e52457b4
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

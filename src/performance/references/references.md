@@ -1,6 +1,5 @@
 ---
 summary: Opting for the quickest architecture solution produces severe performance problems. Refactoring later on may be painful and expensive.
-en_title: Performance Best Practices - References
 guid: 30bb25e2-e67a-4d1a-b2ba-a486bb9e0f14
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,5 @@
 ---
 summary: Here you can find all existing best practices on application performance.
-en_title: Performance and monitoring
 guid: 394deb7e-f63e-4ff4-831f-a4132c250bfd
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

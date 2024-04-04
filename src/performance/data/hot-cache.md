@@ -1,7 +1,5 @@
 ---
 summary: Learn how to optimize data for your use cases, pre-digesting for hot business processes.
-tags: architecture; hot-cache 
-en_title: Optimize Data For Your Use Cases Using Hot Cache
 guid: b36910c2-01cc-4e7b-95e8-9526ede4e1e3
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

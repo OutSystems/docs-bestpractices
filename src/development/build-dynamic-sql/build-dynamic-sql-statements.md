@@ -1,6 +1,5 @@
 ---
 summary: Check how to implement common use cases of dynamic SQL statements in OutSystems while preventing SQL injection vulnerabilities.
-en_title: Building Dynamic SQL Statements the Right Way
 guid: 373e4dbc-5192-4f28-b438-120fff238be3
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

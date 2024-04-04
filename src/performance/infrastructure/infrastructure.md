@@ -1,6 +1,5 @@
 ---
-summary: Applications that are designed to perform fast should not suffer due to bad configuration or undersized hardware.
-en_title: Performance Best Practices - Infrastructure
+summary: 
 guid: 791cbc71-42c8-4f9a-9dd2-0af2830baa08
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
