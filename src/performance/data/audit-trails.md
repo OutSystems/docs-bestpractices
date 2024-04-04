@@ -71,7 +71,7 @@ This implementation logs information about the end user activities. These logs h
 
 ## Making Audit Trails in OutSystems
 
-You can implement an Audit Trail system in OutSystems by using the [Platform Audit built-in actions](https://success.outsystems.com/Documentation/11/Developing_an_Application/Troubleshooting_Applications/Log_Information_in_Action_Flows), and/or extended actions by implementing a technical wrapper developed in OutSystems to integrate with an external system (if required). This wrapper represents a reusable module that contains typified audit messages and provides a set of custom public actions to be called by all OutSystems applications. For performance reasons, audit messages/records must be saved quickly.
+You can implement an Audit Trail system in OutSystems by using the [Platform Audit built-in actions](https://success.outsystems.com/documentation/11/building_apps/troubleshooting_applications/log_information_in_action_flows/), and/or extended actions by implementing a technical wrapper developed in OutSystems to integrate with an external system (if required). This wrapper represents a reusable module that contains typified audit messages and provides a set of custom public actions to be called by all OutSystems applications. For performance reasons, audit messages/records must be saved quickly.
 
 Consider the following three architecture patterns/examples on how to implement Audit Trail to support business audit requirements:
 
