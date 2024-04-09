@@ -5,3 +5,4 @@ rules/
 **/*.final.md
 .vs/*
 config.yml
+.aider*
