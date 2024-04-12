@@ -118,7 +118,6 @@ jobs:
         draft: true
         labels: figma,skip-jira
         add-paths: |
-          **.svg
           **.png
           **.gif
 
