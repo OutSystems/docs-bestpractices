@@ -26,15 +26,11 @@ On the OutSystems platform, SQL injections can occur on advanced queries using S
 
 In such cases the typical strategy is to escape the inline parameter String Literals content by wrapping the distrusted Variables in the [EncodeSql()](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Logic/Built-in_Functions/Text#EncodeSql) built-in function to avoid certain characters (like single quotes, ') and always surrounding each [EncodeSql()](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Logic/Built-in_Functions/Text#EncodeSql) with single quotes (e.g. " ‘ “ + EncodeSql(Variable) + “ ‘ ").
 
- 
-
 **See the example code below:**
 
 ![Screenshot of the OutSystems IDE with a SQL query vulnerable to injection due to the Expand Inline property set to Yes.](images/Injection-and-Cross-Site-Script-0.png "OutSystems IDE showing a vulnerable SQL query")
 
-**Figure 1 **shows that the code assumes the request arrives with a valid client id, like OU12345. If this happens we have the SQL in **Figure 2**, and everything occurs rightly:
-
- 
+**Figure 1** shows that the code assumes the request arrives with a valid client id, like OU12345. If this happens we have the SQL in **Figure 2**, and everything occurs rightly:
 
 ![Code snippet of a safe SQL query using a valid client ID OU12345 in the WHERE clause.](images/Injection-and-Cross-Site-Script-1.png "Example of a safe SQL query with a valid client ID")
 
@@ -42,31 +38,27 @@ However, an attacker may exploit this assumption by modifying the URL parameter 
 
 ![Code snippet demonstrating an SQL injection attack with the input 'DUMMYSTR OR 1 = 1' leading to a data breach.](images/Injection-and-Cross-Site-Script-2.png "Example of an SQL injection attack")
 
-By passing this query parameter directly into the SQL statement, the code returns every user in the database and exposes their personal information. This is a bad idea. [OWASP](https://www.owasp.org/), therefore, suggests developers sanitize all inputs before a statement execution or avoid interpretation entirely by using safe APIs.
+By passing this query parameter directly into the SQL statement, the code returns every user in the database and exposes their personal information. This is a bad idea. [OWASP](https://www.owasp.org/) suggests that developers sanitize all inputs before a statement execution or avoid interpretation entirely by using safe APIs.
 
 How does this work in OutSystems? When you set the **Expand Inline** property to **Yes** you deactivate the default escape content from the platform, and you need to take care.
 
-For a SQL clause with non-string literals, or If additional security is required, the VerifySqlLiteral() or the  [EncodeSql()](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Logic/Built-in_Functions/Text#EncodeSql) functions can be used, from the Sanitization Extension, to ensure it only contains valid SQL literals. With the tradeoff that Variables with SQL reserved characters are rejected, of course. See below the wrong way (Figure 1) and correct wat (Figure 2) way:
+For a SQL clause with non-string literals, or if additional security is required, the VerifySqlLiteral() or the  [EncodeSql()](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Logic/Built-in_Functions/Text#EncodeSql) functions can be used, from the Sanitization Extension, to ensure it only contains valid SQL literals. With the tradeoff that Variables with SQL reserved characters are rejected, of course. See below the wrong way (Figure 1) and correct wat (Figure 2) way:
 
 ![Screenshot showing an incorrect SQL query that concatenates user input directly without sanitization, making it vulnerable to injection.](images/Injection-and-Cross-Site-Script-3.png "Incorrect SQL query without input sanitization")  ![Screenshot showing a correct SQL query that uses EncodeSql() function to sanitize user input, preventing SQL injection.](images/Injection-and-Cross-Site-Script-4.png "Correct SQL query with input sanitization")
 
- 
-
 ### JavaScript and HTML injection
 
-Javascript is one of the most popular and widely used technologies for web pages and web applications. However, this technology can bring some security issues, which the developer and tester should be conscious of.  Javascript can be used not only for good purposes but for some malicious attacks too. One among that is Javascript Injection. OutSystems escapes all content before showing it to the user, by default. However, the developer can explicitly disable this mechanism if there is the need to inject custom HTML or Javascript, likely to prevent SQL injection. You need to take care when you do this. OutSystems provides [EncodeJavascript()](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Logic/Built-in_Functions/Text#EncodeJavaScript) for this purpose to guarantee that all Javascript reserved words are replaced by their escaped counterpart. OutSystems IDE takes special care of this and shows the developers alerts in case their application is exposed to injection threats. In Figure 1 below, the developer deactivates the default escape protection and in Figure 2 the developer disregards the guaranty of the variable content safety by not using the [EncodeHtml()](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Logic/Built-in_Functions/Text#EncodeHtml) function.
+Javascript is one of the most popular and widely used technologies for web pages and web applications. However, this technology can bring some security issues, which the developer and tester should be conscious of. Javascript can be used not only for good purposes but for some malicious attacks too. One among them is Javascript Injection.
 
- 
+OutSystems escapes all content before showing it to the user, by default. However, the developer can explicitly disable this mechanism if there is the need to inject custom HTML or Javascript, likely to prevent SQL injection. You need to take care when you do this. OutSystems provides [EncodeJavascript()](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Logic/Built-in_Functions/Text#EncodeJavaScript) for this purpose to guarantee that all Javascript reserved words are replaced by their escaped counterpart. OutSystems IDE takes special care of this and shows the developers alerts in case their application is exposed to injection threats.
+
+In Figure 1 below, the developer deactivates the default escape protection and in Figure 2 the developer disregards the guaranty of the variable content safety by not using the [EncodeHtml()](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Logic/Built-in_Functions/Text#EncodeHtml) function.
 
 ![Screenshot of the OutSystems IDE where the Escape Content property is set to No, indicating a potential JavaScript injection vulnerability.](images/Injection-and-Cross-Site-Script-5.png "OutSystems IDE showing a JavaScript injection vulnerability")     ![Code snippet showing unsafe JavaScript code concatenating an HTML snippet without using EncodeHtml(), risking an injection attack.](images/Injection-and-Cross-Site-Script-6.png "Unsafe JavaScript code without HTML encoding")
-
- 
 
 ### Dynamic URLs
 
 If your application executes dynamic redirects, by chance, and gets data from form-data or URL parameters, you must be aware that data can be potentially tempered. Whenever your application logic redirects to a specified URL, you must guarantee that the URL remains unchanged. Fortunately, OutSystems users have the [EncodeUrl()](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Logic/Built-in_Functions/Text#EncodeUrl) built-in function.
-
- 
 
 #### Content Security Policy (CSP)
 
@@ -79,7 +71,6 @@ To reduce the likelihood of a successful XSS event on OutSystems, you can enable
 One disadvantage is maintaining an allowlist of permitted resources. This typically involves communicating with third party sites to determine their inclusion’s authenticity.
 
 In OutSystems, you enable CSP in LifeTime. See [Apply Content Security Policy](https://www.outsystems.com/tk/redirect?g=e59d9233-7c2d-43ae-b8a2-f55d75263c68) for further instructions.
-
 
 #### Enforce HTTPS Security
 
@@ -128,4 +119,3 @@ The main benefit of this article is to protect applications’ sensitive data an
 [Enforce HTTPS Security](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Secure_the_Applications/Enforce_HTTPS_Security)
 
 [String Literal](https://en.wikipedia.org/wiki/String_literal)
-
