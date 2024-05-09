@@ -1,5 +1,5 @@
 ---
-summary: When abstracting your concepts into services, core OutSystems modules should always be layered for reusability, flexibility and handling change.
+summary: Explore service-oriented architectures in OutSystems 11 (O11) for robust, flexible application development.
 guid: 15d0b981-a3c5-4d65-a013-2e9837d81da5
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

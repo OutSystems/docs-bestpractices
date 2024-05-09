@@ -1,5 +1,5 @@
 ---
-summary:
+summary: Explore debugging and troubleshooting for mobile and reactive web apps using OutSystems 11's integrated tools and extensive documentation.
 tags:
 guid: 3ccd01d8-e072-4219-8547-cb105941bfca
 locale: en-us

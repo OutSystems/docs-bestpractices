@@ -1,5 +1,5 @@
 ---
-summary: Each type of server you can include in your OutSystems Platform infrastructure has different features and serves a specific purpose.
+summary: Explore server roles in OutSystems 11 (O11) for effective infrastructure design in on-premises or private cloud deployments.
 guid: 729b4d15-ee4c-4e1e-8ac7-8a487818703b
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

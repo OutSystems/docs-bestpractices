@@ -1,5 +1,5 @@
 ---
-summary: Your composed OutSystems application architecture must be aligned with recommended principles and take business organization and strategy into account.
+summary: Learn the 4 rules for correct application composition to minimize dependencies and simplify deployments in OutSystems 11 (O11).
 guid: f9b84cfe-1aaf-4050-9b45-1b98eafd098a
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

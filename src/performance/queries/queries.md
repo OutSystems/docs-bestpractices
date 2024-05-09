@@ -1,5 +1,5 @@
 ---
-summary: In multi-tier applications, the bottleneck is often situated at the database level, namely in queries.
+summary: OutSystems 11 (O11) performance best practices focus on optimizing database queries to enhance application efficiency and reduce bottlenecks.
 guid: 53c2c027-cc58-4e6e-8b6d-95e9e0a9c278
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

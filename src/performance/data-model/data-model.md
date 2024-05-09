@@ -1,5 +1,5 @@
 ---
-summary: The data tier of the applications is absolutely critical for application performance. Apply these practices right from an early design phase.
+summary: Learn data model performance optimization techniques for OutSystems 11 (O11), including indexing, data isolation, and archiving.
 guid: 22ab786d-afc3-4ac2-aa9b-d3ea7df7292b
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

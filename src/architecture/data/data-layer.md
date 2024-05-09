@@ -1,5 +1,5 @@
 ---
-summary: Learn about the best practices for storing data in the device’s local storage in mobile applications.
+summary: Explore best practices for mobile data storage in OutSystems 11 (O11) to enhance performance and user experience by utilizing local storage strategies.
 guid: b40244f8-f8f4-4282-b3e3-baa064e41481
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

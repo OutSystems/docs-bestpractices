@@ -1,5 +1,5 @@
 ---
-summary: 
+summary: Explore front-end architecture best practices and scalable design patterns in OutSystems 11 (O11).
 guid: 1ee12745-d16e-4b0b-bbd5-0c1fd820cbef
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

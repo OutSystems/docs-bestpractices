@@ -1,5 +1,5 @@
 ---
-summary: Learn how to create an audit trail service in OutSystems, to track chronologically any security-relevant evidence of activities (automatic or human) that affected at any time a specific operation, procedure, or event.
+summary: Explore audit trail capabilities in OutSystems 11 (O11) for compliance and security monitoring.
 guid: 641a7444-c8cf-4f13-bcce-e86e0b2fd1d7
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

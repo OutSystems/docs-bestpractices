@@ -1,5 +1,5 @@
 ---
-summary:  Learn more about the Front-End journey and how a good UX/UI approach can help you through a faster and smoother application development. 
+summary: Explore the front-end development process from UX concepts to code implementation using OutSystems 11 (O11) in this detailed guide.
 tags:
 guid: c8a658b6-cda4-4222-a1c6-14a743e3f9e9
 locale: en-us

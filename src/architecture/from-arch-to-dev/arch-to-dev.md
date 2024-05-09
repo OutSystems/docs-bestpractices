@@ -1,5 +1,5 @@
 ---
-summary: Learn how to start developing from an architecture blueprint.
+summary: OutSystems 11 (O11) is used to develop a soccer field booking application from an architecture blueprint.
 tags: OutSystems-development-from-blueprint; architecture-blueprint; OutSystems-Architecture; 
 guid: aece0925-1c82-430e-ae4f-bc436e097eba
 locale: en-us

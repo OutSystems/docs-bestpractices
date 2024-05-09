@@ -1,5 +1,5 @@
 ---
-summary:
+summary: Explore mobile app troubleshooting and debugging in OutSystems 11 (O11) with common scenarios, causes, and effective tools and techniques.
 tags:
 guid: 56836d39-dbcb-4b9d-ace8-4f89884a2771
 locale: en-us

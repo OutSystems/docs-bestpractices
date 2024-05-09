@@ -1,5 +1,5 @@
 ---
-summary:
+summary: Explore DevOps and ALM integration in OutSystems 11 (O11) for streamlined software development and operations.
 guid: 17b6007b-d151-40bd-83b3-3e16ec524880
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

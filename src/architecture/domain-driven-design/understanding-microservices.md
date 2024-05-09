@@ -1,5 +1,5 @@
 ---
-summary:
+summary: Explore how OutSystems 11 (O11) addresses the complexities of microservices architecture, enhancing security, debugging, and data integration.
 tags:
 guid: b161ae4a-7e15-4b76-93d8-f3096d4948c6
 locale: en-us

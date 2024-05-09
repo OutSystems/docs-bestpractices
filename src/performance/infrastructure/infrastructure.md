@@ -1,5 +1,5 @@
 ---
-summary: 
+summary: Explore infrastructure performance best practices for OutSystems 11 (O11) including database maintenance, server tuning, and antivirus configuration.
 guid: 791cbc71-42c8-4f9a-9dd2-0af2830baa08
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,5 +1,5 @@
 ---
-summary: Check how to implement common use cases of dynamic SQL statements in OutSystems while preventing SQL injection vulnerabilities.
+summary: Explore best practices for building dynamic SQL statements in OutSystems 11 (O11) to prevent SQL injection vulnerabilities.
 guid: 373e4dbc-5192-4f28-b438-120fff238be3
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

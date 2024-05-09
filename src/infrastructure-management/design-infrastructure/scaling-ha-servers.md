@@ -1,5 +1,5 @@
 ---
-summary: Your OutSystems Platform servers are ready to scale and be configured for high availability.
+summary: Explore how OutSystems 11 (O11) enables server scaling and high availability for enhanced clustering and failover capabilities.
 guid: f28a3223-0889-43fc-8d3c-730053d89561
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

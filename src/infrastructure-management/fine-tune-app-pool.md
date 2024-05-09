@@ -1,7 +1,8 @@
 ---
-summary: 
+summary: Explore application pool recycling for OutSystems 11 (O11) in IIS, focusing on optimizing performance and stability in on-premises deployments.
 locale: en-us
 guid: 939F9A46-EBA1-4442-BD8B-6CAAA5CDE555
+app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 ---

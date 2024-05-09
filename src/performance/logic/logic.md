@@ -1,5 +1,5 @@
 ---
-summary: 
+summary: Discover key performance optimization strategies for OutSystems 11 (O11), focusing on efficient logic and system monitoring.
 guid: faee48f5-9b43-40a6-906d-837feef414df
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

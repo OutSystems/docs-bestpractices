@@ -1,5 +1,5 @@
 ---
-summary: The article provides best practices and OutSystems platform configurations to prevent injection flaws and XSS, detailing how to use built-in functions for input sanitization and secure coding techniques.
+summary: Learn best practices for preventing injection flaws and XSS vulnerabilities in OutSystems 11 (O11) applications.
 guid: f2de9e37-9a7e-4f1d-951a-271954eaa4f2
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

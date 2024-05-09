@@ -1,5 +1,5 @@
 ---
-summary:
+summary: Explore advanced debugging and inspection techniques for mobile and web applications using OutSystems 11 (O11) and various tools.
 tags:
 guid: 4f078a11-41cd-4ac8-a40f-e3e1edc6dc5d
 locale: en-us

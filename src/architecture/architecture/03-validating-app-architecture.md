@@ -1,5 +1,5 @@
 ---
-summary: For a correctly designed architecure you must always adhere to 3 rules. Violations to these rules tell you how your OutSystems architecture should be improved.
+summary: OutSystems 11 (O11) offers tools to ensure application architecture compliance with essential design rules.
 guid: f0975aa9-dd78-42c9-9c69-536e6a3e57a3
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,5 +1,5 @@
 ---
-summary: Learn how to use Access Control List (ACL) in your applications to set up conditional access to data based on specific user profiles. 
+summary: Implement permission-based data access in OutSystems 11 (O11) using Access Control Lists (ACL) for dynamic and scalable data segregation.
 tags: best-practices, security-model
 guid: 3114f98f-16d0-4106-8628-5b0e80c6d21c
 locale: en-us

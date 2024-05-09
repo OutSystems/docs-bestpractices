@@ -1,5 +1,5 @@
 ---
-summary: Learn how to use the OutSystems Architecture Canvas to identify your business concepts and correctly organize them into a cohesive architecture.
+summary: OutSystems 11 (O11) features the Architecture Canvas tool for streamlined Service-Oriented Architecture (SOA) design.
 guid: 2b38e6ed-2c22-4d06-87b7-88d1db436ea4
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

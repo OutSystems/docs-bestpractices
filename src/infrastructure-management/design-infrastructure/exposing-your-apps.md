@@ -1,5 +1,5 @@
 ---
-summary: Your OutSystems Platform servers must be protected to secure your end-user applications when exposed to the Internet.
+summary: Explore strategies for protecting OutSystems 11 (O11) applications using load balancers and reverse proxies to enhance security and availability.
 guid: 3a108c75-4daf-4605-ac95-0f9815fae5ea
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,5 +1,5 @@
 ---
-summary: Learn how OutSystems approaches a Domain Driven architecture.
+summary: Explore Domain Driven Architecture in OutSystems 11 (O11) for managing complex software development and deployment.
 tags: article-page
 guid: 744dbbef-0e48-47e1-9b5e-09ad8ae610a8
 locale: en-us

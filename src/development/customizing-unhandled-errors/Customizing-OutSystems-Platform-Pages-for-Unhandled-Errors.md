@@ -1,5 +1,5 @@
 ---
-summary: This technical note describes how to customize the error pages that are displayed to end-users when an unhandled error occurs. This lets you display proper feedback pages to end-users while maintaining the design coherence throughout the application.
+summary: Discover how to customize error handling pages in OutSystems 11 (O11) for on-premises installations to enhance application design.
 guid: 878d7f53-12a8-4101-a5bd-884e389b8025
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

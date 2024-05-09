@@ -1,5 +1,5 @@
 ---
-summary: Good applications have at least one thing in common – they are really fast. Beyond built-in OutSystems platform optimizations, keep these 10 guidelines in mind.
+summary: Explore performance optimization best practices for OutSystems 11 (O11) to enhance application speed and efficiency.
 guid: 5ec53f32-ba14-4732-bbdf-44b8588c5fd2
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

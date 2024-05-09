@@ -1,5 +1,5 @@
 ---
-summary: An Enterprise ecosystem is mostly likely composed by a set of OutSystems applications. It is crucial that dependencies between them are correctly addressed.
+summary: Explore application composition in OutSystems 11 (O11), focusing on module assembly and deployment dependencies essential for architectural design.
 tags: support-application_architecture-overview; support-application_development; support-development; support-Front_end_Development; support-Infrastuture_Architecture
 guid: dd85b743-88c8-4cba-8214-de594cffeefa
 locale: en-us

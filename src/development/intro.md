@@ -1,5 +1,5 @@
 ---
-summary:
+summary: Explore development best practices for building secure web and mobile apps efficiently with OutSystems 11 (O11).
 guid: a6466987-54ad-4294-a3a2-46ff498f2d71
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

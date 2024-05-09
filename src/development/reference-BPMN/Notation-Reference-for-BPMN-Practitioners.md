@@ -1,5 +1,5 @@
 ---
-summary: OutSystems brings with it the ability to design and execute business processes with the Business Process Technology Add-on. This technical note describes the notation used for Process Modeling targeted at practitioners currently modeling processes using BPMN.
+summary: OutSystems 11 (O11) supports BPMN practitioners with a comprehensive guide to process modeling notation and execution.
 guid: e7784786-6c20-4455-b5b1-26030914dd69
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

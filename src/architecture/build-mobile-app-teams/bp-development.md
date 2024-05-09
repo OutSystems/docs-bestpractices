@@ -1,5 +1,5 @@
 ---
-summary:
+summary: OutSystems 11 (O11) emphasizes best practices such as modular development, effective communication, and sandbox testing for mobile app efficiency.
 tags:
 guid: 493eee88-0bdd-40ee-b40e-011b1cf6c3c0
 locale: en-us

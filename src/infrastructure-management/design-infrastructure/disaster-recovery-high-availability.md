@@ -1,5 +1,5 @@
 ---
-summary: Based on the specific features of each OutSystems Platform server, your infrastructure can be set up to quickly handle disaster events.
+summary: Learn about disaster recovery and high availability strategies for OutSystems 11 (O11) on-premises or private cloud servers.
 guid: d11fba74-5734-4722-a8e7-8e15957af3b4
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

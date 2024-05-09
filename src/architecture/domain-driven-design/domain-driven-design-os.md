@@ -1,5 +1,5 @@
 ---
-summary:
+summary: OutSystems 11 (O11) introduces features that support Domain Driven Design (DDD) to help users architect complex systems effectively.
 tags:
 guid: 0ed36ce5-66fe-4507-ba42-a554c522e0ca
 locale: en-us

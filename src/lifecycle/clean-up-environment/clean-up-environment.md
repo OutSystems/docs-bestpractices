@@ -1,5 +1,5 @@
 ---
-summary: Avoid stopping or slowing down your application development by keeping your development environment clean.
+summary: Learn best practices for maintaining a clean and efficient development environment in OutSystems 11 (O11) to optimize performance and resource usage.
 tags: 
 guid: c2af5ea2-2154-40c4-9756-34783923865c
 locale: en-us

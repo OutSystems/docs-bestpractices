@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) enhances application performance through built-in database optimizations and best practices.
 guid: 50647fb9-512e-4af4-a76e-f81bc82a094c
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

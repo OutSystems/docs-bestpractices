@@ -1,5 +1,5 @@
 ---
-summary: Learn how to create an architecture blueprint
+summary: Explore translating architectural blueprints into real applications with OutSystems 11 (O11), focusing on an online soccer field booking system.
 tags: article-page; OutSystems-development-from-blueprint; architecture-blueprint; OutSystems-Architecture; 
 guid: e52a7581-4dc9-4848-88c3-7e5df4a5c614
 locale: en-us

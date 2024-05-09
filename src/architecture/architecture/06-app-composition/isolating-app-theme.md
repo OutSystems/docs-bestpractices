@@ -1,5 +1,5 @@
 ---
-summary: When in an Enterprise context, your OutSystems applications will most likely share visual elements such as common look & feel, menus and login flows.
+summary: Explore how OutSystems 11 (O11) manages application themes to ensure consistent enterprise look & feel while allowing customization.
 guid: 5a065377-1843-4d63-b7b9-135f9de77886
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

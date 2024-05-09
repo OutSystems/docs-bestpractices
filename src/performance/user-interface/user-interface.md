@@ -1,5 +1,5 @@
 ---
-summary: There are no fast applications with slow user experiences. To promote the adoption and keep the end-users satisfied, the application has to respond fast.
+summary: Discover UI performance optimization techniques for OutSystems 11 (O11), including AJAX moderation, viewstate reduction, and strategic caching.
 guid: eda645ae-a7e2-4844-af65-4b45d8d69b18
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

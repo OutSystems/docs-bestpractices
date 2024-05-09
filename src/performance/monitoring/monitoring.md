@@ -1,5 +1,5 @@
 ---
-summary: 
+summary: Explore built-in and integrable monitoring tools in OutSystems 11 (O11) for real-time application performance management and troubleshooting.
 guid: f33f9001-87a0-49b4-aacc-30f866f13882
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

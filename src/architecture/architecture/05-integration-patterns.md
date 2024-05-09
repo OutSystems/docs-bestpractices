@@ -1,5 +1,5 @@
 ---
-summary: Explore the most common and recommend integration patterns for core services abstraction when integrating with external system of records.
+summary: Explore core services abstraction integration patterns in OutSystems 11 (O11) for enhanced system independence and performance.
 guid: 94c591a5-e7a6-4015-af21-ad87c1012fc7
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

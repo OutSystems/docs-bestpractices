@@ -1,5 +1,5 @@
 ---
-summary:
+summary: Explore client-side and server-side security best practices for Reactive Web Apps in OutSystems 11 (O11).
 guid: 0fbfbedf-163b-4765-9dbf-735fb3c0c074
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

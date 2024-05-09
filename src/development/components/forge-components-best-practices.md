@@ -1,5 +1,5 @@
 ---
-summary: Learn the best practices to share a component in OutSystems Forge.
+summary: Learn best practices for sharing and developing Forge components in OutSystems 11 (O11) to enhance code reuse and application delivery.
 guid: 6f1265f0-a96e-45cb-b813-8460434ba1ab
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

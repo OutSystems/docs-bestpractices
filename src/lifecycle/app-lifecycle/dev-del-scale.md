@@ -1,5 +1,5 @@
 ---
-summary: OutSystems is all about agility and high-productivity and at scale is when the true challenges come up. Physical branching is the traditional industry response to these challenges, but has several drawbacks which are amplified in long-lived branching scenarios. This document aims to address those challenges by providing a modern delivery approach.
+summary: OutSystems 11 (O11) facilitates scalable development and delivery by promoting CI/CD, domain-driven design, and effective team structures.
 guid: 16193e47-1f0a-47a8-9870-2dd77d622a47
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

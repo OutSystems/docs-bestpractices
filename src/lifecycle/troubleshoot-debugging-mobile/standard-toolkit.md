@@ -1,5 +1,5 @@
 ---
-summary:
+summary: Explore the standard toolkit for debugging and troubleshooting in OutSystems 11 (O11), featuring native tools and modern web browsers.
 tags:
 guid: 6419e85e-475e-4e4e-a5ee-b4d85ea5e3ac
 locale: en-us

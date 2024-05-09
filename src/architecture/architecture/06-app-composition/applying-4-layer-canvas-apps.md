@@ -1,5 +1,5 @@
 ---
-summary: Extend the Architecture Canvas principles to application composition and make sure the architecture isolates applications and promotes independent life cycles.
+summary: Learn how to apply the Architecture Canvas principles to applications in OutSystems 11 (O11) for effective architecture analysis and management.
 guid: f3394f79-117e-4550-9556-16b76d0d9269
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

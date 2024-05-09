@@ -1,5 +1,5 @@
 ---
-summary: When designing an infrastructure for Production or Non-Production environments, you need to carefully consider hardware requirements.
+summary: Learn to size and scale infrastructure for OutSystems 11 (O11) by evaluating application logic, user concurrency, data size, and integrations.
 guid: 9fe9358a-9bfb-458d-bea1-c984ff641797
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

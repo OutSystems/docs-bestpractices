@@ -1,5 +1,5 @@
 ---
-summary: This article guides you through the steps to create a reusable component in OutSystems. It includes recommendations, best practices, and information for common situations.
+summary: Learn how to create reusable components in OutSystems 11 (O11) with best practices and common scenarios for effective application development.
 guid: 43a62924-8342-415c-9fda-06b278a876c0
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

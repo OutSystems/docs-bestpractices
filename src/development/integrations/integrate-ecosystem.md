@@ -1,7 +1,8 @@
 ---
-summary: Developers need the ability to create seamless integration with the full range and scope of the business process management tools, data sources, and core business systems that your enterprise has developed over the years—as well as keep pace with future developments.
+summary: Learn how OutSystems 11 (O11) enables seamless integration with a wide range of systems and technologies, enhancing enterprise application development.
 locale: en-us
 guid: 76f0ff8d-00dc-4b9e-8da7-95df3bebb8cb
+app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/vqcqBzIzCkJa5I0Q7Cud0a/Development?node-id=1043:388
 ---

@@ -1,5 +1,5 @@
 ---
-summary: A top-notch architecture is crucial to allow your applications to grow and adapt to your OutSystems business requirements as they evolve, with minimal impacts.
+summary: Learn to design robust architectures for OutSystems 11 (O11) applications using the Architecture Canvas methodology, validation rules, and best practices.
 guid: f71daee2-c2a5-4e58-ace9-6501bb9caa2e
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

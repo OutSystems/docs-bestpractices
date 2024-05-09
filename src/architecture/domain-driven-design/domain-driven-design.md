@@ -1,5 +1,5 @@
 ---
-summary:
+summary: Explore Domain Driven Design in OutSystems 11 (O11) for effective complex software development.
 tags:
 guid: 9363e1f9-1611-45fd-a0c3-3b8c1fcd4e7f
 locale: en-us

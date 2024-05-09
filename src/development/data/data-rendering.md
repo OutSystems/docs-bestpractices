@@ -1,5 +1,5 @@
 ---
-summary: Best practices for rendering data on mobile apps, to avoid bad user experiences like image flickering or long loading times.
+summary: Explore best practices for mobile data rendering in OutSystems 11 (O11), focusing on user experience and performance optimization.
 guid: 0110f2d4-6724-432b-b46c-2a582a90ee76
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

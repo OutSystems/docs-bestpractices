@@ -1,5 +1,5 @@
 ---
-summary: Here you can find all existing best practices on application performance.
+summary: Explore performance best practices and monitoring techniques in OutSystems 11 (O11) to enhance software development efficiency.
 guid: 394deb7e-f63e-4ff4-831f-a4132c250bfd
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
