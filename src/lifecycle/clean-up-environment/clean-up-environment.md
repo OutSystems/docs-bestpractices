@@ -126,13 +126,22 @@ When you delete Entities and Attributes in your applications, OutSystems doesn't
 
 ## Processes
 
-Business Process Technology (BPT) Processes can also be consuming unnecessary database space. It’s common that you launch some processes to test the functionality when you are developing.
+As the OutSystems BPT Processes manage customer process data this means that the Platform cannot, by default, delete closed BPT instances, as that would mean deleting customer data.
+When left unattended, performance of the applications can start to degrade because queries on the Database become slower. This snowball effect can reach a breaking point leading to unavailability of environments.
+
 To clean all the logged information of old processes, OutSystems provides the [BPT API](https://success.outsystems.com/documentation/11/reference/outsystems_apis/bpt_api/) methods:
 
 * [Process_Delete](https://success.outsystems.com/documentation/11/reference/outsystems_apis/bpt_api/#process_delete): Deletes all the logged information of an instance of a top level Process, which must be either terminated or closed.
 * [Process_BulkDelete](https://success.outsystems.com/documentation/11/reference/outsystems_apis/bpt_api/#process_bulkdelete): Deletes all the logged information of instances of top level Processes that have terminated or closed before the given date.
 
 Add them as references on your application and invoke them to delete old instances.
+
+Alternatively, there are some **unsupported** Forge components to help monitor and clean up Processes and Activities, the most complete of which is the [BPT Governor](https://www.outsystems.com/forge/component-overview/17901/bpt-governor-o11), with the following list of features:
+* BPT Process and Activity tracking overall and by process;
+* BPT Maintenance setup with retention period per process;
+* Alarms notifications can be configured based on volume of BPTs in the varying states;
+* Terminate in bulk active processes and delete closed processes;
+ 
 
 In cases where large amounts of data is consistently generated in the database through the use of BPT processes, it may come to a point that remedial action is necessary to ensure smooth, continued functionality.For self-managed infrastructures using SQL Server, refer to [Reseeding identity values in BPT tables - SQL Server](https://success.outsystems.com/documentation/11/developing_an_application/use_processes_bpt/reseeding_identity_values_in_bpt_tables_sql_server/). 
 
