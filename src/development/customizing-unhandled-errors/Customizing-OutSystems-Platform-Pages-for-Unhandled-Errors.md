@@ -65,7 +65,7 @@ To customize an error handler page you have to edit the content of the correspon
 
 <div class="info" markdown="1">
 
-If the **unsafe-inline** directive is not used in the content security policy (that is, **Compiler.EnforceUnsafeInline** is set to **False**), the **forbidden.aspx** and **app_offline.aspx** files are replaced by newer versions, and any previous configuration is overwritten.
+From Platform Server version 11.28.0 and higher, the **forbidden.aspx** and **app_offline.aspx** files are replaced by newer versions, and any previous configuration is overwritten.
 
 </div>
 
