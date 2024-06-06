@@ -61,7 +61,13 @@ To customize an error handler page you have to edit the content of the correspon
 
 * **Application Temporarily Offline Errors:** app_offline_template.htm
 
-* **Application Unavailable Errors:** app_offline.aspx
+* **Application Unavailable Errors:** app_offline.aspx and forbidden.aspx
+
+<div class="info" markdown="1">
+
+From Platform Server version 11.28.0 and higher, the **forbidden.aspx** and **app_offline.aspx** files are replaced by newer versions, and any previous configuration is overwritten.
+
+</div>
 
 These files are all available under the customHandlers folder which can be found in your Platform Server installation directory (normally it is C:\Program Files\OutSystems\Platform Server).
 
