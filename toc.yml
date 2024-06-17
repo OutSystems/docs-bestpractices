@@ -61,7 +61,6 @@
 - topics:
     - href: lifecycle/app-lifecycle/managing-app-lifecycle-portfolio.md
     - href: lifecycle/tech-debt/tech-debt.md
-    - href: lifecycle/app-lifecycle/dev-del-scale/dev-del-scale.md
     - href: lifecycle/clean-up-environment/clean-up-environment.md
     - href: lifecycle/devops/devops-in-outsystems.md
     - href: lifecycle/cicd/cicd-in-outsystems.md
