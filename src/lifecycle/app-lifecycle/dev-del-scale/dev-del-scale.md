@@ -27,12 +27,12 @@ A team's  productivity is highly dependent on its ability to be independently al
 
 With the growth of a software factory, it becomes more difficult to isolate developments and deployments, as they become more and more complex and slow, small change requests become harder to implement, planning becomes hard, resulting in the teams playing with odds. The teams start facing growing pains to cope with the interests of the business because everything becomes interdependent, impacts on other businesses becomes harder to address as more decision makers are involved. Therefore, the need to decouple the large monolith into small serviceable pieces becomes imperative, providing team isolation and lifecycle independence. 
 
-[Domain-driven-design](https://success.outsystems.com/Documentation/Best_Practices/Architecture/OutSystems_Domain_Driven_Architecture/Domain_Driven_Design_with_OutSystems) (DDD) is a recommended approach for building **loosely coupled architectures**. A loosely coupled architecture **isolates different pieces of software** (self-contained domains) by reducing the dependencies between them to a minimum. Building and deploying apps using a loosely coupled architecture provides benefits such as, more **scalability**, **resilience**, **maintainability**, and **less dependencies between development teams**. A DDD approach to architecture structures a software system as a set of business-domain-aligned components. Also aligning the ownership model with business domains, means each domain is owned by one team (and one team may own several systems or components related to the same domain). This allows each business domain to evolve at a different speed, based on the change rate appropriate for that domain.
+[Domain-driven-design](https://www.outsystems.com/tk/redirect?g=0ed36ce5-66fe-4507-ba42-a554c522e0ca) (DDD) is a recommended approach for building **loosely coupled architectures**. A loosely coupled architecture **isolates different pieces of software** (self-contained domains) by reducing the dependencies between them to a minimum. Building and deploying apps using a loosely coupled architecture provides benefits such as, more **scalability**, **resilience**, **maintainability**, and **less dependencies between development teams**. A DDD approach to architecture structures a software system as a set of business-domain-aligned components. Also aligning the ownership model with business domains, means each domain is owned by one team (and one team may own several systems or components related to the same domain). This allows each business domain to evolve at a different speed, based on the change rate appropriate for that domain.
 
 ![Diagram illustrating domain-driven design with vertical and horizontal domains, showing business verticals and foundation services.](images/domain-definition.png "Domain-Driven Design Architecture")
 
 
-OutSystems [AI Mentor Studio](https://success.outsystems.com/Documentation/Architecture_Dashboard/Introduction_to_Architecture_Dashboard) provides a bird-eye-view of the entire application’s architecture, facilitating the correct domain assessment by detecting unexpected dependencies between applications and wrong architecture patterns.
+OutSystems [AI Mentor Studio](https://www.outsystems.com/tk/redirect?g=7aa53270-fb01-4543-90e4-57907dcc68fe) provides a bird-eye-view of the entire application’s architecture, facilitating the correct domain assessment by detecting unexpected dependencies between applications and wrong architecture patterns.
 
 ### Team structure 
 
@@ -81,7 +81,7 @@ Versioning is helpful in specific scenarios, namely when you want to introduce a
 
 API/UI versioning applies when a change is restricted to a specific code element, (for example, a new authentication service or a new product catalog widget) and you want to ensure that any breaking changes (in the signature or the expected behavior) don't immediately impact existing consumers (each consumer can opt to switch to the new version when it makes sense to them).
 
-With multiple versions, the best way to approach version management is to have clear technical guidance about such as, when to create a new version, how to mark a version as deprecated and naming convention rules. For an example on how versions can be managed, see [Microservices Lifecycle — Managing Versions](https://success.outsystems.com/Documentation/Best_Practices/Architecture/Designing_the_Architecture_of_Your_OutSystems_Applications/Microservices_Architecture_in_OutSystems#microservices-lifecycle-managing-versions).
+With multiple versions, the best way to approach version management is to have clear technical guidance about such as, when to create a new version, how to mark a version as deprecated and naming convention rules. For an example on how versions can be managed, see [Microservices Lifecycle — Managing Versions](https://success.outsystems.com/documentation/best_practices/architecture/designing_the_architecture_of_your_outsystems_applications/microservices_architecture_in_outsystems/#microservices-lifecycle-managing-versions).
 
 #### Feature toggles
 
@@ -93,13 +93,13 @@ Technical feature toggling applies when you're implementing a feature or behavio
 
 ![Flowchart demonstrating how feature flags or toggles control the release of new features to end users.](images/feature-flags.png "Feature Flags Mechanism")
 
-You can find the [Feature Toggle Library](https://www.outsystems.com/forge/component-overview/9663/feature-toggle-library) component in the OutSystems Community. To learn more about how to implement and use feature toggles, see [Feature toggle in OutSystems](https://success.outsystems.com/Documentation/How-to_Guides/Development/Feature_toggle_in_OutSystems). 
+You can find the [Feature Toggle Library](https://www.outsystems.com/forge/component-overview/9663/feature-toggle-library) component in the OutSystems Community. To learn more about how to implement and use feature toggles, see [Feature toggle in OutSystems](https://www.outsystems.com/tk/redirect?g=4de797a5-dc79-459a-9244-8eab786b0fcf). 
 
 #### Branching by abstraction
 
 When various parts of a software system are dependent on a module, library, or framework that you want to replace, you can branch by abstraction by creating an abstraction layer that captures the interaction between one section of the client code and the current supplier. You start by building a wrapper around the component you want to replace which allows you to route-call from the old implementation to the new one, for example, replacing a connector that integrates with JIRA with another one that integrates with Azure DevOps. Or, you might want to keep the same signature/interface for your customers but change the implementation radically, for example switching between different DLL versions, or switching between different CRM systems. The key benefit of branching by abstraction is that your code is working at all times throughout the refactoring, enabling continuous delivery. 
 
-For a more in depth example of branching by abstraction, see [Integration Patterns for Core Services Abstraction](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_Architecture_of_Your_OutSystems_Applications/05_Integration_Patterns_for_Core_Services_Abstraction), which creates an abstraction layer around an external system.
+For a more in depth example of branching by abstraction, see [Integration Patterns for Core Services Abstraction](https://www.outsystems.com/tk/redirect?g=94c591a5-e7a6-4015-af21-ad87c1012fc7), which creates an abstraction layer around an external system.
 
 ## Quality validations 
 
@@ -137,9 +137,9 @@ The most common feedback loop in any deployment pipeline is the execution of aut
 
 By defining an automated testing strategy, it helps the efficiency of the overall software delivery and it ensures robust software quality. Automated tests run significantly faster than manual tests done by human users which will help ensure **quick feedback** even as your systems grow and scale.  Automated tests can run virtually unattended as many times you want and whenever you need. Although it has an initial setup cost, you’ll achieve a sharp drop in the amount of time used for your testing activities. This enables **faster validation**, **shorter lead times** for changes and more **frequent deploys to production**. Additionally, automated testing ensures **delivery quality** and provides actionable data to help improve applications and reduce the number of issues that reach production.
 
-There are many different types of **functional testing** that can be automated and help ensure that application code is working as expected, for example, and regression testing. Regression tests are any tests that validate a previously accepted behavior, regardless of test scope (unit, integration, or E2E). **Unit/component tests** verify your application at the most granular level, typically actions. They are fast, easy to maintain, and support rapid change of your application. [Unit tests](https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Testing_Guidelines/Component_Testing) should be the foundation of your automation strategy. A **regression test** collection verifies that your entire application still works as intended after being changed. This suite adds value to the deployment pipeline. 
+There are many different types of **functional testing** that can be automated and help ensure that application code is working as expected, for example, and regression testing. Regression tests are any tests that validate a previously accepted behavior, regardless of test scope (unit, integration, or E2E). **Unit/component tests** verify your application at the most granular level, typically actions. They are fast, easy to maintain, and support rapid change of your application. [Unit tests](https://success.outsystems.com/documentation/11/testing_apps/component_testing/) should be the foundation of your automation strategy. A **regression test** collection verifies that your entire application still works as intended after being changed. This suite adds value to the deployment pipeline. 
 
-For more information about automated testing guidelines and tools, see [OutSystems Testing Guidelines](https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Testing_Guidelines).
+For more information about automated testing guidelines and tools, see [OutSystems Testing Guidelines](https://success.outsystems.com/documentation/11/testing_apps/outsystems_testing_guidelines/).
 
 ## Production hotfixes 
 
@@ -151,7 +151,7 @@ If you go to production on-demand (multiple times per day) you might be ready to
 
 ### Application criticality
 
-Your application might already require additional validations (as business acceptance, process upgrade simulation, load testing) in a [production-like environment](https://www.outsystems.com/evaluation-guide/does-outsystems-support-data-migration/) so a hotfix process with a pre-production environment will fit. On the other hand, typically for non-critical applications the usage of development and a quality assurance environment can be evaluated to create and test an hotfix, assuming a good architecture of your application is in place and the use of trunk-based development patterns to hide incomplete work. This can also apply to critical applications in a scenario, for example, where you have good test coverage and canary releases. At the end of the day is all about managing risk and ensuring you have the right safety net in-place.
+Your application might already require additional validations (as business acceptance, process upgrade simulation, load testing) in a production-like environment so a hotfix process with a pre-production environment will fit. On the other hand, typically for non-critical applications the usage of development and a quality assurance environment can be evaluated to create and test an hotfix, assuming a good architecture of your application is in place and the use of trunk-based development patterns to hide incomplete work. This can also apply to critical applications in a scenario, for example, where you have good test coverage and canary releases. At the end of the day is all about managing risk and ensuring you have the right safety net in-place.
 
 ### Hotfix process with pre-production environment
 
@@ -167,7 +167,7 @@ Everytime you use a different delivery process, and even though you’ll use sim
 * Ensure the necessary validations steps in your process (manual tests, regressions test).
 * Ensure the correct governance (who has permissions).
 * Merge your fixes back to the start of the pipeline.
-    * [LifeTime](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Deploy_Applications/Apply_a_Hotfix) highlights which hotfixes have yet to be merged to the start of the OutSystems pipeline.
+    * [LifeTime](https://success.outsystems.com/documentation/11/deploying_apps/apply_a_hotfix/) highlights which hotfixes have yet to be merged to the start of the OutSystems pipeline.
     * Ensure the person doing the hotfix is responsible for it.
     * Ensure that there are no pending merges after deploying the fix to production.
 
