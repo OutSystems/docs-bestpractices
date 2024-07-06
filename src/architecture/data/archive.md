@@ -81,7 +81,7 @@ Mirror the data source modules in the **archive catalog** side, in a way simple 
 
 * Copy entities only.
 
-* Set the **Is AutoNumber** property to `No` for IDs, Indexes, and the IsArchived attribute.
+* Set the **Is AutoNumber** property to `No` for all possible attributes.
 
 * Set the **Delete Rule** property of foreign keys to `Ignore`.
 
