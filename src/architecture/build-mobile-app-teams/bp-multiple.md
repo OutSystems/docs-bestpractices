@@ -90,8 +90,3 @@ From bottom to top we will have:
 
 And that's it. You have a application prepared for multiple team development.
 
-<div class="info" markdown="1">
-
-Take all this information to the practice, by downloading [this sample](resources/multiple-bl.oap) that we prepared for you.
-
-</div>
