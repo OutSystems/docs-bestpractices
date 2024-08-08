@@ -165,7 +165,7 @@ The following example of the Silk Ui Mobile FloatingActions pattern provides a c
 
 ![Image showing the UI structure of the FloatingActions pattern in OutSystems.](images/The-Complete-Guide-to-Creating-Components_17.png "Floating Actions UI Structure")
 
-![Animated preview of the FloatingActions UI pattern in OutSystems.](images/The-Complete-Guide-to-Creating-Components_18.gif "Floating Actions Preview")
+![Animated preview of the FloatingActions UI pattern in OutSystems.](images/The-Complete-Guide-to-Creating-Components_18.png "Floating Actions Preview")
 
 #### Service Studio CSS Tags for a better development experience
 
