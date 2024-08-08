@@ -74,7 +74,7 @@ In this example, as shown in the screenshots that follow:
 
 1. It's now visible that the CSS attached to the 'Flow the Screen' is part of 'has a class' definition that changes the padding values, which is the reason for the ‘flicker’!
 
-![Animated GIF demonstrating UI flicker during list element transition in a mobile app.](images/OutSystems_provides_rich_16.gif "UI Flicker Animation")
+![Animated GIF demonstrating UI flicker during list element transition in a mobile app.](images/OutSystems_provides_rich_16.png "UI Flicker Animation")
 
 ![Screenshot of UI inspection highlighting a div element and associated CSS class causing flicker.](images/OutSystems_provides_rich_17.png "UI Inspection Revealing CSS Class")
 
