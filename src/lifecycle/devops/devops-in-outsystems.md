@@ -132,17 +132,13 @@ While a workflow app can be designed from scratch, **Workflow Builder** includes
 
 A workflow app, as it evolves, may outgrow its original design. For example, its scope may expand to require a feature that is not available in **Workflow Builder**, such as integration with an outside service like SAP or Salesforce. In this case, [the workflow app can be converted](https://success.outsystems.com/documentation/11/developing_an_application/create_case_management_and_workflow_apps/create_workflow_apps_with_workflow_builder/converting_a_workflow_builder_app_to_service_studio/) to **Service Studio**, where it can continue to be developed with all of the capabilities available in the OutSystems platform. 
 
-
 ### Experience Builder
 
 [Experience Builder](https://success.outsystems.com/documentation/11/developing_an_application/create_mobile_apps_with_experience_builder/) lets leaders, developers, and UX/UI designers create prototypes of pixel-perfect B2C mobile apps with great UX using a web interface. All generated code is built following best practices to ensure a sound and scalable architecture.
 
-![Animated GIF showing the Experience Builder feature in OutSystems.](images/product-update.gif "Experience Builder Animation")
-
+<iframe src="https://player.vimeo.com/video/996612454" width="750" height="354" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">showing the Experience Builder feature in OutSystems.</iframe>
 
 While an app can be designed from scratch, **Experience Builder** includes templates to accelerate development for the following use cases:
-
-
 
 *   Mobile banking
 *   Customer insurance
