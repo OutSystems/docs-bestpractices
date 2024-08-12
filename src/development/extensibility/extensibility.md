@@ -53,7 +53,7 @@ In addition to the built-in application templates, developers can choose from hu
 
 The look and feel of the app is set in the OutSystems theme, which is part of the [OutSystems UI](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI) framework. Using the [Theme Editor](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Look_and_Feel/Customize_the_look_of_your_app_with_Theme_Editor), the overall style of the app can be customized in Service Studio, including default colors of screens and UI elements, default font and size, spacing and borders.
 
-![Animated GIF showing the OutSystems Theme Editor interface where users can customize application themes.](images/theme-editor.gif "OutSystems Theme Editor Interface")
+<iframe src="https://player.vimeo.com/video/997661972" width="750" height="547" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showing the OutSystems Theme Editor interface where users can customize application themes.</iframe>
 
 [Screen templates](https://outsystemsui.outsystems.com/OutSystemsUIWebsite/ScreenOverview?RuntimeId=2) for both web, mobile, and reactive apps provide theme-consistent UI and for such functions as dashboards, details, forms, galleries, lists, and onboarding. Each screen is populated with widgets and containers that can be modified and rearranged as required, including sample data that developers can use for testing on a computer or mobile phone. 
 
@@ -65,7 +65,7 @@ Sometimes none of the built-in screen templates answer the needs of a particular
 
 [The look and feel of widgets](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Look_and_Feel/Change_the_look_of_widgets_with_Styles_Editor) can be customized using the Styles Editor panel for editing basic visual properties, such as font color, margins, or border thickness. The changes can be made locally to affect only the selected widget, or saved globally for all widgets of that type used in the app.
 
-![Animated GIF demonstrating the use of the OutSystems Styles Editor panel to customize widget properties.](images/styles-editor-animation.gif "OutSystems Styles Editor Panel")
+<iframe src="https://player.vimeo.com/video/997661986" width="420" height="312" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video showing the OutSystems Theme Editor interface where users can customize application themes.</iframe>
 
 Once developers have customized one of the OutSystems application templates, created screens, built logic, and published the app, they can save it as a [custom application template](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Reuse_UI/Create_a_Custom_Application_Template) that can be used as a starting point to develop additional apps, to define its look and feel, and put in place common functionality and manage dependencies.
 
@@ -77,19 +77,17 @@ There is no way, of course, to anticipate every possible design choice or functi
 
 #### HTML extensibility
 
-
 All widgets can be customized by setting extended properties which are directly translated to HTML attributes. This includes HTML tags that are not currently supported in the base HTML definition, such as custom “data-” attributes or accessibility features.  An HTML widget for reactive and mobile applications can include any HTML code for specialized functions, such as a CMS that loads dynamic, database-stored HTML content in a page.
-
 
 #### CSS extensibility
 
 Developers use [OutSystems UI](https://www.outsystems.com/outsystems-ui/) to tweak the styles of individual elements or make global modifications to the theme of the chosen application template. In some cases, however, low-code customizations may not suffice to meet specifications set in an app mockup. For example, the enterprise brandbook may require a proprietary font set, or the corporate color scheme in the style guide may not be found among the 18 pallet options available in the Theme Editor.
 
-For these situations, new styles can be created, or existing classes modified, in the [CSS editor](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Look_and_Feel/Cascading_Style_Sheets_(CSS)), which overrides the properties in the base CSS, for themes, screens, emails, blocks and widgets. The OutSystems UI makes extensive use of CSS variables for [color](https://outsystemsui.outsystems.com/StyleGuidePreview/Color), [typography](https://outsystemsui.outsystems.com/StyleGuidePreview/Typography), [borders](https://outsystemsui.outsystems.com/StyleGuidePreview/Border), [spacing](https://outsystemsui.outsystems.com/StyleGuidePreview/Spacing), and [shadows](https://outsystemsui.outsystems.com/StyleGuidePreview/Shadow), and these can be modified within the CSS editor. 
+For these situations, new styles can be created, or existing classes modified, in the [CSS editor](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Look_and_Feel/Cascading_Style_Sheets_(CSS)), which overrides the properties in the base CSS, for themes, screens, emails, blocks and widgets. The OutSystems UI makes extensive use of CSS variables for [color](https://outsystemsui.outsystems.com/StyleGuidePreview/Color), [typography](https://outsystemsui.outsystems.com/StyleGuidePreview/Typography), [borders](https://outsystemsui.outsystems.com/StyleGuidePreview/Border), [spacing](https://outsystemsui.outsystems.com/StyleGuidePreview/Spacing), and [shadows](https://outsystemsui.outsystems.com/StyleGuidePreview/Shadow), and these can be modified within the CSS editor.
 
-![Animated GIF illustrating the process of customizing CSS styles within the OutSystems platform.](images/css-extensibility.gif "CSS Extensibility in OutSystems")
+<iframe src="https://player.vimeo.com/video/997662001" width="700" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video illustrating the process of customizing CSS styles within the OutSystems platform.</iframe>
 
-In some cases developers may decide to use an external CSS that is compliant with OutSystems UI by using the @import rule in the OutSystems UI CSS. 
+In some cases developers may decide to use an external CSS that is compliant with OutSystems UI by using the @import rule in the OutSystems UI CSS.
 
 #### JavaScript extensibility
 
@@ -212,7 +210,7 @@ The OutSystems visual editor allows development teams to [query and aggregate da
 
 #### Using SQL
 
-The OutSystems language provides actions for extracting, loading, transforming and updating data, but developers are not limited to manipulating data visually using aggregates. More experienced developers can also use an [SQL Node](https://success.outsystems.com/Documentation/11/Developing_an_Application/Use_Data/Query_Data/SQL_Queries) to build complex queries or to run stored procedures. 
+The OutSystems language provides actions for extracting, loading, transforming and updating data, but developers are not limited to manipulating data visually using aggregates. More experienced developers can also use an [SQL Node](https://success.outsystems.com/Documentation/11/Developing_an_Application/Use_Data/Query_Data/SQL_Queries) to build complex queries or to run stored procedures.
 
 OutSystems continually tracks all of the dependencies to the underlying database. If something changes, your SQL code is automatically refactored, or you’re warned if it is no longer compatible with the changes. This extensibility feature accelerates the change process, as well as makes the application itself resilient to change.
 
@@ -233,7 +231,6 @@ Developers can easily import and export data from Excel or JSON directly from th
 If developers need tighter control of an Excel export, they can use [Advanced Microsoft Excel](http://www.outsystems.com/forge/component/355/advanced-excel/), available in the Forge. This extension supports data formatting, the creation of Excel charts, and ability to fill in specific cells by providing row and column numbers.
 
 ## Using OutSystems Forge to extend applications
-
 
 The [OutSystems Forge](http://www.outsystems.com/Forge/) is a repository of reusable, open code connectors, widgets, libraries, themes and templates, mobile plugins, applications, reporting, and developer tools that help speed up app delivery time that can be installed and reused as if they belong to OutSystems itself.
 
