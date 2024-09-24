@@ -25,7 +25,7 @@ For the environment sizing and configuration, consider also the following:
 
 * You can use [LifeTime Services API](https://success.outsystems.com/Documentation/10/Reference/OutSystems_APIs/LifeTime_Services_API) and [LifeTime Deployment API](https://success.outsystems.com/Documentation/10/Reference/OutSystems_APIs/LifeTime_Deployment_API) to complement the set of functionality that [LifeTime SDK](https://success.outsystems.com/Documentation/10/Reference/OutSystems_APIs/LifeTime_SDK) already provides you with. These LifeTime APIs are only available in the LifeTime environment.
 
-Set up the development environment of your LifeTime plugins following the [steps described in this topic](https://success.outsystems.com/Documentation/How-to_Guides/How_to_create_a_LifeTime_Plugin).
+Set up the development environment of your LifeTime plugins following the [steps described in this topic](https://success.outsystems.com/documentation/how_to_guides/development/how_to_create_a_lifetime_plugin/).
 
 ## Developing your plugins
 
@@ -35,17 +35,17 @@ However, a LifeTime plugin usually depends on LifeTime services and data. Theref
 
 * LifeTime plugins can only be deployed to environments containing the LifeTime SDK. Beware of unintended dependencies from other applications to your LifeTime plugin or the LifeTime SDK, as these dependencies can prevent you from successfully deploy those applications.
 
-* Develop against updated sample data as much as possible to minimize misbehaviors. Export the sample data from LifeTime environment during the [setup process](https://success.outsystems.com/Documentation/How-to_Guides/How_to_create_a_LifeTime_Plugin), and refresh it periodically, executing the "Export Sample Data" step of that process when needed.
+* Develop against updated sample data as much as possible to minimize misbehaviors. Export the sample data from LifeTime environment during the [setup process](https://success.outsystems.com/documentation/how_to_guides/development/how_to_create_a_lifetime_plugin/), and refresh it periodically, executing the "Export Sample Data" step of that process when needed.
 
 * If you want to use use [LifeTime Services API](https://success.outsystems.com/Documentation/10/Reference/OutSystems_APIs/LifeTime_Services_API) or [LifeTime Deployment API](https://success.outsystems.com/Documentation/10/Reference/OutSystems_APIs/LifeTime_Deployment_API), consume these APIs from the LifeTime environment, since they are not deployed with the LifeTime SDK. Be mindful of this and advise other developers, as any API action that modifies data will be modifying real LifeTime data.
 
-* Consider safeguarding new features behind feature toggles. With these toggles, you can quickly disable a new feature if it happens to misbehave when the plugin is deployed to production. 
+* Consider safeguarding new features behind feature toggles. With these toggles, you can quickly disable a new feature if it happens to misbehave when the plugin is deployed to production.
 
 ## Assuring the quality of your plugins
 
 Although it is an industry practice to have an dedicated environment for Quality Assurance, the lifecycle of your LifeTime plugin will be more complex having an additional environment.
 
-Since a LifeTime plugin project has usually a smaller scope than regular applications, and considering the additional setup and maintenance effort to keep an additional environment in the plugin lifecycle, our recommendation is to go without a QA environment. 
+Since a LifeTime plugin project has usually a smaller scope than regular applications, and considering the additional setup and maintenance effort to keep an additional environment in the plugin lifecycle, our recommendation is to go without a QA environment.
 
 Anyway, you should evaluate the benefit of having a QA environment against the characteristics of your LifeTime plugin and the requirement of your own application project.
 
@@ -67,11 +67,8 @@ Since you cannot use LifeTime to deploy your plugin to the LifeTime environment,
 
 1. Go to the Service Center console of your plugin development environment (or QA environment, if you have one).
 
-2. If your LifeTime plugin does not have external dependencies, go to your LifeTime plugin Application page and download the application pack (.oap). Otherwise, create a Solution for your plugin including all external dependencies, and download the new Solution version you created (.osp). You can also opt to use Solutions for easily handle versioning.
+1. If your LifeTime plugin does not have external dependencies, go to your LifeTime plugin Application page and download the application pack (.oap). Otherwise, create a Solution for your plugin including all external dependencies, and download the new Solution version you created (.osp). You can also opt to use Solutions for easily handle versioning.
 
-3. Go to the Service Center console of your LifeTime environment. Upload and publish the Application or Solution downloaded in the previous step.
+1. Go to the Service Center console of your LifeTime environment. Upload and publish the Application or Solution downloaded in the previous step.
 
 The permissions to deploy to the environments managed by LifeTime is configured in LifeTime. However, since LifeTime environment is not managed by itself, you need to configure the deployment permissions using the Service Center console of LifeTime environment.
-
- 
-
