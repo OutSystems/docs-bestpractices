@@ -105,6 +105,6 @@ Fetching the entire entity from the database occurs even if not all fields are u
 
 Use local screen variables instead of placing conditional queries inside "if" branches, especially when using data outside the branch.
 
-### Importance
+### Key point
 
 Conditional queries increase the size of the page’s viewstate, slowing down the user experience.
