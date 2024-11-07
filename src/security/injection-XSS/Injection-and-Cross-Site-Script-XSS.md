@@ -98,7 +98,7 @@ The main benefit of this article is to protect applications’ sensitive data an
 
 ## Know more about Injection and Cross Site Script (XSS)
 
-[SQL Injection Warning](https://success.outsystems.com/Documentation/10/Reference/Errors_and_Warnings/Warnings/SQL_Injection_Warning)
+[SQL Injection Warning](https://success.outsystems.com/documentation/11/reference/errors_and_warnings/warnings/sql_injection_warning/)
 
 [HTML Injection Warning](https://success.outsystems.com/Documentation/11/Reference/Errors_and_Warnings/Warnings/HTML_Injection_Warning)
 
