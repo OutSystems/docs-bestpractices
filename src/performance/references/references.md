@@ -5,8 +5,17 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: module architecture, software architecture, deployment best practices, performance optimization, entity management
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+content-type:
+  - best practice
 ---
-
 # Performance Best Practices - References
 
 It’s all about software architecture. Usually, opting for the quickest solution produces severe performance problems. Refactoring later on may be a painful and expensive proposition.

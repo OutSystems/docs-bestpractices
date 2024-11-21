@@ -5,8 +5,17 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/vqcqBzIzCkJa5I0Q7Cud0a/Development?node-id=342:294
+tags: error handling, customization, on-premises installation, application design, platform customization
+audience:
+  - platform administrators
+  - full stack developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+content-type:
+  - best practice
+  - process
 ---
-
 # Customizing OutSystems Platform Pages for Unhandled Errors
 
 OutSystems handles unforeseen or unhandled errors that might occur in applications and displays proper feedback pages to end users. In this article it is described how you can customize these pages and make them fit your application design.

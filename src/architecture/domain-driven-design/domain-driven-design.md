@@ -1,13 +1,23 @@
 ---
 summary: Explore Domain Driven Design in OutSystems 11 (O11) for effective complex software development.
-tags:
+tags: domain driven design, software architecture, complex systems, business processes, conceptual modelling
 guid: 9363e1f9-1611-45fd-a0c3-3b8c1fcd4e7f
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?type=design&node-id=1344%3A722&mode=design&t=PRLoJ75Xb7DcRPoX-1
+audience:
+  - backend developers
+  - full stack developers
+  - team lead
+  - architects
+  - business analysts
+outsystems-tools:
+  - service studio
+content-type:
+  - best practice
+  - conceptual
 ---
-
 # Domain Driven Design
 
 Domain Driven Design (DDD) is a way of more easily developing complex software by translating it into small connected pieces in an ever-evolving model of the core business logic. It's a methodology and process prescription for the development of complex systems. The focus of DDD is mapping business processes within a problem domain into the technology artifacts of a solution domain.

@@ -5,8 +5,17 @@ guid: 76f0ff8d-00dc-4b9e-8da7-95df3bebb8cb
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/vqcqBzIzCkJa5I0Q7Cud0a/Development?node-id=1043:388
+tags: enterprise integration, database connectivity, community contributions, external systems integration
+audience:
+  - full stack developers
+  - backend developers
+  - architects
+outsystems-tools:
+  - forge
+content-type:
+  - best practice
+  - process
 ---
-
 # Integrating OutSystems with your ecosystem
 
 <div class="info" markdown="1">

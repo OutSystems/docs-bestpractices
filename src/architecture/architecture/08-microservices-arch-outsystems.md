@@ -5,8 +5,18 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=1343:663
+tags: microservices architecture, soa (service-oriented architecture), rest api, continuous deployment, scalability
+audience:
+  - backend developers
+  - full stack developers
+  - architects
+  - team lead
+outsystems-tools:
+  - service studio
+content-type:
+  - best practice
+  - conceptual
 ---
-
 # Microservices Architecture in OutSystems
 
 In a [Service-Oriented Architecture](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/04_Service-Oriented_Architectures_for_OutSystems_applications) (SOA), core services are abstracted for correct reuse. But that does not constitute a microservices-style implementation, since all services reside in the same environment (installation), along with OutSystems applications.

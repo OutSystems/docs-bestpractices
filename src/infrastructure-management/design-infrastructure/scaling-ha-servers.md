@@ -5,8 +5,19 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/s4ggSCmhDxaNG5P4tzUjbh/Infrastructure-Management?type=design&node-id=101%3A242&mode=design&t=NaxT2dSeMuD9zH0S-1
+tags: clustering, failover, high availability, infrastructure management, scaling
+audience:
+  - platform administrators
+  - infrastructure managers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - platform server
+  - service center
+  - lifetime
+content-type:
+  - best practice
 ---
-
 # Scaling and high availability for OutSystems Platform servers
 
 <div class="info" markdown="1">

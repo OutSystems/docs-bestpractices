@@ -1,13 +1,22 @@
 ---
 summary: Explore application composition in OutSystems 11 (O11), focusing on module assembly and deployment dependencies essential for architectural design.
-tags: support-application_architecture-overview; support-application_development; support-development; support-Front_end_Development; support-Infrastuture_Architecture
+tags: application deployment, dependency management, architectural design, application life cycle management
 guid: dd85b743-88c8-4cba-8214-de594cffeefa
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - architects
+  - full stack developers
+  - team lead
+outsystems-tools:
+  - service studio
+  - lifetime
+content-type:
+  - conceptual
+  - best practice
 ---
-
 # Application composition
 
 An OutSystems application is an assembly of Modules and Extensions defined in Service Studio. An application constitutes the minimum deployment unit among environments in [LifeTime](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle).

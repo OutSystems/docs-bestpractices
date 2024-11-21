@@ -1,13 +1,21 @@
 ---
 summary: Implement permission-based data access in OutSystems 11 (O11) using Access Control Lists (ACL) for dynamic and scalable data segregation.
-tags: best-practices, security-model
+tags: data segregation, security model, access control, role-based access control, data access control
 guid: 3114f98f-16d0-4106-8628-5b0e80c6d21c
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=147:337
+audience:
+  - backend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+content-type:
+  - best practice
+  - conceptual
 ---
-
 # Use Access Control List to set up permission-based access to data
 
 ## What is Access Control List?

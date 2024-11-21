@@ -5,8 +5,18 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=1343:653
+tags: enterprise architecture, ui design, theme customization, css, layout design
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+  - architects
+outsystems-tools:
+  - service studio
+content-type:
+  - best practice
+  - conceptual
 ---
-
 # Isolating an application Theme
 
 In an enterprise installation, applications usually share the same corporate look & feel. Being a shared component, it is key to correctly position a global Theme module in the enterprise architecture.

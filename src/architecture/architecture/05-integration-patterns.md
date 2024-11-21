@@ -5,6 +5,16 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=1343:630
+tags: system integration, abstraction patterns, performance optimization, system independence, extensibility
+audience:
+  - backend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+content-type:
+  - conceptual
+  - best practice
 ---
 # Integration Patterns for Core Services Abstraction
 

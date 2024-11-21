@@ -5,6 +5,15 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rmma8067fGUqhlUhXheHOZ/Security?node-id=147:325
+tags: security best practices, sql injection prevention, html and javascript sanitization, platform configuration
+audience:
+  - frontend developers
+  - full stack developers
+  - backend developers
+outsystems-tools:
+  - service studio
+content-type:
+  - best practice
 ---
 # Injection and Cross Site Script - XSS
 

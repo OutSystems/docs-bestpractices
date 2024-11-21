@@ -1,13 +1,20 @@
 ---
 summary: Explore the front-end development process from UX concepts to code implementation using OutSystems 11 (O11) in this detailed guide.
-tags:
+tags: ux design, ui design, front-end development, style guide, design systems
 guid: c8a658b6-cda4-4222-a1c6-14a743e3f9e9
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/vqcqBzIzCkJa5I0Q7Cud0a/Development?type=design&node-id=342%3A257&mode=design&t=rfzYRycSnszPZJdp-1
+audience:
+  - frontend developers
+  - ui designers
+outsystems-tools:
+  - none
+content-type:
+  - best practice
+  - conceptual
 ---
-
 # Front-end journey - from mockups to code
 
 The development of an application starts before the implementation of its core logic and functionalities. An initial journey of business analysis, test prototypes and design of reusable patterns is important to guarantee good alignment and to give the development team a good quick start to speed up the development.

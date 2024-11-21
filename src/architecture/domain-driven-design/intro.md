@@ -1,13 +1,23 @@
 ---
 summary: Explore Domain Driven Architecture in OutSystems 11 (O11) for managing complex software development and deployment.
-tags: article-page
+tags: domain-driven design, software architecture, monolithic architecture, services decoupling, complex software systems
 guid: 744dbbef-0e48-47e1-9b5e-09ad8ae610a8
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=1344:708
+audience:
+  - full stack developers
+  - team lead
+  - architects
+  - technology leaders
+  - backend developers
+outsystems-tools:
+  - none
+content-type:
+  - best practice
+  - conceptual
 ---
-
 # OutSystems Domain Driven Architecture
 
 In this section you can find information on all aspects of using a Domain Driven Architecture in OutSystems. The when and how to leverage and validate such solution is discussed, along with the existing methods and tools that you can use to validate your architecture.

@@ -5,8 +5,18 @@ guid: 939F9A46-EBA1-4442-BD8B-6CAAA5CDE555
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: application pool, iis, performance optimization, stability, on-premises deployment
+audience:
+  - platform administrators
+  - full stack developers
+  - infrastructure managers
+outsystems-tools:
+  - none
+content-type:
+  - best practice
+  - reference
+  - conceptual
 ---
-
 # Understanding and fine tuning application pool recycling for use with OutSystems
 
 <div class="info" markdown="1">

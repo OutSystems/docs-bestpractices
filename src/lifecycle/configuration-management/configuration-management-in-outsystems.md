@@ -5,8 +5,18 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jGLm9nVlJMS9yYNz7I7DoG/Lifecycle?node-id=944:2157
+tags: configuration management, agile development, devops, ci/cd, software engineering
+audience:
+  - full stack developers
+  - team lead
+  - architects
+  - platform administrators
+outsystems-tools:
+  - none
+content-type:
+  - best practice
+  - conceptual
 ---
-
 # ALM in OutSystems: configuration management
 
 The discipline of configuration management originated in the US Department of Defense  during the 1950s to handle changes to their hardware systems. The DoD developed policies, procedures, techniques, and tools to evaluate proposed changes, track their status after implementation, keep their system inventory up-to-date, and maintain the required support documentation.

@@ -5,8 +5,20 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=147:325
+tags: data archiving, performance optimization, database management, regulatory compliance, cloud infrastructure
+audience:
+  - backend developers
+  - full stack developers
+  - platform administrators
+  - architects
+outsystems-tools:
+  - service studio
+  - multiple database catalogs and schemas feature
+content-type:
+  - best practice
+  - conceptual
+  - process
 ---
-
 # Data Archiving
 
 ## What's data archiving

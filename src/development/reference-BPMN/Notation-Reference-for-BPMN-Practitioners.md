@@ -5,8 +5,16 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/vqcqBzIzCkJa5I0Q7Cud0a/Development?node-id=442:318
+tags: bpmn, process modeling, bpmn 1.2 notation, business process technology, bpt
+audience:
+  - business analysts
+  - full stack developers
+outsystems-tools:
+  - service studio
+content-type:
+  - best practice
+  - reference
 ---
-
 # Notation Reference for BPMN Practitioners
 
 OutSystems allows designing and executing business processes through [BPTs](https://www.outsystems.com/tk/redirect?g=ce023611-1cbc-4c61-a778-2a66167bc7ba). This technical note describes the notation used for Process Modeling targeted at practitioners currently modeling processes using BPMN.

@@ -5,6 +5,14 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: app lifecycle, best practices, web apps, version management, application architecture
+audience:
+  - frontend developers
+  - full stack developers
+  - mobile developers
+outsystems-tools:
+  - none
+content-type:
+  - best practice
 ---
-
 # Lifecycle

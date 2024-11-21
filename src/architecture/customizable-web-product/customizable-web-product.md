@@ -5,8 +5,17 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: application customization, product architecture, design patterns, upgrade strategies, user experience customization
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+content-type:
+  - best practice
 ---
-
 # How to Create Customized Versions of a Base Application
 
 When you have a product application it's common that different instances using it may require some specific customizations, adapted to their use case - it can be a different look and feel or even some tweaks in a simple user interaction.

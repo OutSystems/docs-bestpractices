@@ -5,8 +5,18 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: sql server optimization, performance tuning, database management, hardware recommendations, system maintenance
+audience:
+  - platform administrators
+  - full stack developers
+  - infrastructure managers
+  - technology leaders
+  - backend developers
+outsystems-tools:
+  - platform server
+content-type:
+  - best practice
 ---
-
 # SQL Server best practices
 
 This article presents the current best practices recommended when operating OutSystems Platform Server with a SQL Server database. 

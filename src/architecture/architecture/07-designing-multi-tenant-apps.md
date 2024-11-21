@@ -5,8 +5,17 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=1343:659
+tags: multi-tenancy, saas, data isolation, resource management, scalability
+audience:
+  - full stack developers
+  - architects
+  - platform administrators
+outsystems-tools:
+  - service studio
+content-type:
+  - best practice
+  - conceptual
 ---
-
 # Designing Scalable Multi-Tenant Applications
 
 OutSystems enables you to the design of applications with data isolation between multiple client organizations — or tenants — for on-premise deployments and for software-as-a-service (SaaS) scenarios.

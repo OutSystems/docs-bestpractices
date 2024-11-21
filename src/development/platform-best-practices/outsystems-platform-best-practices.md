@@ -5,8 +5,16 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: database optimization, ui design best practices, code reusability, javascript best practices, css best practices
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+content-type:
+  - best practice
 ---
-
 # OutSystems Platform Best Practices
 
 This article aggregates a collection of best practices and conventions that you can apply when developing your OutSystems applications. These are only recommendations and you should adapt them each environment and to each development style.

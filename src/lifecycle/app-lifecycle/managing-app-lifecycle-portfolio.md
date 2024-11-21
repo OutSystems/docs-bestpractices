@@ -5,8 +5,19 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jGLm9nVlJMS9yYNz7I7DoG/Lifecycle?node-id=147:325
+tags: application lifecycle management, deployment management, security management, role-based access control, automation
+audience:
+  - platform administrators
+  - full stack developers
+  - team lead
+  - architects
+  - technology leaders
+outsystems-tools:
+  - lifetime
+  - service center
+content-type:
+  - best practice
 ---
-
 # Managing the Application Lifecycle of Your Portfolio
 
 OutSystems provides out-of-the-box a unified console, [LifeTime](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle), to manage the applications’ lifecycle. It gives you visibility of all stages of your applications, manages the deployment of applications, IT users, and security across all environments.

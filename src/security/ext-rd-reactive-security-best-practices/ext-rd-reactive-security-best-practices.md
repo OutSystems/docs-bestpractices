@@ -5,8 +5,16 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rmma8067fGUqhlUhXheHOZ/Security?node-id=542:242
+tags: security best practices, server-side security, client-side security, sensitive data handling, web storage security
+audience:
+  - frontend developers
+  - full stack developers
+  - mobile developers
+outsystems-tools:
+  - service studio
+content-type:
+  - best practice
 ---
-
 # Reactive web security best practices
 
 <div class="info" markdown="1">

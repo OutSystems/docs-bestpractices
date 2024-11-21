@@ -1,13 +1,19 @@
 ---
-tags: database
+tags: sql optimization, performance best practices, database queries, sql queries, security
 summary: Explore best practices for avoiding expand inline parameters in OutSystems 11 (O11) to optimize SQL query performance.
 guid: 83c88799-85d5-4ac8-a882-f72bb417bb5c
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - backend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+content-type:
+  - best practice
 ---
-
 # Avoid expand inline parameters for dynamic values
 
 By using expand inline parameter, you can insert SQL content inside OutSystems SQL query. This parameter isn't a SQL parameter, in the sense that it isn't created in the database. It's calculated during runtime and textually expanded inside the SQL call. You should be mindful of the performance impact inline parameters can have when used with dynamic values.

@@ -5,8 +5,17 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: component development, code reuse, best practices, outsystems forge, developer experience
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - forge
+  - service studio
+content-type:
+  - best practice
 ---
-
 # Forge components best practices
 
 This article describes best practices for sharing OutSystems components on [Forge](https://www.outsystems.com/forge/).

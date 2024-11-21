@@ -5,8 +5,19 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/vqcqBzIzCkJa5I0Q7Cud0a/Development?node-id=1043:331
+tags: enterprise application development, visual domain specific languages, it architecture
+audience:
+  - architects
+  - platform administrators
+  - technology leaders
+  - team lead
+  - full stack developers
+outsystems-tools:
+  - service studio
+content-type:
+  - best practice
+  - conceptual
 ---
-
 # OutSystems extensibility
 
 <div class="info" markdown="1">

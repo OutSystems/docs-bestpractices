@@ -5,8 +5,20 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/8BOBojsM2YFC0g7LBLPKfU/Performance-and-monitoring?type=design&node-id=643%3A240&mode=design&t=YxitaZ5KazyCMyAI-1
+tags: application performance management, real-time monitoring, troubleshooting, integration with third-party tools, analytics dashboards
+audience:
+  - full stack developers
+  - platform administrators
+  - architects
+outsystems-tools:
+  - service studio
+  - service center
+  - architecture dashboard
+content-type:
+  - best practice
+  - conceptual
+  - process
 ---
-
 # Monitoring OutSystems applications
 
 OutSystems provides built-in monitoring and analytics tools that enable proactive management of application performance to make it easier to detect, identify, and troubleshoot issues in real time.

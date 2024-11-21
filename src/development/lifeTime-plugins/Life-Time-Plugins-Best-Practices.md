@@ -5,8 +5,18 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: plugin development, best practices, deployment, api usage, environment configuration
+audience:
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - lifetime
+  - lifetime services api
+  - lifetime deployment api
+  - lifetime sdk
+content-type:
+  - best practice
 ---
-
 # LifeTime Plugins Best Practices
 
 This article is a guide for the end-to-end lifecycle process of [LifeTime plugins](https://success.outsystems.com/Documentation/How-to_Guides/Development/How_to_create_a_LifeTime_Plugin), from the setup phase to the plugin deployment to production.

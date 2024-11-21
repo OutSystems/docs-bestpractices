@@ -1,13 +1,22 @@
 ---
 summary: Explore advanced debugging and inspection techniques for mobile and web applications using OutSystems 11 (O11) and various tools.
-tags:
+tags: debugging techniques, chrome developer tools, android development, mobile app inspection, local storage inspection
 guid: 4f078a11-41cd-4ac8-a40f-e3e1edc6dc5d
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jGLm9nVlJMS9yYNz7I7DoG/Lifecycle?node-id=443:248
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - forge
+  - stetho plugin
+content-type:
+  - best practice
+  - procedure
 ---
-
 # Extending your toolbox
 
 In this article, you can find out about potential additional Tools that can be helpful for specific situations. These Tools are a great addition to the "standard Toolkit" components reviewed in the [suggested standard toolkit](standard-toolkit.md) article.

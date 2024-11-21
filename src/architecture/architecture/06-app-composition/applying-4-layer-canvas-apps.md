@@ -5,8 +5,18 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=1343:643
+tags: application architecture, architecture canvas, layer classification, dependency rules
+audience:
+  - full stack developers
+  - team lead
+  - architects
+outsystems-tools:
+  - service studio
+  - architecture dashboard
+content-type:
+  - best practice
+  - conceptual
 ---
-
 # Applying the Architecture Canvas to applications
 
 To analyze the application architecture, the [Architecture Canvas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/01_The_4_Layer_Canvas) principles play a major role, just like with module architecture.

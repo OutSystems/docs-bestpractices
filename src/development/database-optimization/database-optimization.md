@@ -5,8 +5,17 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: database optimization, performance enhancement, scalability, automatic indexing, transactions management
+audience:
+  - backend developers
+  - full stack developers
+  - platform administrators
+  - architects
+outsystems-tools:
+  - service studio
+content-type:
+  - best practice
 ---
-
 # Database optimization
 
 ## Platform built-in optimizations

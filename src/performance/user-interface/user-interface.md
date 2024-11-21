@@ -5,8 +5,15 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: ui optimization, performance improvement, ajax optimization, viewstate management, caching strategies
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+content-type:
+  - best practice
 ---
-
 # Performance Best Practices - User Interface
 
 There are no fast applications with slow user experiences. To promote the adoption and keep the end users satisfied, the application has to respond fast. Don’t discard usability issues, but don’t compromise the performance just to have a nicer way to present the data.

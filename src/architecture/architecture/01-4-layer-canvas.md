@@ -5,6 +5,17 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=1343:247
+tags: soa design, architecture canvas, reusable services, module dependency, cost-effective architecture
+audience:
+  - full stack developers
+  - architects
+  - team lead
+outsystems-tools:
+  - service studio
+  - architecture canvas
+content-type:
+  - conceptual
+  - best practice
 ---
 # The Architecture Canvas
 

@@ -5,8 +5,15 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: sql injection prevention, security best practices, database queries, sql parameterization, sql best practices
+audience:
+  - backend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+content-type:
+  - best practice
 ---
-
 # Building Dynamic SQL Statements the Right Way
 
 The following examples of implementing common use cases of dynamic SQL statements in OutSystems can help you prevent SQL injection vulnerabilities.

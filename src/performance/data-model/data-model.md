@@ -5,8 +5,19 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: data modeling, performance optimization, database indexing, application design, query optimization
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - backend developers
+  - team lead
+  - architects
+outsystems-tools:
+  - service studio
+content-type:
+  - best practice
 ---
-
 # Performance Best Practices - Data model
 
 The best practices below focus on the data tier of the applications where it is absolutely critical for application performance. Don’t jeopardize performance during the design phase as it may be too costly when best practices are applied late in the development stage. 

@@ -5,8 +5,16 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: iis configuration, performance optimization, thread management, system administration, on-premises deployment
+audience:
+  - platform administrators
+  - infrastructure managers
+  - backend developers
+outsystems-tools:
+  - none
+content-type:
+  - best practice
 ---
-
 # Tuning IIS for OutSystems
 
 <div class="info" markdown="1">

@@ -5,8 +5,19 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/vqcqBzIzCkJa5I0Q7Cud0a/Development?node-id=342:268
+tags: component libraries, code reusability, application development best practices, outsystems forge, low-code platforms
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - forge
+content-type:
+  - best practice
+  - conceptual
+  - process
 ---
-
 # The complete guide to creating components
 
 This article guides you through the steps to create a reusable component in OutSystems. It includes recommendations, best practices, and information for common scenarios.

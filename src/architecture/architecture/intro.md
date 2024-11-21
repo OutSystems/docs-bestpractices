@@ -5,8 +5,17 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: architecture canvas, service-oriented architecture, microservices, architectural patterns, best practices
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+content-type:
+  - best practice
 ---
-
 # Designing the Architecture of Your OutSystems Applications
 
 This guide builds upon the [Architecture Canvas](https://success.outsystems.com/Documentation/Best_Practices/Architecture/Designing_the_Architecture_of_Your_OutSystems_Applications/The_Architecture_Canvas) methodology to help you through what you must consider to develop your applications with a future-proof architecture from the start.

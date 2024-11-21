@@ -5,8 +5,18 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: performance optimization, database indexing, database maintenance, query optimization, server configuration
+audience:
+  - full stack developers
+  - team lead
+  - architects
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - service center
+content-type:
+  - best practice
 ---
-
 # Performance Top 10 Rules
 
 Good applications have at least one thing in common – they are really fast. Beyond built-in OutSystems Platform optimizations, keep these best practices in mind. 

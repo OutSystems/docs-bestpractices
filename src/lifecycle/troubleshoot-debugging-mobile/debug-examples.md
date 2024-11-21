@@ -1,13 +1,21 @@
 ---
 summary: Explore mobile app troubleshooting and debugging in OutSystems 11 (O11) with common scenarios, causes, and effective tools and techniques.
-tags:
+tags: mobile app debugging, upgrade issues, troubleshooting techniques, log analysis, local storage
 guid: 56836d39-dbcb-4b9d-ace8-4f89884a2771
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jGLm9nVlJMS9yYNz7I7DoG/Lifecycle?node-id=443:261
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+content-type:
+  - best practice
+  - troubleshooting
 ---
-
 # Mobile app troubleshooting and debugging scenarios examples
 
 In this article, you can find information on a few possible Mobile Application scenarios requiring troubleshooting and debugging. You can find a summary of the most common causes and the suggested Tools and techniques to apply for each one of the scenarios. 

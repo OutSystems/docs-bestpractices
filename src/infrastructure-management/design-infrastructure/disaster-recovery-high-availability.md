@@ -5,8 +5,19 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/s4ggSCmhDxaNG5P4tzUjbh/Infrastructure%20Management?node-id=102:226
+tags: disaster recovery, high availability, infrastructure redundancy, system uptime, cloud deployments
+audience:
+  - platform administrators
+  - infrastructure managers
+  - technology leaders
+  - full stack developers
+  - architects
+outsystems-tools:
+  - none
+content-type:
+  - best practice
+  - conceptual
 ---
-
 # Disaster Recovery and High Availability for OutSystems Platform servers
 
 <div class="info" markdown="1">

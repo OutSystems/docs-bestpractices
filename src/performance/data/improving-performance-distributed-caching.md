@@ -5,8 +5,18 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/8BOBojsM2YFC0g7LBLPKfU/Performance%20and%20monitoring?node-id=543:15
+tags: distributed caching, performance optimization, scalability, application responsiveness, front-end server
+audience:
+  - full stack developers
+  - frontend developers
+  - mobile developers
+  - platform administrators
+outsystems-tools:
+  - none
+content-type:
+  - best practice
+  - conceptual
 ---
-
 # Improving performance with distributed caching
 
 ## What is Distributed Caching

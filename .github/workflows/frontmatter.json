@@ -49,12 +49,67 @@
             "pattern": "^https://www\\.figma\\.com"
           }
         ]
-      }
+      },
+      "content-type": {
+      "type": ["array"],
+      "items": {
+        "type": "string",
+        "enum": [
+          "conceptual",
+          "procedure",
+          "process",
+          "error or warning",
+          "troubleshooting",
+          "reference",
+          "tutorial",
+          "best practice",
+          "vulnerability",
+          "release notes",
+          "none"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "audience": {
+        "type": ["array", "null"],
+        "items": {
+          "type": "string",
+          "enum": [
+            "mobile developers",
+            "frontend developers",
+            "backend developers",
+            "full stack developers",
+            "team lead",
+            "team manager",
+            "test engineers",
+            "architects",
+            "platform administrators",
+            "technology leaders",
+            "infrastructure managers",
+            "ui designers",
+            "business analysts",
+            "data engineers",
+            "project managers",
+            "product owners",
+            "none"
+          ]
+        },
+        "uniqueItems": true
+      },
+      "outsystems-tools": {
+      "type": ["array", "null"],
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+
     },
     "required": [
       "summary",
       "locale",
       "app_type",
+      "content-type",
       "guid",
       "platform-version",
       "figma"

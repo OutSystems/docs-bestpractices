@@ -5,8 +5,17 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: performance optimization, system monitoring, efficient logic, code best practices, application troubleshooting
+audience:
+  - full stack developers
+  - frontend developers
+  - backend developers
+outsystems-tools:
+  - service studio
+  - service center
+content-type:
+  - best practice
 ---
-
 # Performance Best Practices - Logic
 
 Optimizing application performance requires developers to adhere to high coding standards. The following best practices apply universally to any type of application.
