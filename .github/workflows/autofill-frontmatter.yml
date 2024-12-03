@@ -3,8 +3,7 @@ name: Autofill front matter if absent
 on:
     workflow_dispatch:
     workflow_call:
-  
-      
+     
 permissions:
   contents: write
   pull-requests: write
