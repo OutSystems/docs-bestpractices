@@ -1,10 +1,9 @@
 name: Autofill front matter if absent
 
 on:
-  pull_request:
-    types: [opened, synchronize]
-    paths:
-      - 'src/**/*.md'
+    workflow_dispatch:
+    workflow_call:
+  
       
 permissions:
   contents: write
