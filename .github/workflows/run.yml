@@ -95,7 +95,7 @@ jobs:
     with:
       GITHUB_REPOSITORY: ${{ github.repository }}
       PR_NUMBER: ${{ github.event.pull_request.number || github.event.issue.number }}
-      TK_CICD_BRANCH: 'main'
+      TK_CICD_BRANCH: 'autofill-frontmatter'
 
   tools:
     name: Tools
