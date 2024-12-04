@@ -84,13 +84,14 @@ jobs:
   frontmatter:
     name: Frontmatter
     needs: [auto-fill]
+    if: ${{ always()}}
     uses: ./.github/workflows/validate-frontmatter.yml
     secrets: inherit
 
   validations:
     name: Misc validations
-    needs: [auto-fill, frontmatter]
-    #if: needs.frontmatter.result == 'success'
+    needs: [frontmatter]
+    if: needs.frontmatter.result == 'success'
     uses: ./.github/workflows/validations.yml
     secrets: inherit
     with:
