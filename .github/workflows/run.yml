@@ -83,8 +83,6 @@ jobs:
    
   frontmatter:
     name: Frontmatter
-    needs: [auto-fill]
-    if: ${{ always()}}
     uses: ./.github/workflows/validate-frontmatter.yml
     secrets: inherit
 
