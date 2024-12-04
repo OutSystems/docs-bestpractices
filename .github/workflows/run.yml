@@ -69,6 +69,7 @@ jobs:
       files: ${{ needs.pr-info.outputs.changed-files }}
 
   auto-fill:
+    if: github.event_name == 'pull_request'
     uses: OutSystems/tk-cicd/.github/workflows/autofill-frontmatter.yml@autofill-frontmatter
     with:
       GITHUB_REPOSITORY: ${{ github.repository }}
