@@ -8,16 +8,15 @@ figma: https://www.figma.com/file/jGLm9nVlJMS9yYNz7I7DoG/Lifecycle?node-id=944:8
 tags: ci/cd, application lifecycle management, agile, devops, automation
 audience:
   - full stack developers
-  - team lead
-  - team manager
   - architects
   - platform administrators
 outsystems-tools:
   - none
-content-type:
-  - best practice
-  - conceptual
+coverage-type:
+  - evaluate
+  - understand
 ---
+
 # Application Lifecycle Management in OutSystems CI/CD
 
 As with Agile methodology and DevOps culture, the concept of continuous integration/continuous delivery (CI/CD) gradually developed to answer specific business needs and meet demands for innovation, new features, and a frictionless user experience. At the same time, it allows developers to move quickly—with the confidence not to break anything.

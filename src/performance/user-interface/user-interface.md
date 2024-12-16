@@ -11,9 +11,10 @@ audience:
   - full stack developers
 outsystems-tools:
   - service studio
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # Performance Best Practices - User Interface
 
 There are no fast applications with slow user experiences. To promote the adoption and keep the end users satisfied, the application has to respond fast. Don’t discard usability issues, but don’t compromise the performance just to have a nicer way to present the data.

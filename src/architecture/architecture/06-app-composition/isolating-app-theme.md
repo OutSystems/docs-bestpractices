@@ -13,10 +13,11 @@ audience:
   - architects
 outsystems-tools:
   - service studio
-content-type:
-  - best practice
-  - conceptual
+coverage-type:
+  - evaluate
+  - understand
 ---
+
 # Isolating an application Theme
 
 In an enterprise installation, applications usually share the same corporate look & feel. Being a shared component, it is key to correctly position a global Theme module in the enterprise architecture.

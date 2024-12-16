@@ -12,7 +12,8 @@ audience:
   - infrastructure managers
 outsystems-tools:
   - none
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # Infrastructure management

@@ -9,15 +9,15 @@ tags: application lifecycle management, deployment management, security manageme
 audience:
   - platform administrators
   - full stack developers
-  - team lead
   - architects
-  - technology leaders
+  - tech leads
 outsystems-tools:
   - lifetime
   - service center
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # Managing the Application Lifecycle of Your Portfolio
 
 OutSystems provides out-of-the-box a unified console, [LifeTime](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle), to manage the applications’ lifecycle. It gives you visibility of all stages of your applications, manages the deployment of applications, IT users, and security across all environments.

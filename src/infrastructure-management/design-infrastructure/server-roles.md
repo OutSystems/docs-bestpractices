@@ -13,10 +13,11 @@ audience:
   - architects
 outsystems-tools:
   - platform server
-content-type:
-  - best practice
-  - conceptual
+coverage-type:
+  - evaluate
+  - understand
 ---
+
 # OutSystems Platform Server Roles
 
 <div class="info" markdown="1">

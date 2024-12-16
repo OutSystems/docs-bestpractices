@@ -13,10 +13,11 @@ audience:
 outsystems-tools:
   - service studio
   - ai mentor studio
-content-type:
-  - best practice
-  - process
+coverage-type:
+  - evaluate
+  - apply
 ---
+
 # Suggested standard toolkit
 
 When it comes to troubleshooting and debugging, the OutSystems platform and a modern web browser like Chrome or Safari already give you a significant amount of capabilities. This is a "standard Toolkit." 

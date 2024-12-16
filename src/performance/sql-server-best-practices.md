@@ -10,13 +10,14 @@ audience:
   - platform administrators
   - full stack developers
   - infrastructure managers
-  - technology leaders
+  - tech leads
   - backend developers
 outsystems-tools:
   - platform server
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # SQL Server best practices
 
 This article presents the current best practices recommended when operating OutSystems Platform Server with a SQL Server database. 

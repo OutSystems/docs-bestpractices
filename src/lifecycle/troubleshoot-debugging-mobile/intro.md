@@ -13,10 +13,11 @@ audience:
 outsystems-tools:
   - service studio
   - service center
-content-type:
-  - best practice
-  - process
+coverage-type:
+  - evaluate
+  - apply
 ---
+
 # Debugging and troubleshooting mobile and reactive web apps
 
 OutSystems provides rich capabilities to develop Mobile Applications and Reactive Web applications. These two application types each have a few unique characteristics, but they also share a common modern technology stack and development model. 

@@ -12,11 +12,12 @@ audience:
   - architects
 outsystems-tools:
   - service studio
-content-type:
-  - best practice
-  - process
-  - conceptual
+coverage-type:
+  - evaluate
+  - apply
+  - understand
 ---
+
 # From architecture to development
 
 This set of articles provide guidance on how to translate an architecture blueprint into a real [OutSystems](http://www.outsystems.com/) application.

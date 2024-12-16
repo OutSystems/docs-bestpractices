@@ -8,14 +8,14 @@ figma: https://www.figma.com/file/jGLm9nVlJMS9yYNz7I7DoG/Lifecycle?type=design&n
 tags: technical debt, best practices, automation, software architecture, market adaptation
 audience:
   - full stack developers
-  - team lead
   - architects
 outsystems-tools:
   - none
-content-type:
-  - best practice
-  - conceptual
+coverage-type:
+  - evaluate
+  - understand
 ---
+
 # Handling technical debt with OutSystems
 
 Since Ward Cunningham coined the phrase "technical debt" in 1992, it has sometimes been taken as an excuse for releasing quick-and-dirty code in the interests of development speed. Instead, it's better understood as an explanation for why it's sometimes OK to get a workable solution out the door — with a commitment to find an optimal one as soon as possible, and, in this way, repay a technical debt.

@@ -13,9 +13,10 @@ audience:
   - architects
 outsystems-tools:
   - service studio
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # How to Create Customized Versions of a Base Application
 
 When you have a product application it's common that different instances using it may require some specific customizations, adapted to their use case - it can be a different look and feel or even some tweaks in a simple user interaction.

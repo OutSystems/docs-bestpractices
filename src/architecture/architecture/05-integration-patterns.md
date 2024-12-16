@@ -12,10 +12,11 @@ audience:
   - architects
 outsystems-tools:
   - service studio
-content-type:
-  - conceptual
-  - best practice
+coverage-type:
+  - understand
+  - evaluate
 ---
+
 # Integration Patterns for Core Services Abstraction
 
 ## Why do you need integration patterns?

@@ -9,15 +9,16 @@ tags: disaster recovery, high availability, infrastructure redundancy, system up
 audience:
   - platform administrators
   - infrastructure managers
-  - technology leaders
+  - tech leads
   - full stack developers
   - architects
 outsystems-tools:
   - none
-content-type:
-  - best practice
-  - conceptual
+coverage-type:
+  - evaluate
+  - understand
 ---
+
 # Disaster Recovery and High Availability for OutSystems Platform servers
 
 <div class="info" markdown="1">

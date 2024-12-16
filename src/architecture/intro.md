@@ -12,8 +12,9 @@ audience:
   - full stack developers
 outsystems-tools:
   - none
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # Architecture
 

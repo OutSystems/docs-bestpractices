@@ -11,13 +11,13 @@ audience:
   - frontend developers
   - full stack developers
   - backend developers
-  - team lead
   - architects
 outsystems-tools:
   - service studio
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # Performance Best Practices - Data model
 
 The best practices below focus on the data tier of the applications where it is absolutely critical for application performance. Don’t jeopardize performance during the design phase as it may be too costly when best practices are applied late in the development stage. 

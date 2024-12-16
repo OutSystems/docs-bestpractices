@@ -8,15 +8,14 @@ figma: https://www.figma.com/file/jGLm9nVlJMS9yYNz7I7DoG/Lifecycle?node-id=943:4
 tags: devops, alm integration, software development, legacy modernization, continuous integration/continuous deployment
 audience:
   - full stack developers
-  - team lead
-  - team manager
   - architects
 outsystems-tools:
   - none
-content-type:
-  - best practice
-  - conceptual
+coverage-type:
+  - evaluate
+  - understand
 ---
+
 # DevOps and ALM in OutSystems
 
 An article about DevOps typically begins with a short discussion about the history of the term, the philosophy behind its practice, the benefits of its use, and the elements of its culture. It also invariably features some version of the DevOps infinity loop, like the one pictured below.

@@ -12,9 +12,10 @@ audience:
   - full stack developers
 outsystems-tools:
   - service studio
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # Development best practices
 
 ## Use blocks for screen content

@@ -13,9 +13,10 @@ audience:
 outsystems-tools:
   - service studio
   - service center
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # Performance Best Practices - Logic
 
 Optimizing application performance requires developers to adhere to high coding standards. The following best practices apply universally to any type of application.

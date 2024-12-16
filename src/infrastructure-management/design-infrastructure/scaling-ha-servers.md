@@ -15,9 +15,10 @@ outsystems-tools:
   - platform server
   - service center
   - lifetime
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # Scaling and high availability for OutSystems Platform servers
 
 <div class="info" markdown="1">

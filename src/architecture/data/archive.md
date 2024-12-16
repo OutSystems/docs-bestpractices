@@ -13,12 +13,12 @@ audience:
   - architects
 outsystems-tools:
   - service studio
-  - multiple database catalogs and schemas feature
-content-type:
-  - best practice
-  - conceptual
-  - process
+coverage-type:
+  - evaluate
+  - understand
+  - apply
 ---
+
 # Data Archiving
 
 ## What's data archiving

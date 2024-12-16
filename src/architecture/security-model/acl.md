@@ -12,10 +12,11 @@ audience:
   - architects
 outsystems-tools:
   - service studio
-content-type:
-  - best practice
-  - conceptual
+coverage-type:
+  - evaluate
+  - understand
 ---
+
 # Use Access Control List to set up permission-based access to data
 
 ## What is Access Control List?

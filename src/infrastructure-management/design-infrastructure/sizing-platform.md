@@ -10,13 +10,14 @@ audience:
   - platform administrators
   - infrastructure managers
   - full stack developers
-  - technology leaders
+  - tech leads
 outsystems-tools:
   - none
-content-type:
-  - best practice
-  - reference
+coverage-type:
+  - evaluate
+  - remember
 ---
+
 # Sizing OutSystems Platform
 
 <div class="info" markdown="1">

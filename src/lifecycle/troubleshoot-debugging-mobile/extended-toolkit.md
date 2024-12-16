@@ -13,10 +13,11 @@ audience:
 outsystems-tools:
   - forge
   - stetho plugin
-content-type:
-  - best practice
-  - procedure
+coverage-type:
+  - evaluate
+  - apply
 ---
+
 # Extending your toolbox
 
 In this article, you can find out about potential additional Tools that can be helpful for specific situations. These Tools are a great addition to the "standard Toolkit" components reviewed in the [suggested standard toolkit](standard-toolkit.md) article.

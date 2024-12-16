@@ -12,10 +12,10 @@ audience:
   - full stack developers
 outsystems-tools:
   - service studio
-  - entity bulk operations
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # Handling Optimized Complex Synchronization on Mobile Devices
 
 This article describes Best Practices to deal with more demanding synchronization scenarios and explains how to optimize resources.

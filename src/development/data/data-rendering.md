@@ -11,10 +11,11 @@ audience:
   - frontend developers
 outsystems-tools:
   - service studio
-content-type:
-  - best practice
-  - conceptual
+coverage-type:
+  - evaluate
+  - understand
 ---
+
 # Mobile Data Rendering
 
 ## Pre-requisites

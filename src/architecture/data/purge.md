@@ -9,16 +9,16 @@ tags: database performance, data management, best practices, database maintenanc
 audience:
   - full stack developers
   - backend developers
-  - team lead
   - platform administrators
   - architects
 outsystems-tools:
   - service studio
-content-type:
-  - best practice
-  - conceptual
-  - procedure
+coverage-type:
+  - evaluate
+  - understand
+  - apply
 ---
+
 # Data Purging
 
 ## What is Data Purging

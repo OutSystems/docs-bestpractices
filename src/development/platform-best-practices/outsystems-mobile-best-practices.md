@@ -12,9 +12,10 @@ audience:
   - full stack developers
 outsystems-tools:
   - service studio
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # OutSystems Mobile Best Practices
 
 Mobile apps bring a completely [new mindset for the development model](https://www.outsystems.com/blog/from-web-to-mobile-development-5-things-to-consider.html). On the one hand, users have very high expectations regarding their experience with mobile apps. On the other hand, device limitations together with network restrictions can have a major impact on that experience. No matter the circumstances or limitations, users expect mobile apps to work like a charm!

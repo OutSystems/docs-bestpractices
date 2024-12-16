@@ -12,7 +12,8 @@ audience:
   - mobile developers
 outsystems-tools:
   - none
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # Lifecycle

@@ -12,10 +12,11 @@ audience:
   - platform administrators
 outsystems-tools:
   - service studio
-content-type:
-  - best practice
-  - conceptual
+coverage-type:
+  - evaluate
+  - understand
 ---
+
 # Designing Scalable Multi-Tenant Applications
 
 OutSystems enables you to the design of applications with data isolation between multiple client organizations — or tenants — for on-premise deployments and for software-as-a-service (SaaS) scenarios.

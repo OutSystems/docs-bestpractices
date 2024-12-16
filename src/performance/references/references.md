@@ -13,9 +13,10 @@ audience:
   - architects
 outsystems-tools:
   - service studio
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # Performance Best Practices - References
 
 It’s all about software architecture. Usually, opting for the quickest solution produces severe performance problems. Refactoring later on may be a painful and expensive proposition.

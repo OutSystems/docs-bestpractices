@@ -9,14 +9,13 @@ figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=14
 audience:
   - mobile developers
   - frontend developers
-  - team lead
   - architects
 outsystems-tools:
   - service studio
-  - mobile plugins
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # Best practices with multiple teams
 
 Now that you know about the best practices on mobile, let's see an end-to-end example of an app that has these best practices:

@@ -10,10 +10,11 @@ audience:
   - mobile developers
 outsystems-tools:
   - service studio
-content-type:
-  - best practice
-  - process
+coverage-type:
+  - evaluate
+  - apply
 ---
+
 # Mobile Data Load
 
 ## Pre-requisites

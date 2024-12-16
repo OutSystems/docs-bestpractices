@@ -12,10 +12,11 @@ audience:
   - architects
 outsystems-tools:
   - discovery
-content-type:
-  - best practice
-  - conceptual
+coverage-type:
+  - evaluate
+  - understand
 ---
+
 # Validating your application architecture
 
 There are 3 rules you **must always** comply with in order to achieve a well-designed application architecture.

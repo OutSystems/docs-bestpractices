@@ -12,9 +12,10 @@ audience:
   - ui designers
 outsystems-tools:
   - service studio
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # Front-End Architecture Best Practices
 
 ## Rules to Build Your Scalable Front-End Architecture

@@ -13,12 +13,12 @@ audience:
 outsystems-tools:
   - service studio
   - service center
-  - architecture dashboard
-content-type:
-  - best practice
-  - conceptual
-  - process
+coverage-type:
+  - evaluate
+  - understand
+  - apply
 ---
+
 # Monitoring OutSystems applications
 
 OutSystems provides built-in monitoring and analytics tools that enable proactive management of application performance to make it easier to detect, identify, and troubleshoot issues in real time.

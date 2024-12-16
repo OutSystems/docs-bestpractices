@@ -12,10 +12,11 @@ audience:
   - architects
 outsystems-tools:
   - forge
-content-type:
-  - best practice
-  - process
+coverage-type:
+  - evaluate
+  - apply
 ---
+
 # Integrating OutSystems with your ecosystem
 
 <div class="info" markdown="1">

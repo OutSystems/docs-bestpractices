@@ -12,9 +12,10 @@ audience:
   - full stack developers
 outsystems-tools:
   - none
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # Securing data at rest with encryption
 
 OutSystems is responsible for the secure management of all the stack components, including database servers, front-end servers, load balancers, and all the related logs produced by the infrastructure assets. For all of these, OutSystems manages the keys to encrypt the assets for you seamlessly and is therefore responsible for the security of data stored. OutSystems acts as a data processor in the OutSystems Cloud environments.

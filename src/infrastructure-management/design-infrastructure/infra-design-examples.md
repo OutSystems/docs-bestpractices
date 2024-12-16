@@ -11,13 +11,14 @@ audience:
   - infrastructure managers
   - architects
   - full stack developers
-  - technology leaders
+  - tech leads
 outsystems-tools:
   - service studio
   - platform server
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # Infrastructure design examples
 
 <div class="info" markdown="1">

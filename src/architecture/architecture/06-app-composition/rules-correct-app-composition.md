@@ -9,13 +9,13 @@ tags: application composition, application architecture, software deployment, so
 audience:
   - architects
   - full stack developers
-  - team lead
 outsystems-tools:
   - service studio
-content-type:
-  - best practice
-  - conceptual
+coverage-type:
+  - evaluate
+  - understand
 ---
+
 # The 4 Rules for Correct Application Composition
 
 The need to split applications, after the reuse needs are known, is something you always need to address. However, splitting one application into smaller ones, upfront, is not always obvious.

@@ -11,12 +11,13 @@ audience:
   - full stack developers
   - backend developers
   - infrastructure managers
-  - technology leaders
+  - tech leads
 outsystems-tools:
   - platform server
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # Performance Best Practices - Infrastructure
 
 Having applications designed to perform fast, running slower than a crawl due to bad configuration or crappy/undersized hardware, is absolutely frustrating for any software developer.

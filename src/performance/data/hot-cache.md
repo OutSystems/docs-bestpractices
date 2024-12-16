@@ -12,10 +12,11 @@ audience:
   - architects
 outsystems-tools:
   - service studio
-content-type:
-  - best practice
-  - procedure
+coverage-type:
+  - evaluate
+  - apply
 ---
+
 # Optimize Data For Your Use Cases Using Hot Cache
 
 ## Introduction

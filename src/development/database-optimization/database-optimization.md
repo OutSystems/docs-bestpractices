@@ -13,9 +13,10 @@ audience:
   - architects
 outsystems-tools:
   - service studio
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # Database optimization
 
 ## Platform built-in optimizations

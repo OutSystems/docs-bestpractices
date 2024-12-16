@@ -12,11 +12,12 @@ audience:
   - infrastructure managers
 outsystems-tools:
   - none
-content-type:
-  - best practice
-  - reference
-  - conceptual
+coverage-type:
+  - evaluate
+  - remember
+  - understand
 ---
+
 # Understanding and fine tuning application pool recycling for use with OutSystems
 
 <div class="info" markdown="1">

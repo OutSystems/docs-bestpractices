@@ -8,16 +8,15 @@ platform-version: o11
 figma: https://www.figma.com/file/jGLm9nVlJMS9yYNz7I7DoG/Lifecycle?type=design&node-id=443%3A239&mode=design&t=SyFgYReavcdsILfu-1
 audience:
   - full stack developers
-  - team lead
-  - team manager
   - platform administrators
 outsystems-tools:
   - service studio
   - service center
   - lifetime
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # Best practices for a tidy and clean environment
 
 As your factory of applications grows, it consumes more resources (for example: disk space, database, etc.). It’s important that you keep your environments tidy and clean so it doesn’t slow down your devops performance. Although you can always improve the processing power and infrastructure capacity, this usually brings additional costs.

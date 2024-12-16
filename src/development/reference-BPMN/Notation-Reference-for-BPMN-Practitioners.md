@@ -11,10 +11,11 @@ audience:
   - full stack developers
 outsystems-tools:
   - service studio
-content-type:
-  - best practice
-  - reference
+coverage-type:
+  - evaluate
+  - remember
 ---
+
 # Notation Reference for BPMN Practitioners
 
 OutSystems allows designing and executing business processes through [BPTs](https://www.outsystems.com/tk/redirect?g=ce023611-1cbc-4c61-a778-2a66167bc7ba). This technical note describes the notation used for Process Modeling targeted at practitioners currently modeling processes using BPMN.

@@ -13,11 +13,12 @@ audience:
 outsystems-tools:
   - service studio
   - forge
-content-type:
-  - best practice
-  - conceptual
-  - process
+coverage-type:
+  - evaluate
+  - understand
+  - apply
 ---
+
 # The complete guide to creating components
 
 This article guides you through the steps to create a reusable component in OutSystems. It includes recommendations, best practices, and information for common scenarios.

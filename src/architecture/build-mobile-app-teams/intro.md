@@ -10,14 +10,13 @@ audience:
   - mobile developers
   - frontend developers
   - full stack developers
-  - team lead
   - architects
 outsystems-tools:
   - service studio
-  - mobile plugins
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # Building mobile apps with multiple independent teams
 
 This series of articles helps you on providing guidelines and best practices on how you can leverage the power of having multiple independent development teams working on the same mobile apps, avoiding common mistakes and maximizing their productivity.

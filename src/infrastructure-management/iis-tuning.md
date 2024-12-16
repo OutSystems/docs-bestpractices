@@ -12,9 +12,10 @@ audience:
   - backend developers
 outsystems-tools:
   - none
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # Tuning IIS for OutSystems
 
 <div class="info" markdown="1">

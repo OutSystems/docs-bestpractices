@@ -11,9 +11,10 @@ audience:
   - full stack developers
 outsystems-tools:
   - service studio
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # Avoid expand inline parameters for dynamic values
 
 By using expand inline parameter, you can insert SQL content inside OutSystems SQL query. This parameter isn't a SQL parameter, in the sense that it isn't created in the database. It's calculated during runtime and textually expanded inside the SQL call. You should be mindful of the performance impact inline parameters can have when used with dynamic values.

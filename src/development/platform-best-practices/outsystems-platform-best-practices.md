@@ -12,9 +12,10 @@ audience:
   - full stack developers
 outsystems-tools:
   - service studio
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # OutSystems Platform Best Practices
 
 This article aggregates a collection of best practices and conventions that you can apply when developing your OutSystems applications. These are only recommendations and you should adapt them each environment and to each development style.

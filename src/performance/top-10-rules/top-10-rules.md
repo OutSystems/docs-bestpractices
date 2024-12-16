@@ -8,15 +8,15 @@ figma:
 tags: performance optimization, database indexing, database maintenance, query optimization, server configuration
 audience:
   - full stack developers
-  - team lead
   - architects
   - platform administrators
 outsystems-tools:
   - service studio
   - service center
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # Performance Top 10 Rules
 
 Good applications have at least one thing in common – they are really fast. Beyond built-in OutSystems Platform optimizations, keep these best practices in mind. 

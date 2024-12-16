@@ -9,13 +9,13 @@ figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=13
 audience:
   - full stack developers
   - architects
-  - team lead
 outsystems-tools:
   - none
-content-type:
-  - best practice
-  - conceptual
+coverage-type:
+  - evaluate
+  - understand
 ---
+
 # Understanding microservices
 
 Microservices (also known as the microservices architecture), according to James Lewis and Martin Fowler:

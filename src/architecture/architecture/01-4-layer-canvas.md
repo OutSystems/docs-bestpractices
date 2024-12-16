@@ -9,14 +9,14 @@ tags: soa design, architecture canvas, reusable services, module dependency, cos
 audience:
   - full stack developers
   - architects
-  - team lead
 outsystems-tools:
   - service studio
   - architecture canvas
-content-type:
-  - conceptual
-  - best practice
+coverage-type:
+  - understand
+  - evaluate
 ---
+
 # The Architecture Canvas
 
 The Architecture Canvas is an OutSystems architecture tool to make the design of Service-Oriented Architectures (SOA) simple. It promotes the correct abstraction of reusable (micro)services and the correct isolation of distinct functional modules, in cases where you are developing and maintaining multiple applications that reuse common modules. A typical medium to large OutSystems installation will support 20+ mission critical applications and 200+ interdependent modules.

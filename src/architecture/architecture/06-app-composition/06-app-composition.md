@@ -9,14 +9,14 @@ figma:
 audience:
   - architects
   - full stack developers
-  - team lead
 outsystems-tools:
   - service studio
   - lifetime
-content-type:
-  - conceptual
-  - best practice
+coverage-type:
+  - understand
+  - evaluate
 ---
+
 # Application composition
 
 An OutSystems application is an assembly of Modules and Extensions defined in Service Studio. An application constitutes the minimum deployment unit among environments in [LifeTime](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle).

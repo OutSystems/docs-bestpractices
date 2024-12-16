@@ -9,16 +9,15 @@ tags: software architecture, module management, application design, enterprise a
 audience:
   - full stack developers
   - architects
-  - team lead
-  - team manager
   - business analysts
 outsystems-tools:
   - service studio
   - architecture dashboard
-content-type:
-  - conceptual
-  - best practice
+coverage-type:
+  - understand
+  - evaluate
 ---
+
 # Translating business concepts into application modules
 
 Once you identify your concepts, you must translate them into application modules. To do so correctly, it is key you find the correct balance between:

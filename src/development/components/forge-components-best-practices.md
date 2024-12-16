@@ -13,9 +13,10 @@ audience:
 outsystems-tools:
   - forge
   - service studio
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # Forge components best practices
 
 This article describes best practices for sharing OutSystems components on [Forge](https://www.outsystems.com/forge/).

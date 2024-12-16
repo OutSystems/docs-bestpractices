@@ -12,10 +12,11 @@ audience:
   - full stack developers
 outsystems-tools:
   - none
-content-type:
-  - best practice
-  - conceptual
+coverage-type:
+  - evaluate
+  - understand
 ---
+
 # Security
 
 ## A brief introduction to software security

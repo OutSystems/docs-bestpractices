@@ -9,13 +9,13 @@ figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?type=desig
 audience:
   - architects
   - full stack developers
-  - team lead
 outsystems-tools:
   - service studio
-content-type:
-  - best practice
-  - conceptual
+coverage-type:
+  - evaluate
+  - understand
 ---
+
 # Domain Driven Design with OutSystems
 
 With OutSystems 11, several features were introduced allowing users to create a domain architecture based in Domain Driven Design.

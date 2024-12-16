@@ -10,10 +10,11 @@ audience:
   - mobile developers
 outsystems-tools:
   - service studio
-content-type:
-  - best practice
-  - conceptual
+coverage-type:
+  - evaluate
+  - understand
 ---
+
 # Mobile Data Layer
 
 ## Pre-requisites

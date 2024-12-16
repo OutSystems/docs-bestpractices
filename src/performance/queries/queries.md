@@ -9,13 +9,13 @@ tags: database optimization, performance tuning, best practices, application eff
 audience:
   - backend developers
   - full stack developers
-  - team lead
   - architects
 outsystems-tools:
   - service studio
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # Performance Best Practices - Queries
 
 In multi-tier applications, the bottleneck is often situated at the database level, namely in the queries. The importance of these practices is more notable when dealing with external/linked servers. Specific knowledge about the database engine will help in optimizing your queries. However, if you follow the next set of practices, you’ll considerably diminish your application’s performance drawbacks.

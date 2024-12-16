@@ -10,13 +10,14 @@ audience:
   - platform administrators
   - full stack developers
   - infrastructure managers
-  - technology leaders
+  - tech leads
 outsystems-tools:
   - platform server
-content-type:
-  - best practice
-  - conceptual
+coverage-type:
+  - evaluate
+  - understand
 ---
+
 # Guide to disk space usage and control on OutSystems Platform servers
 
 <div class="info" markdown="1">

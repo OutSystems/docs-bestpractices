@@ -11,10 +11,11 @@ audience:
   - ui designers
 outsystems-tools:
   - none
-content-type:
-  - best practice
-  - conceptual
+coverage-type:
+  - evaluate
+  - understand
 ---
+
 # Front-end journey - from mockups to code
 
 The development of an application starts before the implementation of its core logic and functionalities. An initial journey of business analysis, test prototypes and design of reusable patterns is important to guarantee good alignment and to give the development team a good quick start to speed up the development.

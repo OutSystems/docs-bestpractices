@@ -13,10 +13,11 @@ audience:
   - platform administrators
 outsystems-tools:
   - none
-content-type:
-  - best practice
-  - conceptual
+coverage-type:
+  - evaluate
+  - understand
 ---
+
 # Improving performance with distributed caching
 
 ## What is Distributed Caching

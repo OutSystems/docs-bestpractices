@@ -13,9 +13,10 @@ audience:
   - architects
 outsystems-tools:
   - service studio
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # Designing the Architecture of Your OutSystems Applications
 
 This guide builds upon the [Architecture Canvas](https://success.outsystems.com/Documentation/Best_Practices/Architecture/Designing_the_Architecture_of_Your_OutSystems_Applications/The_Architecture_Canvas) methodology to help you through what you must consider to develop your applications with a future-proof architecture from the start.

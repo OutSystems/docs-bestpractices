@@ -12,9 +12,10 @@ audience:
   - full stack developers
 outsystems-tools:
   - service studio
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # Development
 
 OutSystems lets you build great and secure web and mobile apps. In this section, you can find the best practices to help you build your apps in the most effective and efficient way. Navigate through the contents on the left to learn about the development best practices on different topics.

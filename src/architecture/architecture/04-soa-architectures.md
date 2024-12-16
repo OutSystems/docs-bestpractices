@@ -10,13 +10,14 @@ audience:
   - backend developers
   - full stack developers
   - architects
-  - technology leaders
+  - tech leads
 outsystems-tools:
   - service studio
-content-type:
-  - conceptual
-  - best practice
+coverage-type:
+  - understand
+  - evaluate
 ---
+
 # Service-oriented architectures for OutSystems applications
 
 When abstracting your concepts into OutSystems Services, you **must** make sure that the core of your Services is:

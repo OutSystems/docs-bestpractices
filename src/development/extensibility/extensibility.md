@@ -9,15 +9,15 @@ tags: enterprise application development, visual domain specific languages, it a
 audience:
   - architects
   - platform administrators
-  - technology leaders
-  - team lead
+  - tech leads
   - full stack developers
 outsystems-tools:
   - service studio
-content-type:
-  - best practice
-  - conceptual
+coverage-type:
+  - evaluate
+  - understand
 ---
+
 # OutSystems extensibility
 
 <div class="info" markdown="1">

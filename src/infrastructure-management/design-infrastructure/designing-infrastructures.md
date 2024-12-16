@@ -13,9 +13,10 @@ audience:
   - architects
 outsystems-tools:
   - none
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # Designing OutSystems Infrastructures
 
 <div class="info" markdown="1">

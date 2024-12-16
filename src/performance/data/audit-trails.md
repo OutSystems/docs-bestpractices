@@ -15,10 +15,11 @@ audience:
 outsystems-tools:
   - service studio
   - service center
-content-type:
-  - best practice
-  - conceptual
+coverage-type:
+  - evaluate
+  - understand
 ---
+
 # Audit Trail
 
 ## What is an Audit Trail?

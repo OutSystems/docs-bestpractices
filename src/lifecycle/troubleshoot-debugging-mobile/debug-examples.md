@@ -12,10 +12,11 @@ audience:
   - full stack developers
 outsystems-tools:
   - service studio
-content-type:
-  - best practice
-  - troubleshooting
+coverage-type:
+  - evaluate
+  - unblock
 ---
+
 # Mobile app troubleshooting and debugging scenarios examples
 
 In this article, you can find information on a few possible Mobile Application scenarios requiring troubleshooting and debugging. You can find a summary of the most common causes and the suggested Tools and techniques to apply for each one of the scenarios. 

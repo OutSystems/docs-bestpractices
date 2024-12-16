@@ -13,11 +13,12 @@ audience:
 outsystems-tools:
   - service studio
   - forge
-content-type:
-  - best practice
-  - conceptual
-  - process
+coverage-type:
+  - evaluate
+  - understand
+  - apply
 ---
+
 # Developing from the architecture blueprint
 
 This article focus on putting into action the final architecture blueprint. 

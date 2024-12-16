@@ -12,9 +12,10 @@ audience:
   - full stack developers
 outsystems-tools:
   - service studio
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # Mobile architecture best practices
 
 The first step for your success is to understand the Architectural changes of a mobile application.

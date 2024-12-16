@@ -12,9 +12,10 @@ audience:
   - mobile developers
 outsystems-tools:
   - service studio
-content-type:
-  - best practice
+coverage-type:
+  - evaluate
 ---
+
 # Reactive web security best practices
 
 <div class="info" markdown="1">
