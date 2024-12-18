@@ -51,7 +51,7 @@
         ]
       },
       "content-type": {
-      "type": ["array"],
+      "type": ["array", "null"],
       "items": {
         "type": "string",
         "enum": [
@@ -71,7 +71,7 @@
       "uniqueItems": true
     },
     "coverage-type": {
-      "type": ["array"],
+      "type": ["array", "null"],
       "items": {
         "type": "string",
         "enum": [
