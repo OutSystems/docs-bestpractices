@@ -171,7 +171,7 @@ Whenever possible use minified JavaScript in production environments.
 
 ### Solution
 
-All major JavaScript libraries supply minified versions. For custom JavaScript, minification tools like Dean [EDWARD'S PACKER](http://dean.edwards.name/packer/) can be used to obtain minified versions.
+All major JavaScript libraries supply minified versions. For custom JavaScript, minification tools can be used to obtain minified versions.
 
 ### Importance
 
