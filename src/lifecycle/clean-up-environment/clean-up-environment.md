@@ -23,7 +23,7 @@ As your factory of applications grows, it consumes more resources (for example: 
 
 With a clean environment, you can eliminate a: 
 
-* Reduction in deployment and publishing performance
+* Performance degradation in deployment and publishing.
 * Slow down in your teams performance
 * Negative impact to LifeTime and Service Center performance
 
