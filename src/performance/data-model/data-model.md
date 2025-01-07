@@ -128,5 +128,5 @@ Old data is dead weight in the tables; it slows down all operations done over th
 
 ### Remarks
 
-The timing for when to archive the old data to a separate entity should be well thought out because archiving things too soon can result in having many accesses to the archived data and may result in negative performance gains.
+The timing for when to archive the old data to a separate entity should be well thought out because archiving things too soon can result in having many accesses to the archived data and may result in negative performance gains. [See more details about Data archiving.](../../architecture/data/archive.md)
 

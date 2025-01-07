@@ -3,7 +3,7 @@ guid: ab7244dc-be22-4785-95e6-9925465a2f8f
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
-summary:
+summary: Discover best practices for traditional web apps, mobile apps, and reactive web apps development using OutSystems 11 (O11) for enhanced performance and efficiency.
 figma:
 tags: best practices, app development
 audience:
@@ -15,5 +15,4 @@ outsystems-tools:
 coverage-type:
   - evaluate
 ---
-
 # Best Practices
