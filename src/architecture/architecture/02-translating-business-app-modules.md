@@ -5,6 +5,17 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=1343:252
+tags: software architecture, module management, application design, enterprise applications
+audience:
+  - full stack developers
+  - architects
+  - business analysts
+outsystems-tools:
+  - service studio
+  - architecture dashboard
+coverage-type:
+  - understand
+  - evaluate
 ---
 
 # Translating business concepts into application modules

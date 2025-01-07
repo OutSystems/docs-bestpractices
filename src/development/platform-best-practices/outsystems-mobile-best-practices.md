@@ -5,6 +5,15 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/vqcqBzIzCkJa5I0Q7Cud0a/Development?node-id=147:325
+tags: mobile development, performance optimization, user experience, low-code, outsystems ui
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
 ---
 
 # OutSystems Mobile Best Practices

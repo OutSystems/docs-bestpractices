@@ -5,6 +5,17 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jGLm9nVlJMS9yYNz7I7DoG/Lifecycle?node-id=147:325
+tags: application lifecycle management, deployment management, security management, role-based access control, automation
+audience:
+  - platform administrators
+  - full stack developers
+  - architects
+  - tech leads
+outsystems-tools:
+  - lifetime
+  - service center
+coverage-type:
+  - evaluate
 ---
 
 # Managing the Application Lifecycle of Your Portfolio

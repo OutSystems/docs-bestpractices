@@ -5,7 +5,17 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/vqcqBzIzCkJa5I0Q7Cud0a/Development?node-id=147:324
+tags: development best practices, security, efficiency, extensibility, integrations
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
 ---
+
 # Development
 
 OutSystems lets you build great and secure web and mobile apps. In this section, you can find the best practices to help you build your apps in the most effective and efficient way. Navigate through the contents on the left to learn about the development best practices on different topics.

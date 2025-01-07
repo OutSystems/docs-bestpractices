@@ -5,6 +5,17 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: disk space management, on-premises deployment, cloud deployment, server administration, performance optimization
+audience:
+  - platform administrators
+  - full stack developers
+  - infrastructure managers
+  - tech leads
+outsystems-tools:
+  - platform server
+coverage-type:
+  - evaluate
+  - understand
 ---
 
 # Guide to disk space usage and control on OutSystems Platform servers

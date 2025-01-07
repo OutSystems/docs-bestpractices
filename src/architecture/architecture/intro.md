@@ -5,6 +5,16 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: architecture canvas, service-oriented architecture, microservices, architectural patterns, best practices
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
 ---
 
 # Designing the Architecture of Your OutSystems Applications

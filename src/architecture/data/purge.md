@@ -5,6 +5,18 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=147:332
+tags: database performance, data management, best practices, database maintenance, resource optimization
+audience:
+  - full stack developers
+  - backend developers
+  - platform administrators
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
+  - understand
+  - apply
 ---
 
 # Data Purging

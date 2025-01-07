@@ -5,6 +5,18 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/s4ggSCmhDxaNG5P4tzUjbh/Infrastructure-Management?type=design&node-id=102%3A230&mode=design&t=NaxT2dSeMuD9zH0S-1
+tags: infrastructure design, on-premises deployment, private cloud deployment, high availability, sql server
+audience:
+  - platform administrators
+  - infrastructure managers
+  - architects
+  - full stack developers
+  - tech leads
+outsystems-tools:
+  - service studio
+  - platform server
+coverage-type:
+  - evaluate
 ---
 
 # Infrastructure design examples

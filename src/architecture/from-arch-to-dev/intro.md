@@ -1,11 +1,21 @@
 ---
 summary: Explore translating architectural blueprints into real applications with OutSystems 11 (O11), focusing on an online soccer field booking system.
-tags: article-page; OutSystems-development-from-blueprint; architecture-blueprint; OutSystems-Architecture; 
+tags: architecture blueprint, web application development, application design, online booking system
 guid: e52a7581-4dc9-4848-88c3-7e5df4a5c614
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=1343:677
+audience:
+  - frontend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
+  - apply
+  - understand
 ---
 
 # From architecture to development

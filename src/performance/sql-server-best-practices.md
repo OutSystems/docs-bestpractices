@@ -5,6 +5,17 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: sql server optimization, performance tuning, database management, hardware recommendations, system maintenance
+audience:
+  - platform administrators
+  - full stack developers
+  - infrastructure managers
+  - tech leads
+  - backend developers
+outsystems-tools:
+  - platform server
+coverage-type:
+  - evaluate
 ---
 
 # SQL Server best practices

@@ -1,11 +1,20 @@
 ---
 summary: Explore mobile app troubleshooting and debugging in OutSystems 11 (O11) with common scenarios, causes, and effective tools and techniques.
-tags:
+tags: mobile app debugging, upgrade issues, troubleshooting techniques, log analysis, local storage
 guid: 56836d39-dbcb-4b9d-ace8-4f89884a2771
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jGLm9nVlJMS9yYNz7I7DoG/Lifecycle?node-id=443:261
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
+  - unblock
 ---
 
 # Mobile app troubleshooting and debugging scenarios examples
@@ -74,7 +83,7 @@ In this example, as shown in the screenshots that follow:
 
 1. It's now visible that the CSS attached to the 'Flow the Screen' is part of 'has a class' definition that changes the padding values, which is the reason for the ‘flicker’!
 
-![Animated GIF demonstrating UI flicker during list element transition in a mobile app.](images/OutSystems_provides_rich_16.gif "UI Flicker Animation")
+![Animated GIF demonstrating UI flicker during list element transition in a mobile app.](images/OutSystems_provides_rich_16.png "UI Flicker Animation")
 
 ![Screenshot of UI inspection highlighting a div element and associated CSS class causing flicker.](images/OutSystems_provides_rich_17.png "UI Inspection Revealing CSS Class")
 

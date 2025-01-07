@@ -5,6 +5,16 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jGLm9nVlJMS9yYNz7I7DoG/Lifecycle?node-id=944:2157
+tags: configuration management, agile development, devops, ci/cd, software engineering
+audience:
+  - full stack developers
+  - architects
+  - platform administrators
+outsystems-tools:
+  - none
+coverage-type:
+  - evaluate
+  - understand
 ---
 
 # ALM in OutSystems: configuration management

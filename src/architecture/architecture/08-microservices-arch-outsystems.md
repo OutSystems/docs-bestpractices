@@ -5,6 +5,16 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=1343:663
+tags: microservices architecture, soa (service-oriented architecture), rest api, continuous deployment, scalability
+audience:
+  - backend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
+  - understand
 ---
 
 # Microservices Architecture in OutSystems

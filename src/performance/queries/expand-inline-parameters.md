@@ -1,11 +1,18 @@
 ---
-tags: database
+tags: sql optimization, performance best practices, database queries, sql queries, security
 summary: Explore best practices for avoiding expand inline parameters in OutSystems 11 (O11) to optimize SQL query performance.
 guid: 83c88799-85d5-4ac8-a882-f72bb417bb5c
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - backend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
 ---
 
 # Avoid expand inline parameters for dynamic values

@@ -5,6 +5,16 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=1343:659
+tags: multi-tenancy, saas, data isolation, resource management, scalability
+audience:
+  - full stack developers
+  - architects
+  - platform administrators
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
+  - understand
 ---
 
 # Designing Scalable Multi-Tenant Applications
@@ -27,7 +37,7 @@ OutSystems follows a multi-tenancy approach of logical segregation. A single app
 
 End-users use the same URL to access a multi-tenant application, and OutSystems automatically infers their tenants. Because OutSystems uses the username for this inference, the creation of end-users requires some attention to avoid name clashing. It is advisable (but not mandatory) to use unique usernames, for example: `<username>@<company>`.
 
-![Diagram showing how end-users access a multi-tenant application using the same URL with OutSystems inferring their tenant.](images/Designing-Scalable-Multi-Tenant-Applications_0.png "Multi-Tenant Application Access")
+![Diagram showing how end-users access a multi-tenant application using the same URL with OutSystems inferring their tenant.](images/multi-tenant-application-access-diag.png "Multi-Tenant Application Access")
 
 At the database level, when defining one table as multi-tenant, a column with the Tenant ID is added to that table. This column is managed by OutSystems in a way that’s transparent to the developer. As for database access, it is automatic and only data belonging to the correct tenant is returned, significantly reducing development costs.
 
@@ -75,7 +85,7 @@ Separate specific tenants into their own production infrastructure. To achieve t
 
 * Change the OutSystems LifeTime configuration for the new environment so it shares the same development and acceptance environments while ensuring you do not create different lines of development:
 
-![Flowchart illustrating the OutSystems LifeTime configuration for multiple production environments sharing the same development and acceptance environments.](images/Designing-Scalable-Multi-Tenant-Applications_1.png "OutSystems Environment Configuration")
+    ![Flowchart illustrating the OutSystems LifeTime configuration for multiple production environments sharing the same development and acceptance environments.](images/outsystems-environment-configuration-diag.png "OutSystems Environment Configuration")
 
 * After the environment is properly allocated, use the LifeTime application to publish the required applications to the new production environment.
 
@@ -91,7 +101,7 @@ Separate specific tenants into their own production infrastructure. To achieve t
 
 #### Scenario 2: Manually Partitioning OutSystems Entities
 
-OutSystems does not have any mechanism for partitioning data from within the development tools, but changes to the meta-model can be applied manually. 
+OutSystems does not have any mechanism for partitioning data from within the development tools, but changes to the meta-model can be applied manually.
 
 ### Security Concerns { #security-concerns }
 
@@ -101,7 +111,7 @@ With OutSystems, the only way that a tenant can see data from another tenant is 
 
 1. Reference the multi-tenant table and explicitly check the "Show Tenant Identifier." This property should be used only in back-office applications to implement screens to list information (for example, users) independently of their tenant.
 
-2. Explicitly reference the action "TenantSwitch(tenant id)", switching the application's TenantId to another tenant at runtime.
+1. Explicitly reference the action "TenantSwitch(tenant id)", switching the application's TenantId to another tenant at runtime.
 
 Besides these two scenarios, there is no other way that tenant data can be accessed incorrectly. To prevent them from happening:
 
@@ -131,7 +141,7 @@ Like the logical segregation option, end-users access a multi-tenant application
 
 To have different databases per tenant, you need to implement a Database Access Layer to access the correct database per tenant. Once the user is authenticated, he needs to be mapped to the correct database connection and data is fetched from the corresponding database.
 
-![Architecture diagram showing an application with a database access layer connecting to separate databases for each tenant.](images/Designing-Scalable-Multi-Tenant-Applications_2.png "Physical Segregation of Tenants")
+![Architecture diagram showing an application with a database access layer connecting to separate databases for each tenant.](images/physical-segregation-of-tenants-diag.png "Physical Segregation of Tenants")
 
 You may still use some tables in the OutSystems database that are not related to tenant data. But for all tenant data, make sure that all tenant databases have the same database model.
 
@@ -172,4 +182,3 @@ Other advantages include:
 [How to Build a Multi-Tenant Application in OutSystems](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/How_to_Build_a_Multi-tenant_Application)
 
 [Multi-tenant SaaS database tenancy patterns](https://docs.microsoft.com/en-us/azure/sql-database/saas-tenancy-app-design-patterns)
-

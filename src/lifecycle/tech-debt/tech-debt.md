@@ -5,6 +5,15 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jGLm9nVlJMS9yYNz7I7DoG/Lifecycle?type=design&node-id=842%3A521&mode=design&t=SyFgYReavcdsILfu-1
+tags: technical debt, best practices, automation, software architecture, market adaptation
+audience:
+  - full stack developers
+  - architects
+outsystems-tools:
+  - none
+coverage-type:
+  - evaluate
+  - understand
 ---
 
 # Handling technical debt with OutSystems

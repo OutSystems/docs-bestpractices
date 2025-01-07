@@ -5,6 +5,16 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/vqcqBzIzCkJa5I0Q7Cud0a/Development?node-id=342:294
+tags: error handling, customization, on-premises installation, application design, platform customization
+audience:
+  - platform administrators
+  - full stack developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
+  - apply
 ---
 
 # Customizing OutSystems Platform Pages for Unhandled Errors

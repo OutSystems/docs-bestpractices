@@ -5,6 +5,17 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: data modeling, performance optimization, database indexing, application design, query optimization
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - backend developers
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
 ---
 
 # Performance Best Practices - Data model
@@ -117,5 +128,5 @@ Old data is dead weight in the tables; it slows down all operations done over th
 
 ### Remarks
 
-The timing for when to archive the old data to a separate entity should be well thought out because archiving things too soon can result in having many accesses to the archived data and may result in negative performance gains.
+The timing for when to archive the old data to a separate entity should be well thought out because archiving things too soon can result in having many accesses to the archived data and may result in negative performance gains. [See more details about Data archiving.](../../architecture/data/archive.md)
 

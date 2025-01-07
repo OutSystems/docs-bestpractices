@@ -5,7 +5,18 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=1343:630
+tags: system integration, abstraction patterns, performance optimization, system independence, extensibility
+audience:
+  - backend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - evaluate
 ---
+
 # Integration Patterns for Core Services Abstraction
 
 ## Why do you need integration patterns?
@@ -18,7 +29,7 @@ If you need to integrate with an external system of records to retrieve master d
 
 |||
 |---|---|
-|![Diagram illustrating the Core Service extending the original service and the Integration Service abstracting the original API.](images/core-service-integration-service.png "Core Service and Integration Service Diagram")|**1- Core Service**<br/>Extend the original service<br/>System agnostic (resilient to external changes)<br/>**2- Integration Service**<br/>Abstracts the original API(s), matching to internal structures and concepts (e.g. composing a customer concept with complementary information from different systems)<br/>Hide the integration type (SOAP, REST, XIF, HTTP request, file upload, ...)<br/>Cope with technical requirements (access credentials, authorization, error handling, integration auditing, ...)|
+|![Diagram illustrating the Core Service extending the original service and the Integration Service abstracting the original API.](images/core-service-integration-service-diag.png "Core Service and Integration Service Diagram")|**1- Core Service**<br/>Extend the original service<br/>System agnostic (resilient to external changes)<br/>**2- Integration Service**<br/>Abstracts the original API(s), matching to internal structures and concepts (e.g. composing a customer concept with complementary information from different systems)<br/>Hide the integration type (SOAP, REST, XIF, HTTP request, file upload, ...)<br/>Cope with technical requirements (access credentials, authorization, error handling, integration auditing, ...)|
 
 The idea is to have an **Integration Service** per independent concept (e.g. Customers) and not a single integration point per external system:
 
@@ -27,11 +38,12 @@ The idea is to have an **Integration Service** per independent concept (e.g. Cus
 * One system may support more than one concept (e.g. an ERP with Customers and Products) but each concept has it own life cycle (a consumer of Customers may not be interested in Products and should not be impacted by changes on the latter).
 
 ### Integration Services - wrapping calls to an external system
+
 The Integration Service wraps-up any call to the external system, hiding the integration complexity and abstracting a service easy to be reused. The following canvas guides you on the major concerns that should be tackled when wrapping a call to an external system, regardless of the specific integration protocol being used (REST, SOAP, DLL Wrapper, etc.).
 
 **Integration Wrapper Canvas**:
 
-![Canvas outlining the major concerns when wrapping a call to an external system, including validation, security, authentication, input mapping, API calls, error handling, and output normalization.](images/wrapping-a-call-to-an-external-system.png "Integration Wrapper Canvas")
+![Canvas outlining the major concerns when wrapping a call to an external system, including validation, security, authentication, input mapping, API calls, error handling, and output normalization.](images/wrapping-a-call-to-an-external-system-diag.png "Integration Wrapper Canvas")
 
 **Validation / Security logic** - Check consistency of inputs. If required, check if user in session is eligible to perform this call. Raise a user exception to propagate the error.
 
@@ -74,7 +86,7 @@ This pattern simply represents a direct integration with the external system, us
 
 |||
 |---|---|
-|![Diagram showing the direct integration pattern with an ERP system through an Integration Service.](images/direct-integration.png "Direct Integration Pattern Diagram")|In this scenario, Customer data is coming from an **ERP**. **Customer_IS** interfaces with the **ERP**, abstracting a normalized API, both for retrieving information and performing transactions. This creates the flexibility to change the external systems without impact on core services, as long as the **Integration Service API** is maintained.<br/>Also, note that this scenario does not include entities in **Customer_CS** to keep a local replica of data. Not keeping replicated data outside the **ERP** might be due to a business constraint, or because (almost) real-time demand is incompatible with having a delayed data replication (information changes too often).|
+|![Diagram showing the direct integration pattern with an ERP system through an Integration Service.](images/direct-integration-diag.png "Direct Integration Pattern Diagram")|In this scenario, Customer data is coming from an **ERP**. **Customer_IS** interfaces with the **ERP**, abstracting a normalized API, both for retrieving information and performing transactions. This creates the flexibility to change the external systems without impact on core services, as long as the **Integration Service API** is maintained.<br/>Also, note that this scenario does not include entities in **Customer_CS** to keep a local replica of data. Not keeping replicated data outside the **ERP** might be due to a business constraint, or because (almost) real-time demand is incompatible with having a delayed data replication (information changes too often).|
 
 However, this pattern has several **limitations**:
 
@@ -112,7 +124,7 @@ Adding local entities to **Customer_CS** will overcome the limitations of the **
 
 |||
 |---|---|
-|![Diagram depicting the Cold Cache pattern with batch synchronization for customer data.](images/cold-cache-with-batch-sync.png "Cold Cache with Batch Sync Diagram")|The **Integration Service** becomes simple and stable. Instead of providing a myriad of actions for different data retrieval needs, it only has to supply a method to fetch all customer relevant data, updated since the last sync.<br/>**Customer_CS** has a timer to regularly synchronize information through the **Integration Service**. This synchronization should be unidirectional, to avoid complex merges of information - from the **ERP** (the master of data) to the **Core Service**. On the opposite direction, when an update is made in **Customer_CS**, you must be careful to make sure that the update is successful and synchronously committed in the ERP first (a write-through policy).|
+|![Diagram depicting the Cold Cache pattern with batch synchronization for customer data.](images/cold-cache-with-batch-sync-diag.png "Cold Cache with Batch Sync Diagram")|The **Integration Service** becomes simple and stable. Instead of providing a myriad of actions for different data retrieval needs, it only has to supply a method to fetch all customer relevant data, updated since the last sync.<br/>**Customer_CS** has a timer to regularly synchronize information through the **Integration Service**. This synchronization should be unidirectional, to avoid complex merges of information - from the **ERP** (the master of data) to the **Core Service**. On the opposite direction, when an update is made in **Customer_CS**, you must be careful to make sure that the update is successful and synchronously committed in the ERP first (a write-through policy).|
 
 |Advantages|Disadvantages|
 |--- |--- |
@@ -127,7 +139,7 @@ When the synchronization process is too complex and constantly tuned, it is reco
 
 |||
 |---|---|
-|![Diagram illustrating the isolation of synchronization logic from the Core Service to a separate Customer Sync module.](images/isolate-synchronization-logic.png "Isolated Synchronization Logic Diagram")|Another reason to do it is when the synchronization requires to orchestrate several integrations - for e.g., If Customers are stored in one system and Customer Contracts in another, then the synchronization needs to make sure that customers are synced before contracts since contracts refer to customers.<br/>Consumers of **Customer_CS** don’t need to be impacted by the synchronization code. Additionally, if in the future the ERP is deprecated and replaced by functionality built in OutSystems, stripping out the synchronization code has no impact.<br/>In this example, **Customer_Sync** is the one regularly fetching updated information through the **Integration Service**, to sync into **Customer_CS**. **Customer_CS** still consumes **Customer_IS** to perform online transactions.|
+|![Diagram illustrating the isolation of synchronization logic from the Core Service to a separate Customer Sync module.](images/isolate-synchronization-logic-diag.png "Isolated Synchronization Logic Diagram")|Another reason to do it is when the synchronization requires to orchestrate several integrations - for e.g., If Customers are stored in one system and Customer Contracts in another, then the synchronization needs to make sure that customers are synced before contracts since contracts refer to customers.<br/>Consumers of **Customer_CS** don’t need to be impacted by the synchronization code. Additionally, if in the future the ERP is deprecated and replaced by functionality built in OutSystems, stripping out the synchronization code has no impact.<br/>In this example, **Customer_Sync** is the one regularly fetching updated information through the **Integration Service**, to sync into **Customer_CS**. **Customer_CS** still consumes **Customer_IS** to perform online transactions.|
 
 #### Real-Time Sync
 
@@ -135,7 +147,7 @@ Normally, a cold cache with summary data that is required for search, listing or
 
 |||
 |---|---|
-|![Diagram showing real-time synchronization with an external system of records through an API module.](images/real-time-sync.png "Real-Time Sync Diagram")|Real-time sync requires the external system of records to callback OutSystems, notifying some change in real time (in this example a customer update or insert).<br/>The **API** and the **IS** modules completely isolate the Core Service, making it agnostic to the external system and to the synchronization process.|
+|![Diagram showing real-time synchronization with an external system of records through an API module.](images/real-time-sync-diag.png "Real-Time Sync Diagram")|Real-time sync requires the external system of records to callback OutSystems, notifying some change in real time (in this example a customer update or insert).<br/>The **API** and the **IS** modules completely isolate the Core Service, making it agnostic to the external system and to the synchronization process.|
 
 |Advantages|Disadvantages|
 |--- |--- |
@@ -148,13 +160,13 @@ Normally, a cold cache with summary data that is required for search, listing or
 
 While the default real-time sync is relatively simple to implement, it’s not appropriate for a high volume of changes. When this is the case, the solution is to implement a queue, so the synchronization is processed in parallel.
 
-![Diagram illustrating a queued real-time synchronization process with an external ERP system.](images/queued-real-time-sync.png "Queued Real-Time Sync Diagram") 
+![Diagram illustrating a queued real-time synchronization process with an external ERP system.](images/queued-real-time-sync-diag.png "Queued Real-Time Sync Diagram")
 
 <div class="subtopic">Ordered real-time sync</div>
 
 If the external system is prepared to fire multiple update requests concurrently (e.g., with multi-threading), there is no certainty that those requests will be received and processed in the correct order. Here is a variant to cope with that problem.
 
-![Diagram demonstrating an ordered real-time synchronization process ensuring correct sequence of updates.](images/ordered-real-time-sync.png "Ordered Real-Time Sync Diagram")
+![Diagram demonstrating an ordered real-time synchronization process ensuring correct sequence of updates.](images/ordered-real-time-sync-diag.png "Ordered Real-Time Sync Diagram")
 
 #### Lazy Load Details
 
@@ -166,7 +178,7 @@ If it’s frequent to reuse details after fetching them from the external system
 * Try to fetch data from the local cache. If not found or outdated, get entry detail from the external system and cache it (read-through caching).
 
     * Cached details can have an expiration date, to force refreshing it from the source after a certain period;
-    
+
     * Alternatively, before reusing cached data, ask the external system of records for the last update timestamp of that information to compare with the local timestamp and decide if the entry is outdated or not.
 
 * If Summary data is also being cached, have a separate detail entity to cache details.
@@ -183,7 +195,7 @@ It’s common to combine different patterns: cache summary data regularly and la
 
 When there are multiple sources for the same type of information, usually with different formats and APIs, the synchronization process becomes more complex.
 
-![Diagram showing a transparency service that synchronizes customer data from multiple systems into a single Core Service.](images/transparency-service-multiple-sources.png "Transparency Service with Multiple Sources Diagram")
+![Diagram showing a transparency service that synchronizes customer data from multiple systems into a single Core Service.](images/transparency-service-multiple-sources-diag.png "Transparency Service with Multiple Sources Diagram")
 
 **Customer_Sync** orchestrates the synchronization with all Systems of records, updating a single Customer data replica in **Customer_CS**. This creates a **transparency service**.
 
@@ -193,4 +205,4 @@ However, if sending changes back is a requirement, an extra module must be added
 
 |||
 |---|---|
-|![Diagram of a transparency service with an Integration Service routing requests to the correct system driver.](images/transparency-service.png "Transparency Service Diagram")|**1-** The integration service abstracts the existence of different systems, routing requests to the correct driver.<br/>**2-** Each system is interfaced with a different driver. All drivers provide an API with the same signatures.<br/>**3-** Different customers may be in different systems.|
+|![Diagram of a transparency service with an Integration Service routing requests to the correct system driver.](images/transparency-service-diag.png "Transparency Service Diagram")|**1-** The integration service abstracts the existence of different systems, routing requests to the correct driver.<br/>**2-** Each system is interfaced with a different driver. All drivers provide an API with the same signatures.<br/>**3-** Different customers may be in different systems.|

@@ -1,19 +1,29 @@
 ---
 summary: Learn best practices for maintaining a clean and efficient development environment in OutSystems 11 (O11) to optimize performance and resource usage.
-tags: 
+tags: environment management, performance optimization, version control, deployment, application lifecycle management
 guid: c2af5ea2-2154-40c4-9756-34783923865c
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jGLm9nVlJMS9yYNz7I7DoG/Lifecycle?type=design&node-id=443%3A239&mode=design&t=SyFgYReavcdsILfu-1
+audience:
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - service center
+  - lifetime
+coverage-type:
+  - evaluate
 ---
+
 # Best practices for a tidy and clean environment
 
 As your factory of applications grows, it consumes more resources (for example: disk space, database, etc.). It’s important that you keep your environments tidy and clean so it doesn’t slow down your devops performance. Although you can always improve the processing power and infrastructure capacity, this usually brings additional costs.
 
 With a clean environment, you can eliminate a: 
 
-* Reduction in deployment and publishing performance
+* Performance degradation in deployment and publishing.
 * Slow down in your teams performance
 * Negative impact to LifeTime and Service Center performance
 

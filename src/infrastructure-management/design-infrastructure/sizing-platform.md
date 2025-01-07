@@ -5,6 +5,17 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: infrastructure scaling, performance optimization, application deployment, hardware recommendations, capacity planning
+audience:
+  - platform administrators
+  - infrastructure managers
+  - full stack developers
+  - tech leads
+outsystems-tools:
+  - none
+coverage-type:
+  - evaluate
+  - remember
 ---
 
 # Sizing OutSystems Platform

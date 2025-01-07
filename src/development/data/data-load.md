@@ -5,6 +5,14 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/vqcqBzIzCkJa5I0Q7Cud0a/Development?node-id=342:248
+tags: data loading, performance optimization, asynchronous programming, network optimization, mobile application development
+audience:
+  - mobile developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
+  - apply
 ---
 
 # Mobile Data Load

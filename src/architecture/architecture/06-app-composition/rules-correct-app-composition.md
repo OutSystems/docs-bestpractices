@@ -5,6 +5,15 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=1343:650
+tags: application composition, application architecture, software deployment, software modularity
+audience:
+  - architects
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
+  - understand
 ---
 
 # The 4 Rules for Correct Application Composition

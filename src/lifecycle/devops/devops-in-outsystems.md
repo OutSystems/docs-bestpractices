@@ -5,6 +5,15 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/jGLm9nVlJMS9yYNz7I7DoG/Lifecycle?node-id=943:444
+tags: devops, alm integration, software development, legacy modernization, continuous integration/continuous deployment
+audience:
+  - full stack developers
+  - architects
+outsystems-tools:
+  - none
+coverage-type:
+  - evaluate
+  - understand
 ---
 
 # DevOps and ALM in OutSystems
@@ -108,7 +117,6 @@ To supercharge the development process, OutSystems offers the following design t
 
 
 *   For reactive Web apps, **Workflow Builder** empowers business experts, analysts, and process owners to solve their own internal productivity challenges through an easy-to-use wizard that abstracts the development process.
-*   For mobile apps, **Experience Builder** creates and tests prototypes in hours and then generates production-ready code—with experience and development best practices built-in—in a matter of minutes.
 
 
 ### Workflow Builder
@@ -131,23 +139,6 @@ While a workflow app can be designed from scratch, **Workflow Builder** includes
 *   Issue report
 
 A workflow app, as it evolves, may outgrow its original design. For example, its scope may expand to require a feature that is not available in **Workflow Builder**, such as integration with an outside service like SAP or Salesforce. In this case, [the workflow app can be converted](https://success.outsystems.com/documentation/11/developing_an_application/create_case_management_and_workflow_apps/create_workflow_apps_with_workflow_builder/converting_a_workflow_builder_app_to_service_studio/) to **Service Studio**, where it can continue to be developed with all of the capabilities available in the OutSystems platform. 
-
-
-### Experience Builder
-
-[Experience Builder](https://success.outsystems.com/documentation/11/developing_an_application/create_mobile_apps_with_experience_builder/) lets leaders, developers, and UX/UI designers create prototypes of pixel-perfect B2C mobile apps with great UX using a web interface. All generated code is built following best practices to ensure a sound and scalable architecture.
-
-![Animated GIF showing the Experience Builder feature in OutSystems.](images/product-update.gif "Experience Builder Animation")
-
-
-While an app can be designed from scratch, **Experience Builder** includes templates to accelerate development for the following use cases:
-
-
-
-*   Mobile banking
-*   Customer insurance
-*   Product and checkout
-*   Patient healthcare
 
 Once stakeholders are satisfied with the user journeys of the mobile app, it can be [opened for further development](https://success.outsystems.com/documentation/11/developing_an_application/create_mobile_apps_with_experience_builder/extend_your_experience_builder_app_in_service_studio/) in **Service Studio**.
 

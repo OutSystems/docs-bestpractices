@@ -5,6 +5,18 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/vqcqBzIzCkJa5I0Q7Cud0a/Development?node-id=342:268
+tags: component libraries, code reusability, application development best practices, outsystems forge, low-code platforms
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - evaluate
+  - understand
+  - apply
 ---
 
 # The complete guide to creating components
@@ -165,7 +177,7 @@ The following example of the Silk Ui Mobile FloatingActions pattern provides a c
 
 ![Image showing the UI structure of the FloatingActions pattern in OutSystems.](images/The-Complete-Guide-to-Creating-Components_17.png "Floating Actions UI Structure")
 
-![Animated preview of the FloatingActions UI pattern in OutSystems.](images/The-Complete-Guide-to-Creating-Components_18.gif "Floating Actions Preview")
+![Animated preview of the FloatingActions UI pattern in OutSystems.](images/The-Complete-Guide-to-Creating-Components_18.png "Floating Actions Preview")
 
 #### Service Studio CSS Tags for a better development experience
 

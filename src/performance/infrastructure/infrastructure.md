@@ -5,6 +5,17 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: database maintenance, server optimization, performance tuning, antivirus configuration, sql query optimization
+audience:
+  - platform administrators
+  - full stack developers
+  - backend developers
+  - infrastructure managers
+  - tech leads
+outsystems-tools:
+  - platform server
+coverage-type:
+  - evaluate
 ---
 
 # Performance Best Practices - Infrastructure

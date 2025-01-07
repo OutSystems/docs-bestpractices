@@ -5,7 +5,18 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=1343:247
+tags: soa design, architecture canvas, reusable services, module dependency, cost-effective architecture
+audience:
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+  - architecture canvas
+coverage-type:
+  - understand
+  - evaluate
 ---
+
 # The Architecture Canvas
 
 The Architecture Canvas is an OutSystems architecture tool to make the design of Service-Oriented Architectures (SOA) simple. It promotes the correct abstraction of reusable (micro)services and the correct isolation of distinct functional modules, in cases where you are developing and maintaining multiple applications that reuse common modules. A typical medium to large OutSystems installation will support 20+ mission critical applications and 200+ interdependent modules.
@@ -16,7 +27,7 @@ These applications/modules have different change life cycles and are maintained 
 
 Each layer and sub layer sets a different nature of the functionality to be captured in a module:
 
-![Diagram of the OutSystems Architecture Canvas showing different layers including Orchestration Modules, End-user Modules, Core Modules, and Foundation Modules.](images/layers_canvas_0.png "OutSystems Architecture Canvas Layers")
+![Diagram of the OutSystems Architecture Canvas showing different layers including Orchestration Modules, End-user Modules, Core Modules, and Foundation Modules.](images/architecture-canvas-layers-diag.png "OutSystems Architecture Canvas Layers")
 
 <div class="info" markdown="1">
 
@@ -26,8 +37,7 @@ The orchestration layer is used in OutSystems 10 for hyperlinks between screens 
 
 Sub layers are shown in detail below:
 
-![Detailed diagram of the OutSystems Architecture Canvas sub layers, including Orchestration, Enduser, Core, and Foundation with their respective external modules.](images/sub_layers_canvas.png "OutSystems Architecture Canvas Sub Layers")
-
+![Detailed diagram of the OutSystems Architecture Canvas sub layers, including Orchestration, Enduser, Core, and Foundation with their respective external modules.](images/architecture-canvas-sublayers-diag.png "OutSystems Architecture Canvas Sub Layers")
 
 ## Architecture design with the Architecture Canvas
 
@@ -35,14 +45,14 @@ The Architecture Canvas is used in two different stages of the architecture desi
 
 1. **Identifying concepts (functional, non-functional and integration needs)**
 The canvas helps collecting architecture requirements in a structured and systematic way.
-![Illustration of the Architecture Canvas used for identifying concepts such as User Processes, Business Concepts, and Utilities and Integration.](images/4-layer-canvas_4.png "Identifying Concepts on the Architecture Canvas")
+![Illustration of the Architecture Canvas used for identifying concepts such as User Processes, Business Concepts, and Utilities and Integration.](images/architecture-identify-concepts-diag.png "Identifying Concepts on the Architecture Canvas")
 
-2. **Define modules**
+1. **Define modules**
 Design the modules that implement the identified concepts, following [recommended patterns](05-integration-patterns.md).
 
 Designing an architecture is not a one-time event. It is a continuous process. The architecture must be iterated, cycling these two stages, as a solution evolves and new concepts and needs emerge from your business.
 
-![Graphic representing the iterative process of architecture design, with two steps: 1. Identify Concepts and 2. Define Modules.](images/4-layer-canvas_5.png "Architecture Iteration Process")
+![Graphic representing the iterative process of architecture design, with two steps: 1. Identify Concepts and 2. Define Modules.](images/architecture-iteration-diag.png "Architecture Iteration Process")
 
 ## Using the Architecture Canvas
 
@@ -57,4 +67,3 @@ To start using the Architecture Canvas check the following articles:
 Check out the [Electronic Canvas tool](http://www.outsystems.com/forge/component/706/electronic-canvas/), available in the OutSystems Forge. It assists you in the design of a new architecture by allowing you to place and move around your concepts in a digital Architecture Canvas. It enables you to identify and organize all the architectural elements that need to be implemented in a new project.
 
 To learn more about how to design your application architecture check the [Designing the architecture of your OutSystems applications](intro.md) guide.
-

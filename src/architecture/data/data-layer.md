@@ -5,6 +5,14 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=147:334
+tags: local storage, performance optimization, data storage, mobile app development, offline support
+audience:
+  - mobile developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
+  - understand
 ---
 
 # Mobile Data Layer

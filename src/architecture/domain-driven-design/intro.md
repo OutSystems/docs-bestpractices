@@ -1,11 +1,21 @@
 ---
 summary: Explore Domain Driven Architecture in OutSystems 11 (O11) for managing complex software development and deployment.
-tags: article-page
+tags: domain-driven design, software architecture, monolithic architecture, services decoupling, complex software systems
 guid: 744dbbef-0e48-47e1-9b5e-09ad8ae610a8
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=1344:708
+audience:
+  - full stack developers
+  - architects
+  - tech leads
+  - backend developers
+outsystems-tools:
+  - none
+coverage-type:
+  - evaluate
+  - understand
 ---
 
 # OutSystems Domain Driven Architecture

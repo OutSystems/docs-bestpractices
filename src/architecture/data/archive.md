@@ -5,6 +5,18 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=147:325
+tags: data archiving, performance optimization, database management, regulatory compliance, cloud infrastructure
+audience:
+  - backend developers
+  - full stack developers
+  - platform administrators
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
+  - understand
+  - apply
 ---
 
 # Data Archiving
@@ -81,11 +93,13 @@ Mirror the data source modules in the **archive catalog** side, in a way simple 
 
 * Copy entities only.
 
-* Set the **Is AutoNumber** property to `No` for IDs, Indexes, and the IsArchived attribute.
+* Set the **Is AutoNumber** property to `No` for IDs.
+
+* Remove IsArchived attribute.
+
+* Remove any copied indexes, and create new indexes based on your specific archiving and search criteria.
 
 * Set the **Delete Rule** property of foreign keys to `Ignore`.
-
-* Add Indexes based on your archiving search criteria.
 
 ![Diagram showing the main catalog with CS1 and CS2 entities and the archive catalog with CS1_Arch and CS2_Arch entities.](images/main-archive-catalog-diag.png "Light Archiving Step 1: Main and Archive Catalog Structure")
 

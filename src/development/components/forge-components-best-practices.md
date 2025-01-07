@@ -5,6 +5,16 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: component development, code reuse, best practices, outsystems forge, developer experience
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - forge
+  - service studio
+coverage-type:
+  - evaluate
 ---
 
 # Forge components best practices

@@ -5,6 +5,16 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/8BOBojsM2YFC0g7LBLPKfU/Performance%20and%20monitoring?node-id=543:7
+tags: caching patterns, performance optimization, database optimization, application architecture, external integrations
+audience:
+  - backend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
+  - apply
 ---
 
 # Optimize Data For Your Use Cases Using Hot Cache

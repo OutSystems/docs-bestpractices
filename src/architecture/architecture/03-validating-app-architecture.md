@@ -5,6 +5,16 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=1343:439
+tags: application architecture, dependency management, software design principles
+audience:
+  - backend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - discovery
+coverage-type:
+  - evaluate
+  - understand
 ---
 
 # Validating your application architecture

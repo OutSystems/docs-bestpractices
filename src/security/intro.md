@@ -5,6 +5,16 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rmma8067fGUqhlUhXheHOZ/Security?node-id=147:324
+tags: software security, cia model, information security, security updates, security vulnerabilities
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - none
+coverage-type:
+  - evaluate
+  - understand
 ---
 
 # Security

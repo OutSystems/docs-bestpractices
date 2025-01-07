@@ -1,11 +1,21 @@
 ---
 summary: Explore the standard toolkit for debugging and troubleshooting in OutSystems 11 (O11), featuring native tools and modern web browsers.
-tags:
+tags: debugging, best practices, troubleshooting, code reviews, learning and development
 guid: 6419e85e-475e-4e4e-a5ee-b4d85ea5e3ac
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - ai mentor studio
+coverage-type:
+  - evaluate
+  - apply
 ---
 
 # Suggested standard toolkit

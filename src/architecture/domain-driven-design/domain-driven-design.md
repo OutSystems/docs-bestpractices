@@ -1,11 +1,21 @@
 ---
 summary: Explore Domain Driven Design in OutSystems 11 (O11) for effective complex software development.
-tags:
+tags: domain driven design, software architecture, complex systems, business processes, conceptual modelling
 guid: 9363e1f9-1611-45fd-a0c3-3b8c1fcd4e7f
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?type=design&node-id=1344%3A722&mode=design&t=PRLoJ75Xb7DcRPoX-1
+audience:
+  - backend developers
+  - full stack developers
+  - architects
+  - business analysts
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
+  - understand
 ---
 
 # Domain Driven Design

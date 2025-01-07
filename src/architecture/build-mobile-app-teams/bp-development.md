@@ -1,11 +1,19 @@
 ---
 summary: OutSystems 11 (O11) emphasizes best practices such as modular development, effective communication, and sandbox testing for mobile app efficiency.
-tags:
+tags: modular development, application architecture, ui components, screen design, code reusability
 guid: 493eee88-0bdd-40ee-b40e-011b1cf6c3c0
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=147:361
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
 ---
 
 # Development best practices

@@ -5,6 +5,19 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/8BOBojsM2YFC0g7LBLPKfU/Performance%20and%20monitoring?node-id=147:325
+tags: audit trail, compliance, security monitoring, logging, regulatory standards
+audience:
+  - platform administrators
+  - architects
+  - full stack developers
+  - frontend developers
+  - backend developers
+outsystems-tools:
+  - service studio
+  - service center
+coverage-type:
+  - evaluate
+  - understand
 ---
 
 # Audit Trail

@@ -5,6 +5,14 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: ui optimization, performance improvement, ajax optimization, viewstate management, caching strategies
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
 ---
 
 # Performance Best Practices - User Interface
@@ -163,7 +171,7 @@ Whenever possible use minified JavaScript in production environments.
 
 ### Solution
 
-All major JavaScript libraries supply minified versions. For custom JavaScript, minification tools like Dean [EDWARD'S PACKER](http://dean.edwards.name/packer/) can be used to obtain minified versions.
+All major JavaScript libraries supply minified versions. For custom JavaScript, minification tools can be used to obtain minified versions.
 
 ### Importance
 

@@ -5,6 +5,15 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: database optimization, ui design best practices, code reusability, javascript best practices, css best practices
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
 ---
 
 # OutSystems Platform Best Practices
@@ -79,8 +88,8 @@ This article aggregates a collection of best practices and conventions that you 
 
 ## Building for change
 
-* Favor Aggregates over Advanced Queries.
-* Keep in mind that Advanced Queries are harder to maintain.
+* Favor Aggregates over SQL Queries.
+* Keep in mind that SQL Queries are harder to maintain.
 * Avoid creating custom HTML/JavaScript.
 * Split functionality in different Web Screens.
 * Don’t use Extensions to implement business logic.
@@ -137,15 +146,16 @@ Also:
 
 ## Security
 
-* Set the Web Screen's Roles.
+* Set the Screen's Roles.
 * Be aware of sensitive data exchange.
 * **Don't** send sensitive information in screen parameters.
-* Remember: Web Screen's variables or Preparation outputs might be exposed in the URL or Viewstate.
+* Remember: In Traditional Web, Screen's variables or Preparation outputs might be exposed in the URL or Viewstate.
 * When applicable, use SSL for sensitive information.
-* **Don't** rely on the Web Screen widgets interface to control permissions.
+* **Don't** rely on the Screen widgets interface to control permissions.
 * Validate user’s Roles before executing Screen Actions.
 * Use encrypted passwords in the database.
-* Use Internal Access Only for Web Flows and Web Services.
+* Use Internal Access Only for UI Flows and Web Services.
+* Check the Reactive web specific [security best practices](../../security/ext-rd-reactive-security-best-practices/ext-rd-reactive-security-best-practices.md).
 
 ## Performance
 
@@ -172,10 +182,10 @@ Also:
 
 * Look into Service Center reports.
 * Avoid long-running Timers and batch jobs.
-* Simplify screen Preparations.
+* In Traditional Web, simplify screen Preparations.
 * Place as little information as possible in Session Variables.
 * Avoid using isolated Aggregates in Server Actions.
-* Avoid using queries inside If branches in Preparation.
+* In traditional web, avoid using queries inside If branches in Preparation.
 * Avoid chained Web Service calls. Return as much as possible in a single call.
 
 ### Queries
@@ -194,12 +204,12 @@ Also:
 
 ### User Interface
 
-* Avoid using Preparation data in screen actions.
-* Use multiple Web Screens instead of creating complex ones.
+* In Traditional Web, avoid using Preparation data in screen actions.
+* Use multiple Screens instead of creating complex ones.
 * Cache, baby, cache!
 * Minimize Screen Parameters.
 * Import JavaScript files as resources.
-* Move JavaScript Web Blocks that aren't needed at loading time to the bottom.
+* Move JavaScript Blocks that aren't needed at loading time to the bottom.
 * Use CSS Sprite Images.
 
 ## Common patterns and examples

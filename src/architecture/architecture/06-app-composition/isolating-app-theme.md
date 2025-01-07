@@ -5,6 +5,17 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=1343:653
+tags: enterprise architecture, ui design, theme customization, css, layout design
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
+  - understand
 ---
 
 # Isolating an application Theme

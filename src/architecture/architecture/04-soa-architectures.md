@@ -5,6 +5,17 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?type=design&node-id=1343%3A628&mode=design&t=PRLoJ75Xb7DcRPoX-1
+tags: service-oriented architecture, api design, system integration, legacy system migration
+audience:
+  - backend developers
+  - full stack developers
+  - architects
+  - tech leads
+outsystems-tools:
+  - service studio
+coverage-type:
+  - understand
+  - evaluate
 ---
 
 # Service-oriented architectures for OutSystems applications

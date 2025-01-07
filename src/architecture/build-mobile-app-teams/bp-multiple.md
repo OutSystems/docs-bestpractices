@@ -1,11 +1,19 @@
 ---
 summary: Explore mobile app development best practices for multi-team collaboration using OutSystems 11 (O11).
-tags:
+tags: architecture, mobile app development, team collaboration, service modularity, synchronization
 guid: 6a6bfbb7-9048-4ca6-b52d-1a474a784cc8
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=147:367
+audience:
+  - mobile developers
+  - frontend developers
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
 ---
 
 # Best practices with multiple teams

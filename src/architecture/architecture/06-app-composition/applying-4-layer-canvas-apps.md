@@ -5,6 +5,16 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=1343:643
+tags: application architecture, architecture canvas, layer classification, dependency rules
+audience:
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+  - architecture dashboard
+coverage-type:
+  - evaluate
+  - understand
 ---
 
 # Applying the Architecture Canvas to applications

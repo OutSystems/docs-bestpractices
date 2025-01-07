@@ -1,11 +1,20 @@
 ---
 summary: Explore application composition in OutSystems 11 (O11), focusing on module assembly and deployment dependencies essential for architectural design.
-tags: support-application_architecture-overview; support-application_development; support-development; support-Front_end_Development; support-Infrastuture_Architecture
+tags: application deployment, dependency management, architectural design, application life cycle management
 guid: dd85b743-88c8-4cba-8214-de594cffeefa
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - architects
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - lifetime
+coverage-type:
+  - understand
+  - evaluate
 ---
 
 # Application composition

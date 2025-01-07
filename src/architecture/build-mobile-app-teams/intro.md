@@ -1,11 +1,20 @@
 ---
 summary: Explore best practices for building mobile apps with multiple independent teams using OutSystems 11 (O11).
-tags: article-page
+tags: mobile app development, mobile architecture, team collaboration, native plugins, offline support
 guid: eeb1ecc6-8b4e-4c29-8f20-9c811cb1a65b
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - service studio
+coverage-type:
+  - evaluate
 ---
 
 # Building mobile apps with multiple independent teams

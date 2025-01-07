@@ -16,7 +16,7 @@ on:
 jobs:
   call_shared_workflow:
     name: Shared docs validations
-    uses: OutSystems/tk-cicd/.github/workflows/validations.yml@main
+    uses: OutSystems/tk-cicd/.github/workflows/validations.yml@autofill-frontmatter
     with:
       GITHUB_REPOSITORY: ${{ inputs.GITHUB_REPOSITORY }}
       PR_NUMBER: ${{ inputs.PR_NUMBER }}

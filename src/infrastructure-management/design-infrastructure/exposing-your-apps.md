@@ -5,6 +5,16 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: load balancers, reverse proxies, security, availability, ssl offloading
+audience:
+  - platform administrators
+  - infrastructure managers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - none
+coverage-type:
+  - evaluate
 ---
 
 # Exposing your applications

@@ -1,11 +1,22 @@
 ---
 summary: OutSystems 11 (O11) is used to develop a soccer field booking application from an architecture blueprint.
-tags: OutSystems-development-from-blueprint; architecture-blueprint; OutSystems-Architecture; 
+tags: outsystems development, web application development, application blueprint implementation, service studio usage
 guid: aece0925-1c82-430e-ae4f-bc436e097eba
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/rNoKkusApjxcsPFE38FGvt/Architecture?node-id=1344:694
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - forge
+coverage-type:
+  - evaluate
+  - understand
+  - apply
 ---
 
 # Developing from the architecture blueprint
