@@ -70,7 +70,7 @@ jobs:
 
   auto-fill:
     if: github.event_name == 'pull_request'
-    uses: OutSystems/tk-cicd/.github/workflows/autofill-frontmatter.yml@main
+    uses: OutSystems/tk-cicd/.github/workflows/autofill-frontmatter.yml@autofill-frontmatter
     with:
       GITHUB_REPOSITORY: ${{ github.repository }}
       PULL_REQUEST_NUMBER: ${{ github.event.pull_request.number }}
@@ -80,8 +80,7 @@ jobs:
       BASE_BRANCH: ${{ github.event.pull_request.base.ref }}  # Base branch of the pull request
       HEAD_BRANCH: ${{ github.event.pull_request.head.ref }}  # Head branch of the pull request 
     secrets: inherit
-
-    
+   
   frontmatter:
     name: Frontmatter
     uses: ./.github/workflows/validate-frontmatter.yml
@@ -96,7 +95,7 @@ jobs:
     with:
       GITHUB_REPOSITORY: ${{ github.repository }}
       PR_NUMBER: ${{ github.event.pull_request.number || github.event.issue.number }}
-      TK_CICD_BRANCH: 'main'
+      TK_CICD_BRANCH: 'autofill-frontmatter'
 
   tools:
     name: Tools
