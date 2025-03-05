@@ -48,8 +48,6 @@ OutSystems supports quick and easy integration with monitoring and analysis dash
 * [Google Analytics for Firebase](https://firebase.google.com/products/analytics) provides free, unlimited reporting on key events and user properties.
 * [Firebase Performance Monitoring](https://firebase.google.com/products/performance) gives insight into app performance from the user point of view with detailed trace and network data.
 
-**Note**: OutSystems-supported plugins are scheduled for official release in April 2021.
-
 ### Community-supported components 
 
 You can enhance the functionality and capabilities of the monitoring data collected by OutSystems through extensions that are available through the [OutSystems Forge](https://www.outsystems.com/forge/), a repository of thousands of open-code libraries, plugins, and pre-built components that you can use as-is or modify to suit your particular needs.
