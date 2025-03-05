@@ -62,9 +62,6 @@
     - href: lifecycle/app-lifecycle/managing-app-lifecycle-portfolio.md
     - href: lifecycle/tech-debt/tech-debt.md
     - href: lifecycle/clean-up-environment/clean-up-environment.md
-    - href: lifecycle/devops/devops-in-outsystems.md
-    - href: lifecycle/cicd/cicd-in-outsystems.md
-    - href: lifecycle/configuration-management/configuration-management-in-outsystems.md
     - href: lifecycle/troubleshoot-debugging-mobile/intro.md   
     - topics:
         - href: lifecycle/troubleshoot-debugging-mobile/troubleshooting-process.md
