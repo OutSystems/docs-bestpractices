@@ -59,7 +59,6 @@
 #Lifecycle Best Practices
 - href: lifecycle/intro.md
 - topics:
-    - href: lifecycle/app-lifecycle/managing-app-lifecycle-portfolio.md
     - href: lifecycle/tech-debt/tech-debt.md
     - href: lifecycle/clean-up-environment/clean-up-environment.md
     - href: lifecycle/troubleshoot-debugging-mobile/intro.md   
