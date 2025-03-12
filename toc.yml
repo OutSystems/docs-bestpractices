@@ -42,15 +42,13 @@
     - href: development/extensibility/extensibility.md
     - href: development/integrations/integrate-ecosystem.md
     - href: development/platform-best-practices/outsystems-platform-best-practices.md 
-    - href: development/platform-best-practices/outsystems-mobile-best-practices.md     
-    - href: development/database-optimization/database-optimization.md      
+    - href: development/platform-best-practices/outsystems-mobile-best-practices.md    
     - href: development/data/data-load.md
     - href: development/data/data-rendering.md
     - href: development/front-end/front-end-journey.md
     - href: development/front-end/front-end-best-practices.md
     - href: development/mobile/complex-sync.md
     - href: development/reference-BPMN/Notation-Reference-for-BPMN-Practitioners.md
-    - href: development/lifeTime-plugins/Life-Time-Plugins-Best-Practices.md
     - href: development/components/The-Complete-Guide-to-Creating-Components.md
     - href: development/components/forge-components-best-practices.md    
     - href: development/build-dynamic-sql/build-dynamic-sql-statements.md
@@ -59,7 +57,6 @@
 #Lifecycle Best Practices
 - href: lifecycle/intro.md
 - topics:
-    - href: lifecycle/clean-up-environment/clean-up-environment.md
     - href: lifecycle/troubleshoot-debugging-mobile/intro.md   
     - topics:
         - href: lifecycle/troubleshoot-debugging-mobile/troubleshooting-process.md
@@ -81,7 +78,6 @@
     - href: performance/references/references.md   
     - href: performance/top-10-rules/top-10-rules.md 
     - href: performance/user-interface/user-interface.md 
-    - href: performance/sql-server-best-practices.md
 
 
 #Security Best Practices    
@@ -105,4 +101,3 @@
         - href: infrastructure-management/design-infrastructure/infra-design-examples.md
     - href: infrastructure-management/iis-tuning.md
     - href: infrastructure-management/fine-tune-app-pool.md
-    - href: infrastructure-management/disk-space-usage-control.md
