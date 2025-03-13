@@ -155,7 +155,7 @@ Also:
 * Validate user’s Roles before executing Screen Actions.
 * Use encrypted passwords in the database.
 * Use Internal Access Only for UI Flows and Web Services.
-* Check the Reactive web specific [security best practices](../../security/ext-rd-reactive-security-best-practices/ext-rd-reactive-security-best-practices.md).
+* Check the Reactive web specific [security best practices](https://success.outsystems.com/documentation/best_practices/security/reactive_web_security_best_practices/).
 
 ## Performance
 
