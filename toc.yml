@@ -53,16 +53,7 @@
     - href: development/components/forge-components-best-practices.md    
     - href: development/build-dynamic-sql/build-dynamic-sql-statements.md
     - href: development/customizing-unhandled-errors/Customizing-OutSystems-Platform-Pages-for-Unhandled-Errors.md
-
-#Lifecycle Best Practices
-- href: lifecycle/intro.md
-- topics:
-    - href: lifecycle/troubleshoot-debugging-mobile/intro.md   
-    - topics:
-        - href: lifecycle/troubleshoot-debugging-mobile/troubleshooting-process.md
-        - href: lifecycle/troubleshoot-debugging-mobile/standard-toolkit.md   
-        - href: lifecycle/troubleshoot-debugging-mobile/extended-toolkit.md   
-        - href: lifecycle/troubleshoot-debugging-mobile/debug-examples.md          
+     
 #Performance and Monitoring Best Practices    
 - href: performance/performance-best-practices.md
 - topics:
