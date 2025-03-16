@@ -15,6 +15,9 @@ outsystems-tools:
 coverage-type:
   - understand
   - evaluate
+topic:
+  - integration-pattern-basics
+  - integration-patterns
 ---
 
 # Integration Patterns for Core Services Abstraction

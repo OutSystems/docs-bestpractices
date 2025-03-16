@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - evaluate
+topic:
+  - architecture-canvas
 ---
 
 # The Architecture Canvas

@@ -16,6 +16,8 @@ outsystems-tools:
 coverage-type:
   - evaluate
   - understand
+topic:
+  - domain-driven-design
 ---
 
 # Domain Driven Design

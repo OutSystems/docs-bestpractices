@@ -14,6 +14,8 @@ outsystems-tools:
 coverage-type:
   - evaluate
   - remember
+topic:
+  - bpmn-notation
 ---
 
 # Notation Reference for BPMN Practitioners

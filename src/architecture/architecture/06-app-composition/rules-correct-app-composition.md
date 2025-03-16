@@ -14,6 +14,8 @@ outsystems-tools:
 coverage-type:
   - evaluate
   - understand
+topic:
+  - application-composition
 ---
 
 # The 4 Rules for Correct Application Composition

@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - evaluate
+topic:
+  - front-end-architecture
 ---
 
 # Front-End Architecture Best Practices

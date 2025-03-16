@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - evaluate
   - understand
+topic:
+  - application-composition
 ---
 
 # Applying the Architecture Canvas to applications

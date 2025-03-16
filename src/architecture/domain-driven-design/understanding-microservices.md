@@ -14,6 +14,9 @@ outsystems-tools:
 coverage-type:
   - evaluate
   - understand
+topic:
+  - soa-and-microservices
+  - domain-driven-design
 ---
 
 # Understanding microservices

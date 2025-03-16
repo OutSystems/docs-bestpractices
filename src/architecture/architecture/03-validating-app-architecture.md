@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - evaluate
   - understand
+topic:
+  - validate-app-architecture
 ---
 
 # Validating your application architecture

@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - evaluate
   - apply
+topic:
+  - data-performance-caching
 ---
 
 # Optimize Data For Your Use Cases Using Hot Cache

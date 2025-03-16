@@ -16,6 +16,8 @@ coverage-type:
   - evaluate
   - apply
   - understand
+topic:
+  - application-composition
 ---
 
 # From architecture to development

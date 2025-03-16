@@ -15,6 +15,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - evaluate
+topic:
+  - scale-development-strategy
 ---
 
 # Building mobile apps with multiple independent teams

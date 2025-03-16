@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - evaluate
   - understand
+topic:
+  - soa-and-microservices
 ---
 
 # Microservices Architecture in OutSystems

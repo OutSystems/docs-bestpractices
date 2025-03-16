@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - evaluate
+topic:
+  - scale-development-strategy
 ---
 
 # Mobile architecture best practices

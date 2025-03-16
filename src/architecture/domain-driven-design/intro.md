@@ -16,6 +16,9 @@ outsystems-tools:
 coverage-type:
   - evaluate
   - understand
+topic:
+  - domain-driven-design
+  - good-architecture-value
 ---
 
 # OutSystems Domain Driven Architecture

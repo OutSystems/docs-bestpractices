@@ -17,6 +17,9 @@ coverage-type:
   - evaluate
   - understand
   - apply
+topic:
+  - architecture-canvas
+  - application-composition
 ---
 
 # Developing from the architecture blueprint

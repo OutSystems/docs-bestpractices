@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - evaluate
   - understand
+topic:
+  - acls
 ---
 
 # Use Access Control List to set up permission-based access to data

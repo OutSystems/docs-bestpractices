@@ -13,6 +13,8 @@ outsystems-tools:
 coverage-type:
   - evaluate
   - understand
+topic:
+  - local-storage
 ---
 
 # Mobile Data Layer

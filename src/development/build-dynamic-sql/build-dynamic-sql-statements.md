@@ -13,6 +13,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - evaluate
+topic:
+  - query-parameters
+  - dynamic-sql-correctly
 ---
 
 # Building Dynamic SQL Statements the Right Way

@@ -17,6 +17,8 @@ coverage-type:
   - evaluate
   - understand
   - apply
+topic:
+  - data-archiving-cold-data
 ---
 
 # Data Archiving

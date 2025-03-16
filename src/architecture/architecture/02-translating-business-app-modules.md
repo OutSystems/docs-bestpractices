@@ -16,6 +16,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - evaluate
+topic:
+  - map-os-to-global-concepts
 ---
 
 # Translating business concepts into application modules

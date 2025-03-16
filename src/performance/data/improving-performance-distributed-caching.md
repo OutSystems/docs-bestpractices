@@ -16,6 +16,8 @@ outsystems-tools:
 coverage-type:
   - evaluate
   - understand
+topic:
+  - data-performance-caching
 ---
 
 # Improving performance with distributed caching
