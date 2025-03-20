@@ -120,15 +120,15 @@ And now, Assemble! Let's remember the principles involved here:
 
 Based on these principles and looking into the architecture patterns and best practices, this article focuses on the following concepts:
 
-**Online**: To access an external API, use the **Field_IS** eSpace (IS means integration service). The responsibility of this model is to know the external API and normalize the data for internal access so the eSpace **Field_CS** and **Field_Sync** don't need to know any particularity of the API. In terms of abstraction, this is very important. Using this pattern makes your application more resistant to the API changes, and it's not forced to absorb what you don't want from the API in your data model.
+**Online**: To access an external API, use the **Field_IS** module (IS means integration service). The responsibility of this model is to know the external API and normalize the data for internal access so the **Field_CS** and **Field_Sync** modules don't need to know any particularity of the API. In terms of abstraction, this is very important. Using this pattern makes your application more resistant to the API changes, and it's not forced to absorb what you don't want from the API in your data model.
 
-**Batch Sync:** Use this second pattern to facilitate filters and to deliver a better user experience (by enhancing performance). Keep on your side a summary of the Field entity so that you can do the main searches in the local entity without accessing the external API. To achieve this, the eSpace **Field_Sync** is going to synchronize field data once a day.
+**Batch Sync:** Use this second pattern to facilitate filters and to deliver a better user experience (by enhancing performance). Keep on your side a summary of the Field entity so that you can do the main searches in the local entity without accessing the external API. To achieve this, the **Field_Sync** module is going to synchronize field data once a day.
 
 The figure below shows these patterns design:
 
 ![Diagram illustrating integration patterns for external master entities with batch sync.](images/integration-patterns.png "Integration Patterns Diagram")
 
-**Business Logic Module:** Another recommendation is to isolate **B**usiness **L**ogic (Actions) or **C**ore **W**idgets (Webblocks), to manage complexity, composition or to have its own lifecycle. In this case, it wasn't necessary to create a _CW eSpace. Maybe you can have it later, but for now, the eSpace **Booking_BL** addresses all business logic required.
+**Business Logic Module:** Another recommendation is to isolate **B**usiness **L**ogic (Actions) or **C**ore **W**idgets (Webblocks), to manage complexity, composition or to have its own lifecycle. In this case, it wasn't necessary to create a _CW module. Maybe you can have it later, but for now, the **Booking_BL** module addresses all business logic required.
 
 By applying these architectural patterns and using a common [naming convention](https://www.outsystems.com/training/lesson/2301/naming-conventions-for-modules) to the module names you end up with the following architecture blueprint for the modules:
 
