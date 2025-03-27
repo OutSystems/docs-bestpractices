@@ -39,7 +39,6 @@
 - href: development/intro.md
 - topics:
     # Extensibility
-    - href: development/integrations/integrate-ecosystem.md
     - href: development/platform-best-practices/outsystems-platform-best-practices.md 
     - href: development/platform-best-practices/outsystems-mobile-best-practices.md    
     - href: development/data/data-load.md
