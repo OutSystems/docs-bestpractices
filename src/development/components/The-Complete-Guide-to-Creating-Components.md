@@ -249,7 +249,7 @@ Keep in mind these naming conventions:
 * Use [**PascalCase**](https://en.wikipedia.org/wiki/PascalCase) (for example, "FirebaseReceiver", instead of "Firebasereceiver").
 * Use **event names that start with "On"** (for example, "OnReady", instead of "Ready").
 
-Take a look at the complete list of OutSystems [Naming Conventions](../platform-best-practices/outsystems-platform-best-practices.md).
+Take a look at the complete list of OutSystems [Naming Conventions](https://success.outsystems.com/documentation/best_practices/development/outsystems_platform_best_practices/).
 
 ![Screenshot showing an example of a well-named component in OutSystems.](images/The-Complete-Guide-to-Creating-Components_6.png "Component Naming Example")
 
