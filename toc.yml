@@ -68,14 +68,5 @@
 # Infrastructure Management Best Practices
 - href: infrastructure-management/intro.md
 - topics:
-    # Designing OutSystems Infrastructures
-    - href: infrastructure-management/design-infrastructure/designing-infrastructures.md
-    - topics:
-        - href: infrastructure-management/design-infrastructure/server-roles.md
-        - href: infrastructure-management/design-infrastructure/sizing-platform.md
-        - href: infrastructure-management/design-infrastructure/scaling-ha-servers.md
-        - href: infrastructure-management/design-infrastructure/disaster-recovery-high-availability.md
-        - href: infrastructure-management/design-infrastructure/exposing-your-apps.md
-        - href: infrastructure-management/design-infrastructure/infra-design-examples.md
     - href: infrastructure-management/iis-tuning.md
     - href: infrastructure-management/fine-tune-app-pool.md
