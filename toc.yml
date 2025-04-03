@@ -57,7 +57,6 @@
     - href: performance/data/hot-cache.md     
     - href: performance/data/improving-performance-distributed-caching.md           
     - href: performance/data-model/data-model.md
-    - href: performance/infrastructure/infrastructure.md
     - href: performance/logic/logic.md
     - href: performance/queries/queries.md
     - href: performance/queries/expand-inline-parameters.md
@@ -65,8 +64,3 @@
     - href: performance/top-10-rules/top-10-rules.md 
     - href: performance/user-interface/user-interface.md 
 
-# Infrastructure Management Best Practices
-- href: infrastructure-management/intro.md
-- topics:
-    - href: infrastructure-management/iis-tuning.md
-    - href: infrastructure-management/fine-tune-app-pool.md
