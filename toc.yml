@@ -39,8 +39,6 @@
 - href: development/intro.md
 - topics:
     # Extensibility     
-    - href: development/data/data-load.md
-    - href: development/data/data-rendering.md
     - href: development/front-end/front-end-journey.md
     - href: development/front-end/front-end-best-practices.md   
     - href: development/build-dynamic-sql/build-dynamic-sql-statements.md

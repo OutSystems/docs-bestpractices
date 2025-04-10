@@ -12,21 +12,6 @@
         - "Database storage on OutSystems public cloud":
             https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Database_storage_on_OutSystems_public_cloud
 
-- data/data-load.md:
-    - architecture/data/data-layer.md
-    - external:
-        - "Data Synchronization":
-            https://www.outsystems.com/learn/lesson/787/data-synchronization/
-        - "Generate and Publish Your Mobile App to the Mobile App Stores":
-            https://success.outsystems.com/Documentation/11/Delivering_Mobile_Apps/Generate_and_Distribute_Your_Mobile_App/Generate_and_Publish_Your_Mobile_App_to_the_Mobile_App_Stores
-        - "Local Storage":
-            https://www.outsystems.com/learn/lesson/782/local-storage/
-        - "Mobile Plugins":
-            https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/Mobile_Plugins
-        - "OutSystems Mobile Best Practices":
-            https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Mobile_Best_Practices
-        - "Test Your Mobile App in the Device Using OutSystems Now":
-            https://success.outsystems.com/Documentation/11/Delivering_Mobile_Apps/Test_Your_Mobile_App_in_the_Device_Using_OutSystems_Now
 - architecture/data/data-layer.md:
     - external:
         - "Generate and Publish Your Mobile App to the Mobile App Stores":
@@ -39,9 +24,6 @@
             https://success.outsystems.com/Documentation/Best_Practices/OutSystems_Mobile_Best_Practices
         - "Test Your Mobile App in the Device Using OutSystems Now":
             https://success.outsystems.com/Documentation/11/Delivering_Mobile_Apps/Test_Your_Mobile_App_in_the_Device_Using_OutSystems_Now
-
-- development/data/data-rendering.md:
-    - development/data/data-load.md
 
 - performance/data/hot-cache/hot-cache.md:
     - external:
