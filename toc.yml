@@ -41,7 +41,6 @@
     # Extensibility     
     - href: development/front-end/front-end-journey.md
     - href: development/front-end/front-end-best-practices.md   
-    - href: development/build-dynamic-sql/build-dynamic-sql-statements.md
     - href: development/customizing-unhandled-errors/Customizing-OutSystems-Platform-Pages-for-Unhandled-Errors.md
      
 #Performance and Monitoring Best Practices    
@@ -53,8 +52,6 @@
     - href: performance/data/improving-performance-distributed-caching.md           
     - href: performance/data-model/data-model.md
     - href: performance/logic/logic.md
-    - href: performance/queries/queries.md
-    - href: performance/queries/expand-inline-parameters.md
     - href: performance/references/references.md   
     - href: performance/top-10-rules/top-10-rules.md 
     - href: performance/user-interface/user-interface.md 
