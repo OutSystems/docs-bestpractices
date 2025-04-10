@@ -42,9 +42,7 @@
     - href: development/data/data-load.md
     - href: development/data/data-rendering.md
     - href: development/front-end/front-end-journey.md
-    - href: development/front-end/front-end-best-practices.md
-    - href: development/components/The-Complete-Guide-to-Creating-Components.md
-    - href: development/components/forge-components-best-practices.md    
+    - href: development/front-end/front-end-best-practices.md   
     - href: development/build-dynamic-sql/build-dynamic-sql-statements.md
     - href: development/customizing-unhandled-errors/Customizing-OutSystems-Platform-Pages-for-Unhandled-Errors.md
      
