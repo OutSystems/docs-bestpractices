@@ -41,7 +41,6 @@
     # Extensibility     
     - href: development/front-end/front-end-journey.md
     - href: development/front-end/front-end-best-practices.md   
-    - href: development/customizing-unhandled-errors/Customizing-OutSystems-Platform-Pages-for-Unhandled-Errors.md
      
 #Performance and Monitoring Best Practices    
 - href: performance/performance-best-practices.md
