@@ -37,10 +37,6 @@
 
 #Development Best Practices
 - href: development/intro.md
-- topics:
-    # Extensibility     
-    - href: development/front-end/front-end-journey.md
-    - href: development/front-end/front-end-best-practices.md   
      
 #Performance and Monitoring Best Practices    
 - href: performance/performance-best-practices.md
@@ -53,5 +49,5 @@
     - href: performance/logic/logic.md
     - href: performance/references/references.md   
     - href: performance/top-10-rules/top-10-rules.md 
-    - href: performance/user-interface/user-interface.md 
+    
 
