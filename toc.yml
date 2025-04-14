@@ -35,9 +35,6 @@
         - href: architecture/build-mobile-app-teams/bp-development.md
         - href: architecture/build-mobile-app-teams/bp-multiple.md
 
-#Development Best Practices
-- href: development/intro.md
-     
 #Performance and Monitoring Best Practices    
 - href: performance/performance-best-practices.md
 - topics:
