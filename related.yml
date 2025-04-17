@@ -54,25 +54,3 @@
         - "Offline framework":
             https://success.outsystems.com/Documentation/11/Developing_an_Application/Use_Data/Offline
 
-- architecture/from-arch-to-dev/intro.md:
-    - architecture/from-arch-to-dev/arch-to-dev.md
-    - external:
-        - "The Architecture Canvas":
-            https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/01_The_4_Layer_Canvas/
-        - "Architecting Sustainable Applications":
-            https://www.outsystems.com/learn/paths/8/architecting-sustainable-applications/
-        - "Choose the Right App for Your Project":
-            https://success.outsystems.com/Documentation/11/Getting_Started/Choose_the_Right_App_for_Your_Project
-        - "Composing Lifetime Applications":
-            https://www.outsystems.com/learn/courses/70/composing-lifetime-applications/?StartCourse=False
-
-- architecture/from-arch-to-dev/arch-to-dev.md:
-    - external:
-        - "The Architecture Canvas":
-            https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/01_The_4_Layer_Canvas/
-        - "Architecting Sustainable Applications":
-            https://www.outsystems.com/learn/paths/8/architecting-sustainable-applications/
-        - "Choose the Right App for Your Project":
-            https://success.outsystems.com/Documentation/11/Getting_Started/Choose_the_Right_App_for_Your_Project
-        - "Composing Lifetime Applications":
-            https://www.outsystems.com/learn/courses/70/composing-lifetime-applications/?StartCourse=False
