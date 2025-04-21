@@ -6,11 +6,6 @@
     - href: architecture/data/data-layer.md
     - href: architecture/security-model/acl.md
     - href: architecture/customizable-web-product/customizable-web-product.md
-    - href: architecture/build-mobile-app-teams/intro.md
-    - topics:
-        - href: architecture/build-mobile-app-teams/bp-architecture.md
-        - href: architecture/build-mobile-app-teams/bp-development.md
-        - href: architecture/build-mobile-app-teams/bp-multiple.md
 
 #Performance and Monitoring Best Practices    
 - href: performance/performance-best-practices.md
