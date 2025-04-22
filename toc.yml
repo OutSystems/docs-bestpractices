@@ -9,10 +9,7 @@
 #Performance and Monitoring Best Practices    
 - href: performance/performance-best-practices.md
 - topics:
-    - href: performance/monitoring/monitoring.md    
-    - href: performance/data/audit-trails.md
-    - href: performance/data/hot-cache.md     
-    - href: performance/data/improving-performance-distributed-caching.md           
+    - href: performance/monitoring/monitoring.md               
     - href: performance/data-model/data-model.md
     - href: performance/logic/logic.md 
     - href: performance/top-10-rules/top-10-rules.md 
