@@ -10,7 +10,6 @@
 - topics:
     - href: performance/monitoring/monitoring.md               
     - href: performance/data-model/data-model.md
-    - href: performance/logic/logic.md 
     - href: performance/top-10-rules/top-10-rules.md 
     
 
