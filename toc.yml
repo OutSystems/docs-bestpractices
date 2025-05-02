@@ -1,15 +1,7 @@
-#Architecture Best Practices 
-- href: architecture/intro.md
-- topics:        
-    - href: architecture/data/archive.md
-    - href: architecture/data/purge.md 
-    - href: architecture/data/data-layer.md
-
 #Performance and Monitoring Best Practices    
 - href: performance/performance-best-practices.md
 - topics:
     - href: performance/monitoring/monitoring.md               
-    - href: performance/data-model/data-model.md
     - href: performance/top-10-rules/top-10-rules.md 
     
 

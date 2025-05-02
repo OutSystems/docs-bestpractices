@@ -1,14 +1,8 @@
 ﻿# Data
 - architecture/data/purge.md:
-    - architecture/data/archive.md
     - external:
         - "Delete Rules":
             https://success.outsystems.com/Documentation/11/Developing_an_Application/Use_Data/Data_Modeling/Entity_Relationships/Delete_Rules
-        - "Database storage on OutSystems public cloud":
-            https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Database_storage_on_OutSystems_public_cloud
-
-- architecture/data/archive.md:
-    - external:
         - "Database storage on OutSystems public cloud":
             https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Database_storage_on_OutSystems_public_cloud
 
