@@ -1,7 +1,6 @@
 #Performance and Monitoring Best Practices    
 - href: performance/performance-best-practices.md
-- topics:
-    - href: performance/monitoring/monitoring.md               
+- topics:           
     - href: performance/top-10-rules/top-10-rules.md 
     
 
